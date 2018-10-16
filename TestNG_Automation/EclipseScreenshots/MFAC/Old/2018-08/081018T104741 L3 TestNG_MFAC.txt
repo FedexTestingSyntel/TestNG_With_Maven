@@ -1,0 +1,43 @@
+
+
+081018T104736: OAuth: https://apidrt.idev.fedex.com:8443/auth/oauth/v2/token  Iden: l7xx1892f99a6f88470ba29abc141cd7bd8d  Secret: a4325d011acf4876b3fe3206931b8f5a
+Verify that the user can request up to 3 pin numbers before unable to request more.
+081018T104737: IssuePin Request: {"orgName":"FDM-POSTCARD-PIN","userName":"frhcznylmr-uridpktwbmlyukpbdaixdmqr"}
+081018T104737: IssuePin Response: {"transactionId":"15b4a1b2-3014-48b7-80e0-742b30aababf","output":{"pinOTP":"448042","pinExpirationDate":"08/10/2018 04:17 PM GMT"}}
+081018T104737: IssuePin Request: {"orgName":"FDM-POSTCARD-PIN","userName":"frhcznylmr-uridpktwbmlyukpbdaixdmqr"}
+081018T104737: IssuePin Response: {"transactionId":"836c567f-33ec-447c-b957-664b7d8bbc67","output":{"pinOTP":"046940","pinExpirationDate":"08/10/2018 04:17 PM GMT"}}
+081018T104737: IssuePin Request: {"orgName":"FDM-POSTCARD-PIN","userName":"frhcznylmr-uridpktwbmlyukpbdaixdmqr"}
+081018T104738: IssuePin Response: {"transactionId":"5a35d15f-9585-4446-85f9-8d9ddaec5e27","output":{"pinOTP":"652395","pinExpirationDate":"08/10/2018 04:17 PM GMT"}}
+081018T104738: IssuePin Request: {"orgName":"FDM-POSTCARD-PIN","userName":"frhcznylmr-uridpktwbmlyukpbdaixdmqr"}
+081018T104738: IssuePin Response: {"transactionId":"4002874c-2b81-4687-80b1-6431e1695d46","errors":[{"code":"5700","message":"Unfortunately, you have exceeded your attempts for verification. Please try again later."}]}
+
+Verify that the user can request up to 3 pin numbers before unable to request more.
+081018T104738: IssuePin Request: {"orgName":"FDM-PHONE-PIN","userName":"zrdwltxrax-rujkokeofcwfjlpniyfmxagp"}
+081018T104738: IssuePin Response: {"transactionId":"9e77580e-42f5-4f37-aee5-7c2643d507e3","output":{"pinOTP":"395524","pinExpirationDate":"08/10/2018 03:57 PM GMT"}}
+081018T104738: IssuePin Request: {"orgName":"FDM-PHONE-PIN","userName":"zrdwltxrax-rujkokeofcwfjlpniyfmxagp"}
+081018T104739: IssuePin Response: {"transactionId":"5e072505-8d98-428c-9489-65d2394f7419","output":{"pinOTP":"472315","pinExpirationDate":"08/10/2018 03:57 PM GMT"}}
+081018T104739: IssuePin Request: {"orgName":"FDM-PHONE-PIN","userName":"zrdwltxrax-rujkokeofcwfjlpniyfmxagp"}
+081018T104739: IssuePin Response: {"transactionId":"5fbdf48d-ed34-4086-a81c-52b3bcde32b6","output":{"pinOTP":"343551","pinExpirationDate":"08/10/2018 03:57 PM GMT"}}
+081018T104739: IssuePin Request: {"orgName":"FDM-PHONE-PIN","userName":"zrdwltxrax-rujkokeofcwfjlpniyfmxagp"}
+081018T104739: IssuePin Response: {"transactionId":"223fdbd5-32c1-41d5-b4cb-91fe524fcc8a","errors":[{"code":"5700","message":"Unfortunately, you have exceeded your attempts for verification. Please try again later."}]}
+
+Verify that the user can request up to 3 pin numbers before unable to request more.
+081018T104739: IssuePin Request: {"orgName":"FDM-POSTCARD-PIN","userName":"qsfwiqhcrv-kfnptsrlumaqacgsxugeydci"}
+081018T104739: IssuePin Response: {"transactionId":"0237bf1c-448a-4daa-bf18-15b6fbd1a98f","output":{"pinOTP":"881715","pinExpirationDate":"08/10/2018 04:17 PM GMT"}}
+081018T104739: IssuePin Request: {"orgName":"FDM-POSTCARD-PIN","userName":"qsfwiqhcrv-kfnptsrlumaqacgsxugeydci"}
+081018T104739: IssuePin Response: {"transactionId":"75b12af8-b9d7-4da1-9534-15a115c083d1","output":{"pinOTP":"801758","pinExpirationDate":"08/10/2018 04:17 PM GMT"}}
+081018T104739: IssuePin Request: {"orgName":"FDM-POSTCARD-PIN","userName":"qsfwiqhcrv-kfnptsrlumaqacgsxugeydci"}
+081018T104740: IssuePin Response: {"transactionId":"5b6e56c0-aa2e-4bb2-82e0-38131374659b","output":{"pinOTP":"427250","pinExpirationDate":"08/10/2018 04:17 PM GMT"}}
+081018T104740: IssuePin Request: {"orgName":"FDM-POSTCARD-PIN","userName":"qsfwiqhcrv-kfnptsrlumaqacgsxugeydci"}
+081018T104740: IssuePin Response: {"transactionId":"9064cea7-ed45-4cc8-8051-a3eb7b5c59ee","errors":[{"code":"5700","message":"Unfortunately, you have exceeded your attempts for verification. Please try again later."}]}
+
+Verify that the user can request up to 3 pin numbers before unable to request more.
+081018T104740: IssuePin Request: {"orgName":"FDM-PHONE-PIN","userName":"yhabmsmnmu-zhnrzbxbfcceisysjrurbvlt"}
+081018T104740: IssuePin Response: {"transactionId":"e8fff70d-a94a-42af-9f38-2dd79d488218","output":{"pinOTP":"427841","pinExpirationDate":"08/10/2018 03:57 PM GMT"}}
+081018T104740: IssuePin Request: {"orgName":"FDM-PHONE-PIN","userName":"yhabmsmnmu-zhnrzbxbfcceisysjrurbvlt"}
+081018T104740: IssuePin Response: {"transactionId":"a8214f88-d35e-4136-a7aa-ed1fb3a85d1e","output":{"pinOTP":"075215","pinExpirationDate":"08/10/2018 03:57 PM GMT"}}
+081018T104740: IssuePin Request: {"orgName":"FDM-PHONE-PIN","userName":"yhabmsmnmu-zhnrzbxbfcceisysjrurbvlt"}
+081018T104741: IssuePin Response: {"transactionId":"7b0733f7-2b1b-457b-b04b-ee91d6b2c894","output":{"pinOTP":"993455","pinExpirationDate":"08/10/2018 03:57 PM GMT"}}
+081018T104741: IssuePin Request: {"orgName":"FDM-PHONE-PIN","userName":"yhabmsmnmu-zhnrzbxbfcceisysjrurbvlt"}
+081018T104741: IssuePin Response: {"transactionId":"b2a9c601-1143-4156-81ca-1616c1b857cd","errors":[{"code":"5700","message":"Unfortunately, you have exceeded your attempts for verification. Please try again later."}]}
+

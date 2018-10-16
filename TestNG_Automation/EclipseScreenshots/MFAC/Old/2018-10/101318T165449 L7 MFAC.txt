@@ -1,0 +1,26 @@
+
+IssuePin
+FDM-POSTCARD-PIN, 27ae62bf-5498-48cb-95fa-5fd54334cfbd, https://api.fedex.com/security/v1/pin
+Verify that the user is able to request a pin.
+101318T165435: IssuePinAPI URL: POST https://api.fedex.com/security/v1/pin HTTP/1.1
+101318T165435: IssuePinAPI Headers: Content-Type: application/json___Authorization: Bearer 27ae62bf-5498-48cb-95fa-5fd54334cfbd___
+101318T165435: IssuePinAPI Request: {"orgName":"FDM-POSTCARD-PIN","userName":"zidbnviduy-fvhfgujbjnshlhtyvlogthht"}
+101318T165435: IssuePinAPI Response: {"transactionId":"aef9984b-1fde-4732-82d9-50dcbfb226d4","output":{"pinOTP":"097698","pinExpirationDate":"11/03/2018 09:54 PM GMT"}}
+aef9984b-1fde-4732-82d9-50dcbfb226d4
+Passed
+101318T165444: New driver created. Chrome
+
+
+101318T165434: OAuth: https://api.fedex.com/auth/oauth/v2/token  Iden: l7xx1b191a635e37469cbaf159069c943955  Secret: 9012782ae99945e39f4ffacf1f80dcdb
+101318T165435: [27ae62bf-5498-48cb-95fa-5fd54334cfbd, 7, https://api.fedex.com/auth/oauth/v2/token, l7xx1b191a635e37469cbaf159069c943955, 9012782ae99945e39f4ffacf1f80dcdb, https://api.fedex.com/security/v1/pin, https://api.fedex.com/security/v1/pin/verify, https://api.fedex.com/security/v1/addresses/velocitycheck, http://mfac-cos-vip.prod.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfac-cos-vip.prod.cloud.fedex.com:9090/mfac/v3/verifyPIN, http://mfac-cos-vip.prod.cloud.fedex.com:9090/mfac/v3/addressVelocityCheck, 3, 3, 10]
+
+__________________________________________________________________________________________________________________________________________________________________________
+|10-13-18 16:54:32:982|                                                                        10-13-18 16:54:49:142|          |                               16 seconds|
+|             TestName|                                                                                     TestData|ResultData|                                   Status|
+|             IssuePin|FDM-POSTCARD-PIN, 27ae62bf-5498-48cb-95fa-5fd54334cfbd, https://api.fedex.com/security/v1/pin|    Passed|101318T165444: New driver created. Chrome|
+|________________________________________________________________________________________________________________________________________________________________________|
+Passed: 0 - Failed: 0
+
+
+
+

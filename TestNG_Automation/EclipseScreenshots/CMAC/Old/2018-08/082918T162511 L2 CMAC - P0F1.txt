@@ -1,0 +1,30 @@
+1 082918T161944: Getting UserID Details from USRC:  L2USCC051118T114912/Test1234
+1 082918T161944: Request: {"LogInRequest":{"password":"Test1234","processingParameters":{"clientId":"WCDO","returnDetailedErrors":false,"anonymousTransaction":true,"clientVersion":"3","returnLocalizedDateTime":false},"userName":"L2USCC051118T114912"}}
+1 082918T161945: Response: {"LogInResponse":{"successful":true}}
+1 082918T161945: Headers: Date: Wed, 29 Aug 2018 21:19:44 GMT Server: Apache Set-Cookie: siteDC=wtc; path=/; domain=.fedex.com; expires=Thu, 30-Aug-2018 21:19:44 GMT; secure Set-Cookie: SMIDENTITY=ny4jHvJQndrEjFR97X5+BHj6o7NZ5UreYoN482YREXgDO3FV6munpDUFYtT8Q75wM4XTkGJnkYyPdOMamIYdQaps/P11JvwkT7qBkfm2xbvRNyufJPQgye9wS/X1JUC5DiX89w1uLPxdTB2ZytwrukSisof78GEr+CLGWntioi9taSc6vwa3ocgNDxfOGNYAmq+30Dw43xMUIhAS+oxp2Tw8XyxqeKmb9Ssxmmh0qNRQouE/+Lb3CshCf2BYJXdpNFcGBqSpuJ8j53EVbTCevR7pFvCZpBfhcHJaVNTWTvRu4xcKa4Tw5+QAxHtx+gVHynlyChwojl0YNlkgJWSTeJaRcd+yei3npH4N1FZa5sT4AkmgOtU7kpFNAEpbe8AwkP0eAepBPS4jXg/e6v8Qm8GFwYN/EpjrMfVbz+SFosz2V5fMGLmRkoSXG75txRhC/pQFdlOiQujrTvLPEkpGYmacu+fiEm8hkyMiFIByqWK8cuyxUpTlk3Zg6q8KDjtmY2MYhL8zbbGCJs8XZOZBIKzwaw+Sarn8; path=/; domain=.fedex.com; secure Set-Cookie: fdx_cbid=08614916551535577584003230110171; path=/; expires=Tue, 24-Aug-38 21:19:44 GMT; domain=.fedex.com Set-Cookie: fcl_contactname=Fgmhqrtb Lxugasdd; domain=.fedex.com; path=/ Set-Cookie: fdx_login=ssoxdev2.e0bb.1bcb1e32; domain=.fedex.com; path=/; secure Set-Cookie: fcl_fname=Fgmhqrtb; domain=.fedex.com; path=/ Set-Cookie: fcl_uuid=00g0ggskpd; domain=.fedex.com; path=/ X-Frame-Options: SAMEORIGIN Vary: Accept-Encoding Access-Control-Allow-Credentials: true Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE Access-Control-Allow-Headers: Authorization, X-Requested-With, Content-Type, Origin, Accept, X-clientid, X-locale, X-loggedin, X-version Keep-Alive: timeout=30, max=1024 Connection: Keep-Alive Transfer-Encoding: chunked Content-Type: text/html; charset=UTF-8 
+1 082918T161945: [, 2, , , , https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/createUUID, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/companyid, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/1001/credentials, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/credentials/963, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/1001/resources/Rate Service, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/1001/resources, L2USCC051118T114912, L2USCC080818T103410, L2DECC081318T112742, L2CACC082418T105722, Test1234, Test1234, Test1234, Test1234, fdx_login=ssoxdev2.e0bb.1bcb1e32, 00g0ggskpd, 00g0ggsml6, 00g0ggsmn3, 00g0ggsmp2]
+
+
+Thread -- Time (MMDDYY'T'HHMMSS): -- Current progress
+1 082918T161949: DeleteProject Delete : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/1004
+1 082918T161949: DeleteProject Response : {"transactionId":"bb6549c8-f430-4b78-986e-6480b9754544"}
+1 082918T161956: RetrieveProjectDetails Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/1004
+1 082918T161956: RetrieveProjectDetails Response : {"transactionId":"f3b7cea2-2114-4024-9c26-239f97b5fe85","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+DeleteProject failed [https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/1004]
+
+
+@@ Passed Test Cases:
+
+
+@@ Failed Test Cases:
+1)    <-- DeleteProject: Delete a project based on the pid in the url URL: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/1004
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/1004
+Response: {"transactionId":"bb6549c8-f430-4b78-986e-6480b9754544"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/1004
+Response: {"transactionId":"f3b7cea2-2114-4024-9c26-239f97b5fe85","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Failed
+
+
+Execution Time in seconds: 326  (326799 miliseconds)
+Passed: 0 - Failed: 1
+

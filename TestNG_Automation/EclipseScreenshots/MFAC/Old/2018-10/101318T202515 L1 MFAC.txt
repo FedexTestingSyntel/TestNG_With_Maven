@@ -1,0 +1,122 @@
+
+IssuePin
+FDM-POSTCARD-PIN, 62fa4efb-9f05-4145-b446-487279a1f144, http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN
+Verify that the user is able to request a pin.
+101318T202352: IssuePinAPI URL: POST http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN HTTP/1.1
+101318T202352: IssuePinAPI Headers: Content-Type: application/json___Authorization: Bearer 62fa4efb-9f05-4145-b446-487279a1f144___
+101318T202352: IssuePinAPI Request: {"orgName":"FDM-POSTCARD-PIN","userName":"pxyoxinjgi-semrszpehedcwyfnfhdrqhtp"}
+101318T202352: IssuePinAPI Response: {"transactionId":"85da6867-1ed4-48b6-ae80-46eaa0526f69","output":{"pinOTP":"839111","pinExpirationDate":"10/14/2018 01:53 AM GMT"}}
+
+Expected: (a string containing "sdfsdfsdf" and a string containing "pinExpirationDate")
+     but: a string containing "sdfsdfsdf" was "{"transactionId":"85da6867-1ed4-48b6-ae80-46eaa0526f69","output":{"pinOTP":"839111","pinExpirationDate":"10/14/2018 01:53 AM GMT"}}"
+101318T202352
+Fail
+
+
+IssuePin
+FDM-PHONE-PIN, 62fa4efb-9f05-4145-b446-487279a1f144, http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN
+Verify that the user is able to request a pin.
+101318T202352: IssuePinAPI URL: POST http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN HTTP/1.1
+101318T202352: IssuePinAPI Headers: Content-Type: application/json___Authorization: Bearer 62fa4efb-9f05-4145-b446-487279a1f144___
+101318T202352: IssuePinAPI Request: {"orgName":"FDM-PHONE-PIN","userName":"lpvtqgxppu-yktwvdnulkbhbcsqpirtbeev"}
+101318T202352: IssuePinAPI Response: {"transactionId":"9b10e4ba-6e91-4c25-b8f3-067079763265","output":{"pinOTP":"954116","pinExpirationDate":"10/14/2018 01:33 AM GMT"}}
+
+Expected: (a string containing "sdfsdfsdf" and a string containing "pinExpirationDate")
+     but: a string containing "sdfsdfsdf" was "{"transactionId":"9b10e4ba-6e91-4c25-b8f3-067079763265","output":{"pinOTP":"954116","pinExpirationDate":"10/14/2018 01:33 AM GMT"}}"
+101318T202352
+Fail
+
+
+VerifyPinNoLongerValid
+FDM-PHONE-PIN, 62fa4efb-9f05-4145-b446-487279a1f144, http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN
+VerifyPinNoLongerValid: Verify that when user requests a second pin that the first is no longer valid.
+101318T202511: IssuePinAPI URL: POST http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN HTTP/1.1
+101318T202511: IssuePinAPI Headers: Content-Type: application/json___Authorization: Bearer 62fa4efb-9f05-4145-b446-487279a1f144___
+101318T202511: IssuePinAPI Request: {"orgName":"FDM-PHONE-PIN","userName":"lkvqwkgbyl-nrpoebwimwuaiuipxjwifawy"}
+101318T202511: IssuePinAPI Response: {"transactionId":"ab25917b-7ad0-4378-8144-ee4a03c1458a","output":{"pinOTP":"983774","pinExpirationDate":"10/14/2018 01:35 AM GMT"}}
+101318T202513: IssuePinAPI URL: POST http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN HTTP/1.1
+101318T202513: IssuePinAPI Headers: Content-Type: application/json___Authorization: Bearer 62fa4efb-9f05-4145-b446-487279a1f144___
+101318T202513: IssuePinAPI Request: {"orgName":"FDM-PHONE-PIN","userName":"lkvqwkgbyl-nrpoebwimwuaiuipxjwifawy"}
+101318T202513: IssuePinAPI Response: {"transactionId":"624000f8-a1d8-4346-8ff3-9a580b494972","output":{"pinOTP":"726606","pinExpirationDate":"10/14/2018 01:35 AM GMT"}}
+101318T202513: VerifyPinAPI URL: POST http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN HTTP/1.1
+101318T202513: VerifyPinAPI Headers: Content-Type: application/json___Authorization: Bearer 62fa4efb-9f05-4145-b446-487279a1f144___
+101318T202513: VerifyPinAPI Request: {"orgName":"FDM-PHONE-PIN","otpInput":"983774","userName":"lkvqwkgbyl-nrpoebwimwuaiuipxjwifawy"}
+101318T202513: VerifyPinAPI Response: {"transactionId":"67e67d16-5ef6-40da-a6e9-908cf9a403f1","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+101318T202514: VerifyPinAPI URL: POST http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN HTTP/1.1
+101318T202514: VerifyPinAPI Headers: Content-Type: application/json___Authorization: Bearer 62fa4efb-9f05-4145-b446-487279a1f144___
+101318T202514: VerifyPinAPI Request: {"orgName":"FDM-PHONE-PIN","otpInput":"726606","userName":"lkvqwkgbyl-nrpoebwimwuaiuipxjwifawy"}
+101318T202514: VerifyPinAPI Response: {"transactionId":"d711be56-5b23-43ca-bfb1-b603d2892610","output":{"daysLeftToExpire":1,"message":"Success"}}
+d711be56-5b23-43ca-bfb1-b603d2892610
+Passed
+
+
+VerifyPinNoLongerValid
+FDM-POSTCARD-PIN, 62fa4efb-9f05-4145-b446-487279a1f144, http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN
+VerifyPinNoLongerValid: Verify that when user requests a second pin that the first is no longer valid.
+101318T202512: IssuePinAPI URL: POST http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN HTTP/1.1
+101318T202512: IssuePinAPI Headers: Content-Type: application/json___Authorization: Bearer 62fa4efb-9f05-4145-b446-487279a1f144___
+101318T202512: IssuePinAPI Request: {"orgName":"FDM-POSTCARD-PIN","userName":"ymdppqusvx-qxpceqwurpzixhxaebtipoiv"}
+101318T202512: IssuePinAPI Response: {"transactionId":"69a3b4fd-665b-4bfa-87ca-bbb67beea9a0","output":{"pinOTP":"062450","pinExpirationDate":"10/14/2018 01:55 AM GMT"}}
+101318T202514: IssuePinAPI URL: POST http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN HTTP/1.1
+101318T202514: IssuePinAPI Headers: Content-Type: application/json___Authorization: Bearer 62fa4efb-9f05-4145-b446-487279a1f144___
+101318T202514: IssuePinAPI Request: {"orgName":"FDM-POSTCARD-PIN","userName":"ymdppqusvx-qxpceqwurpzixhxaebtipoiv"}
+101318T202514: IssuePinAPI Response: {"transactionId":"bc240d9c-c6fa-432e-a903-e96170f31b31","output":{"pinOTP":"683529","pinExpirationDate":"10/14/2018 01:55 AM GMT"}}
+101318T202514: VerifyPinAPI URL: POST http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN HTTP/1.1
+101318T202514: VerifyPinAPI Headers: Content-Type: application/json___Authorization: Bearer 62fa4efb-9f05-4145-b446-487279a1f144___
+101318T202514: VerifyPinAPI Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"062450","userName":"ymdppqusvx-qxpceqwurpzixhxaebtipoiv"}
+101318T202514: VerifyPinAPI Response: {"transactionId":"672d0775-f7d1-4a70-b43b-e5477611e3a1","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+101318T202514: VerifyPinAPI URL: POST http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN HTTP/1.1
+101318T202514: VerifyPinAPI Headers: Content-Type: application/json___Authorization: Bearer 62fa4efb-9f05-4145-b446-487279a1f144___
+101318T202514: VerifyPinAPI Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"683529","userName":"ymdppqusvx-qxpceqwurpzixhxaebtipoiv"}
+101318T202514: VerifyPinAPI Response: {"transactionId":"1f19bbc1-89e6-460e-8420-83b7a4a8478d","output":{"daysLeftToExpire":1,"message":"Success"}}
+1f19bbc1-89e6-460e-8420-83b7a4a8478d
+Passed
+
+
+VerifyPinValid
+FDM-PHONE-PIN, 62fa4efb-9f05-4145-b446-487279a1f144, http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN
+VerifyPinValid: Verify that user is able to request a pin and then verify that can recieve success when using the generated pin.
+101318T202515: IssuePinAPI URL: POST http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN HTTP/1.1
+101318T202515: IssuePinAPI Headers: Content-Type: application/json___Authorization: Bearer 62fa4efb-9f05-4145-b446-487279a1f144___
+101318T202515: IssuePinAPI Request: {"orgName":"FDM-PHONE-PIN","userName":"zmngaywjkf-vhzcvmfelqeselpbwnyhwgcx"}
+101318T202515: IssuePinAPI Response: {"transactionId":"b4b97cea-5d66-4314-a853-7c2def6b2dd6","output":{"pinOTP":"331344","pinExpirationDate":"10/14/2018 01:35 AM GMT"}}
+101318T202515: VerifyPinAPI URL: POST http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN HTTP/1.1
+101318T202515: VerifyPinAPI Headers: Content-Type: application/json___Authorization: Bearer 62fa4efb-9f05-4145-b446-487279a1f144___
+101318T202515: VerifyPinAPI Request: {"orgName":"FDM-PHONE-PIN","otpInput":"331344","userName":"zmngaywjkf-vhzcvmfelqeselpbwnyhwgcx"}
+101318T202515: VerifyPinAPI Response: {"transactionId":"c876606e-9794-4ab5-8e7e-4b0c53e89015","output":{"daysLeftToExpire":1,"message":"Success"}}
+c876606e-9794-4ab5-8e7e-4b0c53e89015
+Passed
+
+
+VerifyPinValid
+FDM-POSTCARD-PIN, 62fa4efb-9f05-4145-b446-487279a1f144, http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN
+VerifyPinValid: Verify that user is able to request a pin and then verify that can recieve success when using the generated pin.
+101318T202515: IssuePinAPI URL: POST http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN HTTP/1.1
+101318T202515: IssuePinAPI Headers: Content-Type: application/json___Authorization: Bearer 62fa4efb-9f05-4145-b446-487279a1f144___
+101318T202515: IssuePinAPI Request: {"orgName":"FDM-POSTCARD-PIN","userName":"zcoeftuqel-wupoqmddvmzbrykkzobywrmk"}
+101318T202515: IssuePinAPI Response: {"transactionId":"98280cb4-d7bd-4021-bbb5-e068f879b193","output":{"pinOTP":"116389","pinExpirationDate":"10/14/2018 01:55 AM GMT"}}
+101318T202515: VerifyPinAPI URL: POST http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN HTTP/1.1
+101318T202515: VerifyPinAPI Headers: Content-Type: application/json___Authorization: Bearer 62fa4efb-9f05-4145-b446-487279a1f144___
+101318T202515: VerifyPinAPI Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"116389","userName":"zcoeftuqel-wupoqmddvmzbrykkzobywrmk"}
+101318T202515: VerifyPinAPI Response: {"transactionId":"71cd8a15-94a9-4dd7-9cdd-ea4e79a9fceb","output":{"daysLeftToExpire":1,"message":"Success"}}
+71cd8a15-94a9-4dd7-9cdd-ea4e79a9fceb
+Passed
+
+
+[62fa4efb-9f05-4145-b446-487279a1f144, 1, https://apibase.idev.fedex.com:8443/auth/oauth/v2/token, l7xx1892f99a6f88470ba29abc141cd7bd8d, a4325d011acf4876b3fe3206931b8f5a, https://apibase.idev.fedex.com:8443/security/v1/pin, https://apibase.idev.fedex.com:8443/security/v1/pin/verify, https://apibase.idev.fedex.com:8443/security/v1/addresses/velocitycheck, http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN, http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/addressVelocityCheck, 3, 3, 10]
+
+_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+| 10-13-18 20:23:50:664|                                                                                                                                                                          10-13-18 20:25:15:467|                                    |1 minutes|
+|              TestName|                                                                                                                                                                                       TestData|                          ResultData|   Status|
+|              IssuePin|                                                                     FDM-POSTCARD-PIN, 62fa4efb-9f05-4145-b446-487279a1f144, http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN|                       101318T202352|     Fail|
+|              IssuePin|                                                                        FDM-PHONE-PIN, 62fa4efb-9f05-4145-b446-487279a1f144, http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN|                       101318T202352|     Fail|
+|VerifyPinNoLongerValid|   FDM-PHONE-PIN, 62fa4efb-9f05-4145-b446-487279a1f144, http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN|d711be56-5b23-43ca-bfb1-b603d2892610|   Passed|
+|VerifyPinNoLongerValid|FDM-POSTCARD-PIN, 62fa4efb-9f05-4145-b446-487279a1f144, http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN|1f19bbc1-89e6-460e-8420-83b7a4a8478d|   Passed|
+|        VerifyPinValid|   FDM-PHONE-PIN, 62fa4efb-9f05-4145-b446-487279a1f144, http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN|c876606e-9794-4ab5-8e7e-4b0c53e89015|   Passed|
+|        VerifyPinValid|FDM-POSTCARD-PIN, 62fa4efb-9f05-4145-b446-487279a1f144, http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN|71cd8a15-94a9-4dd7-9cdd-ea4e79a9fceb|   Passed|
+|_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________|
+Passed: 4 - Failed: 2
+
+
+
+

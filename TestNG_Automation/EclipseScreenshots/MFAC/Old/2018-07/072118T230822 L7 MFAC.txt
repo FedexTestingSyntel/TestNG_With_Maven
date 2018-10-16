@@ -1,0 +1,21 @@
+072118T230820: OAuth: https://api.fedex.com/auth/oauth/v2/token  Iden: l7xx1b191a635e37469cbaf159069c943955  Secret: 9012782ae99945e39f4ffacf1f80dcdb
+
+072118T230821: $APIG$ Endpoint is being used on Level 7.
+IssueURL = https://api.fedex.com/security/v1/pin
+VerifyURL = https://api.fedex.com/security/v1/pin/verify
+VelocityURL = https://api.fedex.com/security/v1/addresses/velocitycheck
+
+
+<-- VerifyPinValid        OrgName: FDM-POSTCARD-PIN
+072118T230821: Verify that user is able to request a pin and then verify that can recieve success when using the generated pin.
+072118T230821: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"rwwebvuqny-snkqjojthnrydpkbcmmxihnp"}
+072118T230821: Response: {"transactionId":"c5d406d0-82f9-42ed-8793-5c8a26fb94e1","output":{"pinOTP":"965525","pinExpirationDate":"08/12/2018 04:08 AM GMT"}}
+072118T230821: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"965525","userName":"rwwebvuqny-snkqjojthnrydpkbcmmxihnp"}
+072118T230822: Response: {"transactionId":"774050bb-8f4f-4dfe-bb9e-6c52f24c7db1","output":{"daysLeftToExpire":21,"message":"Success"}}
+
+_______________________________________________________________________________________________
+|                    07-21-18 23:08:21:275 |                 07-21-18 23:08:22:58 | 0 seconds |
+| VerifyPinValid OrgName: FDM-POSTCARD-PIN | 774050bb-8f4f-4dfe-bb9e-6c52f24c7db1 |      Pass |
+|_____________________________________________________________________________________________|
+Passed: 1 - Failed: 0
+

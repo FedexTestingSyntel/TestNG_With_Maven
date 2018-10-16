@@ -1,0 +1,135 @@
+051418T085544: Token request: {  "access_token":"ef91ac10-f09b-4768-b8e5-225925701fe9",  "token_type":"Bearer",  "expires_in":3600,  "scope":"oob"}     Iden:l7xx1892f99a6f88470ba29abc141cd7bd8d Secret:a4325d011acf4876b3fe3206931b8f5a
+
+051418T085544: $APIG$
+Endpoint is being used.
+051418T085544: IssueURL = https://apibase.idev.fedex.com:8443/security/v1/pin
+VerifyURL = https://apibase.idev.fedex.com:8443/security/v1/pin/verify
+VelocityURL = https://apibase.idev.fedex.com:8443/security/v1/addresses/velocitycheck
+
+051418T085544: <-- AddressVelocity        OrgName: FDM-POSTCARD-PIN
+051418T085544: Verify that the address velocity of 3 is reached adn the correct error code is recieved.
+051418T085545: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"WUTbNrpZ4S-ISdy3DMierT0WX0oJxh8lbDM"}
+051418T085545: Response: {
+    "errorCode": "INTERNAL_SERVER_ERROR",
+    "errorMessage": "Internal Server Error",
+    "userMessage": "FedEx Ship manager is not available. For immediate assistance, please contact your local FedEx Customer Service.",
+    "moreInfo": "http: //developer.fedex.com/errors/500"
+}
+
+051418T085545: <-- IssuePin        OrgName: FDM-POSTCARD-PIN
+051418T085545: Verify that the user is able to request a pin.
+051418T085545: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"DwFA9gxcGX-GNn3juVXyMfIkI849KrLo3u1"}
+051418T085545: Response: {
+    "errorCode": "INTERNAL_SERVER_ERROR",
+    "errorMessage": "Internal Server Error",
+    "userMessage": "FedEx Ship manager is not available. For immediate assistance, please contact your local FedEx Customer Service.",
+    "moreInfo": "http: //developer.fedex.com/errors/500"
+}
+
+051418T085545: <-- IssuePinVelocity        OrgName: FDM-POSTCARD-PIN
+051418T085545: Verify that the user can request up to 3 pin numbers before unable to request more.
+051418T085545: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"o2LEQ2QgZB-rvaszkGNiWp2FjyZCovDG0fU"}
+051418T085545: Response: {
+    "errorCode": "INTERNAL_SERVER_ERROR",
+    "errorMessage": "Internal Server Error",
+    "userMessage": "FedEx Ship manager is not available. For immediate assistance, please contact your local FedEx Customer Service.",
+    "moreInfo": "http: //developer.fedex.com/errors/500"
+}
+
+051418T085545: <-- VerifyPinNoLongerValid        OrgName: FDM-POSTCARD-PIN
+051418T085545: Verify that when user requests a second pin that the first is no longer valid.
+051418T085545: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"PkRJJci77O-uSoTUIH0co4vYF42JowZSW4P"}
+051418T085546: Response: {
+    "errorCode": "INTERNAL_SERVER_ERROR",
+    "errorMessage": "Internal Server Error",
+    "userMessage": "FedEx Ship manager is not available. For immediate assistance, please contact your local FedEx Customer Service.",
+    "moreInfo": "http: //developer.fedex.com/errors/500"
+}
+051418T085546: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"PkRJJci77O-uSoTUIH0co4vYF42JowZSW4P"}
+051418T085546: Response: {
+    "errorCode": "INTERNAL_SERVER_ERROR",
+    "errorMessage": "Internal Server Error",
+    "userMessage": "FedEx Ship manager is not available. For immediate assistance, please contact your local FedEx Customer Service.",
+    "moreInfo": "http: //developer.fedex.com/errors/500"
+}
+051418T085546: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"PkRJJci77O-uSoTUIH0co4vYF42JowZSW4P"}
+051418T085546: Response: {
+    "errorCode": "INTERNAL_SERVER_ERROR",
+    "errorMessage": "Internal Server Error",
+    "userMessage": "FedEx Ship manager is not available. For immediate assistance, please contact your local FedEx Customer Service.",
+    "moreInfo": "http: //developer.fedex.com/errors/500"
+}
+
+051418T085546: <-- VerifyPinValid        OrgName: FDM-POSTCARD-PIN
+051418T085546: Verify that user is able to request a pin and then verify that can reseave success when using the generated pin.
+051418T085546: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"fkStCudclX-5cRnC796V5HqQkdJSmWPxaAr"}
+051418T085546: Response: {
+    "errorCode": "INTERNAL_SERVER_ERROR",
+    "errorMessage": "Internal Server Error",
+    "userMessage": "FedEx Ship manager is not available. For immediate assistance, please contact your local FedEx Customer Service.",
+    "moreInfo": "http: //developer.fedex.com/errors/500"
+}
+
+051418T085546: <-- AddressVelocity        OrgName: FDM-PHONE-PIN
+051418T085546: Verify that the address velocity of 3 is reached adn the correct error code is recieved.
+051418T085546: Request: {"orgName":"FDM-PHONE-PIN","userName":"xnMY6ZprGC-8MUkVFHIU9rHLL4rt7mMploj"}
+051418T085547: Response: {
+    "errorCode": "INTERNAL_SERVER_ERROR",
+    "errorMessage": "Internal Server Error",
+    "userMessage": "FedEx Ship manager is not available. For immediate assistance, please contact your local FedEx Customer Service.",
+    "moreInfo": "http: //developer.fedex.com/errors/500"
+}
+
+051418T085547: <-- IssuePin        OrgName: FDM-PHONE-PIN
+051418T085547: Verify that the user is able to request a pin.
+051418T085547: Request: {"orgName":"FDM-PHONE-PIN","userName":"IEUx2SCT5e-JeQqv5dAVrjdLeHeUfu8wCEl"}
+051418T085547: Response: {
+    "errorCode": "INTERNAL_SERVER_ERROR",
+    "errorMessage": "Internal Server Error",
+    "userMessage": "FedEx Ship manager is not available. For immediate assistance, please contact your local FedEx Customer Service.",
+    "moreInfo": "http: //developer.fedex.com/errors/500"
+}
+
+051418T085547: <-- IssuePinVelocity        OrgName: FDM-PHONE-PIN
+051418T085547: Verify that the user can request up to 3 pin numbers before unable to request more.
+051418T085547: Request: {"orgName":"FDM-PHONE-PIN","userName":"bqHpD0wCyc-S76gvPoz0NweA2AxIfbkDHot"}
+051418T085547: Response: {
+    "errorCode": "INTERNAL_SERVER_ERROR",
+    "errorMessage": "Internal Server Error",
+    "userMessage": "FedEx Ship manager is not available. For immediate assistance, please contact your local FedEx Customer Service.",
+    "moreInfo": "http: //developer.fedex.com/errors/500"
+}
+
+051418T085547: <-- VerifyPinNoLongerValid        OrgName: FDM-PHONE-PIN
+051418T085547: Verify that when user requests a second pin that the first is no longer valid.
+051418T085547: Request: {"orgName":"FDM-PHONE-PIN","userName":"eephjWtAms-KGGWGbR8fDHBgC7sdjUOBCdo"}
+051418T085547: Response: {
+    "errorCode": "INTERNAL_SERVER_ERROR",
+    "errorMessage": "Internal Server Error",
+    "userMessage": "FedEx Ship manager is not available. For immediate assistance, please contact your local FedEx Customer Service.",
+    "moreInfo": "http: //developer.fedex.com/errors/500"
+}
+051418T085547: Request: {"orgName":"FDM-PHONE-PIN","userName":"eephjWtAms-KGGWGbR8fDHBgC7sdjUOBCdo"}
+051418T085547: Response: {
+    "errorCode": "INTERNAL_SERVER_ERROR",
+    "errorMessage": "Internal Server Error",
+    "userMessage": "FedEx Ship manager is not available. For immediate assistance, please contact your local FedEx Customer Service.",
+    "moreInfo": "http: //developer.fedex.com/errors/500"
+}
+051418T085547: Request: {"orgName":"FDM-PHONE-PIN","userName":"eephjWtAms-KGGWGbR8fDHBgC7sdjUOBCdo"}
+051418T085547: Response: {
+    "errorCode": "INTERNAL_SERVER_ERROR",
+    "errorMessage": "Internal Server Error",
+    "userMessage": "FedEx Ship manager is not available. For immediate assistance, please contact your local FedEx Customer Service.",
+    "moreInfo": "http: //developer.fedex.com/errors/500"
+}
+
+051418T085547: <-- VerifyPinValid        OrgName: FDM-PHONE-PIN
+051418T085547: Verify that user is able to request a pin and then verify that can reseave success when using the generated pin.
+051418T085547: Request: {"orgName":"FDM-PHONE-PIN","userName":"vIDafbUZxK-qqc1hVkUJNrz0t9LY9lonZKd"}
+051418T085548: Response: {
+    "errorCode": "INTERNAL_SERVER_ERROR",
+    "errorMessage": "Internal Server Error",
+    "userMessage": "FedEx Ship manager is not available. For immediate assistance, please contact your local FedEx Customer Service.",
+    "moreInfo": "http: //developer.fedex.com/errors/500"
+}

@@ -1,0 +1,62 @@
+
+WFCL_AccountRegistration_Admin
+3, US, 642210262
+11 101018T141502: Generate Name is Returning: [FthreeINETswtwwey, M, Lnaaegbq]
+11 101018T141502: Account number 642210262 recieved from WFCL_AccountRegistration_Admin
+11 101018T141502: Not able to fully retrieve address:       
+11 101018T141502: LoadAddress Received: _US_ __
+11 101018T141502: LoadAddress is Returning: [3614 DELVERNE RD, , BALTIMORE, Maryland, MD, 21218, US, US, United States, ]
+11 101018T141502: Attempting to register with 642210262
+11 101018T141512: New driver created. Chrome
+11 101018T141518: Cookies Deleted
+11 101018T141518: Navigating to https://wwwdrt.idev.fedex.com/fcl/web/jsp/contactInfo1.jsp?appName=oadr&locale=us_en&step3URL=https%3A%2F%2F.fedex.com%3A443%2Ffcl%2Fweb%2Fjsp%2FfclValidateAndCreate.jsp&afterwardsURL=https://wwwdrt.idev.fedex.com%3A443%2Ffcl%2Fweb%2Fjsp%2Foadr.jsp&programIndicator=p314t9n1ey&accountOption=link
+11 101018T141523:     E--Element Clicked By.xpath: //input[(@name='accountType') and (@value = 'linkAccount')]
+11 101018T141525:     T--Text Entered FthreeINETswtwwey in element By.id: firstName
+11 101018T141525:     T--Text Entered M in element By.name: initials
+11 101018T141525:     T--Text Entered Lnaaegbq in element By.id: lastName
+11 101018T141526:     T--Text Entered sean.kauffman.osv@fedex.com in element By.id: email
+11 101018T141527:     T--Text Entered sean.kauffman.osv@fedex.com in element By.id: retypeEmail
+11 101018T141528:     T--Text Entered 3614 DELVERNE RD in element By.id: address1
+11 101018T141528:     T--Text Entered  in element By.name: address2
+11 101018T141529:     T--Text Entered BALTIMORE in element By.name: city
+11 101018T141529:     S--Selected Element By.id: state   by value MD
+11 101018T141529:     T--Text Entered 21218 in element By.id: zip
+11 101018T141530:     T--Text Entered 9011111111 in element By.id: phone
+11 101018T141531:     T--Text Entered L3642210262US101018T141502 in element By.id: uid
+11 101018T141531:     T--Text Entered Test1234 in element By.id: password
+11 101018T141531:     T--Text Entered Test1234 in element By.id: retypePassword
+11 101018T141532:     S--Selected Element By.id: reminderQuestion   by visible text What is your mother's first name?
+11 101018T141532:     T--Text Entered mom in element By.id: reminderAnswer
+11 101018T141533:     E--Element Clicked By.id: acceptterms
+11 101018T141533: Name: [FthreeINETswtwwey, M, Lnaaegbq]    UserID:L3642210262US101018T141502
+11 101018T141534: 101018T141502 3US WFCL  Screenshot Taken
+11 101018T141539:     E--Element Clicked By.id: createUserID
+11 101018T141541: 101018T141502 3US WFCL ContactInformation.png Screenshot Taken
+11 101018T141541:     E--Element Clicked By.id: createUserID
+11 101018T141542:     T--Text Entered 642210262 in element By.id: accountNumber
+11 101018T141542:     T--Text Entered 642210262_US in element By.id: nickName
+11 101018T141544: 101018T141502 3US WFCL AccountInformation.png Screenshot Taken
+11 101018T141544:     E--Element Clicked By.id: createUserID
+11 101018T141553: 101018T141502 3US WFCL RegistrationConfirmation.png Screenshot Taken
+11 101018T141553: Navigating to https://wwwdrt.idev.fedex.com/cgi-bin/ship_it/interNetShip?origincountry=us&locallang=en
+11 101018T141555:     S--Selected Element By.name: accountNumberOpco   by visible text 642210262
+11 101018T141556: 101018T141502 3US WFCL INET Account Selection.png Screenshot Taken
+11 101018T141602:     E--Element Clicked By.className: buttonpurple
+11 101018T141604: 101018T141502 3US WFCL INET Confirmation.png Screenshot Taken
+11 101018T141607:     E--Element Clicked By.xpath: //*[@id='content']/div/table/tbody/tr[1]/td[2]/table[2]/tbody/tr[3]/td/table/tbody/tr[1]/td[4]/table/tbody/tr/td/table/tbody/tr[1]/td[2]/a/img
+11 101018T141607: Navigating to https://wwwdrt.idev.fedex.com/fcl/web/jsp/accountInfo1.jsp?appName=fclpasskey&registration=true&countryCode=us&languageCode=en&fclHost=https://wwwdrt.idev.fedex.com&step3URL=https://wwwdrt.idev.fedex.com%2Fapps%2Fshipadmin&afterwardsURL=https://wwwdrt.idev.fedex.com%2Fapps%2Fshipadmin&locale=en_US&programIndicator=1
+11 101018T141609:     S--Selected Element By.name: accountNumber   by value 642210262|642210262_US
+11 101018T141614:     E--Element Clicked By.name: submit
+11 101018T141615:     T--Text Entered 4460 in element By.name: creditCardNumber
+11 101018T141618:     E--Element Clicked By.className: buttonpurple
+11 101018T141619:     T--Text Entered Company101018T141618 in element By.name: companyName
+11 101018T141627:     E--Element Clicked By.className: buttonpurple
+11 101018T141631: Registered for Admin. Current URL:https://wwwdrt.idev.fedex.com/apps/shipadmin/?success=true&acctNumber=642210262&userId=L3642210262US101018T141502#!confirmation
+11 101018T141631:     E--Element Clicked By.cssSelector: #confirmation > div > div.fx-col.col-3 > div > p:nth-child(6) > a
+Account 642210262 removed from testing sheet: true
+11 101018T141633: fcl_uuid value is 0w0g0hbb4h
+11 101018T141633: Finished WFCL_AccountRegistration  L3642210262US101018T141502/Test1234--642210262--0w0g0hbb4h
+[L3642210262US101018T141502, 642210262, 0w0g0hbb4h, INET:true, Admin:true]
+Scenario_Passed
+
+

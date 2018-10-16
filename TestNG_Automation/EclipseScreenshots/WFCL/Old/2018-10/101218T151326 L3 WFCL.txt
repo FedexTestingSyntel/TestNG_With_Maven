@@ -1,0 +1,324 @@
+
+WFCL_UserRegistration
+3, US
+101218T150254: LoadAddress Received: _US_ __
+101218T150254: LoadAddress is Returning: [3614 DELVERNE RD, , BALTIMORE, Maryland, MD, 21218, US, US, United States]
+101218T150254: Generate Name is Returning: [FthreeCreatepljiget, M, Lehdrfck]
+101218T150317: New driver created. Chrome
+101218T150333: Cookies Deleted
+101218T150333: Navigating to https://wwwdrt.idev.fedex.com/preferences
+101218T150341:     E--Element Clicked By.id: registernow
+101218T150343:     T--Text Entered FthreeCreatepljiget in element By.id: firstName
+101218T150343:     T--Text Entered M in element By.name: initials
+101218T150344:     T--Text Entered Lehdrfck in element By.id: lastName
+101218T150344:     T--Text Entered sean.kauffman.osv@fedex.com in element By.id: email
+101218T150345:     T--Text Entered sean.kauffman.osv@fedex.com in element By.id: retypeEmail
+101218T150346:     T--Text Entered 3614 DELVERNE RD in element By.id: address1
+101218T150347:     T--Text Entered  in element By.name: address2
+101218T150347:     T--Text Entered BALTIMORE in element By.name: city
+101218T150348:     S--Selected Element By.id: state   by value MD
+101218T150348:     T--Text Entered 21218 in element By.id: zip
+101218T150348:     T--Text Entered 9011111111 in element By.id: phone
+101218T150349:     T--Text Entered L3USCreate101218T150254 in element By.id: uid
+101218T150350:     T--Text Entered Test1234 in element By.id: password
+101218T150350:     T--Text Entered Test1234 in element By.id: retypePassword
+101218T150350:     S--Selected Element By.id: reminderQuestion   by visible text What is your mother's first name?
+101218T150351:     T--Text Entered mom in element By.id: reminderAnswer
+101218T150351:     E--Element Clicked By.id: acceptterms
+101218T150351: Name: [FthreeCreatepljiget, M, Lehdrfck]    UserID:L3USCreate101218T150254
+101218T150353: 101218T150254 L3US WFCL ContactInformation.png Screenshot Taken
+101218T150357:     E--Element Clicked By.id: createUserID
+101218T150359: 101218T150254 L3US WFCL RegistrationConfirmation.png Screenshot Taken
+101218T150359: fcl_uuid value is gw0g0hbaer
+101218T150359: Finished WFCL_UserRegistration  L3USCreate101218T150254/Test1234 -- gw0g0hbaer
+[L3USCreate101218T150254, gw0g0hbaer]
+Passed
+
+
+WFCL_AccountRegistration_WDPA
+3, US, 642210327
+101218T150254: Account number 642210327 recieved from WFCL_AccountRegistration_WDPA
+101218T150254: Not able to fully retrieve address:       
+101218T150254: LoadAddress Received: _US_ __
+101218T150254: LoadAddress is Returning: [3614 DELVERNE RD, , BALTIMORE, Maryland, MD, 21218, US, US, United States]
+101218T150254: Generate Name is Returning: [FthreeWDPAbsociux, M, Lxgueaca]
+101218T150307: New driver created. Chrome
+101218T150311: Cookies Deleted
+101218T150311: Navigating to https://wwwdrt.idev.fedex.com/PickupApp/login?locale=en_us
+101218T150323:     E--Element Clicked By.name: signupnow
+101218T150326:     T--Text Entered FthreeWDPAbsociux in element By.id: firstName
+101218T150326:     T--Text Entered M in element By.name: initials
+101218T150327:     T--Text Entered Lxgueaca in element By.id: lastName
+101218T150331:     T--Text Entered sean.kauffman.osv@fedex.com in element By.id: email
+101218T150333:     T--Text Entered sean.kauffman.osv@fedex.com in element By.id: retypeEmail
+101218T150334:     T--Text Entered 3614 DELVERNE RD in element By.id: address1
+101218T150334:     T--Text Entered  in element By.name: address2
+101218T150336:     T--Text Entered BALTIMORE in element By.name: city
+101218T150336:     T--Text Entered MD in element By.name: state
+101218T150337:     T--Text Entered 21218 in element By.id: zip
+101218T150337:     T--Text Entered 9011111111 in element By.id: phone
+101218T150338:     T--Text Entered L320WDPA101218T150254 in element By.id: uid
+101218T150338:     T--Text Entered Test1234 in element By.id: password
+101218T150339:     T--Text Entered Test1234 in element By.id: retypePassword
+101218T150340:     S--Selected Element By.id: reminderQuestion   by visible text What is your mother's first name?
+101218T150340:     T--Text Entered mom in element By.id: reminderAnswer
+101218T150341: Name: [FthreeWDPAbsociux, M, Lxgueaca]    UserID:L320WDPA101218T150254
+101218T150342: 101218T150254 3US WFCL  Screenshot Taken
+101218T150346:     E--Element Clicked By.id: iacceptbutton
+101218T150518: 101218T150254 3US WFCL General Failure.png Screenshot Taken
+Fail
+
+
+WFCL_CreditCardRegistrationEnroll
+3, ss90705920, US
+101218T150254: LoadCreditCard Received: V
+101218T150254: LoadCreditCard is Returning: [Visa, 4005554444444460, 460, 12, 20]
+101218T150254: LoadAddress Received: _US_ __
+101218T150254: LoadAddress is Returning: [3614 DELVERNE RD, , BALTIMORE, Maryland, MD, 21218, US, US, United States]
+101218T150254: Generate Name is Returning: [FthreeUSCCtstsgcw, M, Lkbnjoer]
+101218T150408: New driver created. Chrome
+101218T150411: Cookies Deleted
+101218T150411: Navigating to https://wwwdrt.idev.fedex.com/cgi-bin/ship_it/interNetShip?origincountry=us&locallang=en
+101218T150443: Navigating to https://wwwdrt.idev.fedex.com/fcl/ALL?enrollmentid=ss90705920&language=en&country=us
+101218T150446: 101218T150254 L3 WFCL ss90705920 CC Discount Page.png Screenshot Taken
+101218T150448:     E--Element Clicked By.linkText: Finish registering for a FedEx account
+101218T150449:     T--Text Entered FthreeUSCCtstsgcw in element By.id: firstName
+101218T150450:     T--Text Entered M in element By.name: initials
+101218T150450:     T--Text Entered Lkbnjoer in element By.id: lastName
+101218T150451:     T--Text Entered sean.kauffman.osv@fedex.com in element By.id: email
+101218T150452:     T--Text Entered sean.kauffman.osv@fedex.com in element By.id: retypeEmail
+101218T150452:     T--Text Entered 3614 DELVERNE RD in element By.id: address1
+101218T150452:     T--Text Entered  in element By.name: address2
+101218T150453:     T--Text Entered BALTIMORE in element By.name: city
+101218T150454:     S--Selected Element By.id: state   by value MD
+101218T150454:     T--Text Entered 21218 in element By.id: zip
+101218T150454:     T--Text Entered 9011111111 in element By.id: phone
+101218T150455:     T--Text Entered L3ss9070592019CC101218T150254 in element By.id: uid
+101218T150455:     T--Text Entered Test1234 in element By.id: password
+101218T150455:     T--Text Entered Test1234 in element By.id: retypePassword
+101218T150456:     S--Selected Element By.id: reminderQuestion   by visible text What is your mother's first name?
+101218T150456:     T--Text Entered mom in element By.id: reminderAnswer
+101218T150456:     E--Element Clicked By.id: acceptterms
+101218T150456: Name: [FthreeUSCCtstsgcw, M, Lkbnjoer]    UserID:L3ss9070592019CC101218T150254
+101218T150458: 101218T150254 L3 WFCL ss90705920 CC ContactInformation.png Screenshot Taken
+101218T150501:     E--Element Clicked By.id: createUserID
+101218T150501: WFCL_CC_Page recieved: Visa, US From: CreditCardRegistrationEnroll
+101218T150501: fcl_uuid value is gw0g0hbaes
+101218T150502:     T--Text Entered 4005554444444460 in element By.id: creditCardNumber
+101218T150502:     T--Text Entered 460 in element By.id: creditCardIDNumber
+101218T150503:     S--Selected Element By.id: monthExpiry   by visible text 12
+101218T150503:     S--Selected Element By.id: yearExpiry   by visible text 20
+101218T150503:     E--Element Clicked By.name: editshipinfo
+101218T150504: Verified Text: Country/Territory     By.xpath: //*[@id='shipping-address-fields']/label[12]/span[1]
+101218T150504:     E--Element Clicked By.name: editccinfo
+101218T150504: Verified Text: Country/Territory     By.xpath: //*[@id='billing-address']/label[17]/span[1]
+101218T150505:     S--Selected Element By.name: questionCd9   by index 1
+101218T150505:     S--Selected Element By.name: questionCd10   by index 1
+101218T150506:     S--Selected Element By.name: questionCd11   by index 1
+101218T150507:     S--Selected Element By.id: CCType   by visible text Visa
+101218T150508: 101218T150254 L3 WFCL ss90705920 CC Information.png Screenshot Taken
+101218T150553:     E--Element Clicked By.id: Complete
+101218T150651: 101218T150254 L3 WFCL ss90705920 CC Confirmation.png Screenshot Taken
+101218T150651: Navigating to https://wwwdrt.idev.fedex.com/cgi-bin/ship_it/interNetShip?origincountry=us&locallang=en
+101218T150658: 101218T150254 L3 WFCL ss90705920 CC INET working.png Screenshot Taken
+101218T150658: Navigating to https://wwwdrt.idev.fedex.com/apps/shipadmin/
+101218T150706: 101218T150254 L3 WFCL ss90705920 CC Admin working.png Screenshot Taken
+101218T150706: fcl_uuid value is gw0g0hbaes
+101218T150706: Finished CreditCardRegistrationEnroll  L3ss9070592019CC101218T150254/Test1234--642138227--gw0g0hbaes
+[L3ss9070592019CC101218T150254, 642138227, gw0g0hbaes, 4460, INET:true, Admin:true]
+Passed
+
+
+WFCL_Forgot_User_Email
+3, US, sean.kauffman.osv@fedex.com
+101218T150529: New driver created. Chrome
+101218T150533: Cookies Deleted
+101218T150533: Navigating to https://wwwdrt.idev.fedex.com/cgi-bin/ship_it/interNetShip?origincountry=us&locallang=en
+101218T150606:     E--Element Clicked By.name: forgotUidPwd
+101218T150606:     T--Text Entered sean.kauffman.osv@fedex.com in element By.name: email
+101218T150648: 101218T150254 L3 WFCL Forgot User Id.png Screenshot Taken
+101218T150903: General failure in Forgot_User_Email  no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='module.forgotuseridandpassword._expanded']/table/tbody/tr/td[3]/form/table/tbody/tr[6]/td/input[2]"}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 45.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'WTC-5159473-l2', ip: '172.27.142.145', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\5159473\AppData\Local\Temp\scoped_dir23700_15858}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=69.0.3497.100, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 26d3b7289cb9dcd3fae3f736bc533a0c
+*** Element info: {Using=xpath, value=//*[@id='module.forgotuseridandpassword._expanded']/table/tbody/tr/td[3]/form/table/tbody/tr[6]/td/input[2]}
+Fail
+
+
+WFCL_Reset_Password_Email
+3, US, L3Use08312016, Test1234
+101218T150300: New driver created. Chrome
+101218T150304: Cookies Deleted
+101218T150304: Navigating to https://wwwdrt.idev.fedex.com/en-us/home.html
+101218T150306: Navigating to https://wwwdrt.idev.fedex.com/PickupApp/login?locale=en_us
+101218T150308:     T--Text Entered L3Use08312016 in element By.name: username
+101218T150310:     T--Text Entered Test1234 in element By.name: password
+101218T150538: Not able to login through WDPA
+101218T150538: Navigating to https://wwwdrt.idev.fedex.com/en-us/home.html
+101218T150540:     E--Element Clicked By.cssSelector: span.fxg-user-options__sign-in-text
+101218T150625: Not able to login through US home page
+101218T150625: Navigating to https://wwwdrt.idev.fedex.com/cgi-bin/ship_it/interNetShip?origincountry=us&locallang=en
+101218T150626: Login:L3Use08312016/Test1234
+101218T150626: Navigating to https://wwwdrt.idev.fedex.com/apps/myprofile/loginandcontact/?locale=en_US&cntry_code=us
+101218T150631: 101218T150254 3 WFCL Password Reset Email UserDetails.png Screenshot Taken
+101218T150634: Cookies Deleted
+101218T150634: Navigating to https://wwwdrt.idev.fedex.com/cgi-bin/ship_it/interNetShip?origincountry=us&locallang=en
+101218T150706:     E--Element Clicked By.name: forgotUidPwd
+101218T150707:     T--Text Entered L3Use08312016 in element By.name: userID
+101218T150923: General failure in ResetPasswordWFCL_Email
+Fail
+
+
+WFCL_AccountRegistration_INET
+3, US, 642210327
+101218T150254: Account number 642210327 recieved from WFCL_AccountRegistration_INET
+101218T150254: Not able to fully retrieve address:       
+101218T150254: LoadAddress Received: _US_ __
+101218T150254: LoadAddress is Returning: [3614 DELVERNE RD, , BALTIMORE, Maryland, MD, 21218, US, US, United States]
+101218T150254: Generate Name is Returning: [FthreeUShbyntrx, M, Lggebktr]
+101218T150254: Attempting to register with 642210327
+101218T150914: New driver created. Chrome
+101218T150917: Cookies Deleted
+101218T150917: Navigating to https://wwwdrt.idev.fedex.com/fcl/web/jsp/contactInfo1.jsp?appName=oadr&locale=us_en&step3URL=https%3A%2F%2F.fedex.com%3A443%2Ffcl%2Fweb%2Fjsp%2FfclValidateAndCreate.jsp&afterwardsURL=https://wwwdrt.idev.fedex.com%3A443%2Ffcl%2Fweb%2Fjsp%2Foadr.jsp&programIndicator=p314t9n1ey&accountOption=link
+101218T150921:     E--Element Clicked By.xpath: //input[(@name='accountType') and (@value = 'linkAccount')]
+101218T150922:     T--Text Entered FthreeUShbyntrx in element By.id: firstName
+101218T150923:     T--Text Entered M in element By.name: initials
+101218T150923:     T--Text Entered Lggebktr in element By.id: lastName
+101218T150924:     T--Text Entered sean.kauffman.osv@fedex.com in element By.id: email
+101218T150925:     T--Text Entered sean.kauffman.osv@fedex.com in element By.id: retypeEmail
+101218T150926:     T--Text Entered 3614 DELVERNE RD in element By.id: address1
+101218T150927:     T--Text Entered  in element By.name: address2
+101218T150928:     T--Text Entered BALTIMORE in element By.name: city
+101218T150928:     S--Selected Element By.id: state   by value MD
+101218T150929:     T--Text Entered 21218 in element By.id: zip
+101218T150929:     T--Text Entered 9011111111 in element By.id: phone
+101218T150930:     T--Text Entered L3InetUS101218T150254 in element By.id: uid
+101218T150930:     T--Text Entered Test1234 in element By.id: password
+101218T150931:     T--Text Entered Test1234 in element By.id: retypePassword
+101218T150931:     S--Selected Element By.id: reminderQuestion   by visible text What is your mother's first name?
+101218T150932:     T--Text Entered mom in element By.id: reminderAnswer
+101218T150932:     E--Element Clicked By.id: acceptterms
+101218T150932: Name: [FthreeUShbyntrx, M, Lggebktr]    UserID:L3InetUS101218T150254
+101218T150934: 101218T150254 3US WFCL  Screenshot Taken
+101218T150937:     E--Element Clicked By.id: createUserID
+101218T150938: 101218T150254 3US WFCL ContactInformation.png Screenshot Taken
+101218T150938:     E--Element Clicked By.id: createUserID
+101218T150939:     T--Text Entered 642210327 in element By.id: accountNumber
+101218T150939:     T--Text Entered 642210327_US in element By.id: nickName
+101218T150941: 101218T150254 3US WFCL AccountInformation.png Screenshot Taken
+101218T150941:     E--Element Clicked By.id: createUserID
+101218T150948: 101218T150254 3US WFCL RegistrationConfirmation.png Screenshot Taken
+101218T150948: Navigating to https://wwwdrt.idev.fedex.com/cgi-bin/ship_it/interNetShip?origincountry=us&locallang=en
+101218T150949:     S--Selected Element By.name: accountNumberOpco   by visible text 642210327
+101218T150950: 101218T150254 3US WFCL INET Account Selection.png Screenshot Taken
+101218T150953:     E--Element Clicked By.className: buttonpurple
+101218T150955: 101218T150254 3US WFCL INET Confirmation.png Screenshot Taken
+101218T150958:     E--Element Clicked By.xpath: //*[@id='content']/div/table/tbody/tr[1]/td[2]/table[2]/tbody/tr[3]/td/table/tbody/tr[1]/td[4]/table/tbody/tr/td/table/tbody/tr[1]/td[2]/a/img
+101218T150958: fcl_uuid value is 0w0g0hbb9t
+101218T150958: Finished WFCL_AccountRegistration  L3InetUS101218T150254/Test1234--642210327--0w0g0hbb9t
+[L3InetUS101218T150254, 642210327, 0w0g0hbb9t, INET:true, Admin:false]
+Passed
+
+
+WFCL_PasswordResetSecret
+3, US, L3Use08312016, Test1234A, mom
+101218T150714: New driver created. Chrome
+101218T150718: Cookies Deleted
+101218T150718: Navigating to https://wwwdrt.idev.fedex.com/cgi-bin/ship_it/interNetShip?origincountry=us&locallang=en
+101218T150751:     E--Element Clicked By.name: forgotUidPwd
+101218T150751:     T--Text Entered L3Use08312016 in element By.name: userID
+101218T150753: 101218T150254 3 WFCL Password Reset.png Screenshot Taken
+101218T151008: Secret quesiton mom was not accepted.
+false
+Passed
+
+
+WFCL_AccountRegistration_Admin
+3, US, 642210327
+101218T151010: Generate Name is Returning: [FthreeINETavezkid, M, Lzfcecgf]
+101218T151010: Account number 642210327 recieved from WFCL_AccountRegistration_Admin
+101218T151010: Not able to fully retrieve address:       
+101218T151010: LoadAddress Received: _US_ __
+101218T151010: LoadAddress is Returning: [3614 DELVERNE RD, , BALTIMORE, Maryland, MD, 21218, US, US, United States]
+101218T151010: Attempting to register with 642210327
+101218T151015: New driver created. Chrome
+101218T151019: Cookies Deleted
+101218T151019: Navigating to https://wwwdrt.idev.fedex.com/fcl/web/jsp/contactInfo1.jsp?appName=oadr&locale=us_en&step3URL=https%3A%2F%2F.fedex.com%3A443%2Ffcl%2Fweb%2Fjsp%2FfclValidateAndCreate.jsp&afterwardsURL=https://wwwdrt.idev.fedex.com%3A443%2Ffcl%2Fweb%2Fjsp%2Foadr.jsp&programIndicator=p314t9n1ey&accountOption=link
+101218T151022:     E--Element Clicked By.xpath: //input[(@name='accountType') and (@value = 'linkAccount')]
+101218T151023:     T--Text Entered FthreeINETavezkid in element By.id: firstName
+101218T151023:     T--Text Entered M in element By.name: initials
+101218T151023:     T--Text Entered Lzfcecgf in element By.id: lastName
+101218T151024:     T--Text Entered sean.kauffman.osv@fedex.com in element By.id: email
+101218T151024:     T--Text Entered sean.kauffman.osv@fedex.com in element By.id: retypeEmail
+101218T151025:     T--Text Entered 3614 DELVERNE RD in element By.id: address1
+101218T151025:     T--Text Entered  in element By.name: address2
+101218T151025:     T--Text Entered BALTIMORE in element By.name: city
+101218T151026:     S--Selected Element By.id: state   by value MD
+101218T151026:     T--Text Entered 21218 in element By.id: zip
+101218T151026:     T--Text Entered 9011111111 in element By.id: phone
+101218T151027:     T--Text Entered L3642210327US101218T151010 in element By.id: uid
+101218T151027:     T--Text Entered Test1234 in element By.id: password
+101218T151028:     T--Text Entered Test1234 in element By.id: retypePassword
+101218T151028:     S--Selected Element By.id: reminderQuestion   by visible text What is your mother's first name?
+101218T151028:     T--Text Entered mom in element By.id: reminderAnswer
+101218T151029:     E--Element Clicked By.id: acceptterms
+101218T151029: Name: [FthreeINETavezkid, M, Lzfcecgf]    UserID:L3642210327US101218T151010
+101218T151030: 101218T151010 3US WFCL  Screenshot Taken
+101218T151034:     E--Element Clicked By.id: createUserID
+101218T151035: 101218T151010 3US WFCL ContactInformation.png Screenshot Taken
+101218T151035:     E--Element Clicked By.id: createUserID
+101218T151036:     T--Text Entered 642210327 in element By.id: accountNumber
+101218T151036:     T--Text Entered 642210327_US in element By.id: nickName
+101218T151037: 101218T151010 3US WFCL AccountInformation.png Screenshot Taken
+101218T151038:     E--Element Clicked By.id: createUserID
+101218T151044: 101218T151010 3US WFCL RegistrationConfirmation.png Screenshot Taken
+101218T151044: Navigating to https://wwwdrt.idev.fedex.com/cgi-bin/ship_it/interNetShip?origincountry=us&locallang=en
+101218T151045:     S--Selected Element By.name: accountNumberOpco   by visible text 642210327
+101218T151046: 101218T151010 3US WFCL INET Account Selection.png Screenshot Taken
+101218T151050:     E--Element Clicked By.className: buttonpurple
+101218T151052: 101218T151010 3US WFCL INET Confirmation.png Screenshot Taken
+101218T151054:     E--Element Clicked By.xpath: //*[@id='content']/div/table/tbody/tr[1]/td[2]/table[2]/tbody/tr[3]/td/table/tbody/tr[1]/td[4]/table/tbody/tr/td/table/tbody/tr[1]/td[2]/a/img
+101218T151054: Navigating to https://wwwdrt.idev.fedex.com/fcl/web/jsp/accountInfo1.jsp?appName=fclpasskey&registration=true&countryCode=us&languageCode=en&fclHost=https://wwwdrt.idev.fedex.com&step3URL=https://wwwdrt.idev.fedex.com%2Fapps%2Fshipadmin&afterwardsURL=https://wwwdrt.idev.fedex.com%2Fapps%2Fshipadmin&locale=en_US&programIndicator=1
+101218T151055:     S--Selected Element By.name: accountNumber   by value 642210327|642210327_US
+101218T151057:     E--Element Clicked By.name: submit
+101218T151058:     T--Text Entered 4460 in element By.name: creditCardNumber
+101218T151100:     E--Element Clicked By.className: buttonpurple
+101218T151100:     T--Text Entered Company101218T151100 in element By.name: companyName
+101218T151109: 101218T151010 3US WFCL WADM CompanyName.png Screenshot Taken
+Fail
+
+
+
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+|            10-12-18 15:02:53:797|               10-12-18 15:13:26:536|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |10 minutes|
+|                         TestName|                            TestData|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ResultData|    Status|
+|            WFCL_UserRegistration|                               3, US|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               [L3USCreate101218T150254, gw0g0hbaer]|    Passed|
+|    WFCL_AccountRegistration_WDPA|                    3, US, 642210327|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          101218T150518: 101218T150254 3US WFCL General Failure.png Screenshot Taken|      Fail|
+|WFCL_CreditCardRegistrationEnroll|                   3, ss90705920, US|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 [L3ss9070592019CC101218T150254, 642138227, gw0g0hbaes, 4460, INET:true, Admin:true]|    Passed|
+|           WFCL_Forgot_User_Email|  3, US, sean.kauffman.osv@fedex.com|101218T150903: General failure in Forgot_User_Email  no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='module.forgotuseridandpassword._expanded']/table/tbody/tr/td[3]/form/table/tbody/tr[6]/td/input[2]"}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 45.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'WTC-5159473-l2', ip: '172.27.142.145', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\5159473\AppData\Local\Temp\scoped_dir23700_15858}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=69.0.3497.100, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 26d3b7289cb9dcd3fae3f736bc533a0c
+*** Element info: {Using=xpath, value=//*[@id='module.forgotuseridandpassword._expanded']/table/tbody/tr/td[3]/form/table/tbody/tr[6]/td/input[2]}|      Fail|
+|        WFCL_Reset_Password_Email|      3, US, L3Use08312016, Test1234|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           101218T150923: General failure in ResetPasswordWFCL_Email|      Fail|
+|    WFCL_AccountRegistration_INET|                    3, US, 642210327|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              [L3InetUS101218T150254, 642210327, 0w0g0hbb9t, INET:true, Admin:false]|    Passed|
+|         WFCL_PasswordResetSecret|3, US, L3Use08312016, Test1234A, mom|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               false|    Passed|
+|   WFCL_AccountRegistration_Admin|                    3, US, 642210327|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         101218T151109: 101218T151010 3US WFCL WADM CompanyName.png Screenshot Taken|      Fail|
+|______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________|
+Passed: 4 - Failed: 4
+
+
+
+

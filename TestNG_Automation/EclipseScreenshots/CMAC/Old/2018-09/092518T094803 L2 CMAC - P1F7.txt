@@ -1,0 +1,90 @@
+1 092518T094755:   Cookie: fdx_login=ssoxdev2.8511.365008dc, UUID: g0g0ggsnjc
+1 092518T094755:   Cookie: fdx_login=ssoxdev2.cdbc.47b3a73f, UUID: 00g0ggskpd
+1 092518T094756:   Cookie: fdx_login=ssoxdev1.eb09.2cf50da6, UUID: 00g0ggsmi6
+1 092518T094757:   Cookie: fdx_login=ssoxdev1.d28a.7aaf9438, UUID: ya4VSg2fTR
+1 092518T094757:   Cookie: fdx_login=ssoxdev1.c354.19222929, UUID: 2PAQ4oPRw9
+1 092518T094758:   Cookie: fdx_login=ssoxdev1.e0bf.4cacaa9b, UUID: uH3swRG04M
+1 092518T094758:   Cookie: fdx_login=ssoxdev2.84b6.b46d90f, UUID: ZfHdrdXFpn
+1 092518T094759:   Cookie: fdx_login=ssoxdev2.d3bf.72e7a8ef, UUID: F06fOrD7fh
+1 092518T094759:   Cookie: fdx_login=ssoxdev2.c37c.5c517fc7, UUID: NrpHGSqDVP
+1 092518T094759:   Cookie: fdx_login=ssoxdev2.cf38.46bee9c2, UUID: g0g0ggsnnc
+1 092518T094759:   Cookie: fdx_login=ssoxdev2.ce09.38c71be1, UUID: 00g0ggsmnc
+1 092518T094759: Headers: [OAuthToken (Will be populated within the class), Level, OAuthToken_URL, Client_ID, Client_Secret, Create_Project, Retrieve_Project_Details, Update_Project_URL, Delete_Project_URL, Retrieve_Project_Summary, Create_Credentials_Project, Delete_Credential, Delete_Resource, Add_Resources_To_Project, Passkey_UserID, Passkey_Password_, Passkey_Cookie, Passkey_UUID, Non_Passkey_UserID, Non_Passkey_Password_, Non_Passkey_Cookie, Non_Passkey_UUID]
+1 092518T094759: [, 2, , , , https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/credentials/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, L2USCC072018T161002, L2USCC051118T114912, L2USCC072418T142910, L3TWNoRs, CASTDC60, EMEAGRP140, L2AdminBR605083560, APACCOMY2, Test1234, Test1234, Test1234, Test1234, Test1234, Test1234, Test1234, Test1234, will be populated at run time, will be populated at run time, L2WIDMWgtm080618T164419, L2InetNon081518T171619, L2USCreate082018T140151, Test1234, Test1234, Test1234, will be populated at run time, will be populated at run time]
+
+
+Thread -- Time (MMDDYY'T'HHMMSS): -- Current progress
+CreateCredentialsForProject passed [https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, fdx_login=ssoxdev2.8511.365008dc]
+CreateCredentialsForProject failed [https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, fdx_login=ssoxdev2.cdbc.47b3a73f]
+CreateCredentialsForProject failed [https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, fdx_login=ssoxdev1.eb09.2cf50da6]
+CreateCredentialsForProject failed [https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, fdx_login=ssoxdev1.d28a.7aaf9438]
+CreateCredentialsForProject failed [https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, fdx_login=ssoxdev1.c354.19222929]
+CreateCredentialsForProject failed [https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, fdx_login=ssoxdev1.e0bf.4cacaa9b]
+CreateCredentialsForProject failed [https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, fdx_login=ssoxdev2.84b6.b46d90f]
+CreateCredentialsForProject failed [https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, fdx_login=ssoxdev2.d3bf.72e7a8ef]
+
+
+@@ Passed Test Cases:
+1)    <-- CreateCredentialsForProject(ID:325036): Create the individual credential that is linked to the project.    URL:https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, Cookie:fdx_login=ssoxdev2.8511.365008dc
+Request: Pin from fdx_login=ssoxdev2.8511.365008dc
+Response: 10561
+Request: 
+Response: {"transactionId":"0e328dd9-0b30-400b-b00c-eb7b14267ffb","output":{"projectid":10561,"creationtime":"2018.09.24.11.39.59","expirationdate":"2018.10.24.11.39.59","key":"DQ55NSH322","accountNumber":"784795640"}}
+Scenario_Passed
+
+
+
+@@ Failed Test Cases:
+2)    <-- CreateCredentialsForProject(ID:325036): Create the individual credential that is linked to the project.    URL:https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, Cookie:fdx_login=ssoxdev1.c354.19222929
+Request: Pin from fdx_login=ssoxdev1.c354.19222929
+Response: 10020
+Request: 
+Response: {"transactionId":"1c36b2e8-a339-4ff7-9d3c-6ac9b7de398e","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Failed
+
+3)    <-- CreateCredentialsForProject(ID:325036): Create the individual credential that is linked to the project.    URL:https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, Cookie:fdx_login=ssoxdev1.d28a.7aaf9438
+Request: Pin from fdx_login=ssoxdev1.d28a.7aaf9438
+Response: 10636
+Request: 
+Response: {"transactionId":"f92c25a1-6b65-4e3e-83e9-8d526718580f","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Failed
+
+4)    <-- CreateCredentialsForProject(ID:325036): Create the individual credential that is linked to the project.    URL:https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, Cookie:fdx_login=ssoxdev1.e0bf.4cacaa9b
+Request: Pin from fdx_login=ssoxdev1.e0bf.4cacaa9b
+Response: 10241
+Request: 
+Response: {"transactionId":"daba1e38-6232-4ed2-bbc1-c9ab2ddf7771","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Failed
+
+5)    <-- CreateCredentialsForProject(ID:325036): Create the individual credential that is linked to the project.    URL:https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, Cookie:fdx_login=ssoxdev1.eb09.2cf50da6
+Request: Pin from fdx_login=ssoxdev1.eb09.2cf50da6
+Response: 10441
+Request: 
+Response: {"transactionId":"054a178f-1b1f-4867-af93-1faa4938c32e","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Failed
+
+6)    <-- CreateCredentialsForProject(ID:325036): Create the individual credential that is linked to the project.    URL:https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, Cookie:fdx_login=ssoxdev2.84b6.b46d90f
+Request: Pin from fdx_login=ssoxdev2.84b6.b46d90f
+Response: 10103
+Request: 
+Response: {"transactionId":"3f34dc17-44e6-48b2-aa4e-19c4deb0196a","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Failed
+
+7)    <-- CreateCredentialsForProject(ID:325036): Create the individual credential that is linked to the project.    URL:https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, Cookie:fdx_login=ssoxdev2.cdbc.47b3a73f
+Request: Pin from fdx_login=ssoxdev2.cdbc.47b3a73f
+Response: 10252
+Request: 
+Response: {"transactionId":"2f5b1621-cc5a-4a33-bedf-1ce8bb150bff","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Failed
+
+8)    <-- CreateCredentialsForProject(ID:325036): Create the individual credential that is linked to the project.    URL:https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, Cookie:fdx_login=ssoxdev2.d3bf.72e7a8ef
+Request: Pin from fdx_login=ssoxdev2.d3bf.72e7a8ef
+Response: 10454
+Request: 
+Response: {"transactionId":"62682aaa-d68f-43fd-8ad7-5554a1c5659b","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Failed
+
+
+Execution Time in seconds: 10  (10633 miliseconds)
+Passed: 1 - Failed: 7
+

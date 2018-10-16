@@ -1,0 +1,147 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>7/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Oct 01 16:41:24 CDT 2018</td>
+</tr>
+<tr><td>Total time:</td><td>208 seconds (208990 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestNG.WIDM_TestNG.WIDM_Registration_ErrorMessages()'><b>WIDM_Registration_ErrorMessages</b><br>Test class: TestNG.WIDM_TestNG</td>
+<td><div><pre>org.testng.internal.reflect.MethodMatcherException: 
+Data provider mismatch
+Method: WIDM_Registration_ErrorMessages([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) 3,(java.lang.String) US]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace37880142", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace37880142'><pre>org.testng.internal.reflect.MethodMatcherException: 
+Data provider mismatch
+Method: WIDM_Registration_ErrorMessages([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) 3,(java.lang.String) US]
+	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:45)
+	at org.testng.internal.Parameters.injectParameters(Parameters.java:796)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:955)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>TestNG.WIDM_TestNG@768b970c</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestNG.WIDM_TestNG.ResetPasswordWIDM_Email()'><b>ResetPasswordWIDM_Email</b><br>Test class: TestNG.WIDM_TestNG<br>Parameters: 3, L3WIDMWgtm072418T130916, Test1234</td>
+<td></td>
+<td>32</td>
+<td>TestNG.WIDM_TestNG@768b970c</td></tr>
+<tr>
+<td title='TestNG.WIDM_TestNG.WIDM_ForgotUserID()'><b>WIDM_ForgotUserID</b><br>Test class: TestNG.WIDM_TestNG<br>Parameters: 3, sean.kauffman.osv@fedex.com</td>
+<td></td>
+<td>122</td>
+<td>TestNG.WIDM_TestNG@768b970c</td></tr>
+<tr>
+<td title='TestNG.WIDM_TestNG.WIDM_Registration()'><b>WIDM_Registration</b><br>Test class: TestNG.WIDM_TestNG<br>Parameters: 3, CA</td>
+<td></td>
+<td>46</td>
+<td>TestNG.WIDM_TestNG@768b970c</td></tr>
+<tr>
+<td title='TestNG.WIDM_TestNG.WIDM_Registration()'><b>WIDM_Registration</b><br>Test class: TestNG.WIDM_TestNG<br>Parameters: 3, US</td>
+<td></td>
+<td>69</td>
+<td>TestNG.WIDM_TestNG@768b970c</td></tr>
+<tr>
+<td title='TestNG.WIDM_TestNG.WIDM_RegistrationEFWS()'><b>WIDM_RegistrationEFWS</b><br>Test class: TestNG.WIDM_TestNG<br>Parameters: 3, US</td>
+<td></td>
+<td>44</td>
+<td>TestNG.WIDM_TestNG@768b970c</td></tr>
+<tr>
+<td title='TestNG.WIDM_TestNG.WIDM_ResetPasswordSecret()'><b>WIDM_ResetPasswordSecret</b><br>Test class: TestNG.WIDM_TestNG<br>Parameters: 3, CA, L3WIDMWgtm072418T130916, Test1234, mom</td>
+<td></td>
+<td>115</td>
+<td>TestNG.WIDM_TestNG@768b970c</td></tr>
+<tr>
+<td title='TestNG.WIDM_TestNG.WIDM_ResetPasswordSecret()'><b>WIDM_ResetPasswordSecret</b><br>Test class: TestNG.WIDM_TestNG<br>Parameters: 3, US, L3WIDMWgtm072418T130916, Test1234, mom</td>
+<td></td>
+<td>195</td>
+<td>TestNG.WIDM_TestNG@768b970c</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,61 @@
+
+WFCL_CreditCardRegistrationEnroll
+3, ss90705920, US
+101218T145953: LoadCreditCard Received: V
+101218T145953: LoadCreditCard is Returning: [Visa, 4005554444444460, 460, 12, 20]
+101218T145953: LoadAddress Received: _US_ __
+101218T145953: LoadAddress is Returning: [3614 DELVERNE RD, , BALTIMORE, Maryland, MD, 21218, US, US, United States]
+101218T145953: Generate Name is Returning: [FthreeUSCCxlebtzx, M, Luahdkvz]
+101218T150000: New driver created. Chrome
+101218T150004: Cookies Deleted
+101218T150004: Navigating to https://wwwdrt.idev.fedex.com/cgi-bin/ship_it/interNetShip?origincountry=us&locallang=en
+101218T150035: Navigating to https://wwwdrt.idev.fedex.com/fcl/ALL?enrollmentid=ss90705920&language=en&country=us
+101218T150037: 101218T145953 L3 WFCL ss90705920 CC Discount Page.png Screenshot Taken
+101218T150041:     E--Element Clicked By.linkText: Finish registering for a FedEx account
+101218T150042:     T--Text Entered FthreeUSCCxlebtzx in element By.id: firstName
+101218T150042:     T--Text Entered M in element By.name: initials
+101218T150043:     T--Text Entered Luahdkvz in element By.id: lastName
+101218T150043:     T--Text Entered sean.kauffman.osv@fedex.com in element By.id: email
+101218T150044:     T--Text Entered sean.kauffman.osv@fedex.com in element By.id: retypeEmail
+101218T150045:     T--Text Entered 3614 DELVERNE RD in element By.id: address1
+101218T150045:     T--Text Entered  in element By.name: address2
+101218T150045:     T--Text Entered BALTIMORE in element By.name: city
+101218T150046:     S--Selected Element By.id: state   by value MD
+101218T150046:     T--Text Entered 21218 in element By.id: zip
+101218T150047:     T--Text Entered 9011111111 in element By.id: phone
+101218T150047:     T--Text Entered L3ss9070592014CC101218T145953 in element By.id: uid
+101218T150047:     T--Text Entered Test1234 in element By.id: password
+101218T150048:     T--Text Entered Test1234 in element By.id: retypePassword
+101218T150048:     S--Selected Element By.id: reminderQuestion   by visible text What is your mother's first name?
+101218T150048:     T--Text Entered mom in element By.id: reminderAnswer
+101218T150049:     E--Element Clicked By.id: acceptterms
+101218T150049: Name: [FthreeUSCCxlebtzx, M, Luahdkvz]    UserID:L3ss9070592014CC101218T145953
+101218T150050: 101218T145953 L3 WFCL ss90705920 CC ContactInformation.png Screenshot Taken
+101218T150054:     E--Element Clicked By.id: createUserID
+101218T150104: WFCL_CC_Page recieved: Visa, US From: CreditCardRegistrationEnroll
+101218T150104: fcl_uuid value is gw0g0hbaeq
+101218T150104:     T--Text Entered 4005554444444460 in element By.id: creditCardNumber
+101218T150105:     T--Text Entered 460 in element By.id: creditCardIDNumber
+101218T150105:     S--Selected Element By.id: monthExpiry   by visible text 12
+101218T150105:     S--Selected Element By.id: yearExpiry   by visible text 20
+101218T150106:     E--Element Clicked By.name: editshipinfo
+101218T150106: Verified Text: Country/Territory     By.xpath: //*[@id='shipping-address-fields']/label[12]/span[1]
+101218T150106:     E--Element Clicked By.name: editccinfo
+101218T150106: Verified Text: Country/Territory     By.xpath: //*[@id='billing-address']/label[17]/span[1]
+101218T150124: 101218T145953 L3 WFCL ss90705920 CC General Failure.png Screenshot Taken
+Fail
+
+
+101218T145949: LoadEnrollmentIDs Received: _US
+101218T145949: LoadEnrollmentIDs returning: _[ss90705920, US, 16/8]
+
+___________________________________________________________________________________________________________________________________________________________
+|            10-12-18 14:59:49:271|10-12-18 15:01:29:369|                                                                                       |1 minutes|
+|                         TestName|             TestData|                                                                             ResultData|   Status|
+|WFCL_CreditCardRegistrationEnroll|    3, ss90705920, US|101218T150124: 101218T145953 L3 WFCL ss90705920 CC General Failure.png Screenshot Taken|     Fail|
+|_________________________________________________________________________________________________________________________________________________________|
+Passed: 0 - Failed: 1
+
+
+
+

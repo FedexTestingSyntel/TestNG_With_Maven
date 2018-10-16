@@ -1,0 +1,272 @@
+080618T093820: OAuth: https://apidrt.idev.fedex.com:8443/auth/oauth/v2/token  Iden: l7xx1892f99a6f88470ba29abc141cd7bd8d  Secret: a4325d011acf4876b3fe3206931b8f5a
+
+080618T093821: $APIG$ Endpoint is being used on Level 3.
+IssueURL = https://apidrt.idev.fedex.com:8443/security/v1/pin
+VerifyURL = https://apidrt.idev.fedex.com:8443/security/v1/pin/verify
+VelocityURL = https://apidrt.idev.fedex.com:8443/security/v1/addresses/velocitycheck
+
+
+<-- AddressVelocity        OrgName: FDM-POSTCARD-PIN
+080618T093821: Verify that the address velocity of 3 is reached and the correct error code is received.
+080618T093821: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"tcawqwcqle-hytzzzfqcznamxdgxhfvhfse"}
+080618T093822: Response: {
+    "error": "invalid_request",
+    "error_description": "validation error"
+}
+Failed
+
+<-- IssuePin        OrgName: FDM-POSTCARD-PIN
+080618T093822: Verify that the user is able to request a pin.
+080618T093822: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"vyjmcaecqo-eairgcidwqyqdtccsveupuvk"}
+080618T093822: Response: {
+    "error": "invalid_request",
+    "error_description": "validation error"
+}
+Failed
+
+<-- IssuePinVelocity        OrgName: FDM-POSTCARD-PIN
+080618T093822: Verify that the user can request up to 3 pin numbers before unable to request more.
+080618T093822: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"ytfmsjrkuq-ncblswdkjgkiqipsioaxwcqj"}
+080618T093822: Response: {
+    "error": "invalid_request",
+    "error_description": "validation error"
+}
+Failed
+
+<-- VerifyPinNoLongerValid        OrgName: FDM-POSTCARD-PIN
+080618T093822: Verify that when user requests a second pin that the first is no longer valid.
+080618T093822: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"fcmsnstlxx-cecmpqunuvdmojnrpunitfvc"}
+080618T093822: Response: {
+    "error": "invalid_request",
+    "error_description": "validation error"
+}
+Failed
+
+<-- VerifyPinThreshold        OrgName: FDM-POSTCARD-PIN
+080618T093822: When an invalid pin is entered the pin failure message should be returned passed the velocity threshold. 32
+080618T093822: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"rpuuklmaax-cmqtdiubrehgjwiikuqqtqhh"}
+080618T093822: Response: {
+    "error": "invalid_request",
+    "error_description": "validation error"
+}
+Failed
+
+<-- VerifyPinValid        OrgName: FDM-POSTCARD-PIN
+080618T093822: Verify that user is able to request a pin and then verify that can recieve success when using the generated pin.
+080618T093822: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"jzhesasjad-khfumpjsgqafyfjteqzhsauz"}
+080618T093823: Response: {
+    "error": "invalid_request",
+    "error_description": "validation error"
+}
+Failed
+
+<-- zIssuePinExpiration        OrgName: FDM-POSTCARD-PIN
+080618T093823: Verify that after a pin is expired it can no longer be used to complete registration.
+080618T093823: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"ffrtnussiu-yhlxaufzsgavokbitffeshik"}
+080618T093823: Response: {
+    "error": "invalid_request",
+    "error_description": "validation error"
+}
+Failed
+080618T093823: OAuth: https://apidrt.idev.fedex.com:8443/auth/oauth/v2/token  Iden: l7xx1892f99a6f88470ba29abc141cd7bd8d  Secret: a4325d011acf4876b3fe3206931b8f5a
+
+080618T093823: $APIG$ Endpoint is being used on Level 3.
+IssueURL = https://apidrt.idev.fedex.com:8443/security/v1/pin
+VerifyURL = https://apidrt.idev.fedex.com:8443/security/v1/pin/verify
+VelocityURL = https://apidrt.idev.fedex.com:8443/security/v1/addresses/velocitycheck
+
+
+<-- AddressVelocity        OrgName: FDM-PHONE-PIN
+080618T093823: Verify that the address velocity of 3 is reached and the correct error code is received.
+080618T093823: Request: {"orgName":"FDM-PHONE-PIN","userName":"pibbawewzu-bchakybsnuftsyiemeabycyd"}
+080618T093823: Response: {
+    "error": "invalid_request",
+    "error_description": "validation error"
+}
+Failed
+
+<-- IssuePin        OrgName: FDM-PHONE-PIN
+080618T093823: Verify that the user is able to request a pin.
+080618T093823: Request: {"orgName":"FDM-PHONE-PIN","userName":"kcacrcxwzg-rqayobaiefksofrcurhpxtra"}
+080618T093823: Response: {
+    "error": "invalid_request",
+    "error_description": "validation error"
+}
+Failed
+
+<-- IssuePinVelocity        OrgName: FDM-PHONE-PIN
+080618T093823: Verify that the user can request up to 3 pin numbers before unable to request more.
+080618T093823: Request: {"orgName":"FDM-PHONE-PIN","userName":"vvutorogps-gglozbqsofganuovriqboxim"}
+080618T093823: Response: {
+    "error": "invalid_request",
+    "error_description": "validation error"
+}
+Failed
+
+<-- VerifyPinNoLongerValid        OrgName: FDM-PHONE-PIN
+080618T093823: Verify that when user requests a second pin that the first is no longer valid.
+080618T093823: Request: {"orgName":"FDM-PHONE-PIN","userName":"ovwpftznpb-zqnraiduznfmhxxxasfkphxa"}
+080618T093823: Response: {
+    "error": "invalid_request",
+    "error_description": "validation error"
+}
+Failed
+
+<-- VerifyPinThreshold        OrgName: FDM-PHONE-PIN
+080618T093823: When an invalid pin is entered the pin failure message should be returned passed the velocity threshold. 32
+080618T093823: Request: {"orgName":"FDM-PHONE-PIN","userName":"zgevcqwtep-aunmdpyzalqxjsvpukzmlsaj"}
+080618T093824: Response: {
+    "error": "invalid_request",
+    "error_description": "validation error"
+}
+Failed
+
+<-- VerifyPinValid        OrgName: FDM-PHONE-PIN
+080618T093824: Verify that user is able to request a pin and then verify that can recieve success when using the generated pin.
+080618T093824: Request: {"orgName":"FDM-PHONE-PIN","userName":"spmezqtsck-hcuzrcsytpqvhaocopcddvbn"}
+080618T093824: Response: {
+    "error": "invalid_request",
+    "error_description": "validation error"
+}
+Failed
+
+<-- zIssuePinExpiration        OrgName: FDM-PHONE-PIN
+080618T093824: Verify that after a pin is expired it can no longer be used to complete registration.
+080618T093824: Request: {"orgName":"FDM-PHONE-PIN","userName":"pbqvehdtkd-guwpafzsnwgewqqmqsllpkzf"}
+080618T093824: Response: {
+    "error": "invalid_request",
+    "error_description": "validation error"
+}
+Failed
+080618T093824: OAuth: https://apidrt.idev.fedex.com:8443/auth/oauth/v2/token  Iden: l7xx1892f99a6f88470ba29abc141cd7bd8d  Secret: a4325d011acf4876b3fe3206931b8f5a
+
+080618T093824: $Direct$ Endpoint is being used on Level 3.
+IssueURL = http://mfacdrt-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN
+VerifyURL = http://mfacdrt-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN
+VelocityURL = http://mfacdrt-cos-vip.test.cloud.fedex.com:9090/mfac/v3/addressVelocityCheck
+
+
+<-- AddressVelocity        OrgName: FDM-POSTCARD-PIN
+080618T093824: Verify that the address velocity of 3 is reached and the correct error code is received.
+080618T093824: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"svysbalpdo-uxzribfuuyspsjpdvuddtujo"}
+080618T093824: Response: {"transactionId":"0c00f7a6-8f1d-4587-b578-9e1ee1de8f21","output":{}}
+Failed
+
+<-- IssuePin        OrgName: FDM-POSTCARD-PIN
+080618T093824: Verify that the user is able to request a pin.
+080618T093824: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"xwucdtqynh-qamczdlbcxqgajaxjuyzndgi"}
+080618T093824: Response: {"transactionId":"e2ab32da-adef-42c7-a09d-6bdea99da019","errors":[{"code":"5700","message":"Unfortunately, you have exceeded your attempts for verification. Please try again later."}]}
+Failed
+
+<-- IssuePinVelocity        OrgName: FDM-POSTCARD-PIN
+080618T093824: Verify that the user can request up to 3 pin numbers before unable to request more.
+080618T093824: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"agzdbrdvsi-upuycvzmrsnrpxhtglxonblu"}
+080618T093824: Response: {"transactionId":"fbb9d38c-4f52-408c-a96f-bd7955a5f6d7","errors":[{"code":"5700","message":"Unfortunately, you have exceeded your attempts for verification. Please try again later."}]}
+Failed
+
+<-- VerifyPinNoLongerValid        OrgName: FDM-POSTCARD-PIN
+080618T093824: Verify that when user requests a second pin that the first is no longer valid.
+080618T093824: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"oncupxhvgm-uduzbtykfltywqvwarszajxd"}
+080618T093824: Response: {"errors":[{"code":"SYSTEM.UNEXPECTED.ERROR"}]}
+Failed
+
+<-- VerifyPinThreshold        OrgName: FDM-POSTCARD-PIN
+080618T093824: When an invalid pin is entered the pin failure message should be returned passed the velocity threshold. 32
+080618T093824: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"kuhmzkhwey-frneokywcuuwfphnwylsnpwo"}
+080618T093825: Response: {"transactionId":"7181ea8d-bdb5-4a66-a658-c8053f971ed9","errors":[{"code":"5700","message":"Unfortunately, you have exceeded your attempts for verification. Please try again later."}]}
+Failed
+
+<-- VerifyPinValid        OrgName: FDM-POSTCARD-PIN
+080618T093825: Verify that user is able to request a pin and then verify that can recieve success when using the generated pin.
+080618T093825: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"hdvbiostzu-obbjwrhgvcdxmjbmpuvbxzne"}
+080618T093826: Response: {"transactionId":"b3302614-bc2b-44cf-a2f4-7b7988b2d0da","errors":[{"code":"5700","message":"Unfortunately, you have exceeded your attempts for verification. Please try again later."}]}
+Failed
+
+<-- zIssuePinExpiration        OrgName: FDM-POSTCARD-PIN
+080618T093826: Verify that after a pin is expired it can no longer be used to complete registration.
+080618T093826: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"okenzqqaqz-lltynohaxwlrmqrfgawrjteb"}
+080618T093826: Response: {"errors":[{"code":"SYSTEM.UNEXPECTED.ERROR"}]}
+Failed
+080618T093826: OAuth: https://apidrt.idev.fedex.com:8443/auth/oauth/v2/token  Iden: l7xx1892f99a6f88470ba29abc141cd7bd8d  Secret: a4325d011acf4876b3fe3206931b8f5a
+
+080618T093826: $Direct$ Endpoint is being used on Level 3.
+IssueURL = http://mfacdrt-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN
+VerifyURL = http://mfacdrt-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN
+VelocityURL = http://mfacdrt-cos-vip.test.cloud.fedex.com:9090/mfac/v3/addressVelocityCheck
+
+
+<-- AddressVelocity        OrgName: FDM-PHONE-PIN
+080618T093826: Verify that the address velocity of 3 is reached and the correct error code is received.
+080618T093826: Request: {"orgName":"FDM-PHONE-PIN","userName":"ewaopxnzpj-mluhevuvamocdabswihwhxia"}
+080618T093826: Response: {"transactionId":"f18787f8-0217-439e-b9ac-8314ae84d2c3","output":{}}
+Failed
+
+<-- IssuePin        OrgName: FDM-PHONE-PIN
+080618T093826: Verify that the user is able to request a pin.
+080618T093826: Request: {"orgName":"FDM-PHONE-PIN","userName":"frcfyjykdo-soykhabtpvtwgzgogimgboea"}
+080618T093826: Response: {"transactionId":"a6bc775c-ec96-41d2-9e76-fba10d35be97","errors":[{"code":"5700","message":"Unfortunately, you have exceeded your attempts for verification. Please try again later."}]}
+Failed
+
+<-- IssuePinVelocity        OrgName: FDM-PHONE-PIN
+080618T093826: Verify that the user can request up to 3 pin numbers before unable to request more.
+080618T093826: Request: {"orgName":"FDM-PHONE-PIN","userName":"nbwecvkwxv-eblxmujwducfvbsfedpqydbo"}
+080618T093826: Response: {"transactionId":"541fc039-6cca-4bbd-9aeb-dd1e03bda581","errors":[{"code":"5700","message":"Unfortunately, you have exceeded your attempts for verification. Please try again later."}]}
+Failed
+
+<-- VerifyPinNoLongerValid        OrgName: FDM-PHONE-PIN
+080618T093826: Verify that when user requests a second pin that the first is no longer valid.
+080618T093826: Request: {"orgName":"FDM-PHONE-PIN","userName":"jjqtzwxgeg-neuriczdeyazsbjbtuyumvre"}
+080618T093826: Response: {"errors":[{"code":"SYSTEM.UNEXPECTED.ERROR"}]}
+Failed
+
+<-- VerifyPinThreshold        OrgName: FDM-PHONE-PIN
+080618T093826: When an invalid pin is entered the pin failure message should be returned passed the velocity threshold. 32
+080618T093826: Request: {"orgName":"FDM-PHONE-PIN","userName":"nxheejvlwr-fdlgtmsdqjzuqijzftagvgth"}
+080618T093826: Response: {"errors":[{"code":"SYSTEM.UNEXPECTED.ERROR"}]}
+Failed
+
+<-- VerifyPinValid        OrgName: FDM-PHONE-PIN
+080618T093826: Verify that user is able to request a pin and then verify that can recieve success when using the generated pin.
+080618T093826: Request: {"orgName":"FDM-PHONE-PIN","userName":"zgnftmqgqr-kcuxsbvwqbjhdjexfunswnxb"}
+080618T093826: Response: {"transactionId":"fb094461-fbba-4d81-b233-c80a59729d0d","errors":[{"code":"5700","message":"Unfortunately, you have exceeded your attempts for verification. Please try again later."}]}
+Failed
+
+<-- zIssuePinExpiration        OrgName: FDM-PHONE-PIN
+080618T093826: Verify that after a pin is expired it can no longer be used to complete registration.
+080618T093826: Request: {"orgName":"FDM-PHONE-PIN","userName":"zlrxavegcc-jxuazduxqwlwtpmfeozrewku"}
+080618T093826: Response: {"transactionId":"ba81eb65-4cc3-4d7b-92e8-59157a7e9feb","errors":[{"code":"5700","message":"Unfortunately, you have exceeded your attempts for verification. Please try again later."}]}
+Failed
+
+________________________________________________________________________________________
+|                            08-06-18 09:38:21:678 | 08-06-18 09:38:26:911 | 5 seconds |
+|          AddressVelocity  FDM-POSTCARD-PIN  APIG |         080618T093822 |    Failed |
+|                 IssuePin  FDM-POSTCARD-PIN  APIG |         080618T093822 |    Failed |
+|         IssuePinVelocity  FDM-POSTCARD-PIN  APIG |         080618T093822 |    Failed |
+|   VerifyPinNoLongerValid  FDM-POSTCARD-PIN  APIG |         080618T093822 |    Failed |
+|       VerifyPinThreshold  FDM-POSTCARD-PIN  APIG |         080618T093822 |    Failed |
+|           VerifyPinValid  FDM-POSTCARD-PIN  APIG |         080618T093823 |    Failed |
+|      zIssuePinExpiration  FDM-POSTCARD-PIN  APIG |         080618T093823 |    Failed |
+|             AddressVelocity  FDM-PHONE-PIN  APIG |         080618T093823 |    Failed |
+|                    IssuePin  FDM-PHONE-PIN  APIG |         080618T093823 |    Failed |
+|            IssuePinVelocity  FDM-PHONE-PIN  APIG |         080618T093823 |    Failed |
+|      VerifyPinNoLongerValid  FDM-PHONE-PIN  APIG |         080618T093823 |    Failed |
+|          VerifyPinThreshold  FDM-PHONE-PIN  APIG |         080618T093824 |    Failed |
+|              VerifyPinValid  FDM-PHONE-PIN  APIG |         080618T093824 |    Failed |
+|         zIssuePinExpiration  FDM-PHONE-PIN  APIG |         080618T093824 |    Failed |
+|        AddressVelocity  FDM-POSTCARD-PIN  Direct |         080618T093824 |    Failed |
+|               IssuePin  FDM-POSTCARD-PIN  Direct |         080618T093824 |    Failed |
+|       IssuePinVelocity  FDM-POSTCARD-PIN  Direct |         080618T093824 |    Failed |
+| VerifyPinNoLongerValid  FDM-POSTCARD-PIN  Direct |         080618T093824 |    Failed |
+|     VerifyPinThreshold  FDM-POSTCARD-PIN  Direct |         080618T093825 |    Failed |
+|         VerifyPinValid  FDM-POSTCARD-PIN  Direct |         080618T093826 |    Failed |
+|    zIssuePinExpiration  FDM-POSTCARD-PIN  Direct |         080618T093826 |    Failed |
+|           AddressVelocity  FDM-PHONE-PIN  Direct |         080618T093826 |    Failed |
+|                  IssuePin  FDM-PHONE-PIN  Direct |         080618T093826 |    Failed |
+|          IssuePinVelocity  FDM-PHONE-PIN  Direct |         080618T093826 |    Failed |
+|    VerifyPinNoLongerValid  FDM-PHONE-PIN  Direct |         080618T093826 |    Failed |
+|        VerifyPinThreshold  FDM-PHONE-PIN  Direct |         080618T093826 |    Failed |
+|            VerifyPinValid  FDM-PHONE-PIN  Direct |         080618T093826 |    Failed |
+|       zIssuePinExpiration  FDM-PHONE-PIN  Direct |         080618T093826 |    Failed |
+|______________________________________________________________________________________|
+Passed: 0 - Failed: 28
+

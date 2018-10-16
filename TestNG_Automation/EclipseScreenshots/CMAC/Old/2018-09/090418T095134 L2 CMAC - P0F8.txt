@@ -1,0 +1,89 @@
+1 090418T095129: Get cookie from USRC for L2USCC051118T114912/Test1234
+1 090418T095130:   Cookie: fdx_login=ssoxdev1.8dec.df52ee2, UUID: 00g0ggskpd
+1 090418T095130: Get cookie from USRC for L2USCC080818T103410/Test1234
+1 090418T095131:   Cookie: fdx_login=ssoxdev2.a321.7f613028, UUID: 00g0ggsml6
+1 090418T095131: Get cookie from USRC for L2WIDMWgtm080618T164419/Test1234
+1 090418T095131:   Cookie: fdx_login=ssoxdev1.ca86.5f4bc5ef, UUID: NrpHGSqDVP
+1 090418T095131: Get cookie from USRC for L2InetNon081518T171619/Test1234
+1 090418T095131:   Cookie: fdx_login=ssoxdev2.d8c2.5d1c06c2, UUID: g0g0ggsnnc
+1 090418T095131: Get cookie from USRC for L2USCreate082018T140151/Test1234
+1 090418T095131:   Cookie: fdx_login=ssoxdev1.d595.2f7160ea, UUID: 00g0ggsmnc
+1 090418T095131: Headers: [OAuthToken (Will be populated within the class), Level, OAuthToken_URL, Client_ID, Client_Secret, Create_Project, Retrieve_Project_Details, Update_Project_URL, Delete_Project_URL, Retrieve_Project_Summary, Create_Credentials_Project, Delete_Credential, DeleteResource, Create_Resource_Project, Passkey_UserID, Passkey_Password_, Passkey_Cookie, Passkey_UUID, Non_Passkey_UserID, Non_Passkey_Password_, Non_Passkey_Cookie, Non_Passkey_UUID]
+1 090418T095131: [, 2, , , , https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/credentials/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, L2USCC051118T114912, L2USCC080818T103410, Test1234, Test1234, fdx_login=ssoxdev1.8dec.df52ee2, fdx_login=ssoxdev2.a321.7f613028, 00g0ggskpd, 00g0ggsml6, L2WIDMWgtm080618T164419, L2InetNon081518T171619, L2USCreate082018T140151, Test1234, Test1234, Test1234, fdx_login=ssoxdev1.ca86.5f4bc5ef, fdx_login=ssoxdev2.d8c2.5d1c06c2, fdx_login=ssoxdev1.d595.2f7160ea, NrpHGSqDVP, g0g0ggsnnc, 00g0ggsmnc]
+
+
+Thread -- Time (MMDDYY'T'HHMMSS): -- Current progress
+1 090418T095131: CreateProject Request : {"resourcesInput":[{"resourceDescription":"Track Service 0"}],"projectname":"Proj 1 090418T095131"}
+1 090418T095132: CreateProject Response : {"transactionId":"afced60c-d02b-450c-b040-bb671e7367bb","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+CreateProject failed [https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, fdx_login=ssoxdev2.a321.7f613028, Proj 1 090418T095131, [Ljava.lang.String;@35a3d49f]
+1 090418T095132: CreateProject Request : {"resourcesInput":[{"resourceDescription":"Track Service 0"},{"resourceDescription":"Track Service 1"}],"projectname":"Proj 2 090418T095131"}
+1 090418T095132: CreateProject Response : {"transactionId":"c45ec6a5-058d-4c66-88d7-a9ee332a8a27","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+CreateProject failed [https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, fdx_login=ssoxdev1.8dec.df52ee2, Proj 2 090418T095131, [Ljava.lang.String;@6ca18a14]
+1 090418T095132: CreateProject Request : {"resourcesInput":[{"resourceDescription":"Track Service 0"},{"resourceDescription":"Track Service 1"},{"resourceDescription":"Track Service 2"}],"projectname":"Proj 3 090418T095131"}
+1 090418T095132: CreateProject Response : {"transactionId":"701cdaa0-d884-4515-8e62-13e4f5ada097","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+CreateProject failed [https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, fdx_login=ssoxdev2.a321.7f613028, Proj 3 090418T095131, [Ljava.lang.String;@1b410b60]
+1 090418T095132: CreateProject Request : {"resourcesInput":[{"resourceDescription":"Track Service 0"},{"resourceDescription":"Track Service 1"},{"resourceDescription":"Track Service 2"},{"resourceDescription":"Track Service 3"}],"projectname":"Proj 4 090418T095131"}
+1 090418T095133: CreateProject Response : {"transactionId":"6a8a97ac-ae04-426e-8412-e0640e460b94","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+CreateProject failed [https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, fdx_login=ssoxdev1.8dec.df52ee2, Proj 4 090418T095131, [Ljava.lang.String;@77659b30]
+1 090418T095133: CreateProject Request : {"resourcesInput":[{"resourceDescription":"Track Service 0"},{"resourceDescription":"Track Service 1"},{"resourceDescription":"Track Service 2"},{"resourceDescription":"Track Service 3"},{"resourceDescription":"Track Service 4"}],"projectname":"Proj 5 090418T095131"}
+1 090418T095133: CreateProject Response : {"transactionId":"4cca9146-bf8f-4c2e-ad51-77e4fa5779e5","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+CreateProject failed [https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, fdx_login=ssoxdev2.a321.7f613028, Proj 5 090418T095131, [Ljava.lang.String;@452e19ca]
+1 090418T095133: CreateProject Request : {"resourcesInput":[{"resourceDescription":"Track Service 0"},{"resourceDescription":"Track Service 1"},{"resourceDescription":"Track Service 2"},{"resourceDescription":"Track Service 3"},{"resourceDescription":"Track Service 4"},{"resourceDescription":"Track Service 5"}],"projectname":"Proj 6 090418T095131"}
+1 090418T095133: CreateProject Response : {"transactionId":"47b50aa6-2655-472e-b145-7afc6107e1ba","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+CreateProject failed [https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, fdx_login=ssoxdev1.8dec.df52ee2, Proj 6 090418T095131, [Ljava.lang.String;@928763c]
+1 090418T095133: CreateProject Request : {"resourcesInput":[{"resourceDescription":"Track Service 0"},{"resourceDescription":"Track Service 1"},{"resourceDescription":"Track Service 2"},{"resourceDescription":"Track Service 3"},{"resourceDescription":"Track Service 4"},{"resourceDescription":"Track Service 5"},{"resourceDescription":"Track Service 6"}],"projectname":"Proj 7 090418T095131"}
+1 090418T095134: CreateProject Response : {"transactionId":"81cc28d4-f846-4cd5-b342-ae3bdcd0fab4","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+CreateProject failed [https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, fdx_login=ssoxdev2.a321.7f613028, Proj 7 090418T095131, [Ljava.lang.String;@dc9876b]
+1 090418T095134: CreateProject Request : {"resourcesInput":[{"resourceDescription":"Track Service 0"},{"resourceDescription":"Track Service 1"},{"resourceDescription":"Track Service 2"},{"resourceDescription":"Track Service 3"},{"resourceDescription":"Track Service 4"},{"resourceDescription":"Track Service 5"},{"resourceDescription":"Track Service 6"},{"resourceDescription":"Track Service 7"}],"projectname":"Proj 8 090418T095131"}
+1 090418T095134: CreateProject Response : {"transactionId":"786618ad-5bd0-4ebd-ac0c-55010ab2813d","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+CreateProject failed [https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, fdx_login=ssoxdev1.8dec.df52ee2, Proj 8 090418T095131, [Ljava.lang.String;@4b2c5e02]
+
+
+@@ Passed Test Cases:
+
+
+@@ Failed Test Cases:
+1)    <-- CreateProject: Create a new project based on the UUID.  URL:https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, Cookie:fdx_login=ssoxdev1.8dec.df52ee2, ProjectName:Proj 2 090418T095131, Resources[Track Service 0, Track Service 1]
+Request: {"resourcesInput":[{"resourceDescription":"Track Service 0"},{"resourceDescription":"Track Service 1"}],"projectname":"Proj 2 090418T095131"}
+Response: {"transactionId":"c45ec6a5-058d-4c66-88d7-a9ee332a8a27","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Failed
+
+2)    <-- CreateProject: Create a new project based on the UUID.  URL:https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, Cookie:fdx_login=ssoxdev1.8dec.df52ee2, ProjectName:Proj 4 090418T095131, Resources[Track Service 0, Track Service 1, Track Service 2, Track Service 3]
+Request: {"resourcesInput":[{"resourceDescription":"Track Service 0"},{"resourceDescription":"Track Service 1"},{"resourceDescription":"Track Service 2"},{"resourceDescription":"Track Service 3"}],"projectname":"Proj 4 090418T095131"}
+Response: {"transactionId":"6a8a97ac-ae04-426e-8412-e0640e460b94","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Failed
+
+3)    <-- CreateProject: Create a new project based on the UUID.  URL:https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, Cookie:fdx_login=ssoxdev1.8dec.df52ee2, ProjectName:Proj 6 090418T095131, Resources[Track Service 0, Track Service 1, Track Service 2, Track Service 3, Track Service 4, Track Service 5]
+Request: {"resourcesInput":[{"resourceDescription":"Track Service 0"},{"resourceDescription":"Track Service 1"},{"resourceDescription":"Track Service 2"},{"resourceDescription":"Track Service 3"},{"resourceDescription":"Track Service 4"},{"resourceDescription":"Track Service 5"}],"projectname":"Proj 6 090418T095131"}
+Response: {"transactionId":"47b50aa6-2655-472e-b145-7afc6107e1ba","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Failed
+
+4)    <-- CreateProject: Create a new project based on the UUID.  URL:https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, Cookie:fdx_login=ssoxdev1.8dec.df52ee2, ProjectName:Proj 8 090418T095131, Resources[Track Service 0, Track Service 1, Track Service 2, Track Service 3, Track Service 4, Track Service 5, Track Service 6, Track Service 7]
+Request: {"resourcesInput":[{"resourceDescription":"Track Service 0"},{"resourceDescription":"Track Service 1"},{"resourceDescription":"Track Service 2"},{"resourceDescription":"Track Service 3"},{"resourceDescription":"Track Service 4"},{"resourceDescription":"Track Service 5"},{"resourceDescription":"Track Service 6"},{"resourceDescription":"Track Service 7"}],"projectname":"Proj 8 090418T095131"}
+Response: {"transactionId":"786618ad-5bd0-4ebd-ac0c-55010ab2813d","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Failed
+
+5)    <-- CreateProject: Create a new project based on the UUID.  URL:https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, Cookie:fdx_login=ssoxdev2.a321.7f613028, ProjectName:Proj 1 090418T095131, Resources[Track Service 0]
+Request: {"resourcesInput":[{"resourceDescription":"Track Service 0"}],"projectname":"Proj 1 090418T095131"}
+Response: {"transactionId":"afced60c-d02b-450c-b040-bb671e7367bb","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Failed
+
+6)    <-- CreateProject: Create a new project based on the UUID.  URL:https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, Cookie:fdx_login=ssoxdev2.a321.7f613028, ProjectName:Proj 3 090418T095131, Resources[Track Service 0, Track Service 1, Track Service 2]
+Request: {"resourcesInput":[{"resourceDescription":"Track Service 0"},{"resourceDescription":"Track Service 1"},{"resourceDescription":"Track Service 2"}],"projectname":"Proj 3 090418T095131"}
+Response: {"transactionId":"701cdaa0-d884-4515-8e62-13e4f5ada097","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Failed
+
+7)    <-- CreateProject: Create a new project based on the UUID.  URL:https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, Cookie:fdx_login=ssoxdev2.a321.7f613028, ProjectName:Proj 5 090418T095131, Resources[Track Service 0, Track Service 1, Track Service 2, Track Service 3, Track Service 4]
+Request: {"resourcesInput":[{"resourceDescription":"Track Service 0"},{"resourceDescription":"Track Service 1"},{"resourceDescription":"Track Service 2"},{"resourceDescription":"Track Service 3"},{"resourceDescription":"Track Service 4"}],"projectname":"Proj 5 090418T095131"}
+Response: {"transactionId":"4cca9146-bf8f-4c2e-ad51-77e4fa5779e5","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Failed
+
+8)    <-- CreateProject: Create a new project based on the UUID.  URL:https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, Cookie:fdx_login=ssoxdev2.a321.7f613028, ProjectName:Proj 7 090418T095131, Resources[Track Service 0, Track Service 1, Track Service 2, Track Service 3, Track Service 4, Track Service 5, Track Service 6]
+Request: {"resourcesInput":[{"resourceDescription":"Track Service 0"},{"resourceDescription":"Track Service 1"},{"resourceDescription":"Track Service 2"},{"resourceDescription":"Track Service 3"},{"resourceDescription":"Track Service 4"},{"resourceDescription":"Track Service 5"},{"resourceDescription":"Track Service 6"}],"projectname":"Proj 7 090418T095131"}
+Response: {"transactionId":"81cc28d4-f846-4cd5-b342-ae3bdcd0fab4","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Failed
+
+
+Execution Time in seconds: 5  (5041 miliseconds)
+Passed: 0 - Failed: 8
+

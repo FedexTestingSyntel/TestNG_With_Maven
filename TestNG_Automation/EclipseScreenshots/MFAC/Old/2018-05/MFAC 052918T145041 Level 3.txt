@@ -1,0 +1,62 @@
+
+
+$APIG$ Endpoint is being used on Level 3.
+IssueURL = https://apidrt.idev.fedex.com:8443/security/v1/pin
+VerifyURL = https://apidrt.idev.fedex.com:8443/security/v1/pin/verify
+VelocityURL = https://apidrt.idev.fedex.com:8443/security/v1/addresses/velocitycheck
+
+<-- AddressVelocity        OrgName: FDM-PHONE-PIN
+Verify that the address velocity of 3 is reached and the correct error code is recieved.
+Request: {"orgName":"FDM-PHONE-PIN","userName":"DmnOn1l2qi-66TaYs5HCjQZsuqgQaBikLxg"}
+Response: {"transactionId":"76b5d091-9b50-494b-a518-e1f81577398f","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-PHONE-PIN","userName":"DmnOn1l2qi-66TaYs5HCjQZsuqgQaBikLxg"}
+Response: {"transactionId":"dee2cc12-8563-4938-8976-4f9d02d058e3","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-PHONE-PIN","userName":"DmnOn1l2qi-66TaYs5HCjQZsuqgQaBikLxg"}
+Response: {"transactionId":"6ada4980-4140-4442-ba79-87d86f555951","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-PHONE-PIN","userName":"DmnOn1l2qi-66TaYs5HCjQZsuqgQaBikLxg"}
+Response: {"transactionId":"4376db06-070e-415d-b47c-f970f93fd0b3","errors":[{"code":"DENY","message":"Unfortunately, too many failed attempts for registration have occurred. Please try again later."}]}
+Passed
+
+<-- IssuePin        OrgName: FDM-PHONE-PIN
+Verify that the user is able to request a pin.
+Request: {"orgName":"FDM-PHONE-PIN","userName":"wxTNQMgNjK-oYNZkIOSP9RHWaqC3CAyE5Gb"}
+Response: {"transactionId":"572d90b9-c536-4161-8ef6-bb5516038396","output":{"pinOTP":"263439","pinExpirationDate":"05/29/2018 08:00 PM GMT"}}
+Passed
+
+<-- IssuePinVelocity        OrgName: FDM-PHONE-PIN
+Verify that the user can request up to 3 pin numbers before unable to request more.
+Request: {"orgName":"FDM-PHONE-PIN","userName":"jAbr110VHG-nmCDliuQ8jyjavgbkfkpLAhY"}
+Response: {"transactionId":"e320a175-8920-45de-bab7-0ab3d37f5452","output":{"pinOTP":"650331","pinExpirationDate":"05/29/2018 08:00 PM GMT"}}
+Request: {"orgName":"FDM-PHONE-PIN","userName":"jAbr110VHG-nmCDliuQ8jyjavgbkfkpLAhY"}
+Response: {"transactionId":"ec19e7dc-c966-44e1-8f52-8202eac3631e","output":{"pinOTP":"357149","pinExpirationDate":"05/29/2018 08:00 PM GMT"}}
+Request: {"orgName":"FDM-PHONE-PIN","userName":"jAbr110VHG-nmCDliuQ8jyjavgbkfkpLAhY"}
+Response: {"transactionId":"b69b9b67-95c2-413a-8b97-02ab0fccf7c5","output":{"pinOTP":"785210","pinExpirationDate":"05/29/2018 08:00 PM GMT"}}
+Request: {"orgName":"FDM-PHONE-PIN","userName":"jAbr110VHG-nmCDliuQ8jyjavgbkfkpLAhY"}
+Response: {"transactionId":"04db4d3f-c8a9-4b6b-8e89-971f1ac25a39","errors":[{"code":"5700","message":"Unfortunately, you have exceeded your attempts for verification. Please try again later."}]}
+Passed
+
+<-- VerifyPinNoLongerValid        OrgName: FDM-PHONE-PIN
+Verify that when user requests a second pin that the first is no longer valid.
+Request: {"orgName":"FDM-PHONE-PIN","userName":"wyCe0IcDQj-EVlNGLXvYGKCXH4NdXQNNiGi"}
+Response: {"transactionId":"131ce3a4-8703-41f4-9805-7dd4316a159e","output":{"pinOTP":"648359","pinExpirationDate":"05/29/2018 08:00 PM GMT"}}
+Request: {"orgName":"FDM-PHONE-PIN","userName":"wyCe0IcDQj-EVlNGLXvYGKCXH4NdXQNNiGi"}
+Response: {"transactionId":"ff2be45a-070f-4ecc-b600-40bda41347ed","output":{"pinOTP":"631210","pinExpirationDate":"05/29/2018 08:00 PM GMT"}}
+Request: {"orgName":"FDM-PHONE-PIN","otpInput":"648359","userName":"wyCe0IcDQj-EVlNGLXvYGKCXH4NdXQNNiGi"}
+Response: {"transactionId":"2193c47c-97df-431c-8d00-bd6f31f4818a","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+Request: {"orgName":"FDM-PHONE-PIN","otpInput":"631210","userName":"wyCe0IcDQj-EVlNGLXvYGKCXH4NdXQNNiGi"}
+Response: {"transactionId":"5e98cba7-f7a9-4f53-8fef-9a7b38640a33","output":{"daysLeftToExpire":1,"message":"Success"}}
+Passed
+
+<-- VerifyPinValid        OrgName: FDM-PHONE-PIN
+Verify that user is able to request a pin and then verify that can recieve success when using the generated pin.
+Request: {"orgName":"FDM-PHONE-PIN","userName":"JMJ5EX1wir-AmeBINCJZWdpBYxxLYLdhaMe"}
+Response: {"transactionId":"a2a1da68-04bc-4602-bc35-583628b3ebf9","output":{"pinOTP":"547959","pinExpirationDate":"05/29/2018 08:00 PM GMT"}}
+Request: {"orgName":"FDM-PHONE-PIN","otpInput":"547959","userName":"JMJ5EX1wir-AmeBINCJZWdpBYxxLYLdhaMe"}
+Response: {"transactionId":"7e912a68-2e21-4939-b1ba-dda2b822c8ac","output":{"daysLeftToExpire":1,"message":"Success"}}
+Passed
+
+<-- zIssuePinExpiration        OrgName: FDM-PHONE-PIN
+Verify that after a pin is expired it can no longer be used to complete registration.
+Request: {"orgName":"FDM-PHONE-PIN","userName":"VpfrcGoNBs-DGK12MTksN9DN64sFC7R17yY"}
+Response: {"transactionId":"4176a368-aa3e-49ce-9a3c-ae5369633b45","output":{"pinOTP":"884598","pinExpirationDate":"05/29/2018 08:00 PM GMT"}}
+Passed

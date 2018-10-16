@@ -1,0 +1,56 @@
+081818T235911: OAuth: https://api.fedex.com/auth/oauth/v2/token  Iden: l7xx1b191a635e37469cbaf159069c943955  Secret: 9012782ae99945e39f4ffacf1f80dcdb
+081818T235912: IssuePin Request: {"orgName":"FDM-POSTCARD-PIN","userName":"fakchifavo-vfqqdgmiuorsakcnxunoysek"}
+081818T235912: IssuePin Response: {
+    "errorCode": "INTERNAL_SERVER_ERROR",
+    "errorMessage": "Internal Server Error",
+    "userMessage": "FedEx Ship manager is not available. For immediate assistance, please contact your local FedEx Customer Service.",
+    "moreInfo": "http: //developer.fedex.com/errors/500"
+}
+081818T235912: IssuePin Request: {"orgName":"FDM-PHONE-PIN","userName":"xwfkswvoia-wfjhyaotadtdklopljbodbxw"}
+081818T235913: IssuePin Response: {
+    "errorCode": "INTERNAL_SERVER_ERROR",
+    "errorMessage": "Internal Server Error",
+    "userMessage": "FedEx Ship manager is not available. For immediate assistance, please contact your local FedEx Customer Service.",
+    "moreInfo": "http: //developer.fedex.com/errors/500"
+}
+
+
+@@ Passed Test Cases:
+
+
+@@ Failed Test Cases:
+081818T235913: 1)    <-- IssuePin: Verify that the user is able to request a pin.  (Org:FDM-PHONE-PIN, Endpoint: APIG, Level: 7)
+Request: {"orgName":"FDM-PHONE-PIN","userName":"xwfkswvoia-wfjhyaotadtdklopljbodbxw"}
+Response: {
+    "errorCode": "INTERNAL_SERVER_ERROR",
+    "errorMessage": "Internal Server Error",
+    "userMessage": "FedEx Ship manager is not available. For immediate assistance, please contact your local FedEx Customer Service.",
+    "moreInfo": "http: //developer.fedex.com/errors/500"
+}
+Request: {"orgName":"FDM-PHONE-PIN","userName":"xwfkswvoia-wfjhyaotadtdklopljbodbxw"}
+Response: {
+    "errorCode": "INTERNAL_SERVER_ERROR",
+    "errorMessage": "Internal Server Error",
+    "userMessage": "FedEx Ship manager is not available. For immediate assistance, please contact your local FedEx Customer Service.",
+    "moreInfo": "http: //developer.fedex.com/errors/500"
+}
+Scenario_Failed
+
+081818T235913: 2)    <-- IssuePin: Verify that the user is able to request a pin.  (Org:FDM-POSTCARD-PIN, Endpoint: APIG, Level: 7)
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"fakchifavo-vfqqdgmiuorsakcnxunoysek"}
+Response: {
+    "errorCode": "INTERNAL_SERVER_ERROR",
+    "errorMessage": "Internal Server Error",
+    "userMessage": "FedEx Ship manager is not available. For immediate assistance, please contact your local FedEx Customer Service.",
+    "moreInfo": "http: //developer.fedex.com/errors/500"
+}
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"fakchifavo-vfqqdgmiuorsakcnxunoysek"}
+Response: {
+    "errorCode": "INTERNAL_SERVER_ERROR",
+    "errorMessage": "Internal Server Error",
+    "userMessage": "FedEx Ship manager is not available. For immediate assistance, please contact your local FedEx Customer Service.",
+    "moreInfo": "http: //developer.fedex.com/errors/500"
+}
+Scenario_Failed
+
+

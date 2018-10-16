@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="8" guice-stage="DEVELOPMENT" name="Failed suite [WFCL_Suite]" parallel="methods">
+  <listeners>
+    <listener class-name="SupportClasses.TestNG_ReportListener"/>
+  </listeners>
+  <test thread-count="8" name="WFCL_Test(failed)" parallel="methods">
+    <classes>
+      <class name="TestNG.WFCL">
+        <methods>
+          <include name="afterClass"/>
+          <include name="WFCL_AccountRegistration_INET" invocation-numbers="0"/>
+          <include name="WFCL_CreditCardRegistrationEnroll" invocation-numbers="0"/>
+          <include name="beforeClass"/>
+          <include name="WFCL_AccountRegistration_Admin" invocation-numbers="0"/>
+          <include name="WFCL_UserRegistration" invocation-numbers="0"/>
+          <include name="WFCL_AccountRegistration_WDPA" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- TestNG.WFCL -->
+    </classes>
+  </test> <!-- WFCL_Test(failed) -->
+</suite> <!-- Failed suite [WFCL_Suite] -->

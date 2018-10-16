@@ -1,0 +1,39 @@
+
+IssuePin
+FDM-PHONE-PIN, fe610a8e-62f9-435f-9b3b-6864b8e51f71, https://api.fedex.com/security/v1/pin
+Verify that the user is able to request a pin.
+101318T164310: IssuePinAPI URL: POST https://api.fedex.com/security/v1/pin HTTP/1.1
+101318T164310: IssuePinAPI Headers: Content-Type: application/json___Authorization: Bearer fe610a8e-62f9-435f-9b3b-6864b8e51f71___
+101318T164310: IssuePinAPI Request: {"orgName":"FDM-PHONE-PIN","userName":"zlptnfzees-teidysxpvdrhiigmwwkkewkb"}
+101318T164310: IssuePinAPI Response: {"transactionId":"a214fa31-a935-46b4-afec-3a2df625bcbe","output":{"pinOTP":"964411","pinExpirationDate":"10/13/2018 09:53 PM GMT"}}
+a214fa31-a935-46b4-afec-3a2df625bcbe
+Passed
+101318T164316: New driver created. Chrome
+
+
+IssuePin
+FDM-POSTCARD-PIN, fe610a8e-62f9-435f-9b3b-6864b8e51f71, https://api.fedex.com/security/v1/pin
+Verify that the user is able to request a pin.
+101318T164311: IssuePinAPI URL: POST https://api.fedex.com/security/v1/pin HTTP/1.1
+101318T164311: IssuePinAPI Headers: Content-Type: application/json___Authorization: Bearer fe610a8e-62f9-435f-9b3b-6864b8e51f71___
+101318T164311: IssuePinAPI Request: {"orgName":"FDM-POSTCARD-PIN","userName":"ftoqtfbcib-eoxufmwpsgwduikidrdensnf"}
+101318T164311: IssuePinAPI Response: {"transactionId":"a6d7d770-8cf2-49e3-984a-a364901fab0b","output":{"pinOTP":"352779","pinExpirationDate":"11/03/2018 09:43 PM GMT"}}
+a6d7d770-8cf2-49e3-984a-a364901fab0b
+Passed
+101318T164320: New driver created. Chrome
+
+
+101318T164309: OAuth: https://api.fedex.com/auth/oauth/v2/token  Iden: l7xx1b191a635e37469cbaf159069c943955  Secret: 9012782ae99945e39f4ffacf1f80dcdb
+101318T164309: [fe610a8e-62f9-435f-9b3b-6864b8e51f71, 7, https://api.fedex.com/auth/oauth/v2/token, l7xx1b191a635e37469cbaf159069c943955, 9012782ae99945e39f4ffacf1f80dcdb, https://api.fedex.com/security/v1/pin, https://api.fedex.com/security/v1/pin/verify, https://api.fedex.com/security/v1/addresses/velocitycheck, http://mfac-cos-vip.prod.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfac-cos-vip.prod.cloud.fedex.com:9090/mfac/v3/verifyPIN, http://mfac-cos-vip.prod.cloud.fedex.com:9090/mfac/v3/addressVelocityCheck, 3, 3, 10]
+
+__________________________________________________________________________________________________________________________________________________________________________
+|10-13-18 16:43:08:536|                                                                        10-13-18 16:43:22:822|          |                               14 seconds|
+|             TestName|                                                                                     TestData|ResultData|                                   Status|
+|             IssuePin|   FDM-PHONE-PIN, fe610a8e-62f9-435f-9b3b-6864b8e51f71, https://api.fedex.com/security/v1/pin|    Passed|101318T164316: New driver created. Chrome|
+|             IssuePin|FDM-POSTCARD-PIN, fe610a8e-62f9-435f-9b3b-6864b8e51f71, https://api.fedex.com/security/v1/pin|    Passed|101318T164320: New driver created. Chrome|
+|________________________________________________________________________________________________________________________________________________________________________|
+Passed: 0 - Failed: 0
+
+
+
+

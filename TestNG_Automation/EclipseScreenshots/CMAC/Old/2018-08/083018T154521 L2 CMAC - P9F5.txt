@@ -1,0 +1,137 @@
+1 083018T154517: [OAuthToken (Will be populated within the class), Level, OAuthToken_URL, Client_ID, Client_Secret, Create_UUID, Create_Project, Create_Company_ID, Retrieve_Project_Details, Retrieve_Project_Summary, Create_Credentials_Project, Delete_Credential, DeleteResource, Create_Resource_Project, UserID, User_Password, Cookie, UUID]
+1 083018T154517: Getting UserID Details from USRC:  L2USCC051118T114912/Test1234
+1 083018T154517: Request: {"LogInRequest":{"password":"Test1234","processingParameters":{"clientId":"WCDO","returnDetailedErrors":false,"anonymousTransaction":true,"clientVersion":"3","returnLocalizedDateTime":false},"userName":"L2USCC051118T114912"}}
+1 083018T154518: Response: {"LogInResponse":{"successful":true}}
+1 083018T154518: Headers: Date: Thu, 30 Aug 2018 20:45:17 GMT Server: Apache Set-Cookie: siteDC=wtc; path=/; domain=.fedex.com; expires=Fri, 31-Aug-2018 20:45:17 GMT; secure Set-Cookie: SMIDENTITY=UMsFBAvX5NBruVeOBkbrII9BSbbtdkpQzkQgvnO64OBSg9WtzkBMJQHFZ9f5BWNT6gFYmWzGhbnAdgIYjYylIqar+lD/JP2Kq3FCW9ZzGHZCxBo8O70J/D7O9Rlo6erEa4cdCUwi2wAUE5OkHDiD0VlyHf3xdgrKpDEWPCCyJAAY6yhwr4/rUaj7DJ7iREKSW0XFAAQtchfpgEOJEuL3zz4IcPu2ygxpmjJNIP+lhv5ns16pWCX2UVUSpmNtpu/3It7zO9YHO+49a4flzEhSAp5zKXV6/N+6s9SLHDFk2WSpMvLSxz3B2Sx4tQuOkuMr0P2iBOXUB75cRFVBd8czpJ+YT2rCeOLcegRaaQl8ZwgXuckf5aRuT0DO4EdOhLqwBXmDIu26QwawkSFNrA/K0XyMvxd9fX/s/9VeGi2Bpal1CSYK/jBwnr30hLRZVu+vCCPcP89dgkgAwfXyGgvHpInymtdaxuDqCmVnHIWqxZRb19NByWQFh9H5ehrWnPfLCzIaqXZICBTIA7mZJr42mDdgwTywNw6P; path=/; domain=.fedex.com; secure Set-Cookie: fdx_cbid=08614916551535661917001200005411; path=/; expires=Wed, 25-Aug-38 20:45:17 GMT; domain=.fedex.com Set-Cookie: fcl_contactname=Fgmhqrtb Lxugasdd; domain=.fedex.com; path=/ Set-Cookie: fdx_login=ssoxdev1.c21a.7080ffc6; domain=.fedex.com; path=/; secure Set-Cookie: fcl_fname=Fgmhqrtb; domain=.fedex.com; path=/ Set-Cookie: fcl_uuid=00g0ggskpd; domain=.fedex.com; path=/ X-Frame-Options: SAMEORIGIN Vary: Accept-Encoding Access-Control-Allow-Credentials: true Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE Access-Control-Allow-Headers: Authorization, X-Requested-With, Content-Type, Origin, Accept, X-clientid, X-locale, X-loggedin, X-version Keep-Alive: timeout=30, max=1024 Connection: Keep-Alive Transfer-Encoding: chunked Content-Type: text/html; charset=UTF-8 
+1 083018T154518: [, 2, , , , https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/createUUID, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/companyid, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/1001/credentials, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/credentials/963, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/1001/resources/Rate Service, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/1001/resources, L2USCC051118T114912, L2USCC080818T103410, L2DECC081318T112742, L2CACC082418T105722, Test1234, Test1234, Test1234, Test1234, fdx_login=ssoxdev1.c21a.7080ffc6, 00g0ggskpd, 00g0ggsml6, 00g0ggsmn3, 00g0ggsmp2]
+
+
+Thread -- Time (MMDDYY'T'HHMMSS): -- Current progress
+1 083018T154518: CreateCompanyId Request : {"userUuidList":["00g0ggskpd"]}
+1 083018T154519: CreateCompanyId Response : {"transactionId":"5d72ea57-922e-4e53-a101-e1619744d8a1","output":{"contactProfiles":[{"contactVO":{"companyName":"Fgmhqrtb Lxugasdd","companyID":"a1d01339cfa142d4bb246afb437472f1"}}]}}
+CreateCompanyID passed [https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/companyid, [Ljava.lang.String;@795509d9]
+1 083018T154519: CreateCompanyId Request : {"userUuidList":["00g0ggskpd","00g0ggsml6","00g0ggsmn3","00g0ggsmp2"]}
+1 083018T154520: CreateCompanyId Response : {"transactionId":"4329789a-fa5f-4465-b06f-ed74199268bc","output":{"contactProfiles":[{"contactVO":{"companyName":"Fgmhqrtb Lxugasdd","companyID":"a1d01339cfa142d4bb246afb437472f1"}},{"contactVO":{"companyName":"Ftwogqhzoil Ljfbtlxb","companyID":"02f19f0910e642e3bcd36519f6c32d2d"}},{"contactVO":{"companyName":"Ftwozemnxvw Lcddcvmb","companyID":"ebbc73be9ab14ddc80b3652eac459128"}},{"contactVO":{"companyName":"Ftwoewhcucy Lpdwjbfj","companyID":"c69eec7213ea470d9ec9f949a5fa46a4"}}]}}
+CreateCompanyID passed [https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/companyid, [Ljava.lang.String;@6bbe85a8]
+1 083018T154520: CreateProject Request : {"resourcesInput":[{"resourceDescription":"Rate Service"},{"resourceDescription":"Rate Service"}],"projectname":"Proj 083018T154520"}
+1 083018T154520: CreateProject Response : {"transactionId":"49c4e1d9-d7c7-47a5-baa5-5850691f8562","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+CreateProject failed [https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, fdx_login=ssoxdev1.c21a.7080ffc6, Proj 083018T154520, [Ljava.lang.String;@742ff096]
+1 083018T154520: CreateUUID Request : {"username":L2USCC051118T114912}
+1 083018T154520: CreateUUID Response : {"transactionId":"10cea4ea-7702-4f1a-ae93-0970a6f3b039","output":{"uuid":"00g0ggskpd"}}
+CreateUUID passed [https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/createUUID, fdx_login=ssoxdev1.c21a.7080ffc6, L2USCC051118T114912, 00g0ggskpd, Test1234]
+1 083018T154520: CreateUUID Request : {"username":L2USCC080818T103410}
+1 083018T154520: CreateUUID Response : {"transactionId":"32245a38-f592-41b0-8596-7cbf4c0c0430","output":{"uuid":"00g0ggskpd"}}
+CreateUUID failed [https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/createUUID, fdx_login=ssoxdev1.c21a.7080ffc6, L2USCC080818T103410, 00g0ggsml6, Test1234]
+1 083018T154520: CreateUUID Request : {"username":L2DECC081318T112742}
+1 083018T154520: CreateUUID Response : {"transactionId":"b9950d7d-e287-4374-8056-8cd2b7894288","output":{"uuid":"00g0ggskpd"}}
+CreateUUID failed [https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/createUUID, fdx_login=ssoxdev1.c21a.7080ffc6, L2DECC081318T112742, 00g0ggsmn3, Test1234]
+1 083018T154520: CreateUUID Request : {"username":L2CACC082418T105722}
+1 083018T154520: CreateUUID Response : {"transactionId":"69b6e582-d631-4d5c-81f9-d8eda637e736","output":{"uuid":"00g0ggskpd"}}
+CreateUUID failed [https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/createUUID, fdx_login=ssoxdev1.c21a.7080ffc6, L2CACC082418T105722, 00g0ggsmp2, Test1234]
+1 083018T154520: RetrieveProjectSummary Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+1 083018T154520: RetrieveProjectSummary Response : {"transactionId":"60d8ee2c-6718-4b3c-bdf6-684cc34ce357","output":{"projects":[{"pid":1001,"projectname":"IRCPROJECT"},{"pid":1002,"projectname":"Projerndjscbgt"},{"pid":1003,"projectname":"Projnssxurmdif"},{"pid":1005,"projectname":"Proj 082918T094901"},{"pid":1006,"projectname":"Proj 082918T094916"},{"pid":1007,"projectname":"fedexproject-1"},{"pid":1008,"projectname":"Proj 082918T114400"},{"pid":10010,"projectname":"Proj 082918T145853"},{"pid":100111,"projectname":"Proj 082918T150829"},{"pid":1001112,"projectname":"Proj 082918T154141"},{"pid":10011113,"projectname":"Proj 082918T154505"},{"pid":100111114,"projectname":"Proj 082918T162712"},{"pid":1001111115,"projectname":"Proj 082918T162744"},{"pid":10011111116,"projectname":"Proj 082918T162954"},{"pid":100111111117,"projectname":"Proj 082918T163056"},{"pid":1001111111118,"projectname":"Proj 082918T163228"},{"pid":10011111111119,"projectname":"Proj 082918T164854"},{"pid":100111111111122223,"projectname":"Proj 083018T154520"}]}}
+1 083018T154520: DeleteProject Delete : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/100111111111122223
+1 083018T154520: DeleteProject Response : {"transactionId":"18a7db97-b178-4876-85f3-e016db373fe8"}
+1 083018T154520: RetrieveProjectDetails Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/100111111111122223
+1 083018T154520: RetrieveProjectDetails Response : {"transactionId":"d1cb427b-f8b8-45e4-abc0-54ff89378e1b","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+DeleteProject passed [https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, 100111111111122223]
+1 083018T154520: DeleteProject Delete : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/100111111111122223
+1 083018T154520: DeleteProject Response : {"transactionId":"130f2c96-aae8-4299-a3f6-1d95185b907f","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+DeleteProject failed [https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, 100111111111122223]
+1 083018T154520: RetrieveProjectDetails Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/1001
+1 083018T154520: RetrieveProjectDetails Response : {"transactionId":"8d16b386-821e-4a76-8c2a-a019927eb97e","output":{"pid":1001,"projectname":"IRCPROJECT","resourcesoutput":["Track Service","Rate Service","Shipping Service","Tracking Service"],"credentialOutput":[{"credentialid":833,"accountnumber":113475005,"projectid":1005,"creationtime":"2018.08.29.14.49.01","expirationdate":"2018.09.28.23.37.56","key":"3E17MENXSI"}]}}
+RetrieveProjectDetails passed [https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, 1001]
+1 083018T154520: RetrieveProjectDetails Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/1002
+1 083018T154520: RetrieveProjectDetails Response : {"transactionId":"6e8a2599-f630-4ac5-8ad7-52f5b2b9fa1c","output":{"pid":1002,"projectname":"Projerndjscbgt","resourcesoutput":["Rate Service","Rate Service"],"credentialOutput":[{"credentialid":51,"accountnumber":113475002,"projectid":1002,"creationtime":"2018.08.29.03.42.55","expirationdate":"2018.09.28.23.37.56","key":"N6QBFFAT8A"}]}}
+RetrieveProjectDetails passed [https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, 1002]
+1 083018T154520: RetrieveProjectDetails Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/1003
+1 083018T154520: RetrieveProjectDetails Response : {"transactionId":"5cb7b7b3-7d85-44b1-a2f0-b5adc52f6988","output":{"pid":1003,"projectname":"Projnssxurmdif","resourcesoutput":["Rate Service","Rate Service"],"credentialOutput":[{"credentialid":333,"accountnumber":113475003,"projectid":1003,"creationtime":"2018.08.29.14.36.34","expirationdate":"2018.09.28.23.37.56","key":"3KQKW3RIMA"}]}}
+RetrieveProjectDetails passed [https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, 1003]
+1 083018T154520: RetrieveProjectDetails Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/1005
+1 083018T154521: RetrieveProjectDetails Response : {"transactionId":"47d5fafc-4779-452f-ae60-b8fce2f6c54f","output":{"pid":1005,"projectname":"Proj 082918T094901","resourcesoutput":["Rate Service","Rate Service"],"credentialOutput":[{"credentialid":833,"accountnumber":113475005,"projectid":1005,"creationtime":"2018.08.29.14.49.01","expirationdate":"2018.09.28.23.37.56","key":"3E17MENXSI"}]}}
+RetrieveProjectDetails passed [https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, 1005]
+1 083018T154521: RetrieveProjectDetails Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+1 083018T154521: RetrieveProjectDetails Response : {"transactionId":"04e61370-6dfe-4a7e-aca0-2400ac437a9f","output":{"projects":[{"pid":1001,"projectname":"IRCPROJECT"},{"pid":1002,"projectname":"Projerndjscbgt"},{"pid":1003,"projectname":"Projnssxurmdif"},{"pid":1005,"projectname":"Proj 082918T094901"},{"pid":1006,"projectname":"Proj 082918T094916"},{"pid":1007,"projectname":"fedexproject-1"},{"pid":1008,"projectname":"Proj 082918T114400"},{"pid":10010,"projectname":"Proj 082918T145853"},{"pid":100111,"projectname":"Proj 082918T150829"},{"pid":1001112,"projectname":"Proj 082918T154141"},{"pid":10011113,"projectname":"Proj 082918T154505"},{"pid":100111114,"projectname":"Proj 082918T162712"},{"pid":1001111115,"projectname":"Proj 082918T162744"},{"pid":10011111116,"projectname":"Proj 082918T162954"},{"pid":100111111117,"projectname":"Proj 082918T163056"},{"pid":1001111111118,"projectname":"Proj 082918T163228"},{"pid":10011111111119,"projectname":"Proj 082918T164854"}]}}
+RetrieveProjectSummary passed [https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/]
+
+
+@@ Passed Test Cases:
+1)    <-- CreateCompanyID: Create the company id and company name based on UUID.  URL:https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/companyid, UUID:[00g0ggskpd, 00g0ggsml6, 00g0ggsmn3, 00g0ggsmp2]
+Request: {"userUuidList":["00g0ggskpd","00g0ggsml6","00g0ggsmn3","00g0ggsmp2"]}
+Response: {"transactionId":"4329789a-fa5f-4465-b06f-ed74199268bc","output":{"contactProfiles":[{"contactVO":{"companyName":"Fgmhqrtb Lxugasdd","companyID":"a1d01339cfa142d4bb246afb437472f1"}},{"contactVO":{"companyName":"Ftwogqhzoil Ljfbtlxb","companyID":"02f19f0910e642e3bcd36519f6c32d2d"}},{"contactVO":{"companyName":"Ftwozemnxvw Lcddcvmb","companyID":"ebbc73be9ab14ddc80b3652eac459128"}},{"contactVO":{"companyName":"Ftwoewhcucy Lpdwjbfj","companyID":"c69eec7213ea470d9ec9f949a5fa46a4"}}]}}
+Scenario_Passed
+
+2)    <-- CreateCompanyID: Create the company id and company name based on UUID.  URL:https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/companyid, UUID:[00g0ggskpd]
+Request: {"userUuidList":["00g0ggskpd"]}
+Response: {"transactionId":"5d72ea57-922e-4e53-a101-e1619744d8a1","output":{"contactProfiles":[{"contactVO":{"companyName":"Fgmhqrtb Lxugasdd","companyID":"a1d01339cfa142d4bb246afb437472f1"}}]}}
+Scenario_Passed
+
+3)    <-- CreateUUID: Takes in the userid and provider the uuid associated to it.  URL:https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/createUUID, Cookie:fdx_login=ssoxdev1.c21a.7080ffc6, UserID:L2USCC051118T114912, UUID:00g0ggskpd
+Request: {"username":L2USCC051118T114912}
+Response: {"transactionId":"10cea4ea-7702-4f1a-ae93-0970a6f3b039","output":{"uuid":"00g0ggskpd"}}
+Scenario_Passed
+
+4)    <-- DeleteProject: Delete a project based on the pid appended to the URL.    URL:https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, Pid:100111111111122223
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/100111111111122223
+Response: {"transactionId":"18a7db97-b178-4876-85f3-e016db373fe8"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/100111111111122223
+Response: {"transactionId":"d1cb427b-f8b8-45e4-abc0-54ff89378e1b","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+5)    <-- RetrieveProjectDetails: Get the project details of the sespecific project based on the pid at end of url.    URL:https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, Pid:1001
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/1001
+Response: {"transactionId":"8d16b386-821e-4a76-8c2a-a019927eb97e","output":{"pid":1001,"projectname":"IRCPROJECT","resourcesoutput":["Track Service","Rate Service","Shipping Service","Tracking Service"],"credentialOutput":[{"credentialid":833,"accountnumber":113475005,"projectid":1005,"creationtime":"2018.08.29.14.49.01","expirationdate":"2018.09.28.23.37.56","key":"3E17MENXSI"}]}}
+Scenario_Passed
+
+6)    <-- RetrieveProjectDetails: Get the project details of the sespecific project based on the pid at end of url.    URL:https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, Pid:1002
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/1002
+Response: {"transactionId":"6e8a2599-f630-4ac5-8ad7-52f5b2b9fa1c","output":{"pid":1002,"projectname":"Projerndjscbgt","resourcesoutput":["Rate Service","Rate Service"],"credentialOutput":[{"credentialid":51,"accountnumber":113475002,"projectid":1002,"creationtime":"2018.08.29.03.42.55","expirationdate":"2018.09.28.23.37.56","key":"N6QBFFAT8A"}]}}
+Scenario_Passed
+
+7)    <-- RetrieveProjectDetails: Get the project details of the sespecific project based on the pid at end of url.    URL:https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, Pid:1003
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/1003
+Response: {"transactionId":"5cb7b7b3-7d85-44b1-a2f0-b5adc52f6988","output":{"pid":1003,"projectname":"Projnssxurmdif","resourcesoutput":["Rate Service","Rate Service"],"credentialOutput":[{"credentialid":333,"accountnumber":113475003,"projectid":1003,"creationtime":"2018.08.29.14.36.34","expirationdate":"2018.09.28.23.37.56","key":"3KQKW3RIMA"}]}}
+Scenario_Passed
+
+8)    <-- RetrieveProjectDetails: Get the project details of the sespecific project based on the pid at end of url.    URL:https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, Pid:1005
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/1005
+Response: {"transactionId":"47d5fafc-4779-452f-ae60-b8fce2f6c54f","output":{"pid":1005,"projectname":"Proj 082918T094901","resourcesoutput":["Rate Service","Rate Service"],"credentialOutput":[{"credentialid":833,"accountnumber":113475005,"projectid":1005,"creationtime":"2018.08.29.14.49.01","expirationdate":"2018.09.28.23.37.56","key":"3E17MENXSI"}]}}
+Scenario_Passed
+
+9)    <-- RetrieveProjectSummary: Get the details of all projects URL: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+Response: {"transactionId":"04e61370-6dfe-4a7e-aca0-2400ac437a9f","output":{"projects":[{"pid":1001,"projectname":"IRCPROJECT"},{"pid":1002,"projectname":"Projerndjscbgt"},{"pid":1003,"projectname":"Projnssxurmdif"},{"pid":1005,"projectname":"Proj 082918T094901"},{"pid":1006,"projectname":"Proj 082918T094916"},{"pid":1007,"projectname":"fedexproject-1"},{"pid":1008,"projectname":"Proj 082918T114400"},{"pid":10010,"projectname":"Proj 082918T145853"},{"pid":100111,"projectname":"Proj 082918T150829"},{"pid":1001112,"projectname":"Proj 082918T154141"},{"pid":10011113,"projectname":"Proj 082918T154505"},{"pid":100111114,"projectname":"Proj 082918T162712"},{"pid":1001111115,"projectname":"Proj 082918T162744"},{"pid":10011111116,"projectname":"Proj 082918T162954"},{"pid":100111111117,"projectname":"Proj 082918T163056"},{"pid":1001111111118,"projectname":"Proj 082918T163228"},{"pid":10011111111119,"projectname":"Proj 082918T164854"}]}}
+Scenario_Passed
+
+
+
+@@ Failed Test Cases:
+10)    <-- CreateProject: Create a new project based on the UUID.  URL:https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, Cookie:fdx_login=ssoxdev1.c21a.7080ffc6, ProjectName:Proj 083018T154520, Resources[Track Service, Rate Service]
+Request: {"resourcesInput":[{"resourceDescription":"Rate Service"},{"resourceDescription":"Rate Service"}],"projectname":"Proj 083018T154520"}
+Response: {"transactionId":"49c4e1d9-d7c7-47a5-baa5-5850691f8562","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Failed
+
+11)    <-- CreateUUID: Takes in the userid and provider the uuid associated to it.  URL:https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/createUUID, Cookie:fdx_login=ssoxdev1.c21a.7080ffc6, UserID:L2CACC082418T105722, UUID:00g0ggsmp2
+Request: {"username":L2CACC082418T105722}
+Response: {"transactionId":"69b6e582-d631-4d5c-81f9-d8eda637e736","output":{"uuid":"00g0ggskpd"}}
+Scenario_Failed
+
+12)    <-- CreateUUID: Takes in the userid and provider the uuid associated to it.  URL:https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/createUUID, Cookie:fdx_login=ssoxdev1.c21a.7080ffc6, UserID:L2DECC081318T112742, UUID:00g0ggsmn3
+Request: {"username":L2DECC081318T112742}
+Response: {"transactionId":"b9950d7d-e287-4374-8056-8cd2b7894288","output":{"uuid":"00g0ggskpd"}}
+Scenario_Failed
+
+13)    <-- CreateUUID: Takes in the userid and provider the uuid associated to it.  URL:https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/createUUID, Cookie:fdx_login=ssoxdev1.c21a.7080ffc6, UserID:L2USCC080818T103410, UUID:00g0ggsml6
+Request: {"username":L2USCC080818T103410}
+Response: {"transactionId":"32245a38-f592-41b0-8596-7cbf4c0c0430","output":{"uuid":"00g0ggskpd"}}
+Scenario_Failed
+
+14)    <-- DeleteProject: Delete a project based on the pid appended to the URL.    URL:https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, Pid:100111111111122223
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/100111111111122223
+Response: {"transactionId":"130f2c96-aae8-4299-a3f6-1d95185b907f","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Failed
+
+
+Execution Time in seconds: 4  (4039 miliseconds)
+Passed: 9 - Failed: 5
+

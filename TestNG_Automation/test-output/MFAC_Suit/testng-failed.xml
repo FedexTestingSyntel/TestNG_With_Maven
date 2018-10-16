@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="8" guice-stage="DEVELOPMENT" name="Failed suite [MFAC_Suit]" parallel="methods">
+  <listeners>
+    <listener class-name="SupportClasses.TestNG_ReportListener"/>
+  </listeners>
+  <test thread-count="8" name="MFAC_Test(failed)" parallel="methods">
+    <classes>
+      <class name="TestNG.MFAC">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="AddressVelocity" invocation-numbers="1 2 0 3"/>
+          <include name="IssuePinVelocity" invocation-numbers="3 0 2 1"/>
+        </methods>
+      </class> <!-- TestNG.MFAC -->
+    </classes>
+  </test> <!-- MFAC_Test(failed) -->
+</suite> <!-- Failed suite [MFAC_Suit] -->

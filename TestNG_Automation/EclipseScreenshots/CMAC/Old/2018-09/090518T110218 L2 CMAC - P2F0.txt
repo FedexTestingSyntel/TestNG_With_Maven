@@ -1,0 +1,51 @@
+1 090518T110213: Get cookie from USRC for L2USCC051118T114912/Test1234
+1 090518T110214:   Cookie: fdx_login=ssoxdev1.8de0.d18e10e, UUID: 00g0ggskpd
+1 090518T110214: Get cookie from USRC for L2USCC080818T103410/Test1234
+1 090518T110215:   Cookie: fdx_login=ssoxdev1.ce3d.71063b05, UUID: 00g0ggsml6
+1 090518T110215: Get cookie from USRC for L2USCC090418T125956/Test1234
+1 090518T110215:   Cookie: fdx_login=ssoxdev1.a01b.19bfbef0, UUID: 00g0ggsmr0
+1 090518T110215: Get cookie from USRC for L2USCC090418T130240/Test1234
+1 090518T110216:   Cookie: fdx_login=ssoxdev2.ec8b.2c632d2f, UUID: g0g0ggsnrf
+1 090518T110216: Get cookie from USRC for L2USCC090418T130516/Test1234
+1 090518T110216:   Cookie: fdx_login=ssoxdev1.84ea.5f953a0b, UUID: 00g0ggsmr1
+1 090518T110216: Get cookie from USRC for L2USCC090418T130725/Test1234
+1 090518T110217:   Cookie: fdx_login=ssoxdev2.c771.1dd0124e, UUID: 00g0ggsmr2
+1 090518T110217: Get cookie from USRC for L2USCC090418T131033/Test1234
+1 090518T110217:   Cookie: fdx_login=ssoxdev2.c400.7a8a4049, UUID: g0g0ggsns0
+1 090518T110217: Get cookie from USRC for L2USCC090418T131311/Test1234
+1 090518T110217:   Cookie: fdx_login=ssoxdev2.cbbf.4c693bd4, UUID: 00g0ggsmr3
+1 090518T110217: Get cookie from USRC for L2WIDMWgtm080618T164419/Test1234
+1 090518T110217:   Cookie: fdx_login=ssoxdev2.8d53.72dd9f36, UUID: NrpHGSqDVP
+1 090518T110217: Get cookie from USRC for L2InetNon081518T171619/Test1234
+1 090518T110218:   Cookie: fdx_login=ssoxdev2.9426.26696809, UUID: g0g0ggsnnc
+1 090518T110218: Get cookie from USRC for L2USCreate082018T140151/Test1234
+1 090518T110218:   Cookie: fdx_login=ssoxdev1.d39b.5bc49441, UUID: 00g0ggsmnc
+1 090518T110218: Headers: [OAuthToken (Will be populated within the class), Level, OAuthToken_URL, Client_ID, Client_Secret, Create_Project, Retrieve_Project_Details, Update_Project_URL, Delete_Project_URL, Retrieve_Project_Summary, Create_Credentials_Project, Delete_Credential, DeleteResource, Create_Resource_Project, Passkey_UserID, Passkey_Password_, Passkey_Cookie, Passkey_UUID, Non_Passkey_UserID, Non_Passkey_Password_, Non_Passkey_Cookie, Non_Passkey_UUID]
+1 090518T110218: [, 2, , , , https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/credentials/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, L2USCC051118T114912, L2USCC080818T103410, L2USCC090418T125956, L2USCC090418T130240, L2USCC090418T130516, L2USCC090418T130725, L2USCC090418T131033, L2USCC090418T131311, Test1234, Test1234, Test1234, Test1234, Test1234, Test1234, Test1234, Test1234, fdx_login=ssoxdev1.8de0.d18e10e, fdx_login=ssoxdev1.ce3d.71063b05, fdx_login=ssoxdev1.a01b.19bfbef0, fdx_login=ssoxdev2.ec8b.2c632d2f, fdx_login=ssoxdev1.84ea.5f953a0b, fdx_login=ssoxdev2.c771.1dd0124e, fdx_login=ssoxdev2.c400.7a8a4049, fdx_login=ssoxdev2.cbbf.4c693bd4, 00g0ggskpd, 00g0ggsml6, 00g0ggsmr0, g0g0ggsnrf, 00g0ggsmr1, 00g0ggsmr2, g0g0ggsns0, 00g0ggsmr3, L2WIDMWgtm080618T164419, L2InetNon081518T171619, L2USCreate082018T140151, Test1234, Test1234, Test1234, fdx_login=ssoxdev2.8d53.72dd9f36, fdx_login=ssoxdev2.9426.26696809, fdx_login=ssoxdev1.d39b.5bc49441, NrpHGSqDVP, g0g0ggsnnc, 00g0ggsmnc]
+
+
+Thread -- Time (MMDDYY'T'HHMMSS): -- Current progress
+1 090518T110218: RetrieveProjectSummary Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+1 090518T110218: RetrieveProjectSummary Response : {"transactionId":"8d699120-2d78-41b6-9891-31f9357fc931","output":{"projects":[{"pid":10100,"projectname":"Proj Update 090518T090222"},{"pid":10693,"projectname":"Project-2"},{"pid":10885,"projectname":"Project-3"}]}}
+1 090518T110218: CreateCredentials URL : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10100/credentials
+1 090518T110218: CreateCredentials Response : {"transactionId":"05f75eeb-2e22-48a7-99f1-2b3f4e76bd1f","output":{"credentialid":861,"accountnumber":113475001111115,"projectid":10100,"creationtime":"2018.09.05.16.02.18","expirationdate":"2018.10.04.19.25.14","key":"7TF1R7XZV1"}}
+CreateCredentialsForProject passed [https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, 10100]
+1 090518T110218: CreateCredentials URL : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/1001/credentials
+1 090518T110218: CreateCredentials Response : {"transactionId":"47e3b736-8246-4abf-991d-15045b5a5d88","output":{"credentialid":861,"accountnumber":113475001111115,"projectid":10100,"creationtime":"2018.09.05.16.02.18","expirationdate":"2018.10.04.19.25.14","key":"7TF1R7XZV1"}}
+CreateCredentialsForProject passed [https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, 1001]
+
+
+@@ Passed Test Cases:
+1)    <-- CreateCredentialsForProject: ADD DESCRIPTION.  URL:https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, PID:1001
+Request: URL: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+Response: {"transactionId":"47e3b736-8246-4abf-991d-15045b5a5d88","output":{"credentialid":861,"accountnumber":113475001111115,"projectid":10100,"creationtime":"2018.09.05.16.02.18","expirationdate":"2018.10.04.19.25.14","key":"7TF1R7XZV1"}}
+Scenario_Passed
+
+2)    <-- CreateCredentialsForProject: ADD DESCRIPTION.  URL:https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, PID:10100
+Request: URL: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+Response: {"transactionId":"05f75eeb-2e22-48a7-99f1-2b3f4e76bd1f","output":{"credentialid":861,"accountnumber":113475001111115,"projectid":10100,"creationtime":"2018.09.05.16.02.18","expirationdate":"2018.10.04.19.25.14","key":"7TF1R7XZV1"}}
+Scenario_Passed
+
+Execution Time in seconds: 4  (4757 miliseconds)
+Passed: 2 - Failed: 0
+

@@ -1,0 +1,37 @@
+081718T095021: OAuth: https://apidrt.idev.fedex.com:8443/auth/oauth/v2/token  Iden: l7xx1892f99a6f88470ba29abc141cd7bd8d  Secret: a4325d011acf4876b3fe3206931b8f5a
+081718T095022: IssuePin Request: {"orgName":"FDM-PHONE-PIN","userName":"gbibxypwjr-zzxrbkeizeficguqprdgkofr"}
+081718T095022: IssuePin Request: {"orgName":"FDM-POSTCARD-PIN","userName":"smxxijekpc-euhasvvtctmlmouhephekcqc"}
+081718T095022: IssuePin Request: {"orgName":"FDM-PHONE-PIN","userName":"iuuvxrmucy-cswewlenxkfdbischoxokvmi"}
+081718T095022: IssuePin Request: {"orgName":"FDM-POSTCARD-PIN","userName":"gggsocnuwg-cwjiwuajzhuedybmsxhwumxz"}
+081718T095023: IssuePin Response: {"transactionId":"b8d8c709-2107-4144-b912-f222c70f6008","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR"}]}
+081718T095023: IssuePin Response: {"transactionId":"396d6c5d-1ae1-4372-b441-70ed0ad30e81","output":{"pinOTP":"186022","pinExpirationDate":"08/17/2018 03:20 PM GMT"}}
+081718T095023: IssuePin Response: {"transactionId":"814f98f1-44a2-439a-b5ad-e1fd343d42d5","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR"}]}
+081718T095023: IssuePin Response: {"transactionId":"263e2011-a292-49aa-8e91-c69ea5507599","output":{"pinOTP":"189915","pinExpirationDate":"08/17/2018 03:20 PM GMT"}}
+
+
+@@ Passed Test Cases:
+1)    <-- IssuePin: Verify that the user is able to request a pin.  (Org:FDM-POSTCARD-PIN, Endpoint: APIG, Level: 3)
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"gggsocnuwg-cwjiwuajzhuedybmsxhwumxz"}
+Response: {"transactionId":"263e2011-a292-49aa-8e91-c69ea5507599","output":{"pinOTP":"189915","pinExpirationDate":"08/17/2018 03:20 PM GMT"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"gggsocnuwg-cwjiwuajzhuedybmsxhwumxz"}
+Response: {"transactionId":"263e2011-a292-49aa-8e91-c69ea5507599","output":{"pinOTP":"189915","pinExpirationDate":"08/17/2018 03:20 PM GMT"}}
+Scenario_Passed
+
+2)    <-- IssuePin: Verify that the user is able to request a pin.  (Org:FDM-POSTCARD-PIN, Endpoint: Direct, Level: 3)
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"smxxijekpc-euhasvvtctmlmouhephekcqc"}
+Response: {"transactionId":"396d6c5d-1ae1-4372-b441-70ed0ad30e81","output":{"pinOTP":"186022","pinExpirationDate":"08/17/2018 03:20 PM GMT"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"smxxijekpc-euhasvvtctmlmouhephekcqc"}
+Response: {"transactionId":"396d6c5d-1ae1-4372-b441-70ed0ad30e81","output":{"pinOTP":"186022","pinExpirationDate":"08/17/2018 03:20 PM GMT"}}
+Scenario_Passed
+
+
+
+@@ Failed Test Cases:
+081718T095023: 3)    <-- IssuePin: Verify that the user is able to request a pin.  (Org:FDM-PHONE-PIN, Endpoint: APIG, Level: 3)
+Request: {"orgName":"FDM-PHONE-PIN","userName":"gbibxypwjr-zzxrbkeizeficguqprdgkofr"}
+Response: {"transactionId":"b8d8c709-2107-4144-b912-f222c70f6008","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR"}]}
+Request: {"orgName":"FDM-PHONE-PIN","userName":"gbibxypwjr-zzxrbkeizeficguqprdgkofr"}
+Response: {"transactionId":"b8d8c709-2107-4144-b912-f222c70f6008","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR"}]}
+Scenario_Failed
+
+

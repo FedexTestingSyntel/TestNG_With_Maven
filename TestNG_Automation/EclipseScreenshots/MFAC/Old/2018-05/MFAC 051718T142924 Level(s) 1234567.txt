@@ -1,0 +1,63 @@
+051718T142905: 
+
+$APIG$ Endpoint is being used on Level1.
+IssueURL = https://apibase.idev.fedex.com:8443/security/v1/pin
+VerifyURL = https://apibase.idev.fedex.com:8443/security/v1/pin/verify
+VelocityURL = https://apibase.idev.fedex.com:8443/security/v1/addresses/velocitycheck
+051718T142906: Token request: {  "access_token":"4b5c2c59-144e-40c9-8295-b64a6a23460b",  "token_type":"Bearer",  "expires_in":3600,  "scope":"oob"}     Iden:l7xx1892f99a6f88470ba29abc141cd7bd8d Secret:a4325d011acf4876b3fe3206931b8f5a
+
+051718T142906: <-- IssuePinVelocity        OrgName: FDM-POSTCARD-PIN
+051718T142906: Verify that the user can request up to 3 pin numbers before unable to request more.
+051718T142907: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"YYLZAJngAp-HVoH6xHwiS67w5jzlRnQoq4y"}
+051718T142908: Response: {
+    "errorCode": "INTERNAL_SERVER_ERROR",
+    "errorMessage": "Internal Server Error",
+    "userMessage": "FedEx Ship manager is not available. For immediate assistance, please contact your local FedEx Customer Service.",
+    "moreInfo": "http: //developer.fedex.com/errors/500"
+}
+
+051718T142908: <-- IssuePinVelocity        OrgName: FDM-PHONE-PIN
+051718T142908: Verify that the user can request up to 3 pin numbers before unable to request more.
+051718T142908: Request: {"orgName":"FDM-PHONE-PIN","userName":"fleh7Vqo9F-Pqg3U0slr1Uemqasy5utIJik"}
+051718T142908: Response: {
+    "errorCode": "INTERNAL_SERVER_ERROR",
+    "errorMessage": "Internal Server Error",
+    "userMessage": "FedEx Ship manager is not available. For immediate assistance, please contact your local FedEx Customer Service.",
+    "moreInfo": "http: //developer.fedex.com/errors/500"
+}
+051718T142908: 
+
+$Direct$ Endpoint is being used on Level1.
+IssueURL = http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN
+VerifyURL = http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN
+VelocityURL = http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/addressVelocityCheck
+051718T142908: Token request: {  "access_token":"d167b26e-ba6b-4107-8663-90c92f5ba3ee",  "token_type":"Bearer",  "expires_in":3600,  "scope":"oob"}     Iden:l7xx1892f99a6f88470ba29abc141cd7bd8d Secret:a4325d011acf4876b3fe3206931b8f5a
+
+051718T142908: <-- IssuePinVelocity        OrgName: FDM-POSTCARD-PIN
+051718T142908: Verify that the user can request up to 3 pin numbers before unable to request more.
+051718T142908: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"LD5QuWjUp3-ASpDrWlW6gVldTgs0efp0LEf"}
+051718T142914: Response: {"transactionId":"1ef95d1b-b07c-497b-9f7b-c841c01d9614","output":{"pinOTP":"156191","pinExpirationDate":"05/18/2018 07:29 PM GMT"}}
+051718T142914: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"LD5QuWjUp3-ASpDrWlW6gVldTgs0efp0LEf"}
+051718T142915: Response: {"transactionId":"31359649-d8e6-41aa-895c-a69995a63b53","output":{"pinOTP":"804902","pinExpirationDate":"05/18/2018 07:29 PM GMT"}}
+051718T142915: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"LD5QuWjUp3-ASpDrWlW6gVldTgs0efp0LEf"}
+051718T142917: Response: {"transactionId":"bfcf6b2d-2305-448a-ad25-a6923bf05654","output":{"pinOTP":"379330","pinExpirationDate":"05/18/2018 07:29 PM GMT"}}
+051718T142917: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"LD5QuWjUp3-ASpDrWlW6gVldTgs0efp0LEf"}
+051718T142918: Response: {"transactionId":"5bc8de06-b764-49e2-b0e3-6171d5ee9ff4","output":{"pinOTP":"218132","pinExpirationDate":"05/18/2018 07:29 PM GMT"}}
+
+051718T142918: <-- IssuePinVelocity        OrgName: FDM-PHONE-PIN
+051718T142918: Verify that the user can request up to 3 pin numbers before unable to request more.
+051718T142918: Request: {"orgName":"FDM-PHONE-PIN","userName":"QbOdZNSjZH-K8eeqwMx6TRDyYsQVNecZZHO"}
+051718T142919: Response: {"transactionId":"44a3d290-2c66-49a1-8341-978565130d4d","output":{"pinOTP":"322831","pinExpirationDate":"05/17/2018 07:39 PM GMT"}}
+051718T142919: Request: {"orgName":"FDM-PHONE-PIN","userName":"QbOdZNSjZH-K8eeqwMx6TRDyYsQVNecZZHO"}
+051718T142920: Response: {"transactionId":"b313921c-dc4b-480b-ac11-e78b404c0442","output":{"pinOTP":"522766","pinExpirationDate":"05/17/2018 07:39 PM GMT"}}
+051718T142920: Request: {"orgName":"FDM-PHONE-PIN","userName":"QbOdZNSjZH-K8eeqwMx6TRDyYsQVNecZZHO"}
+051718T142922: Response: {"transactionId":"f7d04588-a7a1-48fc-a4a4-941fdb83443b","output":{"pinOTP":"768221","pinExpirationDate":"05/17/2018 07:39 PM GMT"}}
+051718T142922: Request: {"orgName":"FDM-PHONE-PIN","userName":"QbOdZNSjZH-K8eeqwMx6TRDyYsQVNecZZHO"}
+051718T142923: Response: {"transactionId":"0884dd43-3f14-447d-8760-4f32654c1973","output":{"pinOTP":"418630","pinExpirationDate":"05/17/2018 07:39 PM GMT"}}
+051718T142923: 
+
+$APIG$ Endpoint is being used on Level2.
+IssueURL = https://apidev.idev.fedex.com:8443/security/v1/pin
+VerifyURL = https://apidev.idev.fedex.com:8443/security/v1/pin/verify
+VelocityURL = https://apidev.idev.fedex.com:8443/security/v1/addresses/velocitycheck
+051718T142924: Token request: {  "access_token":"1e17c944-a04f-4208-9545-71533046c69b",  "token_type":"Bearer",  "expires_in":3600,  "scope":"oob"}     Iden:l7xx1892f99a6f88470ba29abc141cd7bd8d Secret:a4325d011acf4876b3fe3206931b8f5a

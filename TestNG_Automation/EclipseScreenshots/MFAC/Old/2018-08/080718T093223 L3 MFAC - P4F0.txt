@@ -1,0 +1,90 @@
+
+
+080718T093217: OAuth: https://apidrt.idev.fedex.com:8443/auth/oauth/v2/token  Iden: l7xx1892f99a6f88470ba29abc141cd7bd8d  Secret: a4325d011acf4876b3fe3206931b8f5a
+
+080718T093218: $APIG$ Endpoint is being used on Level 3.
+IssueURL = https://apidrt.idev.fedex.com:8443/security/v1/pin
+VerifyURL = https://apidrt.idev.fedex.com:8443/security/v1/pin/verify
+VelocityURL = https://apidrt.idev.fedex.com:8443/security/v1/addresses/velocitycheck
+
+
+<-- AddressVelocity        OrgName: FDM-POSTCARD-PIN
+Verify that the address velocity of 3 is reached and the correct error code is received.
+080718T093219: AddressVelocity Request: {"orgName":"FDM-POSTCARD-PIN","userName":"sqkztnbdpm-uctrrgwruyjamobdzthcwcdr"}
+080718T093219: AddressVelocity Response: {"transactionId":"a1be7dc5-bd00-4ccb-b521-35c4309906a2","output":{"advice":"ALLOW"}}
+080718T093219: AddressVelocity Request: {"orgName":"FDM-POSTCARD-PIN","userName":"sqkztnbdpm-uctrrgwruyjamobdzthcwcdr"}
+080718T093219: AddressVelocity Response: {"transactionId":"4f0f168e-2443-4aa3-9506-ab6e57480f01","output":{"advice":"ALLOW"}}
+080718T093219: AddressVelocity Request: {"orgName":"FDM-POSTCARD-PIN","userName":"sqkztnbdpm-uctrrgwruyjamobdzthcwcdr"}
+080718T093220: AddressVelocity Response: {"transactionId":"0a95a4c7-627d-4a05-a56f-d802974da55e","output":{"advice":"ALLOW"}}
+080718T093220: AddressVelocity Request: {"orgName":"FDM-POSTCARD-PIN","userName":"sqkztnbdpm-uctrrgwruyjamobdzthcwcdr"}
+080718T093220: AddressVelocity Response: {"transactionId":"ec9a1e9c-136d-4c30-9a71-c037d53bf143","errors":[{"code":"DENY","message":"Unfortunately, too many failed attempts for registration have occurred. Please try again later."}]}
+
+
+080718T093220: OAuth: https://apidrt.idev.fedex.com:8443/auth/oauth/v2/token  Iden: l7xx1892f99a6f88470ba29abc141cd7bd8d  Secret: a4325d011acf4876b3fe3206931b8f5a
+
+080718T093220: $APIG$ Endpoint is being used on Level 3.
+IssueURL = https://apidrt.idev.fedex.com:8443/security/v1/pin
+VerifyURL = https://apidrt.idev.fedex.com:8443/security/v1/pin/verify
+VelocityURL = https://apidrt.idev.fedex.com:8443/security/v1/addresses/velocitycheck
+
+
+<-- AddressVelocity        OrgName: FDM-PHONE-PIN
+Verify that the address velocity of 3 is reached and the correct error code is received.
+080718T093220: AddressVelocity Request: {"orgName":"FDM-PHONE-PIN","userName":"xdvrmjeriz-xslnnlmjsgjmjwzqiavktbru"}
+080718T093221: AddressVelocity Response: {"transactionId":"902e773e-0fd2-409c-bcae-b33de8c29d12","output":{"advice":"ALLOW"}}
+080718T093221: AddressVelocity Request: {"orgName":"FDM-PHONE-PIN","userName":"xdvrmjeriz-xslnnlmjsgjmjwzqiavktbru"}
+080718T093221: AddressVelocity Response: {"transactionId":"59ea850e-1b9c-41b5-a3e5-bb8f5805de98","output":{"advice":"ALLOW"}}
+080718T093221: AddressVelocity Request: {"orgName":"FDM-PHONE-PIN","userName":"xdvrmjeriz-xslnnlmjsgjmjwzqiavktbru"}
+080718T093221: AddressVelocity Response: {"transactionId":"ab28b292-f5e1-4acc-9ede-1b14d2213326","output":{"advice":"ALLOW"}}
+080718T093221: AddressVelocity Request: {"orgName":"FDM-PHONE-PIN","userName":"xdvrmjeriz-xslnnlmjsgjmjwzqiavktbru"}
+080718T093221: AddressVelocity Response: {"transactionId":"0faa9b38-4017-49ce-9e33-b8be3efb3026","errors":[{"code":"DENY","message":"Unfortunately, too many failed attempts for registration have occurred. Please try again later."}]}
+
+
+080718T093221: OAuth: https://apidrt.idev.fedex.com:8443/auth/oauth/v2/token  Iden: l7xx1892f99a6f88470ba29abc141cd7bd8d  Secret: a4325d011acf4876b3fe3206931b8f5a
+
+080718T093221: $Direct$ Endpoint is being used on Level 3.
+IssueURL = http://mfacdrt-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN
+VerifyURL = http://mfacdrt-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN
+VelocityURL = http://mfacdrt-cos-vip.test.cloud.fedex.com:9090/mfac/v3/addressVelocityCheck
+
+
+<-- AddressVelocity        OrgName: FDM-POSTCARD-PIN
+Verify that the address velocity of 3 is reached and the correct error code is received.
+080718T093221: AddressVelocity Request: {"orgName":"FDM-POSTCARD-PIN","userName":"dxsdzykwof-umniaouhqrsswxjbwviowyfi"}
+080718T093221: AddressVelocity Response: {"transactionId":"3d946866-53ad-4a73-801a-445424d21c5c","output":{"advice":"ALLOW"}}
+080718T093221: AddressVelocity Request: {"orgName":"FDM-POSTCARD-PIN","userName":"dxsdzykwof-umniaouhqrsswxjbwviowyfi"}
+080718T093222: AddressVelocity Response: {"transactionId":"19ab1c2f-f8a6-4a1e-a0ae-f0fa25b611a0","output":{"advice":"ALLOW"}}
+080718T093222: AddressVelocity Request: {"orgName":"FDM-POSTCARD-PIN","userName":"dxsdzykwof-umniaouhqrsswxjbwviowyfi"}
+080718T093222: AddressVelocity Response: {"transactionId":"676185de-0918-47e2-8ad6-9b4768eb8bf6","output":{"advice":"ALLOW"}}
+080718T093222: AddressVelocity Request: {"orgName":"FDM-POSTCARD-PIN","userName":"dxsdzykwof-umniaouhqrsswxjbwviowyfi"}
+080718T093222: AddressVelocity Response: {"transactionId":"59dfaa26-99d4-4c09-b52a-cd8833012997","errors":[{"code":"DENY","message":"Unfortunately, too many failed attempts for registration have occurred. Please try again later."}]}
+
+
+080718T093222: OAuth: https://apidrt.idev.fedex.com:8443/auth/oauth/v2/token  Iden: l7xx1892f99a6f88470ba29abc141cd7bd8d  Secret: a4325d011acf4876b3fe3206931b8f5a
+
+080718T093222: $Direct$ Endpoint is being used on Level 3.
+IssueURL = http://mfacdrt-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN
+VerifyURL = http://mfacdrt-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN
+VelocityURL = http://mfacdrt-cos-vip.test.cloud.fedex.com:9090/mfac/v3/addressVelocityCheck
+
+
+<-- AddressVelocity        OrgName: FDM-PHONE-PIN
+Verify that the address velocity of 3 is reached and the correct error code is received.
+080718T093222: AddressVelocity Request: {"orgName":"FDM-PHONE-PIN","userName":"oslqbjzszk-hrhymvqqodhflbtegkzsxikf"}
+080718T093222: AddressVelocity Response: {"transactionId":"0e675ef1-9562-4e0f-b781-b2fd686c3df5","output":{"advice":"ALLOW"}}
+080718T093222: AddressVelocity Request: {"orgName":"FDM-PHONE-PIN","userName":"oslqbjzszk-hrhymvqqodhflbtegkzsxikf"}
+080718T093222: AddressVelocity Response: {"transactionId":"17410d4b-3a21-4897-8d29-1256f8329462","output":{"advice":"ALLOW"}}
+080718T093222: AddressVelocity Request: {"orgName":"FDM-PHONE-PIN","userName":"oslqbjzszk-hrhymvqqodhflbtegkzsxikf"}
+080718T093222: AddressVelocity Response: {"transactionId":"2fe505ae-d082-4b2e-9d76-4264f88cb15f","output":{"advice":"ALLOW"}}
+080718T093222: AddressVelocity Request: {"orgName":"FDM-PHONE-PIN","userName":"oslqbjzszk-hrhymvqqodhflbtegkzsxikf"}
+080718T093223: AddressVelocity Response: {"transactionId":"883fc6f2-a4d0-4a2b-9d10-6478ee5167e3","errors":[{"code":"DENY","message":"Unfortunately, too many failed attempts for registration have occurred. Please try again later."}]}
+
+________________________________________________________________________________________________
+|                     08-07-18 09:32:18:949 |                 08-07-18 09:32:23:36 | 4 seconds |
+|   AddressVelocity  FDM-POSTCARD-PIN  APIG | ec9a1e9c-136d-4c30-9a71-c037d53bf143 |      Pass |
+|      AddressVelocity  FDM-PHONE-PIN  APIG | 0faa9b38-4017-49ce-9e33-b8be3efb3026 |      Pass |
+| AddressVelocity  FDM-POSTCARD-PIN  Direct | 59dfaa26-99d4-4c09-b52a-cd8833012997 |      Pass |
+|    AddressVelocity  FDM-PHONE-PIN  Direct | 883fc6f2-a4d0-4a2b-9d10-6478ee5167e3 |      Pass |
+|______________________________________________________________________________________________|
+Passed: 4 - Failed: 0
+

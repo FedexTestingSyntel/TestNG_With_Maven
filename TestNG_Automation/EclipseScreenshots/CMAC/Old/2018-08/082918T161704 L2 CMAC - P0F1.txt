@@ -1,0 +1,26 @@
+1 082918T161703: Getting UserID Details from USRC:  L2USCC051118T114912/Test1234
+1 082918T161703: Request: {"LogInRequest":{"password":"Test1234","processingParameters":{"clientId":"WCDO","returnDetailedErrors":false,"anonymousTransaction":true,"clientVersion":"3","returnLocalizedDateTime":false},"userName":"L2USCC051118T114912"}}
+1 082918T161704: Response: {"LogInResponse":{"successful":true}}
+1 082918T161704: Headers: Date: Wed, 29 Aug 2018 21:17:03 GMT Server: Apache Set-Cookie: siteDC=wtc; path=/; domain=.fedex.com; expires=Thu, 30-Aug-2018 21:17:03 GMT; secure Set-Cookie: SMIDENTITY=Df2KWHNH81hwM4KUeMcmBnfUWDLo+5YKy9AkIPCt0CT5nx3WqFR8zYHgKHDvSfxnq8qHQHidp++WfRqDpkQbhCchXO6hL3pdeCgLgEn1nXBNEwsDBvF7lKAq9axHDQjHjseFbBJFRMOhl6zy0Bdz2xjC+E13z/cOKX4JaTyBxnPJ7ANihD0+ODrc9HsLPEzXCxp6tPhNS5b6M4vcNuUr/DHnYXs8sAuoDzfufDcwQjmjTHG5NeqCtjQDsLKl91bUI1HE2F/PINRlGpI1pJ04p/uh4nFOpj1/DJZugUGJKiDwPZ531sxa0AMTA0xxhDXfIAJY/2vJ+Y9a2zH52E0U0CcHg7wyX5/7lY7at/ytvGirrKG0RNxIx21rLtDOAMAY8yGkUVTRsVdYQaFtSd3d+rNeADCgiyL/e6053bihCTH8SSj8WZryhsWQmUhQMPqHXDKCxnxbwNYJIdhkFsirq7MMYP4pYwwz3kni4uyhAHzwLwvl502XxchiMZD1pJ/6KJet7DJ9W/r4rRqrr43zFZyewXcZZJK+; path=/; domain=.fedex.com; secure Set-Cookie: fdx_cbid=08614916551535577423003220110171; path=/; expires=Tue, 24-Aug-38 21:17:03 GMT; domain=.fedex.com Set-Cookie: fcl_contactname=Fgmhqrtb Lxugasdd; domain=.fedex.com; path=/ Set-Cookie: fdx_login=ssoxdev2.d20c.648c2ef9; domain=.fedex.com; path=/; secure Set-Cookie: fcl_fname=Fgmhqrtb; domain=.fedex.com; path=/ Set-Cookie: fcl_uuid=00g0ggskpd; domain=.fedex.com; path=/ X-Frame-Options: SAMEORIGIN Vary: Accept-Encoding Access-Control-Allow-Credentials: true Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE Access-Control-Allow-Headers: Authorization, X-Requested-With, Content-Type, Origin, Accept, X-clientid, X-locale, X-loggedin, X-version Keep-Alive: timeout=30, max=1024 Connection: Keep-Alive Transfer-Encoding: chunked Content-Type: text/html; charset=UTF-8 
+1 082918T161704: [, 2, , , , https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/createUUID, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/companyid, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/1001/credentials, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/credentials/963, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/1001/resources/Rate Service, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/1001/resources, L2USCC051118T114912, L2USCC080818T103410, L2DECC081318T112742, L2CACC082418T105722, Test1234, Test1234, Test1234, Test1234, fdx_login=ssoxdev2.d20c.648c2ef9, 00g0ggskpd, 00g0ggsml6, 00g0ggsmn3, 00g0ggsmp2]
+
+
+Thread -- Time (MMDDYY'T'HHMMSS): -- Current progress
+1 082918T161704: DeleteProject Delete : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/1009
+1 082918T161704: DeleteProject Response : {"transactionId":"12d036a6-c492-4b72-b403-5741b11ce0d8"}
+DeleteProject failed [https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/1009]
+
+
+@@ Passed Test Cases:
+
+
+@@ Failed Test Cases:
+1)    <-- DeleteProject: Delete a project based on the pid in the url URL: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/1009
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/1009
+Response: {"transactionId":"12d036a6-c492-4b72-b403-5741b11ce0d8"}
+Scenario_Failed
+
+
+Execution Time in seconds: 0  (945 miliseconds)
+Passed: 0 - Failed: 1
+

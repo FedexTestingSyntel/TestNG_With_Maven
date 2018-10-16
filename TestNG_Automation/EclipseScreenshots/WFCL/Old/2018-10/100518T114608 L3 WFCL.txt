@@ -1,0 +1,337 @@
+
+WFCL_UserRegistration
+3, US
+19 100518T113451: LoadAddress Received: _US_ __
+19 100518T113451: LoadAddress is Returning: [3614 DELVERNE RD, , BALTIMORE, Maryland, MD, 21218, US, 7i4ksltmhnqlxhzbs9j6356ix]
+19 100518T113451: LoadDummyName is Returning: [Fthreefhdikyn, M, Lkssytdq]
+19 100518T113510: New driver created. Chrome
+19 100518T113517: Cookies Deleted
+19 100518T113517: Navigating to https://wwwdrt.idev.fedex.com/preferences
+19 100518T113525:     E--Element Clicked By.id: registernow
+19 100518T113526:     T--Text Entered Fthreefhdikyn in element By.id: firstName
+19 100518T113527:     T--Text Entered M in element By.name: initials
+19 100518T113527:     T--Text Entered Lkssytdq in element By.id: lastName
+19 100518T113528:     T--Text Entered sean.kauffman.osv@fedex.com in element By.id: email
+19 100518T113529:     T--Text Entered sean.kauffman.osv@fedex.com in element By.id: retypeEmail
+19 100518T113529:     T--Text Entered 3614 DELVERNE RD in element By.id: address1
+19 100518T113530:     T--Text Entered  in element By.name: address2
+19 100518T113530:     T--Text Entered BALTIMORE in element By.name: city
+19 100518T113531:     S--Selected Element By.id: state   by value MD
+19 100518T113531:     T--Text Entered 21218 in element By.id: zip
+19 100518T113532:     T--Text Entered 9011111111 in element By.id: phone
+19 100518T113532:     T--Text Entered L3USCreate100518T113451 in element By.id: uid
+19 100518T113533:     T--Text Entered Test1234 in element By.id: password
+19 100518T113533:     T--Text Entered Test1234 in element By.id: retypePassword
+19 100518T113534:     S--Selected Element By.id: reminderQuestion   by visible text What is your mother's first name?
+19 100518T113534:     T--Text Entered mom in element By.id: reminderAnswer
+19 100518T113535:     E--Element Clicked By.id: acceptterms
+19 100518T113535: Name: [Fthreefhdikyn, M, Lkssytdq]    UserID:L3USCreate100518T113451
+19 100518T113536: 100518T113451 L3US WFCL ContactInformation.png Screenshot Taken
+19 100518T113600:     E--Element Clicked By.id: createUserID
+19 100518T113602: 100518T113451 L3US WFCL RegistrationConfirmation.png Screenshot Taken
+19 100518T113602: fcl_uuid value is gw0g0hb9fj
+19 100518T113602: Finished WFCL_UserRegistration  L3USCreate100518T113451/Test1234 -- gw0g0hb9fj
+[L3USCreate100518T113451, gw0g0hb9fj]
+Scenario_Passed
+
+WFCL_CreditCardRegistrationEnroll
+3, ss90705920, US, [Ljava.lang.String;@430df69e
+21 100518T113451: LoadCreditCard Received: V
+21 100518T113451: LoadCreditCard is Returning: [Visa, 4005554444444460, 460, 12, 20]
+21 100518T113451: LoadAddress Received: _US_ __
+21 100518T113451: LoadAddress is Returning: [3614 DELVERNE RD, , BALTIMORE, Maryland, MD, 21218, US, 7i4ksltmhnqlxhzbs9j6356ix]
+21 100518T113502: New driver created. Chrome
+21 100518T113517: Cookies Deleted
+21 100518T113517: Navigating to https://wwwdrt.idev.fedex.com/cgi-bin/ship_it/interNetShip?origincountry=us&locallang=en
+21 100518T113550: Navigating to https://wwwdrt.idev.fedex.com/fcl/ALL?enrollmentid=ss90705920&language=en&country=us
+21 100518T113601: 100518T113451 L3 WFCL ss90705920 CC Discount Page.png Screenshot Taken
+21 100518T113604:     E--Element Clicked By.linkText: Finish registering for a FedEx account
+21 100518T113605:     T--Text Entered FthreeUSCCsbwhzue in element By.id: firstName
+21 100518T113605:     T--Text Entered M in element By.name: initials
+21 100518T113606:     T--Text Entered Lbfinzlh in element By.id: lastName
+21 100518T113606:     T--Text Entered sean.kauffman.osv@fedex.com in element By.id: email
+21 100518T113607:     T--Text Entered sean.kauffman.osv@fedex.com in element By.id: retypeEmail
+21 100518T113607:     T--Text Entered 3614 DELVERNE RD in element By.id: address1
+21 100518T113608:     T--Text Entered  in element By.name: address2
+21 100518T113608:     T--Text Entered BALTIMORE in element By.name: city
+21 100518T113609:     S--Selected Element By.id: state   by value MD
+21 100518T113609:     T--Text Entered 21218 in element By.id: zip
+21 100518T113610:     T--Text Entered 9011111111 in element By.id: phone
+21 100518T113611:     T--Text Entered L3ss90705920CC100518T113451 in element By.id: uid
+21 100518T113612:     T--Text Entered Test1234 in element By.id: password
+21 100518T113612:     T--Text Entered Test1234 in element By.id: retypePassword
+21 100518T113613:     S--Selected Element By.id: reminderQuestion   by visible text What is your mother's first name?
+21 100518T113613:     T--Text Entered mom in element By.id: reminderAnswer
+21 100518T113613:     E--Element Clicked By.id: acceptterms
+21 100518T113613: Name: [FthreeUSCCsbwhzue, M, Lbfinzlh]    UserID:L3ss90705920CC100518T113451
+21 100518T113615: 100518T113451 L3 WFCL ss90705920 CC ContactInformation.png Screenshot Taken
+21 100518T113628:     E--Element Clicked By.id: createUserID
+21 100518T113628: WFCL_CC_Page recieved: Visa, US From: CreditCardRegistrationEnroll
+21 100518T113628: fcl_uuid value is gw0g0hb9fk
+21 100518T113629:     T--Text Entered 4005554444444460 in element By.id: creditCardNumber
+21 100518T113629:     T--Text Entered 460 in element By.id: creditCardIDNumber
+21 100518T113629:     S--Selected Element By.id: monthExpiry   by visible text 12
+21 100518T113629:     S--Selected Element By.id: yearExpiry   by visible text 20
+21 100518T113630:     E--Element Clicked By.name: editshipinfo
+21 100518T113630: Verified Text: Country/Territory     By.xpath: //*[@id='shipping-address-fields']/label[12]/span[1]
+21 100518T113630:     E--Element Clicked By.name: editccinfo
+21 100518T113630: Verified Text: Country/Territory     By.xpath: //*[@id='billing-address']/label[17]/span[1]
+21 100518T113630:     S--Selected Element By.name: questionCd9   by index 1
+21 100518T113631:     S--Selected Element By.name: questionCd10   by index 1
+21 100518T113631:     S--Selected Element By.name: questionCd11   by index 1
+21 100518T113631:     S--Selected Element By.id: CCType   by visible text Visa
+21 100518T113633: 100518T113451 L3 WFCL ss90705920 CC Information.png Screenshot Taken
+21 100518T113633:     E--Element Clicked By.id: Complete
+21 100518T113633: Error on Credit Card entry screen. Attempting to register with differnet credit card
+21 100518T113633: LoadCreditCard Received: 4005554444444460
+21 100518T113633: LoadCreditCard is Returning: [Visa, 4111111111111111, 111, 12, 20]
+21 100518T113633: WFCL_CC_Page recieved: Visa, US From: WFCL_CC_Page
+21 100518T113633: fcl_uuid value is gw0g0hb9fk
+21 100518T113634:     T--Text Entered 4111111111111111 in element By.id: creditCardNumber
+21 100518T113634:     T--Text Entered 111 in element By.id: creditCardIDNumber
+21 100518T113634:     S--Selected Element By.id: monthExpiry   by visible text 12
+21 100518T113635:     S--Selected Element By.id: yearExpiry   by visible text 20
+21 100518T113636: 100518T113451 L3 WFCL ss90705920 CC General Failure.png Screenshot Taken
+Scenario_Failed
+
+WFCL_Reset_Password_Email
+3, US, L3WIDMWgtm082218T094621US, Test1234
+22 100518T113646: New driver created. Chrome
+22 100518T113652: Cookies Deleted
+22 100518T113652: Navigating to https://wwwdrt.idev.fedex.com/en-us/home.html
+22 100518T113653: Navigating to https://wwwdrt.idev.fedex.com/PickupApp/login?locale=en_us
+22 100518T113658:     T--Text Entered L3WIDMWgtm082218T094621US in element By.name: username
+22 100518T113658:     T--Text Entered Test1234 in element By.name: password
+22 100518T113702:     E--Element Clicked By.name: login
+22 100518T113702: fcl_uuid value is 4cFwUe0QDp
+22 100518T113702: Login:L3WIDMWgtm082218T094621US/Test1234
+22 100518T113702: Navigating to https://wwwdrt.idev.fedex.com/apps/myprofile/loginandcontact/?locale=en_US&cntry_code=us
+22 100518T113712: 100518T113451 3 WFCL Password Reset Email UserDetails.png Screenshot Taken
+22 100518T113715: Cookies Deleted
+22 100518T113715: Navigating to https://wwwdrt.idev.fedex.com/cgi-bin/ship_it/interNetShip?origincountry=us&locallang=en
+22 100518T113748:     E--Element Clicked By.name: forgotUidPwd
+22 100518T113748:     T--Text Entered L3WIDMWgtm082218T094621US in element By.name: userID
+22 100518T113749:     E--Element Clicked By.xpath: //*[@id='module.forgotuseridandpassword._expanded']/table/tbody/tr/td[1]/form/table/tbody/tr[6]/td/input[2]
+22 100518T113752:     E--Element Clicked By.name: action2
+22 100518T113754: 100518T113451 3 WFCL Password Reset Email.png Screenshot Taken
+22 100518T113754: Completed ResetPasswordWFCL using L3WIDMWgtm082218T094621US. An email has been triggered and that test must be completed manually by sean.kauffman.osv@fedex.com
+sean.kauffman.osv@fedex.com
+Scenario_Passed
+
+WFCL_AccountRegistration_INET
+3, US, 641516945
+24 100518T113451: Account number 641516945 recieved from WFCL_AccountRegistration_INET
+24 100518T113451: Navigating to http://vjb00030.ute.fedex.com:7085/cfCDSTestApp/contact.jsp
+24 100518T113457: New driver created. Chrome
+24 100518T113458:     T--Text Entered 641516945 in element By.name: contactAccountNumber
+24 100518T113458:     T--Text Entered FX in element By.name: contactAccountOpCo
+24 100518T113458:     E--Element Clicked By.xpath: //input[(@name='contactLevel') and (@value = 'L3')]
+24 100518T113459:     E--Element Clicked By.name: contactAccountSubmit
+24 100518T113459: AccountDetails: [3614 DELVERNE RD, , BALTIMORE, , MD, 21218, US]
+24 100518T113459: LoadDummyName is Returning: [FthreeUSneqhjyk, M, Lfbxgkbw]
+24 100518T113459: Attempting to register with 641516945
+24 100518T113503: Cookies Deleted
+24 100518T113503: Navigating to https://wwwdrt.idev.fedex.com/fcl/web/jsp/contactInfo1.jsp?appName=oadr&locale=us_en&step3URL=https%3A%2F%2F.fedex.com%3A443%2Ffcl%2Fweb%2Fjsp%2FfclValidateAndCreate.jsp&afterwardsURL=https://wwwdrt.idev.fedex.com%3A443%2Ffcl%2Fweb%2Fjsp%2Foadr.jsp&programIndicator=p314t9n1ey&accountOption=link
+24 100518T113508:     E--Element Clicked By.xpath: //input[(@name='accountType') and (@value = 'linkAccount')]
+24 100518T113511:     T--Text Entered FthreeUSneqhjyk in element By.id: firstName
+24 100518T113512:     T--Text Entered M in element By.name: initials
+24 100518T113512:     T--Text Entered Lfbxgkbw in element By.id: lastName
+24 100518T113513:     T--Text Entered sean.kauffman.osv@fedex.com in element By.id: email
+24 100518T113515:     T--Text Entered sean.kauffman.osv@fedex.com in element By.id: retypeEmail
+24 100518T113516:     T--Text Entered 3614 DELVERNE RD in element By.id: address1
+24 100518T113516:     T--Text Entered  in element By.name: address2
+24 100518T113517:     T--Text Entered BALTIMORE in element By.name: city
+24 100518T113518:     S--Selected Element By.id: state   by value MD
+24 100518T113519:     T--Text Entered 21218 in element By.id: zip
+24 100518T113519:     T--Text Entered 9011111111 in element By.id: phone
+24 100518T113520:     T--Text Entered L3InetUS100518T113459 in element By.id: uid
+24 100518T113520:     T--Text Entered Test1234 in element By.id: password
+24 100518T113521:     T--Text Entered Test1234 in element By.id: retypePassword
+24 100518T113521:     S--Selected Element By.id: reminderQuestion   by visible text What is your mother's first name?
+24 100518T113521:     T--Text Entered mom in element By.id: reminderAnswer
+24 100518T113522:     E--Element Clicked By.id: acceptterms
+24 100518T113522: Name: [FthreeUSneqhjyk, M, Lfbxgkbw]    UserID:L3InetUS100518T113459
+24 100518T113524: 100518T113459 3US WFCL  Screenshot Taken
+24 100518T113535:     E--Element Clicked By.id: createUserID
+24 100518T113537: 100518T113459 3US WFCL ContactInformation.png Screenshot Taken
+24 100518T113537:     E--Element Clicked By.id: createUserID
+24 100518T113538:     T--Text Entered 641516945 in element By.id: accountNumber
+24 100518T113538:     T--Text Entered 641516945_US in element By.id: nickName
+24 100518T113539: 100518T113459 3US WFCL AccountInformation.png Screenshot Taken
+24 100518T113539:     E--Element Clicked By.id: createUserID
+24 100518T113614: 100518T113459 3US WFCL RegistrationConfirmation.png Screenshot Taken
+24 100518T113614: Navigating to https://wwwdrt.idev.fedex.com/cgi-bin/ship_it/interNetShip?origincountry=us&locallang=en
+24 100518T113616:     S--Selected Element By.name: accountNumberOpco   by visible text 641516945
+24 100518T113618: 100518T113459 3US WFCL INET Account Selection.png Screenshot Taken
+24 100518T113635:     E--Element Clicked By.className: buttonpurple
+24 100518T113814: 100518T113459 3US WFCL INET Confirmation.png Screenshot Taken
+24 100518T113817:     E--Element Clicked By.xpath: //*[@id='content']/div/table/tbody/tr[1]/td[2]/table[2]/tbody/tr[3]/td/table/tbody/tr[1]/td[4]/table/tbody/tr/td/table/tbody/tr[1]/td[2]/a/img
+24 100518T113817: fcl_uuid value is 0w0g0hbabv
+24 100518T113817: Finished WFCL_AccountRegistration  L3InetUS100518T113459/Test1234--641516945--0w0g0hbabv
+[L3InetUS100518T113459, 641516945, 0w0g0hbabv, INET:true, Admin:false]
+Scenario_Passed
+
+WFCL_PasswordResetSecret
+3, US, L3WIDMWgtm082218T094621US, Test1234A, mom
+23 100518T113611: New driver created. Chrome
+23 100518T113622: Cookies Deleted
+23 100518T113622: Navigating to https://wwwdrt.idev.fedex.com/cgi-bin/ship_it/interNetShip?origincountry=us&locallang=en
+23 100518T113656:     E--Element Clicked By.name: forgotUidPwd
+23 100518T113658:     T--Text Entered L3WIDMWgtm082218T094621US in element By.name: userID
+23 100518T113659: 100518T113451 3 WFCL Password Reset.png Screenshot Taken
+23 100518T113702:     E--Element Clicked By.xpath: //*[@id='module.forgotuseridandpassword._expanded']/table/tbody/tr/td[1]/form/table/tbody/tr[6]/td/input[2]
+23 100518T113704:     E--Element Clicked By.xpath: //*[@id='module.resetpasswordoptions._expanded']/table/tbody/tr/td[1]/form/table/tbody/tr[5]/td/input
+23 100518T113704:     T--Text Entered mom in element By.name: answer
+23 100518T113706: 100518T113451 3 WFCL Reset Password Secret.png Screenshot Taken
+23 100518T113711:     E--Element Clicked By.name: action1
+23 100518T113711:     T--Text Entered Test1234A in element By.name: password
+23 100518T113712:     T--Text Entered Test1234A in element By.name: retypePassword
+23 100518T113713: 100518T113451 3 WFCL New Password.png Screenshot Taken
+23 100518T113715:     E--Element Clicked By.name: confirm
+23 100518T113719: Cookies Deleted
+23 100518T113719: Navigating to https://wwwdrt.idev.fedex.com/en-us/home.html
+23 100518T113723: Navigating to https://wwwdrt.idev.fedex.com/PickupApp/login?locale=en_us
+23 100518T113725:     T--Text Entered L3WIDMWgtm082218T094621US in element By.name: username
+23 100518T113726:     T--Text Entered Test1234A in element By.name: password
+23 100518T113727:     E--Element Clicked By.name: login
+23 100518T113727: fcl_uuid value is 4cFwUe0QDp
+23 100518T113727: Login:L3WIDMWgtm082218T094621US/Test1234A
+23 100518T113727: L3WIDMWgtm082218T094621US has had the password changed to Test1234A
+23 100518T113737: Cookies Deleted
+23 100518T113737: Navigating to https://wwwdrt.idev.fedex.com/cgi-bin/ship_it/interNetShip?origincountry=us&locallang=en
+23 100518T113809:     E--Element Clicked By.name: forgotUidPwd
+23 100518T113810:     T--Text Entered L3WIDMWgtm082218T094621US in element By.name: userID
+23 100518T113811: 100518T113727 3 WFCL Password Reset.png Screenshot Taken
+23 100518T113812:     E--Element Clicked By.xpath: //*[@id='module.forgotuseridandpassword._expanded']/table/tbody/tr/td[1]/form/table/tbody/tr[6]/td/input[2]
+23 100518T113814:     E--Element Clicked By.xpath: //*[@id='module.resetpasswordoptions._expanded']/table/tbody/tr/td[1]/form/table/tbody/tr[5]/td/input
+23 100518T113814:     T--Text Entered mom in element By.name: answer
+23 100518T113816: 100518T113727 3 WFCL Reset Password Secret.png Screenshot Taken
+23 100518T113817:     E--Element Clicked By.name: action1
+23 100518T113818:     T--Text Entered Test1234 in element By.name: password
+23 100518T113818:     T--Text Entered Test1234 in element By.name: retypePassword
+23 100518T113819: 100518T113727 3 WFCL New Password.png Screenshot Taken
+23 100518T113820:     E--Element Clicked By.name: confirm
+23 100518T113824: Cookies Deleted
+23 100518T113824: Navigating to https://wwwdrt.idev.fedex.com/en-us/home.html
+23 100518T113826: Navigating to https://wwwdrt.idev.fedex.com/PickupApp/login?locale=en_us
+23 100518T113828:     T--Text Entered L3WIDMWgtm082218T094621US in element By.name: username
+23 100518T113828:     T--Text Entered Test1234 in element By.name: password
+23 100518T113830:     E--Element Clicked By.name: login
+23 100518T113830: fcl_uuid value is 4cFwUe0QDp
+23 100518T113830: Login:L3WIDMWgtm082218T094621US/Test1234
+23 100518T113830: L3WIDMWgtm082218T094621US has had the password changed to Test1234
+true
+Scenario_Passed
+
+WFCLForgotUserEmail
+3, US, sean.kauffman.osv@fedex.com
+20 100518T113807: New driver created. Chrome
+20 100518T113811: Cookies Deleted
+20 100518T113811: Navigating to https://wwwdrt.idev.fedex.com/cgi-bin/ship_it/interNetShip?origincountry=us&locallang=en
+20 100518T113844:     E--Element Clicked By.name: forgotUidPwd
+20 100518T113845:     T--Text Entered sean.kauffman.osv@fedex.com in element By.name: email
+20 100518T113846: 100518T113451 L3 WFCL Forgot User Id.png Screenshot Taken
+20 100518T113857:     E--Element Clicked By.xpath: //*[@id='module.forgotuseridandpassword._expanded']/table/tbody/tr/td[3]/form/table/tbody/tr[6]/td/input[2]
+20 100518T113858: 100518T113451 L3 WFCL Forgot User Confirmation.png Screenshot Taken
+20 100518T113858: Completed Forgot User Confirmation using sean.kauffman.osv@fedex.com. An email has been triggered and that test must be completed manually by to see the user list.
+sean.kauffman.osv@fedex.com
+Scenario_Passed
+
+WFCL_AccountRegistration_WDPA
+3, US, 641516945
+25 100518T113451: Account number 641516945 recieved from WFCL_AccountRegistration_WDPA
+25 100518T113451: Navigating to http://vjb00030.ute.fedex.com:7085/cfCDSTestApp/contact.jsp
+25 100518T113828: New driver created. Chrome
+25 100518T113829:     T--Text Entered 641516945 in element By.name: contactAccountNumber
+25 100518T113830:     T--Text Entered FX in element By.name: contactAccountOpCo
+25 100518T113830:     E--Element Clicked By.xpath: //input[(@name='contactLevel') and (@value = 'L3')]
+25 100518T113830:     E--Element Clicked By.name: contactAccountSubmit
+25 100518T113831: AccountDetails: [3614 DELVERNE RD, , BALTIMORE, , MD, 21218, US]
+25 100518T113831: LoadDummyName is Returning: [FthreeWDPAwkuksma, M, Lefalbba]
+25 100518T113838: Cookies Deleted
+25 100518T113838: Navigating to https://wwwdrt.idev.fedex.com/PickupApp/login?locale=en_us
+25 100518T113841:     E--Element Clicked By.name: signupnow
+25 100518T113842:     T--Text Entered FthreeWDPAwkuksma in element By.id: firstName
+25 100518T113842:     T--Text Entered M in element By.name: initials
+25 100518T113843:     T--Text Entered Lefalbba in element By.id: lastName
+25 100518T113843:     T--Text Entered sean.kauffman.osv@fedex.com in element By.id: email
+25 100518T113844:     T--Text Entered sean.kauffman.osv@fedex.com in element By.id: retypeEmail
+25 100518T113844:     T--Text Entered 3614 DELVERNE RD in element By.id: address1
+25 100518T113845:     T--Text Entered  in element By.name: address2
+25 100518T113845:     T--Text Entered BALTIMORE in element By.name: city
+25 100518T113845:     T--Text Entered MD in element By.name: state
+25 100518T113846:     T--Text Entered 21218 in element By.id: zip
+25 100518T113846:     T--Text Entered 9011111111 in element By.id: phone
+25 100518T113846:     T--Text Entered L3WDPA100518T113831 in element By.id: uid
+25 100518T113847:     T--Text Entered Test1234 in element By.id: password
+25 100518T113847:     T--Text Entered Test1234 in element By.id: retypePassword
+25 100518T113847:     S--Selected Element By.id: reminderQuestion   by visible text What is your mother's first name?
+25 100518T113848:     T--Text Entered mom in element By.id: reminderAnswer
+25 100518T113848: Name: [FthreeWDPAwkuksma, M, Lefalbba]    UserID:L3WDPA100518T113831
+25 100518T113849: 100518T113831 3US WFCL  Screenshot Taken
+25 100518T113902:     E--Element Clicked By.id: iacceptbutton
+25 100518T114033: 100518T113831 3US WFCL General Failure.png Screenshot Taken
+Scenario_Failed
+
+WFCL_AccountRegistration_Admin
+3, US, 641516945
+89 100518T114036: LoadDummyName is Returning: [FthreeINETjgpwxfk, M, Lqocdnru]
+89 100518T114036: Account number 641516945 recieved from WFCL_AccountRegistration_Admin
+89 100518T114036: Navigating to http://vjb00030.ute.fedex.com:7085/cfCDSTestApp/contact.jsp
+89 100518T114042: New driver created. Chrome
+89 100518T114043:     T--Text Entered 641516945 in element By.name: contactAccountNumber
+89 100518T114044:     T--Text Entered FX in element By.name: contactAccountOpCo
+89 100518T114044:     E--Element Clicked By.xpath: //input[(@name='contactLevel') and (@value = 'L3')]
+89 100518T114051:     E--Element Clicked By.name: contactAccountSubmit
+89 100518T114051: AccountDetails: [3614 DELVERNE RD, , BALTIMORE, , MD, 21218, US]
+89 100518T114051: Attempting to register with 641516945
+89 100518T114054: Cookies Deleted
+89 100518T114054: Navigating to https://wwwdrt.idev.fedex.com/fcl/web/jsp/contactInfo1.jsp?appName=oadr&locale=us_en&step3URL=https%3A%2F%2F.fedex.com%3A443%2Ffcl%2Fweb%2Fjsp%2FfclValidateAndCreate.jsp&afterwardsURL=https://wwwdrt.idev.fedex.com%3A443%2Ffcl%2Fweb%2Fjsp%2Foadr.jsp&programIndicator=p314t9n1ey&accountOption=link
+89 100518T114056:     E--Element Clicked By.xpath: //input[(@name='accountType') and (@value = 'linkAccount')]
+89 100518T114057:     T--Text Entered FthreeINETjgpwxfk in element By.id: firstName
+89 100518T114057:     T--Text Entered M in element By.name: initials
+89 100518T114057:     T--Text Entered Lqocdnru in element By.id: lastName
+89 100518T114058:     T--Text Entered sean.kauffman.osv@fedex.com in element By.id: email
+89 100518T114058:     T--Text Entered sean.kauffman.osv@fedex.com in element By.id: retypeEmail
+89 100518T114059:     T--Text Entered 3614 DELVERNE RD in element By.id: address1
+89 100518T114059:     T--Text Entered  in element By.name: address2
+89 100518T114059:     T--Text Entered BALTIMORE in element By.name: city
+89 100518T114059:     S--Selected Element By.id: state   by value MD
+89 100518T114100:     T--Text Entered 21218 in element By.id: zip
+89 100518T114100:     T--Text Entered 9011111111 in element By.id: phone
+89 100518T114100:     T--Text Entered L3641516945US100518T114036 in element By.id: uid
+89 100518T114101:     T--Text Entered Test1234 in element By.id: password
+89 100518T114101:     T--Text Entered Test1234 in element By.id: retypePassword
+89 100518T114101:     S--Selected Element By.id: reminderQuestion   by visible text What is your mother's first name?
+89 100518T114102:     T--Text Entered mom in element By.id: reminderAnswer
+89 100518T114102:     E--Element Clicked By.id: acceptterms
+89 100518T114102: Name: [FthreeINETjgpwxfk, M, Lqocdnru]    UserID:L3641516945US100518T114036
+89 100518T114103: 100518T114051 3US WFCL  Screenshot Taken
+89 100518T114112:     E--Element Clicked By.id: createUserID
+89 100518T114113: 100518T114051 3US WFCL ContactInformation.png Screenshot Taken
+89 100518T114114:     E--Element Clicked By.id: createUserID
+89 100518T114114:     T--Text Entered 641516945 in element By.id: accountNumber
+89 100518T114114:     T--Text Entered 641516945_US in element By.id: nickName
+89 100518T114115: 100518T114051 3US WFCL AccountInformation.png Screenshot Taken
+89 100518T114116:     E--Element Clicked By.id: createUserID
+89 100518T114140: 100518T114051 3US WFCL RegistrationConfirmation.png Screenshot Taken
+89 100518T114140: Navigating to https://wwwdrt.idev.fedex.com/cgi-bin/ship_it/interNetShip?origincountry=us&locallang=en
+89 100518T114144:     S--Selected Element By.name: accountNumberOpco   by visible text 641516945
+89 100518T114146: 100518T114051 3US WFCL INET Account Selection.png Screenshot Taken
+89 100518T114157:     E--Element Clicked By.className: buttonpurple
+89 100518T114242: Not able to Verify data on INET registration page.
+89 100518T114243: 100518T114051 3US WFCL INET Confirmation.png Screenshot Taken
+89 100518T114520:     E--Element Clicked By.xpath: //*[@id='content']/div/table/tbody/tr[1]/td[2]/table[2]/tbody/tr[3]/td/table/tbody/tr[1]/td[4]/table/tbody/tr/td/table/tbody/tr[1]/td[2]/a/img
+Scenario_Failed
+
+
+
+[10-05-18 11:34:51:27, 10-05-18 11:46:08:177, , ]
+[WFCL_UserRegistration, 3, US, [L3USCreate100518T113451, gw0g0hb9fj], Scenario_Passed]
+[WFCL_CreditCardRegistrationEnroll, 3, ss90705920, US, [Ljava.lang.String;@430df69e, 21 100518T113636: 100518T113451 L3 WFCL ss90705920 CC General Failure.png Screenshot Taken, Scenario_Failed]
+[WFCL_Reset_Password_Email, 3, US, L3WIDMWgtm082218T094621US, Test1234, sean.kauffman.osv@fedex.com, Scenario_Passed]
+[WFCL_AccountRegistration_INET, 3, US, 641516945, [L3InetUS100518T113459, 641516945, 0w0g0hbabv, INET:true, Admin:false], Scenario_Passed]
+[WFCL_PasswordResetSecret, 3, US, L3WIDMWgtm082218T094621US, Test1234A, mom, true, Scenario_Passed]
+[WFCLForgotUserEmail, 3, US, sean.kauffman.osv@fedex.com, sean.kauffman.osv@fedex.com, Scenario_Passed]
+[WFCL_AccountRegistration_WDPA, 3, US, 641516945, 25 100518T114033: 100518T113831 3US WFCL General Failure.png Screenshot Taken, Scenario_Failed]
+[WFCL_AccountRegistration_Admin, 3, US, 641516945, 89 100518T114520:     E--Element Clicked By.xpath: //*[@id='content']/div/table/tbody/tr[1]/td[2]/table[2]/tbody/tr[3]/td/table/tbody/tr[1]/td[4]/table/tbody/tr/td/table/tbody/tr[1]/td[2]/a/img, Scenario_Failed]

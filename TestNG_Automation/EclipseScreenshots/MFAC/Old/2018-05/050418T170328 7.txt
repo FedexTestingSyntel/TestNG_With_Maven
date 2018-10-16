@@ -1,0 +1,65 @@
+
+050418T170325: $APIG$
+Endpoint is being used.
+050418T170325: IssueURL = https://api.fedex.com/security/v1/pin
+VerifyURL = https://api.fedex.com/security/v1/pin/verify
+VelocityURL = https://api.fedex.com/security/v1/addresses/velocitycheck
+
+050418T170325: <-- AddressVelocity starting.    OrgName: FDM-POSTCARD-PIN
+050418T170327: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"KSycyXxvti-1Vrj0GqTR02PptnaElVerU3i"}
+050418T170327: Response: {
+	"error":"invalid_request",
+	"error_description":"validation error"
+}
+
+050418T170327: <-- IssuePin starting.    OrgName: FDM-POSTCARD-PIN
+050418T170327: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"VsJWOeOzN1-I4sgBWRzN0z5Cyc7dG48ybzx"}
+050418T170327: Response: {
+	"error":"invalid_request",
+	"error_description":"validation error"
+}
+
+050418T170327: <-- IssuePinVelocity starting.    OrgName: FDM-POSTCARD-PIN
+050418T170327: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"mKkrQZQQaQ-CjCQbGOsVM1j2ePpE7NnshE8"}
+050418T170327: Response: {
+	"error":"invalid_request",
+	"error_description":"validation error"
+}
+
+050418T170327: <-- VerifyPinNoLongerValid starting.    OrgName: FDM-POSTCARD-PIN
+050418T170327: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"0EzbQ1yJke-WGmG4yayMRIBiq8ILQDSrcgd"}
+050418T170328: Response: {
+	"error":"invalid_request",
+	"error_description":"validation error"
+}
+050418T170328: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"{\n\t\"error\":\"invalid_request\",\n\t\"error_description\":\"validation error\"\n}","userName":"0EzbQ1yJke-WGmG4yayMRIBiq8ILQDSrcgd"}
+050418T170328: Response: {
+	"error":"invalid_request",
+	"error_description":"validation error"
+}
+
+050418T170328: <-- VerifyPinValid starting.    OrgName: FDM-POSTCARD-PIN
+050418T170328: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"cuUg8k31Iu-JF5qZ3yDJQfphnfXqMguZIzs"}
+050418T170328: Response: {
+	"error":"invalid_request",
+	"error_description":"validation error"
+}
+050418T170328: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"{\n\t\"error\":\"invalid_request\",\n\t\"error_description\":\"validation error\"\n}","userName":"cuUg8k31Iu-JF5qZ3yDJQfphnfXqMguZIzs"}
+050418T170328: Response: {
+	"error":"invalid_request",
+	"error_description":"validation error"
+}
+
+050418T170328: <-- zIssuePinExpiration starting.    OrgName: FDM-POSTCARD-PIN
+050418T170328: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"9ewHmSnmbS-m5TKKjg9yWblRydzasCt4I3u"}
+050418T170328: Response: {
+	"error":"invalid_request",
+	"error_description":"validation error"
+}
+
+050418T170328: <-- AddressVelocity starting.    OrgName: FDM-PHONE-PIN
+050418T170328: Request: {"orgName":"FDM-PHONE-PIN","userName":"K7LJpYAzMJ-ZD3dnwPYZlMupJvdXCa5zYau"}
+050418T170328: Response: {
+	"error":"invalid_request",
+	"error_description":"validation error"
+}

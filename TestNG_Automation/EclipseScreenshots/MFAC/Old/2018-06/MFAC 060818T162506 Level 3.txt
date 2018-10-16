@@ -1,0 +1,17 @@
+060818T162501: 
+
+$APIG$ Endpoint is being used on Level 3.
+IssueURL = https://apidrt.idev.fedex.com:8443/security/v1/pin
+VerifyURL = https://apidrt.idev.fedex.com:8443/security/v1/pin/verify
+VelocityURL = https://apidrt.idev.fedex.com:8443/security/v1/addresses/velocitycheck
+060818T162501: 
+060818T162501: <-- IssuePinVelocity        OrgName: FDM-POSTCARD-PIN
+060818T162501: Verify that the user can request up to 3 pin numbers before unable to request more.
+060818T162502: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"N5j4n1WZdO-vtD5hpdY4glAbkBB1mlf0opF"}
+060818T162502: Response: {"transactionId":"103b6813-c8ea-4a46-96a6-d597c74a22e4","output":{"pinOTP":"886435","pinExpirationDate":"06/09/2018 09:25 PM GMT"}}
+060818T162502: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"N5j4n1WZdO-vtD5hpdY4glAbkBB1mlf0opF"}
+060818T162504: Response: {"transactionId":"9b974242-c276-47ac-b21c-56c75952f8af","output":{"pinOTP":"857860","pinExpirationDate":"06/09/2018 09:25 PM GMT"}}
+060818T162504: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"N5j4n1WZdO-vtD5hpdY4glAbkBB1mlf0opF"}
+060818T162505: Response: {"transactionId":"80e92bc1-06a8-4df6-817b-6f9f915ed6ac","output":{"pinOTP":"979722","pinExpirationDate":"06/09/2018 09:25 PM GMT"}}
+060818T162505: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"N5j4n1WZdO-vtD5hpdY4glAbkBB1mlf0opF"}
+060818T162506: Response: {"transactionId":"aafdc519-c30a-46e1-b7e4-0924f9059a88","output":{"pinOTP":"883487","pinExpirationDate":"06/09/2018 09:25 PM GMT"}}

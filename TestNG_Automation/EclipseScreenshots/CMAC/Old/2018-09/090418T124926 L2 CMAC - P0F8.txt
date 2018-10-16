@@ -1,0 +1,105 @@
+1 090418T124924: Get cookie from USRC for L2USCC051118T114912/Test1234
+1 090418T124925:   Cookie: fdx_login=ssoxdev2.b31b.d911628, UUID: 00g0ggskpd
+1 090418T124925: Get cookie from USRC for L2USCC080818T103410/Test1234
+1 090418T124925:   Cookie: fdx_login=ssoxdev2.95f7.1debe240, UUID: 00g0ggsml6
+1 090418T124925: Get cookie from USRC for L2WIDMWgtm080618T164419/Test1234
+1 090418T124925:   Cookie: fdx_login=ssoxdev2.d933.71626db1, UUID: NrpHGSqDVP
+1 090418T124925: Get cookie from USRC for L2InetNon081518T171619/Test1234
+1 090418T124925:   Cookie: fdx_login=ssoxdev2.9b63.1cbf616d, UUID: g0g0ggsnnc
+1 090418T124925: Get cookie from USRC for L2USCreate082018T140151/Test1234
+1 090418T124926:   Cookie: fdx_login=ssoxdev2.dd44.16237a10, UUID: 00g0ggsmnc
+1 090418T124926: Headers: [OAuthToken (Will be populated within the class), Level, OAuthToken_URL, Client_ID, Client_Secret, Create_Project, Retrieve_Project_Details, Update_Project_URL, Delete_Project_URL, Retrieve_Project_Summary, Create_Credentials_Project, Delete_Credential, DeleteResource, Create_Resource_Project, Passkey_UserID, Passkey_Password_, Passkey_Cookie, Passkey_UUID, Non_Passkey_UserID, Non_Passkey_Password_, Non_Passkey_Cookie, Non_Passkey_UUID]
+1 090418T124926: [, 2, , , , https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/credentials/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, L2USCC051118T114912, L2USCC080818T103410, Test1234, Test1234, fdx_login=ssoxdev2.b31b.d911628, fdx_login=ssoxdev2.95f7.1debe240, 00g0ggskpd, 00g0ggsml6, L2WIDMWgtm080618T164419, L2InetNon081518T171619, L2USCreate082018T140151, Test1234, Test1234, Test1234, fdx_login=ssoxdev2.d933.71626db1, fdx_login=ssoxdev2.9b63.1cbf616d, fdx_login=ssoxdev2.dd44.16237a10, NrpHGSqDVP, g0g0ggsnnc, 00g0ggsmnc]
+
+
+Thread -- Time (MMDDYY'T'HHMMSS): -- Current progress
+1 090418T124926: CreateProject Request : {"resourcesInput":[{"resourceDescription":"Track Service 0"}],"projectname":"Proj 1 090418T124926"}
+1 090418T124926: CreateProject Response : 404 Not Found: Requested route ('cmac-dev.app.wtcdev2.paas.fedex.com') does not exist.
+
+CreateProject failed [https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, fdx_login=ssoxdev2.95f7.1debe240, Proj 1 090418T124926, [Ljava.lang.String;@72d6b3ba]
+1 090418T124926: CreateProject Request : {"resourcesInput":[{"resourceDescription":"Track Service 0"},{"resourceDescription":"Track Service 1"}],"projectname":"Proj 2 090418T124926"}
+1 090418T124926: CreateProject Response : 404 Not Found: Requested route ('cmac-dev.app.wtcdev2.paas.fedex.com') does not exist.
+
+CreateProject failed [https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, fdx_login=ssoxdev2.b31b.d911628, Proj 2 090418T124926, [Ljava.lang.String;@51bf5add]
+1 090418T124926: CreateProject Request : {"resourcesInput":[{"resourceDescription":"Track Service 0"},{"resourceDescription":"Track Service 1"},{"resourceDescription":"Track Service 2"}],"projectname":"Proj 3 090418T124926"}
+1 090418T124926: CreateProject Response : 404 Not Found: Requested route ('cmac-dev.app.wtcdev2.paas.fedex.com') does not exist.
+
+CreateProject failed [https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, fdx_login=ssoxdev2.95f7.1debe240, Proj 3 090418T124926, [Ljava.lang.String;@13d9cbf5]
+1 090418T124926: CreateProject Request : {"resourcesInput":[{"resourceDescription":"Track Service 0"},{"resourceDescription":"Track Service 1"},{"resourceDescription":"Track Service 2"},{"resourceDescription":"Track Service 3"}],"projectname":"Proj 4 090418T124926"}
+1 090418T124926: CreateProject Response : 404 Not Found: Requested route ('cmac-dev.app.wtcdev2.paas.fedex.com') does not exist.
+
+CreateProject failed [https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, fdx_login=ssoxdev2.b31b.d911628, Proj 4 090418T124926, [Ljava.lang.String;@51bd8b5c]
+1 090418T124926: CreateProject Request : {"resourcesInput":[{"resourceDescription":"Track Service 0"},{"resourceDescription":"Track Service 1"},{"resourceDescription":"Track Service 2"},{"resourceDescription":"Track Service 3"},{"resourceDescription":"Track Service 4"}],"projectname":"Proj 5 090418T124926"}
+1 090418T124926: CreateProject Response : 404 Not Found: Requested route ('cmac-dev.app.wtcdev2.paas.fedex.com') does not exist.
+
+CreateProject failed [https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, fdx_login=ssoxdev2.95f7.1debe240, Proj 5 090418T124926, [Ljava.lang.String;@19b843ba]
+1 090418T124926: CreateProject Request : {"resourcesInput":[{"resourceDescription":"Track Service 0"},{"resourceDescription":"Track Service 1"},{"resourceDescription":"Track Service 2"},{"resourceDescription":"Track Service 3"},{"resourceDescription":"Track Service 4"},{"resourceDescription":"Track Service 5"}],"projectname":"Proj 6 090418T124926"}
+1 090418T124926: CreateProject Response : 404 Not Found: Requested route ('cmac-dev.app.wtcdev2.paas.fedex.com') does not exist.
+
+CreateProject failed [https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, fdx_login=ssoxdev2.b31b.d911628, Proj 6 090418T124926, [Ljava.lang.String;@1e13529a]
+1 090418T124926: CreateProject Request : {"resourcesInput":[{"resourceDescription":"Track Service 0"},{"resourceDescription":"Track Service 1"},{"resourceDescription":"Track Service 2"},{"resourceDescription":"Track Service 3"},{"resourceDescription":"Track Service 4"},{"resourceDescription":"Track Service 5"},{"resourceDescription":"Track Service 6"}],"projectname":"Proj 7 090418T124926"}
+1 090418T124926: CreateProject Response : 404 Not Found: Requested route ('cmac-dev.app.wtcdev2.paas.fedex.com') does not exist.
+
+CreateProject failed [https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, fdx_login=ssoxdev2.95f7.1debe240, Proj 7 090418T124926, [Ljava.lang.String;@6f8e8894]
+1 090418T124926: CreateProject Request : {"resourcesInput":[{"resourceDescription":"Track Service 0"},{"resourceDescription":"Track Service 1"},{"resourceDescription":"Track Service 2"},{"resourceDescription":"Track Service 3"},{"resourceDescription":"Track Service 4"},{"resourceDescription":"Track Service 5"},{"resourceDescription":"Track Service 6"},{"resourceDescription":"Track Service 7"}],"projectname":"Proj 8 090418T124926"}
+1 090418T124926: CreateProject Response : 404 Not Found: Requested route ('cmac-dev.app.wtcdev2.paas.fedex.com') does not exist.
+
+CreateProject failed [https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, fdx_login=ssoxdev2.b31b.d911628, Proj 8 090418T124926, [Ljava.lang.String;@15f47664]
+
+
+@@ Passed Test Cases:
+
+
+@@ Failed Test Cases:
+1)    <-- CreateProject: Create a new project based on the UUID.  URL:https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, Cookie:fdx_login=ssoxdev2.95f7.1debe240, ProjectName:Proj 1 090418T124926, Resources[Track Service 0]
+Request: {"resourcesInput":[{"resourceDescription":"Track Service 0"}],"projectname":"Proj 1 090418T124926"}
+Response: 404 Not Found: Requested route ('cmac-dev.app.wtcdev2.paas.fedex.com') does not exist.
+
+Scenario_Failed
+
+2)    <-- CreateProject: Create a new project based on the UUID.  URL:https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, Cookie:fdx_login=ssoxdev2.95f7.1debe240, ProjectName:Proj 3 090418T124926, Resources[Track Service 0, Track Service 1, Track Service 2]
+Request: {"resourcesInput":[{"resourceDescription":"Track Service 0"},{"resourceDescription":"Track Service 1"},{"resourceDescription":"Track Service 2"}],"projectname":"Proj 3 090418T124926"}
+Response: 404 Not Found: Requested route ('cmac-dev.app.wtcdev2.paas.fedex.com') does not exist.
+
+Scenario_Failed
+
+3)    <-- CreateProject: Create a new project based on the UUID.  URL:https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, Cookie:fdx_login=ssoxdev2.95f7.1debe240, ProjectName:Proj 5 090418T124926, Resources[Track Service 0, Track Service 1, Track Service 2, Track Service 3, Track Service 4]
+Request: {"resourcesInput":[{"resourceDescription":"Track Service 0"},{"resourceDescription":"Track Service 1"},{"resourceDescription":"Track Service 2"},{"resourceDescription":"Track Service 3"},{"resourceDescription":"Track Service 4"}],"projectname":"Proj 5 090418T124926"}
+Response: 404 Not Found: Requested route ('cmac-dev.app.wtcdev2.paas.fedex.com') does not exist.
+
+Scenario_Failed
+
+4)    <-- CreateProject: Create a new project based on the UUID.  URL:https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, Cookie:fdx_login=ssoxdev2.95f7.1debe240, ProjectName:Proj 7 090418T124926, Resources[Track Service 0, Track Service 1, Track Service 2, Track Service 3, Track Service 4, Track Service 5, Track Service 6]
+Request: {"resourcesInput":[{"resourceDescription":"Track Service 0"},{"resourceDescription":"Track Service 1"},{"resourceDescription":"Track Service 2"},{"resourceDescription":"Track Service 3"},{"resourceDescription":"Track Service 4"},{"resourceDescription":"Track Service 5"},{"resourceDescription":"Track Service 6"}],"projectname":"Proj 7 090418T124926"}
+Response: 404 Not Found: Requested route ('cmac-dev.app.wtcdev2.paas.fedex.com') does not exist.
+
+Scenario_Failed
+
+5)    <-- CreateProject: Create a new project based on the UUID.  URL:https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, Cookie:fdx_login=ssoxdev2.b31b.d911628, ProjectName:Proj 2 090418T124926, Resources[Track Service 0, Track Service 1]
+Request: {"resourcesInput":[{"resourceDescription":"Track Service 0"},{"resourceDescription":"Track Service 1"}],"projectname":"Proj 2 090418T124926"}
+Response: 404 Not Found: Requested route ('cmac-dev.app.wtcdev2.paas.fedex.com') does not exist.
+
+Scenario_Failed
+
+6)    <-- CreateProject: Create a new project based on the UUID.  URL:https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, Cookie:fdx_login=ssoxdev2.b31b.d911628, ProjectName:Proj 4 090418T124926, Resources[Track Service 0, Track Service 1, Track Service 2, Track Service 3]
+Request: {"resourcesInput":[{"resourceDescription":"Track Service 0"},{"resourceDescription":"Track Service 1"},{"resourceDescription":"Track Service 2"},{"resourceDescription":"Track Service 3"}],"projectname":"Proj 4 090418T124926"}
+Response: 404 Not Found: Requested route ('cmac-dev.app.wtcdev2.paas.fedex.com') does not exist.
+
+Scenario_Failed
+
+7)    <-- CreateProject: Create a new project based on the UUID.  URL:https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, Cookie:fdx_login=ssoxdev2.b31b.d911628, ProjectName:Proj 6 090418T124926, Resources[Track Service 0, Track Service 1, Track Service 2, Track Service 3, Track Service 4, Track Service 5]
+Request: {"resourcesInput":[{"resourceDescription":"Track Service 0"},{"resourceDescription":"Track Service 1"},{"resourceDescription":"Track Service 2"},{"resourceDescription":"Track Service 3"},{"resourceDescription":"Track Service 4"},{"resourceDescription":"Track Service 5"}],"projectname":"Proj 6 090418T124926"}
+Response: 404 Not Found: Requested route ('cmac-dev.app.wtcdev2.paas.fedex.com') does not exist.
+
+Scenario_Failed
+
+8)    <-- CreateProject: Create a new project based on the UUID.  URL:https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, Cookie:fdx_login=ssoxdev2.b31b.d911628, ProjectName:Proj 8 090418T124926, Resources[Track Service 0, Track Service 1, Track Service 2, Track Service 3, Track Service 4, Track Service 5, Track Service 6, Track Service 7]
+Request: {"resourcesInput":[{"resourceDescription":"Track Service 0"},{"resourceDescription":"Track Service 1"},{"resourceDescription":"Track Service 2"},{"resourceDescription":"Track Service 3"},{"resourceDescription":"Track Service 4"},{"resourceDescription":"Track Service 5"},{"resourceDescription":"Track Service 6"},{"resourceDescription":"Track Service 7"}],"projectname":"Proj 8 090418T124926"}
+Response: 404 Not Found: Requested route ('cmac-dev.app.wtcdev2.paas.fedex.com') does not exist.
+
+Scenario_Failed
+
+
+Execution Time in seconds: 1  (1748 miliseconds)
+Passed: 0 - Failed: 8
+

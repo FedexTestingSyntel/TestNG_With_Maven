@@ -1,0 +1,55 @@
+050818T152506: Token request: {  "access_token":"b13bf22b-bbc6-40de-bbee-7909c9c3691d",  "token_type":"Bearer",  "expires_in":3600,  "scope":"oob"}     l7xx1b191a635e37469cbaf159069c943955 9012782ae99945e39f4ffacf1f80dcdb
+
+050818T152506: $APIG$
+Endpoint is being used.
+050818T152506: IssueURL = https://api.fedex.com/security/v1/pin
+VerifyURL = https://api.fedex.com/security/v1/pin/verify
+VelocityURL = https://api.fedex.com/security/v1/addresses/velocitycheck
+
+050818T152506: <-- AddressVelocity starting.    OrgName: FDM-PHONE-PIN
+050818T152506: Request: {"orgName":"FDM-PHONE-PIN","userName":"Z9dp8sO7fa-Dbekkbh1xBLXUdIVbA2hJpEm"}
+050818T152507: Response: {"transactionId":"b8e3ce20-cab8-4e9d-90cd-9420c6c66564","output":{"advice":"ALLOW"}}
+050818T152507: Request: {"orgName":"FDM-PHONE-PIN","userName":"Z9dp8sO7fa-Dbekkbh1xBLXUdIVbA2hJpEm"}
+050818T152507: Response: {"transactionId":"a6d3e303-d45a-4aac-996e-967855b901a9","output":{"advice":"ALLOW"}}
+050818T152507: Request: {"orgName":"FDM-PHONE-PIN","userName":"Z9dp8sO7fa-Dbekkbh1xBLXUdIVbA2hJpEm"}
+050818T152507: Response: {"transactionId":"3018d05b-b350-4dd8-beba-c73ea3624cec","output":{"advice":"ALLOW"}}
+050818T152507: Request: {"orgName":"FDM-PHONE-PIN","userName":"Z9dp8sO7fa-Dbekkbh1xBLXUdIVbA2hJpEm"}
+050818T152507: Response: {"transactionId":"218da485-9d4a-45cb-b0a8-bd211cfdc5cd","output":{"advice":"ALLOW"}}
+050818T152507: Request: {"orgName":"FDM-PHONE-PIN","userName":"Z9dp8sO7fa-Dbekkbh1xBLXUdIVbA2hJpEm"}
+050818T152508: Response: {"transactionId":"47b4cbfa-c6c9-47aa-ba06-bf6e62f3571d","output":{"advice":"ALLOW"}}
+050818T152508: Request: {"orgName":"FDM-PHONE-PIN","userName":"Z9dp8sO7fa-Dbekkbh1xBLXUdIVbA2hJpEm"}
+050818T152508: Response: {"transactionId":"9eba4442-d174-4422-8299-53c35f6fd66c","output":{"advice":"ALLOW"}}
+050818T152508: Request: {"orgName":"FDM-PHONE-PIN","userName":"Z9dp8sO7fa-Dbekkbh1xBLXUdIVbA2hJpEm"}
+050818T152508: Response: {"transactionId":"579ec82c-b73c-4b9c-8e11-fd0e19d913b3","output":{"advice":"ALLOW"}}
+050818T152508: Request: {"orgName":"FDM-PHONE-PIN","userName":"Z9dp8sO7fa-Dbekkbh1xBLXUdIVbA2hJpEm"}
+050818T152508: Response: {"transactionId":"89e2009d-ac11-42d0-be44-8c1d53632b70","output":{"advice":"ALLOW"}}
+050818T152508: Request: {"orgName":"FDM-PHONE-PIN","userName":"Z9dp8sO7fa-Dbekkbh1xBLXUdIVbA2hJpEm"}
+050818T152508: Response: {"transactionId":"21bd3350-b492-466e-8d19-764dc2358de4","output":{"advice":"ALLOW"}}
+050818T152508: Request: {"orgName":"FDM-PHONE-PIN","userName":"Z9dp8sO7fa-Dbekkbh1xBLXUdIVbA2hJpEm"}
+050818T152509: Response: {"transactionId":"73c123f1-696d-41fb-8802-f37b70770f7d","output":{"advice":"ALLOW"}}
+050818T152509: Request: {"orgName":"FDM-PHONE-PIN","userName":"Z9dp8sO7fa-Dbekkbh1xBLXUdIVbA2hJpEm"}
+050818T152509: Response: {"transactionId":"a4bed7dc-305d-41fa-b0fb-e5cc8cf178a2","errors":[{"code":"DENY","message":"Unfortunately, too many failed attempts for registration have occurred. Please try again later."}]}
+
+050818T152509: <-- IssuePin starting.    OrgName: FDM-PHONE-PIN
+050818T152509: Request: {"orgName":"FDM-PHONE-PIN","userName":"DZFccsVr4s-6ZEuxUe4DwDfl0xVFAWQRXn5"}
+050818T152510: Response: {"transactionId":"32b54d7d-c0e9-4b62-a501-2f35b001fb08","errors":[{"code":"5700","message":"Unfortunately, you have exceeded your attempts for verification. Please try again later."}]}
+
+050818T152510: <-- IssuePinVelocity starting.    OrgName: FDM-PHONE-PIN
+050818T152510: Request: {"orgName":"FDM-PHONE-PIN","userName":"dFpU4TFZFj-ALSy9C2vfm4ckAJKJCpPHzgw"}
+050818T152511: Response: {"transactionId":"e9e9beda-1328-4c56-80fa-eb13952570f5","errors":[{"code":"5700","message":"Unfortunately, you have exceeded your attempts for verification. Please try again later."}]}
+
+050818T152511: <-- VerifyPinNoLongerValid starting.    OrgName: FDM-PHONE-PIN
+050818T152511: Request: {"orgName":"FDM-PHONE-PIN","userName":"B2m0QBZOlY-LejKlA2sOnZbS03svShRfNuT"}
+050818T152512: Response: {"transactionId":"c6f97bd5-467d-4bfb-8bc0-1484e700835a","errors":[{"code":"5700","message":"Unfortunately, you have exceeded your attempts for verification. Please try again later."}]}
+050818T152512: Request: {"orgName":"FDM-PHONE-PIN","otpInput":"{\"transactionId\":\"c6f97bd5-467d-4bfb-8bc0-1484e700835a\",\"errors\":[{\"code\":\"5700\",\"message\":\"Unfortunately, you have exceeded your attempts for verification. Please try again later.\"}]}","userName":"B2m0QBZOlY-LejKlA2sOnZbS03svShRfNuT"}
+050818T152512: Response: {"timestamp":1525811112917,"status":400,"error":"Bad Request","exception":"org.springframework.http.converter.HttpMessageNotReadableException","message":"Could not read document: Invalid UTF-8 start byte 0xa0\n at [Source: java.io.PushbackInputStream@5e790236; line: 1, column: 183]\n at [Source: java.io.PushbackInputStream@5e790236; line: 1, column: 39] (through reference chain: com.fedex.cxs.mfac.v3.vo.transformation.VerifyPinInputVO[\"otpInput\"]); nested exception is com.fasterxml.jackson.databind.JsonMappingException: Invalid UTF-8 start byte 0xa0\n at [Source: java.io.PushbackInputStream@5e790236; line: 1, column: 183]\n at [Source: java.io.PushbackInputStream@5e790236; line: 1, column: 39] (through reference chain: com.fedex.cxs.mfac.v3.vo.transformation.VerifyPinInputVO[\"otpInput\"])","path":"/mfac/v3/verifyPIN"}
+
+050818T152512: <-- VerifyPinValid starting.    OrgName: FDM-PHONE-PIN
+050818T152512: Request: {"orgName":"FDM-PHONE-PIN","userName":"OHCukUoLjg-OdDAYSWgOIrGjrcEiYQ1NL75"}
+050818T152514: Response: {"transactionId":"c22ad029-1a60-4876-90a2-13d3f0c460c8","errors":[{"code":"5700","message":"Unfortunately, you have exceeded your attempts for verification. Please try again later."}]}
+050818T152514: Request: {"orgName":"FDM-PHONE-PIN","otpInput":"{\"transactionId\":\"c22ad029-1a60-4876-90a2-13d3f0c460c8\",\"errors\":[{\"code\":\"5700\",\"message\":\"Unfortunately, you have exceeded your attempts for verification. Please try again later.\"}]}","userName":"OHCukUoLjg-OdDAYSWgOIrGjrcEiYQ1NL75"}
+050818T152514: Response: {"timestamp":1525811114258,"status":400,"error":"Bad Request","exception":"org.springframework.http.converter.HttpMessageNotReadableException","message":"Could not read document: Invalid UTF-8 start byte 0xa0\n at [Source: java.io.PushbackInputStream@63eee8c9; line: 1, column: 183]\n at [Source: java.io.PushbackInputStream@63eee8c9; line: 1, column: 39] (through reference chain: com.fedex.cxs.mfac.v3.vo.transformation.VerifyPinInputVO[\"otpInput\"]); nested exception is com.fasterxml.jackson.databind.JsonMappingException: Invalid UTF-8 start byte 0xa0\n at [Source: java.io.PushbackInputStream@63eee8c9; line: 1, column: 183]\n at [Source: java.io.PushbackInputStream@63eee8c9; line: 1, column: 39] (through reference chain: com.fedex.cxs.mfac.v3.vo.transformation.VerifyPinInputVO[\"otpInput\"])","path":"/mfac/v3/verifyPIN"}
+
+050818T152514: <-- zIssuePinExpiration starting.    OrgName: FDM-PHONE-PIN
+050818T152514: Request: {"orgName":"FDM-PHONE-PIN","userName":"WYF3uauVVf-V8i54BAJozzTJS56DBcKK6qJ"}
+050818T152515: Response: {"transactionId":"d7caa87d-f749-4288-9fba-3ee95325319f","errors":[{"code":"5700","message":"Unfortunately, you have exceeded your attempts for verification. Please try again later."}]}

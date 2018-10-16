@@ -1,0 +1,16 @@
+1 082818T223417: [, 1, , , https://cmac-dev.app.wtcdev2.paas.fedex.com/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/createUUID, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/companyid]
+Thread -- Time (MMDDYY'T'HHMMSS): -- Current progress
+15 082818T223430: CreateUUID Request : {"username":"L2USCC051118T114912"}
+15 082818T223430: CreateUUID Response : {"transactionId":"242865db-2c95-46e3-bee3-e18c9c929806","output":{}}
+CreateUUID passed [https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/createUUID, fdx_login=ssoxdev2.94a2.5d605be5, L2USCC051118T114912]
+
+
+@@ Passed Test Cases:
+1)    <-- CreateUUID: Takes in the userid and provider the uuid associated to it.  URL:https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/createUUID, Cookie:fdx_login=ssoxdev2.94a2.5d605be5, UserID:L2USCC051118T114912
+Request: {"username":"L2USCC051118T114912"}
+Response: {"transactionId":"242865db-2c95-46e3-bee3-e18c9c929806","output":{}}
+Scenario_Passed
+
+Execution Time in seconds: 13  (13176 miliseconds)
+Passed: 1 - Failed: 0
+

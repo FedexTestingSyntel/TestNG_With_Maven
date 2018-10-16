@@ -1,0 +1,29 @@
+1 090418T123651: Get cookie from USRC for L2USCC051118T114912/Test1234
+1 090418T123651:   Cookie: fdx_login=ssoxdev2.96c3.6ac7ab3f, UUID: 00g0ggskpd
+1 090418T123651: Get cookie from USRC for L2USCC080818T103410/Test1234
+1 090418T123652:   Cookie: fdx_login=ssoxdev2.a8a3.da7985c, UUID: 00g0ggsml6
+1 090418T123652: Get cookie from USRC for L2WIDMWgtm080618T164419/Test1234
+1 090418T123652:   Cookie: fdx_login=ssoxdev2.8ba8.1a8aebd6, UUID: NrpHGSqDVP
+1 090418T123652: Get cookie from USRC for L2InetNon081518T171619/Test1234
+1 090418T123652:   Cookie: fdx_login=ssoxdev2.d9a2.61556606, UUID: g0g0ggsnnc
+1 090418T123652: Get cookie from USRC for L2USCreate082018T140151/Test1234
+1 090418T123652:   Cookie: fdx_login=ssoxdev2.bfd2.534d97df, UUID: 00g0ggsmnc
+1 090418T123652: Headers: [OAuthToken (Will be populated within the class), Level, OAuthToken_URL, Client_ID, Client_Secret, Create_Project, Retrieve_Project_Details, Update_Project_URL, Delete_Project_URL, Retrieve_Project_Summary, Create_Credentials_Project, Delete_Credential, DeleteResource, Create_Resource_Project, Passkey_UserID, Passkey_Password_, Passkey_Cookie, Passkey_UUID, Non_Passkey_UserID, Non_Passkey_Password_, Non_Passkey_Cookie, Non_Passkey_UUID]
+1 090418T123652: [, 2, , , , https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/credentials/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, L2USCC051118T114912, L2USCC080818T103410, Test1234, Test1234, fdx_login=ssoxdev2.96c3.6ac7ab3f, fdx_login=ssoxdev2.a8a3.da7985c, 00g0ggskpd, 00g0ggsml6, L2WIDMWgtm080618T164419, L2InetNon081518T171619, L2USCreate082018T140151, Test1234, Test1234, Test1234, fdx_login=ssoxdev2.8ba8.1a8aebd6, fdx_login=ssoxdev2.d9a2.61556606, fdx_login=ssoxdev2.bfd2.534d97df, NrpHGSqDVP, g0g0ggsnnc, 00g0ggsmnc]
+
+
+Thread -- Time (MMDDYY'T'HHMMSS): -- Current progress
+1 090418T123652: RetrieveProjectDetails Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+1 090418T123652: RetrieveProjectDetails Response : {"transactionId":"e2d68d7c-8dd9-4a53-9904-868e80eb0c76","output":{"projects":[{"pid":10077,"projectname":"Proj Update 090418T123550"}]}}
+RetrieveProjectSummary passed [https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/]
+
+
+@@ Passed Test Cases:
+1)    <-- RetrieveProjectSummary: Get the details of all projects URL: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+Response: {"transactionId":"e2d68d7c-8dd9-4a53-9904-868e80eb0c76","output":{"projects":[{"pid":10077,"projectname":"Proj Update 090418T123550"}]}}
+Scenario_Passed
+
+Execution Time in seconds: 1  (1696 miliseconds)
+Passed: 1 - Failed: 0
+

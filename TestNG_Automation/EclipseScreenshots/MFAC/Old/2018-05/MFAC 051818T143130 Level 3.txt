@@ -1,0 +1,9 @@
+051818T143119: 
+
+$APIG$ Endpoint is being used on Level 3.
+IssueURL = https://apidrt.idev.fedex.com:8443/security/v1/pin
+VerifyURL = https://apidrt.idev.fedex.com:8443/security/v1/pin/verify
+VelocityURL = https://apidrt.idev.fedex.com:8443/security/v1/addresses/velocitycheck
+051818T143119: Token request: {  "access_token":"b75c6aa5-4b34-476d-a3ec-a3aa20162b28",  "token_type":"Bearer",  "expires_in":3600,  "scope":"oob"}     Iden:l7xx1892f99a6f88470ba29abc141cd7bd8d Secret:a4325d011acf4876b3fe3206931b8f5a
+051818T143119: Request: {"orgName":"FDM-PHONE-PIN","userName":"H69TIOjGLE-6xmc5tpjhrtaymw7yfwshqfao"}
+051818T143121: Response: {"transactionId":"bb40ff70-cab6-4600-a5f7-85c44d904921","output":{"pinOTP":"571901","pinExpirationDate":"05/18/2018 07:41 PM GMT"}}

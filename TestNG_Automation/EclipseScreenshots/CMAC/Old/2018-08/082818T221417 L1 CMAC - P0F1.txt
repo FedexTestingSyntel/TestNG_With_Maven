@@ -1,0 +1,18 @@
+1 082818T221416: [, 1, , , https://cmac-dev.app.wtcdev2.paas.fedex.com/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/createUUID, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/companyid]
+Thread -- Time (MMDDYY'T'HHMMSS): -- Current progress
+15 082818T221416: CreateProject_API: Request - {"resourcesInput":[{"resourceDescription":"Rate Service"},{"resourceDescription":"Rate Service"}],"projectname":"Projsyqfqzffuq"}
+15 082818T221417: CreateProject_API: Response - {"transactionId":"9fc9f39a-87ee-4ea0-8473-7bd59dfafac0","errors":[{"code":"CUSTOMER.SOAP.EXCEPTION","message":"We were unable to process your request. Please try again. "}]}
+CreateProject failed [https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, fdx_login=ssoxdev2.94a2.5d605be5, Projsyqfqzffuq, [Ljava.lang.String;@5f66045b]
+
+
+@@ Passed Test Cases:
+
+
+@@ Failed Test Cases:
+1)    <-- CreateProject: Create a new project based on the UUID.  URL:https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, Cookie:fdx_login=ssoxdev2.94a2.5d605be5, ProjectName:Projsyqfqzffuq, Resources[Track Service, Rate Service]
+Scenario_Failed
+
+
+Execution Time in seconds: 0  (832 miliseconds)
+Passed: 0 - Failed: 1
+

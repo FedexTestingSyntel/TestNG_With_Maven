@@ -1,0 +1,17 @@
+060818T161932: 
+
+$APIG$ Endpoint is being used on Level 3.
+IssueURL = https://apidrt.idev.fedex.com:8443/security/v1/pin
+VerifyURL = https://apidrt.idev.fedex.com:8443/security/v1/pin/verify
+VelocityURL = https://apidrt.idev.fedex.com:8443/security/v1/addresses/velocitycheck
+060818T161932: 
+060818T161932: <-- AddressVelocity        OrgName: FDM-POSTCARD-PIN
+060818T161932: Verify that the address velocity of 3 is reached and the correct error code is received.
+060818T161932: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"uZMCM0Daug-oEkUeFdOeCnrXK7VCnQjxEK1"}
+060818T161933: Response: {"transactionId":"b29d5f44-e040-445b-90f3-f5f367357e82","output":{"advice":"ALLOW"}}
+060818T161933: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"uZMCM0Daug-oEkUeFdOeCnrXK7VCnQjxEK1"}
+060818T161934: Response: {"transactionId":"704b5bce-713b-4d3d-86f4-a0234c37f078","output":{"advice":"ALLOW"}}
+060818T161934: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"uZMCM0Daug-oEkUeFdOeCnrXK7VCnQjxEK1"}
+060818T161935: Response: {"transactionId":"a32e5eae-e62c-4313-8fac-025bcc677d4f","output":{"advice":"ALLOW"}}
+060818T161935: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"uZMCM0Daug-oEkUeFdOeCnrXK7VCnQjxEK1"}
+060818T161936: Response: {"transactionId":"d3fde9d5-4480-4e70-980d-d02eafcccd8e","output":{"advice":"ALLOW"}}

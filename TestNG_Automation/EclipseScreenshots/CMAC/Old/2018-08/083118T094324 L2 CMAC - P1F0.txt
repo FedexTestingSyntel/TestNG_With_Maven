@@ -1,0 +1,25 @@
+1 083118T094323: Get cookie from USRC for L2USCC051118T114912/Test1234
+1 083118T094323: [, 2, , , , https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/createUUID, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/companyid, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/1001/credentials, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/credentials/963, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/1001/resources/Rate Service, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/1001/resources, L2USCC051118T114912, L2USCC080818T103410, L2DECC081318T112742, L2CACC082418T105722, Test1234, Test1234, Test1234, Test1234, fdx_login=ssoxdev2.8af8.176646af, 00g0ggskpd, 00g0ggsml6, 00g0ggsmn3, 00g0ggsmp2]
+
+
+Thread -- Time (MMDDYY'T'HHMMSS): -- Current progress
+1 083118T094323: RetrieveProjectSummary Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+1 083118T094323: RetrieveProjectSummary Response : {"transactionId":"f7735f55-180d-48b7-a417-b0c4b7dbd637","output":{"projects":[{"pid":1001,"projectname":"IRCPROJECT"},{"pid":1002,"projectname":"Projerndjscbgt"},{"pid":1003,"projectname":"Projnssxurmdif"},{"pid":1005,"projectname":"Proj 082918T094901"},{"pid":1006,"projectname":"Proj 082918T094916"},{"pid":1007,"projectname":"fedexproject-1"},{"pid":1008,"projectname":"Proj 082918T114400"},{"pid":10010,"projectname":"Proj 082918T145853"},{"pid":100111,"projectname":"Proj 082918T150829"},{"pid":1001112,"projectname":"Proj 082918T154141"},{"pid":10011113,"projectname":"Proj 082918T154505"},{"pid":100111114,"projectname":"Proj 082918T162712"},{"pid":1001111115,"projectname":"Proj 082918T162744"},{"pid":10011111116,"projectname":"Proj 082918T162954"}]}}
+1 083118T094323: DeleteProject Delete : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10011111116
+1 083118T094323: DeleteProject Response : {"transactionId":"54d0bb9c-6fe2-4a8e-8870-4282093c5aac"}
+1 083118T094323: RetrieveProjectDetails Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10011111116
+1 083118T094324: RetrieveProjectDetails Response : {"transactionId":"31dfee10-acde-41fe-99f7-9aebee3fae1d","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+DeleteProject passed [https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, 10011111116]
+
+
+@@ Passed Test Cases:
+1)    <-- DeleteProject(ID:324343): Delete a project based on the pid appended to the URL.    URL:https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, Pid:10011111116
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10011111116
+Response: {"transactionId":"54d0bb9c-6fe2-4a8e-8870-4282093c5aac"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10011111116
+Response: {"transactionId":"31dfee10-acde-41fe-99f7-9aebee3fae1d","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Execution Time in seconds: 0  (836 miliseconds)
+Passed: 1 - Failed: 0
+

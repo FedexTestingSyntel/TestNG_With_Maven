@@ -1,0 +1,46 @@
+
+050418T165647: $APIG$
+Endpoint is being used.
+050418T165647: IssueURL = https://api.fedex.com:8443/security/v1/pin
+VerifyURL = https://api.fedex.com:8443/security/v1/pin/verify
+VelocityURL = https://api.fedex.com:8443/security/v1/addresses/velocitycheck
+
+050418T165647: <-- AddressVelocity starting.    OrgName: FDM-POSTCARD-PIN
+050418T165647: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"cNTlTtlhs2-XZvnCeG405f0HraZTwUdSsgI"}
+
+050418T165647: <-- IssuePin starting.    OrgName: FDM-POSTCARD-PIN
+050418T165647: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"jY3EEUmKmy-wWAJ4HSoItOFZm77AO37a3pr"}
+
+050418T165647: <-- IssuePinVelocity starting.    OrgName: FDM-POSTCARD-PIN
+050418T165647: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"JsMtObTsze-itwl6twv3HlzXofymvN4FyMq"}
+
+050418T165647: <-- VerifyPinNoLongerValid starting.    OrgName: FDM-POSTCARD-PIN
+050418T165647: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"tbmtbZEIhr-JJNUdeo8q1mRzYTMW8HkvG1K"}
+050418T165647: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"Uncaught error in IssuePin","userName":"tbmtbZEIhr-JJNUdeo8q1mRzYTMW8HkvG1K"}
+
+050418T165647: <-- VerifyPinValid starting.    OrgName: FDM-POSTCARD-PIN
+050418T165647: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"sVEr74mPHW-BEzojRjEKVJID3XjvCCM6rBW"}
+050418T165647: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"Uncaught error in IssuePin","userName":"sVEr74mPHW-BEzojRjEKVJID3XjvCCM6rBW"}
+
+050418T165647: <-- zIssuePinExpiration starting.    OrgName: FDM-POSTCARD-PIN
+050418T165647: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"1HrKGLSY6v-RjnuaFfVpskc1Ifu0jNGCmJG"}
+
+050418T165648: <-- AddressVelocity starting.    OrgName: FDM-PHONE-PIN
+050418T165648: Request: {"orgName":"FDM-PHONE-PIN","userName":"BtLi52hOlu-bQ7UlwC0xh6igHTs5XENFI5X"}
+
+050418T165648: <-- IssuePin starting.    OrgName: FDM-PHONE-PIN
+050418T165648: Request: {"orgName":"FDM-PHONE-PIN","userName":"pYFpP5voCE-cqRDkqO3ufe9d28g96PdyAX5"}
+
+050418T165648: <-- IssuePinVelocity starting.    OrgName: FDM-PHONE-PIN
+050418T165648: Request: {"orgName":"FDM-PHONE-PIN","userName":"vgMadu9AVV-Kfbx2PAPXFbbId3jTBQUXpxq"}
+
+050418T165648: <-- VerifyPinNoLongerValid starting.    OrgName: FDM-PHONE-PIN
+050418T165648: Request: {"orgName":"FDM-PHONE-PIN","userName":"hL3zg8QH7Z-0s4ClVe5zM2JfQKjwCQbw5nv"}
+050418T165648: Request: {"orgName":"FDM-PHONE-PIN","otpInput":"Uncaught error in IssuePin","userName":"hL3zg8QH7Z-0s4ClVe5zM2JfQKjwCQbw5nv"}
+
+050418T165648: <-- VerifyPinValid starting.    OrgName: FDM-PHONE-PIN
+050418T165648: Request: {"orgName":"FDM-PHONE-PIN","userName":"8Yy70vQwyf-796n6KrdpZcsl03rPAveJbkC"}
+050418T165648: Request: {"orgName":"FDM-PHONE-PIN","otpInput":"Uncaught error in IssuePin","userName":"8Yy70vQwyf-796n6KrdpZcsl03rPAveJbkC"}
+
+050418T165648: <-- zIssuePinExpiration starting.    OrgName: FDM-PHONE-PIN
+050418T165648: Request: {"orgName":"FDM-PHONE-PIN","userName":"im4y78Uttd-ifoGnbklgbYOmF85QKo2Mdxs"}

@@ -1,0 +1,24 @@
+1 082818T224228: [, 1, , , https://cmac-dev.app.wtcdev2.paas.fedex.com/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/createUUID, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/companyid]
+Thread -- Time (MMDDYY'T'HHMMSS): -- Current progress
+15 082818T224253: CreateProject Request : {"resourcesInput":[{"resourceDescription":"Rate Service"},{"resourceDescription":"Rate Service"}],"projectname":"Projerndjscbgt"}
+15 082818T224254: CreateProject Response : {"transactionId":"404de56b-0c56-40bb-9995-6aa498ceedfd","output":{"pid":1002,"projectname":"Projerndjscbgt","cid":51,"accountnumber":113475002,"creationtime":"2018.08.29.03.42.55","expirationdate":"2018.09.28.23.37.56","resources":["Rate Service","Rate Service"],"key":"N6QBFFAT8A"}}
+CreateProject passed [https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, fdx_login=ssoxdev1.a376.7232dc87, Projerndjscbgt, [Ljava.lang.String;@4ed85cb8]
+16 082818T224404: CreateUUID Request : {"username":L2USCC051118T114912}
+16 082818T224404: CreateUUID Response : {"transactionId":"dec80800-164b-451b-af33-58216fb485af","output":{"uuid":"00g0ggskpd"}}
+CreateUUID passed [https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/createUUID, fdx_login=ssoxdev2.cb19.532ede7f, L2USCC051118T114912]
+
+
+@@ Passed Test Cases:
+1)    <-- CreateProject: Create a new project based on the UUID.  URL:https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, Cookie:fdx_login=ssoxdev1.a376.7232dc87, ProjectName:Projerndjscbgt, Resources[Track Service, Rate Service]
+Request: {"resourcesInput":[{"resourceDescription":"Rate Service"},{"resourceDescription":"Rate Service"}],"projectname":"Projerndjscbgt"}
+Response: {"transactionId":"404de56b-0c56-40bb-9995-6aa498ceedfd","output":{"pid":1002,"projectname":"Projerndjscbgt","cid":51,"accountnumber":113475002,"creationtime":"2018.08.29.03.42.55","expirationdate":"2018.09.28.23.37.56","resources":["Rate Service","Rate Service"],"key":"N6QBFFAT8A"}}
+Scenario_Passed
+
+2)    <-- CreateUUID: Takes in the userid and provider the uuid associated to it.  URL:https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/createUUID, Cookie:fdx_login=ssoxdev2.cb19.532ede7f, UserID:L2USCC051118T114912
+Request: {"username":L2USCC051118T114912}
+Response: {"transactionId":"dec80800-164b-451b-af33-58216fb485af","output":{"uuid":"00g0ggskpd"}}
+Scenario_Passed
+
+Execution Time in seconds: 103  (103275 miliseconds)
+Passed: 2 - Failed: 0
+

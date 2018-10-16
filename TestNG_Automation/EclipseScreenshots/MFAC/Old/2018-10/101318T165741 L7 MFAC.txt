@@ -1,0 +1,25 @@
+
+IssuePin
+FDM-POSTCARD-PIN, 8d1fd6b1-27f0-4f44-9b55-873a80f082a2, https://api.fedex.com/security/v1/pin
+Verify that the user is able to request a pin.
+101318T165736: IssuePinAPI URL: POST https://api.fedex.com/security/v1/pin HTTP/1.1
+101318T165736: IssuePinAPI Headers: Content-Type: application/json___Authorization: Bearer 8d1fd6b1-27f0-4f44-9b55-873a80f082a2___
+101318T165736: IssuePinAPI Request: {"orgName":"FDM-POSTCARD-PIN","userName":"iinljjbuch-rvfsnbrildhsasmvmvqhwwzo"}
+101318T165736: IssuePinAPI Response: {"transactionId":"6c89e868-2f1c-4b3f-9aa0-63015f49156e","output":{"pinOTP":"447459","pinExpirationDate":"11/03/2018 09:57 PM GMT"}}
+6c89e868-2f1c-4b3f-9aa0-63015f49156e
+Passed
+
+
+101318T165734: OAuth: https://api.fedex.com/auth/oauth/v2/token  Iden: l7xx1b191a635e37469cbaf159069c943955  Secret: 9012782ae99945e39f4ffacf1f80dcdb
+101318T165735: [8d1fd6b1-27f0-4f44-9b55-873a80f082a2, 7, https://api.fedex.com/auth/oauth/v2/token, l7xx1b191a635e37469cbaf159069c943955, 9012782ae99945e39f4ffacf1f80dcdb, https://api.fedex.com/security/v1/pin, https://api.fedex.com/security/v1/pin/verify, https://api.fedex.com/security/v1/addresses/velocitycheck, http://mfac-cos-vip.prod.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfac-cos-vip.prod.cloud.fedex.com:9090/mfac/v3/verifyPIN, http://mfac-cos-vip.prod.cloud.fedex.com:9090/mfac/v3/addressVelocityCheck, 3, 3, 10]
+
+____________________________________________________________________________________________________________________________________________________________________
+|10-13-18 16:57:33:991|                                                                        10-13-18 16:57:41:792|                                    |7 seconds|
+|             TestName|                                                                                     TestData|                          ResultData|   Status|
+|             IssuePin|FDM-POSTCARD-PIN, 8d1fd6b1-27f0-4f44-9b55-873a80f082a2, https://api.fedex.com/security/v1/pin|6c89e868-2f1c-4b3f-9aa0-63015f49156e|   Passed|
+|__________________________________________________________________________________________________________________________________________________________________|
+Passed: 1 - Failed: 0
+
+
+
+

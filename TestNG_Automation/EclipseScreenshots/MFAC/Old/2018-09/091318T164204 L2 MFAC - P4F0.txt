@@ -1,0 +1,41 @@
+1 091318T164200: OAuth: https://apidev.idev.fedex.com:8443/auth/oauth/v2/token  Iden: l7xx1892f99a6f88470ba29abc141cd7bd8d  Secret: a4325d011acf4876b3fe3206931b8f5a
+1 091318T164201: [b0585ffd-37f5-4659-83f6-c132f2bf9b72, 2, https://apidev.idev.fedex.com:8443/auth/oauth/v2/token, l7xx1892f99a6f88470ba29abc141cd7bd8d, a4325d011acf4876b3fe3206931b8f5a, https://apidev.idev.fedex.com:8443/security/v1/pin, https://apidev.idev.fedex.com:8443/security/v1/pin/verify, https://apidev.idev.fedex.com:8443/security/v1/addresses/velocitycheck, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/addressVelocityCheck, 3, 3, 10]
+Thread -- Time (MMDDYY'T'HHMMSS): -- Current progress
+17 091318T164201: IssuePin Request: {"orgName":"FDM-PHONE-PIN","userName":"knscmwblfn-ixeupxxirmlpemceieakisba"}
+15 091318T164201: IssuePin Request: {"orgName":"FDM-PHONE-PIN","userName":"bvwkiuqbmn-zwvzyhuyswbkzrltncweaoou"}
+16 091318T164201: IssuePin Request: {"orgName":"FDM-POSTCARD-PIN","userName":"cdcvsvfhho-fznyotuwwevlgxpgmibtibad"}
+14 091318T164201: IssuePin Request: {"orgName":"FDM-POSTCARD-PIN","userName":"tlteevmuir-goyccvraetegcpkafnybqawl"}
+17 091318T164202: IssuePin Response: {"transactionId":"49824f1a-145b-4b34-a088-551601dbc799","output":{"pinOTP":"960438","pinExpirationDate":"09/13/2018 09:52 PM GMT"}}
+IssuePin passed [FDM-PHONE-PIN, b0585ffd-37f5-4659-83f6-c132f2bf9b72, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN]
+16 091318T164202: IssuePin Response: {"transactionId":"e0b6e8c9-b8aa-43a8-8233-a45ebb6afa19","output":{"pinOTP":"818687","pinExpirationDate":"09/13/2018 10:12 PM GMT"}}
+IssuePin passed [FDM-POSTCARD-PIN, b0585ffd-37f5-4659-83f6-c132f2bf9b72, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN]
+14 091318T164203: IssuePin Response: {"transactionId":"9b637dd1-3ed2-4654-8a7a-501708c3d711","output":{"pinOTP":"563389","pinExpirationDate":"09/13/2018 10:12 PM GMT"}}
+IssuePin passed [FDM-POSTCARD-PIN, b0585ffd-37f5-4659-83f6-c132f2bf9b72, https://apidev.idev.fedex.com:8443/security/v1/pin]
+15 091318T164204: IssuePin Response: {"transactionId":"c9ccc769-8228-4287-b7f4-04a2e44c7cc4","output":{"pinOTP":"951221","pinExpirationDate":"09/13/2018 09:52 PM GMT"}}
+IssuePin passed [FDM-PHONE-PIN, b0585ffd-37f5-4659-83f6-c132f2bf9b72, https://apidev.idev.fedex.com:8443/security/v1/pin]
+
+
+@@ Passed Test Cases:
+1)    <-- IssuePin: Verify that the user is able to request a pin.  (Org:FDM-PHONE-PIN, URL: http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN)
+Request: {"orgName":"FDM-PHONE-PIN","userName":"knscmwblfn-ixeupxxirmlpemceieakisba"}
+Response: {"transactionId":"49824f1a-145b-4b34-a088-551601dbc799","output":{"pinOTP":"960438","pinExpirationDate":"09/13/2018 09:52 PM GMT"}}
+Scenario_Passed
+
+2)    <-- IssuePin: Verify that the user is able to request a pin.  (Org:FDM-PHONE-PIN, URL: https://apidev.idev.fedex.com:8443/security/v1/pin)
+Request: {"orgName":"FDM-PHONE-PIN","userName":"bvwkiuqbmn-zwvzyhuyswbkzrltncweaoou"}
+Response: {"transactionId":"c9ccc769-8228-4287-b7f4-04a2e44c7cc4","output":{"pinOTP":"951221","pinExpirationDate":"09/13/2018 09:52 PM GMT"}}
+Scenario_Passed
+
+3)    <-- IssuePin: Verify that the user is able to request a pin.  (Org:FDM-POSTCARD-PIN, URL: http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN)
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"cdcvsvfhho-fznyotuwwevlgxpgmibtibad"}
+Response: {"transactionId":"e0b6e8c9-b8aa-43a8-8233-a45ebb6afa19","output":{"pinOTP":"818687","pinExpirationDate":"09/13/2018 10:12 PM GMT"}}
+Scenario_Passed
+
+4)    <-- IssuePin: Verify that the user is able to request a pin.  (Org:FDM-POSTCARD-PIN, URL: https://apidev.idev.fedex.com:8443/security/v1/pin)
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"tlteevmuir-goyccvraetegcpkafnybqawl"}
+Response: {"transactionId":"9b637dd1-3ed2-4654-8a7a-501708c3d711","output":{"pinOTP":"563389","pinExpirationDate":"09/13/2018 10:12 PM GMT"}}
+Scenario_Passed
+
+Execution Time in seconds: 3  (3618 miliseconds)
+Passed: 4 - Failed: 0
+

@@ -1,0 +1,5 @@
+Set projectLocation=%cd%
+cd %projectLocation%
+set classpath=%projectLocation%\bin;%projectLocation%\lib\*
+java org.testng.TestNG %projectLocation%\XML\WFCLtestng.xml
+pause

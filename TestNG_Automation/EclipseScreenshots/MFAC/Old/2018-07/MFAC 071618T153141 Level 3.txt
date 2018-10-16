@@ -1,0 +1,23 @@
+
+071618T153138: $APIG$ Endpoint is being used on Level 3.
+IssueURL = https://apidrt.idev.fedex.com:8443/security/v1/pin
+VerifyURL = https://apidrt.idev.fedex.com:8443/security/v1/pin/verify
+VelocityURL = https://apidrt.idev.fedex.com:8443/security/v1/addresses/velocitycheck
+
+
+<-- AddressVelocity        OrgName: FDM-POSTCARD-PIN
+071618T153138: Verify that the address velocity of 3 is reached and the correct error code is received.
+071618T153138: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"ukawvfzwjz-mkhyefzpkfmpwbtyuhptuuyv"}
+071618T153139: Response: {"transactionId":"e1d5f55a-75c6-4926-85ce-da4845af2026","output":{"advice":"ALLOW"}}
+071618T153139: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"ukawvfzwjz-mkhyefzpkfmpwbtyuhptuuyv"}
+071618T153140: Response: {"transactionId":"e213f776-fbe4-4b6b-9f88-3c471f8042e3","output":{"advice":"ALLOW"}}
+071618T153140: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"ukawvfzwjz-mkhyefzpkfmpwbtyuhptuuyv"}
+071618T153140: Response: {"transactionId":"3a7c3799-40b5-49b4-a8b4-adf990ea5e73","output":{"advice":"ALLOW"}}
+071618T153140: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"ukawvfzwjz-mkhyefzpkfmpwbtyuhptuuyv"}
+071618T153141: Response: {"transactionId":"0596e086-b963-432b-9d0f-156a41bcd936","errors":[{"code":"DENY","message":"Unfortunately, too many failed attempts for registration have occurred. Please try again later."}]}
+
+____________________________________________________________________________
+|                     07-16-18 15:31:38:712 | 07-16-18 15:31:41:730 | 3018 |
+| AddressVelocity OrgName: FDM-POSTCARD-PIN |                       | Pass |
+|__________________________________________________________________________|
+Passed: 1 - Failed: 0

@@ -1,0 +1,26 @@
+
+WFCL_Reset_Password_Email
+3, US, L3WIDMWgtm082218T094621US, Test1234
+14 100518T134307: New driver created. Chrome
+14 100518T134310: Cookies Deleted
+14 100518T134310: Navigating to https://wwwdrt.idev.fedex.com/en-us/home.html
+14 100518T134313: Navigating to https://wwwdrt.idev.fedex.com/PickupApp/login?locale=en_us
+14 100518T134315:     T--Text Entered L3WIDMWgtm082218T094621US in element By.name: username
+14 100518T134315:     T--Text Entered Test1234 in element By.name: password
+14 100518T134316:     E--Element Clicked By.name: login
+14 100518T134316: fcl_uuid value is 4cFwUe0QDp
+14 100518T134316: Login:L3WIDMWgtm082218T094621US/Test1234
+14 100518T134316: Navigating to https://wwwdrt.idev.fedex.com/apps/myprofile/loginandcontact/?locale=en_US&cntry_code=us
+14 100518T134320: 100518T134301 3 WFCL Password Reset Email UserDetails.png Screenshot Taken
+14 100518T134322: Cookies Deleted
+14 100518T134322: Navigating to https://wwwdrt.idev.fedex.com/cgi-bin/ship_it/interNetShip?origincountry=us&locallang=en
+14 100518T134354:     E--Element Clicked By.name: forgotUidPwd
+14 100518T134355:     T--Text Entered L3WIDMWgtm082218T094621US in element By.name: userID
+14 100518T134355:     E--Element Clicked By.xpath: //*[@id='module.forgotuseridandpassword._expanded']/table/tbody/tr/td[1]/form/table/tbody/tr[6]/td/input[2]
+14 100518T134357:     E--Element Clicked By.name: action2
+14 100518T134358: 100518T134301 3 WFCL Password Reset Email.png Screenshot Taken
+14 100518T134358: Completed ResetPasswordWFCL using L3WIDMWgtm082218T094621US. An email has been triggered and that test must be completed manually by sean.kauffman.osv@fedex.com
+sean.kauffman.osv@fedex.com
+Scenario_Passed
+
+

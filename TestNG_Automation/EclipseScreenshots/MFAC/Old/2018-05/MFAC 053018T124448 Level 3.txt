@@ -1,0 +1,14 @@
+
+
+$APIG$ Endpoint is being used on Level 3.
+IssueURL = https://apidrt.idev.fedex.com:8443/security/v1/pin
+VerifyURL = https://apidrt.idev.fedex.com:8443/security/v1/pin/verify
+VelocityURL = https://apidrt.idev.fedex.com:8443/security/v1/addresses/velocitycheck
+
+<-- VerifyPinValid        OrgName: FDM-POSTCARD-PIN
+Verify that user is able to request a pin and then verify that can recieve success when using the generated pin.
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"58LPx1Yze9-CLME84dHRT3GOUGfS9Psi0GZ"}
+Response: {"transactionId":"39317a6b-8cb2-40bf-8dad-8248b3eada17","output":{"pinOTP":"118213","pinExpirationDate":"05/31/2018 05:44 PM GMT"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"118213","userName":"58LPx1Yze9-CLME84dHRT3GOUGfS9Psi0GZ"}
+Response: {"transactionId":"d44193c4-0024-4c4d-84bd-04f43db178c8","output":{"daysLeftToExpire":1,"message":"Success"}}
+Passed

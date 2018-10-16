@@ -1,0 +1,302 @@
+073118T153046: OAuth: https://apidrt.idev.fedex.com:8443/auth/oauth/v2/token  Iden: l7xx1892f99a6f88470ba29abc141cd7bd8d  Secret: a4325d011acf4876b3fe3206931b8f5a
+
+073118T153047: $APIG$ Endpoint is being used on Level 3.
+IssueURL = https://apidrt.idev.fedex.com:8443/security/v1/pin
+VerifyURL = https://apidrt.idev.fedex.com:8443/security/v1/pin/verify
+VelocityURL = https://apidrt.idev.fedex.com:8443/security/v1/addresses/velocitycheck
+
+
+<-- AddressVelocity        OrgName: FDM-POSTCARD-PIN
+073118T153047: Verify that the address velocity of 3 is reached and the correct error code is received.
+073118T153047: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"gzjuxfsiwl-apbbwnnockamglgdbhybxpbq"}
+073118T153047: Response: {"transactionId":"4d8acffd-b991-4610-a10c-04257c608ce4","output":{"advice":"ALLOW"}}
+073118T153047: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"gzjuxfsiwl-apbbwnnockamglgdbhybxpbq"}
+073118T153048: Response: {"transactionId":"83861f49-8394-4759-8a3a-fc6664bd0c0c","output":{"advice":"ALLOW"}}
+073118T153048: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"gzjuxfsiwl-apbbwnnockamglgdbhybxpbq"}
+073118T153048: Response: {"transactionId":"e5708c0c-2034-416a-b0b1-1fcaae2617a4","output":{"advice":"ALLOW"}}
+073118T153048: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"gzjuxfsiwl-apbbwnnockamglgdbhybxpbq"}
+073118T153049: Response: {"transactionId":"c6a43d12-9218-4b6a-a0f2-7d27474a5d9e","errors":[{"code":"DENY","message":"Unfortunately, too many failed attempts for registration have occurred. Please try again later."}]}
+
+<-- IssuePin        OrgName: FDM-POSTCARD-PIN
+073118T153049: Verify that the user is able to request a pin.
+073118T153049: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"dumgmquqwu-iurbbxluasijehgsikzssdsb"}
+073118T153051: Response: {"transactionId":"46291726-43f9-4f98-a568-f7cb0426838c","output":{"pinOTP":"394656","pinExpirationDate":"07/31/2018 09:00 PM GMT"}}
+
+<-- IssuePinVelocity        OrgName: FDM-POSTCARD-PIN
+073118T153051: Verify that the user can request up to 3 pin numbers before unable to request more.
+073118T153051: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"xfnzzhnpxz-lmjbfpqbagblbetxiqkigcne"}
+073118T153051: Response: {"transactionId":"a77ace7e-f6dd-4831-bd87-a1299768fa9f","output":{"pinOTP":"638570","pinExpirationDate":"07/31/2018 09:00 PM GMT"}}
+073118T153051: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"xfnzzhnpxz-lmjbfpqbagblbetxiqkigcne"}
+073118T153052: Response: {"transactionId":"3edcd4fe-92b0-4270-928f-dd592fc831c3","output":{"pinOTP":"671179","pinExpirationDate":"07/31/2018 09:00 PM GMT"}}
+073118T153052: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"xfnzzhnpxz-lmjbfpqbagblbetxiqkigcne"}
+073118T153052: Response: {"transactionId":"ae7f3d2f-0377-471c-82e4-2aa9c6a0f675","output":{"pinOTP":"246322","pinExpirationDate":"07/31/2018 09:00 PM GMT"}}
+073118T153052: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"xfnzzhnpxz-lmjbfpqbagblbetxiqkigcne"}
+073118T153052: Response: {"transactionId":"c1d80784-c7e5-4158-ab39-eaa3d7aa45ec","errors":[{"code":"5700","message":"Unfortunately, you have exceeded your attempts for verification. Please try again later."}]}
+
+<-- VerifyPinNoLongerValid        OrgName: FDM-POSTCARD-PIN
+073118T153052: Verify that when user requests a second pin that the first is no longer valid.
+073118T153052: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"xauxczjxck-mizwifwnbcpwgwkcbowxmkwb"}
+073118T153053: Response: {"transactionId":"2a68cb40-08d4-47b7-bf06-fd9b6284b296","output":{"pinOTP":"154817","pinExpirationDate":"07/31/2018 09:00 PM GMT"}}
+073118T153053: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"xauxczjxck-mizwifwnbcpwgwkcbowxmkwb"}
+073118T153053: Response: {"transactionId":"aa41d6e3-0494-47b6-be7d-f7f047d877c8","output":{"pinOTP":"721915","pinExpirationDate":"07/31/2018 09:00 PM GMT"}}
+073118T153053: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"154817","userName":"xauxczjxck-mizwifwnbcpwgwkcbowxmkwb"}
+073118T153053: Response: {"transactionId":"9d6aa517-bd8d-41bc-b746-62cc5e4d6d69","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+073118T153053: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"721915","userName":"xauxczjxck-mizwifwnbcpwgwkcbowxmkwb"}
+073118T153053: Response: {"errors":[{"code":"SYSTEM.UNEXPECTED.ERROR"}]}
+Failed
+
+<-- VerifyPinThreshold        OrgName: FDM-POSTCARD-PIN
+073118T153053: When an invalid pin is entered the pin failure message should be returned passed the velocity threshold. 32
+073118T153053: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"lxbbnmcvgp-nklmwkwtciadicijylxmnyvn"}
+073118T153054: Response: {"transactionId":"b0af846f-3e6e-4d62-8f51-57cb70976a48","output":{"pinOTP":"255573","pinExpirationDate":"07/31/2018 09:00 PM GMT"}}
+073118T153054: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"lxbbnmcvgp-nklmwkwtciadicijylxmnyvn"}
+073118T153054: Response: {"transactionId":"8cd77682-add7-407d-bdd7-f39d068b8e02","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+073118T153054: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"lxbbnmcvgp-nklmwkwtciadicijylxmnyvn"}
+073118T153054: Response: {"errors":[{"code":"SYSTEM.UNEXPECTED.ERROR"}]}
+Failed
+
+<-- VerifyPinValid        OrgName: FDM-POSTCARD-PIN
+073118T153054: Verify that user is able to request a pin and then verify that can recieve success when using the generated pin.
+073118T153054: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"ghwwawxrhb-jmlkaiburhehnhrqeifgghzt"}
+073118T153054: Response: {"transactionId":"7247e4e8-40a0-4ede-b387-7e774a8d9280","output":{"pinOTP":"262690","pinExpirationDate":"07/31/2018 09:00 PM GMT"}}
+073118T153054: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"262690","userName":"ghwwawxrhb-jmlkaiburhehnhrqeifgghzt"}
+073118T153054: Response: {"errors":[{"code":"SYSTEM.UNEXPECTED.ERROR"}]}
+Failed
+
+<-- zIssuePinExpiration        OrgName: FDM-POSTCARD-PIN
+073118T153054: Verify that after a pin is expired it can no longer be used to complete registration.
+073118T153054: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"zdkcbhjgmq-wgtocjwksdfxdwbwoxwdpqgu"}
+073118T153055: Response: {"transactionId":"231f8538-e31d-46dd-ad43-ecc7ca9b6786","output":{"pinOTP":"032397","pinExpirationDate":"07/31/2018 09:00 PM GMT"}}
+073118T153055: Not Validing the Expiraiton at this time, need to verify seperatly once the expiration has passed.  Tue Jul 31 16:00:00 CDT 2018
+073118T153055: OAuth: https://apidrt.idev.fedex.com:8443/auth/oauth/v2/token  Iden: l7xx1892f99a6f88470ba29abc141cd7bd8d  Secret: a4325d011acf4876b3fe3206931b8f5a
+
+073118T153055: $APIG$ Endpoint is being used on Level 3.
+IssueURL = https://apidrt.idev.fedex.com:8443/security/v1/pin
+VerifyURL = https://apidrt.idev.fedex.com:8443/security/v1/pin/verify
+VelocityURL = https://apidrt.idev.fedex.com:8443/security/v1/addresses/velocitycheck
+
+
+<-- AddressVelocity        OrgName: FDM-PHONE-PIN
+073118T153055: Verify that the address velocity of 3 is reached and the correct error code is received.
+073118T153055: Request: {"orgName":"FDM-PHONE-PIN","userName":"cztaepxjvx-ewmqlcclpbrluuunraekvgor"}
+073118T153055: Response: {"transactionId":"4be9f462-2206-4741-bc68-10ec00f4f15a","output":{"advice":"ALLOW"}}
+073118T153055: Request: {"orgName":"FDM-PHONE-PIN","userName":"cztaepxjvx-ewmqlcclpbrluuunraekvgor"}
+073118T153055: Response: {"transactionId":"2bca2f3e-5551-46a6-a3da-12d99fd9a08a","output":{"advice":"ALLOW"}}
+073118T153055: Request: {"orgName":"FDM-PHONE-PIN","userName":"cztaepxjvx-ewmqlcclpbrluuunraekvgor"}
+073118T153056: Response: {"transactionId":"204504d6-63c3-4789-8770-f7fdfeed8a9c","output":{"advice":"ALLOW"}}
+073118T153056: Request: {"orgName":"FDM-PHONE-PIN","userName":"cztaepxjvx-ewmqlcclpbrluuunraekvgor"}
+073118T153056: Response: {"transactionId":"60c10e17-4221-4aad-9d06-2b57f5c32ee0","errors":[{"code":"DENY","message":"Unfortunately, too many failed attempts for registration have occurred. Please try again later."}]}
+
+<-- IssuePin        OrgName: FDM-PHONE-PIN
+073118T153056: Verify that the user is able to request a pin.
+073118T153056: Request: {"orgName":"FDM-PHONE-PIN","userName":"fkpnfkjtrr-mpuyhhhwmlhqxrwmirjgamfm"}
+073118T153056: Response: {"transactionId":"3aaef0aa-8086-43fb-ba9a-b7596483cd34","output":{"pinOTP":"074835","pinExpirationDate":"07/31/2018 08:40 PM GMT"}}
+
+<-- IssuePinVelocity        OrgName: FDM-PHONE-PIN
+073118T153056: Verify that the user can request up to 3 pin numbers before unable to request more.
+073118T153056: Request: {"orgName":"FDM-PHONE-PIN","userName":"wsuvmselyc-uvkmhgpthsamnqxvtgsnnyjm"}
+073118T153057: Response: {"transactionId":"d6cf44b4-a244-498d-97f2-26fbfed3ce57","output":{"pinOTP":"360290","pinExpirationDate":"07/31/2018 08:40 PM GMT"}}
+073118T153057: Request: {"orgName":"FDM-PHONE-PIN","userName":"wsuvmselyc-uvkmhgpthsamnqxvtgsnnyjm"}
+073118T153057: Response: {"transactionId":"f154fabd-3628-46e5-9e00-8556dc251007","output":{"pinOTP":"381012","pinExpirationDate":"07/31/2018 08:40 PM GMT"}}
+073118T153057: Request: {"orgName":"FDM-PHONE-PIN","userName":"wsuvmselyc-uvkmhgpthsamnqxvtgsnnyjm"}
+073118T153057: Response: {"transactionId":"0a094d6c-8922-466e-86e8-3449ff047ba8","output":{"pinOTP":"471529","pinExpirationDate":"07/31/2018 08:40 PM GMT"}}
+073118T153057: Request: {"orgName":"FDM-PHONE-PIN","userName":"wsuvmselyc-uvkmhgpthsamnqxvtgsnnyjm"}
+073118T153058: Response: {"transactionId":"17a08ab7-f219-4e2d-8287-4ebca2cc708e","errors":[{"code":"5700","message":"Unfortunately, you have exceeded your attempts for verification. Please try again later."}]}
+
+<-- VerifyPinNoLongerValid        OrgName: FDM-PHONE-PIN
+073118T153058: Verify that when user requests a second pin that the first is no longer valid.
+073118T153058: Request: {"orgName":"FDM-PHONE-PIN","userName":"usdngkzrrj-eeyviyftuplzmwiruustreaa"}
+073118T153058: Response: {"transactionId":"4de06541-e908-4bb7-bdb1-bc4e13792193","output":{"pinOTP":"948593","pinExpirationDate":"07/31/2018 08:40 PM GMT"}}
+073118T153058: Request: {"orgName":"FDM-PHONE-PIN","userName":"usdngkzrrj-eeyviyftuplzmwiruustreaa"}
+073118T153058: Response: {"transactionId":"21d83a72-9918-4ab2-b407-f16eb9ee5665","output":{"pinOTP":"514587","pinExpirationDate":"07/31/2018 08:40 PM GMT"}}
+073118T153058: Request: {"orgName":"FDM-PHONE-PIN","otpInput":"948593","userName":"usdngkzrrj-eeyviyftuplzmwiruustreaa"}
+073118T153058: Response: {"errors":[{"code":"SYSTEM.UNEXPECTED.ERROR"}]}
+Failed
+
+<-- VerifyPinThreshold        OrgName: FDM-PHONE-PIN
+073118T153058: When an invalid pin is entered the pin failure message should be returned passed the velocity threshold. 32
+073118T153058: Request: {"orgName":"FDM-PHONE-PIN","userName":"reuluhnktp-aohfysfyepknbpbuyhqlsdqp"}
+073118T153059: Response: {"transactionId":"532c9a41-52b6-4d25-b0a3-034681c84bf6","output":{"pinOTP":"580519","pinExpirationDate":"07/31/2018 08:40 PM GMT"}}
+073118T153059: Request: {"orgName":"FDM-PHONE-PIN","otpInput":"1111","userName":"reuluhnktp-aohfysfyepknbpbuyhqlsdqp"}
+073118T153059: Response: {"errors":[{"code":"SYSTEM.UNEXPECTED.ERROR"}]}
+Failed
+
+<-- VerifyPinValid        OrgName: FDM-PHONE-PIN
+073118T153059: Verify that user is able to request a pin and then verify that can recieve success when using the generated pin.
+073118T153059: Request: {"orgName":"FDM-PHONE-PIN","userName":"prsucuyejw-nokxoqkyuraunwudysxtsvnx"}
+073118T153059: Response: {"transactionId":"09165e51-5f71-4741-a7ef-8499b57cc819","output":{"pinOTP":"374922","pinExpirationDate":"07/31/2018 08:40 PM GMT"}}
+073118T153059: Request: {"orgName":"FDM-PHONE-PIN","otpInput":"374922","userName":"prsucuyejw-nokxoqkyuraunwudysxtsvnx"}
+073118T153059: Response: {"errors":[{"code":"SYSTEM.UNEXPECTED.ERROR"}]}
+Failed
+
+<-- zIssuePinExpiration        OrgName: FDM-PHONE-PIN
+073118T153059: Verify that after a pin is expired it can no longer be used to complete registration.
+073118T153059: Request: {"orgName":"FDM-PHONE-PIN","userName":"hlzenosfur-shjjmqlgzdmuiaqdakalzqlw"}
+073118T153100: Response: {"transactionId":"ba01dc5a-52d7-4c0a-9672-e634669e94b5","output":{"pinOTP":"114233","pinExpirationDate":"07/31/2018 08:41 PM GMT"}}
+073118T153100: Not Validing the Expiraiton at this time, need to verify seperatly once the expiration has passed.  Tue Jul 31 15:41:00 CDT 2018
+073118T153100: OAuth: https://apidrt.idev.fedex.com:8443/auth/oauth/v2/token  Iden: l7xx1892f99a6f88470ba29abc141cd7bd8d  Secret: a4325d011acf4876b3fe3206931b8f5a
+
+073118T153100: $Direct$ Endpoint is being used on Level 3.
+IssueURL = http://mfacdrt-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN
+VerifyURL = http://mfacdrt-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN
+VelocityURL = http://mfacdrt-cos-vip.test.cloud.fedex.com:9090/mfac/v3/addressVelocityCheck
+
+
+<-- AddressVelocity        OrgName: FDM-POSTCARD-PIN
+073118T153100: Verify that the address velocity of 3 is reached and the correct error code is received.
+073118T153100: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"otfvhqltun-jptdfpzmtalwyjccnturatnk"}
+073118T153100: Response: {"transactionId":"c2b538fd-601f-4a38-b002-69738e72d80e","output":{"advice":"ALLOW"}}
+073118T153100: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"otfvhqltun-jptdfpzmtalwyjccnturatnk"}
+073118T153100: Response: {"transactionId":"aa7b0e06-ac37-4abd-8874-03ccf48c85f3","output":{"advice":"ALLOW"}}
+073118T153100: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"otfvhqltun-jptdfpzmtalwyjccnturatnk"}
+073118T153100: Response: {"transactionId":"bd6d42f3-0a24-404b-91b8-15663d70deb8","output":{"advice":"ALLOW"}}
+073118T153100: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"otfvhqltun-jptdfpzmtalwyjccnturatnk"}
+073118T153100: Response: {"transactionId":"4f4d5486-b2fd-4fab-b721-c1240972f1c8","errors":[{"code":"DENY","message":"Unfortunately, too many failed attempts for registration have occurred. Please try again later."}]}
+
+<-- IssuePin        OrgName: FDM-POSTCARD-PIN
+073118T153100: Verify that the user is able to request a pin.
+073118T153100: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"qyqaviocly-frwgurrjakbopxyoukdmjvcn"}
+073118T153101: Response: {"transactionId":"36f4cd7f-824d-4792-8384-cfa3cee83622","output":{"pinOTP":"363348","pinExpirationDate":"07/31/2018 09:01 PM GMT"}}
+
+<-- IssuePinVelocity        OrgName: FDM-POSTCARD-PIN
+073118T153101: Verify that the user can request up to 3 pin numbers before unable to request more.
+073118T153101: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"tiyzymygoo-exowdufmrsagudmgoidztqpq"}
+073118T153101: Response: {"transactionId":"db07ec5f-4e6b-457b-bb7d-231f6e32bfa0","output":{"pinOTP":"440471","pinExpirationDate":"07/31/2018 09:01 PM GMT"}}
+073118T153101: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"tiyzymygoo-exowdufmrsagudmgoidztqpq"}
+073118T153101: Response: {"transactionId":"31bdce4a-2dd6-47dc-9fd9-24015bb30b9d","output":{"pinOTP":"381685","pinExpirationDate":"07/31/2018 09:01 PM GMT"}}
+073118T153101: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"tiyzymygoo-exowdufmrsagudmgoidztqpq"}
+073118T153101: Response: {"transactionId":"7a9d3d05-1a33-41f0-92cc-b5f3eb76321c","output":{"pinOTP":"421145","pinExpirationDate":"07/31/2018 09:01 PM GMT"}}
+073118T153101: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"tiyzymygoo-exowdufmrsagudmgoidztqpq"}
+073118T153101: Response: {"transactionId":"661bea54-7f4d-47da-ae42-30c1b28250ea","errors":[{"code":"5700","message":"Unfortunately, you have exceeded your attempts for verification. Please try again later."}]}
+
+<-- VerifyPinNoLongerValid        OrgName: FDM-POSTCARD-PIN
+073118T153101: Verify that when user requests a second pin that the first is no longer valid.
+073118T153101: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"pcivbhkqhl-svayucwszzqknepjvnlctvyv"}
+073118T153102: Response: {"transactionId":"2db72417-95ee-438b-8ec5-bc8e60471fd2","output":{"pinOTP":"743264","pinExpirationDate":"07/31/2018 09:01 PM GMT"}}
+073118T153102: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"pcivbhkqhl-svayucwszzqknepjvnlctvyv"}
+073118T153102: Response: {"transactionId":"2ef1fcd0-946b-4bf5-affe-09e32e701263","output":{"pinOTP":"352325","pinExpirationDate":"07/31/2018 09:01 PM GMT"}}
+073118T153102: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"743264","userName":"pcivbhkqhl-svayucwszzqknepjvnlctvyv"}
+073118T153102: Response: {"errors":[{"code":"SYSTEM.UNEXPECTED.ERROR"}]}
+Failed
+
+<-- VerifyPinThreshold        OrgName: FDM-POSTCARD-PIN
+073118T153102: When an invalid pin is entered the pin failure message should be returned passed the velocity threshold. 32
+073118T153102: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"yynejijvuy-kgrvbgtkxauvwkjjzsalcpyn"}
+073118T153102: Response: {"transactionId":"2be62b71-7d35-4555-8f4d-b7ae7755bfc0","output":{"pinOTP":"423297","pinExpirationDate":"07/31/2018 09:01 PM GMT"}}
+073118T153102: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"yynejijvuy-kgrvbgtkxauvwkjjzsalcpyn"}
+073118T153102: Response: {"errors":[{"code":"SYSTEM.UNEXPECTED.ERROR"}]}
+Failed
+
+<-- VerifyPinValid        OrgName: FDM-POSTCARD-PIN
+073118T153102: Verify that user is able to request a pin and then verify that can recieve success when using the generated pin.
+073118T153102: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"yeznapdnik-ujqmhfvqvaqmwgcbownhsoya"}
+073118T153103: Response: {"transactionId":"0be86ec0-5308-4c89-86ad-82d4efde3aa2","output":{"pinOTP":"615484","pinExpirationDate":"07/31/2018 09:01 PM GMT"}}
+073118T153103: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"615484","userName":"yeznapdnik-ujqmhfvqvaqmwgcbownhsoya"}
+073118T153103: Response: {"errors":[{"code":"SYSTEM.UNEXPECTED.ERROR"}]}
+Failed
+
+<-- zIssuePinExpiration        OrgName: FDM-POSTCARD-PIN
+073118T153103: Verify that after a pin is expired it can no longer be used to complete registration.
+073118T153103: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"untrflarzw-hcslsxobxpedawkdshwahyap"}
+073118T153103: Response: {"transactionId":"d1126502-43c7-4f15-a162-e0538cd848eb","output":{"pinOTP":"116619","pinExpirationDate":"07/31/2018 09:01 PM GMT"}}
+073118T153103: Not Validing the Expiraiton at this time, need to verify seperatly once the expiration has passed.  Tue Jul 31 16:01:00 CDT 2018
+073118T153103: OAuth: https://apidrt.idev.fedex.com:8443/auth/oauth/v2/token  Iden: l7xx1892f99a6f88470ba29abc141cd7bd8d  Secret: a4325d011acf4876b3fe3206931b8f5a
+
+073118T153103: $Direct$ Endpoint is being used on Level 3.
+IssueURL = http://mfacdrt-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN
+VerifyURL = http://mfacdrt-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN
+VelocityURL = http://mfacdrt-cos-vip.test.cloud.fedex.com:9090/mfac/v3/addressVelocityCheck
+
+
+<-- AddressVelocity        OrgName: FDM-PHONE-PIN
+073118T153103: Verify that the address velocity of 3 is reached and the correct error code is received.
+073118T153103: Request: {"orgName":"FDM-PHONE-PIN","userName":"pnbclemhvq-utmtwkqjetrsskouizkomrso"}
+073118T153103: Response: {"transactionId":"6f564d7e-0844-418c-9ab1-1d63e059bce7","output":{"advice":"ALLOW"}}
+073118T153103: Request: {"orgName":"FDM-PHONE-PIN","userName":"pnbclemhvq-utmtwkqjetrsskouizkomrso"}
+073118T153103: Response: {"transactionId":"34fd88a5-b7ae-4833-b6e9-3e640bc8a9c0","output":{"advice":"ALLOW"}}
+073118T153103: Request: {"orgName":"FDM-PHONE-PIN","userName":"pnbclemhvq-utmtwkqjetrsskouizkomrso"}
+073118T153103: Response: {"transactionId":"08f8e2f2-ef6d-4a5b-b7b8-03032dffe465","output":{"advice":"ALLOW"}}
+073118T153103: Request: {"orgName":"FDM-PHONE-PIN","userName":"pnbclemhvq-utmtwkqjetrsskouizkomrso"}
+073118T153103: Response: {"transactionId":"355c0516-6d93-4518-bfcc-86501b055ed2","errors":[{"code":"DENY","message":"Unfortunately, too many failed attempts for registration have occurred. Please try again later."}]}
+
+<-- IssuePin        OrgName: FDM-PHONE-PIN
+073118T153103: Verify that the user is able to request a pin.
+073118T153103: Request: {"orgName":"FDM-PHONE-PIN","userName":"ejryeotjsb-oxvzyavgpunbkhmdyffogjfi"}
+073118T153104: Response: {"transactionId":"9acaa050-ee9e-4295-991e-cd5888c10963","output":{"pinOTP":"681305","pinExpirationDate":"07/31/2018 08:41 PM GMT"}}
+
+<-- IssuePinVelocity        OrgName: FDM-PHONE-PIN
+073118T153104: Verify that the user can request up to 3 pin numbers before unable to request more.
+073118T153104: Request: {"orgName":"FDM-PHONE-PIN","userName":"hrgxtqeyqr-vwhhonwntcfgvlqzqcrsgivd"}
+073118T153104: Response: {"transactionId":"a19acf2e-f376-4f63-a96e-56e227ce87bc","output":{"pinOTP":"272357","pinExpirationDate":"07/31/2018 08:41 PM GMT"}}
+073118T153104: Request: {"orgName":"FDM-PHONE-PIN","userName":"hrgxtqeyqr-vwhhonwntcfgvlqzqcrsgivd"}
+073118T153104: Response: {"transactionId":"db30a658-6574-4fad-baa8-1228f25d442d","output":{"pinOTP":"422197","pinExpirationDate":"07/31/2018 08:41 PM GMT"}}
+073118T153104: Request: {"orgName":"FDM-PHONE-PIN","userName":"hrgxtqeyqr-vwhhonwntcfgvlqzqcrsgivd"}
+073118T153104: Response: {"transactionId":"56795df7-4ea6-40f3-9bc4-050788773df2","output":{"pinOTP":"015540","pinExpirationDate":"07/31/2018 08:41 PM GMT"}}
+073118T153104: Request: {"orgName":"FDM-PHONE-PIN","userName":"hrgxtqeyqr-vwhhonwntcfgvlqzqcrsgivd"}
+073118T153104: Response: {"transactionId":"ce3ece42-ea01-41eb-bc9a-ebe31e8b22f7","errors":[{"code":"5700","message":"Unfortunately, you have exceeded your attempts for verification. Please try again later."}]}
+
+<-- VerifyPinNoLongerValid        OrgName: FDM-PHONE-PIN
+073118T153104: Verify that when user requests a second pin that the first is no longer valid.
+073118T153104: Request: {"orgName":"FDM-PHONE-PIN","userName":"pxopwfniye-zuidavqmllhozaxxvcqfjufu"}
+073118T153105: Response: {"transactionId":"afae78ae-29ec-4df3-9604-e652500aaecc","output":{"pinOTP":"090725","pinExpirationDate":"07/31/2018 08:41 PM GMT"}}
+073118T153105: Request: {"orgName":"FDM-PHONE-PIN","userName":"pxopwfniye-zuidavqmllhozaxxvcqfjufu"}
+073118T153105: Response: {"transactionId":"3ad3fc94-cc19-41c7-8b04-30a86cb9f115","output":{"pinOTP":"607056","pinExpirationDate":"07/31/2018 08:41 PM GMT"}}
+073118T153105: Request: {"orgName":"FDM-PHONE-PIN","otpInput":"090725","userName":"pxopwfniye-zuidavqmllhozaxxvcqfjufu"}
+073118T153105: Response: {"errors":[{"code":"SYSTEM.UNEXPECTED.ERROR"}]}
+Failed
+
+<-- VerifyPinThreshold        OrgName: FDM-PHONE-PIN
+073118T153105: When an invalid pin is entered the pin failure message should be returned passed the velocity threshold. 32
+073118T153105: Request: {"orgName":"FDM-PHONE-PIN","userName":"qbrqxufjer-heotbcwfbhbhvehubkwdccni"}
+073118T153105: Response: {"transactionId":"d25cd911-1d5e-49c6-928a-d20bbd726e32","output":{"pinOTP":"610788","pinExpirationDate":"07/31/2018 08:41 PM GMT"}}
+073118T153105: Request: {"orgName":"FDM-PHONE-PIN","otpInput":"1111","userName":"qbrqxufjer-heotbcwfbhbhvehubkwdccni"}
+073118T153105: Response: {"errors":[{"code":"SYSTEM.UNEXPECTED.ERROR"}]}
+Failed
+
+<-- VerifyPinValid        OrgName: FDM-PHONE-PIN
+073118T153105: Verify that user is able to request a pin and then verify that can recieve success when using the generated pin.
+073118T153105: Request: {"orgName":"FDM-PHONE-PIN","userName":"vphamppcek-xlyefaojrpntrdltgvepfejz"}
+073118T153105: Response: {"transactionId":"7d3cc6b2-423a-49b9-bb02-0e50b97de52f","output":{"pinOTP":"326731","pinExpirationDate":"07/31/2018 08:41 PM GMT"}}
+073118T153105: Request: {"orgName":"FDM-PHONE-PIN","otpInput":"326731","userName":"vphamppcek-xlyefaojrpntrdltgvepfejz"}
+073118T153106: Response: {"errors":[{"code":"SYSTEM.UNEXPECTED.ERROR"}]}
+Failed
+
+<-- zIssuePinExpiration        OrgName: FDM-PHONE-PIN
+073118T153106: Verify that after a pin is expired it can no longer be used to complete registration.
+073118T153106: Request: {"orgName":"FDM-PHONE-PIN","userName":"tuksaqibqz-rhhbxoormvicyqzfkmkjczdn"}
+073118T153106: Response: {"transactionId":"bd6d1fff-a0d2-44ed-ac3e-2a0ead432c5a","output":{"pinOTP":"211708","pinExpirationDate":"07/31/2018 08:41 PM GMT"}}
+073118T153106: Not Validing the Expiraiton at this time, need to verify seperatly once the expiration has passed.  Tue Jul 31 15:41:00 CDT 2018
+
+________________________________________________________________________________________________________
+|                            07-31-18 15:30:47:169 |                07-31-18 15:31:06:235 | 19 seconds |
+|          AddressVelocity  FDM-POSTCARD-PIN  APIG | c6a43d12-9218-4b6a-a0f2-7d27474a5d9e |       Pass |
+|                 IssuePin  FDM-POSTCARD-PIN  APIG | 46291726-43f9-4f98-a568-f7cb0426838c |       Pass |
+|         IssuePinVelocity  FDM-POSTCARD-PIN  APIG | c1d80784-c7e5-4158-ab39-eaa3d7aa45ec |       Pass |
+|   VerifyPinNoLongerValid  FDM-POSTCARD-PIN  APIG |                        073118T153053 |     Failed |
+|       VerifyPinThreshold  FDM-POSTCARD-PIN  APIG |                        073118T153054 |     Failed |
+|           VerifyPinValid  FDM-POSTCARD-PIN  APIG |                        073118T153054 |     Failed |
+|      zIssuePinExpiration  FDM-POSTCARD-PIN  APIG | 231f8538-e31d-46dd-ad43-ecc7ca9b6786 |       Pass |
+|             AddressVelocity  FDM-PHONE-PIN  APIG | 60c10e17-4221-4aad-9d06-2b57f5c32ee0 |       Pass |
+|                    IssuePin  FDM-PHONE-PIN  APIG | 3aaef0aa-8086-43fb-ba9a-b7596483cd34 |       Pass |
+|            IssuePinVelocity  FDM-PHONE-PIN  APIG | 17a08ab7-f219-4e2d-8287-4ebca2cc708e |       Pass |
+|      VerifyPinNoLongerValid  FDM-PHONE-PIN  APIG |                        073118T153058 |     Failed |
+|          VerifyPinThreshold  FDM-PHONE-PIN  APIG |                        073118T153059 |     Failed |
+|              VerifyPinValid  FDM-PHONE-PIN  APIG |                        073118T153059 |     Failed |
+|         zIssuePinExpiration  FDM-PHONE-PIN  APIG | ba01dc5a-52d7-4c0a-9672-e634669e94b5 |       Pass |
+|        AddressVelocity  FDM-POSTCARD-PIN  Direct | 4f4d5486-b2fd-4fab-b721-c1240972f1c8 |       Pass |
+|               IssuePin  FDM-POSTCARD-PIN  Direct | 36f4cd7f-824d-4792-8384-cfa3cee83622 |       Pass |
+|       IssuePinVelocity  FDM-POSTCARD-PIN  Direct | 661bea54-7f4d-47da-ae42-30c1b28250ea |       Pass |
+| VerifyPinNoLongerValid  FDM-POSTCARD-PIN  Direct |                        073118T153102 |     Failed |
+|     VerifyPinThreshold  FDM-POSTCARD-PIN  Direct |                        073118T153102 |     Failed |
+|         VerifyPinValid  FDM-POSTCARD-PIN  Direct |                        073118T153103 |     Failed |
+|    zIssuePinExpiration  FDM-POSTCARD-PIN  Direct | d1126502-43c7-4f15-a162-e0538cd848eb |       Pass |
+|           AddressVelocity  FDM-PHONE-PIN  Direct | 355c0516-6d93-4518-bfcc-86501b055ed2 |       Pass |
+|                  IssuePin  FDM-PHONE-PIN  Direct | 9acaa050-ee9e-4295-991e-cd5888c10963 |       Pass |
+|          IssuePinVelocity  FDM-PHONE-PIN  Direct | ce3ece42-ea01-41eb-bc9a-ebe31e8b22f7 |       Pass |
+|    VerifyPinNoLongerValid  FDM-PHONE-PIN  Direct |                        073118T153105 |     Failed |
+|        VerifyPinThreshold  FDM-PHONE-PIN  Direct |                        073118T153105 |     Failed |
+|            VerifyPinValid  FDM-PHONE-PIN  Direct |                        073118T153106 |     Failed |
+|       zIssuePinExpiration  FDM-PHONE-PIN  Direct | bd6d1fff-a0d2-44ed-ac3e-2a0ead432c5a |       Pass |
+|______________________________________________________________________________________________________|
+Passed: 16 - Failed: 12
+

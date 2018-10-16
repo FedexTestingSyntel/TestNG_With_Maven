@@ -1,0 +1,36 @@
+082118T131455: OAuth: https://apidrt.idev.fedex.com:8443/auth/oauth/v2/token  Iden: l7xx1892f99a6f88470ba29abc141cd7bd8d  Secret: a4325d011acf4876b3fe3206931b8f5a
+082118T131455: IssuePin Request: {"orgName":"FDM-PHONE-PIN","userName":"vuxbwirnas-wxjqcqpggpmouslykzdmqjuh"}
+082118T131455: IssuePin Request: {"orgName":"FDM-PHONE-PIN","userName":"tmkpseixxc-srrdzyxvdyzcvjeiwprdyfva"}
+082118T131456: IssuePin Response: {"transactionId":"26b281da-0a26-412e-812b-12300e853c68","output":{"pinOTP":"670458","pinExpirationDate":"08/21/2018 06:24 PM GMT"}}
+082118T131456: IssuePin Request: {"orgName":"FDM-POSTCARD-PIN","userName":"vuxbwirnas-wxjqcqpggpmouslykzdmqjuh"}
+082118T131456: IssuePin Response: {"transactionId":"e06bb065-f05d-468f-8d25-8dbeb716aa39","output":{"pinOTP":"988485","pinExpirationDate":"08/21/2018 06:24 PM GMT"}}
+082118T131456: IssuePin Request: {"orgName":"FDM-POSTCARD-PIN","userName":"tmkpseixxc-srrdzyxvdyzcvjeiwprdyfva"}
+082118T131456: IssuePin Response: {"transactionId":"6bf874f9-9603-4315-93be-c4e06edf506e","output":{"pinOTP":"301070","pinExpirationDate":"08/21/2018 06:44 PM GMT"}}
+082118T131456: IssuePin Response: {"transactionId":"fcba3fc6-73c3-4cfa-b0f9-39f3f22f5bdc","output":{"pinOTP":"094049","pinExpirationDate":"08/21/2018 06:44 PM GMT"}}
+082118T132556: VerifyPin Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"301070","userName":"vuxbwirnas-wxjqcqpggpmouslykzdmqjuh"}
+082118T132556: VerifyPin Response: {"transactionId":"29a4da53-10d3-47c4-a8b7-c6e8b7e400e5","output":{"daysLeftToExpire":1,"message":"Success"}}
+082118T132556: VerifyPin Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"094049","userName":"tmkpseixxc-srrdzyxvdyzcvjeiwprdyfva"}
+082118T132557: VerifyPin Response: {"transactionId":"2c3d8410-d5ed-43bb-8766-69fdf6e1f0e7","output":{"daysLeftToExpire":1,"message":"Success"}}
+
+
+@@ Passed Test Cases:
+1)    <-- AdditionalEnrollmentExpiration: Verify that the user recieves the updated expiration time when changing enrollment method..  (Org:FDM-PHONE-PIN, Endpoint: APIG, Level: 3)
+Request: {"orgName":"FDM-PHONE-PIN","userName":"tmkpseixxc-srrdzyxvdyzcvjeiwprdyfva"}
+Response: {"transactionId":"e06bb065-f05d-468f-8d25-8dbeb716aa39","output":{"pinOTP":"988485","pinExpirationDate":"08/21/2018 06:24 PM GMT"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"tmkpseixxc-srrdzyxvdyzcvjeiwprdyfva"}
+Response: {"transactionId":"fcba3fc6-73c3-4cfa-b0f9-39f3f22f5bdc","output":{"pinOTP":"094049","pinExpirationDate":"08/21/2018 06:44 PM GMT"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"094049","userName":"tmkpseixxc-srrdzyxvdyzcvjeiwprdyfva"}
+Response: {"transactionId":"2c3d8410-d5ed-43bb-8766-69fdf6e1f0e7","output":{"daysLeftToExpire":1,"message":"Success"}}
+Scenario_Passed
+
+2)    <-- AdditionalEnrollmentExpiration: Verify that the user recieves the updated expiration time when changing enrollment method..  (Org:FDM-PHONE-PIN, Endpoint: Direct, Level: 3)
+Request: {"orgName":"FDM-PHONE-PIN","userName":"vuxbwirnas-wxjqcqpggpmouslykzdmqjuh"}
+Response: {"transactionId":"26b281da-0a26-412e-812b-12300e853c68","output":{"pinOTP":"670458","pinExpirationDate":"08/21/2018 06:24 PM GMT"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"vuxbwirnas-wxjqcqpggpmouslykzdmqjuh"}
+Response: {"transactionId":"6bf874f9-9603-4315-93be-c4e06edf506e","output":{"pinOTP":"301070","pinExpirationDate":"08/21/2018 06:44 PM GMT"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"301070","userName":"vuxbwirnas-wxjqcqpggpmouslykzdmqjuh"}
+Response: {"transactionId":"29a4da53-10d3-47c4-a8b7-c6e8b7e400e5","output":{"daysLeftToExpire":1,"message":"Success"}}
+Scenario_Passed
+
+Passed: 2 - Failed: 0
+

@@ -1,0 +1,151 @@
+1 091718T162253: [8967e0b6-57e2-4a5a-9291-6ce9cb8c67e8, 2, https://apidev.idev.fedex.com:8443/auth/oauth/v2/token, l7xx1892f99a6f88470ba29abc141cd7bd8d, a4325d011acf4876b3fe3206931b8f5a, https://apidev.idev.fedex.com:8443/security/v1/pin, https://apidev.idev.fedex.com:8443/security/v1/pin/verify, https://apidev.idev.fedex.com:8443/security/v1/addresses/velocitycheck, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/addressVelocityCheck, 3, 3, 10]
+Thread -- Time (MMDDYY'T'HHMMSS): -- Current progress
+AddressVelocity failed [FDM-POSTCARD-PIN, 8967e0b6-57e2-4a5a-9291-6ce9cb8c67e8, https://apidev.idev.fedex.com:8443/security/v1/addresses/velocitycheck, 10]
+AddressVelocity failed [FDM-PHONE-PIN, 8967e0b6-57e2-4a5a-9291-6ce9cb8c67e8, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/addressVelocityCheck, 10]
+AddressVelocity failed [FDM-PHONE-PIN, 8967e0b6-57e2-4a5a-9291-6ce9cb8c67e8, https://apidev.idev.fedex.com:8443/security/v1/addresses/velocitycheck, 10]
+AddressVelocity failed [FDM-POSTCARD-PIN, 8967e0b6-57e2-4a5a-9291-6ce9cb8c67e8, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/addressVelocityCheck, 10]
+IssuePin failed [FDM-POSTCARD-PIN, 8967e0b6-57e2-4a5a-9291-6ce9cb8c67e8, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN]
+IssuePin failed [FDM-PHONE-PIN, 8967e0b6-57e2-4a5a-9291-6ce9cb8c67e8, https://apidev.idev.fedex.com:8443/security/v1/pin]
+IssuePin failed [FDM-POSTCARD-PIN, 8967e0b6-57e2-4a5a-9291-6ce9cb8c67e8, https://apidev.idev.fedex.com:8443/security/v1/pin]
+IssuePin failed [FDM-PHONE-PIN, 8967e0b6-57e2-4a5a-9291-6ce9cb8c67e8, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN]
+IssuePinVelocity failed [FDM-PHONE-PIN, 8967e0b6-57e2-4a5a-9291-6ce9cb8c67e8, https://apidev.idev.fedex.com:8443/security/v1/pin, 3]
+IssuePinVelocity failed [FDM-POSTCARD-PIN, 8967e0b6-57e2-4a5a-9291-6ce9cb8c67e8, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, 3]
+IssuePinVelocity failed [FDM-POSTCARD-PIN, 8967e0b6-57e2-4a5a-9291-6ce9cb8c67e8, https://apidev.idev.fedex.com:8443/security/v1/pin, 3]
+IssuePinVelocity failed [FDM-PHONE-PIN, 8967e0b6-57e2-4a5a-9291-6ce9cb8c67e8, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, 3]
+VerifyPinNoLongerValid failed [FDM-PHONE-PIN, 8967e0b6-57e2-4a5a-9291-6ce9cb8c67e8, https://apidev.idev.fedex.com:8443/security/v1/pin, https://apidev.idev.fedex.com:8443/security/v1/pin/verify]
+VerifyPinNoLongerValid failed [FDM-POSTCARD-PIN, 8967e0b6-57e2-4a5a-9291-6ce9cb8c67e8, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN]
+VerifyPinNoLongerValid failed [FDM-POSTCARD-PIN, 8967e0b6-57e2-4a5a-9291-6ce9cb8c67e8, https://apidev.idev.fedex.com:8443/security/v1/pin, https://apidev.idev.fedex.com:8443/security/v1/pin/verify]
+VerifyPinNoLongerValid failed [FDM-PHONE-PIN, 8967e0b6-57e2-4a5a-9291-6ce9cb8c67e8, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN]
+VerifyPinValid failed [FDM-PHONE-PIN, 8967e0b6-57e2-4a5a-9291-6ce9cb8c67e8, https://apidev.idev.fedex.com:8443/security/v1/pin, https://apidev.idev.fedex.com:8443/security/v1/pin/verify]
+VerifyPinValid failed [FDM-POSTCARD-PIN, 8967e0b6-57e2-4a5a-9291-6ce9cb8c67e8, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN]
+VerifyPinValid failed [FDM-POSTCARD-PIN, 8967e0b6-57e2-4a5a-9291-6ce9cb8c67e8, https://apidev.idev.fedex.com:8443/security/v1/pin, https://apidev.idev.fedex.com:8443/security/v1/pin/verify]
+VerifyPinValid failed [FDM-PHONE-PIN, 8967e0b6-57e2-4a5a-9291-6ce9cb8c67e8, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN]
+VerifyPinVelocity failed [FDM-POSTCARD-PIN, 8967e0b6-57e2-4a5a-9291-6ce9cb8c67e8, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN, 3]
+VerifyPinVelocity failed [FDM-PHONE-PIN, 8967e0b6-57e2-4a5a-9291-6ce9cb8c67e8, https://apidev.idev.fedex.com:8443/security/v1/pin, https://apidev.idev.fedex.com:8443/security/v1/pin/verify, 3]
+VerifyPinVelocity failed [FDM-PHONE-PIN, 8967e0b6-57e2-4a5a-9291-6ce9cb8c67e8, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN, 3]
+VerifyPinVelocity failed [FDM-POSTCARD-PIN, 8967e0b6-57e2-4a5a-9291-6ce9cb8c67e8, https://apidev.idev.fedex.com:8443/security/v1/pin, https://apidev.idev.fedex.com:8443/security/v1/pin/verify, 3]
+
+
+@@ Passed Test Cases:
+
+
+@@ Failed Test Cases:
+1)    <-- AddressVelocity: Verify that the address velocity of 10 is reached and the correct error code is received. This is to replicate to0 many requests for pin at a given address.    (Org: FDM-PHONE-PIN, URL: http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/addressVelocityCheck, Threshold: 10)
+Request: {"orgName":"FDM-PHONE-PIN","userName":"kanitheknj-ieiycwrdepsxlpvhmeukecxe"}
+Response: org.apache.http.client.methods.HttpPost cannot be cast to org.apache.http.HttpEntitynull
+Scenario_Failed
+
+2)    <-- AddressVelocity: Verify that the address velocity of 10 is reached and the correct error code is received. This is to replicate to0 many requests for pin at a given address.    (Org: FDM-PHONE-PIN, URL: https://apidev.idev.fedex.com:8443/security/v1/addresses/velocitycheck, Threshold: 10)
+Request: {"orgName":"FDM-PHONE-PIN","userName":"dihnrbgaaa-moqihefjzxslppvrgjfvpqwz"}
+Response: org.apache.http.client.methods.HttpPost cannot be cast to org.apache.http.HttpEntitynull
+Scenario_Failed
+
+3)    <-- AddressVelocity: Verify that the address velocity of 10 is reached and the correct error code is received. This is to replicate to0 many requests for pin at a given address.    (Org: FDM-POSTCARD-PIN, URL: https://apidev.idev.fedex.com:8443/security/v1/addresses/velocitycheck, Threshold: 10)
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"ifybosbwss-qtugsjtywagobtgjrtzzqbtw"}
+Response: org.apache.http.client.methods.HttpPost cannot be cast to org.apache.http.HttpEntitynull
+Scenario_Failed
+
+4)    <-- IssuePin: Verify that the user is able to request a pin.  (Org:FDM-PHONE-PIN, URL: http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN)
+Request: {"orgName":"FDM-PHONE-PIN","userName":"ltuemynmhs-rlecarxjczzqktfexspkrlkn"}
+Response: org.apache.http.client.methods.HttpPost cannot be cast to org.apache.http.HttpEntitynull
+Scenario_Failed
+
+5)    <-- IssuePin: Verify that the user is able to request a pin.  (Org:FDM-PHONE-PIN, URL: https://apidev.idev.fedex.com:8443/security/v1/pin)
+Request: {"orgName":"FDM-PHONE-PIN","userName":"xuhqwavqnp-rxtgqmnxdzlldyubpoezdwie"}
+Response: org.apache.http.client.methods.HttpPost cannot be cast to org.apache.http.HttpEntitynull
+Scenario_Failed
+
+6)    <-- IssuePin: Verify that the user is able to request a pin.  (Org:FDM-POSTCARD-PIN, URL: http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN)
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"jquwstuiph-derpmmzatpomtnjhgiqdhdfe"}
+Response: org.apache.http.client.methods.HttpPost cannot be cast to org.apache.http.HttpEntitynull
+Scenario_Failed
+
+7)    <-- IssuePin: Verify that the user is able to request a pin.  (Org:FDM-POSTCARD-PIN, URL: https://apidev.idev.fedex.com:8443/security/v1/pin)
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"euiicaonqq-thnfawcggaigjotgyeuocmqk"}
+Response: org.apache.http.client.methods.HttpPost cannot be cast to org.apache.http.HttpEntitynull
+Scenario_Failed
+
+8)    <-- IssuePinVelocity: Verify that the user can request up to 3 pin numbers before unable to request more.  (Org:FDM-PHONE-PIN, URL: http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, Threshold: 3)
+Request: {"orgName":"FDM-PHONE-PIN","userName":"hekvtqsdxf-hievetgadyuczjumzykaigdo"}
+Response: org.apache.http.client.methods.HttpPost cannot be cast to org.apache.http.HttpEntitynull
+Scenario_Failed
+
+9)    <-- IssuePinVelocity: Verify that the user can request up to 3 pin numbers before unable to request more.  (Org:FDM-PHONE-PIN, URL: https://apidev.idev.fedex.com:8443/security/v1/pin, Threshold: 3)
+Request: {"orgName":"FDM-PHONE-PIN","userName":"sfpsxrnlyp-obadmjaypkchpwmqjdlkhydy"}
+Response: org.apache.http.client.methods.HttpPost cannot be cast to org.apache.http.HttpEntitynull
+Scenario_Failed
+
+10)    <-- IssuePinVelocity: Verify that the user can request up to 3 pin numbers before unable to request more.  (Org:FDM-POSTCARD-PIN, URL: http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, Threshold: 3)
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"wvyhjmbhyh-okiauvkfckacyljxliiszeza"}
+Response: org.apache.http.client.methods.HttpPost cannot be cast to org.apache.http.HttpEntitynull
+Scenario_Failed
+
+11)    <-- IssuePinVelocity: Verify that the user can request up to 3 pin numbers before unable to request more.  (Org:FDM-POSTCARD-PIN, URL: https://apidev.idev.fedex.com:8443/security/v1/pin, Threshold: 3)
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"zzlvsvhsia-oxnzuktgzjverhxcjjxrsyfq"}
+Response: org.apache.http.client.methods.HttpPost cannot be cast to org.apache.http.HttpEntitynull
+Scenario_Failed
+
+12)    <-- VerifyPinNoLongerValid: Verify that when user requests a second pin that the first is no longer valid.  (Org:FDM-PHONE-PIN, URLs: http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN)
+Request: {"orgName":"FDM-PHONE-PIN","userName":"gimoqyuyga-mlonopgbdznjdiktkacvxfwm"}
+Response: org.apache.http.client.methods.HttpPost cannot be cast to org.apache.http.HttpEntitynull
+Scenario_Failed
+
+13)    <-- VerifyPinNoLongerValid: Verify that when user requests a second pin that the first is no longer valid.  (Org:FDM-PHONE-PIN, URLs: https://apidev.idev.fedex.com:8443/security/v1/pin, https://apidev.idev.fedex.com:8443/security/v1/pin/verify)
+Request: {"orgName":"FDM-PHONE-PIN","userName":"opxfyqxsvf-otqhdcoaxuxbgqzinxhyywoh"}
+Response: org.apache.http.client.methods.HttpPost cannot be cast to org.apache.http.HttpEntitynull
+Scenario_Failed
+
+14)    <-- VerifyPinNoLongerValid: Verify that when user requests a second pin that the first is no longer valid.  (Org:FDM-POSTCARD-PIN, URLs: http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN)
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"clvzavimur-fmikduqjuocdvvehpqjqtryj"}
+Response: org.apache.http.client.methods.HttpPost cannot be cast to org.apache.http.HttpEntitynull
+Scenario_Failed
+
+15)    <-- VerifyPinNoLongerValid: Verify that when user requests a second pin that the first is no longer valid.  (Org:FDM-POSTCARD-PIN, URLs: https://apidev.idev.fedex.com:8443/security/v1/pin, https://apidev.idev.fedex.com:8443/security/v1/pin/verify)
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"zdfsgiaftu-cefbucyqzimeumqnmerpmrqf"}
+Response: org.apache.http.client.methods.HttpPost cannot be cast to org.apache.http.HttpEntitynull
+Scenario_Failed
+
+16)    <-- VerifyPinThreshold: When an invalid pin is entered the pin failure message should be returned passed the velocity threshold of 3.  (Org:FDM-PHONE-PIN, URLs: http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN, Threshold: 3)
+Request: {"orgName":"FDM-PHONE-PIN","userName":"twxrfbigja-bqewnrnzxwglnfaxurltotme"}
+Response: org.apache.http.client.methods.HttpPost cannot be cast to org.apache.http.HttpEntitynull
+Scenario_Failed
+
+17)    <-- VerifyPinThreshold: When an invalid pin is entered the pin failure message should be returned passed the velocity threshold of 3.  (Org:FDM-PHONE-PIN, URLs: https://apidev.idev.fedex.com:8443/security/v1/pin, https://apidev.idev.fedex.com:8443/security/v1/pin/verify, Threshold: 3)
+Request: {"orgName":"FDM-PHONE-PIN","userName":"cpcvythxps-uxjvpjdaaaqmjpuunzcjxrmo"}
+Response: org.apache.http.client.methods.HttpPost cannot be cast to org.apache.http.HttpEntitynull
+Scenario_Failed
+
+18)    <-- VerifyPinThreshold: When an invalid pin is entered the pin failure message should be returned passed the velocity threshold of 3.  (Org:FDM-POSTCARD-PIN, URLs: http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN, Threshold: 3)
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"qjlrxatjcd-ybnpovlkvbfgrefkvhymfjpe"}
+Response: org.apache.http.client.methods.HttpPost cannot be cast to org.apache.http.HttpEntitynull
+Scenario_Failed
+
+19)    <-- VerifyPinThreshold: When an invalid pin is entered the pin failure message should be returned passed the velocity threshold of 3.  (Org:FDM-POSTCARD-PIN, URLs: https://apidev.idev.fedex.com:8443/security/v1/pin, https://apidev.idev.fedex.com:8443/security/v1/pin/verify, Threshold: 3)
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"ledtxapsbn-femknhentmqyynvnogjfaoox"}
+Response: org.apache.http.client.methods.HttpPost cannot be cast to org.apache.http.HttpEntitynull
+Scenario_Failed
+
+20)    <-- VerifyPinValid: Verify that user is able to request a pin and then verify that can recieve success when using the generated pin.  (Org:FDM-PHONE-PIN, URLs: http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN)
+Request: {"orgName":"FDM-PHONE-PIN","userName":"sxzionqyml-tfpwmcjidbwpsmcxovsumdrk"}
+Response: org.apache.http.client.methods.HttpPost cannot be cast to org.apache.http.HttpEntitynull
+Scenario_Failed
+
+21)    <-- VerifyPinValid: Verify that user is able to request a pin and then verify that can recieve success when using the generated pin.  (Org:FDM-PHONE-PIN, URLs: https://apidev.idev.fedex.com:8443/security/v1/pin, https://apidev.idev.fedex.com:8443/security/v1/pin/verify)
+Request: {"orgName":"FDM-PHONE-PIN","userName":"oohrfocqmn-yzgvcwozbldjdcufwrktiezz"}
+Response: org.apache.http.client.methods.HttpPost cannot be cast to org.apache.http.HttpEntitynull
+Scenario_Failed
+
+22)    <-- VerifyPinValid: Verify that user is able to request a pin and then verify that can recieve success when using the generated pin.  (Org:FDM-POSTCARD-PIN, URLs: http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN)
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"ttvjebyejo-jmdbfpqhgnfvvwpgsmgsbnsp"}
+Response: org.apache.http.client.methods.HttpPost cannot be cast to org.apache.http.HttpEntitynull
+Scenario_Failed
+
+23)    <-- VerifyPinValid: Verify that user is able to request a pin and then verify that can recieve success when using the generated pin.  (Org:FDM-POSTCARD-PIN, URLs: https://apidev.idev.fedex.com:8443/security/v1/pin, https://apidev.idev.fedex.com:8443/security/v1/pin/verify)
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"hkimlrfiwy-ygwauplsddrfgyxuqtyccrfr"}
+Response: org.apache.http.client.methods.HttpPost cannot be cast to org.apache.http.HttpEntitynull
+Scenario_Failed
+
+
+Execution Time in seconds: 1  (1264 miliseconds)
+Passed: 0 - Failed: 23
+

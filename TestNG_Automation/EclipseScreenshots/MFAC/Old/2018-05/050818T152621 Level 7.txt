@@ -1,0 +1,63 @@
+050818T152614: Token request: {  "access_token":"ca9fae51-fcb1-452b-acc5-fffc5c80106e",  "token_type":"Bearer",  "expires_in":3600,  "scope":"oob"}     l7xx1b191a635e37469cbaf159069c943955 9012782ae99945e39f4ffacf1f80dcdb
+
+050818T152614: $APIG$
+Endpoint is being used.
+050818T152614: IssueURL = https://api.fedex.com/security/v1/pin
+VerifyURL = https://api.fedex.com/security/v1/pin/verify
+VelocityURL = https://api.fedex.com/security/v1/addresses/velocitycheck
+
+050818T152615: <-- AddressVelocity starting.    OrgName: FDM-POSTCARD-PIN
+050818T152615: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"PtD1ETnj9X-yUr2l89Qz2x42FzHQwx7a2Ho"}
+050818T152616: Response: {"transactionId":"35c9e4e3-b954-4364-8599-067f9eb1f526","output":{"advice":"ALLOW"}}
+050818T152616: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"PtD1ETnj9X-yUr2l89Qz2x42FzHQwx7a2Ho"}
+050818T152616: Response: {"transactionId":"041c45be-b3f9-4e1c-958e-6e733668a63a","output":{"advice":"ALLOW"}}
+050818T152616: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"PtD1ETnj9X-yUr2l89Qz2x42FzHQwx7a2Ho"}
+050818T152616: Response: {"transactionId":"786043c1-4dcb-4dbf-abad-a6c717fbdd66","output":{"advice":"ALLOW"}}
+050818T152616: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"PtD1ETnj9X-yUr2l89Qz2x42FzHQwx7a2Ho"}
+050818T152616: Response: {"transactionId":"fc792f7e-a327-43e2-8817-bbc3b4fe0f6e","output":{"advice":"ALLOW"}}
+050818T152616: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"PtD1ETnj9X-yUr2l89Qz2x42FzHQwx7a2Ho"}
+050818T152617: Response: {"transactionId":"37924299-b56d-449f-a199-dfe6085b9509","output":{"advice":"ALLOW"}}
+050818T152617: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"PtD1ETnj9X-yUr2l89Qz2x42FzHQwx7a2Ho"}
+050818T152617: Response: {"transactionId":"0b4f68cb-830b-40ac-af95-3f41190e6ede","output":{"advice":"ALLOW"}}
+050818T152617: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"PtD1ETnj9X-yUr2l89Qz2x42FzHQwx7a2Ho"}
+050818T152617: Response: {"transactionId":"46513e44-9c6b-4480-afd0-d434e8c660f6","output":{"advice":"ALLOW"}}
+050818T152617: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"PtD1ETnj9X-yUr2l89Qz2x42FzHQwx7a2Ho"}
+050818T152617: Response: {"transactionId":"c402c9ce-98f4-48b1-8c08-eee9191af69b","output":{"advice":"ALLOW"}}
+050818T152617: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"PtD1ETnj9X-yUr2l89Qz2x42FzHQwx7a2Ho"}
+050818T152617: Response: {"transactionId":"abb7aae0-59c1-46fd-8c7f-6f3f89b37b6f","output":{"advice":"ALLOW"}}
+050818T152617: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"PtD1ETnj9X-yUr2l89Qz2x42FzHQwx7a2Ho"}
+050818T152617: Response: {"transactionId":"dbee4819-af43-4f5a-8516-2a24af7f55ec","output":{"advice":"ALLOW"}}
+050818T152617: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"PtD1ETnj9X-yUr2l89Qz2x42FzHQwx7a2Ho"}
+050818T152618: Response: {"transactionId":"dc0d1297-b54b-406f-91e4-8151f3bbc750","errors":[{"code":"DENY","message":"Unfortunately, too many failed attempts for registration have occurred. Please try again later."}]}
+
+050818T152618: <-- IssuePin starting.    OrgName: FDM-POSTCARD-PIN
+050818T152618: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"owTY80GFUj-yiWZEfIwGm4fTiB65G29carM"}
+050818T152618: Response: {"transactionId":"5e9806b2-059c-46da-ac0a-baeb20fbef33","output":{"pinOTP":"156071","pinExpirationDate":"05/29/2018 08:26 PM GMT"}}
+
+050818T152618: <-- IssuePinVelocity starting.    OrgName: FDM-POSTCARD-PIN
+050818T152618: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"Lpei0dqpD8-QCIFJXgkRkn1w5fkj2M2ZB1j"}
+050818T152618: Response: {"transactionId":"ee00a48c-08fa-4821-8a05-18089a3bb6cd","output":{"pinOTP":"465057","pinExpirationDate":"05/29/2018 08:26 PM GMT"}}
+050818T152618: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"Lpei0dqpD8-QCIFJXgkRkn1w5fkj2M2ZB1j"}
+050818T152619: Response: {"transactionId":"d699fe02-ee3b-41e4-8109-68e46faa6978","output":{"pinOTP":"962856","pinExpirationDate":"05/29/2018 08:26 PM GMT"}}
+050818T152619: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"Lpei0dqpD8-QCIFJXgkRkn1w5fkj2M2ZB1j"}
+050818T152619: Response: {"transactionId":"aed5f720-47d8-40e9-ab02-b4dccb8eb6ce","output":{"pinOTP":"638130","pinExpirationDate":"05/29/2018 08:26 PM GMT"}}
+050818T152619: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"Lpei0dqpD8-QCIFJXgkRkn1w5fkj2M2ZB1j"}
+050818T152619: Response: {"transactionId":"a32498b3-3bf4-4d7e-a8ad-20f9b619da0c","errors":[{"code":"5700","message":"Unfortunately, you have exceeded your attempts for verification. Please try again later."}]}
+
+050818T152619: <-- VerifyPinNoLongerValid starting.    OrgName: FDM-POSTCARD-PIN
+050818T152619: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"ALFYBiHuq8-oag9GJZZznZCwFx3sPWa2WHX"}
+050818T152620: Response: {"transactionId":"3327fc30-4fc3-4f1c-a886-d6804795ad03","output":{"pinOTP":"670616","pinExpirationDate":"05/29/2018 08:26 PM GMT"}}
+050818T152620: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"670616","userName":"ALFYBiHuq8-oag9GJZZznZCwFx3sPWa2WHX"}
+050818T152620: Response: {"transactionId":"28d27fee-3d8b-4a4e-80ff-16b8d48b4779","output":{"daysLeftToExpire":21,"message":"Success"}}
+050818T152620: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"670616","userName":"ALFYBiHuq8-oag9GJZZznZCwFx3sPWa2WHX"}
+050818T152620: Response: {"transactionId":"6fb84eda-260e-4063-8e7b-01c20cd1f22d","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+
+050818T152620: <-- VerifyPinValid starting.    OrgName: FDM-POSTCARD-PIN
+050818T152620: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"BgENYUY7Ys-6TXAegy3E2TMWGPXqBD8joSP"}
+050818T152620: Response: {"transactionId":"c1ae0b29-0b14-468d-af7f-6ee4be69ed85","output":{"pinOTP":"183689","pinExpirationDate":"05/29/2018 08:26 PM GMT"}}
+050818T152620: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"183689","userName":"BgENYUY7Ys-6TXAegy3E2TMWGPXqBD8joSP"}
+050818T152621: Response: {"transactionId":"de58293f-d256-420e-9a28-0a612285c954","output":{"daysLeftToExpire":21,"message":"Success"}}
+
+050818T152621: <-- zIssuePinExpiration starting.    OrgName: FDM-POSTCARD-PIN
+050818T152621: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"r6WS4WTI5X-890UW6iePgTXtVij63VXbBCH"}
+050818T152621: Response: {"transactionId":"f588b966-562a-45a0-87e0-039b586f71f8","output":{"pinOTP":"394758","pinExpirationDate":"05/29/2018 08:26 PM GMT"}}

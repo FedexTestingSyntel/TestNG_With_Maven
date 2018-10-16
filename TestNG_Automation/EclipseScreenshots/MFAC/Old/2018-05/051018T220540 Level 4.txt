@@ -1,0 +1,69 @@
+051018T220524: Token request: {  "access_token":"78323bdd-2199-447f-a694-994cc934bcd5",  "token_type":"Bearer",  "expires_in":3600,  "scope":"oob"}     Iden:l7xx3fb9480460af4b55a542a6d1e6d1f5f2 Secret:9355487be3c74da696517393ecede89f
+
+051018T220524: $APIG$
+Endpoint is being used.
+051018T220524: IssueURL = https://apistress.idev.fedex.com/security/v1/pin
+VerifyURL = https://apistress.idev.fedex.com/security/v1/pin/verify
+VelocityURL = https://apistress.idev.fedex.com/security/v1/addresses/velocitycheck
+
+051018T220524: <-- AddressVelocity        OrgName: FDM-PHONE-PIN
+051018T220524: Request: {"orgName":"FDM-PHONE-PIN","userName":"9G1jcR1RZj-vmcUqSVMZlT56wx6LkZZSBZT"}
+051018T220525: Response: {"transactionId":"581412a1-e04d-4b65-8d63-274aa7aa5bba","output":{"advice":"ALLOW"}}
+051018T220525: Request: {"orgName":"FDM-PHONE-PIN","userName":"9G1jcR1RZj-vmcUqSVMZlT56wx6LkZZSBZT"}
+051018T220526: Response: {"transactionId":"84f8b78b-5684-4a0e-bcf3-4b676e764a8c","output":{"advice":"ALLOW"}}
+051018T220526: Request: {"orgName":"FDM-PHONE-PIN","userName":"9G1jcR1RZj-vmcUqSVMZlT56wx6LkZZSBZT"}
+051018T220526: Response: {"transactionId":"89a74dd3-3ef2-4557-8904-22f52e25f37b","output":{"advice":"ALLOW"}}
+051018T220526: Request: {"orgName":"FDM-PHONE-PIN","userName":"9G1jcR1RZj-vmcUqSVMZlT56wx6LkZZSBZT"}
+051018T220527: Response: {"transactionId":"e5d5e535-4c81-4c29-a0de-d3c478d7f984","errors":[{"code":"DENY","message":"Unfortunately, too many failed attempts for registration have occurred. Please try again later."}]}
+
+051018T220527: <-- IssuePin        OrgName: FDM-PHONE-PIN
+051018T220527: Request: {"orgName":"FDM-PHONE-PIN","userName":"bnU7Q45QwH-DyVZMkytIvT4oKhzrEdNTPwP"}
+051018T220528: Response: {"transactionId":"a653c1bb-4a8e-411c-8a92-ebaedacb9ea1","errors":[{"code":"5700","message":"Unfortunately, you have exceeded your attempts for verification. Please try again later."}]}
+
+051018T220528: <-- IssuePinVelocity        OrgName: FDM-PHONE-PIN
+051018T220528: Request: {"orgName":"FDM-PHONE-PIN","userName":"QqavPDDFl2-MWxDRyWugcLuNJ2FXmdVkXFh"}
+051018T220530: Response: {"transactionId":"73f6b819-3d9f-4816-ae4d-880d8ff22b61","errors":[{"code":"5700","message":"Unfortunately, you have exceeded your attempts for verification. Please try again later."}]}
+
+051018T220530: <-- VerifyPinNoLongerValid        OrgName: FDM-PHONE-PIN
+051018T220530: Request: {"orgName":"FDM-PHONE-PIN","userName":"bi80Z8FTyF-jBVIYefdgve2OPlq2vboJeNn"}
+051018T220531: Response: {"transactionId":"c2259df4-ce0a-4fa6-b851-7733424cf2f3","errors":[{"code":"5700","message":"Unfortunately, you have exceeded your attempts for verification. Please try again later."}]}
+051018T220531: Request: {"orgName":"FDM-PHONE-PIN","userName":"bi80Z8FTyF-jBVIYefdgve2OPlq2vboJeNn"}
+051018T220532: Response: {"transactionId":"ee731ed6-0ae2-40f8-9375-4b1593c1195c","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+
+051018T220532: <-- VerifyPinValid        OrgName: FDM-PHONE-PIN
+051018T220532: Request: {"orgName":"FDM-PHONE-PIN","userName":"dHgFkv4dzE-kz4PqnSNET5H3I93L9ukads1"}
+051018T220533: Response: {"transactionId":"ef4b6c09-4070-4ce8-80be-fb7ca5afa2cb","errors":[{"code":"5700","message":"Unfortunately, you have exceeded your attempts for verification. Please try again later."}]}
+
+051018T220533: $Direct$
+Endpoint is being used.
+051018T220533: IssueURL = http://mfacstress-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN
+VerifyURL = http://mfacstress-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN
+VelocityURL = http://mfacstress-cos-vip.test.cloud.fedex.com:9090/mfac/v3/addressVelocityCheck
+
+051018T220533: <-- AddressVelocity        OrgName: FDM-PHONE-PIN
+051018T220533: Request: {"orgName":"FDM-PHONE-PIN","userName":"M8ofoQaTmf-DbwwutcmsKhKQ2NDBOrcJpsp"}
+051018T220534: Response: {"transactionId":"ca2de0a3-7d80-422e-a373-ff65505de346","output":{"advice":"ALLOW"}}
+051018T220534: Request: {"orgName":"FDM-PHONE-PIN","userName":"M8ofoQaTmf-DbwwutcmsKhKQ2NDBOrcJpsp"}
+051018T220534: Response: {"transactionId":"d901c81a-ed3c-42be-96a4-1953fbec66ff","output":{"advice":"ALLOW"}}
+051018T220534: Request: {"orgName":"FDM-PHONE-PIN","userName":"M8ofoQaTmf-DbwwutcmsKhKQ2NDBOrcJpsp"}
+051018T220534: Response: {"transactionId":"fd7217d7-6ce9-4e7c-9f83-2070ace9268e","output":{"advice":"ALLOW"}}
+051018T220534: Request: {"orgName":"FDM-PHONE-PIN","userName":"M8ofoQaTmf-DbwwutcmsKhKQ2NDBOrcJpsp"}
+051018T220535: Response: {"transactionId":"7a728d7e-39ed-4b43-9212-b2a24155f193","errors":[{"code":"DENY","message":"Unfortunately, too many failed attempts for registration have occurred. Please try again later."}]}
+
+051018T220535: <-- IssuePin        OrgName: FDM-PHONE-PIN
+051018T220535: Request: {"orgName":"FDM-PHONE-PIN","userName":"ouEyhvPhfl-DVCosfaaHyq3f393UVB7o9BI"}
+051018T220536: Response: {"transactionId":"6e853164-bfd7-4308-8292-3a2650c44112","errors":[{"code":"5700","message":"Unfortunately, you have exceeded your attempts for verification. Please try again later."}]}
+
+051018T220536: <-- IssuePinVelocity        OrgName: FDM-PHONE-PIN
+051018T220536: Request: {"orgName":"FDM-PHONE-PIN","userName":"xCvCJSbPb6-7FmN9obzqfAvsA24bcjPIWRj"}
+051018T220537: Response: {"transactionId":"65290c71-a8e3-465b-baa2-fc3661f8d18a","errors":[{"code":"5700","message":"Unfortunately, you have exceeded your attempts for verification. Please try again later."}]}
+
+051018T220537: <-- VerifyPinNoLongerValid        OrgName: FDM-PHONE-PIN
+051018T220537: Request: {"orgName":"FDM-PHONE-PIN","userName":"eeLGdcps6I-seF56YF7q8bfeu5I9TrJsLPA"}
+051018T220539: Response: {"transactionId":"4bdbd231-2a85-411c-9dce-2a8fa6b11369","errors":[{"code":"5700","message":"Unfortunately, you have exceeded your attempts for verification. Please try again later."}]}
+051018T220539: Request: {"orgName":"FDM-PHONE-PIN","userName":"eeLGdcps6I-seF56YF7q8bfeu5I9TrJsLPA"}
+051018T220539: Response: {"transactionId":"a9102123-1b1c-46f6-8110-f67704e9fdc2","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+
+051018T220539: <-- VerifyPinValid        OrgName: FDM-PHONE-PIN
+051018T220539: Request: {"orgName":"FDM-PHONE-PIN","userName":"tEEMQz7LY8-UOniO4musIMZxzicRafAaLze"}
+051018T220540: Response: {"transactionId":"9823e325-64cf-41bc-9adc-96a133c3df54","errors":[{"code":"5700","message":"Unfortunately, you have exceeded your attempts for verification. Please try again later."}]}

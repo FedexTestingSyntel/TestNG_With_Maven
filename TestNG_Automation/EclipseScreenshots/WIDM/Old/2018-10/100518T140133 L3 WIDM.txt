@@ -1,0 +1,39 @@
+
+WIDM_Registration
+3, US
+14 100518T135952: LoadAddress Received: _US_ __
+14 100518T135952: LoadAddress is Returning: [3614 DELVERNE RD, , BALTIMORE, Maryland, MD, 21218, US, 7i4ksltmhnqlxhzbs9j6356ix]
+14 100518T135952: Generate Name is Returning: [FthreeWIDMcnfqpem, M, Ldqbeetp]
+14 100518T135958: New driver created. Chrome
+14 100518T140002: Cookies Deleted
+14 100518T140002: Navigating to https://wwwdrt.idev.fedex.com/FID?clienttype=dotcom&clickedPrint=false&action=entry&hazmatFilter=All&cntry_code=us&lang_code=en&option=fid
+14 100518T140005:     E--Element Clicked By.linkText: Sign Up Now!
+14 100518T140006:     T--Text Entered FthreeWIDMcnfqpem in element By.id: firstName
+14 100518T140006:     T--Text Entered Ldqbeetp in element By.id: lastName
+14 100518T140006:     T--Text Entered sean.kauffman.osv@fedex.com in element By.id: email
+14 100518T140007:     T--Text Entered sean.kauffman.osv@fedex.com in element By.id: retypeEmail
+14 100518T140008:     T--Text Entered 3614 DELVERNE RD in element By.id: address1
+14 100518T140008:     T--Text Entered  in element By.id: address2
+14 100518T140008:     T--Text Entered BALTIMORE in element By.id: city
+14 100518T140008:     T--Text Entered MD in element By.id: state
+14 100518T140009:     T--Text Entered 21218 in element By.id: zip
+14 100518T140009: Verified Text: Country/Territory     By.xpath: //*[@id='module.registration._expanded']/table/tbody/tr/td[1]/table/tbody/tr[24]/td[2]
+14 100518T140009:     S--Selected Element By.id: country1   by value us
+14 100518T140010:     T--Text Entered 9011111111 in element By.id: phone
+14 100518T140010:     T--Text Entered L3WIDMUS100518T135952 in element By.id: uid
+14 100518T140010: Userid is: L3WIDMUS100518T135952
+14 100518T140010:     T--Text Entered Test1234 in element By.id: password
+14 100518T140011:     T--Text Entered Test1234 in element By.id: retypePassword
+14 100518T140011:     S--Selected Element By.id: reminderQuestion   by visible text What is your mother's first name?
+14 100518T140011:     T--Text Entered mom in element By.id: reminderAnswer
+14 100518T140012:     E--Element Clicked By.id: acceptterms
+14 100518T140013: 100518T135952 L3 WIDM RegistrationConfirmation.png Screenshot Taken
+14 100518T140023:     E--Element Clicked By.id: createUserID
+14 100518T140023: fcl_uuid value is y2LdVi7XaL
+14 100518T140023: WIDM_Registration Completed: L3WIDMUS100518T135952/Test1234--y2LdVi7XaL
+14 100518T140024: 100518T135952 L3 WIDM Registration WIDM Confirmation.png Screenshot Taken
+14 100518T140059: [L3WIDMUS100518T135952, Test1234, y2LdVi7XaL]
+Scenario_Passed
+14 100518T140106: New driver created. Chrome
+
+

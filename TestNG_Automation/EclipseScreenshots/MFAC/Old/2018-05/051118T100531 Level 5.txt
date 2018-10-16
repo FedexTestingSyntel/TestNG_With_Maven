@@ -1,0 +1,13 @@
+
+051118T100501: $APIG$
+Endpoint is being used.
+051118T100501: IssueURL = https://apibit.idev.fedex.com:8443/security/v1/pin
+VerifyURL = https://apibit.idev.fedex.com:8443/security/v1/pin/verify
+VelocityURL = https://apibit.idev.fedex.com:8443/security/v1/addresses/velocitycheck
+
+051118T100501: <-- AddressVelocity        OrgName: FDM-POSTCARD-PIN
+051118T100502: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"wGWppniaHb-kfs2i9iTTNesdRdNZ0lMiCcf"}
+051118T100531: Response: {
+    "error": "invalid_request",
+    "error_description": "validation error"
+}

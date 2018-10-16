@@ -1,0 +1,54 @@
+
+WFCL_CreditCardRegistrationEnroll
+3, ss90705920, US
+11 100918T094455: LoadCreditCard Received: V
+11 100918T094455: LoadCreditCard is Returning: [Visa, 4005554444444460, 460, 12, 20]
+11 100918T094455: LoadAddress Received: _US_ __
+11 100918T094455: LoadAddress is Returning: [3614 DELVERNE RD, , BALTIMORE, Maryland, MD, 21218, US, US, United States, ]
+11 100918T094455: Generate Name is Returning: [FthreeUSCCclqkcxd, M, Ljladoax]
+11 100918T094504: New driver created. Chrome
+11 100918T094510: Cookies Deleted
+11 100918T094510: Navigating to https://wwwdrt.idev.fedex.com/cgi-bin/ship_it/interNetShip?origincountry=us&locallang=en
+11 100918T094541: Navigating to https://wwwdrt.idev.fedex.com/fcl/ALL?enrollmentid=ss90705920&language=en&country=us
+11 100918T094545: 100918T094455 L3 WFCL ss90705920 CC Discount Page.png Screenshot Taken
+11 100918T094551:     E--Element Clicked By.linkText: Finish registering for a FedEx account
+11 100918T094553:     T--Text Entered FthreeUSCCclqkcxd in element By.id: firstName
+11 100918T094553:     T--Text Entered M in element By.name: initials
+11 100918T094553:     T--Text Entered Ljladoax in element By.id: lastName
+11 100918T094554:     T--Text Entered sean.kauffman.osv@fedex.com in element By.id: email
+11 100918T094555:     T--Text Entered sean.kauffman.osv@fedex.com in element By.id: retypeEmail
+11 100918T094555:     T--Text Entered 3614 DELVERNE RD in element By.id: address1
+11 100918T094555:     T--Text Entered  in element By.name: address2
+11 100918T094555:     T--Text Entered BALTIMORE in element By.name: city
+11 100918T094556:     S--Selected Element By.id: state   by value MD
+11 100918T094556:     T--Text Entered 21218 in element By.id: zip
+11 100918T094557:     T--Text Entered 9011111111 in element By.id: phone
+11 100918T094557:     T--Text Entered L3ss90705920CC100918T094455 in element By.id: uid
+11 100918T094558:     T--Text Entered Test1234 in element By.id: password
+11 100918T094558:     T--Text Entered Test1234 in element By.id: retypePassword
+11 100918T094558:     S--Selected Element By.id: reminderQuestion   by visible text What is your mother's first name?
+11 100918T094559:     T--Text Entered mom in element By.id: reminderAnswer
+11 100918T094559:     E--Element Clicked By.id: acceptterms
+11 100918T094559: Name: [FthreeUSCCclqkcxd, M, Ljladoax]    UserID:L3ss90705920CC100918T094455
+11 100918T094601: 100918T094455 L3 WFCL ss90705920 CC ContactInformation.png Screenshot Taken
+11 100918T094610:     E--Element Clicked By.id: createUserID
+11 100918T094610: WFCL_CC_Page recieved: Visa, US From: CreditCardRegistrationEnroll
+11 100918T094610: fcl_uuid value is gw0g0hba6u
+11 100918T094611:     T--Text Entered 4005554444444460 in element By.id: creditCardNumber
+11 100918T094611:     T--Text Entered 460 in element By.id: creditCardIDNumber
+11 100918T094611:     S--Selected Element By.id: monthExpiry   by visible text 12
+11 100918T094612:     S--Selected Element By.id: yearExpiry   by visible text 20
+11 100918T094612:     E--Element Clicked By.name: editshipinfo
+11 100918T094613: Verified Text: Country/Territory     By.xpath: //*[@id='shipping-address-fields']/label[12]/span[1]
+11 100918T094613:     E--Element Clicked By.name: editccinfo
+11 100918T094613: Verified Text: Country/Territory     By.xpath: //*[@id='billing-address']/label[17]/span[1]
+11 100918T094614:     S--Selected Element By.name: questionCd9   by index 1
+11 100918T094614:     S--Selected Element By.name: questionCd10   by index 1
+11 100918T094615:     S--Selected Element By.name: questionCd11   by index 1
+11 100918T094615:     S--Selected Element By.id: CCType   by visible text Visa
+11 100918T094617: 100918T094455 L3 WFCL ss90705920 CC Information.png Screenshot Taken
+11 100918T094620:     E--Element Clicked By.id: Complete
+11 100918T094708: 100918T094455 L3 WFCL ss90705920 CC General Failure.png Screenshot Taken
+Scenario_Failed
+
+

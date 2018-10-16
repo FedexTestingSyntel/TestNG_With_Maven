@@ -1,0 +1,65 @@
+
+WFCL_CreditCardRegistrationEnroll
+3, ss90705920, US, [Ljava.lang.String;@790c19aa
+11 100518T115444: LoadCreditCard Received: V
+11 100518T115444: LoadCreditCard is Returning: [Visa, 4005554444444460, 460, 12, 20]
+11 100518T115444: LoadAddress Received: _US_ __
+11 100518T115444: LoadAddress is Returning: [3614 DELVERNE RD, , BALTIMORE, Maryland, MD, 21218, US, 7i4ksltmhnqlxhzbs9j6356ix]
+11 100518T115449: New driver created. Chrome
+11 100518T115455: Cookies Deleted
+11 100518T115455: Navigating to https://wwwdrt.idev.fedex.com/cgi-bin/ship_it/interNetShip?origincountry=us&locallang=en
+11 100518T115526: Navigating to https://wwwdrt.idev.fedex.com/fcl/ALL?enrollmentid=ss90705920&language=en&country=us
+11 100518T115528: 100518T115444 L3 WFCL ss90705920 CC Discount Page.png Screenshot Taken
+11 100518T115530:     E--Element Clicked By.linkText: Finish registering for a FedEx account
+11 100518T115531:     T--Text Entered FthreeUSCCgoctqdz in element By.id: firstName
+11 100518T115531:     T--Text Entered M in element By.name: initials
+11 100518T115532:     T--Text Entered Loggtemn in element By.id: lastName
+11 100518T115532:     T--Text Entered sean.kauffman.osv@fedex.com in element By.id: email
+11 100518T115533:     T--Text Entered sean.kauffman.osv@fedex.com in element By.id: retypeEmail
+11 100518T115533:     T--Text Entered 3614 DELVERNE RD in element By.id: address1
+11 100518T115533:     T--Text Entered  in element By.name: address2
+11 100518T115534:     T--Text Entered BALTIMORE in element By.name: city
+11 100518T115534:     S--Selected Element By.id: state   by value MD
+11 100518T115534:     T--Text Entered 21218 in element By.id: zip
+11 100518T115535:     T--Text Entered 9011111111 in element By.id: phone
+11 100518T115535:     T--Text Entered L3ss90705920CC100518T115444 in element By.id: uid
+11 100518T115536:     T--Text Entered Test1234 in element By.id: password
+11 100518T115536:     T--Text Entered Test1234 in element By.id: retypePassword
+11 100518T115536:     S--Selected Element By.id: reminderQuestion   by visible text What is your mother's first name?
+11 100518T115536:     T--Text Entered mom in element By.id: reminderAnswer
+11 100518T115537:     E--Element Clicked By.id: acceptterms
+11 100518T115537: Name: [FthreeUSCCgoctqdz, M, Loggtemn]    UserID:L3ss90705920CC100518T115444
+11 100518T115538: 100518T115444 L3 WFCL ss90705920 CC ContactInformation.png Screenshot Taken
+11 100518T115548:     E--Element Clicked By.id: createUserID
+11 100518T115548: WFCL_CC_Page recieved: Visa, US From: CreditCardRegistrationEnroll
+11 100518T115548: fcl_uuid value is 0w0g0hbaci
+11 100518T115548:     T--Text Entered 4005554444444460 in element By.id: creditCardNumber
+11 100518T115549:     T--Text Entered 460 in element By.id: creditCardIDNumber
+11 100518T115549:     S--Selected Element By.id: monthExpiry   by visible text 12
+11 100518T115549:     S--Selected Element By.id: yearExpiry   by visible text 20
+11 100518T115550:     E--Element Clicked By.name: editshipinfo
+11 100518T115550: Verified Text: Country/Territory     By.xpath: //*[@id='shipping-address-fields']/label[12]/span[1]
+11 100518T115550:     E--Element Clicked By.name: editccinfo
+11 100518T115550: Verified Text: Country/Territory     By.xpath: //*[@id='billing-address']/label[17]/span[1]
+11 100518T115551:     S--Selected Element By.name: questionCd9   by index 1
+11 100518T115551:     S--Selected Element By.name: questionCd10   by index 1
+11 100518T115552:     S--Selected Element By.name: questionCd11   by index 1
+11 100518T115552:     S--Selected Element By.id: CCType   by visible text Visa
+11 100518T115554: 100518T115444 L3 WFCL ss90705920 CC Information.png Screenshot Taken
+11 100518T115554:     E--Element Clicked By.id: Complete
+11 100518T115554: Error on Credit Card entry screen. Attempting to register with differnet credit card
+11 100518T115554: LoadCreditCard Received: 4005554444444460
+11 100518T115554: LoadCreditCard is Returning: [Visa, 4111111111111111, 111, 12, 20]
+11 100518T115554: WFCL_CC_Page recieved: Visa, US From: WFCL_CC_Page
+11 100518T115554: fcl_uuid value is 0w0g0hbaci
+11 100518T115554:     T--Text Entered 4111111111111111 in element By.id: creditCardNumber
+11 100518T115555:     T--Text Entered 111 in element By.id: creditCardIDNumber
+11 100518T115555:     S--Selected Element By.id: monthExpiry   by visible text 12
+11 100518T115555:     S--Selected Element By.id: yearExpiry   by visible text 20
+11 100518T115557: 100518T115444 L3 WFCL ss90705920 CC General Failure.png Screenshot Taken
+Scenario_Failed
+
+
+
+[10-05-18 11:54:44:493, 10-05-18 11:55:59:651, , ]
+[WFCL_CreditCardRegistrationEnroll, 3, ss90705920, US, [Ljava.lang.String;@790c19aa, 11 100518T115557: 100518T115444 L3 WFCL ss90705920 CC General Failure.png Screenshot Taken, Scenario_Failed]

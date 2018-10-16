@@ -1,0 +1,39 @@
+073018T094215: OAuth: https://api.fedex.com/auth/oauth/v2/token  Iden: l7xx1b191a635e37469cbaf159069c943955  Secret: 9012782ae99945e39f4ffacf1f80dcdb
+
+073018T094216: $APIG$ Endpoint is being used on Level 7.
+IssueURL = https://api.fedex.com/security/v1/pin
+VerifyURL = https://api.fedex.com/security/v1/pin/verify
+VelocityURL = https://api.fedex.com/security/v1/addresses/velocitycheck
+
+
+<-- VerifyPinThreshold        OrgName: FDM-POSTCARD-PIN
+073018T094216: asdfasdfasdfasdfasdfasdf
+073018T094216: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"lqugrxulur-cytwiuzdxswotaozpkulxxst"}
+073018T094217: Response: {"transactionId":"7f329288-5256-4821-86b1-a7bc2a83d1c8","output":{"pinOTP":"071278","pinExpirationDate":"08/20/2018 02:42 PM GMT"}}
+073018T094217: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"lqugrxulur-cytwiuzdxswotaozpkulxxst"}
+073018T094217: Response: {"transactionId":"3cb0b789-df2d-448a-9b4b-1a5ec67b2f14","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+073018T094217: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"lqugrxulur-cytwiuzdxswotaozpkulxxst"}
+073018T094217: Response: {"transactionId":"c3983bfb-0f8c-4092-9032-e48e43075f1c","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+073018T094217: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"lqugrxulur-cytwiuzdxswotaozpkulxxst"}
+073018T094217: Response: {"transactionId":"8033dd60-6fb7-453b-b632-4498605e782e","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+073018T094217: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"lqugrxulur-cytwiuzdxswotaozpkulxxst"}
+073018T094218: Response: {"transactionId":"2b440d1a-3653-4029-9bb4-b9a1b327d39f","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+073018T094218: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"lqugrxulur-cytwiuzdxswotaozpkulxxst"}
+073018T094218: Response: {"transactionId":"4cf14758-4017-4942-afb6-18aa9e9c73cf","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+073018T094218: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"lqugrxulur-cytwiuzdxswotaozpkulxxst"}
+073018T094218: Response: {"transactionId":"de83bd47-e49d-4aa0-8ce6-2cad9f39f1b4","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+073018T094218: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"lqugrxulur-cytwiuzdxswotaozpkulxxst"}
+073018T094218: Response: {"transactionId":"eda77e64-a950-48d6-b18b-dc338aad31a3","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+073018T094218: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"lqugrxulur-cytwiuzdxswotaozpkulxxst"}
+073018T094218: Response: {"transactionId":"931cfec4-bd63-4d61-ab58-0d76ee905c07","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+073018T094218: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"lqugrxulur-cytwiuzdxswotaozpkulxxst"}
+073018T094219: Response: {"transactionId":"5e0b5183-0c05-4277-869f-d7673e21ac7e","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+073018T094219: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"lqugrxulur-cytwiuzdxswotaozpkulxxst"}
+073018T094219: Response: {"transactionId":"3b1ed617-128f-4a48-ac2b-9b2dda6ce83a","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+
+___________________________________________________________________________________________________
+|                        07-30-18 09:42:16:658 |                07-30-18 09:42:19:255 | 2 seconds |
+| VerifyPinThreshold OrgName: FDM-POSTCARD-PIN | 3b1ed617-128f-4a48-ac2b-9b2dda6ce83a |      Pass |
+|_________________________________________________________________________________________________|
+Passed: 1 - Failed: 0
+

@@ -1,0 +1,27 @@
+
+
+081018T111430: OAuth: https://apidrt.idev.fedex.com:8443/auth/oauth/v2/token  Iden: l7xx1892f99a6f88470ba29abc141cd7bd8d  Secret: a4325d011acf4876b3fe3206931b8f5a
+Verify that after a pin is expired it can no longer be used to complete registration.
+081018T111431: IssuePin Request: {"orgName":"FDM-POSTCARD-PIN","userName":"gmxypsnhiw-cbsysjlihbynoyfqgtzjwwdk"}
+081018T111431: IssuePin Response: {"transactionId":"7562ec23-19b2-42f0-8d50-8e2766748bcb","output":{"pinOTP":"102072","pinExpirationDate":"08/10/2018 04:44 PM GMT"}}
+081018T111450: VerifyPin Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"102072","userName":"gmxypsnhiw-cbsysjlihbynoyfqgtzjwwdk"}
+081018T111450: VerifyPin Response: {"transactionId":"16624f7d-7d1b-4a75-9bf5-388c81373129","output":{"daysLeftToExpire":1,"message":"Success"}}
+
+Verify that after a pin is expired it can no longer be used to complete registration.
+081018T111450: IssuePin Request: {"orgName":"FDM-PHONE-PIN","userName":"bpowrjcbuo-dishlysmnorvgrfydjvknnvr"}
+081018T111450: IssuePin Response: {"transactionId":"d11d2e29-7fcc-4488-8fc8-5c084860effe","output":{"pinOTP":"304435","pinExpirationDate":"08/10/2018 04:24 PM GMT"}}
+081018T111453: VerifyPin Request: {"orgName":"FDM-PHONE-PIN","otpInput":"304435","userName":"bpowrjcbuo-dishlysmnorvgrfydjvknnvr"}
+081018T111453: VerifyPin Response: {"transactionId":"af844189-120e-444b-bae5-1eb08ee07ae4","output":{"daysLeftToExpire":1,"message":"Success"}}
+
+Verify that after a pin is expired it can no longer be used to complete registration.
+081018T111453: IssuePin Request: {"orgName":"FDM-POSTCARD-PIN","userName":"ztiserjkzo-mdfjvgjyzpijjvzcljhkuazw"}
+081018T111454: IssuePin Response: {"transactionId":"4988d6c0-ae0f-403b-b18e-944c92023539","output":{"pinOTP":"950467","pinExpirationDate":"08/10/2018 04:44 PM GMT"}}
+081018T111454: VerifyPin Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"950467","userName":"ztiserjkzo-mdfjvgjyzpijjvzcljhkuazw"}
+081018T111455: VerifyPin Response: {"transactionId":"832789c7-3798-47ba-a226-21aafb6843b0","output":{"daysLeftToExpire":1,"message":"Success"}}
+
+Verify that after a pin is expired it can no longer be used to complete registration.
+081018T111455: IssuePin Request: {"orgName":"FDM-PHONE-PIN","userName":"lpxkkvjsqt-taicxebazmaozaknbdsgmxxi"}
+081018T111455: IssuePin Response: {"transactionId":"f8d03eaa-9fff-4268-ac9e-05a22731ad85","output":{"pinOTP":"511576","pinExpirationDate":"08/10/2018 04:24 PM GMT"}}
+081018T111456: VerifyPin Request: {"orgName":"FDM-PHONE-PIN","otpInput":"511576","userName":"lpxkkvjsqt-taicxebazmaozaknbdsgmxxi"}
+081018T111456: VerifyPin Response: {"transactionId":"40f9818e-8738-4b72-87f1-70b50775d9be","output":{"daysLeftToExpire":1,"message":"Success"}}
+

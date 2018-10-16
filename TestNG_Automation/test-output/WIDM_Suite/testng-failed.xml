@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="8" guice-stage="DEVELOPMENT" name="Failed suite [WIDM_Suite]" parallel="methods">
+  <listeners>
+    <listener class-name="SupportClasses.TestNG_ReportListener"/>
+  </listeners>
+  <test thread-count="8" name="WIDM_Test(failed)" parallel="methods">
+    <parameter name="Levels" value="test three parameter"/>
+    <classes>
+      <class name="TestNG.WIDM">
+        <methods>
+          <include name="WIDM_ForgotUserID" invocation-numbers="0"/>
+          <include name="ResetPasswordWIDM_Email" invocation-numbers="0"/>
+          <include name="SetEnvironment"/>
+          <include name="afterClass"/>
+          <include name="WIDM_ResetPasswordSecret" invocation-numbers="0"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- TestNG.WIDM -->
+    </classes>
+  </test> <!-- WIDM_Test(failed) -->
+</suite> <!-- Failed suite [WIDM_Suite] -->

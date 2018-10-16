@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="8" guice-stage="DEVELOPMENT" name="Failed suite [WRTT_Suite]" parallel="methods">
+  <listeners>
+    <listener class-name="SupportClasses.TestNG_ReportListener"/>
+  </listeners>
+  <test thread-count="8" name="WRTT_Test(failed)" parallel="methods">
+    <classes>
+      <class name="WaterfallApplications.WRTT">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="WRTT_Rate_Sheet" invocation-numbers="1 2"/>
+        </methods>
+      </class> <!-- WaterfallApplications.WRTT -->
+    </classes>
+  </test> <!-- WRTT_Test(failed) -->
+</suite> <!-- Failed suite [WRTT_Suite] -->

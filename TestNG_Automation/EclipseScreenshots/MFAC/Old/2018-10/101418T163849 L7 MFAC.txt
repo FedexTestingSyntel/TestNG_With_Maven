@@ -1,0 +1,121 @@
+
+IssuePin
+FDM-POSTCARD-PIN, e2150cf7-f248-4638-b5bc-82744de1e4cd, https://api.fedex.com/security/v1/pin
+Verify that the user is able to request a pin.
+101418T163846: IssuePinAPI URL: POST https://api.fedex.com/security/v1/pin HTTP/1.1
+101418T163846: IssuePinAPI Headers: Content-Type: application/json___Authorization: Bearer e2150cf7-f248-4638-b5bc-82744de1e4cd___
+101418T163846: IssuePinAPI Request: {"orgName":"FDM-POSTCARD-PIN","userName":"gxrgvxoxdh-lznqwphdgnjvnnfimlxfthqg"}
+101418T163846: IssuePinAPI Response: {"transactionId":"78747d48-4ca3-4292-9e23-64dfd680a6c7","output":{"pinOTP":"060737","pinExpirationDate":"11/04/2018 09:38 PM GMT"}}
+
+Expected: (a string containing "sdfsdfsdf" and a string containing "pinExpirationDate")
+     but: a string containing "sdfsdfsdf" was "{"transactionId":"78747d48-4ca3-4292-9e23-64dfd680a6c7","output":{"pinOTP":"060737","pinExpirationDate":"11/04/2018 09:38 PM GMT"}}"
+101418T163846
+Fail
+
+
+IssuePin
+FDM-PHONE-PIN, e2150cf7-f248-4638-b5bc-82744de1e4cd, https://api.fedex.com/security/v1/pin
+Verify that the user is able to request a pin.
+101418T163847: IssuePinAPI URL: POST https://api.fedex.com/security/v1/pin HTTP/1.1
+101418T163847: IssuePinAPI Headers: Content-Type: application/json___Authorization: Bearer e2150cf7-f248-4638-b5bc-82744de1e4cd___
+101418T163847: IssuePinAPI Request: {"orgName":"FDM-PHONE-PIN","userName":"ydkoasqgnu-txqkbsjmbgqaaafbndbjmtip"}
+101418T163847: IssuePinAPI Response: {"transactionId":"3afeb136-6f75-4dc1-8d62-953dc70e1110","output":{"pinOTP":"504976","pinExpirationDate":"10/14/2018 09:48 PM GMT"}}
+
+Expected: (a string containing "sdfsdfsdf" and a string containing "pinExpirationDate")
+     but: a string containing "sdfsdfsdf" was "{"transactionId":"3afeb136-6f75-4dc1-8d62-953dc70e1110","output":{"pinOTP":"504976","pinExpirationDate":"10/14/2018 09:48 PM GMT"}}"
+101418T163847
+Fail
+
+
+VerifyPinValid
+FDM-PHONE-PIN, e2150cf7-f248-4638-b5bc-82744de1e4cd, https://api.fedex.com/security/v1/pin, https://api.fedex.com/security/v1/pin/verify
+VerifyPinValid: Verify that user is able to request a pin and then verify that can recieve success when using the generated pin.
+101418T163846: IssuePinAPI URL: POST https://api.fedex.com/security/v1/pin HTTP/1.1
+101418T163846: IssuePinAPI Headers: Content-Type: application/json___Authorization: Bearer e2150cf7-f248-4638-b5bc-82744de1e4cd___
+101418T163846: IssuePinAPI Request: {"orgName":"FDM-PHONE-PIN","userName":"byglgcryek-gukbvyazbvuthibxospncfce"}
+101418T163846: IssuePinAPI Response: {"transactionId":"4cfc1354-7907-48a4-99b0-cca8235017c7","output":{"pinOTP":"576383","pinExpirationDate":"10/14/2018 09:48 PM GMT"}}
+101418T163847: VerifyPinAPI URL: POST https://api.fedex.com/security/v1/pin/verify HTTP/1.1
+101418T163847: VerifyPinAPI Headers: Content-Type: application/json___Authorization: Bearer e2150cf7-f248-4638-b5bc-82744de1e4cd___
+101418T163847: VerifyPinAPI Request: {"orgName":"FDM-PHONE-PIN","otpInput":"576383","userName":"byglgcryek-gukbvyazbvuthibxospncfce"}
+101418T163847: VerifyPinAPI Response: {"transactionId":"e5b3bfdc-22bc-4e19-88a1-e4b365828d5d","output":{"daysLeftToExpire":1,"message":"Success"}}
+e5b3bfdc-22bc-4e19-88a1-e4b365828d5d
+Passed
+
+
+VerifyPinValid
+FDM-POSTCARD-PIN, e2150cf7-f248-4638-b5bc-82744de1e4cd, https://api.fedex.com/security/v1/pin, https://api.fedex.com/security/v1/pin/verify
+VerifyPinValid: Verify that user is able to request a pin and then verify that can recieve success when using the generated pin.
+101418T163847: IssuePinAPI URL: POST https://api.fedex.com/security/v1/pin HTTP/1.1
+101418T163847: IssuePinAPI Headers: Content-Type: application/json___Authorization: Bearer e2150cf7-f248-4638-b5bc-82744de1e4cd___
+101418T163847: IssuePinAPI Request: {"orgName":"FDM-POSTCARD-PIN","userName":"uodnzxwgsd-vrafblkyivyrkfubgijzxlow"}
+101418T163847: IssuePinAPI Response: {"transactionId":"49fa6934-b419-473f-9a3e-399d6fadbb66","output":{"pinOTP":"701119","pinExpirationDate":"11/04/2018 09:38 PM GMT"}}
+101418T163848: VerifyPinAPI URL: POST https://api.fedex.com/security/v1/pin/verify HTTP/1.1
+101418T163848: VerifyPinAPI Headers: Content-Type: application/json___Authorization: Bearer e2150cf7-f248-4638-b5bc-82744de1e4cd___
+101418T163848: VerifyPinAPI Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"701119","userName":"uodnzxwgsd-vrafblkyivyrkfubgijzxlow"}
+101418T163848: VerifyPinAPI Response: {"transactionId":"cdd18c62-6840-46ca-8985-4cf49e045257","output":{"daysLeftToExpire":21,"message":"Success"}}
+cdd18c62-6840-46ca-8985-4cf49e045257
+Passed
+
+
+VerifyPinNoLongerValid
+FDM-PHONE-PIN, e2150cf7-f248-4638-b5bc-82744de1e4cd, https://api.fedex.com/security/v1/pin, https://api.fedex.com/security/v1/pin/verify
+VerifyPinNoLongerValid: Verify that when user requests a second pin that the first is no longer valid.
+101418T163846: IssuePinAPI URL: POST https://api.fedex.com/security/v1/pin HTTP/1.1
+101418T163846: IssuePinAPI Headers: Content-Type: application/json___Authorization: Bearer e2150cf7-f248-4638-b5bc-82744de1e4cd___
+101418T163846: IssuePinAPI Request: {"orgName":"FDM-PHONE-PIN","userName":"cqwsgbvkuk-hbrjxzrzavjzjclwqjqsnggv"}
+101418T163846: IssuePinAPI Response: {"transactionId":"a63fa97c-91b9-47bf-9731-5142bd82f4a8","output":{"pinOTP":"229887","pinExpirationDate":"10/14/2018 09:48 PM GMT"}}
+101418T163847: IssuePinAPI URL: POST https://api.fedex.com/security/v1/pin HTTP/1.1
+101418T163847: IssuePinAPI Headers: Content-Type: application/json___Authorization: Bearer e2150cf7-f248-4638-b5bc-82744de1e4cd___
+101418T163847: IssuePinAPI Request: {"orgName":"FDM-PHONE-PIN","userName":"cqwsgbvkuk-hbrjxzrzavjzjclwqjqsnggv"}
+101418T163847: IssuePinAPI Response: {"transactionId":"596c69da-665d-4828-9000-935a7f22f3da","output":{"pinOTP":"855270","pinExpirationDate":"10/14/2018 09:48 PM GMT"}}
+101418T163848: VerifyPinAPI URL: POST https://api.fedex.com/security/v1/pin/verify HTTP/1.1
+101418T163848: VerifyPinAPI Headers: Content-Type: application/json___Authorization: Bearer e2150cf7-f248-4638-b5bc-82744de1e4cd___
+101418T163848: VerifyPinAPI Request: {"orgName":"FDM-PHONE-PIN","otpInput":"229887","userName":"cqwsgbvkuk-hbrjxzrzavjzjclwqjqsnggv"}
+101418T163848: VerifyPinAPI Response: {"transactionId":"b8385e3b-1d84-4515-9f3e-33172fb6ac39","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+101418T163848: VerifyPinAPI URL: POST https://api.fedex.com/security/v1/pin/verify HTTP/1.1
+101418T163848: VerifyPinAPI Headers: Content-Type: application/json___Authorization: Bearer e2150cf7-f248-4638-b5bc-82744de1e4cd___
+101418T163848: VerifyPinAPI Request: {"orgName":"FDM-PHONE-PIN","otpInput":"855270","userName":"cqwsgbvkuk-hbrjxzrzavjzjclwqjqsnggv"}
+101418T163848: VerifyPinAPI Response: {"transactionId":"16d321f4-8271-4c09-99c0-ba91abf9eebe","output":{"daysLeftToExpire":1,"message":"Success"}}
+16d321f4-8271-4c09-99c0-ba91abf9eebe
+Passed
+
+
+VerifyPinNoLongerValid
+FDM-POSTCARD-PIN, e2150cf7-f248-4638-b5bc-82744de1e4cd, https://api.fedex.com/security/v1/pin, https://api.fedex.com/security/v1/pin/verify
+VerifyPinNoLongerValid: Verify that when user requests a second pin that the first is no longer valid.
+101418T163847: IssuePinAPI URL: POST https://api.fedex.com/security/v1/pin HTTP/1.1
+101418T163847: IssuePinAPI Headers: Content-Type: application/json___Authorization: Bearer e2150cf7-f248-4638-b5bc-82744de1e4cd___
+101418T163847: IssuePinAPI Request: {"orgName":"FDM-POSTCARD-PIN","userName":"bcimpcztiw-mamdtxlsvraobphpbeihnzqc"}
+101418T163847: IssuePinAPI Response: {"transactionId":"d1ef68d2-6a58-40fe-9715-ac06dd917b82","output":{"pinOTP":"299865","pinExpirationDate":"11/04/2018 09:38 PM GMT"}}
+101418T163848: IssuePinAPI URL: POST https://api.fedex.com/security/v1/pin HTTP/1.1
+101418T163848: IssuePinAPI Headers: Content-Type: application/json___Authorization: Bearer e2150cf7-f248-4638-b5bc-82744de1e4cd___
+101418T163848: IssuePinAPI Request: {"orgName":"FDM-POSTCARD-PIN","userName":"bcimpcztiw-mamdtxlsvraobphpbeihnzqc"}
+101418T163848: IssuePinAPI Response: {"transactionId":"cf4358a8-03eb-4477-8bd5-0b5fdfe85014","output":{"pinOTP":"493249","pinExpirationDate":"11/04/2018 09:38 PM GMT"}}
+101418T163848: VerifyPinAPI URL: POST https://api.fedex.com/security/v1/pin/verify HTTP/1.1
+101418T163848: VerifyPinAPI Headers: Content-Type: application/json___Authorization: Bearer e2150cf7-f248-4638-b5bc-82744de1e4cd___
+101418T163848: VerifyPinAPI Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"299865","userName":"bcimpcztiw-mamdtxlsvraobphpbeihnzqc"}
+101418T163848: VerifyPinAPI Response: {"transactionId":"d7937e3a-45b9-49a4-a345-802cfa0011e9","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+101418T163849: VerifyPinAPI URL: POST https://api.fedex.com/security/v1/pin/verify HTTP/1.1
+101418T163849: VerifyPinAPI Headers: Content-Type: application/json___Authorization: Bearer e2150cf7-f248-4638-b5bc-82744de1e4cd___
+101418T163849: VerifyPinAPI Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"493249","userName":"bcimpcztiw-mamdtxlsvraobphpbeihnzqc"}
+101418T163849: VerifyPinAPI Response: {"transactionId":"e7ac8098-d0b4-44de-a02a-ace3f92fbcaa","output":{"daysLeftToExpire":21,"message":"Success"}}
+e7ac8098-d0b4-44de-a02a-ace3f92fbcaa
+Passed
+
+
+
+___________________________________________________________________________________________________________________________________________________________________________________________________________________
+| 10-14-18 16:38:43:870|                                                                                                                      10-14-18 16:38:49:425|                                    |5 seconds|
+|              TestName|                                                                                                                                   TestData|                          ResultData|   Status|
+|              IssuePin|                                              FDM-POSTCARD-PIN, e2150cf7-f248-4638-b5bc-82744de1e4cd, https://api.fedex.com/security/v1/pin|                       101418T163846|     Fail|
+|              IssuePin|                                                 FDM-PHONE-PIN, e2150cf7-f248-4638-b5bc-82744de1e4cd, https://api.fedex.com/security/v1/pin|                       101418T163847|     Fail|
+|        VerifyPinValid|   FDM-PHONE-PIN, e2150cf7-f248-4638-b5bc-82744de1e4cd, https://api.fedex.com/security/v1/pin, https://api.fedex.com/security/v1/pin/verify|e5b3bfdc-22bc-4e19-88a1-e4b365828d5d|   Passed|
+|        VerifyPinValid|FDM-POSTCARD-PIN, e2150cf7-f248-4638-b5bc-82744de1e4cd, https://api.fedex.com/security/v1/pin, https://api.fedex.com/security/v1/pin/verify|cdd18c62-6840-46ca-8985-4cf49e045257|   Passed|
+|VerifyPinNoLongerValid|   FDM-PHONE-PIN, e2150cf7-f248-4638-b5bc-82744de1e4cd, https://api.fedex.com/security/v1/pin, https://api.fedex.com/security/v1/pin/verify|16d321f4-8271-4c09-99c0-ba91abf9eebe|   Passed|
+|VerifyPinNoLongerValid|FDM-POSTCARD-PIN, e2150cf7-f248-4638-b5bc-82744de1e4cd, https://api.fedex.com/security/v1/pin, https://api.fedex.com/security/v1/pin/verify|e7ac8098-d0b4-44de-a02a-ace3f92fbcaa|   Passed|
+|_________________________________________________________________________________________________________________________________________________________________________________________________________________|
+Passed: 4 - Failed: 2
+
+
+
+

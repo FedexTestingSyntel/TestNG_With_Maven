@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Suite" parallel="tests">
+  <test thread-count="2" name="WFCLTestXML" parallel="tests">
+    <classes>
+      <class name="main_pkg.WDPA_JUnit"/>
+      <class name="main_pkg.WRTT_JUnit"/>
+      <class name="main_pkg.WFCL_JUnit"/>
+      <class name="main_pkg.Federation_JUnit"/>
+      <class name="TestNG.WFCL_TestNG"/>
+      <class name="main_pkg.CMAC"/>
+      <class name="TestNG.WIDM_TestNG"/>
+      <class name="TestNG.CMAC_TestNG"/>
+      <class name="main_pkg.WCRV_JUnit"/>
+      <class name="TestNG.MFAC_TestNG"/>
+      <class name="main_pkg.Manual_Testing"/>
+      <class name="main_pkg.WUCC_JUnit"/>
+      <class name="main_pkg.MFAC"/>
+      <class name="main_pkg.USRC"/>
+      <class name="main_pkg.WPRL_JUnit"/>
+      <class name="main_pkg.WIDM_JUnit"/>
+    </classes>
+  </test> <!-- WFCLTestXML -->
+</suite> <!-- Suite -->

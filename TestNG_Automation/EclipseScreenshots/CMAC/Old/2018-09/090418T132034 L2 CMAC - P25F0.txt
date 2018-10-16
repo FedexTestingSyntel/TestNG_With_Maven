@@ -1,0 +1,2161 @@
+1 090418T132026: Get cookie from USRC for L2USCC051118T114912/Test1234
+1 090418T132026:   Cookie: fdx_login=ssoxdev1.a387.45d3fe70, UUID: 00g0ggskpd
+1 090418T132026: Get cookie from USRC for L2USCC080818T103410/Test1234
+1 090418T132027:   Cookie: fdx_login=ssoxdev1.cdaa.28b05073, UUID: 00g0ggsml6
+1 090418T132027: Get cookie from USRC for L2USCC090418T125956/Test1234
+1 090418T132027:   Cookie: fdx_login=ssoxdev2.bf7a.3f61ea3e, UUID: 00g0ggsmr0
+1 090418T132027: Get cookie from USRC for L2USCC090418T130240/Test1234
+1 090418T132027:   Cookie: fdx_login=ssoxdev1.9a54.a3f15c, UUID: g0g0ggsnrf
+1 090418T132027: Get cookie from USRC for L2USCC090418T130516/Test1234
+1 090418T132028:   Cookie: fdx_login=ssoxdev1.9ea1.6aceef92, UUID: 00g0ggsmr1
+1 090418T132028: Get cookie from USRC for L2USCC090418T130725/Test1234
+1 090418T132028:   Cookie: fdx_login=ssoxdev2.a8ab.35d2930d, UUID: 00g0ggsmr2
+1 090418T132028: Get cookie from USRC for L2USCC090418T131033/Test1234
+1 090418T132029:   Cookie: fdx_login=ssoxdev1.bb03.743d11f3, UUID: g0g0ggsns0
+1 090418T132029: Get cookie from USRC for L2USCC090418T131311/Test1234
+1 090418T132029:   Cookie: fdx_login=ssoxdev2.d953.41593c82, UUID: 00g0ggsmr3
+1 090418T132029: Get cookie from USRC for L2WIDMWgtm080618T164419/Test1234
+1 090418T132029:   Cookie: fdx_login=ssoxdev2.a97c.293a7161, UUID: NrpHGSqDVP
+1 090418T132029: Get cookie from USRC for L2InetNon081518T171619/Test1234
+1 090418T132029:   Cookie: fdx_login=ssoxdev2.c15f.48d77f4a, UUID: g0g0ggsnnc
+1 090418T132029: Get cookie from USRC for L2USCreate082018T140151/Test1234
+1 090418T132029:   Cookie: fdx_login=ssoxdev1.d3f9.93cc2ac, UUID: 00g0ggsmnc
+1 090418T132029: Headers: [OAuthToken (Will be populated within the class), Level, OAuthToken_URL, Client_ID, Client_Secret, Create_Project, Retrieve_Project_Details, Update_Project_URL, Delete_Project_URL, Retrieve_Project_Summary, Create_Credentials_Project, Delete_Credential, DeleteResource, Create_Resource_Project, Passkey_UserID, Passkey_Password_, Passkey_Cookie, Passkey_UUID, Non_Passkey_UserID, Non_Passkey_Password_, Non_Passkey_Cookie, Non_Passkey_UUID]
+1 090418T132029: [, 2, , , , https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/credentials/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/, L2USCC051118T114912, L2USCC080818T103410, L2USCC090418T125956, L2USCC090418T130240, L2USCC090418T130516, L2USCC090418T130725, L2USCC090418T131033, L2USCC090418T131311, Test1234, Test1234, Test1234, Test1234, Test1234, Test1234, Test1234, Test1234, fdx_login=ssoxdev1.a387.45d3fe70, fdx_login=ssoxdev1.cdaa.28b05073, fdx_login=ssoxdev2.bf7a.3f61ea3e, fdx_login=ssoxdev1.9a54.a3f15c, fdx_login=ssoxdev1.9ea1.6aceef92, fdx_login=ssoxdev2.a8ab.35d2930d, fdx_login=ssoxdev1.bb03.743d11f3, fdx_login=ssoxdev2.d953.41593c82, 00g0ggskpd, 00g0ggsml6, 00g0ggsmr0, g0g0ggsnrf, 00g0ggsmr1, 00g0ggsmr2, g0g0ggsns0, 00g0ggsmr3, L2WIDMWgtm080618T164419, L2InetNon081518T171619, L2USCreate082018T140151, Test1234, Test1234, Test1234, fdx_login=ssoxdev2.a97c.293a7161, fdx_login=ssoxdev2.c15f.48d77f4a, fdx_login=ssoxdev1.d3f9.93cc2ac, NrpHGSqDVP, g0g0ggsnnc, 00g0ggsmnc]
+
+
+Thread -- Time (MMDDYY'T'HHMMSS): -- Current progress
+1 090418T132029: RetrieveProjectSummary Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+1 090418T132033: RetrieveProjectSummary Response : {"transactionId":"28a19d9b-8046-4d88-b6fc-a1c06d99e45a","output":{"projects":[{"pid":10003,"projectname":"Proj Update 090418T131902"},{"pid":10006,"projectname":"Proj Update 090418T125230"},{"pid":10022,"projectname":"Proj 6 090418T131858"},{"pid":10071,"projectname":"Proj 7 090418T131858"},{"pid":10074,"projectname":"Proj 3 090418T125256"},{"pid":10132,"projectname":"fedexproject-1"},{"pid":10334,"projectname":"fedexproject-1"},{"pid":10362,"projectname":"Proj 7 090418T125256"},{"pid":10384,"projectname":"Proj 3 090418T131858"},{"pid":10418,"projectname":"Proj 5 090418T125256"},{"pid":10436,"projectname":"fedexproject-1"},{"pid":10479,"projectname":"Proj 1 090418T131858"},{"pid":10482,"projectname":"fedexproject-1"},{"pid":10511,"projectname":"Proj 8 090418T125256"},{"pid":10521,"projectname":"Proj 1 090418T125256"},{"pid":10573,"projectname":"fedexproject-1"},{"pid":10682,"projectname":"Proj 2 090418T131858"},{"pid":10721,"projectname":"fedexproject-1"},{"pid":10794,"projectname":"Proj 5 090418T131858"},{"pid":10813,"projectname":"Proj 2 090418T125256"},{"pid":10825,"projectname":"Proj 8 090418T131858"},{"pid":10913,"projectname":"Proj 6 090418T125256"},{"pid":10957,"projectname":"Proj 4 090418T131858"},{"pid":10970,"projectname":"fedexproject-1"},{"pid":10980,"projectname":"fedexproject-1"}]}}
+1 090418T132033: Delete : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+1 090418T132033: Response : {"transactionId":"ea7996d3-ab2f-4c32-b124-8bcb11a7b9e2"}
+1 090418T132033: RetrieveProjectDetails Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+1 090418T132033: RetrieveProjectDetails Response : {"transactionId":"c1498cdf-6a7b-4575-b4ea-dce6e6b7e6b3","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+1 090418T132033: RetrieveProjectSummary Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+1 090418T132033: RetrieveProjectSummary Response : {"transactionId":"29d9a6b6-73bb-427f-a0d8-637fef2ed9af","output":{"projects":[{"pid":10006,"projectname":"Proj Update 090418T125230"},{"pid":10022,"projectname":"Proj 6 090418T131858"},{"pid":10071,"projectname":"Proj 7 090418T131858"},{"pid":10074,"projectname":"Proj 3 090418T125256"},{"pid":10132,"projectname":"fedexproject-1"},{"pid":10334,"projectname":"fedexproject-1"},{"pid":10362,"projectname":"Proj 7 090418T125256"},{"pid":10384,"projectname":"Proj 3 090418T131858"},{"pid":10418,"projectname":"Proj 5 090418T125256"},{"pid":10436,"projectname":"fedexproject-1"},{"pid":10479,"projectname":"Proj 1 090418T131858"},{"pid":10482,"projectname":"fedexproject-1"},{"pid":10511,"projectname":"Proj 8 090418T125256"},{"pid":10521,"projectname":"Proj 1 090418T125256"},{"pid":10573,"projectname":"fedexproject-1"},{"pid":10682,"projectname":"Proj 2 090418T131858"},{"pid":10721,"projectname":"fedexproject-1"},{"pid":10794,"projectname":"Proj 5 090418T131858"},{"pid":10813,"projectname":"Proj 2 090418T125256"},{"pid":10825,"projectname":"Proj 8 090418T131858"},{"pid":10913,"projectname":"Proj 6 090418T125256"},{"pid":10957,"projectname":"Proj 4 090418T131858"},{"pid":10970,"projectname":"fedexproject-1"},{"pid":10980,"projectname":"fedexproject-1"}]}}
+1 090418T132033: Delete : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+1 090418T132033: Response : {"transactionId":"e0b043cc-12fe-4188-92c7-95055364d2e0"}
+1 090418T132033: RetrieveProjectDetails Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+1 090418T132033: RetrieveProjectDetails Response : {"transactionId":"1a8a160c-e559-4a79-9a84-5ceaaa18712f","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+1 090418T132033: RetrieveProjectSummary Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+1 090418T132033: RetrieveProjectSummary Response : {"transactionId":"2d1aaee9-0222-45f3-a486-6f2d0add28f6","output":{"projects":[{"pid":10022,"projectname":"Proj 6 090418T131858"},{"pid":10071,"projectname":"Proj 7 090418T131858"},{"pid":10074,"projectname":"Proj 3 090418T125256"},{"pid":10132,"projectname":"fedexproject-1"},{"pid":10334,"projectname":"fedexproject-1"},{"pid":10362,"projectname":"Proj 7 090418T125256"},{"pid":10384,"projectname":"Proj 3 090418T131858"},{"pid":10418,"projectname":"Proj 5 090418T125256"},{"pid":10436,"projectname":"fedexproject-1"},{"pid":10479,"projectname":"Proj 1 090418T131858"},{"pid":10482,"projectname":"fedexproject-1"},{"pid":10511,"projectname":"Proj 8 090418T125256"},{"pid":10521,"projectname":"Proj 1 090418T125256"},{"pid":10573,"projectname":"fedexproject-1"},{"pid":10682,"projectname":"Proj 2 090418T131858"},{"pid":10721,"projectname":"fedexproject-1"},{"pid":10794,"projectname":"Proj 5 090418T131858"},{"pid":10813,"projectname":"Proj 2 090418T125256"},{"pid":10825,"projectname":"Proj 8 090418T131858"},{"pid":10913,"projectname":"Proj 6 090418T125256"},{"pid":10957,"projectname":"Proj 4 090418T131858"},{"pid":10970,"projectname":"fedexproject-1"},{"pid":10980,"projectname":"fedexproject-1"}]}}
+1 090418T132033: Delete : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10022
+1 090418T132033: Response : {"transactionId":"f3614538-babb-40b0-8332-97c294799c05"}
+1 090418T132033: RetrieveProjectDetails Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10022
+1 090418T132033: RetrieveProjectDetails Response : {"transactionId":"8853dbfd-d0d1-445f-9bcc-792aecba5520","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+1 090418T132033: RetrieveProjectSummary Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+1 090418T132033: RetrieveProjectSummary Response : {"transactionId":"c39dd0e4-f383-40c2-a23e-3327c1e10edd","output":{"projects":[{"pid":10071,"projectname":"Proj 7 090418T131858"},{"pid":10074,"projectname":"Proj 3 090418T125256"},{"pid":10132,"projectname":"fedexproject-1"},{"pid":10334,"projectname":"fedexproject-1"},{"pid":10362,"projectname":"Proj 7 090418T125256"},{"pid":10384,"projectname":"Proj 3 090418T131858"},{"pid":10418,"projectname":"Proj 5 090418T125256"},{"pid":10436,"projectname":"fedexproject-1"},{"pid":10479,"projectname":"Proj 1 090418T131858"},{"pid":10482,"projectname":"fedexproject-1"},{"pid":10511,"projectname":"Proj 8 090418T125256"},{"pid":10521,"projectname":"Proj 1 090418T125256"},{"pid":10573,"projectname":"fedexproject-1"},{"pid":10682,"projectname":"Proj 2 090418T131858"},{"pid":10721,"projectname":"fedexproject-1"},{"pid":10794,"projectname":"Proj 5 090418T131858"},{"pid":10813,"projectname":"Proj 2 090418T125256"},{"pid":10825,"projectname":"Proj 8 090418T131858"},{"pid":10913,"projectname":"Proj 6 090418T125256"},{"pid":10957,"projectname":"Proj 4 090418T131858"},{"pid":10970,"projectname":"fedexproject-1"},{"pid":10980,"projectname":"fedexproject-1"}]}}
+1 090418T132033: Delete : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10071
+1 090418T132033: Response : {"transactionId":"8f278a9f-50fa-4a74-94a2-553c096b00e0"}
+1 090418T132033: RetrieveProjectDetails Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10071
+1 090418T132033: RetrieveProjectDetails Response : {"transactionId":"53163e21-6af3-4eea-b76a-976c0be13113","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+1 090418T132033: RetrieveProjectSummary Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+1 090418T132033: RetrieveProjectSummary Response : {"transactionId":"a764a6c3-3068-4b44-ba8b-8bb91080204a","output":{"projects":[{"pid":10074,"projectname":"Proj 3 090418T125256"},{"pid":10132,"projectname":"fedexproject-1"},{"pid":10334,"projectname":"fedexproject-1"},{"pid":10362,"projectname":"Proj 7 090418T125256"},{"pid":10384,"projectname":"Proj 3 090418T131858"},{"pid":10418,"projectname":"Proj 5 090418T125256"},{"pid":10436,"projectname":"fedexproject-1"},{"pid":10479,"projectname":"Proj 1 090418T131858"},{"pid":10482,"projectname":"fedexproject-1"},{"pid":10511,"projectname":"Proj 8 090418T125256"},{"pid":10521,"projectname":"Proj 1 090418T125256"},{"pid":10573,"projectname":"fedexproject-1"},{"pid":10682,"projectname":"Proj 2 090418T131858"},{"pid":10721,"projectname":"fedexproject-1"},{"pid":10794,"projectname":"Proj 5 090418T131858"},{"pid":10813,"projectname":"Proj 2 090418T125256"},{"pid":10825,"projectname":"Proj 8 090418T131858"},{"pid":10913,"projectname":"Proj 6 090418T125256"},{"pid":10957,"projectname":"Proj 4 090418T131858"},{"pid":10970,"projectname":"fedexproject-1"},{"pid":10980,"projectname":"fedexproject-1"}]}}
+1 090418T132033: Delete : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10074
+1 090418T132033: Response : {"transactionId":"ef914fe4-5952-424b-b32a-c1082812f755"}
+1 090418T132033: RetrieveProjectDetails Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10074
+1 090418T132033: RetrieveProjectDetails Response : {"transactionId":"da4582f0-bd9f-4560-9c97-674bc0ff8366","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+1 090418T132033: RetrieveProjectSummary Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+1 090418T132033: RetrieveProjectSummary Response : {"transactionId":"5b2e744f-55b7-46c1-a8d7-534099444d89","output":{"projects":[{"pid":10132,"projectname":"fedexproject-1"},{"pid":10334,"projectname":"fedexproject-1"},{"pid":10362,"projectname":"Proj 7 090418T125256"},{"pid":10384,"projectname":"Proj 3 090418T131858"},{"pid":10418,"projectname":"Proj 5 090418T125256"},{"pid":10436,"projectname":"fedexproject-1"},{"pid":10479,"projectname":"Proj 1 090418T131858"},{"pid":10482,"projectname":"fedexproject-1"},{"pid":10511,"projectname":"Proj 8 090418T125256"},{"pid":10521,"projectname":"Proj 1 090418T125256"},{"pid":10573,"projectname":"fedexproject-1"},{"pid":10682,"projectname":"Proj 2 090418T131858"},{"pid":10721,"projectname":"fedexproject-1"},{"pid":10794,"projectname":"Proj 5 090418T131858"},{"pid":10813,"projectname":"Proj 2 090418T125256"},{"pid":10825,"projectname":"Proj 8 090418T131858"},{"pid":10913,"projectname":"Proj 6 090418T125256"},{"pid":10957,"projectname":"Proj 4 090418T131858"},{"pid":10970,"projectname":"fedexproject-1"},{"pid":10980,"projectname":"fedexproject-1"}]}}
+1 090418T132033: Delete : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10132
+1 090418T132033: Response : {"transactionId":"288011ef-6569-4776-a19c-de6524bf2b54"}
+1 090418T132033: RetrieveProjectDetails Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10132
+1 090418T132033: RetrieveProjectDetails Response : {"transactionId":"d065ea47-5c9c-4f8c-bf6d-857736a2dd7a","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+1 090418T132033: RetrieveProjectSummary Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+1 090418T132033: RetrieveProjectSummary Response : {"transactionId":"1516336d-f062-4bd4-bf82-0e63578a645a","output":{"projects":[{"pid":10334,"projectname":"fedexproject-1"},{"pid":10362,"projectname":"Proj 7 090418T125256"},{"pid":10384,"projectname":"Proj 3 090418T131858"},{"pid":10418,"projectname":"Proj 5 090418T125256"},{"pid":10436,"projectname":"fedexproject-1"},{"pid":10479,"projectname":"Proj 1 090418T131858"},{"pid":10482,"projectname":"fedexproject-1"},{"pid":10511,"projectname":"Proj 8 090418T125256"},{"pid":10521,"projectname":"Proj 1 090418T125256"},{"pid":10573,"projectname":"fedexproject-1"},{"pid":10682,"projectname":"Proj 2 090418T131858"},{"pid":10721,"projectname":"fedexproject-1"},{"pid":10794,"projectname":"Proj 5 090418T131858"},{"pid":10813,"projectname":"Proj 2 090418T125256"},{"pid":10825,"projectname":"Proj 8 090418T131858"},{"pid":10913,"projectname":"Proj 6 090418T125256"},{"pid":10957,"projectname":"Proj 4 090418T131858"},{"pid":10970,"projectname":"fedexproject-1"},{"pid":10980,"projectname":"fedexproject-1"}]}}
+1 090418T132033: Delete : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10334
+1 090418T132033: Response : {"transactionId":"1cbf5e63-91f2-4b63-b1dd-a99e3b9cfb75"}
+1 090418T132033: RetrieveProjectDetails Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10334
+1 090418T132033: RetrieveProjectDetails Response : {"transactionId":"9d01deb4-d58e-4fbb-bd3e-9ab999f4bbd1","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+1 090418T132033: RetrieveProjectSummary Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+1 090418T132033: RetrieveProjectSummary Response : {"transactionId":"43664624-0c7a-4483-8ed0-17299ce7216d","output":{"projects":[{"pid":10362,"projectname":"Proj 7 090418T125256"},{"pid":10384,"projectname":"Proj 3 090418T131858"},{"pid":10418,"projectname":"Proj 5 090418T125256"},{"pid":10436,"projectname":"fedexproject-1"},{"pid":10479,"projectname":"Proj 1 090418T131858"},{"pid":10482,"projectname":"fedexproject-1"},{"pid":10511,"projectname":"Proj 8 090418T125256"},{"pid":10521,"projectname":"Proj 1 090418T125256"},{"pid":10573,"projectname":"fedexproject-1"},{"pid":10682,"projectname":"Proj 2 090418T131858"},{"pid":10721,"projectname":"fedexproject-1"},{"pid":10794,"projectname":"Proj 5 090418T131858"},{"pid":10813,"projectname":"Proj 2 090418T125256"},{"pid":10825,"projectname":"Proj 8 090418T131858"},{"pid":10913,"projectname":"Proj 6 090418T125256"},{"pid":10957,"projectname":"Proj 4 090418T131858"},{"pid":10970,"projectname":"fedexproject-1"},{"pid":10980,"projectname":"fedexproject-1"}]}}
+1 090418T132033: Delete : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10362
+1 090418T132033: Response : {"transactionId":"905cbc50-9dc6-4766-90d6-bae6670e572e"}
+1 090418T132033: RetrieveProjectDetails Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10362
+1 090418T132033: RetrieveProjectDetails Response : {"transactionId":"19f44a5d-3b55-4559-a1d9-d9ed67e68378","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+1 090418T132033: RetrieveProjectSummary Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+1 090418T132033: RetrieveProjectSummary Response : {"transactionId":"6289b2b5-7db0-4183-b325-7baa17f64f6b","output":{"projects":[{"pid":10384,"projectname":"Proj 3 090418T131858"},{"pid":10418,"projectname":"Proj 5 090418T125256"},{"pid":10436,"projectname":"fedexproject-1"},{"pid":10479,"projectname":"Proj 1 090418T131858"},{"pid":10482,"projectname":"fedexproject-1"},{"pid":10511,"projectname":"Proj 8 090418T125256"},{"pid":10521,"projectname":"Proj 1 090418T125256"},{"pid":10573,"projectname":"fedexproject-1"},{"pid":10682,"projectname":"Proj 2 090418T131858"},{"pid":10721,"projectname":"fedexproject-1"},{"pid":10794,"projectname":"Proj 5 090418T131858"},{"pid":10813,"projectname":"Proj 2 090418T125256"},{"pid":10825,"projectname":"Proj 8 090418T131858"},{"pid":10913,"projectname":"Proj 6 090418T125256"},{"pid":10957,"projectname":"Proj 4 090418T131858"},{"pid":10970,"projectname":"fedexproject-1"},{"pid":10980,"projectname":"fedexproject-1"}]}}
+1 090418T132033: Delete : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10384
+1 090418T132033: Response : {"transactionId":"e43ac7e9-7317-4305-9c54-635c2f08dd48"}
+1 090418T132033: RetrieveProjectDetails Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10384
+1 090418T132033: RetrieveProjectDetails Response : {"transactionId":"4eacd30d-720b-43d1-bf31-dc00340b87a2","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+1 090418T132033: RetrieveProjectSummary Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+1 090418T132033: RetrieveProjectSummary Response : {"transactionId":"347af083-76f4-4448-a23b-9aad117c90da","output":{"projects":[{"pid":10418,"projectname":"Proj 5 090418T125256"},{"pid":10436,"projectname":"fedexproject-1"},{"pid":10479,"projectname":"Proj 1 090418T131858"},{"pid":10482,"projectname":"fedexproject-1"},{"pid":10511,"projectname":"Proj 8 090418T125256"},{"pid":10521,"projectname":"Proj 1 090418T125256"},{"pid":10573,"projectname":"fedexproject-1"},{"pid":10682,"projectname":"Proj 2 090418T131858"},{"pid":10721,"projectname":"fedexproject-1"},{"pid":10794,"projectname":"Proj 5 090418T131858"},{"pid":10813,"projectname":"Proj 2 090418T125256"},{"pid":10825,"projectname":"Proj 8 090418T131858"},{"pid":10913,"projectname":"Proj 6 090418T125256"},{"pid":10957,"projectname":"Proj 4 090418T131858"},{"pid":10970,"projectname":"fedexproject-1"},{"pid":10980,"projectname":"fedexproject-1"}]}}
+1 090418T132033: Delete : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10418
+1 090418T132033: Response : {"transactionId":"36bf9454-6b3e-4dd8-bbca-eab17f7d11f5"}
+1 090418T132033: RetrieveProjectDetails Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10418
+1 090418T132033: RetrieveProjectDetails Response : {"transactionId":"fd1fe671-ed14-4ddf-9309-ef00edc04a08","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+1 090418T132033: RetrieveProjectSummary Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+1 090418T132033: RetrieveProjectSummary Response : {"transactionId":"e42cb263-96b4-4352-a829-c87e21c06bf4","output":{"projects":[{"pid":10436,"projectname":"fedexproject-1"},{"pid":10479,"projectname":"Proj 1 090418T131858"},{"pid":10482,"projectname":"fedexproject-1"},{"pid":10511,"projectname":"Proj 8 090418T125256"},{"pid":10521,"projectname":"Proj 1 090418T125256"},{"pid":10573,"projectname":"fedexproject-1"},{"pid":10682,"projectname":"Proj 2 090418T131858"},{"pid":10721,"projectname":"fedexproject-1"},{"pid":10794,"projectname":"Proj 5 090418T131858"},{"pid":10813,"projectname":"Proj 2 090418T125256"},{"pid":10825,"projectname":"Proj 8 090418T131858"},{"pid":10913,"projectname":"Proj 6 090418T125256"},{"pid":10957,"projectname":"Proj 4 090418T131858"},{"pid":10970,"projectname":"fedexproject-1"},{"pid":10980,"projectname":"fedexproject-1"}]}}
+1 090418T132033: Delete : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10436
+1 090418T132033: Response : {"transactionId":"aaa34698-2e35-4f60-8429-c5fbd84ec278"}
+1 090418T132033: RetrieveProjectDetails Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10436
+1 090418T132033: RetrieveProjectDetails Response : {"transactionId":"508ff233-c46b-4f0f-8870-e6e84ec12661","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+1 090418T132033: RetrieveProjectSummary Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+1 090418T132033: RetrieveProjectSummary Response : {"transactionId":"13d53b60-eb61-47ba-9e61-6e5dec45e954","output":{"projects":[{"pid":10479,"projectname":"Proj 1 090418T131858"},{"pid":10482,"projectname":"fedexproject-1"},{"pid":10511,"projectname":"Proj 8 090418T125256"},{"pid":10521,"projectname":"Proj 1 090418T125256"},{"pid":10573,"projectname":"fedexproject-1"},{"pid":10682,"projectname":"Proj 2 090418T131858"},{"pid":10721,"projectname":"fedexproject-1"},{"pid":10794,"projectname":"Proj 5 090418T131858"},{"pid":10813,"projectname":"Proj 2 090418T125256"},{"pid":10825,"projectname":"Proj 8 090418T131858"},{"pid":10913,"projectname":"Proj 6 090418T125256"},{"pid":10957,"projectname":"Proj 4 090418T131858"},{"pid":10970,"projectname":"fedexproject-1"},{"pid":10980,"projectname":"fedexproject-1"}]}}
+1 090418T132033: Delete : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10479
+1 090418T132033: Response : {"transactionId":"572e4e30-848a-4d65-acc0-7e530e523d9e"}
+1 090418T132033: RetrieveProjectDetails Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10479
+1 090418T132033: RetrieveProjectDetails Response : {"transactionId":"205246dd-4a59-44e0-aa51-90d054d3f86b","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+1 090418T132033: RetrieveProjectSummary Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+1 090418T132033: RetrieveProjectSummary Response : {"transactionId":"af5463f0-8bca-4a8a-96ab-57c81f01382e","output":{"projects":[{"pid":10482,"projectname":"fedexproject-1"},{"pid":10511,"projectname":"Proj 8 090418T125256"},{"pid":10521,"projectname":"Proj 1 090418T125256"},{"pid":10573,"projectname":"fedexproject-1"},{"pid":10682,"projectname":"Proj 2 090418T131858"},{"pid":10721,"projectname":"fedexproject-1"},{"pid":10794,"projectname":"Proj 5 090418T131858"},{"pid":10813,"projectname":"Proj 2 090418T125256"},{"pid":10825,"projectname":"Proj 8 090418T131858"},{"pid":10913,"projectname":"Proj 6 090418T125256"},{"pid":10957,"projectname":"Proj 4 090418T131858"},{"pid":10970,"projectname":"fedexproject-1"},{"pid":10980,"projectname":"fedexproject-1"}]}}
+1 090418T132033: Delete : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10482
+1 090418T132033: Response : {"transactionId":"1e1410be-6597-42bf-8ab9-9738c87b4e1e"}
+1 090418T132033: RetrieveProjectDetails Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10482
+1 090418T132033: RetrieveProjectDetails Response : {"transactionId":"fa1a208d-899d-4a25-ac0f-fc7bd8e5c79b","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+1 090418T132033: RetrieveProjectSummary Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+1 090418T132033: RetrieveProjectSummary Response : {"transactionId":"24678faa-a9e3-4605-9a0e-72a92606c46e","output":{"projects":[{"pid":10511,"projectname":"Proj 8 090418T125256"},{"pid":10521,"projectname":"Proj 1 090418T125256"},{"pid":10573,"projectname":"fedexproject-1"},{"pid":10682,"projectname":"Proj 2 090418T131858"},{"pid":10721,"projectname":"fedexproject-1"},{"pid":10794,"projectname":"Proj 5 090418T131858"},{"pid":10813,"projectname":"Proj 2 090418T125256"},{"pid":10825,"projectname":"Proj 8 090418T131858"},{"pid":10913,"projectname":"Proj 6 090418T125256"},{"pid":10957,"projectname":"Proj 4 090418T131858"},{"pid":10970,"projectname":"fedexproject-1"},{"pid":10980,"projectname":"fedexproject-1"}]}}
+1 090418T132033: Delete : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10511
+1 090418T132033: Response : {"transactionId":"d7dc9655-8341-4448-9768-47aef0ef0fdc"}
+1 090418T132033: RetrieveProjectDetails Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10511
+1 090418T132033: RetrieveProjectDetails Response : {"transactionId":"42cd8dd6-95ff-497e-a64e-f98725f30f05","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+1 090418T132033: RetrieveProjectSummary Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+1 090418T132033: RetrieveProjectSummary Response : {"transactionId":"07ea5bfa-f6d1-4968-9ed1-8360d13eb292","output":{"projects":[{"pid":10521,"projectname":"Proj 1 090418T125256"},{"pid":10573,"projectname":"fedexproject-1"},{"pid":10682,"projectname":"Proj 2 090418T131858"},{"pid":10721,"projectname":"fedexproject-1"},{"pid":10794,"projectname":"Proj 5 090418T131858"},{"pid":10813,"projectname":"Proj 2 090418T125256"},{"pid":10825,"projectname":"Proj 8 090418T131858"},{"pid":10913,"projectname":"Proj 6 090418T125256"},{"pid":10957,"projectname":"Proj 4 090418T131858"},{"pid":10970,"projectname":"fedexproject-1"},{"pid":10980,"projectname":"fedexproject-1"}]}}
+1 090418T132033: Delete : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10521
+1 090418T132033: Response : {"transactionId":"7867f533-872a-4f47-ba2f-28934beb5fcb"}
+1 090418T132033: RetrieveProjectDetails Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10521
+1 090418T132033: RetrieveProjectDetails Response : {"transactionId":"e8687b47-94cf-4b6d-8b03-80dace3e1659","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+1 090418T132033: RetrieveProjectSummary Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+1 090418T132033: RetrieveProjectSummary Response : {"transactionId":"9e31c8ce-fd4b-4f9a-bf65-14441d13967d","output":{"projects":[{"pid":10573,"projectname":"fedexproject-1"},{"pid":10682,"projectname":"Proj 2 090418T131858"},{"pid":10721,"projectname":"fedexproject-1"},{"pid":10794,"projectname":"Proj 5 090418T131858"},{"pid":10813,"projectname":"Proj 2 090418T125256"},{"pid":10825,"projectname":"Proj 8 090418T131858"},{"pid":10913,"projectname":"Proj 6 090418T125256"},{"pid":10957,"projectname":"Proj 4 090418T131858"},{"pid":10970,"projectname":"fedexproject-1"},{"pid":10980,"projectname":"fedexproject-1"}]}}
+1 090418T132033: Delete : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10573
+1 090418T132033: Response : {"transactionId":"653a1c8a-b9d6-43af-ba7d-53a63bac6c45"}
+1 090418T132033: RetrieveProjectDetails Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10573
+1 090418T132033: RetrieveProjectDetails Response : {"transactionId":"cf1a3bb9-4931-4a9c-82cf-065826592fad","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+1 090418T132033: RetrieveProjectSummary Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+1 090418T132033: RetrieveProjectSummary Response : {"transactionId":"05adf3e1-23b8-4819-9a5b-c025a6c692f9","output":{"projects":[{"pid":10682,"projectname":"Proj 2 090418T131858"},{"pid":10721,"projectname":"fedexproject-1"},{"pid":10794,"projectname":"Proj 5 090418T131858"},{"pid":10813,"projectname":"Proj 2 090418T125256"},{"pid":10825,"projectname":"Proj 8 090418T131858"},{"pid":10913,"projectname":"Proj 6 090418T125256"},{"pid":10957,"projectname":"Proj 4 090418T131858"},{"pid":10970,"projectname":"fedexproject-1"},{"pid":10980,"projectname":"fedexproject-1"}]}}
+1 090418T132033: Delete : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10682
+1 090418T132033: Response : {"transactionId":"5e32c4fd-921e-4d9e-bfc5-b5de581f1633"}
+1 090418T132033: RetrieveProjectDetails Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10682
+1 090418T132033: RetrieveProjectDetails Response : {"transactionId":"918f53d3-9d81-4b85-a644-b4e184700fb0","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+1 090418T132033: RetrieveProjectSummary Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+1 090418T132033: RetrieveProjectSummary Response : {"transactionId":"25e4828a-04dc-4464-95d5-63087251096d","output":{"projects":[{"pid":10721,"projectname":"fedexproject-1"},{"pid":10794,"projectname":"Proj 5 090418T131858"},{"pid":10813,"projectname":"Proj 2 090418T125256"},{"pid":10825,"projectname":"Proj 8 090418T131858"},{"pid":10913,"projectname":"Proj 6 090418T125256"},{"pid":10957,"projectname":"Proj 4 090418T131858"},{"pid":10970,"projectname":"fedexproject-1"},{"pid":10980,"projectname":"fedexproject-1"}]}}
+1 090418T132033: Delete : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10721
+1 090418T132033: Response : {"transactionId":"fb810182-7dca-4af0-8ada-b7738e3774a7"}
+1 090418T132033: RetrieveProjectDetails Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10721
+1 090418T132034: RetrieveProjectDetails Response : {"transactionId":"e9d6ff6f-a56a-40c1-aaba-5bd5e3202f7e","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+1 090418T132034: RetrieveProjectSummary Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+1 090418T132034: RetrieveProjectSummary Response : {"transactionId":"74fcbd94-299b-43be-a3ba-1d7b664a3038","output":{"projects":[{"pid":10794,"projectname":"Proj 5 090418T131858"},{"pid":10813,"projectname":"Proj 2 090418T125256"},{"pid":10825,"projectname":"Proj 8 090418T131858"},{"pid":10913,"projectname":"Proj 6 090418T125256"},{"pid":10957,"projectname":"Proj 4 090418T131858"},{"pid":10970,"projectname":"fedexproject-1"},{"pid":10980,"projectname":"fedexproject-1"}]}}
+1 090418T132034: Delete : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10794
+1 090418T132034: Response : {"transactionId":"39143954-91d8-4bd7-969c-4ec30be817b2"}
+1 090418T132034: RetrieveProjectDetails Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10794
+1 090418T132034: RetrieveProjectDetails Response : {"transactionId":"e611fe0b-3aef-4b8d-a35e-dc7b76d649b4","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+1 090418T132034: RetrieveProjectSummary Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+1 090418T132034: RetrieveProjectSummary Response : {"transactionId":"b2c22212-4eaf-4158-a9b1-0377dda105ae","output":{"projects":[{"pid":10813,"projectname":"Proj 2 090418T125256"},{"pid":10825,"projectname":"Proj 8 090418T131858"},{"pid":10913,"projectname":"Proj 6 090418T125256"},{"pid":10957,"projectname":"Proj 4 090418T131858"},{"pid":10970,"projectname":"fedexproject-1"},{"pid":10980,"projectname":"fedexproject-1"}]}}
+1 090418T132034: Delete : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10813
+1 090418T132034: Response : {"transactionId":"30dd8f1b-5572-4499-ac8a-a6c23a695ea3"}
+1 090418T132034: RetrieveProjectDetails Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10813
+1 090418T132034: RetrieveProjectDetails Response : {"transactionId":"01de3d42-d682-476c-88c4-5f88b3058861","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+1 090418T132034: RetrieveProjectSummary Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+1 090418T132034: RetrieveProjectSummary Response : {"transactionId":"690920af-b8d3-4ba8-9488-2e65559b9958","output":{"projects":[{"pid":10825,"projectname":"Proj 8 090418T131858"},{"pid":10913,"projectname":"Proj 6 090418T125256"},{"pid":10957,"projectname":"Proj 4 090418T131858"},{"pid":10970,"projectname":"fedexproject-1"},{"pid":10980,"projectname":"fedexproject-1"}]}}
+1 090418T132034: Delete : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10825
+1 090418T132034: Response : {"transactionId":"ff013cef-2006-4b85-99d4-b9b1aabb59f8"}
+1 090418T132034: RetrieveProjectDetails Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10825
+1 090418T132034: RetrieveProjectDetails Response : {"transactionId":"51046bb5-136e-4fc0-a466-3fa2390826d1","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+1 090418T132034: RetrieveProjectSummary Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+1 090418T132034: RetrieveProjectSummary Response : {"transactionId":"d1b85e5f-31d5-4f25-9034-66a8dc63a0d8","output":{"projects":[{"pid":10913,"projectname":"Proj 6 090418T125256"},{"pid":10957,"projectname":"Proj 4 090418T131858"},{"pid":10970,"projectname":"fedexproject-1"},{"pid":10980,"projectname":"fedexproject-1"}]}}
+1 090418T132034: Delete : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10913
+1 090418T132034: Response : {"transactionId":"80bfeb2e-99b9-4d8e-9c41-a32661b61ccf"}
+1 090418T132034: RetrieveProjectDetails Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10913
+1 090418T132034: RetrieveProjectDetails Response : {"transactionId":"dec885f4-3293-4935-bb1e-6f77d0444f50","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+1 090418T132034: RetrieveProjectSummary Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+1 090418T132034: RetrieveProjectSummary Response : {"transactionId":"0df75d93-5cfc-451e-8a2b-e574e872d3fa","output":{"projects":[{"pid":10957,"projectname":"Proj 4 090418T131858"},{"pid":10970,"projectname":"fedexproject-1"},{"pid":10980,"projectname":"fedexproject-1"}]}}
+1 090418T132034: Delete : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10957
+1 090418T132034: Response : {"transactionId":"176b10ea-a711-4a5b-9324-99fbcc69b932"}
+1 090418T132034: RetrieveProjectDetails Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10957
+1 090418T132034: RetrieveProjectDetails Response : {"transactionId":"42808605-a2d8-41c7-8393-d17d09e98821","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+1 090418T132034: RetrieveProjectSummary Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+1 090418T132034: RetrieveProjectSummary Response : {"transactionId":"f92bb506-9ba5-4ca3-a2bb-1cb15906f333","output":{"projects":[{"pid":10970,"projectname":"fedexproject-1"},{"pid":10980,"projectname":"fedexproject-1"}]}}
+1 090418T132034: Delete : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10970
+1 090418T132034: Response : {"transactionId":"03e2fbe1-18d0-4454-84ba-1e407a39aaf3"}
+1 090418T132034: RetrieveProjectDetails Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10970
+1 090418T132034: RetrieveProjectDetails Response : {"transactionId":"101813a8-d0a6-4f67-afc0-b7079e43cdb0","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+1 090418T132034: RetrieveProjectSummary Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+1 090418T132034: RetrieveProjectSummary Response : {"transactionId":"f432b094-90a4-4ce6-92d9-3eb863bb836b","output":{"projects":[{"pid":10980,"projectname":"fedexproject-1"}]}}
+1 090418T132034: Delete : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10980
+1 090418T132034: Response : {"transactionId":"f191cc53-1dea-4782-8cb5-a3f6d103500f"}
+1 090418T132034: RetrieveProjectDetails Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10980
+1 090418T132034: RetrieveProjectDetails Response : {"transactionId":"404056c5-57c9-4365-ab84-b6b1ce97b5d9","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+1 090418T132034: RetrieveProjectSummary Get : https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+1 090418T132034: RetrieveProjectSummary Response : {"transactionId":"67ed2b2c-7dba-49f9-ae4d-7c71c4d9c047","output":{"projects":[]}}
+DeleteAllProject passed [https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/]
+
+
+@@ Passed Test Cases:
+1)    <-- Delete all projects, set. URL: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"ea7996d3-ab2f-4c32-b124-8bcb11a7b9e2"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"c1498cdf-6a7b-4575-b4ea-dce6e6b7e6b3","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+2)    <-- Delete all projects, set. URL: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"ea7996d3-ab2f-4c32-b124-8bcb11a7b9e2"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"c1498cdf-6a7b-4575-b4ea-dce6e6b7e6b3","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+Response: {"transactionId":"e0b043cc-12fe-4188-92c7-95055364d2e0"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+Response: {"transactionId":"1a8a160c-e559-4a79-9a84-5ceaaa18712f","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+3)    <-- Delete all projects, set. URL: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"ea7996d3-ab2f-4c32-b124-8bcb11a7b9e2"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"c1498cdf-6a7b-4575-b4ea-dce6e6b7e6b3","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+Response: {"transactionId":"e0b043cc-12fe-4188-92c7-95055364d2e0"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+Response: {"transactionId":"1a8a160c-e559-4a79-9a84-5ceaaa18712f","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10022
+Response: {"transactionId":"f3614538-babb-40b0-8332-97c294799c05"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10022
+Response: {"transactionId":"8853dbfd-d0d1-445f-9bcc-792aecba5520","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+4)    <-- Delete all projects, set. URL: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"ea7996d3-ab2f-4c32-b124-8bcb11a7b9e2"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"c1498cdf-6a7b-4575-b4ea-dce6e6b7e6b3","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+Response: {"transactionId":"e0b043cc-12fe-4188-92c7-95055364d2e0"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+Response: {"transactionId":"1a8a160c-e559-4a79-9a84-5ceaaa18712f","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10022
+Response: {"transactionId":"f3614538-babb-40b0-8332-97c294799c05"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10022
+Response: {"transactionId":"8853dbfd-d0d1-445f-9bcc-792aecba5520","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10071
+Response: {"transactionId":"8f278a9f-50fa-4a74-94a2-553c096b00e0"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10071
+Response: {"transactionId":"53163e21-6af3-4eea-b76a-976c0be13113","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+5)    <-- Delete all projects, set. URL: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"ea7996d3-ab2f-4c32-b124-8bcb11a7b9e2"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"c1498cdf-6a7b-4575-b4ea-dce6e6b7e6b3","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+Response: {"transactionId":"e0b043cc-12fe-4188-92c7-95055364d2e0"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+Response: {"transactionId":"1a8a160c-e559-4a79-9a84-5ceaaa18712f","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10022
+Response: {"transactionId":"f3614538-babb-40b0-8332-97c294799c05"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10022
+Response: {"transactionId":"8853dbfd-d0d1-445f-9bcc-792aecba5520","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10071
+Response: {"transactionId":"8f278a9f-50fa-4a74-94a2-553c096b00e0"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10071
+Response: {"transactionId":"53163e21-6af3-4eea-b76a-976c0be13113","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10074
+Response: {"transactionId":"ef914fe4-5952-424b-b32a-c1082812f755"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10074
+Response: {"transactionId":"da4582f0-bd9f-4560-9c97-674bc0ff8366","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+6)    <-- Delete all projects, set. URL: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"ea7996d3-ab2f-4c32-b124-8bcb11a7b9e2"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"c1498cdf-6a7b-4575-b4ea-dce6e6b7e6b3","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+Response: {"transactionId":"e0b043cc-12fe-4188-92c7-95055364d2e0"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+Response: {"transactionId":"1a8a160c-e559-4a79-9a84-5ceaaa18712f","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10022
+Response: {"transactionId":"f3614538-babb-40b0-8332-97c294799c05"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10022
+Response: {"transactionId":"8853dbfd-d0d1-445f-9bcc-792aecba5520","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10071
+Response: {"transactionId":"8f278a9f-50fa-4a74-94a2-553c096b00e0"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10071
+Response: {"transactionId":"53163e21-6af3-4eea-b76a-976c0be13113","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10074
+Response: {"transactionId":"ef914fe4-5952-424b-b32a-c1082812f755"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10074
+Response: {"transactionId":"da4582f0-bd9f-4560-9c97-674bc0ff8366","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10132
+Response: {"transactionId":"288011ef-6569-4776-a19c-de6524bf2b54"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10132
+Response: {"transactionId":"d065ea47-5c9c-4f8c-bf6d-857736a2dd7a","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+7)    <-- Delete all projects, set. URL: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"ea7996d3-ab2f-4c32-b124-8bcb11a7b9e2"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"c1498cdf-6a7b-4575-b4ea-dce6e6b7e6b3","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+Response: {"transactionId":"e0b043cc-12fe-4188-92c7-95055364d2e0"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+Response: {"transactionId":"1a8a160c-e559-4a79-9a84-5ceaaa18712f","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10022
+Response: {"transactionId":"f3614538-babb-40b0-8332-97c294799c05"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10022
+Response: {"transactionId":"8853dbfd-d0d1-445f-9bcc-792aecba5520","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10071
+Response: {"transactionId":"8f278a9f-50fa-4a74-94a2-553c096b00e0"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10071
+Response: {"transactionId":"53163e21-6af3-4eea-b76a-976c0be13113","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10074
+Response: {"transactionId":"ef914fe4-5952-424b-b32a-c1082812f755"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10074
+Response: {"transactionId":"da4582f0-bd9f-4560-9c97-674bc0ff8366","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10132
+Response: {"transactionId":"288011ef-6569-4776-a19c-de6524bf2b54"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10132
+Response: {"transactionId":"d065ea47-5c9c-4f8c-bf6d-857736a2dd7a","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10334
+Response: {"transactionId":"1cbf5e63-91f2-4b63-b1dd-a99e3b9cfb75"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10334
+Response: {"transactionId":"9d01deb4-d58e-4fbb-bd3e-9ab999f4bbd1","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+8)    <-- Delete all projects, set. URL: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"ea7996d3-ab2f-4c32-b124-8bcb11a7b9e2"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"c1498cdf-6a7b-4575-b4ea-dce6e6b7e6b3","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+Response: {"transactionId":"e0b043cc-12fe-4188-92c7-95055364d2e0"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+Response: {"transactionId":"1a8a160c-e559-4a79-9a84-5ceaaa18712f","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10022
+Response: {"transactionId":"f3614538-babb-40b0-8332-97c294799c05"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10022
+Response: {"transactionId":"8853dbfd-d0d1-445f-9bcc-792aecba5520","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10071
+Response: {"transactionId":"8f278a9f-50fa-4a74-94a2-553c096b00e0"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10071
+Response: {"transactionId":"53163e21-6af3-4eea-b76a-976c0be13113","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10074
+Response: {"transactionId":"ef914fe4-5952-424b-b32a-c1082812f755"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10074
+Response: {"transactionId":"da4582f0-bd9f-4560-9c97-674bc0ff8366","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10132
+Response: {"transactionId":"288011ef-6569-4776-a19c-de6524bf2b54"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10132
+Response: {"transactionId":"d065ea47-5c9c-4f8c-bf6d-857736a2dd7a","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10334
+Response: {"transactionId":"1cbf5e63-91f2-4b63-b1dd-a99e3b9cfb75"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10334
+Response: {"transactionId":"9d01deb4-d58e-4fbb-bd3e-9ab999f4bbd1","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10362
+Response: {"transactionId":"905cbc50-9dc6-4766-90d6-bae6670e572e"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10362
+Response: {"transactionId":"19f44a5d-3b55-4559-a1d9-d9ed67e68378","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+9)    <-- Delete all projects, set. URL: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"ea7996d3-ab2f-4c32-b124-8bcb11a7b9e2"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"c1498cdf-6a7b-4575-b4ea-dce6e6b7e6b3","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+Response: {"transactionId":"e0b043cc-12fe-4188-92c7-95055364d2e0"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+Response: {"transactionId":"1a8a160c-e559-4a79-9a84-5ceaaa18712f","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10022
+Response: {"transactionId":"f3614538-babb-40b0-8332-97c294799c05"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10022
+Response: {"transactionId":"8853dbfd-d0d1-445f-9bcc-792aecba5520","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10071
+Response: {"transactionId":"8f278a9f-50fa-4a74-94a2-553c096b00e0"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10071
+Response: {"transactionId":"53163e21-6af3-4eea-b76a-976c0be13113","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10074
+Response: {"transactionId":"ef914fe4-5952-424b-b32a-c1082812f755"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10074
+Response: {"transactionId":"da4582f0-bd9f-4560-9c97-674bc0ff8366","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10132
+Response: {"transactionId":"288011ef-6569-4776-a19c-de6524bf2b54"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10132
+Response: {"transactionId":"d065ea47-5c9c-4f8c-bf6d-857736a2dd7a","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10334
+Response: {"transactionId":"1cbf5e63-91f2-4b63-b1dd-a99e3b9cfb75"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10334
+Response: {"transactionId":"9d01deb4-d58e-4fbb-bd3e-9ab999f4bbd1","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10362
+Response: {"transactionId":"905cbc50-9dc6-4766-90d6-bae6670e572e"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10362
+Response: {"transactionId":"19f44a5d-3b55-4559-a1d9-d9ed67e68378","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10384
+Response: {"transactionId":"e43ac7e9-7317-4305-9c54-635c2f08dd48"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10384
+Response: {"transactionId":"4eacd30d-720b-43d1-bf31-dc00340b87a2","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+10)    <-- Delete all projects, set. URL: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"ea7996d3-ab2f-4c32-b124-8bcb11a7b9e2"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"c1498cdf-6a7b-4575-b4ea-dce6e6b7e6b3","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+Response: {"transactionId":"e0b043cc-12fe-4188-92c7-95055364d2e0"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+Response: {"transactionId":"1a8a160c-e559-4a79-9a84-5ceaaa18712f","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10022
+Response: {"transactionId":"f3614538-babb-40b0-8332-97c294799c05"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10022
+Response: {"transactionId":"8853dbfd-d0d1-445f-9bcc-792aecba5520","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10071
+Response: {"transactionId":"8f278a9f-50fa-4a74-94a2-553c096b00e0"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10071
+Response: {"transactionId":"53163e21-6af3-4eea-b76a-976c0be13113","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10074
+Response: {"transactionId":"ef914fe4-5952-424b-b32a-c1082812f755"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10074
+Response: {"transactionId":"da4582f0-bd9f-4560-9c97-674bc0ff8366","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10132
+Response: {"transactionId":"288011ef-6569-4776-a19c-de6524bf2b54"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10132
+Response: {"transactionId":"d065ea47-5c9c-4f8c-bf6d-857736a2dd7a","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10334
+Response: {"transactionId":"1cbf5e63-91f2-4b63-b1dd-a99e3b9cfb75"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10334
+Response: {"transactionId":"9d01deb4-d58e-4fbb-bd3e-9ab999f4bbd1","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10362
+Response: {"transactionId":"905cbc50-9dc6-4766-90d6-bae6670e572e"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10362
+Response: {"transactionId":"19f44a5d-3b55-4559-a1d9-d9ed67e68378","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10384
+Response: {"transactionId":"e43ac7e9-7317-4305-9c54-635c2f08dd48"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10384
+Response: {"transactionId":"4eacd30d-720b-43d1-bf31-dc00340b87a2","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10418
+Response: {"transactionId":"36bf9454-6b3e-4dd8-bbca-eab17f7d11f5"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10418
+Response: {"transactionId":"fd1fe671-ed14-4ddf-9309-ef00edc04a08","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+11)    <-- Delete all projects, set. URL: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"ea7996d3-ab2f-4c32-b124-8bcb11a7b9e2"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"c1498cdf-6a7b-4575-b4ea-dce6e6b7e6b3","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+Response: {"transactionId":"e0b043cc-12fe-4188-92c7-95055364d2e0"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+Response: {"transactionId":"1a8a160c-e559-4a79-9a84-5ceaaa18712f","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10022
+Response: {"transactionId":"f3614538-babb-40b0-8332-97c294799c05"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10022
+Response: {"transactionId":"8853dbfd-d0d1-445f-9bcc-792aecba5520","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10071
+Response: {"transactionId":"8f278a9f-50fa-4a74-94a2-553c096b00e0"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10071
+Response: {"transactionId":"53163e21-6af3-4eea-b76a-976c0be13113","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10074
+Response: {"transactionId":"ef914fe4-5952-424b-b32a-c1082812f755"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10074
+Response: {"transactionId":"da4582f0-bd9f-4560-9c97-674bc0ff8366","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10132
+Response: {"transactionId":"288011ef-6569-4776-a19c-de6524bf2b54"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10132
+Response: {"transactionId":"d065ea47-5c9c-4f8c-bf6d-857736a2dd7a","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10334
+Response: {"transactionId":"1cbf5e63-91f2-4b63-b1dd-a99e3b9cfb75"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10334
+Response: {"transactionId":"9d01deb4-d58e-4fbb-bd3e-9ab999f4bbd1","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10362
+Response: {"transactionId":"905cbc50-9dc6-4766-90d6-bae6670e572e"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10362
+Response: {"transactionId":"19f44a5d-3b55-4559-a1d9-d9ed67e68378","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10384
+Response: {"transactionId":"e43ac7e9-7317-4305-9c54-635c2f08dd48"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10384
+Response: {"transactionId":"4eacd30d-720b-43d1-bf31-dc00340b87a2","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10418
+Response: {"transactionId":"36bf9454-6b3e-4dd8-bbca-eab17f7d11f5"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10418
+Response: {"transactionId":"fd1fe671-ed14-4ddf-9309-ef00edc04a08","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10436
+Response: {"transactionId":"aaa34698-2e35-4f60-8429-c5fbd84ec278"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10436
+Response: {"transactionId":"508ff233-c46b-4f0f-8870-e6e84ec12661","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+12)    <-- Delete all projects, set. URL: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"ea7996d3-ab2f-4c32-b124-8bcb11a7b9e2"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"c1498cdf-6a7b-4575-b4ea-dce6e6b7e6b3","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+Response: {"transactionId":"e0b043cc-12fe-4188-92c7-95055364d2e0"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+Response: {"transactionId":"1a8a160c-e559-4a79-9a84-5ceaaa18712f","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10022
+Response: {"transactionId":"f3614538-babb-40b0-8332-97c294799c05"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10022
+Response: {"transactionId":"8853dbfd-d0d1-445f-9bcc-792aecba5520","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10071
+Response: {"transactionId":"8f278a9f-50fa-4a74-94a2-553c096b00e0"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10071
+Response: {"transactionId":"53163e21-6af3-4eea-b76a-976c0be13113","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10074
+Response: {"transactionId":"ef914fe4-5952-424b-b32a-c1082812f755"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10074
+Response: {"transactionId":"da4582f0-bd9f-4560-9c97-674bc0ff8366","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10132
+Response: {"transactionId":"288011ef-6569-4776-a19c-de6524bf2b54"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10132
+Response: {"transactionId":"d065ea47-5c9c-4f8c-bf6d-857736a2dd7a","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10334
+Response: {"transactionId":"1cbf5e63-91f2-4b63-b1dd-a99e3b9cfb75"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10334
+Response: {"transactionId":"9d01deb4-d58e-4fbb-bd3e-9ab999f4bbd1","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10362
+Response: {"transactionId":"905cbc50-9dc6-4766-90d6-bae6670e572e"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10362
+Response: {"transactionId":"19f44a5d-3b55-4559-a1d9-d9ed67e68378","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10384
+Response: {"transactionId":"e43ac7e9-7317-4305-9c54-635c2f08dd48"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10384
+Response: {"transactionId":"4eacd30d-720b-43d1-bf31-dc00340b87a2","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10418
+Response: {"transactionId":"36bf9454-6b3e-4dd8-bbca-eab17f7d11f5"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10418
+Response: {"transactionId":"fd1fe671-ed14-4ddf-9309-ef00edc04a08","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10436
+Response: {"transactionId":"aaa34698-2e35-4f60-8429-c5fbd84ec278"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10436
+Response: {"transactionId":"508ff233-c46b-4f0f-8870-e6e84ec12661","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10479
+Response: {"transactionId":"572e4e30-848a-4d65-acc0-7e530e523d9e"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10479
+Response: {"transactionId":"205246dd-4a59-44e0-aa51-90d054d3f86b","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+13)    <-- Delete all projects, set. URL: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"ea7996d3-ab2f-4c32-b124-8bcb11a7b9e2"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"c1498cdf-6a7b-4575-b4ea-dce6e6b7e6b3","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+Response: {"transactionId":"e0b043cc-12fe-4188-92c7-95055364d2e0"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+Response: {"transactionId":"1a8a160c-e559-4a79-9a84-5ceaaa18712f","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10022
+Response: {"transactionId":"f3614538-babb-40b0-8332-97c294799c05"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10022
+Response: {"transactionId":"8853dbfd-d0d1-445f-9bcc-792aecba5520","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10071
+Response: {"transactionId":"8f278a9f-50fa-4a74-94a2-553c096b00e0"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10071
+Response: {"transactionId":"53163e21-6af3-4eea-b76a-976c0be13113","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10074
+Response: {"transactionId":"ef914fe4-5952-424b-b32a-c1082812f755"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10074
+Response: {"transactionId":"da4582f0-bd9f-4560-9c97-674bc0ff8366","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10132
+Response: {"transactionId":"288011ef-6569-4776-a19c-de6524bf2b54"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10132
+Response: {"transactionId":"d065ea47-5c9c-4f8c-bf6d-857736a2dd7a","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10334
+Response: {"transactionId":"1cbf5e63-91f2-4b63-b1dd-a99e3b9cfb75"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10334
+Response: {"transactionId":"9d01deb4-d58e-4fbb-bd3e-9ab999f4bbd1","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10362
+Response: {"transactionId":"905cbc50-9dc6-4766-90d6-bae6670e572e"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10362
+Response: {"transactionId":"19f44a5d-3b55-4559-a1d9-d9ed67e68378","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10384
+Response: {"transactionId":"e43ac7e9-7317-4305-9c54-635c2f08dd48"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10384
+Response: {"transactionId":"4eacd30d-720b-43d1-bf31-dc00340b87a2","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10418
+Response: {"transactionId":"36bf9454-6b3e-4dd8-bbca-eab17f7d11f5"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10418
+Response: {"transactionId":"fd1fe671-ed14-4ddf-9309-ef00edc04a08","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10436
+Response: {"transactionId":"aaa34698-2e35-4f60-8429-c5fbd84ec278"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10436
+Response: {"transactionId":"508ff233-c46b-4f0f-8870-e6e84ec12661","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10479
+Response: {"transactionId":"572e4e30-848a-4d65-acc0-7e530e523d9e"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10479
+Response: {"transactionId":"205246dd-4a59-44e0-aa51-90d054d3f86b","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10482
+Response: {"transactionId":"1e1410be-6597-42bf-8ab9-9738c87b4e1e"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10482
+Response: {"transactionId":"fa1a208d-899d-4a25-ac0f-fc7bd8e5c79b","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+14)    <-- Delete all projects, set. URL: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"ea7996d3-ab2f-4c32-b124-8bcb11a7b9e2"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"c1498cdf-6a7b-4575-b4ea-dce6e6b7e6b3","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+Response: {"transactionId":"e0b043cc-12fe-4188-92c7-95055364d2e0"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+Response: {"transactionId":"1a8a160c-e559-4a79-9a84-5ceaaa18712f","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10022
+Response: {"transactionId":"f3614538-babb-40b0-8332-97c294799c05"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10022
+Response: {"transactionId":"8853dbfd-d0d1-445f-9bcc-792aecba5520","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10071
+Response: {"transactionId":"8f278a9f-50fa-4a74-94a2-553c096b00e0"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10071
+Response: {"transactionId":"53163e21-6af3-4eea-b76a-976c0be13113","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10074
+Response: {"transactionId":"ef914fe4-5952-424b-b32a-c1082812f755"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10074
+Response: {"transactionId":"da4582f0-bd9f-4560-9c97-674bc0ff8366","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10132
+Response: {"transactionId":"288011ef-6569-4776-a19c-de6524bf2b54"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10132
+Response: {"transactionId":"d065ea47-5c9c-4f8c-bf6d-857736a2dd7a","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10334
+Response: {"transactionId":"1cbf5e63-91f2-4b63-b1dd-a99e3b9cfb75"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10334
+Response: {"transactionId":"9d01deb4-d58e-4fbb-bd3e-9ab999f4bbd1","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10362
+Response: {"transactionId":"905cbc50-9dc6-4766-90d6-bae6670e572e"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10362
+Response: {"transactionId":"19f44a5d-3b55-4559-a1d9-d9ed67e68378","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10384
+Response: {"transactionId":"e43ac7e9-7317-4305-9c54-635c2f08dd48"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10384
+Response: {"transactionId":"4eacd30d-720b-43d1-bf31-dc00340b87a2","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10418
+Response: {"transactionId":"36bf9454-6b3e-4dd8-bbca-eab17f7d11f5"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10418
+Response: {"transactionId":"fd1fe671-ed14-4ddf-9309-ef00edc04a08","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10436
+Response: {"transactionId":"aaa34698-2e35-4f60-8429-c5fbd84ec278"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10436
+Response: {"transactionId":"508ff233-c46b-4f0f-8870-e6e84ec12661","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10479
+Response: {"transactionId":"572e4e30-848a-4d65-acc0-7e530e523d9e"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10479
+Response: {"transactionId":"205246dd-4a59-44e0-aa51-90d054d3f86b","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10482
+Response: {"transactionId":"1e1410be-6597-42bf-8ab9-9738c87b4e1e"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10482
+Response: {"transactionId":"fa1a208d-899d-4a25-ac0f-fc7bd8e5c79b","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10511
+Response: {"transactionId":"d7dc9655-8341-4448-9768-47aef0ef0fdc"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10511
+Response: {"transactionId":"42cd8dd6-95ff-497e-a64e-f98725f30f05","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+15)    <-- Delete all projects, set. URL: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"ea7996d3-ab2f-4c32-b124-8bcb11a7b9e2"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"c1498cdf-6a7b-4575-b4ea-dce6e6b7e6b3","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+Response: {"transactionId":"e0b043cc-12fe-4188-92c7-95055364d2e0"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+Response: {"transactionId":"1a8a160c-e559-4a79-9a84-5ceaaa18712f","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10022
+Response: {"transactionId":"f3614538-babb-40b0-8332-97c294799c05"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10022
+Response: {"transactionId":"8853dbfd-d0d1-445f-9bcc-792aecba5520","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10071
+Response: {"transactionId":"8f278a9f-50fa-4a74-94a2-553c096b00e0"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10071
+Response: {"transactionId":"53163e21-6af3-4eea-b76a-976c0be13113","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10074
+Response: {"transactionId":"ef914fe4-5952-424b-b32a-c1082812f755"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10074
+Response: {"transactionId":"da4582f0-bd9f-4560-9c97-674bc0ff8366","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10132
+Response: {"transactionId":"288011ef-6569-4776-a19c-de6524bf2b54"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10132
+Response: {"transactionId":"d065ea47-5c9c-4f8c-bf6d-857736a2dd7a","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10334
+Response: {"transactionId":"1cbf5e63-91f2-4b63-b1dd-a99e3b9cfb75"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10334
+Response: {"transactionId":"9d01deb4-d58e-4fbb-bd3e-9ab999f4bbd1","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10362
+Response: {"transactionId":"905cbc50-9dc6-4766-90d6-bae6670e572e"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10362
+Response: {"transactionId":"19f44a5d-3b55-4559-a1d9-d9ed67e68378","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10384
+Response: {"transactionId":"e43ac7e9-7317-4305-9c54-635c2f08dd48"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10384
+Response: {"transactionId":"4eacd30d-720b-43d1-bf31-dc00340b87a2","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10418
+Response: {"transactionId":"36bf9454-6b3e-4dd8-bbca-eab17f7d11f5"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10418
+Response: {"transactionId":"fd1fe671-ed14-4ddf-9309-ef00edc04a08","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10436
+Response: {"transactionId":"aaa34698-2e35-4f60-8429-c5fbd84ec278"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10436
+Response: {"transactionId":"508ff233-c46b-4f0f-8870-e6e84ec12661","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10479
+Response: {"transactionId":"572e4e30-848a-4d65-acc0-7e530e523d9e"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10479
+Response: {"transactionId":"205246dd-4a59-44e0-aa51-90d054d3f86b","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10482
+Response: {"transactionId":"1e1410be-6597-42bf-8ab9-9738c87b4e1e"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10482
+Response: {"transactionId":"fa1a208d-899d-4a25-ac0f-fc7bd8e5c79b","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10511
+Response: {"transactionId":"d7dc9655-8341-4448-9768-47aef0ef0fdc"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10511
+Response: {"transactionId":"42cd8dd6-95ff-497e-a64e-f98725f30f05","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10521
+Response: {"transactionId":"7867f533-872a-4f47-ba2f-28934beb5fcb"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10521
+Response: {"transactionId":"e8687b47-94cf-4b6d-8b03-80dace3e1659","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+16)    <-- Delete all projects, set. URL: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"ea7996d3-ab2f-4c32-b124-8bcb11a7b9e2"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"c1498cdf-6a7b-4575-b4ea-dce6e6b7e6b3","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+Response: {"transactionId":"e0b043cc-12fe-4188-92c7-95055364d2e0"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+Response: {"transactionId":"1a8a160c-e559-4a79-9a84-5ceaaa18712f","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10022
+Response: {"transactionId":"f3614538-babb-40b0-8332-97c294799c05"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10022
+Response: {"transactionId":"8853dbfd-d0d1-445f-9bcc-792aecba5520","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10071
+Response: {"transactionId":"8f278a9f-50fa-4a74-94a2-553c096b00e0"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10071
+Response: {"transactionId":"53163e21-6af3-4eea-b76a-976c0be13113","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10074
+Response: {"transactionId":"ef914fe4-5952-424b-b32a-c1082812f755"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10074
+Response: {"transactionId":"da4582f0-bd9f-4560-9c97-674bc0ff8366","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10132
+Response: {"transactionId":"288011ef-6569-4776-a19c-de6524bf2b54"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10132
+Response: {"transactionId":"d065ea47-5c9c-4f8c-bf6d-857736a2dd7a","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10334
+Response: {"transactionId":"1cbf5e63-91f2-4b63-b1dd-a99e3b9cfb75"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10334
+Response: {"transactionId":"9d01deb4-d58e-4fbb-bd3e-9ab999f4bbd1","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10362
+Response: {"transactionId":"905cbc50-9dc6-4766-90d6-bae6670e572e"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10362
+Response: {"transactionId":"19f44a5d-3b55-4559-a1d9-d9ed67e68378","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10384
+Response: {"transactionId":"e43ac7e9-7317-4305-9c54-635c2f08dd48"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10384
+Response: {"transactionId":"4eacd30d-720b-43d1-bf31-dc00340b87a2","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10418
+Response: {"transactionId":"36bf9454-6b3e-4dd8-bbca-eab17f7d11f5"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10418
+Response: {"transactionId":"fd1fe671-ed14-4ddf-9309-ef00edc04a08","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10436
+Response: {"transactionId":"aaa34698-2e35-4f60-8429-c5fbd84ec278"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10436
+Response: {"transactionId":"508ff233-c46b-4f0f-8870-e6e84ec12661","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10479
+Response: {"transactionId":"572e4e30-848a-4d65-acc0-7e530e523d9e"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10479
+Response: {"transactionId":"205246dd-4a59-44e0-aa51-90d054d3f86b","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10482
+Response: {"transactionId":"1e1410be-6597-42bf-8ab9-9738c87b4e1e"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10482
+Response: {"transactionId":"fa1a208d-899d-4a25-ac0f-fc7bd8e5c79b","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10511
+Response: {"transactionId":"d7dc9655-8341-4448-9768-47aef0ef0fdc"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10511
+Response: {"transactionId":"42cd8dd6-95ff-497e-a64e-f98725f30f05","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10521
+Response: {"transactionId":"7867f533-872a-4f47-ba2f-28934beb5fcb"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10521
+Response: {"transactionId":"e8687b47-94cf-4b6d-8b03-80dace3e1659","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10573
+Response: {"transactionId":"653a1c8a-b9d6-43af-ba7d-53a63bac6c45"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10573
+Response: {"transactionId":"cf1a3bb9-4931-4a9c-82cf-065826592fad","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+17)    <-- Delete all projects, set. URL: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"ea7996d3-ab2f-4c32-b124-8bcb11a7b9e2"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"c1498cdf-6a7b-4575-b4ea-dce6e6b7e6b3","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+Response: {"transactionId":"e0b043cc-12fe-4188-92c7-95055364d2e0"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+Response: {"transactionId":"1a8a160c-e559-4a79-9a84-5ceaaa18712f","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10022
+Response: {"transactionId":"f3614538-babb-40b0-8332-97c294799c05"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10022
+Response: {"transactionId":"8853dbfd-d0d1-445f-9bcc-792aecba5520","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10071
+Response: {"transactionId":"8f278a9f-50fa-4a74-94a2-553c096b00e0"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10071
+Response: {"transactionId":"53163e21-6af3-4eea-b76a-976c0be13113","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10074
+Response: {"transactionId":"ef914fe4-5952-424b-b32a-c1082812f755"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10074
+Response: {"transactionId":"da4582f0-bd9f-4560-9c97-674bc0ff8366","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10132
+Response: {"transactionId":"288011ef-6569-4776-a19c-de6524bf2b54"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10132
+Response: {"transactionId":"d065ea47-5c9c-4f8c-bf6d-857736a2dd7a","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10334
+Response: {"transactionId":"1cbf5e63-91f2-4b63-b1dd-a99e3b9cfb75"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10334
+Response: {"transactionId":"9d01deb4-d58e-4fbb-bd3e-9ab999f4bbd1","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10362
+Response: {"transactionId":"905cbc50-9dc6-4766-90d6-bae6670e572e"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10362
+Response: {"transactionId":"19f44a5d-3b55-4559-a1d9-d9ed67e68378","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10384
+Response: {"transactionId":"e43ac7e9-7317-4305-9c54-635c2f08dd48"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10384
+Response: {"transactionId":"4eacd30d-720b-43d1-bf31-dc00340b87a2","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10418
+Response: {"transactionId":"36bf9454-6b3e-4dd8-bbca-eab17f7d11f5"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10418
+Response: {"transactionId":"fd1fe671-ed14-4ddf-9309-ef00edc04a08","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10436
+Response: {"transactionId":"aaa34698-2e35-4f60-8429-c5fbd84ec278"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10436
+Response: {"transactionId":"508ff233-c46b-4f0f-8870-e6e84ec12661","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10479
+Response: {"transactionId":"572e4e30-848a-4d65-acc0-7e530e523d9e"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10479
+Response: {"transactionId":"205246dd-4a59-44e0-aa51-90d054d3f86b","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10482
+Response: {"transactionId":"1e1410be-6597-42bf-8ab9-9738c87b4e1e"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10482
+Response: {"transactionId":"fa1a208d-899d-4a25-ac0f-fc7bd8e5c79b","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10511
+Response: {"transactionId":"d7dc9655-8341-4448-9768-47aef0ef0fdc"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10511
+Response: {"transactionId":"42cd8dd6-95ff-497e-a64e-f98725f30f05","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10521
+Response: {"transactionId":"7867f533-872a-4f47-ba2f-28934beb5fcb"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10521
+Response: {"transactionId":"e8687b47-94cf-4b6d-8b03-80dace3e1659","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10573
+Response: {"transactionId":"653a1c8a-b9d6-43af-ba7d-53a63bac6c45"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10573
+Response: {"transactionId":"cf1a3bb9-4931-4a9c-82cf-065826592fad","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10682
+Response: {"transactionId":"5e32c4fd-921e-4d9e-bfc5-b5de581f1633"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10682
+Response: {"transactionId":"918f53d3-9d81-4b85-a644-b4e184700fb0","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+18)    <-- Delete all projects, set. URL: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"ea7996d3-ab2f-4c32-b124-8bcb11a7b9e2"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"c1498cdf-6a7b-4575-b4ea-dce6e6b7e6b3","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+Response: {"transactionId":"e0b043cc-12fe-4188-92c7-95055364d2e0"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+Response: {"transactionId":"1a8a160c-e559-4a79-9a84-5ceaaa18712f","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10022
+Response: {"transactionId":"f3614538-babb-40b0-8332-97c294799c05"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10022
+Response: {"transactionId":"8853dbfd-d0d1-445f-9bcc-792aecba5520","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10071
+Response: {"transactionId":"8f278a9f-50fa-4a74-94a2-553c096b00e0"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10071
+Response: {"transactionId":"53163e21-6af3-4eea-b76a-976c0be13113","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10074
+Response: {"transactionId":"ef914fe4-5952-424b-b32a-c1082812f755"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10074
+Response: {"transactionId":"da4582f0-bd9f-4560-9c97-674bc0ff8366","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10132
+Response: {"transactionId":"288011ef-6569-4776-a19c-de6524bf2b54"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10132
+Response: {"transactionId":"d065ea47-5c9c-4f8c-bf6d-857736a2dd7a","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10334
+Response: {"transactionId":"1cbf5e63-91f2-4b63-b1dd-a99e3b9cfb75"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10334
+Response: {"transactionId":"9d01deb4-d58e-4fbb-bd3e-9ab999f4bbd1","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10362
+Response: {"transactionId":"905cbc50-9dc6-4766-90d6-bae6670e572e"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10362
+Response: {"transactionId":"19f44a5d-3b55-4559-a1d9-d9ed67e68378","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10384
+Response: {"transactionId":"e43ac7e9-7317-4305-9c54-635c2f08dd48"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10384
+Response: {"transactionId":"4eacd30d-720b-43d1-bf31-dc00340b87a2","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10418
+Response: {"transactionId":"36bf9454-6b3e-4dd8-bbca-eab17f7d11f5"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10418
+Response: {"transactionId":"fd1fe671-ed14-4ddf-9309-ef00edc04a08","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10436
+Response: {"transactionId":"aaa34698-2e35-4f60-8429-c5fbd84ec278"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10436
+Response: {"transactionId":"508ff233-c46b-4f0f-8870-e6e84ec12661","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10479
+Response: {"transactionId":"572e4e30-848a-4d65-acc0-7e530e523d9e"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10479
+Response: {"transactionId":"205246dd-4a59-44e0-aa51-90d054d3f86b","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10482
+Response: {"transactionId":"1e1410be-6597-42bf-8ab9-9738c87b4e1e"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10482
+Response: {"transactionId":"fa1a208d-899d-4a25-ac0f-fc7bd8e5c79b","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10511
+Response: {"transactionId":"d7dc9655-8341-4448-9768-47aef0ef0fdc"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10511
+Response: {"transactionId":"42cd8dd6-95ff-497e-a64e-f98725f30f05","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10521
+Response: {"transactionId":"7867f533-872a-4f47-ba2f-28934beb5fcb"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10521
+Response: {"transactionId":"e8687b47-94cf-4b6d-8b03-80dace3e1659","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10573
+Response: {"transactionId":"653a1c8a-b9d6-43af-ba7d-53a63bac6c45"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10573
+Response: {"transactionId":"cf1a3bb9-4931-4a9c-82cf-065826592fad","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10682
+Response: {"transactionId":"5e32c4fd-921e-4d9e-bfc5-b5de581f1633"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10682
+Response: {"transactionId":"918f53d3-9d81-4b85-a644-b4e184700fb0","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10721
+Response: {"transactionId":"fb810182-7dca-4af0-8ada-b7738e3774a7"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10721
+Response: {"transactionId":"e9d6ff6f-a56a-40c1-aaba-5bd5e3202f7e","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+19)    <-- Delete all projects, set. URL: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"ea7996d3-ab2f-4c32-b124-8bcb11a7b9e2"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"c1498cdf-6a7b-4575-b4ea-dce6e6b7e6b3","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+Response: {"transactionId":"e0b043cc-12fe-4188-92c7-95055364d2e0"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+Response: {"transactionId":"1a8a160c-e559-4a79-9a84-5ceaaa18712f","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10022
+Response: {"transactionId":"f3614538-babb-40b0-8332-97c294799c05"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10022
+Response: {"transactionId":"8853dbfd-d0d1-445f-9bcc-792aecba5520","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10071
+Response: {"transactionId":"8f278a9f-50fa-4a74-94a2-553c096b00e0"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10071
+Response: {"transactionId":"53163e21-6af3-4eea-b76a-976c0be13113","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10074
+Response: {"transactionId":"ef914fe4-5952-424b-b32a-c1082812f755"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10074
+Response: {"transactionId":"da4582f0-bd9f-4560-9c97-674bc0ff8366","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10132
+Response: {"transactionId":"288011ef-6569-4776-a19c-de6524bf2b54"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10132
+Response: {"transactionId":"d065ea47-5c9c-4f8c-bf6d-857736a2dd7a","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10334
+Response: {"transactionId":"1cbf5e63-91f2-4b63-b1dd-a99e3b9cfb75"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10334
+Response: {"transactionId":"9d01deb4-d58e-4fbb-bd3e-9ab999f4bbd1","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10362
+Response: {"transactionId":"905cbc50-9dc6-4766-90d6-bae6670e572e"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10362
+Response: {"transactionId":"19f44a5d-3b55-4559-a1d9-d9ed67e68378","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10384
+Response: {"transactionId":"e43ac7e9-7317-4305-9c54-635c2f08dd48"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10384
+Response: {"transactionId":"4eacd30d-720b-43d1-bf31-dc00340b87a2","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10418
+Response: {"transactionId":"36bf9454-6b3e-4dd8-bbca-eab17f7d11f5"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10418
+Response: {"transactionId":"fd1fe671-ed14-4ddf-9309-ef00edc04a08","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10436
+Response: {"transactionId":"aaa34698-2e35-4f60-8429-c5fbd84ec278"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10436
+Response: {"transactionId":"508ff233-c46b-4f0f-8870-e6e84ec12661","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10479
+Response: {"transactionId":"572e4e30-848a-4d65-acc0-7e530e523d9e"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10479
+Response: {"transactionId":"205246dd-4a59-44e0-aa51-90d054d3f86b","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10482
+Response: {"transactionId":"1e1410be-6597-42bf-8ab9-9738c87b4e1e"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10482
+Response: {"transactionId":"fa1a208d-899d-4a25-ac0f-fc7bd8e5c79b","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10511
+Response: {"transactionId":"d7dc9655-8341-4448-9768-47aef0ef0fdc"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10511
+Response: {"transactionId":"42cd8dd6-95ff-497e-a64e-f98725f30f05","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10521
+Response: {"transactionId":"7867f533-872a-4f47-ba2f-28934beb5fcb"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10521
+Response: {"transactionId":"e8687b47-94cf-4b6d-8b03-80dace3e1659","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10573
+Response: {"transactionId":"653a1c8a-b9d6-43af-ba7d-53a63bac6c45"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10573
+Response: {"transactionId":"cf1a3bb9-4931-4a9c-82cf-065826592fad","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10682
+Response: {"transactionId":"5e32c4fd-921e-4d9e-bfc5-b5de581f1633"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10682
+Response: {"transactionId":"918f53d3-9d81-4b85-a644-b4e184700fb0","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10721
+Response: {"transactionId":"fb810182-7dca-4af0-8ada-b7738e3774a7"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10721
+Response: {"transactionId":"e9d6ff6f-a56a-40c1-aaba-5bd5e3202f7e","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10794
+Response: {"transactionId":"39143954-91d8-4bd7-969c-4ec30be817b2"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10794
+Response: {"transactionId":"e611fe0b-3aef-4b8d-a35e-dc7b76d649b4","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+20)    <-- Delete all projects, set. URL: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"ea7996d3-ab2f-4c32-b124-8bcb11a7b9e2"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"c1498cdf-6a7b-4575-b4ea-dce6e6b7e6b3","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+Response: {"transactionId":"e0b043cc-12fe-4188-92c7-95055364d2e0"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+Response: {"transactionId":"1a8a160c-e559-4a79-9a84-5ceaaa18712f","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10022
+Response: {"transactionId":"f3614538-babb-40b0-8332-97c294799c05"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10022
+Response: {"transactionId":"8853dbfd-d0d1-445f-9bcc-792aecba5520","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10071
+Response: {"transactionId":"8f278a9f-50fa-4a74-94a2-553c096b00e0"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10071
+Response: {"transactionId":"53163e21-6af3-4eea-b76a-976c0be13113","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10074
+Response: {"transactionId":"ef914fe4-5952-424b-b32a-c1082812f755"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10074
+Response: {"transactionId":"da4582f0-bd9f-4560-9c97-674bc0ff8366","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10132
+Response: {"transactionId":"288011ef-6569-4776-a19c-de6524bf2b54"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10132
+Response: {"transactionId":"d065ea47-5c9c-4f8c-bf6d-857736a2dd7a","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10334
+Response: {"transactionId":"1cbf5e63-91f2-4b63-b1dd-a99e3b9cfb75"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10334
+Response: {"transactionId":"9d01deb4-d58e-4fbb-bd3e-9ab999f4bbd1","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10362
+Response: {"transactionId":"905cbc50-9dc6-4766-90d6-bae6670e572e"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10362
+Response: {"transactionId":"19f44a5d-3b55-4559-a1d9-d9ed67e68378","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10384
+Response: {"transactionId":"e43ac7e9-7317-4305-9c54-635c2f08dd48"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10384
+Response: {"transactionId":"4eacd30d-720b-43d1-bf31-dc00340b87a2","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10418
+Response: {"transactionId":"36bf9454-6b3e-4dd8-bbca-eab17f7d11f5"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10418
+Response: {"transactionId":"fd1fe671-ed14-4ddf-9309-ef00edc04a08","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10436
+Response: {"transactionId":"aaa34698-2e35-4f60-8429-c5fbd84ec278"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10436
+Response: {"transactionId":"508ff233-c46b-4f0f-8870-e6e84ec12661","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10479
+Response: {"transactionId":"572e4e30-848a-4d65-acc0-7e530e523d9e"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10479
+Response: {"transactionId":"205246dd-4a59-44e0-aa51-90d054d3f86b","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10482
+Response: {"transactionId":"1e1410be-6597-42bf-8ab9-9738c87b4e1e"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10482
+Response: {"transactionId":"fa1a208d-899d-4a25-ac0f-fc7bd8e5c79b","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10511
+Response: {"transactionId":"d7dc9655-8341-4448-9768-47aef0ef0fdc"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10511
+Response: {"transactionId":"42cd8dd6-95ff-497e-a64e-f98725f30f05","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10521
+Response: {"transactionId":"7867f533-872a-4f47-ba2f-28934beb5fcb"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10521
+Response: {"transactionId":"e8687b47-94cf-4b6d-8b03-80dace3e1659","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10573
+Response: {"transactionId":"653a1c8a-b9d6-43af-ba7d-53a63bac6c45"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10573
+Response: {"transactionId":"cf1a3bb9-4931-4a9c-82cf-065826592fad","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10682
+Response: {"transactionId":"5e32c4fd-921e-4d9e-bfc5-b5de581f1633"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10682
+Response: {"transactionId":"918f53d3-9d81-4b85-a644-b4e184700fb0","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10721
+Response: {"transactionId":"fb810182-7dca-4af0-8ada-b7738e3774a7"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10721
+Response: {"transactionId":"e9d6ff6f-a56a-40c1-aaba-5bd5e3202f7e","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10794
+Response: {"transactionId":"39143954-91d8-4bd7-969c-4ec30be817b2"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10794
+Response: {"transactionId":"e611fe0b-3aef-4b8d-a35e-dc7b76d649b4","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10813
+Response: {"transactionId":"30dd8f1b-5572-4499-ac8a-a6c23a695ea3"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10813
+Response: {"transactionId":"01de3d42-d682-476c-88c4-5f88b3058861","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+21)    <-- Delete all projects, set. URL: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"ea7996d3-ab2f-4c32-b124-8bcb11a7b9e2"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"c1498cdf-6a7b-4575-b4ea-dce6e6b7e6b3","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+Response: {"transactionId":"e0b043cc-12fe-4188-92c7-95055364d2e0"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+Response: {"transactionId":"1a8a160c-e559-4a79-9a84-5ceaaa18712f","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10022
+Response: {"transactionId":"f3614538-babb-40b0-8332-97c294799c05"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10022
+Response: {"transactionId":"8853dbfd-d0d1-445f-9bcc-792aecba5520","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10071
+Response: {"transactionId":"8f278a9f-50fa-4a74-94a2-553c096b00e0"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10071
+Response: {"transactionId":"53163e21-6af3-4eea-b76a-976c0be13113","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10074
+Response: {"transactionId":"ef914fe4-5952-424b-b32a-c1082812f755"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10074
+Response: {"transactionId":"da4582f0-bd9f-4560-9c97-674bc0ff8366","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10132
+Response: {"transactionId":"288011ef-6569-4776-a19c-de6524bf2b54"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10132
+Response: {"transactionId":"d065ea47-5c9c-4f8c-bf6d-857736a2dd7a","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10334
+Response: {"transactionId":"1cbf5e63-91f2-4b63-b1dd-a99e3b9cfb75"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10334
+Response: {"transactionId":"9d01deb4-d58e-4fbb-bd3e-9ab999f4bbd1","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10362
+Response: {"transactionId":"905cbc50-9dc6-4766-90d6-bae6670e572e"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10362
+Response: {"transactionId":"19f44a5d-3b55-4559-a1d9-d9ed67e68378","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10384
+Response: {"transactionId":"e43ac7e9-7317-4305-9c54-635c2f08dd48"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10384
+Response: {"transactionId":"4eacd30d-720b-43d1-bf31-dc00340b87a2","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10418
+Response: {"transactionId":"36bf9454-6b3e-4dd8-bbca-eab17f7d11f5"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10418
+Response: {"transactionId":"fd1fe671-ed14-4ddf-9309-ef00edc04a08","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10436
+Response: {"transactionId":"aaa34698-2e35-4f60-8429-c5fbd84ec278"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10436
+Response: {"transactionId":"508ff233-c46b-4f0f-8870-e6e84ec12661","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10479
+Response: {"transactionId":"572e4e30-848a-4d65-acc0-7e530e523d9e"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10479
+Response: {"transactionId":"205246dd-4a59-44e0-aa51-90d054d3f86b","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10482
+Response: {"transactionId":"1e1410be-6597-42bf-8ab9-9738c87b4e1e"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10482
+Response: {"transactionId":"fa1a208d-899d-4a25-ac0f-fc7bd8e5c79b","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10511
+Response: {"transactionId":"d7dc9655-8341-4448-9768-47aef0ef0fdc"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10511
+Response: {"transactionId":"42cd8dd6-95ff-497e-a64e-f98725f30f05","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10521
+Response: {"transactionId":"7867f533-872a-4f47-ba2f-28934beb5fcb"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10521
+Response: {"transactionId":"e8687b47-94cf-4b6d-8b03-80dace3e1659","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10573
+Response: {"transactionId":"653a1c8a-b9d6-43af-ba7d-53a63bac6c45"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10573
+Response: {"transactionId":"cf1a3bb9-4931-4a9c-82cf-065826592fad","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10682
+Response: {"transactionId":"5e32c4fd-921e-4d9e-bfc5-b5de581f1633"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10682
+Response: {"transactionId":"918f53d3-9d81-4b85-a644-b4e184700fb0","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10721
+Response: {"transactionId":"fb810182-7dca-4af0-8ada-b7738e3774a7"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10721
+Response: {"transactionId":"e9d6ff6f-a56a-40c1-aaba-5bd5e3202f7e","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10794
+Response: {"transactionId":"39143954-91d8-4bd7-969c-4ec30be817b2"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10794
+Response: {"transactionId":"e611fe0b-3aef-4b8d-a35e-dc7b76d649b4","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10813
+Response: {"transactionId":"30dd8f1b-5572-4499-ac8a-a6c23a695ea3"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10813
+Response: {"transactionId":"01de3d42-d682-476c-88c4-5f88b3058861","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10825
+Response: {"transactionId":"ff013cef-2006-4b85-99d4-b9b1aabb59f8"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10825
+Response: {"transactionId":"51046bb5-136e-4fc0-a466-3fa2390826d1","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+22)    <-- Delete all projects, set. URL: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"ea7996d3-ab2f-4c32-b124-8bcb11a7b9e2"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"c1498cdf-6a7b-4575-b4ea-dce6e6b7e6b3","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+Response: {"transactionId":"e0b043cc-12fe-4188-92c7-95055364d2e0"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+Response: {"transactionId":"1a8a160c-e559-4a79-9a84-5ceaaa18712f","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10022
+Response: {"transactionId":"f3614538-babb-40b0-8332-97c294799c05"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10022
+Response: {"transactionId":"8853dbfd-d0d1-445f-9bcc-792aecba5520","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10071
+Response: {"transactionId":"8f278a9f-50fa-4a74-94a2-553c096b00e0"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10071
+Response: {"transactionId":"53163e21-6af3-4eea-b76a-976c0be13113","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10074
+Response: {"transactionId":"ef914fe4-5952-424b-b32a-c1082812f755"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10074
+Response: {"transactionId":"da4582f0-bd9f-4560-9c97-674bc0ff8366","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10132
+Response: {"transactionId":"288011ef-6569-4776-a19c-de6524bf2b54"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10132
+Response: {"transactionId":"d065ea47-5c9c-4f8c-bf6d-857736a2dd7a","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10334
+Response: {"transactionId":"1cbf5e63-91f2-4b63-b1dd-a99e3b9cfb75"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10334
+Response: {"transactionId":"9d01deb4-d58e-4fbb-bd3e-9ab999f4bbd1","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10362
+Response: {"transactionId":"905cbc50-9dc6-4766-90d6-bae6670e572e"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10362
+Response: {"transactionId":"19f44a5d-3b55-4559-a1d9-d9ed67e68378","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10384
+Response: {"transactionId":"e43ac7e9-7317-4305-9c54-635c2f08dd48"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10384
+Response: {"transactionId":"4eacd30d-720b-43d1-bf31-dc00340b87a2","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10418
+Response: {"transactionId":"36bf9454-6b3e-4dd8-bbca-eab17f7d11f5"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10418
+Response: {"transactionId":"fd1fe671-ed14-4ddf-9309-ef00edc04a08","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10436
+Response: {"transactionId":"aaa34698-2e35-4f60-8429-c5fbd84ec278"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10436
+Response: {"transactionId":"508ff233-c46b-4f0f-8870-e6e84ec12661","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10479
+Response: {"transactionId":"572e4e30-848a-4d65-acc0-7e530e523d9e"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10479
+Response: {"transactionId":"205246dd-4a59-44e0-aa51-90d054d3f86b","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10482
+Response: {"transactionId":"1e1410be-6597-42bf-8ab9-9738c87b4e1e"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10482
+Response: {"transactionId":"fa1a208d-899d-4a25-ac0f-fc7bd8e5c79b","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10511
+Response: {"transactionId":"d7dc9655-8341-4448-9768-47aef0ef0fdc"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10511
+Response: {"transactionId":"42cd8dd6-95ff-497e-a64e-f98725f30f05","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10521
+Response: {"transactionId":"7867f533-872a-4f47-ba2f-28934beb5fcb"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10521
+Response: {"transactionId":"e8687b47-94cf-4b6d-8b03-80dace3e1659","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10573
+Response: {"transactionId":"653a1c8a-b9d6-43af-ba7d-53a63bac6c45"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10573
+Response: {"transactionId":"cf1a3bb9-4931-4a9c-82cf-065826592fad","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10682
+Response: {"transactionId":"5e32c4fd-921e-4d9e-bfc5-b5de581f1633"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10682
+Response: {"transactionId":"918f53d3-9d81-4b85-a644-b4e184700fb0","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10721
+Response: {"transactionId":"fb810182-7dca-4af0-8ada-b7738e3774a7"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10721
+Response: {"transactionId":"e9d6ff6f-a56a-40c1-aaba-5bd5e3202f7e","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10794
+Response: {"transactionId":"39143954-91d8-4bd7-969c-4ec30be817b2"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10794
+Response: {"transactionId":"e611fe0b-3aef-4b8d-a35e-dc7b76d649b4","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10813
+Response: {"transactionId":"30dd8f1b-5572-4499-ac8a-a6c23a695ea3"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10813
+Response: {"transactionId":"01de3d42-d682-476c-88c4-5f88b3058861","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10825
+Response: {"transactionId":"ff013cef-2006-4b85-99d4-b9b1aabb59f8"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10825
+Response: {"transactionId":"51046bb5-136e-4fc0-a466-3fa2390826d1","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10913
+Response: {"transactionId":"80bfeb2e-99b9-4d8e-9c41-a32661b61ccf"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10913
+Response: {"transactionId":"dec885f4-3293-4935-bb1e-6f77d0444f50","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+23)    <-- Delete all projects, set. URL: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"ea7996d3-ab2f-4c32-b124-8bcb11a7b9e2"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"c1498cdf-6a7b-4575-b4ea-dce6e6b7e6b3","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+Response: {"transactionId":"e0b043cc-12fe-4188-92c7-95055364d2e0"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+Response: {"transactionId":"1a8a160c-e559-4a79-9a84-5ceaaa18712f","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10022
+Response: {"transactionId":"f3614538-babb-40b0-8332-97c294799c05"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10022
+Response: {"transactionId":"8853dbfd-d0d1-445f-9bcc-792aecba5520","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10071
+Response: {"transactionId":"8f278a9f-50fa-4a74-94a2-553c096b00e0"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10071
+Response: {"transactionId":"53163e21-6af3-4eea-b76a-976c0be13113","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10074
+Response: {"transactionId":"ef914fe4-5952-424b-b32a-c1082812f755"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10074
+Response: {"transactionId":"da4582f0-bd9f-4560-9c97-674bc0ff8366","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10132
+Response: {"transactionId":"288011ef-6569-4776-a19c-de6524bf2b54"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10132
+Response: {"transactionId":"d065ea47-5c9c-4f8c-bf6d-857736a2dd7a","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10334
+Response: {"transactionId":"1cbf5e63-91f2-4b63-b1dd-a99e3b9cfb75"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10334
+Response: {"transactionId":"9d01deb4-d58e-4fbb-bd3e-9ab999f4bbd1","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10362
+Response: {"transactionId":"905cbc50-9dc6-4766-90d6-bae6670e572e"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10362
+Response: {"transactionId":"19f44a5d-3b55-4559-a1d9-d9ed67e68378","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10384
+Response: {"transactionId":"e43ac7e9-7317-4305-9c54-635c2f08dd48"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10384
+Response: {"transactionId":"4eacd30d-720b-43d1-bf31-dc00340b87a2","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10418
+Response: {"transactionId":"36bf9454-6b3e-4dd8-bbca-eab17f7d11f5"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10418
+Response: {"transactionId":"fd1fe671-ed14-4ddf-9309-ef00edc04a08","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10436
+Response: {"transactionId":"aaa34698-2e35-4f60-8429-c5fbd84ec278"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10436
+Response: {"transactionId":"508ff233-c46b-4f0f-8870-e6e84ec12661","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10479
+Response: {"transactionId":"572e4e30-848a-4d65-acc0-7e530e523d9e"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10479
+Response: {"transactionId":"205246dd-4a59-44e0-aa51-90d054d3f86b","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10482
+Response: {"transactionId":"1e1410be-6597-42bf-8ab9-9738c87b4e1e"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10482
+Response: {"transactionId":"fa1a208d-899d-4a25-ac0f-fc7bd8e5c79b","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10511
+Response: {"transactionId":"d7dc9655-8341-4448-9768-47aef0ef0fdc"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10511
+Response: {"transactionId":"42cd8dd6-95ff-497e-a64e-f98725f30f05","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10521
+Response: {"transactionId":"7867f533-872a-4f47-ba2f-28934beb5fcb"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10521
+Response: {"transactionId":"e8687b47-94cf-4b6d-8b03-80dace3e1659","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10573
+Response: {"transactionId":"653a1c8a-b9d6-43af-ba7d-53a63bac6c45"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10573
+Response: {"transactionId":"cf1a3bb9-4931-4a9c-82cf-065826592fad","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10682
+Response: {"transactionId":"5e32c4fd-921e-4d9e-bfc5-b5de581f1633"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10682
+Response: {"transactionId":"918f53d3-9d81-4b85-a644-b4e184700fb0","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10721
+Response: {"transactionId":"fb810182-7dca-4af0-8ada-b7738e3774a7"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10721
+Response: {"transactionId":"e9d6ff6f-a56a-40c1-aaba-5bd5e3202f7e","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10794
+Response: {"transactionId":"39143954-91d8-4bd7-969c-4ec30be817b2"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10794
+Response: {"transactionId":"e611fe0b-3aef-4b8d-a35e-dc7b76d649b4","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10813
+Response: {"transactionId":"30dd8f1b-5572-4499-ac8a-a6c23a695ea3"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10813
+Response: {"transactionId":"01de3d42-d682-476c-88c4-5f88b3058861","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10825
+Response: {"transactionId":"ff013cef-2006-4b85-99d4-b9b1aabb59f8"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10825
+Response: {"transactionId":"51046bb5-136e-4fc0-a466-3fa2390826d1","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10913
+Response: {"transactionId":"80bfeb2e-99b9-4d8e-9c41-a32661b61ccf"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10913
+Response: {"transactionId":"dec885f4-3293-4935-bb1e-6f77d0444f50","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10957
+Response: {"transactionId":"176b10ea-a711-4a5b-9324-99fbcc69b932"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10957
+Response: {"transactionId":"42808605-a2d8-41c7-8393-d17d09e98821","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+24)    <-- Delete all projects, set. URL: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"ea7996d3-ab2f-4c32-b124-8bcb11a7b9e2"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"c1498cdf-6a7b-4575-b4ea-dce6e6b7e6b3","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+Response: {"transactionId":"e0b043cc-12fe-4188-92c7-95055364d2e0"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+Response: {"transactionId":"1a8a160c-e559-4a79-9a84-5ceaaa18712f","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10022
+Response: {"transactionId":"f3614538-babb-40b0-8332-97c294799c05"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10022
+Response: {"transactionId":"8853dbfd-d0d1-445f-9bcc-792aecba5520","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10071
+Response: {"transactionId":"8f278a9f-50fa-4a74-94a2-553c096b00e0"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10071
+Response: {"transactionId":"53163e21-6af3-4eea-b76a-976c0be13113","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10074
+Response: {"transactionId":"ef914fe4-5952-424b-b32a-c1082812f755"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10074
+Response: {"transactionId":"da4582f0-bd9f-4560-9c97-674bc0ff8366","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10132
+Response: {"transactionId":"288011ef-6569-4776-a19c-de6524bf2b54"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10132
+Response: {"transactionId":"d065ea47-5c9c-4f8c-bf6d-857736a2dd7a","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10334
+Response: {"transactionId":"1cbf5e63-91f2-4b63-b1dd-a99e3b9cfb75"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10334
+Response: {"transactionId":"9d01deb4-d58e-4fbb-bd3e-9ab999f4bbd1","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10362
+Response: {"transactionId":"905cbc50-9dc6-4766-90d6-bae6670e572e"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10362
+Response: {"transactionId":"19f44a5d-3b55-4559-a1d9-d9ed67e68378","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10384
+Response: {"transactionId":"e43ac7e9-7317-4305-9c54-635c2f08dd48"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10384
+Response: {"transactionId":"4eacd30d-720b-43d1-bf31-dc00340b87a2","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10418
+Response: {"transactionId":"36bf9454-6b3e-4dd8-bbca-eab17f7d11f5"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10418
+Response: {"transactionId":"fd1fe671-ed14-4ddf-9309-ef00edc04a08","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10436
+Response: {"transactionId":"aaa34698-2e35-4f60-8429-c5fbd84ec278"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10436
+Response: {"transactionId":"508ff233-c46b-4f0f-8870-e6e84ec12661","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10479
+Response: {"transactionId":"572e4e30-848a-4d65-acc0-7e530e523d9e"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10479
+Response: {"transactionId":"205246dd-4a59-44e0-aa51-90d054d3f86b","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10482
+Response: {"transactionId":"1e1410be-6597-42bf-8ab9-9738c87b4e1e"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10482
+Response: {"transactionId":"fa1a208d-899d-4a25-ac0f-fc7bd8e5c79b","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10511
+Response: {"transactionId":"d7dc9655-8341-4448-9768-47aef0ef0fdc"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10511
+Response: {"transactionId":"42cd8dd6-95ff-497e-a64e-f98725f30f05","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10521
+Response: {"transactionId":"7867f533-872a-4f47-ba2f-28934beb5fcb"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10521
+Response: {"transactionId":"e8687b47-94cf-4b6d-8b03-80dace3e1659","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10573
+Response: {"transactionId":"653a1c8a-b9d6-43af-ba7d-53a63bac6c45"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10573
+Response: {"transactionId":"cf1a3bb9-4931-4a9c-82cf-065826592fad","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10682
+Response: {"transactionId":"5e32c4fd-921e-4d9e-bfc5-b5de581f1633"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10682
+Response: {"transactionId":"918f53d3-9d81-4b85-a644-b4e184700fb0","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10721
+Response: {"transactionId":"fb810182-7dca-4af0-8ada-b7738e3774a7"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10721
+Response: {"transactionId":"e9d6ff6f-a56a-40c1-aaba-5bd5e3202f7e","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10794
+Response: {"transactionId":"39143954-91d8-4bd7-969c-4ec30be817b2"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10794
+Response: {"transactionId":"e611fe0b-3aef-4b8d-a35e-dc7b76d649b4","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10813
+Response: {"transactionId":"30dd8f1b-5572-4499-ac8a-a6c23a695ea3"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10813
+Response: {"transactionId":"01de3d42-d682-476c-88c4-5f88b3058861","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10825
+Response: {"transactionId":"ff013cef-2006-4b85-99d4-b9b1aabb59f8"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10825
+Response: {"transactionId":"51046bb5-136e-4fc0-a466-3fa2390826d1","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10913
+Response: {"transactionId":"80bfeb2e-99b9-4d8e-9c41-a32661b61ccf"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10913
+Response: {"transactionId":"dec885f4-3293-4935-bb1e-6f77d0444f50","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10957
+Response: {"transactionId":"176b10ea-a711-4a5b-9324-99fbcc69b932"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10957
+Response: {"transactionId":"42808605-a2d8-41c7-8393-d17d09e98821","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10970
+Response: {"transactionId":"03e2fbe1-18d0-4454-84ba-1e407a39aaf3"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10970
+Response: {"transactionId":"101813a8-d0a6-4f67-afc0-b7079e43cdb0","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+25)    <-- Delete all projects, set. URL: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"ea7996d3-ab2f-4c32-b124-8bcb11a7b9e2"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10003
+Response: {"transactionId":"c1498cdf-6a7b-4575-b4ea-dce6e6b7e6b3","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+Response: {"transactionId":"e0b043cc-12fe-4188-92c7-95055364d2e0"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10006
+Response: {"transactionId":"1a8a160c-e559-4a79-9a84-5ceaaa18712f","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10022
+Response: {"transactionId":"f3614538-babb-40b0-8332-97c294799c05"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10022
+Response: {"transactionId":"8853dbfd-d0d1-445f-9bcc-792aecba5520","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10071
+Response: {"transactionId":"8f278a9f-50fa-4a74-94a2-553c096b00e0"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10071
+Response: {"transactionId":"53163e21-6af3-4eea-b76a-976c0be13113","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10074
+Response: {"transactionId":"ef914fe4-5952-424b-b32a-c1082812f755"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10074
+Response: {"transactionId":"da4582f0-bd9f-4560-9c97-674bc0ff8366","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10132
+Response: {"transactionId":"288011ef-6569-4776-a19c-de6524bf2b54"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10132
+Response: {"transactionId":"d065ea47-5c9c-4f8c-bf6d-857736a2dd7a","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10334
+Response: {"transactionId":"1cbf5e63-91f2-4b63-b1dd-a99e3b9cfb75"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10334
+Response: {"transactionId":"9d01deb4-d58e-4fbb-bd3e-9ab999f4bbd1","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10362
+Response: {"transactionId":"905cbc50-9dc6-4766-90d6-bae6670e572e"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10362
+Response: {"transactionId":"19f44a5d-3b55-4559-a1d9-d9ed67e68378","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10384
+Response: {"transactionId":"e43ac7e9-7317-4305-9c54-635c2f08dd48"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10384
+Response: {"transactionId":"4eacd30d-720b-43d1-bf31-dc00340b87a2","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10418
+Response: {"transactionId":"36bf9454-6b3e-4dd8-bbca-eab17f7d11f5"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10418
+Response: {"transactionId":"fd1fe671-ed14-4ddf-9309-ef00edc04a08","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10436
+Response: {"transactionId":"aaa34698-2e35-4f60-8429-c5fbd84ec278"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10436
+Response: {"transactionId":"508ff233-c46b-4f0f-8870-e6e84ec12661","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10479
+Response: {"transactionId":"572e4e30-848a-4d65-acc0-7e530e523d9e"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10479
+Response: {"transactionId":"205246dd-4a59-44e0-aa51-90d054d3f86b","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10482
+Response: {"transactionId":"1e1410be-6597-42bf-8ab9-9738c87b4e1e"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10482
+Response: {"transactionId":"fa1a208d-899d-4a25-ac0f-fc7bd8e5c79b","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10511
+Response: {"transactionId":"d7dc9655-8341-4448-9768-47aef0ef0fdc"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10511
+Response: {"transactionId":"42cd8dd6-95ff-497e-a64e-f98725f30f05","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10521
+Response: {"transactionId":"7867f533-872a-4f47-ba2f-28934beb5fcb"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10521
+Response: {"transactionId":"e8687b47-94cf-4b6d-8b03-80dace3e1659","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10573
+Response: {"transactionId":"653a1c8a-b9d6-43af-ba7d-53a63bac6c45"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10573
+Response: {"transactionId":"cf1a3bb9-4931-4a9c-82cf-065826592fad","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10682
+Response: {"transactionId":"5e32c4fd-921e-4d9e-bfc5-b5de581f1633"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10682
+Response: {"transactionId":"918f53d3-9d81-4b85-a644-b4e184700fb0","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10721
+Response: {"transactionId":"fb810182-7dca-4af0-8ada-b7738e3774a7"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10721
+Response: {"transactionId":"e9d6ff6f-a56a-40c1-aaba-5bd5e3202f7e","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10794
+Response: {"transactionId":"39143954-91d8-4bd7-969c-4ec30be817b2"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10794
+Response: {"transactionId":"e611fe0b-3aef-4b8d-a35e-dc7b76d649b4","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10813
+Response: {"transactionId":"30dd8f1b-5572-4499-ac8a-a6c23a695ea3"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10813
+Response: {"transactionId":"01de3d42-d682-476c-88c4-5f88b3058861","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10825
+Response: {"transactionId":"ff013cef-2006-4b85-99d4-b9b1aabb59f8"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10825
+Response: {"transactionId":"51046bb5-136e-4fc0-a466-3fa2390826d1","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10913
+Response: {"transactionId":"80bfeb2e-99b9-4d8e-9c41-a32661b61ccf"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10913
+Response: {"transactionId":"dec885f4-3293-4935-bb1e-6f77d0444f50","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10957
+Response: {"transactionId":"176b10ea-a711-4a5b-9324-99fbcc69b932"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10957
+Response: {"transactionId":"42808605-a2d8-41c7-8393-d17d09e98821","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10970
+Response: {"transactionId":"03e2fbe1-18d0-4454-84ba-1e407a39aaf3"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10970
+Response: {"transactionId":"101813a8-d0a6-4f67-afc0-b7079e43cdb0","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Request: Delete: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10980
+Response: {"transactionId":"f191cc53-1dea-4782-8cb5-a3f6d103500f"}
+Request: GET: https://cmac-dev.app.wtcdev2.paas.fedex.com/cmac/v3/projects/10980
+Response: {"transactionId":"404056c5-57c9-4365-ab84-b6b1ce97b5d9","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR","message":"GENERIC.ERROR"}]}
+Scenario_Passed
+
+Execution Time in seconds: 8  (8216 miliseconds)
+Passed: 25 - Failed: 0
+

@@ -1,0 +1,57 @@
+073018T094244: OAuth: https://api.fedex.com/auth/oauth/v2/token  Iden: l7xx1b191a635e37469cbaf159069c943955  Secret: 9012782ae99945e39f4ffacf1f80dcdb
+
+073018T094245: $APIG$ Endpoint is being used on Level 7.
+IssueURL = https://api.fedex.com/security/v1/pin
+VerifyURL = https://api.fedex.com/security/v1/pin/verify
+VelocityURL = https://api.fedex.com/security/v1/addresses/velocitycheck
+
+
+<-- VerifyPinThreshold        OrgName: FDM-POSTCARD-PIN
+073018T094245: asdfasdfasdfasdfasdfasdf
+073018T094246: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"bvlasavutv-zsybpzdtocpffclomknrxgsp"}
+073018T094246: Response: {"transactionId":"0846c7a3-b48c-46bd-821e-8ff2225a6527","output":{"pinOTP":"686784","pinExpirationDate":"08/20/2018 02:42 PM GMT"}}
+073018T094246: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"bvlasavutv-zsybpzdtocpffclomknrxgsp"}
+073018T094246: Response: {"transactionId":"c79c03f4-4ad7-4314-a062-dd4f0fcc4815","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+073018T094246: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"bvlasavutv-zsybpzdtocpffclomknrxgsp"}
+073018T094247: Response: {"transactionId":"3b6769ad-979a-414d-8d2b-531f63484480","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+073018T094247: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"bvlasavutv-zsybpzdtocpffclomknrxgsp"}
+073018T094247: Response: {"transactionId":"041de73e-bbba-41da-b7c2-7d886053ec31","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+073018T094247: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"bvlasavutv-zsybpzdtocpffclomknrxgsp"}
+073018T094247: Response: {"transactionId":"0ac48111-de2c-4917-8ed8-f609f164a87e","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+073018T094247: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"bvlasavutv-zsybpzdtocpffclomknrxgsp"}
+073018T094247: Response: {"transactionId":"9e227008-a6e4-49fc-aba5-b2d8de0d2e64","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+073018T094247: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"bvlasavutv-zsybpzdtocpffclomknrxgsp"}
+073018T094247: Response: {"transactionId":"de1d8ad1-8759-473d-a99d-da7888a0bb29","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+073018T094247: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"bvlasavutv-zsybpzdtocpffclomknrxgsp"}
+073018T094248: Response: {"transactionId":"fa2d5b9b-4b60-4875-b895-9eb3d581e1d5","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+073018T094248: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"bvlasavutv-zsybpzdtocpffclomknrxgsp"}
+073018T094248: Response: {"transactionId":"b826cae6-01e6-4d3d-b03c-78eeef45a887","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+073018T094248: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"bvlasavutv-zsybpzdtocpffclomknrxgsp"}
+073018T094248: Response: {"transactionId":"3a4a3a73-d21a-4e48-89e8-31f935e0ac8a","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+073018T094248: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"bvlasavutv-zsybpzdtocpffclomknrxgsp"}
+073018T094248: Response: {"transactionId":"7f3c5c07-29c9-4299-8b57-5c65fd814d5e","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+073018T094248: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"bvlasavutv-zsybpzdtocpffclomknrxgsp"}
+073018T094248: Response: {"transactionId":"576e0a30-5aa3-422f-89f9-d73aec4a3bc6","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+073018T094248: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"bvlasavutv-zsybpzdtocpffclomknrxgsp"}
+073018T094248: Response: {"transactionId":"06a545bb-809b-49ab-905f-cb3e29e2ff3a","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+073018T094248: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"bvlasavutv-zsybpzdtocpffclomknrxgsp"}
+073018T094249: Response: {"transactionId":"c53f6b30-b8b9-4357-9511-2e7502cfd05f","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+073018T094249: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"bvlasavutv-zsybpzdtocpffclomknrxgsp"}
+073018T094249: Response: {"transactionId":"11681194-630c-4b4a-b724-749c40bdc94a","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+073018T094249: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"bvlasavutv-zsybpzdtocpffclomknrxgsp"}
+073018T094249: Response: {"transactionId":"cfbdf905-4a81-4ad9-82ab-76ef25cc6df8","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+073018T094249: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"bvlasavutv-zsybpzdtocpffclomknrxgsp"}
+073018T094249: Response: {"transactionId":"2aa0ff9f-6e4b-4dfa-81c8-b0e2b167bb8b","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+073018T094249: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"bvlasavutv-zsybpzdtocpffclomknrxgsp"}
+073018T094249: Response: {"transactionId":"725663cc-00c3-4aa4-b891-f9f7558ffb38","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+073018T094249: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"bvlasavutv-zsybpzdtocpffclomknrxgsp"}
+073018T094250: Response: {"transactionId":"6fa60824-1f8b-4727-ada5-2054b7d025fd","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+073018T094250: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"bvlasavutv-zsybpzdtocpffclomknrxgsp"}
+073018T094250: Response: {"transactionId":"cf6e0ff9-5e9e-4b12-abfb-b39328e0b01c","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+
+___________________________________________________________________________________________________
+|                        07-30-18 09:42:45:986 |                07-30-18 09:42:50:607 | 4 seconds |
+| VerifyPinThreshold OrgName: FDM-POSTCARD-PIN | cf6e0ff9-5e9e-4b12-abfb-b39328e0b01c |      Pass |
+|_________________________________________________________________________________________________|
+Passed: 1 - Failed: 0
+

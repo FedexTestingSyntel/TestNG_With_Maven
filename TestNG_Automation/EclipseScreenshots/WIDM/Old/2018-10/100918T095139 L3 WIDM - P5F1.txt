@@ -1,0 +1,174 @@
+
+WIDM_Registration_ErrorMessages
+3, US
+17 100918T094901: LoadAddress Received: _US_ __
+17 100918T094901: LoadAddress is Returning: [3614 DELVERNE RD, , BALTIMORE, Maryland, MD, 21218, US, US, United States, ]
+17 100918T094901: Generate Name is Returning: [FthreeUSniyvqar, M, Ltvyfbvx]
+17 100918T094918: New driver created. Chrome
+17 100918T094935: Cookies Deleted
+17 100918T094935: Navigating to https://wwwdrt.idev.fedex.com/FID?clienttype=dotcom&clickedPrint=false&action=entry&hazmatFilter=All&cntry_code=us&lang_code=en&option=fid
+17 100918T094941:     E--Element Clicked By.linkText: Sign Up Now!
+17 100918T094942:     E--Element Clicked By.id: createUserID
+17 100918T094942: Verified Text: First name is required.     By.id: firstempty
+17 100918T094943:     T--Text Entered !!!First in element By.id: firstName
+17 100918T094944:     E--Element Clicked By.id: createUserID
+17 100918T094945: 100918T094901 L3 WIDM Error Messages.png Screenshot Taken
+17 100918T094945: Verified Text: Invalid character in First name.     By.id: firstspecialchar
+17 100918T094946: Verified Text: Last name is required.     By.id: lastempty
+17 100918T094946: Verified Text: Email address is required.     By.id: emailempty
+17 100918T094946: Verified Text: Retyped email address is required.     By.id: reemailempty
+17 100918T094946: Verified Text: Address 1 is required.     By.id: add1empty
+17 100918T094946:     T--Text Entered L in element By.id: lastName
+17 100918T094946:     E--Element Clicked By.id: createUserID
+17 100918T094946: Verified Text: Last name must be at least 2 characters.     By.id: invalidlength
+17 100918T094947:     T--Text Entered !!Last in element By.id: lastName
+17 100918T094947:     E--Element Clicked By.id: createUserID
+17 100918T094947: Verified Text: Invalid character in Last name.     By.id: lnspecialchar
+17 100918T094948:     T--Text Entered !@#$%^&*() in element By.id: lastName
+17 100918T094948:     E--Element Clicked By.id: createUserID
+17 100918T094948: Verified Text: Invalid character in Last name.     By.id: lnspecialchar
+17 100918T094948:     T--Text Entered FthreeUSniyvqar in element By.id: firstName
+17 100918T094949:     T--Text Entered L3T100918T094901 in element By.id: uid
+
+Scenario_Passed
+
+WIDM_Registration
+3, US
+18 100918T094901: LoadAddress Received: _US_ __
+18 100918T094901: LoadAddress is Returning: [3614 DELVERNE RD, , BALTIMORE, Maryland, MD, 21218, US, US, United States, ]
+18 100918T094901: Generate Name is Returning: [FthreeWIDMnxskxte, M, Lklrvgbo]
+18 100918T094930: New driver created. Chrome
+18 100918T094936: Cookies Deleted
+18 100918T094936: Navigating to https://wwwdrt.idev.fedex.com/FID?clienttype=dotcom&clickedPrint=false&action=entry&hazmatFilter=All&cntry_code=us&lang_code=en&option=fid
+18 100918T094943:     E--Element Clicked By.linkText: Sign Up Now!
+18 100918T094944:     T--Text Entered FthreeWIDMnxskxte in element By.id: firstName
+18 100918T094945:     T--Text Entered Lklrvgbo in element By.id: lastName
+18 100918T094946:     T--Text Entered sean.kauffman.osv@fedex.com in element By.id: email
+18 100918T094946:     T--Text Entered sean.kauffman.osv@fedex.com in element By.id: retypeEmail
+18 100918T094947:     T--Text Entered 3614 DELVERNE RD in element By.id: address1
+18 100918T094947:     T--Text Entered  in element By.id: address2
+18 100918T094948:     T--Text Entered BALTIMORE in element By.id: city
+18 100918T094948:     T--Text Entered MD in element By.id: state
+18 100918T094949:     T--Text Entered 21218 in element By.id: zip
+18 100918T094949: Verified Text: Country/Territory     By.xpath: //*[@id='module.registration._expanded']/table/tbody/tr/td[1]/table/tbody/tr[24]/td[2]
+18 100918T094949:     S--Selected Element By.id: country1   by value us
+18 100918T094950:     T--Text Entered 9011111111 in element By.id: phone
+18 100918T094951:     T--Text Entered L3WIDMUS100918T094901 in element By.id: uid
+18 100918T094951: Userid is: L3WIDMUS100918T094901
+18 100918T094951:     T--Text Entered Test1234 in element By.id: password
+18 100918T094952:     T--Text Entered Test1234 in element By.id: retypePassword
+18 100918T094952:     S--Selected Element By.id: reminderQuestion   by visible text What is your mother's first name?
+18 100918T094953:     T--Text Entered mom in element By.id: reminderAnswer
+18 100918T094953:     E--Element Clicked By.id: acceptterms
+18 100918T094955: 100918T094901 L3 WIDM RegistrationConfirmation.png Screenshot Taken
+18 100918T094959:     E--Element Clicked By.id: createUserID
+18 100918T095000: fcl_uuid value is t13QrCDVJ4
+18 100918T095000: WIDM_Registration Completed: L3WIDMUS100918T094901/Test1234--t13QrCDVJ4
+18 100918T095002: 100918T094901 L3 WIDM Registration WIDM Confirmation.png Screenshot Taken
+[L3WIDMUS100918T094901, Test1234, t13QrCDVJ4]
+Scenario_Passed
+
+WIDM_ResetPasswordSecret
+3, US, L3Use08312016, Test1234, mom
+19 100918T094909: New driver created. Chrome
+19 100918T094915: Cookies Deleted
+19 100918T094915: Navigating to https://wwwdrt.idev.fedex.com/FID?clienttype=dotcom&clickedPrint=false&action=entry&hazmatFilter=All&cntry_code=us&lang_code=en&option=fid
+19 100918T094919:     E--Element Clicked By.name: forgotUidPwd
+19 100918T094919:     T--Text Entered L3Use08312016 in element By.name: userID
+19 100918T094921: 100918T094901 L3 WIDM Password Reset Test12345.png Screenshot Taken
+19 100918T094926:     E--Element Clicked By.xpath: //*[@id='module.forgotuseridandpassword._expanded']/table/tbody/tr/td[1]/form/table/tbody/tr[6]/td/input[2]
+19 100918T094930:     E--Element Clicked By.xpath: //*[@id='module.resetpasswordoptions._expanded']/table/tbody/tr/td[1]/form/table/tbody/tr[5]/td/input
+19 100918T094930:     T--Text Entered mom in element By.name: answer
+19 100918T094940: 100918T094901 L3 WIDM Reset Password Secret Test12345.png Screenshot Taken
+19 100918T094944:     E--Element Clicked By.name: action1
+19 100918T095029: Secret quesiton mom was not accepted.
+Scenario_Failed
+
+WIDM_RegistrationEFWS
+3, US
+22 100918T094901: LoadAddress Received: _US_ __
+22 100918T094901: LoadAddress is Returning: [3614 DELVERNE RD, , BALTIMORE, Maryland, MD, 21218, US, US, United States, ]
+22 100918T094901: Generate Name is Returning: [FthreeWIDMwukvrlq, M, Lemylecj]
+22 100918T095008: New driver created. Chrome
+22 100918T095014: Cookies Deleted
+22 100918T095014: Navigating to https://wwwdrt.idev.fedex.com/FID?clienttype=dotcom&clickedPrint=false&action=entry&hazmatFilter=All&cntry_code=us&lang_code=en&option=fid
+22 100918T095017:     E--Element Clicked By.linkText: Sign Up Now!
+22 100918T095017:     T--Text Entered FthreeWIDMwukvrlq in element By.id: firstName
+22 100918T095018:     T--Text Entered Lemylecj in element By.id: lastName
+22 100918T095019:     T--Text Entered sean.kauffman.osv@fedex.com in element By.id: email
+22 100918T095019:     T--Text Entered sean.kauffman.osv@fedex.com in element By.id: retypeEmail
+22 100918T095020:     T--Text Entered 3614 DELVERNE RD in element By.id: address1
+22 100918T095020:     T--Text Entered  in element By.id: address2
+22 100918T095021:     T--Text Entered BALTIMORE in element By.id: city
+22 100918T095021:     T--Text Entered MD in element By.id: state
+22 100918T095022:     T--Text Entered 21218 in element By.id: zip
+22 100918T095022: Verified Text: Country/Territory     By.xpath: //*[@id='module.registration._expanded']/table/tbody/tr/td[1]/table/tbody/tr[24]/td[2]
+22 100918T095023:     S--Selected Element By.id: country1   by value us
+22 100918T095025:     T--Text Entered 9011111111 in element By.id: phone
+22 100918T095026:     T--Text Entered L3EFWS100918T094901 in element By.id: uid
+22 100918T095026: Userid is: L3EFWS100918T094901
+22 100918T095027:     T--Text Entered Test1234 in element By.id: password
+22 100918T095028:     T--Text Entered Test1234 in element By.id: retypePassword
+22 100918T095030:     S--Selected Element By.id: reminderQuestion   by visible text What is your mother's first name?
+22 100918T095031:     T--Text Entered mom in element By.id: reminderAnswer
+22 100918T095032:     E--Element Clicked By.id: acceptterms
+22 100918T095032:     T--Text Entered robmus50@yahoo.com in element By.id: email
+22 100918T095033:     T--Text Entered robmus50@yahoo.com in element By.id: retypeEmail
+22 100918T095038: 100918T094901 L3 WIDM Registration EFWS.png Screenshot Taken
+22 100918T095041:     E--Element Clicked By.id: createUserID
+22 100918T095042: WIDM_Registration_EFWS Completed with: robmus50@yahoo.com
+22 100918T095044: 100918T094901 L3 WIDM Registration EFWS Message.png Screenshot Taken
+L3EFWS100918T094901 robmus50@yahoo.com
+Scenario_Passed
+
+ResetPasswordWIDM_Email
+3, L3Use08312016, Test1234
+21 100918T095026: New driver created. Chrome
+21 100918T095033: Cookies Deleted
+21 100918T095033: Navigating to https://wwwdrt.idev.fedex.com/en-us/home.html
+21 100918T095034: Navigating to https://wwwdrt.idev.fedex.com/PickupApp/login?locale=en_us
+21 100918T095036:     T--Text Entered L3Use08312016 in element By.name: username
+21 100918T095037:     T--Text Entered Test1234 in element By.name: password
+21 100918T095042:     E--Element Clicked By.name: login
+21 100918T095042: fcl_uuid value is 0w0g0h61em
+21 100918T095042: Login:L3Use08312016/Test1234
+21 100918T095042: Navigating to https://wwwdrt.idev.fedex.com/apps/myprofile/loginandcontact/?locale=en_US&cntry_code=us
+21 100918T095051: Cookies Deleted
+21 100918T095051: Navigating to https://wwwdrt.idev.fedex.com/FID?clienttype=dotcom&clickedPrint=false&action=entry&hazmatFilter=All&cntry_code=us&lang_code=en&option=fid
+21 100918T095053:     E--Element Clicked By.name: forgotUidPwd
+21 100918T095053:     T--Text Entered L3Use08312016 in element By.name: userID
+21 100918T095055:     E--Element Clicked By.xpath: //*[@id='module.forgotuseridandpassword._expanded']/table/tbody/tr/td[1]/form/table/tbody/tr[6]/td/input[2]
+21 100918T095056:     E--Element Clicked By.name: action2
+21 100918T095058: 100918T094901 L3 WIDM Password Reset Email.png Screenshot Taken
+21 100918T095058: Completed ResetPasswordWIDM using L3Use08312016. An email has been triggered and that test must be completed manually by sean.kauffman.osv@fedex.com
+L3Use08312016sean.kauffman.osv@fedex.com
+Scenario_Passed
+
+WIDM_ForgotUserID
+3, sean.kauffman.osv@fedex.com
+20 100918T095043: New driver created. Chrome
+20 100918T095050: Cookies Deleted
+20 100918T095050: Navigating to https://wwwdrt.idev.fedex.com/FID?clienttype=dotcom&clickedPrint=false&action=entry&hazmatFilter=All&cntry_code=us&lang_code=en&option=fid
+20 100918T095052:     E--Element Clicked By.name: forgotUidPwd
+20 100918T095053:     T--Text Entered sean.kauffman.osv@fedex.com in element By.name: email
+20 100918T095054: 100918T094901 L3 WIDM Forgot User Id.png Screenshot Taken
+20 100918T095135:     E--Element Clicked By.xpath: //*[@id='module.forgotuseridandpassword._expanded']/table/tbody/tr/td[3]/form/table/tbody/tr[6]/td/input[2]
+20 100918T095137: 100918T094901 L3 WIDM Forgot User Confirmation.png Screenshot Taken
+20 100918T095137: Completed Forgot User Confirmation using sean.kauffman.osv@fedex.com. An email has been triggered and that test must be completed manually by to see the user list.
+Email sent to + sean.kauffman.osv@fedex.com
+Scenario_Passed
+
+
+_____________________________________________________________________________________________________________________________________________
+|          10-09-18 09:49:00:522|              10-09-18 09:51:39:302|                                                       |      2 minutes|
+|WIDM_Registration_ErrorMessages|                              3, US|                                                       |Scenario_Passed|
+|              WIDM_Registration|                              3, US|          [L3WIDMUS100918T094901, Test1234, t13QrCDVJ4]|Scenario_Passed|
+|       WIDM_ResetPasswordSecret|3, US, L3Use08312016, Test1234, mom|19 100918T095029: Secret quesiton mom was not accepted.|Scenario_Failed|
+|          WIDM_RegistrationEFWS|                              3, US|                 L3EFWS100918T094901 robmus50@yahoo.com|Scenario_Passed|
+|        ResetPasswordWIDM_Email|         3, L3Use08312016, Test1234|               L3Use08312016sean.kauffman.osv@fedex.com|Scenario_Passed|
+|              WIDM_ForgotUserID|     3, sean.kauffman.osv@fedex.com|            Email sent to + sean.kauffman.osv@fedex.com|Scenario_Passed|
+|___________________________________________________________________________________________________________________________________________|
+Passed: 5 - Failed: 1
+
+
+

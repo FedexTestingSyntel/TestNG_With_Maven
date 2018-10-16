@@ -1,0 +1,84 @@
+082018T143515: OAuth: https://apidrt.idev.fedex.com:8443/auth/oauth/v2/token  Iden: l7xx1892f99a6f88470ba29abc141cd7bd8d  Secret: a4325d011acf4876b3fe3206931b8f5a
+082018T143516: AddressVelocity Request: {"orgName":"FDM-POSTCARD-PIN","userName":"mzgfmwqmbw-hbsrfedsjeefenufhexibskt"}
+082018T143517: AddressVelocity Response: {"transactionId":"1d4fceae-baad-411d-bd8f-7bbfa71f7294","output":{"advice":"ALLOW"}}
+082018T143517: AddressVelocity Request: {"orgName":"FDM-POSTCARD-PIN","userName":"mzgfmwqmbw-hbsrfedsjeefenufhexibskt"}
+082018T143517: AddressVelocity Response: {"transactionId":"39e1df87-bf81-42e2-a848-45eb75477be2","output":{"advice":"ALLOW"}}
+082018T143517: AddressVelocity Request: {"orgName":"FDM-POSTCARD-PIN","userName":"mzgfmwqmbw-hbsrfedsjeefenufhexibskt"}
+082018T143517: AddressVelocity Response: {"transactionId":"b3d8df75-83b7-4e03-a9f9-2f245bb24f03","output":{"advice":"ALLOW"}}
+082018T143517: AddressVelocity Request: {"orgName":"FDM-POSTCARD-PIN","userName":"mzgfmwqmbw-hbsrfedsjeefenufhexibskt"}
+082018T143517: AddressVelocity Response: {"transactionId":"21cb1647-ab92-4ea5-9aaa-5c52d9a7858d","output":{"advice":"ALLOW"}}
+082018T143517: AddressVelocity Request: {"orgName":"FDM-PHONE-PIN","userName":"aoxlshifab-armgywflqewrjhrursnfqawd"}
+082018T143518: AddressVelocity Response: {"transactionId":"beb7d28f-646b-4a94-80f9-27e7b91b826c","output":{"advice":"ALLOW"}}
+082018T143518: AddressVelocity Request: {"orgName":"FDM-PHONE-PIN","userName":"aoxlshifab-armgywflqewrjhrursnfqawd"}
+082018T143518: AddressVelocity Response: {"transactionId":"fb4dea01-560c-4df6-bfaa-a1dd668022a6","output":{"advice":"ALLOW"}}
+082018T143518: AddressVelocity Request: {"orgName":"FDM-PHONE-PIN","userName":"aoxlshifab-armgywflqewrjhrursnfqawd"}
+082018T143518: AddressVelocity Response: {"transactionId":"8de03aa2-f1fe-477c-b2d6-987de3a869cc","output":{"advice":"ALLOW"}}
+082018T143518: AddressVelocity Request: {"orgName":"FDM-PHONE-PIN","userName":"aoxlshifab-armgywflqewrjhrursnfqawd"}
+082018T143518: AddressVelocity Response: {"transactionId":"d80fb023-5257-4f83-824b-3541873839e9","output":{"advice":"ALLOW"}}
+082018T143518: AddressVelocity Request: {"orgName":"FDM-POSTCARD-PIN","userName":"yomzpusrut-fuzkahnhdkbwbkwphogytwjx"}
+082018T143518: AddressVelocity Response: {"transactionId":"3bd47757-5eca-429f-bad2-a05571f4e5e6","output":{"advice":"ALLOW"}}
+082018T143518: AddressVelocity Request: {"orgName":"FDM-POSTCARD-PIN","userName":"yomzpusrut-fuzkahnhdkbwbkwphogytwjx"}
+082018T143519: AddressVelocity Response: {"transactionId":"b4f866e1-49fa-4bec-b620-8404f9a5ea1b","output":{"advice":"ALLOW"}}
+082018T143519: AddressVelocity Request: {"orgName":"FDM-POSTCARD-PIN","userName":"yomzpusrut-fuzkahnhdkbwbkwphogytwjx"}
+082018T143519: AddressVelocity Response: {"transactionId":"a7cab537-8ab9-4612-b91b-078817307a6e","output":{"advice":"ALLOW"}}
+082018T143519: AddressVelocity Request: {"orgName":"FDM-POSTCARD-PIN","userName":"yomzpusrut-fuzkahnhdkbwbkwphogytwjx"}
+082018T143519: AddressVelocity Response: {"transactionId":"849f3068-b53e-4f85-bf87-228df1c5a300","output":{"advice":"ALLOW"}}
+082018T143519: AddressVelocity Request: {"orgName":"FDM-PHONE-PIN","userName":"cfrbqzerct-tindwrjtebqsmqdaqvedwpak"}
+082018T143519: AddressVelocity Response: {"transactionId":"4fce32cb-65e6-470c-8a0e-d716dcae7652","output":{"advice":"ALLOW"}}
+082018T143519: AddressVelocity Request: {"orgName":"FDM-PHONE-PIN","userName":"cfrbqzerct-tindwrjtebqsmqdaqvedwpak"}
+082018T143519: AddressVelocity Response: {"transactionId":"a6a7088c-20d3-4795-929a-0395a5288971","output":{"advice":"ALLOW"}}
+082018T143519: AddressVelocity Request: {"orgName":"FDM-PHONE-PIN","userName":"cfrbqzerct-tindwrjtebqsmqdaqvedwpak"}
+082018T143519: AddressVelocity Response: {"transactionId":"e4f2cd6a-05ea-4618-8953-c8b500fc382c","output":{"advice":"ALLOW"}}
+082018T143519: AddressVelocity Request: {"orgName":"FDM-PHONE-PIN","userName":"cfrbqzerct-tindwrjtebqsmqdaqvedwpak"}
+082018T143520: AddressVelocity Response: {"transactionId":"43bc8e46-a26a-4e9e-8326-d5b4799f86b5","output":{"advice":"ALLOW"}}
+
+
+@@ Passed Test Cases:
+
+
+@@ Failed Test Cases:
+082018T143520: 1)    <-- AddressVelocity: Verify that the address velocity of 3 is reached and the correct error code is received.  (Org:FDM-PHONE-PIN, Endpoint: APIG, Level: 3)
+Request: {"orgName":"FDM-PHONE-PIN","userName":"aoxlshifab-armgywflqewrjhrursnfqawd"}
+Response: {"transactionId":"beb7d28f-646b-4a94-80f9-27e7b91b826c","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-PHONE-PIN","userName":"aoxlshifab-armgywflqewrjhrursnfqawd"}
+Response: {"transactionId":"fb4dea01-560c-4df6-bfaa-a1dd668022a6","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-PHONE-PIN","userName":"aoxlshifab-armgywflqewrjhrursnfqawd"}
+Response: {"transactionId":"8de03aa2-f1fe-477c-b2d6-987de3a869cc","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-PHONE-PIN","userName":"aoxlshifab-armgywflqewrjhrursnfqawd"}
+Response: {"transactionId":"d80fb023-5257-4f83-824b-3541873839e9","output":{"advice":"ALLOW"}}
+Scenario_Failed
+
+082018T143520: 2)    <-- AddressVelocity: Verify that the address velocity of 3 is reached and the correct error code is received.  (Org:FDM-PHONE-PIN, Endpoint: Direct, Level: 3)
+Request: {"orgName":"FDM-PHONE-PIN","userName":"cfrbqzerct-tindwrjtebqsmqdaqvedwpak"}
+Response: {"transactionId":"4fce32cb-65e6-470c-8a0e-d716dcae7652","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-PHONE-PIN","userName":"cfrbqzerct-tindwrjtebqsmqdaqvedwpak"}
+Response: {"transactionId":"a6a7088c-20d3-4795-929a-0395a5288971","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-PHONE-PIN","userName":"cfrbqzerct-tindwrjtebqsmqdaqvedwpak"}
+Response: {"transactionId":"e4f2cd6a-05ea-4618-8953-c8b500fc382c","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-PHONE-PIN","userName":"cfrbqzerct-tindwrjtebqsmqdaqvedwpak"}
+Response: {"transactionId":"43bc8e46-a26a-4e9e-8326-d5b4799f86b5","output":{"advice":"ALLOW"}}
+Scenario_Failed
+
+082018T143520: 3)    <-- AddressVelocity: Verify that the address velocity of 3 is reached and the correct error code is received.  (Org:FDM-POSTCARD-PIN, Endpoint: APIG, Level: 3)
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"mzgfmwqmbw-hbsrfedsjeefenufhexibskt"}
+Response: {"transactionId":"1d4fceae-baad-411d-bd8f-7bbfa71f7294","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"mzgfmwqmbw-hbsrfedsjeefenufhexibskt"}
+Response: {"transactionId":"39e1df87-bf81-42e2-a848-45eb75477be2","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"mzgfmwqmbw-hbsrfedsjeefenufhexibskt"}
+Response: {"transactionId":"b3d8df75-83b7-4e03-a9f9-2f245bb24f03","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"mzgfmwqmbw-hbsrfedsjeefenufhexibskt"}
+Response: {"transactionId":"21cb1647-ab92-4ea5-9aaa-5c52d9a7858d","output":{"advice":"ALLOW"}}
+Scenario_Failed
+
+082018T143520: 4)    <-- AddressVelocity: Verify that the address velocity of 3 is reached and the correct error code is received.  (Org:FDM-POSTCARD-PIN, Endpoint: Direct, Level: 3)
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"yomzpusrut-fuzkahnhdkbwbkwphogytwjx"}
+Response: {"transactionId":"3bd47757-5eca-429f-bad2-a05571f4e5e6","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"yomzpusrut-fuzkahnhdkbwbkwphogytwjx"}
+Response: {"transactionId":"b4f866e1-49fa-4bec-b620-8404f9a5ea1b","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"yomzpusrut-fuzkahnhdkbwbkwphogytwjx"}
+Response: {"transactionId":"a7cab537-8ab9-4612-b91b-078817307a6e","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"yomzpusrut-fuzkahnhdkbwbkwphogytwjx"}
+Response: {"transactionId":"849f3068-b53e-4f85-bf87-228df1c5a300","output":{"advice":"ALLOW"}}
+Scenario_Failed
+
+

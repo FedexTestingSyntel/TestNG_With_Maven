@@ -1,0 +1,97 @@
+1 091318T164221: OAuth: https://apidev.idev.fedex.com:8443/auth/oauth/v2/token  Iden: l7xx1892f99a6f88470ba29abc141cd7bd8d  Secret: a4325d011acf4876b3fe3206931b8f5a
+1 091318T164222: [fcd033f6-7ffe-47c7-99d9-917092fbd664, 2, https://apidev.idev.fedex.com:8443/auth/oauth/v2/token, l7xx1892f99a6f88470ba29abc141cd7bd8d, a4325d011acf4876b3fe3206931b8f5a, https://apidev.idev.fedex.com:8443/security/v1/pin, https://apidev.idev.fedex.com:8443/security/v1/pin/verify, https://apidev.idev.fedex.com:8443/security/v1/addresses/velocitycheck, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/addressVelocityCheck, 3, 3, 10]
+1 091318T164222: OAuth: https://apidrt.idev.fedex.com:8443/auth/oauth/v2/token  Iden: l7xx1892f99a6f88470ba29abc141cd7bd8d  Secret: a4325d011acf4876b3fe3206931b8f5a
+1 091318T164222: [501803a4-9458-406c-a201-733931f1e65f, 3, https://apidrt.idev.fedex.com:8443/auth/oauth/v2/token, l7xx1892f99a6f88470ba29abc141cd7bd8d, a4325d011acf4876b3fe3206931b8f5a, https://apidrt.idev.fedex.com:8443/security/v1/pin, https://apidrt.idev.fedex.com:8443/security/v1/pin/verify, https://apidrt.idev.fedex.com:8443/security/v1/addresses/velocitycheck, http://mfacdrt-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfacdrt-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN, http://mfacdrt-cos-vip.test.cloud.fedex.com:9090/mfac/v3/addressVelocityCheck, 3, 3, 10]
+1 091318T164222: OAuth: https://apitest.fedex.com/auth/oauth/v2/token  Iden: l7xx55c591482e9c47bfb0556561cb9e8cfa  Secret: 0c33a18ff14c4bc7bc4880ef30067c52
+1 091318T164223: [l7xx55c591482e9c47bfb0556561cb9e8cfa, 6, https://apitest.fedex.com/auth/oauth/v2/token, l7xx55c591482e9c47bfb0556561cb9e8cfa, 0c33a18ff14c4bc7bc4880ef30067c52, https://apitest.fedex.com/security/v1/pin, https://apitest.fedex.com/security/v1/pin/verify, https://apitest.fedex.com/security/v1/addresses/velocitycheck, http://mfactest-cos-vip.prod.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfactest-cos-vip.prod.cloud.fedex.com:9090/mfac/v3/verifyPIN, http://mfactest-cos-vip.prod.cloud.fedex.com:9090/mfac/v3/addressVelocityCheck, 3, 3, 10]
+Thread -- Time (MMDDYY'T'HHMMSS): -- Current progress
+20 091318T164223: IssuePin Request: {"orgName":"FDM-POSTCARD-PIN","userName":"uixcculrcv-hfydywlfybekseykrxzluaks"}
+22 091318T164223: IssuePin Request: {"orgName":"FDM-POSTCARD-PIN","userName":"kboivctcti-eomucdnxjstofhyufrdortpu"}
+16 091318T164223: IssuePin Request: {"orgName":"FDM-POSTCARD-PIN","userName":"jmewbpzupu-eghigjygvrqfafccslaiwhkw"}
+23 091318T164223: IssuePin Request: {"orgName":"FDM-PHONE-PIN","userName":"lsnidsaamk-scabwgqvkjyaefsowgscsfzq"}
+25 091318T164223: IssuePin Request: {"orgName":"FDM-PHONE-PIN","userName":"vbgnaskzot-lrzditazpsiuaijfwokqcadr"}
+24 091318T164223: IssuePin Request: {"orgName":"FDM-POSTCARD-PIN","userName":"zoeetntpte-vptyrgwsfbnvclnpkcbdcpst"}
+19 091318T164223: IssuePin Request: {"orgName":"FDM-PHONE-PIN","userName":"vwylgeqfkm-ikapcrtfnuvuddcwvlgqulia"}
+21 091318T164223: IssuePin Request: {"orgName":"FDM-PHONE-PIN","userName":"claxtamztk-qamrntlnifavzvmdvbpppngu"}
+17 091318T164223: IssuePin Request: {"orgName":"FDM-PHONE-PIN","userName":"mjisiqxqwv-zfkzagabhyiolhkfplknxtuc"}
+18 091318T164223: IssuePin Request: {"orgName":"FDM-POSTCARD-PIN","userName":"qoqopeiwms-jwkbfmcyfckaguxfjbvgycoo"}
+20 091318T164223: IssuePin Response: {"transactionId":"ed7ee510-6e48-4b5d-a458-f82ead053f6f","output":{"pinOTP":"812203","pinExpirationDate":"09/13/2018 10:12 PM GMT"}}
+IssuePin passed [FDM-POSTCARD-PIN, 501803a4-9458-406c-a201-733931f1e65f, https://apidrt.idev.fedex.com:8443/security/v1/pin]
+23 091318T164224: IssuePin Response: {"transactionId":"8b0e48d4-ce12-44f9-8a16-09ff56269ee4","output":{"pinOTP":"450577","pinExpirationDate":"09/13/2018 09:52 PM GMT"}}
+IssuePin passed [FDM-PHONE-PIN, 501803a4-9458-406c-a201-733931f1e65f, http://mfacdrt-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN]
+25 091318T164224: IssuePin Response: {"transactionId":"6dfb9952-dd09-456a-a341-1d40f2fa5ff1","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR"}]}
+IssuePin failed [FDM-PHONE-PIN, l7xx55c591482e9c47bfb0556561cb9e8cfa, https://apitest.fedex.com/security/v1/pin]
+17 091318T164225: IssuePin Response: {"transactionId":"39bdfff0-b19e-47a4-8d0d-c396e4574279","output":{"pinOTP":"235333","pinExpirationDate":"09/13/2018 09:52 PM GMT"}}
+IssuePin passed [FDM-PHONE-PIN, fcd033f6-7ffe-47c7-99d9-917092fbd664, https://apidev.idev.fedex.com:8443/security/v1/pin]
+21 091318T164226: IssuePin Response: {"transactionId":"b50da431-4a2a-4aaa-8039-df4cfa12e954","output":{"pinOTP":"895034","pinExpirationDate":"09/13/2018 09:52 PM GMT"}}
+IssuePin passed [FDM-PHONE-PIN, 501803a4-9458-406c-a201-733931f1e65f, https://apidrt.idev.fedex.com:8443/security/v1/pin]
+22 091318T164226: IssuePin Response: {"transactionId":"ea2a6f26-d3cd-4423-a97c-5fd316b27889","output":{"pinOTP":"875796","pinExpirationDate":"09/13/2018 10:12 PM GMT"}}
+IssuePin passed [FDM-POSTCARD-PIN, 501803a4-9458-406c-a201-733931f1e65f, http://mfacdrt-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN]
+16 091318T164226: IssuePin Response: {"transactionId":"41e0da26-1f49-40bc-a66f-d7efcb4609f6","output":{"pinOTP":"001064","pinExpirationDate":"09/13/2018 10:12 PM GMT"}}
+IssuePin passed [FDM-POSTCARD-PIN, fcd033f6-7ffe-47c7-99d9-917092fbd664, https://apidev.idev.fedex.com:8443/security/v1/pin]
+24 091318T164228: IssuePin Response: {"transactionId":"21ad4662-cbe1-40cf-9b74-7b85ad25f120","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR"}]}
+IssuePin failed [FDM-POSTCARD-PIN, l7xx55c591482e9c47bfb0556561cb9e8cfa, https://apitest.fedex.com/security/v1/pin]
+19 091318T164228: IssuePin Response: {"transactionId":"97806be7-30c5-43b0-8b95-94dd16666c82","output":{"pinOTP":"241434","pinExpirationDate":"09/13/2018 09:52 PM GMT"}}
+IssuePin passed [FDM-PHONE-PIN, fcd033f6-7ffe-47c7-99d9-917092fbd664, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN]
+18 091318T164228: IssuePin Response: {"transactionId":"9cca924f-2eac-49d2-b99d-47f03a8a2e98","output":{"pinOTP":"796173","pinExpirationDate":"09/13/2018 10:12 PM GMT"}}
+IssuePin passed [FDM-POSTCARD-PIN, fcd033f6-7ffe-47c7-99d9-917092fbd664, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN]
+
+
+@@ Passed Test Cases:
+1)    <-- IssuePin: Verify that the user is able to request a pin.  (Org:FDM-PHONE-PIN, URL: http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN)
+Request: {"orgName":"FDM-PHONE-PIN","userName":"vwylgeqfkm-ikapcrtfnuvuddcwvlgqulia"}
+Response: {"transactionId":"97806be7-30c5-43b0-8b95-94dd16666c82","output":{"pinOTP":"241434","pinExpirationDate":"09/13/2018 09:52 PM GMT"}}
+Scenario_Passed
+
+2)    <-- IssuePin: Verify that the user is able to request a pin.  (Org:FDM-PHONE-PIN, URL: http://mfacdrt-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN)
+Request: {"orgName":"FDM-PHONE-PIN","userName":"lsnidsaamk-scabwgqvkjyaefsowgscsfzq"}
+Response: {"transactionId":"8b0e48d4-ce12-44f9-8a16-09ff56269ee4","output":{"pinOTP":"450577","pinExpirationDate":"09/13/2018 09:52 PM GMT"}}
+Scenario_Passed
+
+3)    <-- IssuePin: Verify that the user is able to request a pin.  (Org:FDM-PHONE-PIN, URL: https://apidev.idev.fedex.com:8443/security/v1/pin)
+Request: {"orgName":"FDM-PHONE-PIN","userName":"mjisiqxqwv-zfkzagabhyiolhkfplknxtuc"}
+Response: {"transactionId":"39bdfff0-b19e-47a4-8d0d-c396e4574279","output":{"pinOTP":"235333","pinExpirationDate":"09/13/2018 09:52 PM GMT"}}
+Scenario_Passed
+
+4)    <-- IssuePin: Verify that the user is able to request a pin.  (Org:FDM-PHONE-PIN, URL: https://apidrt.idev.fedex.com:8443/security/v1/pin)
+Request: {"orgName":"FDM-PHONE-PIN","userName":"claxtamztk-qamrntlnifavzvmdvbpppngu"}
+Response: {"transactionId":"b50da431-4a2a-4aaa-8039-df4cfa12e954","output":{"pinOTP":"895034","pinExpirationDate":"09/13/2018 09:52 PM GMT"}}
+Scenario_Passed
+
+5)    <-- IssuePin: Verify that the user is able to request a pin.  (Org:FDM-POSTCARD-PIN, URL: http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN)
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"qoqopeiwms-jwkbfmcyfckaguxfjbvgycoo"}
+Response: {"transactionId":"9cca924f-2eac-49d2-b99d-47f03a8a2e98","output":{"pinOTP":"796173","pinExpirationDate":"09/13/2018 10:12 PM GMT"}}
+Scenario_Passed
+
+6)    <-- IssuePin: Verify that the user is able to request a pin.  (Org:FDM-POSTCARD-PIN, URL: http://mfacdrt-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN)
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"kboivctcti-eomucdnxjstofhyufrdortpu"}
+Response: {"transactionId":"ea2a6f26-d3cd-4423-a97c-5fd316b27889","output":{"pinOTP":"875796","pinExpirationDate":"09/13/2018 10:12 PM GMT"}}
+Scenario_Passed
+
+7)    <-- IssuePin: Verify that the user is able to request a pin.  (Org:FDM-POSTCARD-PIN, URL: https://apidev.idev.fedex.com:8443/security/v1/pin)
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"jmewbpzupu-eghigjygvrqfafccslaiwhkw"}
+Response: {"transactionId":"41e0da26-1f49-40bc-a66f-d7efcb4609f6","output":{"pinOTP":"001064","pinExpirationDate":"09/13/2018 10:12 PM GMT"}}
+Scenario_Passed
+
+8)    <-- IssuePin: Verify that the user is able to request a pin.  (Org:FDM-POSTCARD-PIN, URL: https://apidrt.idev.fedex.com:8443/security/v1/pin)
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"uixcculrcv-hfydywlfybekseykrxzluaks"}
+Response: {"transactionId":"ed7ee510-6e48-4b5d-a458-f82ead053f6f","output":{"pinOTP":"812203","pinExpirationDate":"09/13/2018 10:12 PM GMT"}}
+Scenario_Passed
+
+
+
+@@ Failed Test Cases:
+9)    <-- IssuePin: Verify that the user is able to request a pin.  (Org:FDM-PHONE-PIN, URL: https://apitest.fedex.com/security/v1/pin)
+Request: {"orgName":"FDM-PHONE-PIN","userName":"vbgnaskzot-lrzditazpsiuaijfwokqcadr"}
+Response: {"transactionId":"6dfb9952-dd09-456a-a341-1d40f2fa5ff1","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR"}]}
+Scenario_Failed
+
+10)    <-- IssuePin: Verify that the user is able to request a pin.  (Org:FDM-POSTCARD-PIN, URL: https://apitest.fedex.com/security/v1/pin)
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"zoeetntpte-vptyrgwsfbnvclnpkcbdcpst"}
+Response: {"transactionId":"21ad4662-cbe1-40cf-9b74-7b85ad25f120","errors":[{"code":"SYSTEM.UNEXPECTED.ERROR"}]}
+Scenario_Failed
+
+
+Execution Time in seconds: 7  (7652 miliseconds)
+Passed: 8 - Failed: 2
+

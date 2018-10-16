@@ -1,0 +1,30 @@
+
+
+081318T163952: OAuth: https://apitest.fedex.com/auth/oauth/v2/token  Iden: l7xx55c591482e9c47bfb0556561cb9e8cfa  Secret: 0c33a18ff14c4bc7bc4880ef30067c52
+081318T163952: IssuePin Request: {"orgName":"FDM-POSTCARD-PIN","userName":"pjohtxzipp-gbyhbfhwhhzxxfvvottlbiiy"}
+081318T163953: IssuePin Response: {"transactionId":"a9381345-3a0c-4d19-ba6d-0894c7ae0bf6","output":{"pinOTP":"131804","pinExpirationDate":"09/03/2018 09:39 PM GMT"}}
+081318T163953: VerifyPin Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"131804","userName":"pjohtxzipp-gbyhbfhwhhzxxfvvottlbiiy"}
+081318T163953: VerifyPin Response: {"transactionId":"27d16742-4b8a-4c0e-9fd1-886008b0e99c","output":{"daysLeftToExpire":21,"message":"Success"}}
+081318T163953: IssuePin Request: {"orgName":"FDM-PHONE-PIN","userName":"bgctejjxwy-ikfyvuriixjqrpfsfxkfufjy"}
+081318T163953: IssuePin Response: {"transactionId":"1ce512e3-3bc5-4f26-8034-aa1e25476181","output":{"pinOTP":"344251","pinExpirationDate":"08/13/2018 09:49 PM GMT"}}
+081318T163953: VerifyPin Request: {"orgName":"FDM-PHONE-PIN","otpInput":"344251","userName":"bgctejjxwy-ikfyvuriixjqrpfsfxkfufjy"}
+081318T163953: VerifyPin Response: {"transactionId":"04f156c3-1063-477b-9e75-d9fa348bd183","output":{"daysLeftToExpire":1,"message":"Success"}}
+
+@@ Passed Test Cases:
+081318T163953: 1)    <-- VerifyPinValid: Verify that user is able to request a pin and then verify that can recieve success when using the generated pin.
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"pjohtxzipp-gbyhbfhwhhzxxfvvottlbiiy"}
+Response: {"transactionId":"a9381345-3a0c-4d19-ba6d-0894c7ae0bf6","output":{"pinOTP":"131804","pinExpirationDate":"09/03/2018 09:39 PM GMT"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"131804","userName":"pjohtxzipp-gbyhbfhwhhzxxfvvottlbiiy"}
+Response: {"transactionId":"27d16742-4b8a-4c0e-9fd1-886008b0e99c","output":{"daysLeftToExpire":21,"message":"Success"}}
+Scenario_Passed
+
+081318T163953: 2)    <-- VerifyPinValid: Verify that user is able to request a pin and then verify that can recieve success when using the generated pin.
+Request: {"orgName":"FDM-PHONE-PIN","userName":"bgctejjxwy-ikfyvuriixjqrpfsfxkfufjy"}
+Response: {"transactionId":"1ce512e3-3bc5-4f26-8034-aa1e25476181","output":{"pinOTP":"344251","pinExpirationDate":"08/13/2018 09:49 PM GMT"}}
+Request: {"orgName":"FDM-PHONE-PIN","otpInput":"344251","userName":"bgctejjxwy-ikfyvuriixjqrpfsfxkfufjy"}
+Response: {"transactionId":"04f156c3-1063-477b-9e75-d9fa348bd183","output":{"daysLeftToExpire":1,"message":"Success"}}
+Scenario_Passed
+
+
+@@ Failed Test Cases:
+

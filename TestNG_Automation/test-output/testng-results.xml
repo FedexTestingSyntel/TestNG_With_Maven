@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="WRTT_Suite" duration-ms="96771" started-at="2018-10-16T02:16:43Z" finished-at="2018-10-16T02:18:20Z">
+    <groups>
+    </groups>
+    <test name="WRTT_Test" duration-ms="96771" started-at="2018-10-16T02:16:43Z" finished-at="2018-10-16T02:18:20Z">
+      <class name="WaterfallApplications.WRTT">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:WaterfallApplications.WRTT@44f75083]" name="beforeClass" is-config="true" duration-ms="16" started-at="2018-10-16T02:16:43Z" finished-at="2018-10-16T02:16:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="WRTT_SpalshPage_eCRV(java.lang.String, java.lang.String)[pri:0, instance:WaterfallApplications.WRTT@44f75083]" name="WRTT_SpalshPage_eCRV" duration-ms="32752" started-at="2018-10-16T02:16:43Z" data-provider="dp" finished-at="2018-10-16T02:17:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[US]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WRTT_SpalshPage_eCRV -->
+        <test-method status="PASS" signature="WRTT_Rate_Sheet(java.lang.String, boolean, int, boolean, boolean)[pri:0, instance:WaterfallApplications.WRTT@44f75083]" name="WRTT_Rate_Sheet" duration-ms="48780" started-at="2018-10-16T02:16:43Z" data-provider="dp" finished-at="2018-10-16T02:17:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WRTT_Rate_Sheet -->
+        <test-method status="PASS" signature="WRTT_Rate_Sheet(java.lang.String, boolean, int, boolean, boolean)[pri:0, instance:WaterfallApplications.WRTT@44f75083]" name="WRTT_Rate_Sheet" duration-ms="82282" started-at="2018-10-16T02:16:43Z" data-provider="dp" finished-at="2018-10-16T02:18:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[14]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WRTT_Rate_Sheet -->
+        <test-method status="PASS" signature="WRTT_eCRV_Page(java.lang.String, java.lang.String)[pri:0, instance:WaterfallApplications.WRTT@44f75083]" name="WRTT_eCRV_Page" duration-ms="94634" started-at="2018-10-16T02:16:43Z" data-provider="dp" finished-at="2018-10-16T02:18:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[US]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WRTT_eCRV_Page -->
+        <test-method status="PASS" signature="WRTT_Rate_Sheet(java.lang.String, boolean, int, boolean, boolean)[pri:0, instance:WaterfallApplications.WRTT@44f75083]" name="WRTT_Rate_Sheet" duration-ms="53484" started-at="2018-10-16T02:16:43Z" data-provider="dp" finished-at="2018-10-16T02:17:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WRTT_Rate_Sheet -->
+      </class> <!-- WaterfallApplications.WRTT -->
+    </test> <!-- WRTT_Test -->
+  </suite> <!-- WRTT_Suite -->
+</testng-results>

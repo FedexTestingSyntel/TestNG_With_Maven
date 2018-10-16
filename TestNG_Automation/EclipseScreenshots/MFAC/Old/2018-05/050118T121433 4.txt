@@ -1,0 +1,145 @@
+050118T121410: Token request: {  "access_token":"cf8bc3d3-23c0-4a99-bf5c-03d2385cfa8b",  "token_type":"Bearer",  "expires_in":3600,  "scope":"oob"}
+050118T121410: IssueURL = https://apistress.idev.fedex.com/security/v1/pin
+VerifyURL = https://apistress.idev.fedex.com/security/v1/pin/verify
+VelocityURL = https://apistress.idev.fedex.com/security/v1/addresses/velocitycheck
+050118T121410: 
+<-- AddressVelocity starting.    OrgName: FDM-POSTCARD-PIN
+050118T121410: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"8rI7VRKXLX-XvMkHt6Ln1PoJavaXWybc9fO"}
+050118T121411: Response: Invalid API Key
+050118T121411: 
+<-- IssuePin starting.    OrgName: FDM-POSTCARD-PIN
+050118T121411: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"jiHMwoZz8O-fk7GjuFd9pKHA4LuTSyrOlFW"}
+050118T121411: Response: Invalid API Key
+050118T121411: 
+<-- IssuePinVelocity starting.    OrgName: FDM-POSTCARD-PIN
+050118T121411: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"ne3hhtTxkM-dtBb3lLd2X7aLLVrCTMrvpxH"}
+050118T121412: Response: Invalid API Key
+050118T121412: 
+<-- VerifyPinNoLongerValid starting.    OrgName: FDM-POSTCARD-PIN
+050118T121412: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"2Y2Yhyy7tj-BxUkYdZiGmSoqa6zaxJI4jHm"}
+050118T121412: Response: Invalid API Key
+050118T121412: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"Invalid API Key","userName":"2Y2Yhyy7tj-BxUkYdZiGmSoqa6zaxJI4jHm"}
+050118T121412: Response: Invalid API Key
+050118T121412: 
+<-- VerifyPinValid starting.    OrgName: FDM-POSTCARD-PIN
+050118T121412: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"EWAtklufkX-atWObyDWuHRHYql2S1hCN9vY"}
+050118T121413: Response: Invalid API Key
+050118T121413: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"Invalid API Key","userName":"EWAtklufkX-atWObyDWuHRHYql2S1hCN9vY"}
+050118T121413: Response: Invalid API Key
+050118T121413: 
+<-- zIssuePinExpiration starting.    OrgName: FDM-POSTCARD-PIN
+050118T121413: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"pN08L0jALj-sGrKfX2cMLvTgA26jXArgBEQ"}
+050118T121413: Response: Invalid API Key
+050118T121413: IssueURL = http://mfacstress-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN
+VerifyURL = http://mfacstress-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN
+VelocityURL = http://mfacstress-cos-vip.test.cloud.fedex.com:9090/mfac/v3/addressVelocityCheck
+050118T121413: 
+<-- AddressVelocity starting.    OrgName: FDM-POSTCARD-PIN
+050118T121413: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"EJW980Gtf1-Gt04aul7gZurfVgVDZ8gFGHa"}
+050118T121417: Response: {"transactionId":"45a138bf-8fbf-40b6-a0e0-9ec710867661","output":{"advice":"ALLOW"}}
+050118T121417: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"EJW980Gtf1-Gt04aul7gZurfVgVDZ8gFGHa"}
+050118T121418: Response: {"transactionId":"7cf950b0-2bb4-43be-a71f-e5b0dd3a0b41","output":{"advice":"ALLOW"}}
+050118T121418: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"EJW980Gtf1-Gt04aul7gZurfVgVDZ8gFGHa"}
+050118T121418: Response: {"transactionId":"5830e9d1-2cc6-49a7-96aa-4bbe90828e8a","output":{"advice":"ALLOW"}}
+050118T121418: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"EJW980Gtf1-Gt04aul7gZurfVgVDZ8gFGHa"}
+050118T121419: Response: {"timestamp":1525194859340,"status":500,"error":"Internal Server Error","exception":"java.lang.NoSuchMethodError","message":"org.apache.http.conn.ssl.SSLConnectionSocketFactory.<init>(Ljavax/net/ssl/SSLContext;Ljavax/net/ssl/HostnameVerifier;)V","path":"/mfac/v3/addressVelocityCheck"}
+050118T121419: 
+<-- IssuePin starting.    OrgName: FDM-POSTCARD-PIN
+050118T121419: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"mBZsbWnGFl-3l2SPGEw740S9GQQmBXKezOS"}
+050118T121420: Response: {"transactionId":"60b9252e-f4af-40a3-a975-2d83fd6a91df","output":{"pinOTP":"304978","pinExpirationDate":"05/01/2018 06:14 PM GMT"}}
+050118T121420: 
+<-- IssuePinVelocity starting.    OrgName: FDM-POSTCARD-PIN
+050118T121420: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"gAn0QZ9xlr-qhpDcGjB3E3kMFPRYa241GsK"}
+050118T121421: Response: {"transactionId":"4a20e0fa-5063-4af5-b878-73908acb2254","output":{"pinOTP":"723378","pinExpirationDate":"05/01/2018 06:14 PM GMT"}}
+050118T121421: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"gAn0QZ9xlr-qhpDcGjB3E3kMFPRYa241GsK"}
+050118T121421: Response: {"transactionId":"23bb1226-b742-455d-aebd-fe74aa27f525","output":{"pinOTP":"337485","pinExpirationDate":"05/01/2018 06:14 PM GMT"}}
+050118T121421: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"gAn0QZ9xlr-qhpDcGjB3E3kMFPRYa241GsK"}
+050118T121421: Response: {"transactionId":"74e241e1-9467-45ef-b516-66ed6a9af9f7","output":{"pinOTP":"331147","pinExpirationDate":"05/01/2018 06:14 PM GMT"}}
+050118T121421: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"gAn0QZ9xlr-qhpDcGjB3E3kMFPRYa241GsK"}
+050118T121422: Response: {"timestamp":1525194862101,"status":500,"error":"Internal Server Error","exception":"java.lang.NoSuchMethodError","message":"org.apache.http.conn.ssl.SSLConnectionSocketFactory.<init>(Ljavax/net/ssl/SSLContext;Ljavax/net/ssl/HostnameVerifier;)V","path":"/mfac/v3/issuePIN"}
+050118T121422: 
+<-- VerifyPinNoLongerValid starting.    OrgName: FDM-POSTCARD-PIN
+050118T121422: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"6jyJJe4BdW-RDGiHMlVooyenPm1Jn1Yes3x"}
+050118T121422: Response: {"transactionId":"5ad3ece9-ea8f-401e-8922-071b320d40c9","output":{"pinOTP":"492248","pinExpirationDate":"05/01/2018 06:14 PM GMT"}}
+050118T121422: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"492248","userName":"6jyJJe4BdW-RDGiHMlVooyenPm1Jn1Yes3x"}
+050118T121422: Response: {"transactionId":"bebed2b3-cc72-46c4-a5c3-cd59ae292881","output":{"daysLeftToExpire":1,"message":"Success"}}
+050118T121422: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"492248","userName":"6jyJJe4BdW-RDGiHMlVooyenPm1Jn1Yes3x"}
+050118T121422: Response: {"timestamp":1525194862835,"status":500,"error":"Internal Server Error","exception":"java.lang.NoSuchMethodError","message":"org.apache.http.conn.ssl.SSLConnectionSocketFactory.<init>(Ljavax/net/ssl/SSLContext;Ljavax/net/ssl/HostnameVerifier;)V","path":"/mfac/v3/verifyPIN"}
+050118T121422: 
+<-- VerifyPinValid starting.    OrgName: FDM-POSTCARD-PIN
+050118T121422: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"hy5OZVoDd4-MsH4SP745hSEQ94vMPz0HJjW"}
+050118T121423: Response: {"transactionId":"e3b46f26-816a-4ad4-9408-8e9e57e6aaab","output":{"pinOTP":"772332","pinExpirationDate":"05/01/2018 06:14 PM GMT"}}
+050118T121423: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"772332","userName":"hy5OZVoDd4-MsH4SP745hSEQ94vMPz0HJjW"}
+050118T121423: Response: {"transactionId":"c740c11c-c399-43eb-9469-99063f75d63e","output":{"daysLeftToExpire":1,"message":"Success"}}
+050118T121423: 
+<-- zIssuePinExpiration starting.    OrgName: FDM-POSTCARD-PIN
+050118T121423: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"YD9qfpjKTV-9avssEbTsJQCLIUcrjRaaz11"}
+050118T121423: Response: {"transactionId":"1e2fe05c-b64b-4a7d-900c-c8520d3db3a3","output":{"pinOTP":"925142","pinExpirationDate":"05/01/2018 06:14 PM GMT"}}
+050118T121423: IssueURL = https://apistress.idev.fedex.com/security/v1/pin
+VerifyURL = https://apistress.idev.fedex.com/security/v1/pin/verify
+VelocityURL = https://apistress.idev.fedex.com/security/v1/addresses/velocitycheck
+050118T121423: 
+<-- AddressVelocity starting.    OrgName: FDM-PHONE-PIN
+050118T121423: Request: {"orgName":"FDM-PHONE-PIN","userName":"39l5tPacyE-OjPaoe3pOk7og91316KLJUHB"}
+050118T121424: Response: Invalid API Key
+050118T121424: 
+<-- IssuePin starting.    OrgName: FDM-PHONE-PIN
+050118T121424: Request: {"orgName":"FDM-PHONE-PIN","userName":"0CQhAt5rd7-lmGf9Oc9OV45d7V31yiDd5Jp"}
+050118T121425: Response: Invalid API Key
+050118T121425: 
+<-- IssuePinVelocity starting.    OrgName: FDM-PHONE-PIN
+050118T121425: Request: {"orgName":"FDM-PHONE-PIN","userName":"Zq4lC9rX6g-SdbAP3eJ7JqgOY56LaQN0wXF"}
+050118T121425: Response: Invalid API Key
+050118T121425: 
+<-- VerifyPinNoLongerValid starting.    OrgName: FDM-PHONE-PIN
+050118T121425: Request: {"orgName":"FDM-PHONE-PIN","userName":"PyNdN79YZY-ib6af5gr6dwSwdxN3qZ6uFUK"}
+050118T121425: Response: Invalid API Key
+050118T121425: Request: {"orgName":"FDM-PHONE-PIN","otpInput":"Invalid API Key","userName":"PyNdN79YZY-ib6af5gr6dwSwdxN3qZ6uFUK"}
+050118T121426: Response: Invalid API Key
+050118T121426: 
+<-- VerifyPinValid starting.    OrgName: FDM-PHONE-PIN
+050118T121426: Request: {"orgName":"FDM-PHONE-PIN","userName":"BNpCnU9Kbi-RMPuoYR9gpeZYGJKp3JNLtJs"}
+050118T121426: Response: Invalid API Key
+050118T121426: Request: {"orgName":"FDM-PHONE-PIN","otpInput":"Invalid API Key","userName":"BNpCnU9Kbi-RMPuoYR9gpeZYGJKp3JNLtJs"}
+050118T121426: Response: Invalid API Key
+050118T121426: 
+<-- zIssuePinExpiration starting.    OrgName: FDM-PHONE-PIN
+050118T121426: Request: {"orgName":"FDM-PHONE-PIN","userName":"aKeTUGA6nR-3UeEWKUd211wPX4l6v5JjI9N"}
+050118T121427: Response: Invalid API Key
+050118T121427: IssueURL = http://mfacstress-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN
+VerifyURL = http://mfacstress-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN
+VelocityURL = http://mfacstress-cos-vip.test.cloud.fedex.com:9090/mfac/v3/addressVelocityCheck
+050118T121427: 
+<-- AddressVelocity starting.    OrgName: FDM-PHONE-PIN
+050118T121427: Request: {"orgName":"FDM-PHONE-PIN","userName":"4ykgoLV7qz-O38m2uu7uhD28eYvff2NO6oW"}
+050118T121427: Response: {"transactionId":"0fae0d61-ebf8-4c2c-a1a2-5d7b9ecfe899","output":{"advice":"ALLOW"}}
+050118T121427: Request: {"orgName":"FDM-PHONE-PIN","userName":"4ykgoLV7qz-O38m2uu7uhD28eYvff2NO6oW"}
+050118T121427: Response: {"transactionId":"e6b203c3-d998-4eca-82c9-b054658b2f1d","output":{"advice":"ALLOW"}}
+050118T121427: Request: {"orgName":"FDM-PHONE-PIN","userName":"4ykgoLV7qz-O38m2uu7uhD28eYvff2NO6oW"}
+050118T121427: Response: {"transactionId":"2055f561-924d-49e9-82b0-b38367053cf2","output":{"advice":"ALLOW"}}
+050118T121427: Request: {"orgName":"FDM-PHONE-PIN","userName":"4ykgoLV7qz-O38m2uu7uhD28eYvff2NO6oW"}
+050118T121427: Response: {"timestamp":1525194867871,"status":500,"error":"Internal Server Error","exception":"java.lang.NoSuchMethodError","message":"org.apache.http.conn.ssl.SSLConnectionSocketFactory.<init>(Ljavax/net/ssl/SSLContext;Ljavax/net/ssl/HostnameVerifier;)V","path":"/mfac/v3/addressVelocityCheck"}
+050118T121427: 
+<-- IssuePin starting.    OrgName: FDM-PHONE-PIN
+050118T121427: Request: {"orgName":"FDM-PHONE-PIN","userName":"ydf3xfo2j0-9ZsZIiYqAVNlAj9VdT5lDgIW"}
+050118T121429: Response: {"timestamp":1525194868993,"status":500,"error":"Internal Server Error","exception":"java.lang.NoSuchMethodError","message":"org.apache.http.conn.ssl.SSLConnectionSocketFactory.<init>(Ljavax/net/ssl/SSLContext;Ljavax/net/ssl/HostnameVerifier;)V","path":"/mfac/v3/issuePIN"}
+050118T121429: 
+<-- IssuePinVelocity starting.    OrgName: FDM-PHONE-PIN
+050118T121429: Request: {"orgName":"FDM-PHONE-PIN","userName":"fNLa9XcrCy-Gq1iMfCAEKAPsyNPiXaHPHAn"}
+050118T121430: Response: {"timestamp":1525194870134,"status":500,"error":"Internal Server Error","exception":"java.lang.NoSuchMethodError","message":"org.apache.http.conn.ssl.SSLConnectionSocketFactory.<init>(Ljavax/net/ssl/SSLContext;Ljavax/net/ssl/HostnameVerifier;)V","path":"/mfac/v3/issuePIN"}
+050118T121430: 
+<-- VerifyPinNoLongerValid starting.    OrgName: FDM-PHONE-PIN
+050118T121430: Request: {"orgName":"FDM-PHONE-PIN","userName":"0YYRybIsGW-77T7tMAoA0jTQDWE8IbGqzCd"}
+050118T121431: Response: {"timestamp":1525194871252,"status":500,"error":"Internal Server Error","exception":"java.lang.NoSuchMethodError","message":"org.apache.http.conn.ssl.SSLConnectionSocketFactory.<init>(Ljavax/net/ssl/SSLContext;Ljavax/net/ssl/HostnameVerifier;)V","path":"/mfac/v3/issuePIN"}
+050118T121431: Request: {"orgName":"FDM-PHONE-PIN","otpInput":"{\"timestamp\":1525194871252,\"status\":500,\"error\":\"Internal Server Error\",\"exception\":\"java.lang.NoSuchMethodError\",\"message\":\"org.apache.http.conn.ssl.SSLConnectionSocketFactory.<init>(Ljavax/net/ssl/SSLContext;Ljavax/net/ssl/HostnameVerifier;)V\",\"path\":\"/mfac/v3/issuePIN\"}","userName":"0YYRybIsGW-77T7tMAoA0jTQDWE8IbGqzCd"}
+050118T121431: Response: {"timestamp":1525194871384,"status":500,"error":"Internal Server Error","exception":"java.lang.NoSuchMethodError","message":"org.apache.http.conn.ssl.SSLConnectionSocketFactory.<init>(Ljavax/net/ssl/SSLContext;Ljavax/net/ssl/HostnameVerifier;)V","path":"/mfac/v3/verifyPIN"}
+050118T121431: 
+<-- VerifyPinValid starting.    OrgName: FDM-PHONE-PIN
+050118T121431: Request: {"orgName":"FDM-PHONE-PIN","userName":"gBfjwRayGQ-HZMyBigVwRBlHq0dBmwuxZSi"}
+050118T121432: Response: {"timestamp":1525194872507,"status":500,"error":"Internal Server Error","exception":"java.lang.NoSuchMethodError","message":"org.apache.http.conn.ssl.SSLConnectionSocketFactory.<init>(Ljavax/net/ssl/SSLContext;Ljavax/net/ssl/HostnameVerifier;)V","path":"/mfac/v3/issuePIN"}
+050118T121432: Request: {"orgName":"FDM-PHONE-PIN","otpInput":"{\"timestamp\":1525194872507,\"status\":500,\"error\":\"Internal Server Error\",\"exception\":\"java.lang.NoSuchMethodError\",\"message\":\"org.apache.http.conn.ssl.SSLConnectionSocketFactory.<init>(Ljavax/net/ssl/SSLContext;Ljavax/net/ssl/HostnameVerifier;)V\",\"path\":\"/mfac/v3/issuePIN\"}","userName":"gBfjwRayGQ-HZMyBigVwRBlHq0dBmwuxZSi"}
+050118T121432: Response: {"timestamp":1525194872642,"status":500,"error":"Internal Server Error","exception":"java.lang.NoSuchMethodError","message":"org.apache.http.conn.ssl.SSLConnectionSocketFactory.<init>(Ljavax/net/ssl/SSLContext;Ljavax/net/ssl/HostnameVerifier;)V","path":"/mfac/v3/verifyPIN"}
+050118T121432: 
+<-- zIssuePinExpiration starting.    OrgName: FDM-PHONE-PIN
+050118T121432: Request: {"orgName":"FDM-PHONE-PIN","userName":"zK4zUVhrAZ-BPkTeDwuux3HoUZ0jgK7zSEI"}
+050118T121433: Response: {"timestamp":1525194873775,"status":500,"error":"Internal Server Error","exception":"java.lang.NoSuchMethodError","message":"org.apache.http.conn.ssl.SSLConnectionSocketFactory.<init>(Ljavax/net/ssl/SSLContext;Ljavax/net/ssl/HostnameVerifier;)V","path":"/mfac/v3/issuePIN"}

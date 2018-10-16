@@ -1,0 +1,687 @@
+1 090418T143837: OAuth: https://apidev.idev.fedex.com:8443/auth/oauth/v2/token  Iden: l7xx1892f99a6f88470ba29abc141cd7bd8d  Secret: a4325d011acf4876b3fe3206931b8f5a
+1 090418T143837: [92a95082-7eda-4fb4-bd2f-e575a3c84d73, 2, https://apidev.idev.fedex.com:8443/auth/oauth/v2/token, l7xx1892f99a6f88470ba29abc141cd7bd8d, a4325d011acf4876b3fe3206931b8f5a, https://apidev.idev.fedex.com:8443/security/v1/pin, https://apidev.idev.fedex.com:8443/security/v1/pin/verify, https://apidev.idev.fedex.com:8443/security/v1/addresses/velocitycheck, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/addressVelocityCheck, 3, 3, 10]
+Thread -- Time (MMDDYY'T'HHMMSS): -- Current progress
+1 090418T143838: IssuePin Request: {"orgName":"FDM-POSTCARD-PIN","userName":"omchieupaw-vnyykpoyomzvyflpyyhspatj"}
+1 090418T143838: IssuePin Response: {"transactionId":"8d90750b-f471-41c4-941f-e3b1c9b436eb","output":{"pinOTP":"325006","pinExpirationDate":"09/04/2018 08:08 PM GMT"}}
+1 090418T143838: IssuePin Request: {"orgName":"FDM-PHONE-PIN","userName":"omchieupaw-vnyykpoyomzvyflpyyhspatj"}
+1 090418T143838: IssuePin Response: {"transactionId":"08289ff0-545e-4948-a07c-42bd3ec68ab8","output":{"pinOTP":"475729","pinExpirationDate":"09/04/2018 07:48 PM GMT"}}
+1 090418T143838: VerifyPin Request: {"orgName":"FDM-PHONE-PIN","otpInput":"475729","userName":"omchieupaw-vnyykpoyomzvyflpyyhspatj"}
+1 090418T143838: VerifyPin Response: {"transactionId":"b7f302f6-4d4e-43d1-a222-497a87551126","output":{"daysLeftToExpire":1,"message":"Success"}}
+AdditionalEnrollmentExpiration passed [FDM-POSTCARD-PIN, FDM-PHONE-PIN, 92a95082-7eda-4fb4-bd2f-e575a3c84d73, https://apidev.idev.fedex.com:8443/security/v1/pin, https://apidev.idev.fedex.com:8443/security/v1/pin/verify]
+1 090418T143838: IssuePin Request: {"orgName":"FDM-PHONE-PIN","userName":"pkrzlijoqh-hysweopwbgandjypnhdacluw"}
+1 090418T143839: IssuePin Response: {"transactionId":"1580a2cb-c53d-4ea1-93ae-5e2fc769e7d1","output":{"pinOTP":"796194","pinExpirationDate":"09/04/2018 07:48 PM GMT"}}
+1 090418T143839: IssuePin Request: {"orgName":"FDM-POSTCARD-PIN","userName":"pkrzlijoqh-hysweopwbgandjypnhdacluw"}
+1 090418T143839: IssuePin Response: {"transactionId":"4924eb55-4b48-4479-890d-181e291cdeac","output":{"pinOTP":"605094","pinExpirationDate":"09/04/2018 08:08 PM GMT"}}
+AdditionalEnrollmentExpiration passed [FDM-PHONE-PIN, FDM-POSTCARD-PIN, 92a95082-7eda-4fb4-bd2f-e575a3c84d73, https://apidev.idev.fedex.com:8443/security/v1/pin, https://apidev.idev.fedex.com:8443/security/v1/pin/verify]
+1 090418T143839: IssuePin Request: {"orgName":"FDM-POSTCARD-PIN","userName":"cpujhpvfaz-mtcciuttibcxutdqhqvhxehg"}
+1 090418T143839: IssuePin Response: {"transactionId":"8319446c-f152-4f84-81c2-7120e414e4c3","output":{"pinOTP":"590112","pinExpirationDate":"09/04/2018 08:08 PM GMT"}}
+1 090418T143839: IssuePin Request: {"orgName":"FDM-PHONE-PIN","userName":"cpujhpvfaz-mtcciuttibcxutdqhqvhxehg"}
+1 090418T143839: IssuePin Response: {"transactionId":"0e3c5c01-aae0-480f-8677-bcb8acaa86fd","output":{"pinOTP":"533841","pinExpirationDate":"09/04/2018 07:48 PM GMT"}}
+1 090418T143839: VerifyPin Request: {"orgName":"FDM-PHONE-PIN","otpInput":"533841","userName":"cpujhpvfaz-mtcciuttibcxutdqhqvhxehg"}
+1 090418T143839: VerifyPin Response: {"transactionId":"295f1d88-2300-4ed9-aedf-c140bbff0eac","output":{"daysLeftToExpire":1,"message":"Success"}}
+AdditionalEnrollmentExpiration passed [FDM-POSTCARD-PIN, FDM-PHONE-PIN, 92a95082-7eda-4fb4-bd2f-e575a3c84d73, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN]
+1 090418T143839: IssuePin Request: {"orgName":"FDM-PHONE-PIN","userName":"mejzsuhmmp-welneopunrrmukwbrtamrkeg"}
+1 090418T143840: IssuePin Response: {"transactionId":"4564a1ec-3268-4847-9860-2cfb34567024","output":{"pinOTP":"221947","pinExpirationDate":"09/04/2018 07:48 PM GMT"}}
+1 090418T143840: IssuePin Request: {"orgName":"FDM-POSTCARD-PIN","userName":"mejzsuhmmp-welneopunrrmukwbrtamrkeg"}
+1 090418T143840: IssuePin Response: {"transactionId":"fdfd0b89-1deb-41c9-ba27-62a2abd45604","output":{"pinOTP":"927210","pinExpirationDate":"09/04/2018 08:08 PM GMT"}}
+AdditionalEnrollmentExpiration passed [FDM-PHONE-PIN, FDM-POSTCARD-PIN, 92a95082-7eda-4fb4-bd2f-e575a3c84d73, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN]
+1 090418T143840: AddressVelocity Request: {"orgName":"FDM-POSTCARD-PIN","userName":"kwycuzchfm-sssurcalozqytdpdsnlwevvx"}
+1 090418T143840: AddressVelocity Response: {"transactionId":"3c00d2d9-8431-4a3b-8776-4f716e5772ab","output":{"advice":"ALLOW"}}
+1 090418T143840: AddressVelocity Request: {"orgName":"FDM-POSTCARD-PIN","userName":"kwycuzchfm-sssurcalozqytdpdsnlwevvx"}
+1 090418T143840: AddressVelocity Response: {"transactionId":"644b1713-78da-4ba9-b235-49ae3cc3fafe","output":{"advice":"ALLOW"}}
+1 090418T143840: AddressVelocity Request: {"orgName":"FDM-POSTCARD-PIN","userName":"kwycuzchfm-sssurcalozqytdpdsnlwevvx"}
+1 090418T143840: AddressVelocity Response: {"transactionId":"b653c6e7-6837-4237-bd08-95fa572e57da","output":{"advice":"ALLOW"}}
+1 090418T143840: AddressVelocity Request: {"orgName":"FDM-POSTCARD-PIN","userName":"kwycuzchfm-sssurcalozqytdpdsnlwevvx"}
+1 090418T143840: AddressVelocity Response: {"transactionId":"6055e4af-d620-41c8-8ad3-87ded43437eb","output":{"advice":"ALLOW"}}
+1 090418T143840: AddressVelocity Request: {"orgName":"FDM-POSTCARD-PIN","userName":"kwycuzchfm-sssurcalozqytdpdsnlwevvx"}
+1 090418T143841: AddressVelocity Response: {"transactionId":"a5a5222e-cbed-483b-abfc-577762d606c7","output":{"advice":"ALLOW"}}
+1 090418T143841: AddressVelocity Request: {"orgName":"FDM-POSTCARD-PIN","userName":"kwycuzchfm-sssurcalozqytdpdsnlwevvx"}
+1 090418T143841: AddressVelocity Response: {"transactionId":"4dfca55f-e2fa-4c9a-8416-f382240e04a1","output":{"advice":"ALLOW"}}
+1 090418T143841: AddressVelocity Request: {"orgName":"FDM-POSTCARD-PIN","userName":"kwycuzchfm-sssurcalozqytdpdsnlwevvx"}
+1 090418T143841: AddressVelocity Response: {"transactionId":"340d04a5-4c06-4385-bc50-3780136c22ee","output":{"advice":"ALLOW"}}
+1 090418T143841: AddressVelocity Request: {"orgName":"FDM-POSTCARD-PIN","userName":"kwycuzchfm-sssurcalozqytdpdsnlwevvx"}
+1 090418T143841: AddressVelocity Response: {"transactionId":"e3e931a8-bdca-4815-91c5-2eb032e7cf3a","output":{"advice":"ALLOW"}}
+1 090418T143841: AddressVelocity Request: {"orgName":"FDM-POSTCARD-PIN","userName":"kwycuzchfm-sssurcalozqytdpdsnlwevvx"}
+1 090418T143841: AddressVelocity Response: {"transactionId":"a8a6fdea-8415-4609-8233-1065fc4b49ef","output":{"advice":"ALLOW"}}
+1 090418T143841: AddressVelocity Request: {"orgName":"FDM-POSTCARD-PIN","userName":"kwycuzchfm-sssurcalozqytdpdsnlwevvx"}
+1 090418T143842: AddressVelocity Response: {"transactionId":"be5061a6-4e5b-4954-8696-1bddfcb3c9ba","output":{"advice":"ALLOW"}}
+1 090418T143842: AddressVelocity Request: {"orgName":"FDM-POSTCARD-PIN","userName":"kwycuzchfm-sssurcalozqytdpdsnlwevvx"}
+1 090418T143842: AddressVelocity Response: {"transactionId":"75e13202-9e51-403c-8db9-fab1e2b35c93","output":{"advice":"ALLOW"}}
+AddressVelocity failed [FDM-POSTCARD-PIN, 92a95082-7eda-4fb4-bd2f-e575a3c84d73, https://apidev.idev.fedex.com:8443/security/v1/addresses/velocitycheck, 10]
+1 090418T143842: AddressVelocity Request: {"orgName":"FDM-PHONE-PIN","userName":"khmospmlxo-enklhmgrnhrwiclghabcrxsc"}
+1 090418T143842: AddressVelocity Response: {"transactionId":"2668ed01-a1e6-47e5-8fdb-b104f2fd016c","output":{"advice":"ALLOW"}}
+1 090418T143842: AddressVelocity Request: {"orgName":"FDM-PHONE-PIN","userName":"khmospmlxo-enklhmgrnhrwiclghabcrxsc"}
+1 090418T143843: AddressVelocity Response: {"transactionId":"4f215bec-1365-4ade-bac0-95f7c500a54e","output":{"advice":"ALLOW"}}
+1 090418T143843: AddressVelocity Request: {"orgName":"FDM-PHONE-PIN","userName":"khmospmlxo-enklhmgrnhrwiclghabcrxsc"}
+1 090418T143844: AddressVelocity Response: {"transactionId":"d087651b-e06b-44ce-9605-352082dd4202","output":{"advice":"ALLOW"}}
+1 090418T143844: AddressVelocity Request: {"orgName":"FDM-PHONE-PIN","userName":"khmospmlxo-enklhmgrnhrwiclghabcrxsc"}
+1 090418T143844: AddressVelocity Response: {"transactionId":"43064cd9-5ae3-4186-ad41-810692bb4833","output":{"advice":"ALLOW"}}
+1 090418T143844: AddressVelocity Request: {"orgName":"FDM-PHONE-PIN","userName":"khmospmlxo-enklhmgrnhrwiclghabcrxsc"}
+1 090418T143844: AddressVelocity Response: {"transactionId":"dc5335ef-1c43-45d5-8bf6-925281287ac3","output":{"advice":"ALLOW"}}
+1 090418T143844: AddressVelocity Request: {"orgName":"FDM-PHONE-PIN","userName":"khmospmlxo-enklhmgrnhrwiclghabcrxsc"}
+1 090418T143845: AddressVelocity Response: {"transactionId":"da3c637d-ff2d-425e-8eac-818aff969f32","output":{"advice":"ALLOW"}}
+1 090418T143845: AddressVelocity Request: {"orgName":"FDM-PHONE-PIN","userName":"khmospmlxo-enklhmgrnhrwiclghabcrxsc"}
+1 090418T143846: AddressVelocity Response: {"transactionId":"08756f58-b502-424e-abda-8a19d4877cd1","output":{"advice":"ALLOW"}}
+1 090418T143846: AddressVelocity Request: {"orgName":"FDM-PHONE-PIN","userName":"khmospmlxo-enklhmgrnhrwiclghabcrxsc"}
+1 090418T143847: AddressVelocity Response: {"transactionId":"e5e8d16b-9fe7-435e-9000-522c484636af","output":{"advice":"ALLOW"}}
+1 090418T143847: AddressVelocity Request: {"orgName":"FDM-PHONE-PIN","userName":"khmospmlxo-enklhmgrnhrwiclghabcrxsc"}
+1 090418T143847: AddressVelocity Response: {"transactionId":"74d1bd72-ac95-4ae6-b7bc-cba5c12282c9","output":{"advice":"ALLOW"}}
+1 090418T143847: AddressVelocity Request: {"orgName":"FDM-PHONE-PIN","userName":"khmospmlxo-enklhmgrnhrwiclghabcrxsc"}
+1 090418T143848: AddressVelocity Response: {"transactionId":"06123942-de79-481b-9570-5814e65f9914","output":{"advice":"ALLOW"}}
+1 090418T143848: AddressVelocity Request: {"orgName":"FDM-PHONE-PIN","userName":"khmospmlxo-enklhmgrnhrwiclghabcrxsc"}
+1 090418T143848: AddressVelocity Response: {"transactionId":"d6c23dd1-78d3-4af2-91d7-2cf4a8c0d2f8","output":{"advice":"ALLOW"}}
+AddressVelocity failed [FDM-PHONE-PIN, 92a95082-7eda-4fb4-bd2f-e575a3c84d73, https://apidev.idev.fedex.com:8443/security/v1/addresses/velocitycheck, 10]
+1 090418T143848: AddressVelocity Request: {"orgName":"FDM-POSTCARD-PIN","userName":"ixmygwhilu-nkpeavhrdtzyjzmhrevgvahq"}
+1 090418T143848: AddressVelocity Response: {"transactionId":"8ce8a905-3693-450a-8758-514145d69ef8","output":{"advice":"ALLOW"}}
+1 090418T143848: AddressVelocity Request: {"orgName":"FDM-POSTCARD-PIN","userName":"ixmygwhilu-nkpeavhrdtzyjzmhrevgvahq"}
+1 090418T143849: AddressVelocity Response: {"transactionId":"6dc79829-0d69-40e1-a9ed-3adef305f35f","output":{"advice":"ALLOW"}}
+1 090418T143849: AddressVelocity Request: {"orgName":"FDM-POSTCARD-PIN","userName":"ixmygwhilu-nkpeavhrdtzyjzmhrevgvahq"}
+1 090418T143849: AddressVelocity Response: {"transactionId":"2c3fab41-1408-4a15-b18b-1ceb34af70f1","output":{"advice":"ALLOW"}}
+1 090418T143849: AddressVelocity Request: {"orgName":"FDM-POSTCARD-PIN","userName":"ixmygwhilu-nkpeavhrdtzyjzmhrevgvahq"}
+1 090418T143850: AddressVelocity Response: {"transactionId":"726cea18-5d7f-41cf-a5a8-80cac19233d9","output":{"advice":"ALLOW"}}
+1 090418T143850: AddressVelocity Request: {"orgName":"FDM-POSTCARD-PIN","userName":"ixmygwhilu-nkpeavhrdtzyjzmhrevgvahq"}
+1 090418T143851: AddressVelocity Response: {"transactionId":"e6cbc4e8-2697-4473-bccb-2c10bea83e18","output":{"advice":"ALLOW"}}
+1 090418T143851: AddressVelocity Request: {"orgName":"FDM-POSTCARD-PIN","userName":"ixmygwhilu-nkpeavhrdtzyjzmhrevgvahq"}
+1 090418T143851: AddressVelocity Response: {"transactionId":"3afa0f43-2154-47ee-b5ba-ed07fdedb594","output":{"advice":"ALLOW"}}
+1 090418T143851: AddressVelocity Request: {"orgName":"FDM-POSTCARD-PIN","userName":"ixmygwhilu-nkpeavhrdtzyjzmhrevgvahq"}
+1 090418T143851: AddressVelocity Response: {"transactionId":"ad5d2fc6-2e32-4ac2-b393-d955535f15c2","output":{"advice":"ALLOW"}}
+1 090418T143851: AddressVelocity Request: {"orgName":"FDM-POSTCARD-PIN","userName":"ixmygwhilu-nkpeavhrdtzyjzmhrevgvahq"}
+1 090418T143852: AddressVelocity Response: {"transactionId":"07cdcd1d-dde9-43b7-b52f-82bd48c8d24a","output":{"advice":"ALLOW"}}
+1 090418T143852: AddressVelocity Request: {"orgName":"FDM-POSTCARD-PIN","userName":"ixmygwhilu-nkpeavhrdtzyjzmhrevgvahq"}
+1 090418T143853: AddressVelocity Response: {"transactionId":"709245f5-00f7-4276-ad97-380e69df4a03","output":{"advice":"ALLOW"}}
+1 090418T143853: AddressVelocity Request: {"orgName":"FDM-POSTCARD-PIN","userName":"ixmygwhilu-nkpeavhrdtzyjzmhrevgvahq"}
+1 090418T143853: AddressVelocity Response: {"transactionId":"2f9186cf-f4de-4253-97bf-bda368ba32cd","output":{"advice":"ALLOW"}}
+1 090418T143853: AddressVelocity Request: {"orgName":"FDM-POSTCARD-PIN","userName":"ixmygwhilu-nkpeavhrdtzyjzmhrevgvahq"}
+1 090418T143853: AddressVelocity Response: {"transactionId":"51725ca0-32ba-42c5-924a-07e46847fb41","output":{"advice":"ALLOW"}}
+AddressVelocity failed [FDM-POSTCARD-PIN, 92a95082-7eda-4fb4-bd2f-e575a3c84d73, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/addressVelocityCheck, 10]
+1 090418T143853: AddressVelocity Request: {"orgName":"FDM-PHONE-PIN","userName":"dhviifhgvd-luutcjaelwazyfiheryisebl"}
+1 090418T143853: AddressVelocity Response: {"transactionId":"8334f400-2bf2-47f4-af8f-e5671bf08e66","output":{"advice":"ALLOW"}}
+1 090418T143853: AddressVelocity Request: {"orgName":"FDM-PHONE-PIN","userName":"dhviifhgvd-luutcjaelwazyfiheryisebl"}
+1 090418T143855: AddressVelocity Response: {"transactionId":"c164628f-0db4-4088-8cbc-32735f794f96","output":{"advice":"ALLOW"}}
+1 090418T143855: AddressVelocity Request: {"orgName":"FDM-PHONE-PIN","userName":"dhviifhgvd-luutcjaelwazyfiheryisebl"}
+1 090418T143855: AddressVelocity Response: {"transactionId":"54a1f9b1-a688-4e52-b296-0fab9ec6c90b","output":{"advice":"ALLOW"}}
+1 090418T143855: AddressVelocity Request: {"orgName":"FDM-PHONE-PIN","userName":"dhviifhgvd-luutcjaelwazyfiheryisebl"}
+1 090418T143855: AddressVelocity Response: {"transactionId":"88f7e71d-2db5-4160-bc57-da2249d3a180","output":{"advice":"ALLOW"}}
+1 090418T143855: AddressVelocity Request: {"orgName":"FDM-PHONE-PIN","userName":"dhviifhgvd-luutcjaelwazyfiheryisebl"}
+1 090418T143856: AddressVelocity Response: {"transactionId":"b3d2ff8a-0601-4d8a-92e3-d9e22cd48ccc","output":{"advice":"ALLOW"}}
+1 090418T143856: AddressVelocity Request: {"orgName":"FDM-PHONE-PIN","userName":"dhviifhgvd-luutcjaelwazyfiheryisebl"}
+1 090418T143857: AddressVelocity Response: {"transactionId":"058d4d60-ec55-4742-be8c-841205d6b352","output":{"advice":"ALLOW"}}
+1 090418T143857: AddressVelocity Request: {"orgName":"FDM-PHONE-PIN","userName":"dhviifhgvd-luutcjaelwazyfiheryisebl"}
+1 090418T143857: AddressVelocity Response: {"transactionId":"0ec9824c-bf80-492d-958a-3ebd7bcaa951","output":{"advice":"ALLOW"}}
+1 090418T143857: AddressVelocity Request: {"orgName":"FDM-PHONE-PIN","userName":"dhviifhgvd-luutcjaelwazyfiheryisebl"}
+1 090418T143858: AddressVelocity Response: {"transactionId":"d31f8b3a-8e79-42ca-87c2-39e7a4856376","output":{"advice":"ALLOW"}}
+1 090418T143858: AddressVelocity Request: {"orgName":"FDM-PHONE-PIN","userName":"dhviifhgvd-luutcjaelwazyfiheryisebl"}
+1 090418T143858: AddressVelocity Response: {"transactionId":"38ebd3a9-072d-4d39-9c0d-ab0601738db9","output":{"advice":"ALLOW"}}
+1 090418T143858: AddressVelocity Request: {"orgName":"FDM-PHONE-PIN","userName":"dhviifhgvd-luutcjaelwazyfiheryisebl"}
+1 090418T143858: AddressVelocity Response: {"transactionId":"0952753d-f4bc-41f0-b691-55e514391811","output":{"advice":"ALLOW"}}
+1 090418T143858: AddressVelocity Request: {"orgName":"FDM-PHONE-PIN","userName":"dhviifhgvd-luutcjaelwazyfiheryisebl"}
+1 090418T143858: AddressVelocity Response: {"transactionId":"3b0c59a5-ca64-4782-a92e-5de25bfd83e2","output":{"advice":"ALLOW"}}
+AddressVelocity failed [FDM-PHONE-PIN, 92a95082-7eda-4fb4-bd2f-e575a3c84d73, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/addressVelocityCheck, 10]
+1 090418T143858: IssuePin Request: {"orgName":"FDM-POSTCARD-PIN","userName":"qkpkueugkj-ijpkerfbmjtanxxexcwrfzub"}
+1 090418T143859: IssuePin Response: {"transactionId":"2a2c9ef4-9f0a-4165-a005-62901306bfbc","output":{"pinOTP":"581771","pinExpirationDate":"09/04/2018 08:08 PM GMT"}}
+IssuePin passed [FDM-POSTCARD-PIN, 92a95082-7eda-4fb4-bd2f-e575a3c84d73, https://apidev.idev.fedex.com:8443/security/v1/pin]
+1 090418T143859: IssuePin Request: {"orgName":"FDM-PHONE-PIN","userName":"kkqupcdwdu-bmlttjklshcrdbhyazjpsbom"}
+1 090418T143859: IssuePin Response: {"transactionId":"74bef06e-ed4e-4e55-ac40-90f0033e5f0a","output":{"pinOTP":"859657","pinExpirationDate":"09/04/2018 07:48 PM GMT"}}
+IssuePin passed [FDM-PHONE-PIN, 92a95082-7eda-4fb4-bd2f-e575a3c84d73, https://apidev.idev.fedex.com:8443/security/v1/pin]
+1 090418T143859: IssuePin Request: {"orgName":"FDM-POSTCARD-PIN","userName":"ymzdokrpkz-bggzxsiimmloswphdivqdqhq"}
+1 090418T143859: IssuePin Response: {"transactionId":"cf60066c-c33e-411a-8ebf-86f2075f97f5","output":{"pinOTP":"315429","pinExpirationDate":"09/04/2018 08:08 PM GMT"}}
+IssuePin passed [FDM-POSTCARD-PIN, 92a95082-7eda-4fb4-bd2f-e575a3c84d73, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN]
+1 090418T143859: IssuePin Request: {"orgName":"FDM-PHONE-PIN","userName":"nipslgvrfw-rhczovocmpcyqsgxplxbyacz"}
+1 090418T143859: IssuePin Response: {"transactionId":"6792336c-f624-42fe-8510-df2637c138fb","output":{"pinOTP":"216253","pinExpirationDate":"09/04/2018 07:48 PM GMT"}}
+IssuePin passed [FDM-PHONE-PIN, 92a95082-7eda-4fb4-bd2f-e575a3c84d73, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN]
+1 090418T143859: IssuePin Request: {"orgName":"FDM-POSTCARD-PIN","userName":"orikimlgdb-guocazjmledevsgoyelgggng"}
+1 090418T143859: IssuePin Response: {"transactionId":"b9475768-1abd-4629-885a-5ee877502095","output":{"pinOTP":"638091","pinExpirationDate":"09/04/2018 08:08 PM GMT"}}
+IssuePinExpiration passed [FDM-POSTCARD-PIN, 92a95082-7eda-4fb4-bd2f-e575a3c84d73, https://apidev.idev.fedex.com:8443/security/v1/pin, https://apidev.idev.fedex.com:8443/security/v1/pin/verify]
+1 090418T143859: IssuePin Request: {"orgName":"FDM-PHONE-PIN","userName":"lkqetylgre-rogfiqbxelupxdfwdjcxjbok"}
+1 090418T143900: IssuePin Response: {"transactionId":"14deeca8-1d21-4cf6-a001-4538a2838760","output":{"pinOTP":"401197","pinExpirationDate":"09/04/2018 07:48 PM GMT"}}
+IssuePinExpiration passed [FDM-PHONE-PIN, 92a95082-7eda-4fb4-bd2f-e575a3c84d73, https://apidev.idev.fedex.com:8443/security/v1/pin, https://apidev.idev.fedex.com:8443/security/v1/pin/verify]
+1 090418T143900: IssuePin Request: {"orgName":"FDM-POSTCARD-PIN","userName":"xffzwgmlge-mqucziqildrvmeyymaovghyw"}
+1 090418T143900: IssuePin Response: {"transactionId":"426c263b-f5e1-476a-a350-e9b144d98130","output":{"pinOTP":"415364","pinExpirationDate":"09/04/2018 08:09 PM GMT"}}
+IssuePinExpiration passed [FDM-POSTCARD-PIN, 92a95082-7eda-4fb4-bd2f-e575a3c84d73, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN]
+1 090418T143900: IssuePin Request: {"orgName":"FDM-PHONE-PIN","userName":"ukhkeboqai-ghjkpzxddvltixmmyfashbmo"}
+1 090418T143900: IssuePin Response: {"transactionId":"c9de5422-d68a-402a-ad84-b0456b2aa620","output":{"pinOTP":"147492","pinExpirationDate":"09/04/2018 07:49 PM GMT"}}
+IssuePinExpiration passed [FDM-PHONE-PIN, 92a95082-7eda-4fb4-bd2f-e575a3c84d73, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN]
+1 090418T143900: IssuePin Request: {"orgName":"FDM-POSTCARD-PIN","userName":"erurwfmson-jpoqcdgtgcvkddgfghtcweew"}
+1 090418T143900: IssuePin Response: {"transactionId":"45b7dd5a-a6ea-4441-80ea-883e478749a3","output":{"pinOTP":"477488","pinExpirationDate":"09/04/2018 08:09 PM GMT"}}
+1 090418T143900: IssuePin Request: {"orgName":"FDM-POSTCARD-PIN","userName":"erurwfmson-jpoqcdgtgcvkddgfghtcweew"}
+1 090418T143900: IssuePin Response: {"transactionId":"94e3b1cc-e44f-42bb-853e-638c9a954b5f","output":{"pinOTP":"144898","pinExpirationDate":"09/04/2018 08:09 PM GMT"}}
+1 090418T143900: IssuePin Request: {"orgName":"FDM-POSTCARD-PIN","userName":"erurwfmson-jpoqcdgtgcvkddgfghtcweew"}
+1 090418T143901: IssuePin Response: {"transactionId":"5df2d6f6-6dcf-4654-82d3-393001b74baa","output":{"pinOTP":"776279","pinExpirationDate":"09/04/2018 08:09 PM GMT"}}
+1 090418T143901: IssuePin Request: {"orgName":"FDM-POSTCARD-PIN","userName":"erurwfmson-jpoqcdgtgcvkddgfghtcweew"}
+1 090418T143902: IssuePin Response: {"transactionId":"55dffca8-22e8-463b-9329-40ab88f6001f","errors":[{"code":"5700","message":"Unfortunately, you have exceeded your attempts for verification. Please try again later."}]}
+IssuePinVelocity passed [FDM-POSTCARD-PIN, 92a95082-7eda-4fb4-bd2f-e575a3c84d73, https://apidev.idev.fedex.com:8443/security/v1/pin, 3]
+1 090418T143902: IssuePin Request: {"orgName":"FDM-PHONE-PIN","userName":"tcdntwpaon-dgwizeljcrktzxqculnlrlne"}
+1 090418T143902: IssuePin Response: {"transactionId":"32338905-bb5d-40eb-8dc0-820c11acd0d0","output":{"pinOTP":"805887","pinExpirationDate":"09/04/2018 07:49 PM GMT"}}
+1 090418T143902: IssuePin Request: {"orgName":"FDM-PHONE-PIN","userName":"tcdntwpaon-dgwizeljcrktzxqculnlrlne"}
+1 090418T143902: IssuePin Response: {"transactionId":"5df93375-e036-4bac-9db8-413827ade0f4","output":{"pinOTP":"625356","pinExpirationDate":"09/04/2018 07:49 PM GMT"}}
+1 090418T143902: IssuePin Request: {"orgName":"FDM-PHONE-PIN","userName":"tcdntwpaon-dgwizeljcrktzxqculnlrlne"}
+1 090418T143902: IssuePin Response: {"transactionId":"623dceda-84fa-4240-9f43-bc00346f9dc3","output":{"pinOTP":"384543","pinExpirationDate":"09/04/2018 07:49 PM GMT"}}
+1 090418T143902: IssuePin Request: {"orgName":"FDM-PHONE-PIN","userName":"tcdntwpaon-dgwizeljcrktzxqculnlrlne"}
+1 090418T143902: IssuePin Response: {"transactionId":"5df8f9cb-784e-4c89-839b-a64b2cbf9193","errors":[{"code":"5700","message":"Unfortunately, you have exceeded your attempts for verification. Please try again later."}]}
+IssuePinVelocity passed [FDM-PHONE-PIN, 92a95082-7eda-4fb4-bd2f-e575a3c84d73, https://apidev.idev.fedex.com:8443/security/v1/pin, 3]
+1 090418T143902: IssuePin Request: {"orgName":"FDM-POSTCARD-PIN","userName":"lvkypsxeaf-ytfumuwiuolrniozqpnyswlj"}
+1 090418T143903: IssuePin Response: {"transactionId":"07ba985d-31c7-40f5-8263-1fa9379a34d4","output":{"pinOTP":"955251","pinExpirationDate":"09/04/2018 08:09 PM GMT"}}
+1 090418T143903: IssuePin Request: {"orgName":"FDM-POSTCARD-PIN","userName":"lvkypsxeaf-ytfumuwiuolrniozqpnyswlj"}
+1 090418T143903: IssuePin Response: {"transactionId":"d0d92de7-44a7-4e5d-ac24-aa094b442abc","output":{"pinOTP":"194097","pinExpirationDate":"09/04/2018 08:09 PM GMT"}}
+1 090418T143903: IssuePin Request: {"orgName":"FDM-POSTCARD-PIN","userName":"lvkypsxeaf-ytfumuwiuolrniozqpnyswlj"}
+1 090418T143903: IssuePin Response: {"transactionId":"30f068d3-9721-4624-96f6-c87a9f0a1c96","output":{"pinOTP":"763525","pinExpirationDate":"09/04/2018 08:09 PM GMT"}}
+1 090418T143903: IssuePin Request: {"orgName":"FDM-POSTCARD-PIN","userName":"lvkypsxeaf-ytfumuwiuolrniozqpnyswlj"}
+1 090418T143903: IssuePin Response: {"transactionId":"6334882a-3eca-460c-bd21-89e41fbeca73","errors":[{"code":"5700","message":"Unfortunately, you have exceeded your attempts for verification. Please try again later."}]}
+IssuePinVelocity passed [FDM-POSTCARD-PIN, 92a95082-7eda-4fb4-bd2f-e575a3c84d73, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, 3]
+1 090418T143903: IssuePin Request: {"orgName":"FDM-PHONE-PIN","userName":"botlxcmwsj-jiayjezztizgcoiulhoxlenf"}
+1 090418T143903: IssuePin Response: {"transactionId":"41570a6d-0b54-4568-9dac-ab182cbc8872","output":{"pinOTP":"896354","pinExpirationDate":"09/04/2018 07:49 PM GMT"}}
+1 090418T143903: IssuePin Request: {"orgName":"FDM-PHONE-PIN","userName":"botlxcmwsj-jiayjezztizgcoiulhoxlenf"}
+1 090418T143903: IssuePin Response: {"transactionId":"ceacb2d9-5ef3-410a-a8f3-b46c24f69f15","output":{"pinOTP":"679023","pinExpirationDate":"09/04/2018 07:49 PM GMT"}}
+1 090418T143903: IssuePin Request: {"orgName":"FDM-PHONE-PIN","userName":"botlxcmwsj-jiayjezztizgcoiulhoxlenf"}
+1 090418T143903: IssuePin Response: {"transactionId":"8739b2c4-0d11-4d72-bf7f-af9bd4e037cc","output":{"pinOTP":"822834","pinExpirationDate":"09/04/2018 07:49 PM GMT"}}
+1 090418T143903: IssuePin Request: {"orgName":"FDM-PHONE-PIN","userName":"botlxcmwsj-jiayjezztizgcoiulhoxlenf"}
+1 090418T143903: IssuePin Response: {"transactionId":"c042d3a9-4203-465e-8931-521bfb5d8c29","errors":[{"code":"5700","message":"Unfortunately, you have exceeded your attempts for verification. Please try again later."}]}
+IssuePinVelocity passed [FDM-PHONE-PIN, 92a95082-7eda-4fb4-bd2f-e575a3c84d73, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, 3]
+1 090418T143903: IssuePin Request: {"orgName":"FDM-POSTCARD-PIN","userName":"opvsbojxiv-jabkztgayvrodmpixbdybkrd"}
+1 090418T143904: IssuePin Response: {"transactionId":"efe119f1-3b90-4a5c-884c-c5494d2a4706","output":{"pinOTP":"237534","pinExpirationDate":"09/04/2018 08:09 PM GMT"}}
+1 090418T143904: IssuePin Request: {"orgName":"FDM-POSTCARD-PIN","userName":"opvsbojxiv-jabkztgayvrodmpixbdybkrd"}
+1 090418T143904: IssuePin Response: {"transactionId":"69f37145-c2fc-4c0a-9d08-5ee3e3611418","output":{"pinOTP":"589855","pinExpirationDate":"09/04/2018 08:09 PM GMT"}}
+1 090418T143904: VerifyPin Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"237534","userName":"opvsbojxiv-jabkztgayvrodmpixbdybkrd"}
+1 090418T143904: VerifyPin Response: {"transactionId":"f32a89d7-d4d3-475d-8456-bb3473efc4f7","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+1 090418T143904: VerifyPin Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"589855","userName":"opvsbojxiv-jabkztgayvrodmpixbdybkrd"}
+1 090418T143904: VerifyPin Response: {"transactionId":"8db251a2-6eee-42b3-9b1b-c740c9499c04","output":{"daysLeftToExpire":1,"message":"Success"}}
+VerifyPinNoLongerValid passed [FDM-POSTCARD-PIN, 92a95082-7eda-4fb4-bd2f-e575a3c84d73, https://apidev.idev.fedex.com:8443/security/v1/pin, https://apidev.idev.fedex.com:8443/security/v1/pin/verify]
+1 090418T143904: IssuePin Request: {"orgName":"FDM-PHONE-PIN","userName":"wtzyuhrhkh-wsgcedachjwjlkyjyulrudli"}
+1 090418T143904: IssuePin Response: {"transactionId":"4eed69cc-4334-4b64-923c-b44188a55cac","output":{"pinOTP":"405725","pinExpirationDate":"09/04/2018 07:49 PM GMT"}}
+1 090418T143904: IssuePin Request: {"orgName":"FDM-PHONE-PIN","userName":"wtzyuhrhkh-wsgcedachjwjlkyjyulrudli"}
+1 090418T143906: IssuePin Response: {"transactionId":"6295fe08-61e1-4eb2-aba4-062e7470c7bc","output":{"pinOTP":"657024","pinExpirationDate":"09/04/2018 07:49 PM GMT"}}
+1 090418T143906: VerifyPin Request: {"orgName":"FDM-PHONE-PIN","otpInput":"405725","userName":"wtzyuhrhkh-wsgcedachjwjlkyjyulrudli"}
+1 090418T143906: VerifyPin Response: {"transactionId":"31056179-5c9a-48bb-bc94-cb0f7aa06819","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+1 090418T143906: VerifyPin Request: {"orgName":"FDM-PHONE-PIN","otpInput":"657024","userName":"wtzyuhrhkh-wsgcedachjwjlkyjyulrudli"}
+1 090418T143906: VerifyPin Response: {"transactionId":"3fde4ca3-5b84-4001-adaf-b741c8a0434d","output":{"daysLeftToExpire":1,"message":"Success"}}
+VerifyPinNoLongerValid passed [FDM-PHONE-PIN, 92a95082-7eda-4fb4-bd2f-e575a3c84d73, https://apidev.idev.fedex.com:8443/security/v1/pin, https://apidev.idev.fedex.com:8443/security/v1/pin/verify]
+1 090418T143906: IssuePin Request: {"orgName":"FDM-POSTCARD-PIN","userName":"exoieoppxn-icnqjwknsgxweeowjudzixff"}
+1 090418T143906: IssuePin Response: {"transactionId":"487b1a1c-e37e-40e5-a32c-87bbd722edc1","output":{"pinOTP":"053856","pinExpirationDate":"09/04/2018 08:09 PM GMT"}}
+1 090418T143906: IssuePin Request: {"orgName":"FDM-POSTCARD-PIN","userName":"exoieoppxn-icnqjwknsgxweeowjudzixff"}
+1 090418T143906: IssuePin Response: {"transactionId":"7937e94e-0d0d-4174-85e4-a29a76f70de8","output":{"pinOTP":"898006","pinExpirationDate":"09/04/2018 08:09 PM GMT"}}
+1 090418T143906: VerifyPin Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"053856","userName":"exoieoppxn-icnqjwknsgxweeowjudzixff"}
+1 090418T143906: VerifyPin Response: {"transactionId":"1d6a8711-d64b-4bc8-bf93-a774e921d37b","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+1 090418T143906: VerifyPin Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"898006","userName":"exoieoppxn-icnqjwknsgxweeowjudzixff"}
+1 090418T143906: VerifyPin Response: {"transactionId":"0e93c664-a852-4eee-a325-23601193197c","output":{"daysLeftToExpire":1,"message":"Success"}}
+VerifyPinNoLongerValid passed [FDM-POSTCARD-PIN, 92a95082-7eda-4fb4-bd2f-e575a3c84d73, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN]
+1 090418T143906: IssuePin Request: {"orgName":"FDM-PHONE-PIN","userName":"qduwtibwea-mnjenmdfklapyhyrfbvdeenv"}
+1 090418T143907: IssuePin Response: {"transactionId":"bc1f66ac-6499-4912-83ce-8f2de0773bac","output":{"pinOTP":"469992","pinExpirationDate":"09/04/2018 07:49 PM GMT"}}
+1 090418T143907: IssuePin Request: {"orgName":"FDM-PHONE-PIN","userName":"qduwtibwea-mnjenmdfklapyhyrfbvdeenv"}
+1 090418T143907: IssuePin Response: {"transactionId":"ebe36412-f849-42b8-b237-577ef4513dab","output":{"pinOTP":"984185","pinExpirationDate":"09/04/2018 07:49 PM GMT"}}
+1 090418T143907: VerifyPin Request: {"orgName":"FDM-PHONE-PIN","otpInput":"469992","userName":"qduwtibwea-mnjenmdfklapyhyrfbvdeenv"}
+1 090418T143907: VerifyPin Response: {"transactionId":"6f75996b-1221-4f8e-a5ef-02c11ebd2df7","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+1 090418T143907: VerifyPin Request: {"orgName":"FDM-PHONE-PIN","otpInput":"984185","userName":"qduwtibwea-mnjenmdfklapyhyrfbvdeenv"}
+1 090418T143907: VerifyPin Response: {"transactionId":"d549fe54-b018-4fcd-b82a-e950bd7ac7c5","output":{"daysLeftToExpire":1,"message":"Success"}}
+VerifyPinNoLongerValid passed [FDM-PHONE-PIN, 92a95082-7eda-4fb4-bd2f-e575a3c84d73, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN]
+1 090418T143907: IssuePin Request: {"orgName":"FDM-POSTCARD-PIN","userName":"cawjatipqc-tkcjeqhafklbhdlxvpqwrxng"}
+1 090418T143907: IssuePin Response: {"transactionId":"471f6258-adbc-4e1c-a896-0259780023b5","output":{"pinOTP":"770743","pinExpirationDate":"09/04/2018 08:09 PM GMT"}}
+1 090418T143907: VerifyPin Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"770743","userName":"cawjatipqc-tkcjeqhafklbhdlxvpqwrxng"}
+1 090418T143907: VerifyPin Response: {"transactionId":"5a8b9267-fe9f-4d97-9e6b-0880d4c603b7","output":{"daysLeftToExpire":1,"message":"Success"}}
+VerifyPinValid passed [FDM-POSTCARD-PIN, 92a95082-7eda-4fb4-bd2f-e575a3c84d73, https://apidev.idev.fedex.com:8443/security/v1/pin, https://apidev.idev.fedex.com:8443/security/v1/pin/verify]
+1 090418T143907: IssuePin Request: {"orgName":"FDM-PHONE-PIN","userName":"nznnhsavad-ntgrqcivxbbebdrvdtfpfofy"}
+1 090418T143907: IssuePin Response: {"transactionId":"6dc85f9a-38e2-4628-9639-1708686c96c2","output":{"pinOTP":"195228","pinExpirationDate":"09/04/2018 07:49 PM GMT"}}
+1 090418T143907: VerifyPin Request: {"orgName":"FDM-PHONE-PIN","otpInput":"195228","userName":"nznnhsavad-ntgrqcivxbbebdrvdtfpfofy"}
+1 090418T143907: VerifyPin Response: {"transactionId":"0be0da96-5318-4e86-a120-183e50fe587a","output":{"daysLeftToExpire":1,"message":"Success"}}
+VerifyPinValid passed [FDM-PHONE-PIN, 92a95082-7eda-4fb4-bd2f-e575a3c84d73, https://apidev.idev.fedex.com:8443/security/v1/pin, https://apidev.idev.fedex.com:8443/security/v1/pin/verify]
+1 090418T143907: IssuePin Request: {"orgName":"FDM-POSTCARD-PIN","userName":"xayudfafaq-xaupgbylrjgjwklycunhchlm"}
+1 090418T143908: IssuePin Response: {"transactionId":"8e75184c-f6ee-44fb-9183-9768c26a11cd","output":{"pinOTP":"394235","pinExpirationDate":"09/04/2018 08:09 PM GMT"}}
+1 090418T143908: VerifyPin Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"394235","userName":"xayudfafaq-xaupgbylrjgjwklycunhchlm"}
+1 090418T143908: VerifyPin Response: {"transactionId":"29e30daf-3eef-463b-b1d6-10ea4d531fc8","output":{"daysLeftToExpire":1,"message":"Success"}}
+VerifyPinValid passed [FDM-POSTCARD-PIN, 92a95082-7eda-4fb4-bd2f-e575a3c84d73, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN]
+1 090418T143908: IssuePin Request: {"orgName":"FDM-PHONE-PIN","userName":"zozrlqztjb-geeunavnvfeumooklpccrdpw"}
+1 090418T143908: IssuePin Response: {"transactionId":"82699bc2-bbe8-4044-aad9-ff1cc663322f","output":{"pinOTP":"111303","pinExpirationDate":"09/04/2018 07:49 PM GMT"}}
+1 090418T143908: VerifyPin Request: {"orgName":"FDM-PHONE-PIN","otpInput":"111303","userName":"zozrlqztjb-geeunavnvfeumooklpccrdpw"}
+1 090418T143908: VerifyPin Response: {"transactionId":"5f973c7c-ee41-4cca-8064-9109dcca302f","output":{"daysLeftToExpire":1,"message":"Success"}}
+VerifyPinValid passed [FDM-PHONE-PIN, 92a95082-7eda-4fb4-bd2f-e575a3c84d73, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN]
+1 090418T143908: IssuePin Request: {"orgName":"FDM-POSTCARD-PIN","userName":"krpobycsjl-xpbtlainsifweuutwgmciwrd"}
+1 090418T143908: IssuePin Response: {"transactionId":"39aaed4c-b252-47da-bf6f-812c0b4e3a7a","output":{"pinOTP":"420715","pinExpirationDate":"09/04/2018 08:09 PM GMT"}}
+1 090418T143908: VerifyPin Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"krpobycsjl-xpbtlainsifweuutwgmciwrd"}
+1 090418T143908: VerifyPin Response: {"transactionId":"4f9f5df0-033a-4128-81c6-20396301a091","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+1 090418T143908: VerifyPin Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"krpobycsjl-xpbtlainsifweuutwgmciwrd"}
+1 090418T143908: VerifyPin Response: {"transactionId":"64be6b84-3ef4-4b53-8f3b-a5242e1df80f","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+1 090418T143908: VerifyPin Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"krpobycsjl-xpbtlainsifweuutwgmciwrd"}
+1 090418T143909: VerifyPin Response: {"transactionId":"caa69608-ce7e-40de-9926-64f4247dc43e","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+1 090418T143909: VerifyPin Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"krpobycsjl-xpbtlainsifweuutwgmciwrd"}
+1 090418T143909: VerifyPin Response: {"transactionId":"44f5c447-99ce-44c1-985a-12f41416f0ab","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+1 090418T143909: VerifyPin Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"krpobycsjl-xpbtlainsifweuutwgmciwrd"}
+1 090418T143909: VerifyPin Response: {"transactionId":"907dc779-4263-4c66-afc0-1069717351e8","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+VerifyPinVelocity passed [FDM-POSTCARD-PIN, 92a95082-7eda-4fb4-bd2f-e575a3c84d73, https://apidev.idev.fedex.com:8443/security/v1/pin, https://apidev.idev.fedex.com:8443/security/v1/pin/verify, 3]
+1 090418T143909: IssuePin Request: {"orgName":"FDM-PHONE-PIN","userName":"plgnguirzf-hluylsrfmzwocyozhoynghcy"}
+1 090418T143909: IssuePin Response: {"transactionId":"fd7edc93-d393-4a69-9ca7-758a8c46210f","output":{"pinOTP":"052101","pinExpirationDate":"09/04/2018 07:49 PM GMT"}}
+1 090418T143909: VerifyPin Request: {"orgName":"FDM-PHONE-PIN","otpInput":"1111","userName":"plgnguirzf-hluylsrfmzwocyozhoynghcy"}
+1 090418T143909: VerifyPin Response: {"transactionId":"8213bb47-d08f-4733-b7fa-eb027474aba9","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+1 090418T143909: VerifyPin Request: {"orgName":"FDM-PHONE-PIN","otpInput":"1111","userName":"plgnguirzf-hluylsrfmzwocyozhoynghcy"}
+1 090418T143910: VerifyPin Response: {"transactionId":"30dcec98-db91-435e-9995-c0027a24c335","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+1 090418T143910: VerifyPin Request: {"orgName":"FDM-PHONE-PIN","otpInput":"1111","userName":"plgnguirzf-hluylsrfmzwocyozhoynghcy"}
+1 090418T143910: VerifyPin Response: {"transactionId":"9405a079-9780-4817-b83f-60fa4fedfcb4","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+1 090418T143910: VerifyPin Request: {"orgName":"FDM-PHONE-PIN","otpInput":"1111","userName":"plgnguirzf-hluylsrfmzwocyozhoynghcy"}
+1 090418T143910: VerifyPin Response: {"transactionId":"28034309-1cac-461d-9560-e881bb2fb7d2","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+1 090418T143910: VerifyPin Request: {"orgName":"FDM-PHONE-PIN","otpInput":"1111","userName":"plgnguirzf-hluylsrfmzwocyozhoynghcy"}
+1 090418T143910: VerifyPin Response: {"transactionId":"d114f272-cdda-4fce-9260-1699f0f3c9b9","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+VerifyPinVelocity passed [FDM-PHONE-PIN, 92a95082-7eda-4fb4-bd2f-e575a3c84d73, https://apidev.idev.fedex.com:8443/security/v1/pin, https://apidev.idev.fedex.com:8443/security/v1/pin/verify, 3]
+1 090418T143910: IssuePin Request: {"orgName":"FDM-POSTCARD-PIN","userName":"krpacilknc-okjcltvccmfqxncbctbkfhmf"}
+1 090418T143910: IssuePin Response: {"transactionId":"b74faaec-8c9f-44bc-b27f-0d4f6a48dcf9","output":{"pinOTP":"613848","pinExpirationDate":"09/04/2018 08:09 PM GMT"}}
+1 090418T143910: VerifyPin Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"krpacilknc-okjcltvccmfqxncbctbkfhmf"}
+1 090418T143910: VerifyPin Response: {"transactionId":"63986b4e-89b3-46f5-8d38-1b2a6ecd1341","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+1 090418T143910: VerifyPin Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"krpacilknc-okjcltvccmfqxncbctbkfhmf"}
+1 090418T143910: VerifyPin Response: {"transactionId":"a13a6de7-5655-45dc-aec2-cda94159a27d","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+1 090418T143910: VerifyPin Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"krpacilknc-okjcltvccmfqxncbctbkfhmf"}
+1 090418T143911: VerifyPin Response: {"transactionId":"82b2ac6b-a124-456e-a07b-884d1ca0a093","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+1 090418T143911: VerifyPin Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"krpacilknc-okjcltvccmfqxncbctbkfhmf"}
+1 090418T143911: VerifyPin Response: {"transactionId":"54942cd5-76fe-475a-82d8-dd3f4c886864","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+1 090418T143911: VerifyPin Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"krpacilknc-okjcltvccmfqxncbctbkfhmf"}
+1 090418T143911: VerifyPin Response: {"transactionId":"c8f486d6-de3f-43dd-a703-cdc415f0fca2","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+VerifyPinVelocity passed [FDM-POSTCARD-PIN, 92a95082-7eda-4fb4-bd2f-e575a3c84d73, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN, 3]
+1 090418T143911: IssuePin Request: {"orgName":"FDM-PHONE-PIN","userName":"krhpbvukdj-xujalxlrtkcxztjtdgderudb"}
+1 090418T143911: IssuePin Response: {"transactionId":"24c4dd5a-6dbc-4bcb-bdfe-0bd83040a68e","output":{"pinOTP":"317619","pinExpirationDate":"09/04/2018 07:49 PM GMT"}}
+1 090418T143911: VerifyPin Request: {"orgName":"FDM-PHONE-PIN","otpInput":"1111","userName":"krhpbvukdj-xujalxlrtkcxztjtdgderudb"}
+1 090418T143911: VerifyPin Response: {"transactionId":"d9b21cb7-0d20-4b6b-b191-cc0ce7e67afc","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+1 090418T143911: VerifyPin Request: {"orgName":"FDM-PHONE-PIN","otpInput":"1111","userName":"krhpbvukdj-xujalxlrtkcxztjtdgderudb"}
+1 090418T143911: VerifyPin Response: {"transactionId":"eaf6ccb8-6426-4410-9ff1-3f480f88a570","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+1 090418T143911: VerifyPin Request: {"orgName":"FDM-PHONE-PIN","otpInput":"1111","userName":"krhpbvukdj-xujalxlrtkcxztjtdgderudb"}
+1 090418T143911: VerifyPin Response: {"transactionId":"22d632b1-e88e-4d50-83a3-85d247129d6d","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+1 090418T143911: VerifyPin Request: {"orgName":"FDM-PHONE-PIN","otpInput":"1111","userName":"krhpbvukdj-xujalxlrtkcxztjtdgderudb"}
+1 090418T143911: VerifyPin Response: {"transactionId":"299bc704-87fe-4131-b39c-1c9d1ac4ec91","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+1 090418T143911: VerifyPin Request: {"orgName":"FDM-PHONE-PIN","otpInput":"1111","userName":"krhpbvukdj-xujalxlrtkcxztjtdgderudb"}
+1 090418T143911: VerifyPin Response: {"transactionId":"9d165072-29b8-49e9-a5b1-7d958a2ff4bf","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+VerifyPinVelocity passed [FDM-PHONE-PIN, 92a95082-7eda-4fb4-bd2f-e575a3c84d73, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN, 3]
+[Tue Sep 04 14:48:00 CDT 2018, pkrzlijoqh-hysweopwbgandjypnhdacluw, FDM-POSTCARD-PIN, 605094, https://apidev.idev.fedex.com:8443/security/v1/pin/verify, 92a95082-7eda-4fb4-bd2f-e575a3c84d73]
+[Tue Sep 04 14:48:00 CDT 2018, mejzsuhmmp-welneopunrrmukwbrtamrkeg, FDM-POSTCARD-PIN, 927210, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN, 92a95082-7eda-4fb4-bd2f-e575a3c84d73]
+[Tue Sep 04 14:48:00 CDT 2018, lkqetylgre-rogfiqbxelupxdfwdjcxjbok, FDM-PHONE-PIN, 401197, https://apidev.idev.fedex.com:8443/security/v1/pin/verify, 92a95082-7eda-4fb4-bd2f-e575a3c84d73]
+[Tue Sep 04 14:49:00 CDT 2018, ukhkeboqai-ghjkpzxddvltixmmyfashbmo, FDM-PHONE-PIN, 147492, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN, 92a95082-7eda-4fb4-bd2f-e575a3c84d73]
+[Tue Sep 04 15:08:00 CDT 2018, orikimlgdb-guocazjmledevsgoyelgggng, FDM-POSTCARD-PIN, 638091, https://apidev.idev.fedex.com:8443/security/v1/pin/verify, 92a95082-7eda-4fb4-bd2f-e575a3c84d73]
+[Tue Sep 04 15:09:00 CDT 2018, xffzwgmlge-mqucziqildrvmeyymaovghyw, FDM-POSTCARD-PIN, 415364, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN, 92a95082-7eda-4fb4-bd2f-e575a3c84d73]
+Expirations failed [Tue Sep 04 14:48:00 CDT 2018, pkrzlijoqh-hysweopwbgandjypnhdacluw, FDM-POSTCARD-PIN, 605094, https://apidev.idev.fedex.com:8443/security/v1/pin/verify, 92a95082-7eda-4fb4-bd2f-e575a3c84d73]
+Expirations failed [Tue Sep 04 14:48:00 CDT 2018, mejzsuhmmp-welneopunrrmukwbrtamrkeg, FDM-POSTCARD-PIN, 927210, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN, 92a95082-7eda-4fb4-bd2f-e575a3c84d73]
+Expirations failed [Tue Sep 04 14:48:00 CDT 2018, lkqetylgre-rogfiqbxelupxdfwdjcxjbok, FDM-PHONE-PIN, 401197, https://apidev.idev.fedex.com:8443/security/v1/pin/verify, 92a95082-7eda-4fb4-bd2f-e575a3c84d73]
+Expirations failed [Tue Sep 04 14:49:00 CDT 2018, ukhkeboqai-ghjkpzxddvltixmmyfashbmo, FDM-PHONE-PIN, 147492, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN, 92a95082-7eda-4fb4-bd2f-e575a3c84d73]
+Expirations failed [Tue Sep 04 15:08:00 CDT 2018, orikimlgdb-guocazjmledevsgoyelgggng, FDM-POSTCARD-PIN, 638091, https://apidev.idev.fedex.com:8443/security/v1/pin/verify, 92a95082-7eda-4fb4-bd2f-e575a3c84d73]
+Expirations failed [Tue Sep 04 15:09:00 CDT 2018, xffzwgmlge-mqucziqildrvmeyymaovghyw, FDM-POSTCARD-PIN, 415364, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN, 92a95082-7eda-4fb4-bd2f-e575a3c84d73]
+
+
+@@ Passed Test Cases:
+1)    <-- AdditionalEnrollmentExpiration: Verify that the user recieves the updated expiration time when changing enrollment method..  (Org:FDM-PHONE-PIN, URLs: http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN)
+Request: {"orgName":"FDM-PHONE-PIN","userName":"mejzsuhmmp-welneopunrrmukwbrtamrkeg"}
+Response: {"transactionId":"4564a1ec-3268-4847-9860-2cfb34567024","output":{"pinOTP":"221947","pinExpirationDate":"09/04/2018 07:48 PM GMT"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"mejzsuhmmp-welneopunrrmukwbrtamrkeg"}
+Response: {"transactionId":"fdfd0b89-1deb-41c9-ba27-62a2abd45604","output":{"pinOTP":"927210","pinExpirationDate":"09/04/2018 08:08 PM GMT"}}
+Request: Will be validated after expiration in later test
+Response: mejzsuhmmp-welneopunrrmukwbrtamrkeg
+Scenario_Passed
+
+2)    <-- AdditionalEnrollmentExpiration: Verify that the user recieves the updated expiration time when changing enrollment method..  (Org:FDM-PHONE-PIN, URLs: https://apidev.idev.fedex.com:8443/security/v1/pin, https://apidev.idev.fedex.com:8443/security/v1/pin/verify)
+Request: {"orgName":"FDM-PHONE-PIN","userName":"pkrzlijoqh-hysweopwbgandjypnhdacluw"}
+Response: {"transactionId":"1580a2cb-c53d-4ea1-93ae-5e2fc769e7d1","output":{"pinOTP":"796194","pinExpirationDate":"09/04/2018 07:48 PM GMT"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"pkrzlijoqh-hysweopwbgandjypnhdacluw"}
+Response: {"transactionId":"4924eb55-4b48-4479-890d-181e291cdeac","output":{"pinOTP":"605094","pinExpirationDate":"09/04/2018 08:08 PM GMT"}}
+Request: Will be validated after expiration in later test
+Response: pkrzlijoqh-hysweopwbgandjypnhdacluw
+Scenario_Passed
+
+3)    <-- AdditionalEnrollmentExpiration: Verify that the user recieves the updated expiration time when changing enrollment method..  (Org:FDM-POSTCARD-PIN, URLs: http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN)
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"cpujhpvfaz-mtcciuttibcxutdqhqvhxehg"}
+Response: {"transactionId":"8319446c-f152-4f84-81c2-7120e414e4c3","output":{"pinOTP":"590112","pinExpirationDate":"09/04/2018 08:08 PM GMT"}}
+Request: {"orgName":"FDM-PHONE-PIN","userName":"cpujhpvfaz-mtcciuttibcxutdqhqvhxehg"}
+Response: {"transactionId":"0e3c5c01-aae0-480f-8677-bcb8acaa86fd","output":{"pinOTP":"533841","pinExpirationDate":"09/04/2018 07:48 PM GMT"}}
+Request: {"orgName":"FDM-PHONE-PIN","otpInput":"533841","userName":"cpujhpvfaz-mtcciuttibcxutdqhqvhxehg"}
+Response: {"transactionId":"295f1d88-2300-4ed9-aedf-c140bbff0eac","output":{"daysLeftToExpire":1,"message":"Success"}}
+Scenario_Passed
+
+4)    <-- AdditionalEnrollmentExpiration: Verify that the user recieves the updated expiration time when changing enrollment method..  (Org:FDM-POSTCARD-PIN, URLs: https://apidev.idev.fedex.com:8443/security/v1/pin, https://apidev.idev.fedex.com:8443/security/v1/pin/verify)
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"omchieupaw-vnyykpoyomzvyflpyyhspatj"}
+Response: {"transactionId":"8d90750b-f471-41c4-941f-e3b1c9b436eb","output":{"pinOTP":"325006","pinExpirationDate":"09/04/2018 08:08 PM GMT"}}
+Request: {"orgName":"FDM-PHONE-PIN","userName":"omchieupaw-vnyykpoyomzvyflpyyhspatj"}
+Response: {"transactionId":"08289ff0-545e-4948-a07c-42bd3ec68ab8","output":{"pinOTP":"475729","pinExpirationDate":"09/04/2018 07:48 PM GMT"}}
+Request: {"orgName":"FDM-PHONE-PIN","otpInput":"475729","userName":"omchieupaw-vnyykpoyomzvyflpyyhspatj"}
+Response: {"transactionId":"b7f302f6-4d4e-43d1-a222-497a87551126","output":{"daysLeftToExpire":1,"message":"Success"}}
+Scenario_Passed
+
+5)    <-- IssuePin: Verify that the user is able to request a pin.  (Org:FDM-PHONE-PIN, URL: http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN)
+Request: {"orgName":"FDM-PHONE-PIN","userName":"nipslgvrfw-rhczovocmpcyqsgxplxbyacz"}
+Response: {"transactionId":"6792336c-f624-42fe-8510-df2637c138fb","output":{"pinOTP":"216253","pinExpirationDate":"09/04/2018 07:48 PM GMT"}}
+Scenario_Passed
+
+6)    <-- IssuePin: Verify that the user is able to request a pin.  (Org:FDM-PHONE-PIN, URL: https://apidev.idev.fedex.com:8443/security/v1/pin)
+Request: {"orgName":"FDM-PHONE-PIN","userName":"kkqupcdwdu-bmlttjklshcrdbhyazjpsbom"}
+Response: {"transactionId":"74bef06e-ed4e-4e55-ac40-90f0033e5f0a","output":{"pinOTP":"859657","pinExpirationDate":"09/04/2018 07:48 PM GMT"}}
+Scenario_Passed
+
+7)    <-- IssuePin: Verify that the user is able to request a pin.  (Org:FDM-POSTCARD-PIN, URL: http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN)
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"ymzdokrpkz-bggzxsiimmloswphdivqdqhq"}
+Response: {"transactionId":"cf60066c-c33e-411a-8ebf-86f2075f97f5","output":{"pinOTP":"315429","pinExpirationDate":"09/04/2018 08:08 PM GMT"}}
+Scenario_Passed
+
+8)    <-- IssuePin: Verify that the user is able to request a pin.  (Org:FDM-POSTCARD-PIN, URL: https://apidev.idev.fedex.com:8443/security/v1/pin)
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"qkpkueugkj-ijpkerfbmjtanxxexcwrfzub"}
+Response: {"transactionId":"2a2c9ef4-9f0a-4165-a005-62901306bfbc","output":{"pinOTP":"581771","pinExpirationDate":"09/04/2018 08:08 PM GMT"}}
+Scenario_Passed
+
+9)    <-- IssuePinExpiration: Verify that after a pin is expired it can no longer be used to complete registration.  (Org:FDM-PHONE-PIN, URLs: http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN)
+Request: {"orgName":"FDM-PHONE-PIN","userName":"ukhkeboqai-ghjkpzxddvltixmmyfashbmo"}
+Response: {"transactionId":"c9de5422-d68a-402a-ad84-b0456b2aa620","output":{"pinOTP":"147492","pinExpirationDate":"09/04/2018 07:49 PM GMT"}}
+Request: Will be validated after expiration in later test
+Response: 
+Scenario_Passed
+
+10)    <-- IssuePinExpiration: Verify that after a pin is expired it can no longer be used to complete registration.  (Org:FDM-PHONE-PIN, URLs: https://apidev.idev.fedex.com:8443/security/v1/pin, https://apidev.idev.fedex.com:8443/security/v1/pin/verify)
+Request: {"orgName":"FDM-PHONE-PIN","userName":"lkqetylgre-rogfiqbxelupxdfwdjcxjbok"}
+Response: {"transactionId":"14deeca8-1d21-4cf6-a001-4538a2838760","output":{"pinOTP":"401197","pinExpirationDate":"09/04/2018 07:48 PM GMT"}}
+Request: Will be validated after expiration in later test
+Response: 
+Scenario_Passed
+
+11)    <-- IssuePinExpiration: Verify that after a pin is expired it can no longer be used to complete registration.  (Org:FDM-POSTCARD-PIN, URLs: http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN)
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"xffzwgmlge-mqucziqildrvmeyymaovghyw"}
+Response: {"transactionId":"426c263b-f5e1-476a-a350-e9b144d98130","output":{"pinOTP":"415364","pinExpirationDate":"09/04/2018 08:09 PM GMT"}}
+Request: Will be validated after expiration in later test
+Response: 
+Scenario_Passed
+
+12)    <-- IssuePinExpiration: Verify that after a pin is expired it can no longer be used to complete registration.  (Org:FDM-POSTCARD-PIN, URLs: https://apidev.idev.fedex.com:8443/security/v1/pin, https://apidev.idev.fedex.com:8443/security/v1/pin/verify)
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"orikimlgdb-guocazjmledevsgoyelgggng"}
+Response: {"transactionId":"b9475768-1abd-4629-885a-5ee877502095","output":{"pinOTP":"638091","pinExpirationDate":"09/04/2018 08:08 PM GMT"}}
+Request: Will be validated after expiration in later test
+Response: 
+Scenario_Passed
+
+13)    <-- IssuePinVelocity: Verify that the user can request up to 3 pin numbers before unable to request more.  (Org:FDM-PHONE-PIN, URL: http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, Threshold: 3)
+Request: {"orgName":"FDM-PHONE-PIN","userName":"botlxcmwsj-jiayjezztizgcoiulhoxlenf"}
+Response: {"transactionId":"41570a6d-0b54-4568-9dac-ab182cbc8872","output":{"pinOTP":"896354","pinExpirationDate":"09/04/2018 07:49 PM GMT"}}
+Request: {"orgName":"FDM-PHONE-PIN","userName":"botlxcmwsj-jiayjezztizgcoiulhoxlenf"}
+Response: {"transactionId":"ceacb2d9-5ef3-410a-a8f3-b46c24f69f15","output":{"pinOTP":"679023","pinExpirationDate":"09/04/2018 07:49 PM GMT"}}
+Request: {"orgName":"FDM-PHONE-PIN","userName":"botlxcmwsj-jiayjezztizgcoiulhoxlenf"}
+Response: {"transactionId":"8739b2c4-0d11-4d72-bf7f-af9bd4e037cc","output":{"pinOTP":"822834","pinExpirationDate":"09/04/2018 07:49 PM GMT"}}
+Request: {"orgName":"FDM-PHONE-PIN","userName":"botlxcmwsj-jiayjezztizgcoiulhoxlenf"}
+Response: {"transactionId":"c042d3a9-4203-465e-8931-521bfb5d8c29","errors":[{"code":"5700","message":"Unfortunately, you have exceeded your attempts for verification. Please try again later."}]}
+Scenario_Passed
+
+14)    <-- IssuePinVelocity: Verify that the user can request up to 3 pin numbers before unable to request more.  (Org:FDM-PHONE-PIN, URL: https://apidev.idev.fedex.com:8443/security/v1/pin, Threshold: 3)
+Request: {"orgName":"FDM-PHONE-PIN","userName":"tcdntwpaon-dgwizeljcrktzxqculnlrlne"}
+Response: {"transactionId":"32338905-bb5d-40eb-8dc0-820c11acd0d0","output":{"pinOTP":"805887","pinExpirationDate":"09/04/2018 07:49 PM GMT"}}
+Request: {"orgName":"FDM-PHONE-PIN","userName":"tcdntwpaon-dgwizeljcrktzxqculnlrlne"}
+Response: {"transactionId":"5df93375-e036-4bac-9db8-413827ade0f4","output":{"pinOTP":"625356","pinExpirationDate":"09/04/2018 07:49 PM GMT"}}
+Request: {"orgName":"FDM-PHONE-PIN","userName":"tcdntwpaon-dgwizeljcrktzxqculnlrlne"}
+Response: {"transactionId":"623dceda-84fa-4240-9f43-bc00346f9dc3","output":{"pinOTP":"384543","pinExpirationDate":"09/04/2018 07:49 PM GMT"}}
+Request: {"orgName":"FDM-PHONE-PIN","userName":"tcdntwpaon-dgwizeljcrktzxqculnlrlne"}
+Response: {"transactionId":"5df8f9cb-784e-4c89-839b-a64b2cbf9193","errors":[{"code":"5700","message":"Unfortunately, you have exceeded your attempts for verification. Please try again later."}]}
+Scenario_Passed
+
+15)    <-- IssuePinVelocity: Verify that the user can request up to 3 pin numbers before unable to request more.  (Org:FDM-POSTCARD-PIN, URL: http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, Threshold: 3)
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"lvkypsxeaf-ytfumuwiuolrniozqpnyswlj"}
+Response: {"transactionId":"07ba985d-31c7-40f5-8263-1fa9379a34d4","output":{"pinOTP":"955251","pinExpirationDate":"09/04/2018 08:09 PM GMT"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"lvkypsxeaf-ytfumuwiuolrniozqpnyswlj"}
+Response: {"transactionId":"d0d92de7-44a7-4e5d-ac24-aa094b442abc","output":{"pinOTP":"194097","pinExpirationDate":"09/04/2018 08:09 PM GMT"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"lvkypsxeaf-ytfumuwiuolrniozqpnyswlj"}
+Response: {"transactionId":"30f068d3-9721-4624-96f6-c87a9f0a1c96","output":{"pinOTP":"763525","pinExpirationDate":"09/04/2018 08:09 PM GMT"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"lvkypsxeaf-ytfumuwiuolrniozqpnyswlj"}
+Response: {"transactionId":"6334882a-3eca-460c-bd21-89e41fbeca73","errors":[{"code":"5700","message":"Unfortunately, you have exceeded your attempts for verification. Please try again later."}]}
+Scenario_Passed
+
+16)    <-- IssuePinVelocity: Verify that the user can request up to 3 pin numbers before unable to request more.  (Org:FDM-POSTCARD-PIN, URL: https://apidev.idev.fedex.com:8443/security/v1/pin, Threshold: 3)
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"erurwfmson-jpoqcdgtgcvkddgfghtcweew"}
+Response: {"transactionId":"45b7dd5a-a6ea-4441-80ea-883e478749a3","output":{"pinOTP":"477488","pinExpirationDate":"09/04/2018 08:09 PM GMT"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"erurwfmson-jpoqcdgtgcvkddgfghtcweew"}
+Response: {"transactionId":"94e3b1cc-e44f-42bb-853e-638c9a954b5f","output":{"pinOTP":"144898","pinExpirationDate":"09/04/2018 08:09 PM GMT"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"erurwfmson-jpoqcdgtgcvkddgfghtcweew"}
+Response: {"transactionId":"5df2d6f6-6dcf-4654-82d3-393001b74baa","output":{"pinOTP":"776279","pinExpirationDate":"09/04/2018 08:09 PM GMT"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"erurwfmson-jpoqcdgtgcvkddgfghtcweew"}
+Response: {"transactionId":"55dffca8-22e8-463b-9329-40ab88f6001f","errors":[{"code":"5700","message":"Unfortunately, you have exceeded your attempts for verification. Please try again later."}]}
+Scenario_Passed
+
+17)    <-- VerifyPinNoLongerValid: Verify that when user requests a second pin that the first is no longer valid.  (Org:FDM-PHONE-PIN, URLs: http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN)
+Request: {"orgName":"FDM-PHONE-PIN","userName":"qduwtibwea-mnjenmdfklapyhyrfbvdeenv"}
+Response: {"transactionId":"bc1f66ac-6499-4912-83ce-8f2de0773bac","output":{"pinOTP":"469992","pinExpirationDate":"09/04/2018 07:49 PM GMT"}}
+Request: {"orgName":"FDM-PHONE-PIN","userName":"qduwtibwea-mnjenmdfklapyhyrfbvdeenv"}
+Response: {"transactionId":"ebe36412-f849-42b8-b237-577ef4513dab","output":{"pinOTP":"984185","pinExpirationDate":"09/04/2018 07:49 PM GMT"}}
+Request: {"orgName":"FDM-PHONE-PIN","otpInput":"469992","userName":"qduwtibwea-mnjenmdfklapyhyrfbvdeenv"}
+Response: {"transactionId":"6f75996b-1221-4f8e-a5ef-02c11ebd2df7","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+Request: {"orgName":"FDM-PHONE-PIN","otpInput":"984185","userName":"qduwtibwea-mnjenmdfklapyhyrfbvdeenv"}
+Response: {"transactionId":"d549fe54-b018-4fcd-b82a-e950bd7ac7c5","output":{"daysLeftToExpire":1,"message":"Success"}}
+Scenario_Passed
+
+18)    <-- VerifyPinNoLongerValid: Verify that when user requests a second pin that the first is no longer valid.  (Org:FDM-PHONE-PIN, URLs: https://apidev.idev.fedex.com:8443/security/v1/pin, https://apidev.idev.fedex.com:8443/security/v1/pin/verify)
+Request: {"orgName":"FDM-PHONE-PIN","userName":"wtzyuhrhkh-wsgcedachjwjlkyjyulrudli"}
+Response: {"transactionId":"4eed69cc-4334-4b64-923c-b44188a55cac","output":{"pinOTP":"405725","pinExpirationDate":"09/04/2018 07:49 PM GMT"}}
+Request: {"orgName":"FDM-PHONE-PIN","userName":"wtzyuhrhkh-wsgcedachjwjlkyjyulrudli"}
+Response: {"transactionId":"6295fe08-61e1-4eb2-aba4-062e7470c7bc","output":{"pinOTP":"657024","pinExpirationDate":"09/04/2018 07:49 PM GMT"}}
+Request: {"orgName":"FDM-PHONE-PIN","otpInput":"405725","userName":"wtzyuhrhkh-wsgcedachjwjlkyjyulrudli"}
+Response: {"transactionId":"31056179-5c9a-48bb-bc94-cb0f7aa06819","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+Request: {"orgName":"FDM-PHONE-PIN","otpInput":"657024","userName":"wtzyuhrhkh-wsgcedachjwjlkyjyulrudli"}
+Response: {"transactionId":"3fde4ca3-5b84-4001-adaf-b741c8a0434d","output":{"daysLeftToExpire":1,"message":"Success"}}
+Scenario_Passed
+
+19)    <-- VerifyPinNoLongerValid: Verify that when user requests a second pin that the first is no longer valid.  (Org:FDM-POSTCARD-PIN, URLs: http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN)
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"exoieoppxn-icnqjwknsgxweeowjudzixff"}
+Response: {"transactionId":"487b1a1c-e37e-40e5-a32c-87bbd722edc1","output":{"pinOTP":"053856","pinExpirationDate":"09/04/2018 08:09 PM GMT"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"exoieoppxn-icnqjwknsgxweeowjudzixff"}
+Response: {"transactionId":"7937e94e-0d0d-4174-85e4-a29a76f70de8","output":{"pinOTP":"898006","pinExpirationDate":"09/04/2018 08:09 PM GMT"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"053856","userName":"exoieoppxn-icnqjwknsgxweeowjudzixff"}
+Response: {"transactionId":"1d6a8711-d64b-4bc8-bf93-a774e921d37b","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"898006","userName":"exoieoppxn-icnqjwknsgxweeowjudzixff"}
+Response: {"transactionId":"0e93c664-a852-4eee-a325-23601193197c","output":{"daysLeftToExpire":1,"message":"Success"}}
+Scenario_Passed
+
+20)    <-- VerifyPinNoLongerValid: Verify that when user requests a second pin that the first is no longer valid.  (Org:FDM-POSTCARD-PIN, URLs: https://apidev.idev.fedex.com:8443/security/v1/pin, https://apidev.idev.fedex.com:8443/security/v1/pin/verify)
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"opvsbojxiv-jabkztgayvrodmpixbdybkrd"}
+Response: {"transactionId":"efe119f1-3b90-4a5c-884c-c5494d2a4706","output":{"pinOTP":"237534","pinExpirationDate":"09/04/2018 08:09 PM GMT"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"opvsbojxiv-jabkztgayvrodmpixbdybkrd"}
+Response: {"transactionId":"69f37145-c2fc-4c0a-9d08-5ee3e3611418","output":{"pinOTP":"589855","pinExpirationDate":"09/04/2018 08:09 PM GMT"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"237534","userName":"opvsbojxiv-jabkztgayvrodmpixbdybkrd"}
+Response: {"transactionId":"f32a89d7-d4d3-475d-8456-bb3473efc4f7","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"589855","userName":"opvsbojxiv-jabkztgayvrodmpixbdybkrd"}
+Response: {"transactionId":"8db251a2-6eee-42b3-9b1b-c740c9499c04","output":{"daysLeftToExpire":1,"message":"Success"}}
+Scenario_Passed
+
+21)    <-- VerifyPinThreshold: When an invalid pin is entered the pin failure message should be returned passed the velocity threshold of 3.  (Org:FDM-PHONE-PIN, URLs: http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN, Threshold: 3)
+Request: {"orgName":"FDM-PHONE-PIN","userName":"krhpbvukdj-xujalxlrtkcxztjtdgderudb"}
+Response: {"transactionId":"24c4dd5a-6dbc-4bcb-bdfe-0bd83040a68e","output":{"pinOTP":"317619","pinExpirationDate":"09/04/2018 07:49 PM GMT"}}
+Request: {"orgName":"FDM-PHONE-PIN","otpInput":"1111","userName":"krhpbvukdj-xujalxlrtkcxztjtdgderudb"}
+Response: {"transactionId":"d9b21cb7-0d20-4b6b-b191-cc0ce7e67afc","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+Request: {"orgName":"FDM-PHONE-PIN","otpInput":"1111","userName":"krhpbvukdj-xujalxlrtkcxztjtdgderudb"}
+Response: {"transactionId":"eaf6ccb8-6426-4410-9ff1-3f480f88a570","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+Request: {"orgName":"FDM-PHONE-PIN","otpInput":"1111","userName":"krhpbvukdj-xujalxlrtkcxztjtdgderudb"}
+Response: {"transactionId":"22d632b1-e88e-4d50-83a3-85d247129d6d","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+Request: {"orgName":"FDM-PHONE-PIN","otpInput":"1111","userName":"krhpbvukdj-xujalxlrtkcxztjtdgderudb"}
+Response: {"transactionId":"299bc704-87fe-4131-b39c-1c9d1ac4ec91","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+Request: {"orgName":"FDM-PHONE-PIN","otpInput":"1111","userName":"krhpbvukdj-xujalxlrtkcxztjtdgderudb"}
+Response: {"transactionId":"9d165072-29b8-49e9-a5b1-7d958a2ff4bf","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+Scenario_Passed
+
+22)    <-- VerifyPinThreshold: When an invalid pin is entered the pin failure message should be returned passed the velocity threshold of 3.  (Org:FDM-PHONE-PIN, URLs: https://apidev.idev.fedex.com:8443/security/v1/pin, https://apidev.idev.fedex.com:8443/security/v1/pin/verify, Threshold: 3)
+Request: {"orgName":"FDM-PHONE-PIN","userName":"plgnguirzf-hluylsrfmzwocyozhoynghcy"}
+Response: {"transactionId":"fd7edc93-d393-4a69-9ca7-758a8c46210f","output":{"pinOTP":"052101","pinExpirationDate":"09/04/2018 07:49 PM GMT"}}
+Request: {"orgName":"FDM-PHONE-PIN","otpInput":"1111","userName":"plgnguirzf-hluylsrfmzwocyozhoynghcy"}
+Response: {"transactionId":"8213bb47-d08f-4733-b7fa-eb027474aba9","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+Request: {"orgName":"FDM-PHONE-PIN","otpInput":"1111","userName":"plgnguirzf-hluylsrfmzwocyozhoynghcy"}
+Response: {"transactionId":"30dcec98-db91-435e-9995-c0027a24c335","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+Request: {"orgName":"FDM-PHONE-PIN","otpInput":"1111","userName":"plgnguirzf-hluylsrfmzwocyozhoynghcy"}
+Response: {"transactionId":"9405a079-9780-4817-b83f-60fa4fedfcb4","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+Request: {"orgName":"FDM-PHONE-PIN","otpInput":"1111","userName":"plgnguirzf-hluylsrfmzwocyozhoynghcy"}
+Response: {"transactionId":"28034309-1cac-461d-9560-e881bb2fb7d2","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+Request: {"orgName":"FDM-PHONE-PIN","otpInput":"1111","userName":"plgnguirzf-hluylsrfmzwocyozhoynghcy"}
+Response: {"transactionId":"d114f272-cdda-4fce-9260-1699f0f3c9b9","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+Scenario_Passed
+
+23)    <-- VerifyPinThreshold: When an invalid pin is entered the pin failure message should be returned passed the velocity threshold of 3.  (Org:FDM-POSTCARD-PIN, URLs: http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN, Threshold: 3)
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"krpacilknc-okjcltvccmfqxncbctbkfhmf"}
+Response: {"transactionId":"b74faaec-8c9f-44bc-b27f-0d4f6a48dcf9","output":{"pinOTP":"613848","pinExpirationDate":"09/04/2018 08:09 PM GMT"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"krpacilknc-okjcltvccmfqxncbctbkfhmf"}
+Response: {"transactionId":"63986b4e-89b3-46f5-8d38-1b2a6ecd1341","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"krpacilknc-okjcltvccmfqxncbctbkfhmf"}
+Response: {"transactionId":"a13a6de7-5655-45dc-aec2-cda94159a27d","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"krpacilknc-okjcltvccmfqxncbctbkfhmf"}
+Response: {"transactionId":"82b2ac6b-a124-456e-a07b-884d1ca0a093","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"krpacilknc-okjcltvccmfqxncbctbkfhmf"}
+Response: {"transactionId":"54942cd5-76fe-475a-82d8-dd3f4c886864","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"krpacilknc-okjcltvccmfqxncbctbkfhmf"}
+Response: {"transactionId":"c8f486d6-de3f-43dd-a703-cdc415f0fca2","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+Scenario_Passed
+
+24)    <-- VerifyPinThreshold: When an invalid pin is entered the pin failure message should be returned passed the velocity threshold of 3.  (Org:FDM-POSTCARD-PIN, URLs: https://apidev.idev.fedex.com:8443/security/v1/pin, https://apidev.idev.fedex.com:8443/security/v1/pin/verify, Threshold: 3)
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"krpobycsjl-xpbtlainsifweuutwgmciwrd"}
+Response: {"transactionId":"39aaed4c-b252-47da-bf6f-812c0b4e3a7a","output":{"pinOTP":"420715","pinExpirationDate":"09/04/2018 08:09 PM GMT"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"krpobycsjl-xpbtlainsifweuutwgmciwrd"}
+Response: {"transactionId":"4f9f5df0-033a-4128-81c6-20396301a091","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"krpobycsjl-xpbtlainsifweuutwgmciwrd"}
+Response: {"transactionId":"64be6b84-3ef4-4b53-8f3b-a5242e1df80f","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"krpobycsjl-xpbtlainsifweuutwgmciwrd"}
+Response: {"transactionId":"caa69608-ce7e-40de-9926-64f4247dc43e","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"krpobycsjl-xpbtlainsifweuutwgmciwrd"}
+Response: {"transactionId":"44f5c447-99ce-44c1-985a-12f41416f0ab","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"1111","userName":"krpobycsjl-xpbtlainsifweuutwgmciwrd"}
+Response: {"transactionId":"907dc779-4263-4c66-afc0-1069717351e8","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+Scenario_Passed
+
+25)    <-- VerifyPinValid: Verify that user is able to request a pin and then verify that can recieve success when using the generated pin.  (Org:FDM-PHONE-PIN, URLs: http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN)
+Request: {"orgName":"FDM-PHONE-PIN","userName":"zozrlqztjb-geeunavnvfeumooklpccrdpw"}
+Response: {"transactionId":"82699bc2-bbe8-4044-aad9-ff1cc663322f","output":{"pinOTP":"111303","pinExpirationDate":"09/04/2018 07:49 PM GMT"}}
+Request: {"orgName":"FDM-PHONE-PIN","otpInput":"111303","userName":"zozrlqztjb-geeunavnvfeumooklpccrdpw"}
+Response: {"transactionId":"5f973c7c-ee41-4cca-8064-9109dcca302f","output":{"daysLeftToExpire":1,"message":"Success"}}
+Scenario_Passed
+
+26)    <-- VerifyPinValid: Verify that user is able to request a pin and then verify that can recieve success when using the generated pin.  (Org:FDM-PHONE-PIN, URLs: https://apidev.idev.fedex.com:8443/security/v1/pin, https://apidev.idev.fedex.com:8443/security/v1/pin/verify)
+Request: {"orgName":"FDM-PHONE-PIN","userName":"nznnhsavad-ntgrqcivxbbebdrvdtfpfofy"}
+Response: {"transactionId":"6dc85f9a-38e2-4628-9639-1708686c96c2","output":{"pinOTP":"195228","pinExpirationDate":"09/04/2018 07:49 PM GMT"}}
+Request: {"orgName":"FDM-PHONE-PIN","otpInput":"195228","userName":"nznnhsavad-ntgrqcivxbbebdrvdtfpfofy"}
+Response: {"transactionId":"0be0da96-5318-4e86-a120-183e50fe587a","output":{"daysLeftToExpire":1,"message":"Success"}}
+Scenario_Passed
+
+27)    <-- VerifyPinValid: Verify that user is able to request a pin and then verify that can recieve success when using the generated pin.  (Org:FDM-POSTCARD-PIN, URLs: http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN, http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN)
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"xayudfafaq-xaupgbylrjgjwklycunhchlm"}
+Response: {"transactionId":"8e75184c-f6ee-44fb-9183-9768c26a11cd","output":{"pinOTP":"394235","pinExpirationDate":"09/04/2018 08:09 PM GMT"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"394235","userName":"xayudfafaq-xaupgbylrjgjwklycunhchlm"}
+Response: {"transactionId":"29e30daf-3eef-463b-b1d6-10ea4d531fc8","output":{"daysLeftToExpire":1,"message":"Success"}}
+Scenario_Passed
+
+28)    <-- VerifyPinValid: Verify that user is able to request a pin and then verify that can recieve success when using the generated pin.  (Org:FDM-POSTCARD-PIN, URLs: https://apidev.idev.fedex.com:8443/security/v1/pin, https://apidev.idev.fedex.com:8443/security/v1/pin/verify)
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"cawjatipqc-tkcjeqhafklbhdlxvpqwrxng"}
+Response: {"transactionId":"471f6258-adbc-4e1c-a896-0259780023b5","output":{"pinOTP":"770743","pinExpirationDate":"09/04/2018 08:09 PM GMT"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"770743","userName":"cawjatipqc-tkcjeqhafklbhdlxvpqwrxng"}
+Response: {"transactionId":"5a8b9267-fe9f-4d97-9e6b-0880d4c603b7","output":{"daysLeftToExpire":1,"message":"Success"}}
+Scenario_Passed
+
+
+
+@@ Failed Test Cases:
+29)    <-- AddressVelocity: Verify that the address velocity of 10 is reached and the correct error code is received.  (Org:FDM-PHONE-PIN, URL: http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/addressVelocityCheck, Threshold: 10)
+Request: {"orgName":"FDM-PHONE-PIN","userName":"dhviifhgvd-luutcjaelwazyfiheryisebl"}
+Response: {"transactionId":"8334f400-2bf2-47f4-af8f-e5671bf08e66","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-PHONE-PIN","userName":"dhviifhgvd-luutcjaelwazyfiheryisebl"}
+Response: {"transactionId":"c164628f-0db4-4088-8cbc-32735f794f96","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-PHONE-PIN","userName":"dhviifhgvd-luutcjaelwazyfiheryisebl"}
+Response: {"transactionId":"54a1f9b1-a688-4e52-b296-0fab9ec6c90b","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-PHONE-PIN","userName":"dhviifhgvd-luutcjaelwazyfiheryisebl"}
+Response: {"transactionId":"88f7e71d-2db5-4160-bc57-da2249d3a180","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-PHONE-PIN","userName":"dhviifhgvd-luutcjaelwazyfiheryisebl"}
+Response: {"transactionId":"b3d2ff8a-0601-4d8a-92e3-d9e22cd48ccc","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-PHONE-PIN","userName":"dhviifhgvd-luutcjaelwazyfiheryisebl"}
+Response: {"transactionId":"058d4d60-ec55-4742-be8c-841205d6b352","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-PHONE-PIN","userName":"dhviifhgvd-luutcjaelwazyfiheryisebl"}
+Response: {"transactionId":"0ec9824c-bf80-492d-958a-3ebd7bcaa951","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-PHONE-PIN","userName":"dhviifhgvd-luutcjaelwazyfiheryisebl"}
+Response: {"transactionId":"d31f8b3a-8e79-42ca-87c2-39e7a4856376","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-PHONE-PIN","userName":"dhviifhgvd-luutcjaelwazyfiheryisebl"}
+Response: {"transactionId":"38ebd3a9-072d-4d39-9c0d-ab0601738db9","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-PHONE-PIN","userName":"dhviifhgvd-luutcjaelwazyfiheryisebl"}
+Response: {"transactionId":"0952753d-f4bc-41f0-b691-55e514391811","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-PHONE-PIN","userName":"dhviifhgvd-luutcjaelwazyfiheryisebl"}
+Response: {"transactionId":"3b0c59a5-ca64-4782-a92e-5de25bfd83e2","output":{"advice":"ALLOW"}}
+Scenario_Failed
+
+30)    <-- AddressVelocity: Verify that the address velocity of 10 is reached and the correct error code is received.  (Org:FDM-PHONE-PIN, URL: https://apidev.idev.fedex.com:8443/security/v1/addresses/velocitycheck, Threshold: 10)
+Request: {"orgName":"FDM-PHONE-PIN","userName":"khmospmlxo-enklhmgrnhrwiclghabcrxsc"}
+Response: {"transactionId":"2668ed01-a1e6-47e5-8fdb-b104f2fd016c","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-PHONE-PIN","userName":"khmospmlxo-enklhmgrnhrwiclghabcrxsc"}
+Response: {"transactionId":"4f215bec-1365-4ade-bac0-95f7c500a54e","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-PHONE-PIN","userName":"khmospmlxo-enklhmgrnhrwiclghabcrxsc"}
+Response: {"transactionId":"d087651b-e06b-44ce-9605-352082dd4202","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-PHONE-PIN","userName":"khmospmlxo-enklhmgrnhrwiclghabcrxsc"}
+Response: {"transactionId":"43064cd9-5ae3-4186-ad41-810692bb4833","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-PHONE-PIN","userName":"khmospmlxo-enklhmgrnhrwiclghabcrxsc"}
+Response: {"transactionId":"dc5335ef-1c43-45d5-8bf6-925281287ac3","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-PHONE-PIN","userName":"khmospmlxo-enklhmgrnhrwiclghabcrxsc"}
+Response: {"transactionId":"da3c637d-ff2d-425e-8eac-818aff969f32","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-PHONE-PIN","userName":"khmospmlxo-enklhmgrnhrwiclghabcrxsc"}
+Response: {"transactionId":"08756f58-b502-424e-abda-8a19d4877cd1","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-PHONE-PIN","userName":"khmospmlxo-enklhmgrnhrwiclghabcrxsc"}
+Response: {"transactionId":"e5e8d16b-9fe7-435e-9000-522c484636af","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-PHONE-PIN","userName":"khmospmlxo-enklhmgrnhrwiclghabcrxsc"}
+Response: {"transactionId":"74d1bd72-ac95-4ae6-b7bc-cba5c12282c9","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-PHONE-PIN","userName":"khmospmlxo-enklhmgrnhrwiclghabcrxsc"}
+Response: {"transactionId":"06123942-de79-481b-9570-5814e65f9914","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-PHONE-PIN","userName":"khmospmlxo-enklhmgrnhrwiclghabcrxsc"}
+Response: {"transactionId":"d6c23dd1-78d3-4af2-91d7-2cf4a8c0d2f8","output":{"advice":"ALLOW"}}
+Scenario_Failed
+
+31)    <-- AddressVelocity: Verify that the address velocity of 10 is reached and the correct error code is received.  (Org:FDM-POSTCARD-PIN, URL: http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/addressVelocityCheck, Threshold: 10)
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"ixmygwhilu-nkpeavhrdtzyjzmhrevgvahq"}
+Response: {"transactionId":"8ce8a905-3693-450a-8758-514145d69ef8","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"ixmygwhilu-nkpeavhrdtzyjzmhrevgvahq"}
+Response: {"transactionId":"6dc79829-0d69-40e1-a9ed-3adef305f35f","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"ixmygwhilu-nkpeavhrdtzyjzmhrevgvahq"}
+Response: {"transactionId":"2c3fab41-1408-4a15-b18b-1ceb34af70f1","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"ixmygwhilu-nkpeavhrdtzyjzmhrevgvahq"}
+Response: {"transactionId":"726cea18-5d7f-41cf-a5a8-80cac19233d9","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"ixmygwhilu-nkpeavhrdtzyjzmhrevgvahq"}
+Response: {"transactionId":"e6cbc4e8-2697-4473-bccb-2c10bea83e18","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"ixmygwhilu-nkpeavhrdtzyjzmhrevgvahq"}
+Response: {"transactionId":"3afa0f43-2154-47ee-b5ba-ed07fdedb594","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"ixmygwhilu-nkpeavhrdtzyjzmhrevgvahq"}
+Response: {"transactionId":"ad5d2fc6-2e32-4ac2-b393-d955535f15c2","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"ixmygwhilu-nkpeavhrdtzyjzmhrevgvahq"}
+Response: {"transactionId":"07cdcd1d-dde9-43b7-b52f-82bd48c8d24a","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"ixmygwhilu-nkpeavhrdtzyjzmhrevgvahq"}
+Response: {"transactionId":"709245f5-00f7-4276-ad97-380e69df4a03","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"ixmygwhilu-nkpeavhrdtzyjzmhrevgvahq"}
+Response: {"transactionId":"2f9186cf-f4de-4253-97bf-bda368ba32cd","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"ixmygwhilu-nkpeavhrdtzyjzmhrevgvahq"}
+Response: {"transactionId":"51725ca0-32ba-42c5-924a-07e46847fb41","output":{"advice":"ALLOW"}}
+Scenario_Failed
+
+32)    <-- AddressVelocity: Verify that the address velocity of 10 is reached and the correct error code is received.  (Org:FDM-POSTCARD-PIN, URL: https://apidev.idev.fedex.com:8443/security/v1/addresses/velocitycheck, Threshold: 10)
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"kwycuzchfm-sssurcalozqytdpdsnlwevvx"}
+Response: {"transactionId":"3c00d2d9-8431-4a3b-8776-4f716e5772ab","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"kwycuzchfm-sssurcalozqytdpdsnlwevvx"}
+Response: {"transactionId":"644b1713-78da-4ba9-b235-49ae3cc3fafe","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"kwycuzchfm-sssurcalozqytdpdsnlwevvx"}
+Response: {"transactionId":"b653c6e7-6837-4237-bd08-95fa572e57da","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"kwycuzchfm-sssurcalozqytdpdsnlwevvx"}
+Response: {"transactionId":"6055e4af-d620-41c8-8ad3-87ded43437eb","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"kwycuzchfm-sssurcalozqytdpdsnlwevvx"}
+Response: {"transactionId":"a5a5222e-cbed-483b-abfc-577762d606c7","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"kwycuzchfm-sssurcalozqytdpdsnlwevvx"}
+Response: {"transactionId":"4dfca55f-e2fa-4c9a-8416-f382240e04a1","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"kwycuzchfm-sssurcalozqytdpdsnlwevvx"}
+Response: {"transactionId":"340d04a5-4c06-4385-bc50-3780136c22ee","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"kwycuzchfm-sssurcalozqytdpdsnlwevvx"}
+Response: {"transactionId":"e3e931a8-bdca-4815-91c5-2eb032e7cf3a","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"kwycuzchfm-sssurcalozqytdpdsnlwevvx"}
+Response: {"transactionId":"a8a6fdea-8415-4609-8233-1065fc4b49ef","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"kwycuzchfm-sssurcalozqytdpdsnlwevvx"}
+Response: {"transactionId":"be5061a6-4e5b-4954-8696-1bddfcb3c9ba","output":{"advice":"ALLOW"}}
+Request: {"orgName":"FDM-POSTCARD-PIN","userName":"kwycuzchfm-sssurcalozqytdpdsnlwevvx"}
+Response: {"transactionId":"75e13202-9e51-403c-8db9-fab1e2b35c93","output":{"advice":"ALLOW"}}
+Scenario_Failed
+
+33)    <-- Expirations: Verify the test cases after the expiraiton has expired.    UserName:lkqetylgre-rogfiqbxelupxdfwdjcxjbok, Org:FDM-PHONE-PIN, Pin:401197, VerifyURLhttps://apidev.idev.fedex.com:8443/security/v1/pin/verify
+Scenario_Failed
+
+34)    <-- Expirations: Verify the test cases after the expiraiton has expired.    UserName:mejzsuhmmp-welneopunrrmukwbrtamrkeg, Org:FDM-POSTCARD-PIN, Pin:927210, VerifyURLhttp://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN
+Scenario_Failed
+
+35)    <-- Expirations: Verify the test cases after the expiraiton has expired.    UserName:orikimlgdb-guocazjmledevsgoyelgggng, Org:FDM-POSTCARD-PIN, Pin:638091, VerifyURLhttps://apidev.idev.fedex.com:8443/security/v1/pin/verify
+Scenario_Failed
+
+36)    <-- Expirations: Verify the test cases after the expiraiton has expired.    UserName:pkrzlijoqh-hysweopwbgandjypnhdacluw, Org:FDM-POSTCARD-PIN, Pin:605094, VerifyURLhttps://apidev.idev.fedex.com:8443/security/v1/pin/verify
+Scenario_Failed
+
+37)    <-- Expirations: Verify the test cases after the expiraiton has expired.    UserName:ukhkeboqai-ghjkpzxddvltixmmyfashbmo, Org:FDM-PHONE-PIN, Pin:147492, VerifyURLhttp://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN
+Scenario_Failed
+
+38)    <-- Expirations: Verify the test cases after the expiraiton has expired.    UserName:xffzwgmlge-mqucziqildrvmeyymaovghyw, Org:FDM-POSTCARD-PIN, Pin:415364, VerifyURLhttp://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN
+Scenario_Failed
+
+
+Execution Time in seconds: 34  (34426 miliseconds)
+Passed: 28 - Failed: 10
+

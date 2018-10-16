@@ -1,0 +1,119 @@
+050918T143004: Token request: {  "access_token":"b2d4bfa4-b887-42fc-848c-b714064ffb3a",  "token_type":"Bearer",  "expires_in":3600,  "scope":"oob"}     l7xx55c591482e9c47bfb0556561cb9e8cfa 0c33a18ff14c4bc7bc4880ef30067c52
+
+050918T143004: $APIG$
+Endpoint is being used.
+050918T143004: IssueURL = https://apitest.fedex.com/security/v1/pin
+VerifyURL = https://apitest.fedex.com/security/v1/pin/verify
+VelocityURL = https://apitest.fedex.com/security/v1/addresses/velocitycheck
+
+050918T143004: <-- AddressVelocity starting.    OrgName: FDM-POSTCARD-PIN
+050918T143005: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"8MfaS9cu2N-uVWAAQ1EIdkuBpPEKZEhiH8Y"}
+050918T143006: Response: {"transactionId":"b4bd2c7d-d3b2-4e48-9ff2-4237bcd242c7","output":{"advice":"ALLOW"}}
+050918T143006: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"8MfaS9cu2N-uVWAAQ1EIdkuBpPEKZEhiH8Y"}
+050918T143006: Response: {"transactionId":"ee2659ed-283c-49e7-aa20-2cd5ad83a631","output":{"advice":"ALLOW"}}
+050918T143006: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"8MfaS9cu2N-uVWAAQ1EIdkuBpPEKZEhiH8Y"}
+050918T143006: Response: {"transactionId":"eca939bb-2d89-4771-b3eb-cfba7d5e4760","output":{"advice":"ALLOW"}}
+050918T143006: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"8MfaS9cu2N-uVWAAQ1EIdkuBpPEKZEhiH8Y"}
+050918T143007: Response: {"transactionId":"cbc3cceb-60d1-4c7a-9655-edddea493f34","output":{"advice":"ALLOW"}}
+050918T143007: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"8MfaS9cu2N-uVWAAQ1EIdkuBpPEKZEhiH8Y"}
+050918T143007: Response: {"transactionId":"c9cf1c34-861b-493b-8a41-3d8f918277db","output":{"advice":"ALLOW"}}
+050918T143007: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"8MfaS9cu2N-uVWAAQ1EIdkuBpPEKZEhiH8Y"}
+050918T143007: Response: {"transactionId":"22ad81ea-6052-4ac4-b9a7-32f9f97de9b3","output":{"advice":"ALLOW"}}
+050918T143007: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"8MfaS9cu2N-uVWAAQ1EIdkuBpPEKZEhiH8Y"}
+050918T143007: Response: {"transactionId":"7abecb45-2603-4e98-adf0-e06fe647e9d0","output":{"advice":"ALLOW"}}
+050918T143007: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"8MfaS9cu2N-uVWAAQ1EIdkuBpPEKZEhiH8Y"}
+050918T143008: Response: {"transactionId":"4bef7708-1c1d-45a5-8dde-e7fc254fe990","output":{"advice":"ALLOW"}}
+050918T143008: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"8MfaS9cu2N-uVWAAQ1EIdkuBpPEKZEhiH8Y"}
+050918T143008: Response: {"transactionId":"28132041-0eef-4704-b01f-d87fa7b86a47","output":{"advice":"ALLOW"}}
+050918T143008: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"8MfaS9cu2N-uVWAAQ1EIdkuBpPEKZEhiH8Y"}
+050918T143008: Response: {"transactionId":"908df763-0232-4507-934f-407ee7c0a4d5","output":{"advice":"ALLOW"}}
+050918T143008: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"8MfaS9cu2N-uVWAAQ1EIdkuBpPEKZEhiH8Y"}
+050918T143008: Response: {"transactionId":"b31cc5df-831e-49ba-baa7-342206701a12","errors":[{"code":"DENY","message":"Unfortunately, too many failed attempts for registration have occurred. Please try again later."}]}
+
+050918T143008: <-- IssuePin starting.    OrgName: FDM-POSTCARD-PIN
+050918T143008: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"YAQc1gx7nv-nQKHwyMwo8ujkWbXG3KFqq3c"}
+050918T143009: Response: {"transactionId":"42f22b0e-6b42-49e4-ac48-55d9cede00a5","output":{"pinOTP":"491713","pinExpirationDate":"05/30/2018 07:30 PM GMT"}}
+
+050918T143009: <-- IssuePinVelocity starting.    OrgName: FDM-POSTCARD-PIN
+050918T143009: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"0RJgkg0lyd-vmcY0X0xALPoNn0jqOPcNvRS"}
+050918T143009: Response: {"transactionId":"3c2ec955-22b7-4f0b-804b-9f3d06549ed8","output":{"pinOTP":"141779","pinExpirationDate":"05/30/2018 07:30 PM GMT"}}
+050918T143009: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"0RJgkg0lyd-vmcY0X0xALPoNn0jqOPcNvRS"}
+050918T143009: Response: {"transactionId":"70956f02-9cd5-4b18-8dc7-798513937c71","output":{"pinOTP":"263384","pinExpirationDate":"05/30/2018 07:30 PM GMT"}}
+050918T143009: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"0RJgkg0lyd-vmcY0X0xALPoNn0jqOPcNvRS"}
+050918T143009: Response: {"transactionId":"3346701d-a201-4b62-8323-7d892b4ed4d5","output":{"pinOTP":"254049","pinExpirationDate":"05/30/2018 07:30 PM GMT"}}
+050918T143009: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"0RJgkg0lyd-vmcY0X0xALPoNn0jqOPcNvRS"}
+050918T143010: Response: {"transactionId":"e24f8f9e-a173-4e0b-8805-454f083f74cf","errors":[{"code":"5700","message":"Unfortunately, you have exceeded your attempts for verification. Please try again later."}]}
+
+050918T143010: <-- VerifyPinNoLongerValid starting.    OrgName: FDM-POSTCARD-PIN
+050918T143010: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"7oxaGAuleS-Cphpw7aB7k0xmefNlPjDkRyV"}
+050918T143010: Response: {"transactionId":"c98ab137-8612-4c21-a8d8-dae0d3b21b33","output":{"pinOTP":"856875","pinExpirationDate":"05/30/2018 07:30 PM GMT"}}
+050918T143010: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"856875","userName":"7oxaGAuleS-Cphpw7aB7k0xmefNlPjDkRyV"}
+050918T143010: Response: {"transactionId":"1df02106-dd83-4350-959c-51c5f2ebcf37","output":{"daysLeftToExpire":21,"message":"Success"}}
+050918T143010: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"856875","userName":"7oxaGAuleS-Cphpw7aB7k0xmefNlPjDkRyV"}
+050918T143010: Response: {"transactionId":"3f727a87-4ced-470a-99ec-d79ca1abfd54","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+
+050918T143010: <-- VerifyPinValid starting.    OrgName: FDM-POSTCARD-PIN
+050918T143010: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"Yp5IJk4Nil-xQahsM35iGLRJs52zRgwKh7N"}
+050918T143011: Response: {"transactionId":"50dd91dd-9311-43de-9f72-fc7666be9a1c","output":{"pinOTP":"929578","pinExpirationDate":"05/30/2018 07:30 PM GMT"}}
+050918T143011: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"929578","userName":"Yp5IJk4Nil-xQahsM35iGLRJs52zRgwKh7N"}
+050918T143011: Response: {"transactionId":"d98780df-14a8-47dc-9397-68691db86ff1","output":{"daysLeftToExpire":21,"message":"Success"}}
+
+050918T143011: <-- zIssuePinExpiration starting.    OrgName: FDM-POSTCARD-PIN
+050918T143011: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"deQiU6ISrB-yPDbt9YJpzCgwX4lKDce3rzy"}
+050918T143011: Response: {"transactionId":"e986470f-2d48-46cd-a659-71eb21c65b11","output":{"pinOTP":"550807","pinExpirationDate":"05/30/2018 07:30 PM GMT"}}
+
+050918T143011: <-- AddressVelocity starting.    OrgName: FDM-PHONE-PIN
+050918T143011: Request: {"orgName":"FDM-PHONE-PIN","userName":"GKgOtO8GiT-rEUpivjHtiZb9pNGWNX1ZcZK"}
+050918T143012: Response: {"transactionId":"70da433e-6c06-414c-beee-47c2851b5db1","output":{"advice":"ALLOW"}}
+050918T143012: Request: {"orgName":"FDM-PHONE-PIN","userName":"GKgOtO8GiT-rEUpivjHtiZb9pNGWNX1ZcZK"}
+050918T143012: Response: {"transactionId":"7dce391b-aa3e-492f-81cf-d73012bef33f","output":{"advice":"ALLOW"}}
+050918T143012: Request: {"orgName":"FDM-PHONE-PIN","userName":"GKgOtO8GiT-rEUpivjHtiZb9pNGWNX1ZcZK"}
+050918T143012: Response: {"transactionId":"7117b7a7-6f3d-4951-9201-d36e48ddeece","output":{"advice":"ALLOW"}}
+050918T143012: Request: {"orgName":"FDM-PHONE-PIN","userName":"GKgOtO8GiT-rEUpivjHtiZb9pNGWNX1ZcZK"}
+050918T143012: Response: {"transactionId":"c9765ae3-85fb-40a4-858b-50281661291d","output":{"advice":"ALLOW"}}
+050918T143012: Request: {"orgName":"FDM-PHONE-PIN","userName":"GKgOtO8GiT-rEUpivjHtiZb9pNGWNX1ZcZK"}
+050918T143012: Response: {"transactionId":"b0a95e09-ec8b-4ecb-b4bd-2025af15014a","output":{"advice":"ALLOW"}}
+050918T143012: Request: {"orgName":"FDM-PHONE-PIN","userName":"GKgOtO8GiT-rEUpivjHtiZb9pNGWNX1ZcZK"}
+050918T143013: Response: {"transactionId":"83865008-abf2-4d4f-bf90-1886713197f5","output":{"advice":"ALLOW"}}
+050918T143013: Request: {"orgName":"FDM-PHONE-PIN","userName":"GKgOtO8GiT-rEUpivjHtiZb9pNGWNX1ZcZK"}
+050918T143013: Response: {"transactionId":"07b1dca9-56fc-448d-8fe9-0889ea930891","output":{"advice":"ALLOW"}}
+050918T143013: Request: {"orgName":"FDM-PHONE-PIN","userName":"GKgOtO8GiT-rEUpivjHtiZb9pNGWNX1ZcZK"}
+050918T143013: Response: {"transactionId":"ba62fa45-02d0-4d08-b455-52b3e45b60ca","output":{"advice":"ALLOW"}}
+050918T143013: Request: {"orgName":"FDM-PHONE-PIN","userName":"GKgOtO8GiT-rEUpivjHtiZb9pNGWNX1ZcZK"}
+050918T143013: Response: {"transactionId":"fefc465c-c909-499a-aea6-2ec9f848b998","output":{"advice":"ALLOW"}}
+050918T143013: Request: {"orgName":"FDM-PHONE-PIN","userName":"GKgOtO8GiT-rEUpivjHtiZb9pNGWNX1ZcZK"}
+050918T143013: Response: {"transactionId":"7fd21491-6b1e-4baf-b4b9-4889e685e98f","output":{"advice":"ALLOW"}}
+050918T143013: Request: {"orgName":"FDM-PHONE-PIN","userName":"GKgOtO8GiT-rEUpivjHtiZb9pNGWNX1ZcZK"}
+050918T143014: Response: {"transactionId":"a58bcc00-83a1-49ba-b0f3-7be738107640","errors":[{"code":"DENY","message":"Unfortunately, too many failed attempts for registration have occurred. Please try again later."}]}
+
+050918T143014: <-- IssuePin starting.    OrgName: FDM-PHONE-PIN
+050918T143014: Request: {"orgName":"FDM-PHONE-PIN","userName":"lDa13euWY5-qTGeD7wxTTwnaC2hk4LhFNRX"}
+050918T143014: Response: {"transactionId":"d573c43d-b74d-44da-9a81-1c59cb8f6eff","output":{"pinOTP":"893308","pinExpirationDate":"05/09/2018 07:40 PM GMT"}}
+
+050918T143014: <-- IssuePinVelocity starting.    OrgName: FDM-PHONE-PIN
+050918T143014: Request: {"orgName":"FDM-PHONE-PIN","userName":"0OfeXDrQCm-2CRoX8aqLmMKjCcgDmdy3ygV"}
+050918T143014: Response: {"transactionId":"113b4bb3-5aa3-4e7f-a34b-cae7c98dcfdb","output":{"pinOTP":"324466","pinExpirationDate":"05/09/2018 07:40 PM GMT"}}
+050918T143014: Request: {"orgName":"FDM-PHONE-PIN","userName":"0OfeXDrQCm-2CRoX8aqLmMKjCcgDmdy3ygV"}
+050918T143015: Response: {"transactionId":"3a7dfdc7-39c9-473f-ada5-c259f2cf32f4","output":{"pinOTP":"999454","pinExpirationDate":"05/09/2018 07:40 PM GMT"}}
+050918T143015: Request: {"orgName":"FDM-PHONE-PIN","userName":"0OfeXDrQCm-2CRoX8aqLmMKjCcgDmdy3ygV"}
+050918T143015: Response: {"transactionId":"c612f946-0f24-4a40-8eda-7bdc6acb9235","output":{"pinOTP":"038305","pinExpirationDate":"05/09/2018 07:40 PM GMT"}}
+050918T143015: Request: {"orgName":"FDM-PHONE-PIN","userName":"0OfeXDrQCm-2CRoX8aqLmMKjCcgDmdy3ygV"}
+050918T143015: Response: {"transactionId":"d8254faa-cebf-4603-b478-49dc32ee9607","errors":[{"code":"5700","message":"Unfortunately, you have exceeded your attempts for verification. Please try again later."}]}
+
+050918T143015: <-- VerifyPinNoLongerValid starting.    OrgName: FDM-PHONE-PIN
+050918T143015: Request: {"orgName":"FDM-PHONE-PIN","userName":"8gWHsLa00M-Y4NPaOctO5Z3zsLVblHxOBP2"}
+050918T143015: Response: {"transactionId":"1c992bd2-1826-403c-86f6-cb576802efc9","output":{"pinOTP":"776942","pinExpirationDate":"05/09/2018 07:40 PM GMT"}}
+050918T143015: Request: {"orgName":"FDM-PHONE-PIN","otpInput":"776942","userName":"8gWHsLa00M-Y4NPaOctO5Z3zsLVblHxOBP2"}
+050918T143016: Response: {"transactionId":"83b85b3c-d05d-4add-8821-bd1dd7195c46","output":{"daysLeftToExpire":1,"message":"Success"}}
+050918T143016: Request: {"orgName":"FDM-PHONE-PIN","otpInput":"776942","userName":"8gWHsLa00M-Y4NPaOctO5Z3zsLVblHxOBP2"}
+050918T143016: Response: {"transactionId":"8d4de636-099f-4388-bda1-1faedec8968a","errors":[{"code":"PIN.FAILURE","message":"Unfortunately, you have entered an invalid PIN. Please try again."}]}
+
+050918T143016: <-- VerifyPinValid starting.    OrgName: FDM-PHONE-PIN
+050918T143016: Request: {"orgName":"FDM-PHONE-PIN","userName":"6orhQPRLAh-N1lr5AwCkpDnrp5fDTRdIxOE"}
+050918T143016: Response: {"transactionId":"bb15a7d8-15d8-494d-b002-fecdee8eadda","output":{"pinOTP":"103549","pinExpirationDate":"05/09/2018 07:40 PM GMT"}}
+050918T143016: Request: {"orgName":"FDM-PHONE-PIN","otpInput":"103549","userName":"6orhQPRLAh-N1lr5AwCkpDnrp5fDTRdIxOE"}
+050918T143016: Response: {"transactionId":"4966f278-d6e5-4508-a7d0-d427aa826d62","output":{"daysLeftToExpire":1,"message":"Success"}}
+
+050918T143016: <-- zIssuePinExpiration starting.    OrgName: FDM-PHONE-PIN
+050918T143016: Request: {"orgName":"FDM-PHONE-PIN","userName":"ANVUhD3P8z-nwtzPvMD8dZZrdC8uq9d8bH9"}
+050918T143017: Response: {"transactionId":"4034a650-6a5e-4196-8825-6035fe48ebac","output":{"pinOTP":"399538","pinExpirationDate":"05/09/2018 07:40 PM GMT"}}

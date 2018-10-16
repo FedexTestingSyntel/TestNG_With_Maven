@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="8" name="WIDM_Suite" parallel="methods">
+  <listeners>
+    <listener class-name="SupportClasses.TestNG_ReportListener"/>
+  </listeners>
+  
+  <test thread-count="8" name="WIDM_Test" parallel="methods">
+    <parameter name="Levels" value="test three parameter" />
+    <parameter name="Levels" value="test three parameter" />
+    <classes>
+      <class name="TestNG.WIDM"/>
+    </classes>
+  </test> <!-- WIDM_Test -->
+</suite> <!-- WIDM_Suite -->

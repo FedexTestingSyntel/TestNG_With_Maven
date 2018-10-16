@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">8</td><td class="num">0</td><td class="num attn">4</td><td class="num">66,308</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="4">TestNG.MFAC_Changed_Before_Method</td><td><a href="#m0">AddressVelocity</a></td><td rowspan="2">1539362108076</td><td rowspan="2">7170</td></tr><tr class="failedeven"><td><a href="#m1">AddressVelocity</a></td></tr><tr class="failedeven"><td><a href="#m2">IssuePinVelocity</a></td><td rowspan="2">1539362116743</td><td rowspan="2">4005</td></tr><tr class="failedeven"><td><a href="#m3">IssuePinVelocity</a></td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="8">TestNG.MFAC_Changed_Before_Method</td><td><a href="#m4">IssuePin</a></td><td rowspan="2">1539362116326</td><td rowspan="2">214</td></tr><tr class="passedeven"><td><a href="#m5">IssuePin</a></td></tr><tr class="passedeven"><td><a href="#m6">VerifyPinNoLongerValid</a></td><td rowspan="2">1539362120748</td><td rowspan="2">873</td></tr><tr class="passedeven"><td><a href="#m7">VerifyPinNoLongerValid</a></td></tr><tr class="passedeven"><td><a href="#m8">VerifyPinValid</a></td><td rowspan="2">1539362121636</td><td rowspan="2">344</td></tr><tr class="passedeven"><td><a href="#m9">VerifyPinValid</a></td></tr><tr class="passedeven"><td><a href="#m10">VerifyPinVelocity</a></td><td rowspan="2">1539362122058</td><td rowspan="2">1015</td></tr><tr class="passedeven"><td><a href="#m11">VerifyPinVelocity</a></td></tr></tbody>
+</table>
+<h2>Default test</h2><h3 id="m0">TestNG.MFAC_Changed_Before_Method#AddressVelocity</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>FDM-POSTCARD-PIN</td><td>3cf5444c-f194-4310-ada4-796cf893a4d2</td><td>http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/addressVelocityCheck</td><td>10</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">java.lang.AssertionError: 
+Expected: (a string containing &quot;DENY&quot; and a string containing &quot;Unfortunately, too many failed attempts for registration have occurred. Please try again later.&quot;)
+     but: a string containing &quot;DENY&quot; was &quot;{&quot;transactionId&quot;:&quot;7db2568f-e935-4eec-b05b-89db28fa9891&quot;,&quot;output&quot;:{&quot;advice&quot;:&quot;ALLOW&quot;}}&quot;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.junit.Assert.assertThat(Assert.java:956)
+	at org.junit.Assert.assertThat(Assert.java:923)
+	at TestNG.MFAC_Changed_Before_Method.AddressVelocity(MFAC_Changed_Before_Method.java:197)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">TestNG.MFAC_Changed_Before_Method#AddressVelocity</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>FDM-PHONE-PIN</td><td>3cf5444c-f194-4310-ada4-796cf893a4d2</td><td>http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/addressVelocityCheck</td><td>10</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">java.lang.AssertionError: 
+Expected: (a string containing &quot;DENY&quot; and a string containing &quot;Unfortunately, too many failed attempts for registration have occurred. Please try again later.&quot;)
+     but: a string containing &quot;DENY&quot; was &quot;{&quot;transactionId&quot;:&quot;3520c10f-6d09-4f12-8d06-85b6d2f7a7c1&quot;,&quot;output&quot;:{&quot;advice&quot;:&quot;ALLOW&quot;}}&quot;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.junit.Assert.assertThat(Assert.java:956)
+	at org.junit.Assert.assertThat(Assert.java:923)
+	at TestNG.MFAC_Changed_Before_Method.AddressVelocity(MFAC_Changed_Before_Method.java:197)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">TestNG.MFAC_Changed_Before_Method#IssuePinVelocity</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>FDM-PHONE-PIN</td><td>3cf5444c-f194-4310-ada4-796cf893a4d2</td><td>http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN</td><td>3</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">java.lang.AssertionError: 
+Expected: (a string containing &quot;5700&quot; and a string containing &quot;Unfortunately, you have exceeded your attempts for verification. Please try again later.&quot;)
+     but: a string containing &quot;5700&quot; was &quot;{&quot;transactionId&quot;:&quot;1b83236b-2018-45ad-ba10-8d76b4c8797d&quot;,&quot;output&quot;:{&quot;pinOTP&quot;:&quot;565272&quot;,&quot;pinExpirationDate&quot;:&quot;10/12/2018 04:45 PM GMT&quot;}}&quot;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.junit.Assert.assertThat(Assert.java:956)
+	at org.junit.Assert.assertThat(Assert.java:923)
+	at TestNG.MFAC_Changed_Before_Method.IssuePinVelocity(MFAC_Changed_Before_Method.java:234)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">TestNG.MFAC_Changed_Before_Method#IssuePinVelocity</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>FDM-POSTCARD-PIN</td><td>3cf5444c-f194-4310-ada4-796cf893a4d2</td><td>http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN</td><td>3</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">java.lang.AssertionError: 
+Expected: (a string containing &quot;5700&quot; and a string containing &quot;Unfortunately, you have exceeded your attempts for verification. Please try again later.&quot;)
+     but: a string containing &quot;5700&quot; was &quot;{&quot;transactionId&quot;:&quot;229c82ee-f472-4c2f-8367-fe0e000241ff&quot;,&quot;output&quot;:{&quot;pinOTP&quot;:&quot;274346&quot;,&quot;pinExpirationDate&quot;:&quot;10/12/2018 05:05 PM GMT&quot;}}&quot;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.junit.Assert.assertThat(Assert.java:956)
+	at org.junit.Assert.assertThat(Assert.java:923)
+	at TestNG.MFAC_Changed_Before_Method.IssuePinVelocity(MFAC_Changed_Before_Method.java:234)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">TestNG.MFAC_Changed_Before_Method#IssuePin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>FDM-POSTCARD-PIN</td><td>3cf5444c-f194-4310-ada4-796cf893a4d2</td><td>http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">TestNG.MFAC_Changed_Before_Method#IssuePin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>FDM-PHONE-PIN</td><td>3cf5444c-f194-4310-ada4-796cf893a4d2</td><td>http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">TestNG.MFAC_Changed_Before_Method#VerifyPinNoLongerValid</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>FDM-POSTCARD-PIN</td><td>3cf5444c-f194-4310-ada4-796cf893a4d2</td><td>http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN</td><td>http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">TestNG.MFAC_Changed_Before_Method#VerifyPinNoLongerValid</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>FDM-PHONE-PIN</td><td>3cf5444c-f194-4310-ada4-796cf893a4d2</td><td>http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN</td><td>http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">TestNG.MFAC_Changed_Before_Method#VerifyPinValid</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>FDM-POSTCARD-PIN</td><td>3cf5444c-f194-4310-ada4-796cf893a4d2</td><td>http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN</td><td>http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">TestNG.MFAC_Changed_Before_Method#VerifyPinValid</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>FDM-PHONE-PIN</td><td>3cf5444c-f194-4310-ada4-796cf893a4d2</td><td>http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN</td><td>http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">TestNG.MFAC_Changed_Before_Method#VerifyPinVelocity</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>FDM-PHONE-PIN</td><td>3cf5444c-f194-4310-ada4-796cf893a4d2</td><td>http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN</td><td>http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN</td><td>3</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">TestNG.MFAC_Changed_Before_Method#VerifyPinVelocity</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>FDM-POSTCARD-PIN</td><td>3cf5444c-f194-4310-ada4-796cf893a4d2</td><td>http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN</td><td>http://mfacbase-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN</td><td>3</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

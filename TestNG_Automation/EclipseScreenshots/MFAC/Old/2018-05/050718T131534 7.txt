@@ -1,0 +1,110 @@
+
+050718T131531: $APIG$
+Endpoint is being used.
+050718T131531: IssueURL = https://api.fedex.com/security/v1/pin
+VerifyURL = https://api.fedex.com/security/v1/pin/verify
+VelocityURL = https://api.fedex.com/security/v1/addresses/velocitycheck
+
+050718T131531: <-- AddressVelocity starting.    OrgName: FDM-POSTCARD-PIN
+050718T131532: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"TU4tK2ehyq-czFKCUwqAuPRb2vaQjT7BWkx"}
+050718T131532: Response: {
+	"error":"invalid_request",
+	"error_description":"validation error"
+}
+
+050718T131532: <-- IssuePin starting.    OrgName: FDM-POSTCARD-PIN
+050718T131532: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"0RMMXWpeZJ-zi68eL7Xb7oVBJCT59CaWojK"}
+050718T131532: Response: {
+	"error":"invalid_request",
+	"error_description":"validation error"
+}
+
+050718T131532: <-- IssuePinVelocity starting.    OrgName: FDM-POSTCARD-PIN
+050718T131532: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"wGThNKvmqi-5W0Naz52e32I1TJO4H2NyeXR"}
+050718T131532: Response: {
+	"error":"invalid_request",
+	"error_description":"validation error"
+}
+
+050718T131532: <-- VerifyPinNoLongerValid starting.    OrgName: FDM-POSTCARD-PIN
+050718T131532: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"uBcMQnLDL7-YAXcsWw1434X0JJy0oSUOLoU"}
+050718T131532: Response: {
+	"error":"invalid_request",
+	"error_description":"validation error"
+}
+050718T131532: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"{\n\t\"error\":\"invalid_request\",\n\t\"error_description\":\"validation error\"\n}","userName":"uBcMQnLDL7-YAXcsWw1434X0JJy0oSUOLoU"}
+050718T131532: Response: {
+	"error":"invalid_request",
+	"error_description":"validation error"
+}
+
+050718T131532: <-- VerifyPinValid starting.    OrgName: FDM-POSTCARD-PIN
+050718T131532: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"8t1b8YaQpC-IMIEY0ggKy5AqkAB4mUinWFR"}
+050718T131532: Response: {
+	"error":"invalid_request",
+	"error_description":"validation error"
+}
+050718T131533: Request: {"orgName":"FDM-POSTCARD-PIN","otpInput":"{\n\t\"error\":\"invalid_request\",\n\t\"error_description\":\"validation error\"\n}","userName":"8t1b8YaQpC-IMIEY0ggKy5AqkAB4mUinWFR"}
+050718T131533: Response: {
+	"error":"invalid_request",
+	"error_description":"validation error"
+}
+
+050718T131533: <-- zIssuePinExpiration starting.    OrgName: FDM-POSTCARD-PIN
+050718T131533: Request: {"orgName":"FDM-POSTCARD-PIN","userName":"Yno4faiimj-BYnGIVCb8TWu3gv2vnvG0rdb"}
+050718T131533: Response: {
+	"error":"invalid_request",
+	"error_description":"validation error"
+}
+
+050718T131533: <-- AddressVelocity starting.    OrgName: FDM-PHONE-PIN
+050718T131533: Request: {"orgName":"FDM-PHONE-PIN","userName":"KWGH1C1O98-gejWpPZMAv0VP5XlFO4QQig4"}
+050718T131533: Response: {
+	"error":"invalid_request",
+	"error_description":"validation error"
+}
+
+050718T131533: <-- IssuePin starting.    OrgName: FDM-PHONE-PIN
+050718T131533: Request: {"orgName":"FDM-PHONE-PIN","userName":"FIe60Fhljc-wt2zAv1Fy3AQQ9HqzuEYy6Rr"}
+050718T131533: Response: {
+	"error":"invalid_request",
+	"error_description":"validation error"
+}
+
+050718T131533: <-- IssuePinVelocity starting.    OrgName: FDM-PHONE-PIN
+050718T131533: Request: {"orgName":"FDM-PHONE-PIN","userName":"B7aeaKlDBj-1kqj9MpIqz4TZH7w1ZuNjRHu"}
+050718T131533: Response: {
+	"error":"invalid_request",
+	"error_description":"validation error"
+}
+
+050718T131533: <-- VerifyPinNoLongerValid starting.    OrgName: FDM-PHONE-PIN
+050718T131533: Request: {"orgName":"FDM-PHONE-PIN","userName":"rYNVk1Jcln-c8HTPkLwNyiKEd1NFciujzzt"}
+050718T131533: Response: {
+	"error":"invalid_request",
+	"error_description":"validation error"
+}
+050718T131533: Request: {"orgName":"FDM-PHONE-PIN","otpInput":"{\n\t\"error\":\"invalid_request\",\n\t\"error_description\":\"validation error\"\n}","userName":"rYNVk1Jcln-c8HTPkLwNyiKEd1NFciujzzt"}
+050718T131533: Response: {
+	"error":"invalid_request",
+	"error_description":"validation error"
+}
+
+050718T131533: <-- VerifyPinValid starting.    OrgName: FDM-PHONE-PIN
+050718T131533: Request: {"orgName":"FDM-PHONE-PIN","userName":"9OeNo9ZvxY-xYMqQu081QyXnrwtxHXmGy25"}
+050718T131533: Response: {
+	"error":"invalid_request",
+	"error_description":"validation error"
+}
+050718T131533: Request: {"orgName":"FDM-PHONE-PIN","otpInput":"{\n\t\"error\":\"invalid_request\",\n\t\"error_description\":\"validation error\"\n}","userName":"9OeNo9ZvxY-xYMqQu081QyXnrwtxHXmGy25"}
+050718T131534: Response: {
+	"error":"invalid_request",
+	"error_description":"validation error"
+}
+
+050718T131534: <-- zIssuePinExpiration starting.    OrgName: FDM-PHONE-PIN
+050718T131534: Request: {"orgName":"FDM-PHONE-PIN","userName":"a7bwK57JhB-5sZH9YpLp09eYmzH3l02F76q"}
+050718T131534: Response: {
+	"error":"invalid_request",
+	"error_description":"validation error"
+}
