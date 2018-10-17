@@ -12,6 +12,9 @@ import java.io.StringReader;
 import java.io.StringWriter;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
@@ -74,14 +77,26 @@ public class TestNG_ReportListener implements IReporter {
 			outputDirectory += String.format(" T%sP%sF%s", totalTestCount, totalTestPassed, totalTestFailed);
 			File targetFile = new File(outputDirectory + ".html");
 			System.out.println("Report Saved: " + outputDirectory + ".html");
-			FileWriter fw = new FileWriter(targetFile);
-			customReportTemplateStr = "<!DOCTYPE html><html><head><title>Title</title><meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\" /></head>" + customReportTemplateStr;
-			customReportTemplateStr += "</html>";
-			fw.write(customReportTemplateStr);
-			fw.flush();
-			fw.close();
 			
-			//CreatePDFReport(outputDirectory, ReportName);
+			//Create folder directory for writing the report.
+			String Folder = outputDirectory;
+			FileWriter fw = null;
+			try {
+				Folder = outputDirectory.substring(0, outputDirectory.lastIndexOf("\\"));
+				if (!(new File(Folder)).exists()) {
+					new File(Folder).mkdir();
+				}
+				fw = new FileWriter(targetFile);
+				fw.write(customReportTemplateStr);
+			} catch (Exception e) {  
+				System.out.println("Warning, Unable to create directory for: " + Folder);
+			}finally {
+				fw.flush();
+				fw.close();
+			}
+			
+			//customReportTemplateStr = "<!DOCTYPE html><html><head><title>Title</title><meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\" /></head>" + customReportTemplateStr + "</html>";
+			//CreatePDFReport(outputDirectory, customReportTemplateStr);
 			//Need to work on this, something is most likely wrong with HTML format.    //java.lang.IllegalArgumentException: The number of columns in PdfPTable constructor must be greater than zero.
 		
 		}catch(Exception ex){
@@ -289,7 +304,9 @@ public class TestNG_ReportListener implements IReporter {
 	
 	/* Get failed, passed or skipped test methods report. */
 	private String getTestMethodReport(String testName, IResultMap testResultMap, boolean passedReault, boolean skippedResult){
+		ArrayList<String[]> ResultList = new ArrayList<String[]>();
 		StringBuffer retStrBuf = new StringBuffer();
+		StringBuffer sortingStrBuf = new StringBuffer();
 		
 		String resultTitle = testName;
 		
@@ -311,38 +328,22 @@ public class TestNG_ReportListener implements IReporter {
 		Set<ITestResult> testResultSet = testResultMap.getAllResults();
 			
 		for(ITestResult testResult : testResultSet){
-			String testClassName = "";
-			String testMethodName = "";
-			String startDateStr = "";
-			String executeTimeStr = "";
-			String paramStr = "";
-			String reporterMessage = "";
-			String exceptionMessage = "";
+			String Application = "", testMethodName = "", startDateStr = "", executeTimeStr = "", paramStr = "", reporterMessage = "", exceptionMessage = "";
 			
-			//Get testClassName
-			testClassName = testResult.getTestClass().getName();
+			//Get Application name, should be the same as the tesitng class name
+			Application = testResult.getTestClass().getName();
+			Application = Application.substring(Application.lastIndexOf(".") + 1, Application.length());
 				
 			//Get testMethodName
 			testMethodName = testResult.getMethod().getMethodName();
 				
 			//Get startDateStr
-			try {
-				long startTimeMillis = testResult.getStartMillis();
-				startDateStr = this.getDateInStringFormat(new Date(startTimeMillis));
-			}catch (Exception e) {
-				System.out.println("Error at startTimeMillis");
-				e.printStackTrace();
-			}
-			
-				
+			long startTimeMillis = testResult.getStartMillis();
+			startDateStr = this.getDateInStringFormat(new Date(startTimeMillis));
+
 			//Get Execute time.
-			try {
-				long deltaMillis = testResult.getEndMillis() - testResult.getStartMillis();
-				executeTimeStr = this.convertDeltaTimeToString(deltaMillis);
-			}catch (Exception e) {
-				System.out.println("Error at deltaMillis");
-				e.printStackTrace();
-			}
+			long deltaMillis = testResult.getEndMillis() - testResult.getStartMillis();
+			executeTimeStr = this.convertDeltaTimeToString(deltaMillis);
 
 			//Get parameter list.
 			Object paramObjArr[] = testResult.getParameters();
@@ -354,12 +355,6 @@ public class TestNG_ReportListener implements IReporter {
 				}
 			}
 				
-			//Get reporter message list.
-			//List<String> repoterMessageList = Reporter.getOutput(testResult);
-			//for(String tmpMsg : repoterMessageList)				{
-			//	reporterMessage += tmpMsg;
-			//	reporterMessage += " ";
-			//}
 			//This is a custom variable that is set in the TestListener for trace of execution.
 			Object val = testResult.getAttribute("ExecutionLog");
 			String ExecutionLog = val.toString().replaceAll("\n", "<br />");
@@ -375,45 +370,55 @@ public class TestNG_ReportListener implements IReporter {
 				exceptionMessage = sw.toString();
 			}
 			
-			retStrBuf.append("<tr bgcolor=" + color + ">");
+			sortingStrBuf.append("<tr bgcolor=" + color + ">");
 			
 			/* Add test class name. */
-			retStrBuf.append("<td>");
-			retStrBuf.append(testClassName);
-			retStrBuf.append("</td>");
+			sortingStrBuf.append("<td>");
+			sortingStrBuf.append(Application);
+			sortingStrBuf.append("</td>");
 			
 			/* Add test method name. */
-			retStrBuf.append("<td>");
-			retStrBuf.append(testMethodName);
-			retStrBuf.append("</td>");
+			sortingStrBuf.append("<td>");
+			sortingStrBuf.append(testMethodName);
+			sortingStrBuf.append("</td>");
 			
 			/* Add start time. */
-			retStrBuf.append("<td>");
-			retStrBuf.append(startDateStr);
-			retStrBuf.append("</td>");
+			sortingStrBuf.append("<td>");
+			sortingStrBuf.append(startDateStr);
+			sortingStrBuf.append("</td>");
 			
 			/* Add execution time. */
-			retStrBuf.append("<td>");
-			retStrBuf.append(executeTimeStr);
-			retStrBuf.append("</td>");
+			sortingStrBuf.append("<td>");
+			sortingStrBuf.append(executeTimeStr);
+			sortingStrBuf.append("</td>");
 			
 			/* Add parameter. */
-			retStrBuf.append("<td>");
-			retStrBuf.append(paramStr);
-			retStrBuf.append("</td>");
+			sortingStrBuf.append("<td>");
+			sortingStrBuf.append(paramStr);
+			sortingStrBuf.append("</td>");
 			
 			/* Add reporter message. */
-			retStrBuf.append("<td>");
-			retStrBuf.append(reporterMessage);
-			retStrBuf.append("</td>");
+			sortingStrBuf.append("<td>");
+			sortingStrBuf.append(reporterMessage);
+			sortingStrBuf.append("</td>");
 			
 			/* Add exception message. */
-			retStrBuf.append("<td>");
-			retStrBuf.append(exceptionMessage);
-			retStrBuf.append("</td>");
+			sortingStrBuf.append("<td>");
+			sortingStrBuf.append(exceptionMessage);
+			sortingStrBuf.append("</td>");
 			
-			retStrBuf.append("</tr>");
-
+			sortingStrBuf.append("</tr>");
+			ResultList.add(new String[] {Application, sortingStrBuf.toString()});
+		}
+		
+		Collections.sort(ResultList,new Comparator<String[]>() {
+			public int compare(String[] strings, String[] otherStrings) {
+				return strings[0].compareTo(otherStrings[0]);
+			}
+		});
+		
+		for (String[] sa : ResultList) {
+			retStrBuf.append(sa[1]);
 		}
 		
 		return retStrBuf.toString();

@@ -81,6 +81,9 @@ public class WebDriver_Functions{
     		case "WDPA":  	
     			AppUrl = LevelURL + "/PickupApp/login?locale=en_" + CCL;
 				break;	
+    		case "WDPA_LTL":  	
+    			AppUrl = LevelURL + "/PickupApp/scheduleFreightPickup.do?method=doInit&locale=en_" + CCL;
+				break;	
     		case "WPRL":  	
     			AppUrl = LevelURL + "/apps/myprofile/loginandcontact/?locale=en_" + CCU + "&cntry_code=" + CCL;
 				break;

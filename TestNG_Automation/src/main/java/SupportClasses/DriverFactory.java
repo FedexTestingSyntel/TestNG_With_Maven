@@ -9,8 +9,6 @@ import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import TestingFunctions.Helper_Functions;
-
 public class DriverFactory{
 	
 	private static DriverFactory instance = new DriverFactory();
@@ -37,7 +35,7 @@ public class DriverFactory{
 		   }
 		   //lock.lock();
 		   WebDriver Locdriver = null;
-		   String BrowerType = "Chrome";
+		  // String BrowerType = "Chrome";
 		   System.setProperty("webdriver.chrome.driver",".\\chromedriver.exe");//make sure driver in the project folder
 		   
 		   ChromeOptions options = new ChromeOptions();

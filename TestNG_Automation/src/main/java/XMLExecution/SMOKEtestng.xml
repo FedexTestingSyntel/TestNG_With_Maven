@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="8" name="SMOKE_Test_Suit" parallel="methods">
+   <listeners>
+    <listener class-name="SupportClasses.TestNG_ReportListener"/>
+  </listeners>
+  
+  <test thread-count="8" name="SMOKE_Test" parallel="methods">
+    <classes>
+      <class name="TestNG.MFAC"/>
+      <!--<class name="TestNG.WFCL"/>-->
+      <class name="TestNG.WIDM"/>
+      <!-- <class name="WaterfallApplications.OADR"/>
+     <class name="WaterfallApplications.WRTT"/>
+      <class name="WaterfallApplications.WDPA"/>-->
+    </classes>
+  </test> <!-- WDPA_Test -->
+</suite> <!-- WDPA_Suite -->

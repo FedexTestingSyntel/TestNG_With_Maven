@@ -19,7 +19,7 @@ import SupportClasses.*;
 
 public class WFCL{
 	static ArrayList<String[]> AddressDetails = new ArrayList<String[]>();
-	static String LevelsToTest = "6";
+	static String LevelsToTest = "3";
 	final static boolean SmokeTest = true; // will limit the test cases to high level
 	static String CountryList[][];
 
@@ -173,7 +173,7 @@ public class WFCL{
 		}
 	}
 	
-	@Test(dataProvider = "dp")
+	@Test(dataProvider = "dp", priority = 1)
 	public void WFCL_AccountRegistration_INET(String Level, String CountryCode, String Account){
 		try {
 			String AddressDetails[] = Helper_Functions.AccountDetails(Level, Account);

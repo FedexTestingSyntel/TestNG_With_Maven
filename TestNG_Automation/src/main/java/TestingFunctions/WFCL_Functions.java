@@ -6,7 +6,8 @@ import org.openqa.selenium.By;
 import SupportClasses.DriverFactory;
 
 public class WFCL_Functions extends Helper_Functions{
-
+	public static String strPassword = "Test1234";
+	
 	public static String[] CreditCardRegistrationEnroll(String Level, String EnrollmentID, String CreditCardDetils[], String AddressDetails[], String BillingAddressDetails[], String Name[], String UserId, boolean BusinessAccount, String TaxInfo[]) throws Exception{
 		try {
 			String CountryCode = AddressDetails[6];
@@ -256,7 +257,7 @@ public class WFCL_Functions extends Helper_Functions{
 		boolean InetFlag = false, AdminFlag = false;
 		PrintOut("Attempting to register with " + AccountNumber, true);
 		String CountryCode = AddressDetails[6].toUpperCase();
-		
+
 		String SCPath = CurrentDateTime() + " " + Level + CountryCode + " WFCL ";
 		if (CountryCode.contentEquals("US") || CountryCode.contentEquals("CA")){
 			ChangeURL("FCLLink", CountryCode, true, Level);
@@ -275,7 +276,7 @@ public class WFCL_Functions extends Helper_Functions{
 
 		//Step 2 Account information
 		String AccountNickname = AccountNumber + "_" + CountryCode;
-		WFCL_AccountEntryScreen(AccountNumber, AccountNickname, SCPath);
+		WFCL_AccountEntryScreen(Level, AccountNumber, AccountNickname, SCPath);
 
 		if (CountryCode.contains("US")){
 			WaitForText(By.xpath("//*[@id='rightColumn']/table/tbody/tr/td[1]/div/div[1]/div[2]/table/tbody/tr[1]/td[2]"), UserId);
@@ -337,11 +338,8 @@ public class WFCL_Functions extends Helper_Functions{
 				WaitForText(By.cssSelector("#main > h1"), "Admin Home: " + CompanyName);
 				AdminFlag = true;
 				//remove the account number from local storage as it is now locked to the company that was just created.
-				String Accounts = getExcelFreshAccount(Level, AddressDetails[6], false);
-				Accounts = Accounts.replace(AccountNumber + ",", "");//incase multiple accounts
-				Accounts = Accounts.replace(AccountNumber, "");//in case single account
-				boolean AccountRemoved = RemoveAccountFromExcel(Level, AddressDetails[6], Accounts);
-				PrintOut("Account " + AccountNumber + " removed from testing sheet: " + AccountRemoved, false);
+				RemoveAccountFromExcel(Level, AccountNumber);
+				
 			}catch (Exception e) {
 				PrintOut("Not able to register for admin " + DriverFactory.getInstance().getDriver().getCurrentUrl(), true);
 			}
@@ -353,7 +351,7 @@ public class WFCL_Functions extends Helper_Functions{
 		return Arrays.toString(ReturnValue);
 	}//end WFCL_AccountRegistration
 
-	public static boolean WFCL_AccountEntryScreen(String AccountNumber, String AccountNickname, String Path) throws Exception{
+	public static boolean WFCL_AccountEntryScreen(String Level, String AccountNumber, String AccountNickname, String Path) throws Exception{
 		if (isPresent(By.id("accountNumber"))){
 			Type(By.id("accountNumber"), AccountNumber);
 			Type(By.id("nickName"), AccountNickname);
@@ -376,7 +374,13 @@ public class WFCL_Functions extends Helper_Functions{
 			Click(By.name("submit"));
 			PrintOut("Warning, still on account entry screen. The address entered may be incorrect.", true);
 			//return WFCL_AccountEntryScreen(AccountNumber, AccountNickname, Path);//this is an issue, need to fix later as link is an issue for AU 
+		}else if (WebDriver_Functions.CheckBodyText("Request Access from the Account Administrator")) {
+			//remove the account number from local storage as it is now locked to the company that was just created.
+			RemoveAccountFromExcel(Level, AccountNumber);
+			Helper_Functions.PrintOut("Request Access from the Account Administrator", true);
+			throw new Exception("Request Access from the Account Administrator");
 		}
+		
 
 		WaitNotPresent(By.id("createUserID"));
 		return true;
@@ -410,7 +414,7 @@ public class WFCL_Functions extends Helper_Functions{
  			
 	 		//Step 2 Account information
 	 		String AccountNickname = AccountNumber + "_" + CountryCode;
-	 		WFCL_AccountEntryScreen(AccountNumber, AccountNickname, SCPath);
+	 		WFCL_AccountEntryScreen(Level, AccountNumber, AccountNickname, SCPath);
 	 		
 	 		WaitForText(By.xpath("//*[@id='content']/div/table/tbody/tr[1]/td[2]/p[2]/table[2]/tbody/tr[3]/td/table[2]/tbody/tr/td[1]/table/tbody/tr[2]/td/b"), UserId);
 	 		//*[@id="content"]/div/table/tbody/tr[1]/td[2]/p[2]/table[2]/tbody/tr[3]/td/table[2]/tbody/tr/td[1]/table/tbody/tr[2]/td/b

@@ -6,7 +6,9 @@ import org.openqa.selenium.By;
 import SupportClasses.DriverFactory;
 
 public class WIDM_Functions extends Helper_Functions{
-
+	
+	public static String strPassword = "Test1234";
+	
 	public static String WIDM_Registration(String Level, String AddressDetails[], String Name[], String UserId) throws Exception{
 		String Time = CurrentDateTime();
 		String CountryCode = AddressDetails[6];
@@ -178,6 +180,7 @@ public class WIDM_Functions extends Helper_Functions{
 		Click(By.name("forgotUidPwd"));//click the forgot password link
 		Type(By.name("userID"), strUserName);
 		takeSnapShot(SCPath + "Password Reset " + NewPassword + ".png");
+		Click(By.xpath("//*[@id='module.forgotuseridandpassword._expanded\']/table/tbody/tr/td[1]/form/table/tbody/tr[6]/td/input[2]"));//click option 1 for reset through user id
 		Click(By.xpath("//*[@id='module.resetpasswordoptions._expanded']/table/tbody/tr/td[1]/form/table/tbody/tr[5]/td/input"));//click the option 1 button and try to answer with secret question
 		Type(By.name("answer"), SecretAnswer);
 		takeSnapShot(SCPath + "Reset Password Secret " + NewPassword + ".png");

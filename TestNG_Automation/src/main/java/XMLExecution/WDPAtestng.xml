@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="8" name="WDPA_Suite" parallel="methods">
+   <listeners>
+    <listener class-name="SupportClasses.TestNG_ReportListener"/>
+  </listeners>
+  
+  <test thread-count="8" name="WDPA_Test" parallel="methods">
+    <classes>
+      <class name="WaterfallApplications.WDPA"/>
+    </classes>
+  </test> <!-- WDPA_Test -->
+</suite> <!-- WDPA_Suite -->

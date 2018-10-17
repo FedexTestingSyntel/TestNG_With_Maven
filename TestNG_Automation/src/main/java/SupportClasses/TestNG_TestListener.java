@@ -1,6 +1,5 @@
 package SupportClasses;
 
-import java.io.File;
 import java.util.ArrayList;    //The below needed for tracking the status of the tests.
 import java.util.Properties;
 import org.testng.ITestContext;
@@ -11,11 +10,9 @@ import javax.activation.DataSource;
 import javax.activation.FileDataSource;
 import javax.mail.BodyPart;
 import javax.mail.Message;
-import javax.mail.MessagingException;
 import javax.mail.Multipart;
 import javax.mail.Session;
 import javax.mail.Transport;
-import javax.mail.internet.AddressException;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;

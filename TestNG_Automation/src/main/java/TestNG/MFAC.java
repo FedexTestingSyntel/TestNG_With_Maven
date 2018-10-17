@@ -27,8 +27,8 @@ import TestingFunctions.Helper_Functions;
 //@Listeners(SupportClasses.TestNG_ReportListener.class)
 
 public class MFAC{
-	static String LevelsToTest = "1236"; //Can but updated to test multiple levels at once if needed. Setting to "23" will test both level 2 and level 3.
-	final boolean TestExpiration = true;//flag to determine if the expiration scenarios should be tested. When set to false those tests will not be executed.
+	static String LevelsToTest = "2"; //Can but updated to test multiple levels at once if needed. Setting to "23" will test both level 2 and level 3.
+	final boolean TestExpiration = false;//flag to determine if the expiration scenarios should be tested. When set to false those tests will not be executed.
 	
 	static MFAC_Data DataClass[] = new MFAC_Data[8];//Stores the data for each individual level, please see the before class function below for more details.
 	static ArrayList<String[]> ExpirationData = new ArrayList<String[]>();

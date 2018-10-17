@@ -2,13 +2,22 @@ package TestingFunctions;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+
+import SupportClasses.DriverFactory;
 import TestingFunctions.Helper_Functions;
+
+@Listeners(SupportClasses.TestNG_TestListener.class)
 
 public class Create_Accounts extends Helper_Functions{
 	
@@ -17,15 +26,18 @@ public class Create_Accounts extends Helper_Functions{
 		List<Object[]> data = new ArrayList<Object[]>();
 		ArrayList<String[]> AddressDetails = new ArrayList<String[]>();
 		AddressDetails = getExcelData(".\\Data\\AddressDetails.xls",  "Accounts");//load the relevant information from excel file.
-		String LevelsToTest = "3";
+		String LevelsToTest = "2";
 		for (int i=0; i < LevelsToTest.length(); i++) {
 			String Level = String.valueOf(LevelsToTest.charAt(i));
 			for (int j = 0; j < AddressDetails.size(); j++) {
 				String CountryList[] = AddressDetails.get(j);
-				if (CountryList == null) {
-					PrintOut("Updated: _", false);
+				int intLevel = Integer.parseInt(Level);
+				
+				//check if account number is loaded for this country and the given level
+				if (CountryList[8 + intLevel] == "") {
+					data.add( new Object[] {Level, CountryList, j});
 				}
-				data.add( new Object[] {Level, CountryList, j});
+
 				
 				/*  //incase need to make mass updates to the column
 				for (int k = 9; k < 15; k++) {
@@ -40,20 +52,6 @@ public class Create_Accounts extends Helper_Functions{
 			}
 		}
 		return data.iterator();
-	}
-	
-	@BeforeMethod
-	public void beforeMethod(Method method, Object[] params){
-		PrintOut(method.getName(), false);    //will print out the name of the function about to be run.  
-		String paramsList = "";
-		for (Object arr : params) {           //////Need to fix this later, if the object is an array will not print out the correct string
-			if (paramsList == "") {
-				paramsList = (String) arr;
-			}else {
-				paramsList += ", " + arr;
-			}
-        }
-		PrintOut(paramsList, false); 		//will print out the "<All of the parameters>" 
 	}
 
 	@Test(dataProvider = "dp")
@@ -72,10 +70,11 @@ public class Create_Accounts extends Helper_Functions{
 				String AddressDetails[] = new String[] {CountryDetails[0], CountryDetails[1], CountryDetails[2], CountryDetails[3], CountryDetails[4], CountryDetails[5], CountryCode};
 
 				try {
-					Accounts = Helper_Functions.CreateAccountNumbers(Level, AccountDetails, AddressDetails);
+					Accounts = CreateAccountNumbers(Level, AccountDetails, AddressDetails);
 					Helper_Functions.PrintOut(Accounts, false);
 					writeExcelData(".\\Data\\AddressDetails.xls", "Accounts", Accounts, Row, 8 + Integer.valueOf(Level));
 				} catch (Exception e) {
+					writeExcelData(".\\Data\\AddressDetails.xls", "Accounts", e.getMessage(), Row, 8 + Integer.valueOf(Level));
 					e.printStackTrace();
 				}
 			}
@@ -84,6 +83,142 @@ public class Create_Accounts extends Helper_Functions{
 			Assert.fail(e.getMessage());
 		}
 	}
+	
+	
+	public static String CreateAccountNumbers(String Level, String AccountDetails[], String AddressDetails[]) throws Exception{ 
+		PrintOut("Attempting to create account number for " + Arrays.toString(AddressDetails), true);
+		try {
+			// AccountDetails Example = 
+			//ShippingCountryCode, BillingCountryCode, OperatingCompanies (E = Express, G = Ground, F = Freight so "EDF" is all three), NumberOfAccounts
+			// AddressDetails Example =  {"10 FEDEX PKWY 2nd FL", "", "COLLIERVILLE", "Tennessee", "TN", "38017", "US"});
+			//Address line 1, address line 2, City, StateName, StateCode, ZipCode, CountryCode
+
+			ChangeURL("ECAM", "", false, Level);
+			if (isPresent(By.id("username"))) {
+				Type(By.id("username"), "");//enter your details
+				Type(By.id("password"), "");
+				Click(By.id("submit"));
+			}
+
+			//ECAM Page
+			for(;;) {
+				try {
+					WaitPresent(By.id("new_act_info"));
+		 			WaitClickable(By.id("new_act_info"));
+					Click(By.id("new_act_info"));
+					break;
+				}catch (Exception e) {}
+			}
+
+			WaitPresent(By.id("acct_info_ship_countrylist"));
+			String ShippingCountrCode = AccountDetails[0].toUpperCase(),  BillingCountryCode = AccountDetails[1].toUpperCase();
+			Select(By.id("acct_info_ship_countrylist"), ShippingCountrCode, "v");//shipping country
+			Select(By.id("acct_info_countrylist"), BillingCountryCode, "v");//billing country
+			Select(By.id("acctinfo_customertype") , "BUSINESS","v");//Customer Type
+			
+			//This next section will populate based on the country and the customer type
+			if (AccountDetails[2].contains("E")) {
+				
+				Click(By.id("check_exp"));
+				Select(By.id("acct_type_exp") , "BUSINESS","v");//Express Type
+			}else if (AccountDetails[2].contains("G")) {
+				Click(By.id("check_gnd"));
+				Select(By.id("acct_type_exp") , "BUSINESS","v");//Express Type
+			}else if (AccountDetails[2].contains("F")) {
+				Click(By.id("check_fht"));
+				Select(By.id("acct_type_fht") , "SHIPPER","v");//Freight Type
+				Select(By.id("acct_sub_type_fht") , "DOCK","v");//Freight Sub Type
+			}
+			
+			String NumAccounts = AccountDetails[3];
+			Type(By.id("acctinfo_no_acct"), NumAccounts); //number of account numbers that should be created
+			Select(By.id("acct_info_source_grp"), "ALLIANCES","v");//the Source group of the account numbers
+			Click(By.id("next_contact"));
+			
+			//Account Contact Information
+			Type(By.id("first_name"), "John");
+			Type(By.id("last_name"), "Doe");
+			try {
+				Select(By.id("contact_language") , "EN","v");//set the language as English
+			}catch (Exception e){}
+			
+			Type(By.id("contact_phn_one"), "9011111111"); //Will need to update later for additional countries
+			Click(By.name("ship_radio"));
+			Click(By.id("next_address"));
+			
+			//Account Address
+			Type(By.id("acctinfo_postal_input_info"), AddressDetails[5]);
+			Type(By.id("add_info_company"), CurrentDateTime() + AccountDetails[2]);
+			Type(By.id("address_phn_number"), "9011111111");
+			Type(By.id("acctinfo_addr_one"), AddressDetails[0]);
+			Type(By.id("acctinfo_addr_two"), AddressDetails[1]);
+			try {//try and select the city, may be only the single city or multiple based on zip code.
+				DriverFactory.getInstance().getDriver().manage().timeouts().implicitlyWait(DriverFactory.WaitTimeOut / 3, TimeUnit.SECONDS); //sets the timeout for short to make reduce delay
+				new Select(DriverFactory.getInstance().getDriver().findElement(By.id("acctinfo_city_input_info_list"))).selectByValue(AddressDetails[2].toUpperCase());
+			}catch (Exception e) {
+				Type(By.id("acctinfo_city_input_info_box"), AddressDetails[2]);
+			}finally {
+				DriverFactory.getInstance().getDriver().manage().timeouts().implicitlyWait(DriverFactory.WaitTimeOut, TimeUnit.SECONDS);
+			}
+			
+			Click(By.id("next_payment"));
+			
+			try {//if there address matches differs address may need to skip the below.
+				if (isPresent(By.id("nomatch"))) {
+					Click(By.id("nomatch"));
+				}
+				if (isPresent(By.id("next_reg"))) {//Regulatory Informaiton page
+					Click(By.id("next_reg"));
+				}
+			}catch (Exception e){}
+			
+			try {
+				//Regulatory Informaiton page
+				Click(By.id("next_reg"));
+			}catch (Exception e){}
+			
+			//Payment Information
+			String CreditCard[] = LoadCreditCard("V");
+			String Payment = "Invoice";
+			try {
+				Select(By.id("acct_pay_info_list") , "Credit_Card","v");
+				
+				//Example  "Visa", "4005554444444460", "460", "12", "20"
+				Type(By.id("acct_payment_info_number_details"), CreditCard[1]);
+				Type(By.id("name_on_card"), "John Doe");
+				Type(By.id("acct_pay_expiry"), CreditCard[3] + "/20" + CreditCard[4]);
+				Type(By.id("acct_pay_cvv_code"), CreditCard[2]);
+				Select(By.id("acct_payment_info_card_type") , CreditCard[0].toUpperCase(),"v");   //Auto populated
+				Click(By.id("next_comments"));
+				if (isPresent(By.id("next_comments"))) {
+					throw new Exception("Could not link to CC");
+				}
+				Payment = CreditCard[1];
+			}catch (Exception e){
+				for(int i = 0; i < 30; i++) {
+					try {
+						Select(By.id("acct_pay_info_list") , "Invoice","v");	
+						Click(By.id("next_comments"));
+						break;
+					}catch (Exception e1){}
+				}
+			}
+			
+			//Comment/confirmation page
+			Click(By.id("comments_form_save"));	
+			//*[@id="dialog-confirm"]/center/text()
+			WaitPresent(By.id("dialog-confirm"));
+			WaitForTextPresentIn(By.id("dialog-confirm"), "Account has been created");
+	        String AccountNumbers = DriverFactory.getInstance().getDriver().findElement(By.id("dialog-confirm")).getText();
+	        PrintOut("AccountNumberstest:   " + AccountNumbers + "     -- " + Payment, false);
+			AccountNumbers = AccountNumbers.replace("Account has been created successfully and Account Numbers are ", "");
+			return AccountNumbers;
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+	
 	
 }
 	/*

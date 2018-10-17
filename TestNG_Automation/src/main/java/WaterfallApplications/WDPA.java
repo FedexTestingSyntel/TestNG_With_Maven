@@ -2,6 +2,7 @@ package WaterfallApplications;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
@@ -13,19 +14,23 @@ import org.testng.annotations.Test;
 
 import SupportClasses.DriverFactory;
 import TestingFunctions.Helper_Functions;
+import TestingFunctions.WDPA_Functions;
 
 @Listeners(SupportClasses.TestNG_TestListener.class)
 
-public class WDPA {
+public class WDPA extends WDPA_Functions{
 	
 	static ArrayList<String[]> AddressDetails = new ArrayList<String[]>();
-	static String LevelsToTest = "6";
+	static String LevelsToTest = "3";
 	static String CountryList[][];
 
 	@BeforeClass
 	public void beforeClass() {
 		DriverFactory.LevelsToTest = LevelsToTest;
-		
+		for (int i=0; i < LevelsToTest.length(); i++) {
+			String Level = String.valueOf(LevelsToTest.charAt(i));
+			Helper_Functions.LoadUserIds(Integer.parseInt(Level));
+		}
 		CountryList = new String[][]{{"US", "United States"}};
 	}
 	
@@ -35,17 +40,35 @@ public class WDPA {
 
 		for (int i=0; i < LevelsToTest.length(); i++) {
 			String Level = String.valueOf(LevelsToTest.charAt(i));
-			//int intLevel = Integer.parseInt(Level);
+			int intLevel = Integer.parseInt(Level);
 
 			switch (m.getName()) { //Based on the method that is being called the array list will be populated.
-		    	case "WRTT_Rate_Sheet":
-		    		data.add( new Object[] {Level, true, 5, true, false});
-		    		data.add( new Object[] {Level, true, 14, true, false});
-		    		data.add( new Object[] {Level, true, 4, true, true});
+		    	case "WDPA_Pickup_Ground":
+		    	case "WDPA_Pickup_Express":
+		    	case "WDPAPickup_ExpressFright"://need to fix this later, not for all countries.
+		    		for (int j = 0; j < CountryList.length; j++) {
+		    			for (int k = 0; k < Helper_Functions.DataClass[intLevel].length; k++) {
+		    				if (Helper_Functions.DataClass[intLevel][k].COUNTRY_CD.contentEquals(CountryList[j][0])) {
+		    					data.add( new Object[] {Level, CountryList[j][0], Helper_Functions.DataClass[intLevel][k].SSO_LOGIN_DESC, Helper_Functions.DataClass[intLevel][k].USER_PASSWORD_DESC});
+		    					break;
+		    				}
+		    			}
+					}
 		    	break;
-		    	case "WRTT_eCRV_Page":
-		    	case "WRTT_SpalshPage_eCRV":
-		    		data.add( new Object[] {Level, "US"});
+		    	case "WDPAPickup_LTLFreight":    //update this later to restrict based on country
+		    		for (int j = 0; j < CountryList.length; j++) {
+		    			for (int k = 0; k < Helper_Functions.DataClass[intLevel].length; k++) {
+		    				if (Helper_Functions.DataClass[intLevel][k].COUNTRY_CD.contentEquals(CountryList[j][0]) && Helper_Functions.DataClass[intLevel][k].SSO_LOGIN_DESC.contains("Freight")) {
+		    					data.add( new Object[] {Level, CountryList[j][0], Helper_Functions.DataClass[intLevel][k].SSO_LOGIN_DESC, Helper_Functions.DataClass[intLevel][k].USER_PASSWORD_DESC});
+		    					break;
+		    				}
+		    			}
+					}
+		    	break;
+		    	case "WDPAPickup_LTLFreight_Anonymous":    //update this later to restrict based on country
+		    		for (int j = 0; j < CountryList.length; j++) {
+		    			data.add( new Object[] {Level, CountryList[j][0]});
+					}
 		    	break;
 			}
 		}	
@@ -58,70 +81,69 @@ public class WDPA {
 		Helper_Functions.PrintOut("Schedule a ground pickup.", false);
 		try {
 			String Address[] = Helper_Functions.LoadAddress(CountryCode, Level);
-			String Result = WDPAPickupDetailed(Level, CountryCode, UserID, Password, "ground", "CompanyNameHere", "John Doe", "9011111111", Address, null, "INET");
+			String Result = Arrays.toString(WDPAPickupDetailed(Level, CountryCode, UserID, Password, "ground", "CompanyNameHere", "John Doe", "9011111111", Address, null, "INET"));
 			Helper_Functions.PrintOut(Result, false);
 		}catch (Exception e) {
 			Assert.fail(e.getMessage());
 		}
-	}//end WRTT_Rate_Sheet
+	}//end WDPA_Pickup_Ground
 	
+	@Test(dataProvider = "dp")
+	public static void WDPA_Pickup_Express(String Level, String CountryCode, String UserID, String Password){
+		Helper_Functions.PrintOut("Schedule an express pickup.", false);
+		try {
+			String Address[] = Helper_Functions.LoadAddress(CountryCode, Level);
+			String Result = Arrays.toString(WDPAPickupDetailed(Level, CountryCode, UserID, Password, "express", "CompanyNameHere", "John Doe", "9011111111", Address, null, "INET"));
+			Helper_Functions.PrintOut(Result, false);
+		}catch (Exception e) {
+			Assert.fail(e.getMessage());
+		}
+	}//end WDPA_Pickup_Express
+	
+	@Test(dataProvider = "dp")
+	public static void WDPAPickup_ExpressFright(String Level, String CountryCode, String UserID, String Password){
+		Helper_Functions.PrintOut("Schedule an express freight pickup.", false);
+		try {
+			String PackageDetails[] = {"1", "444", "L", "1500", "1800", "ExpLTL Attempt", "FedEx 1Day Freight", "ConfFiller", "side of barn", "5", "6", "7"};
+			String Address[] = Helper_Functions.LoadAddress(CountryCode, Level);
+			String Result = Arrays.toString(WDPAPickupDetailed(Level, "US", UserID, Password, "expFreight", "ExpressLTL Testing", "ExpressLTL Attempt", "9011111111", Address, PackageDetails, "INET"));
+			Helper_Functions.PrintOut(Result, false);
+		}catch (Exception e) {
+			Assert.fail(e.getMessage());
+		}
+	}//end WDPAPickup_ExpressFright
+	
+	
+	@Test(dataProvider = "dp")
+	public static void WDPAPickup_LTLFreight(String Level, String CountryCode, String UserID, String Password){
+		Helper_Functions.PrintOut("Schedule a LTL pickup while logged in.", false);
+		try {
+			String Address[] = Helper_Functions.LoadAddress(CountryCode, Level);
+			String Result = WDPALTLPickup(Level, Address, UserID, Password);
+			Helper_Functions.PrintOut(Result, false);
+		}catch (Exception e) {
+			Assert.fail(e.getMessage());
+		}
+	}//end WDPAPickup_ExpressFright
+	
+	
+	@Test(dataProvider = "dp")
+	public static void WDPAPickup_LTLFreight_Anonymous(String Level, String CountryCode){
+		Helper_Functions.PrintOut("Schedule a LTL pickup while not logged into FedEx.com", false);
+		try {
+			String Address[] = Helper_Functions.LoadAddress(CountryCode, Level);
+			String Result = WDPALTLPickup(Level, Address, "", "");
+			Helper_Functions.PrintOut(Result, false);
+		}catch (Exception e) {
+			Assert.fail(e.getMessage());
+		}
+	}//end WDPAPickup_ExpressFright
 	
 }
 
 
 /*
-	@Test
-	public void WDPAPickup_Ground() {
-		String Result[] = null;
-		try {
-			Result = WDPAPickupDetailed("US", strWDPAnonAdmin, strPassword, "ground", "CompanyNameHere", "John Doe", "9011111111", LoadAddress("US"), null, "INET");
-		} catch (Exception e) {
-			Assert.fail();
-		}
-		PassOrFail = true;
-		ResultsList.set(ResultsList.size() - 1, UpdateArrayList(ResultsList.get(ResultsList.size() - 1), 1, Arrays.toString(Result)));
-	}
-	
 
-	@Test
-	public void WDPAPickup_Express() {
-		String Result[] = null;
-		try {
-			//PackageDetails = {String Packages, String Weight, String WeightUnit (L or K), String Date, String ReadyTime, String CloseTime, String Special}
-			String PackageDetails[] = {"1", "22", "L", null, null, null, null};
-			Result = WDPAPickupDetailed("US", strWDPAnonAdmin, strPassword, "express", "Express Testing", "Express Attempt", strPhone, LoadAddress("US"), PackageDetails, "INET");
-		} catch (Exception e) {
-			Assert.fail();
-		}
-		PassOrFail = true;
-		ResultsList.set(ResultsList.size() - 1, UpdateArrayList(ResultsList.get(ResultsList.size() - 1), 1, Arrays.toString(Result)));
-	}
-	
-	//@Test
-	public void WDPAPickup_ExpressFright() {
-		String Result[] = null;
-		try {
-			String PackageDetails[] = {"1", "444", "L", "1500", "1800", "ExpLTL Attempt", "FedEx 1Day Freight", "ConfFiller", "side of barn", "5", "6", "7"};
-			Result = WDPAPickupDetailed("US", strWDPAnonAdmin, strPassword, "expFreight", "ExpressLTL Testing", "ExpressLTL Attempt", strPhone, LoadAddress("US"), PackageDetails, "INET");
-			PrintOut(Arrays.toString(Result));
-		} catch (Exception e) {
-			Assert.fail();
-		}
-		PassOrFail = true;
-		ResultsList.set(ResultsList.size() - 1, UpdateArrayList(ResultsList.get(ResultsList.size() - 1), 1, Arrays.toString(Result)));
-	}
-
-	@Test
-	public void WDPAPickup_LTLFreight() {
-		String Confirmation = null;
-		try {
-			Confirmation = WDPALTLPickup(LoadAddress("US"), strWDPAFreight, strPassword);
-		} catch (Exception e) {
-			Assert.fail();
-		}
-		PassOrFail = true;
-		ResultsList.set(ResultsList.size() - 1, UpdateArrayList(ResultsList.get(ResultsList.size() - 1), 1, strWDPAFreight + " " + Confirmation));
-	}
 	
 	@Test
 	public void WDPAPickup_LTLFreight_Anonymous() {
