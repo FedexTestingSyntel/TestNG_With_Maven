@@ -7,12 +7,12 @@
   
   <test thread-count="8" name="SMOKE_Test" parallel="methods">
     <classes>
-      <class name="TestNG.MFAC"/>
-      <!--<class name="TestNG.WFCL"/>-->
-      <class name="TestNG.WIDM"/>
-      <!-- <class name="WaterfallApplications.OADR"/>
-     <class name="WaterfallApplications.WRTT"/>
-      <class name="WaterfallApplications.WDPA"/>-->
+    	<class name="TestNG.MFAC"/>
+      	<class name="TestNG.WFCL"/>
+      	<class name="TestNG.WIDM"/>
+      	<class name="WaterfallApplications.OADR"/>
+     	<class name="WaterfallApplications.WRTT"/>
+      	<class name="WaterfallApplications.WDPA"/>
     </classes>
   </test> <!-- WDPA_Test -->
 </suite> <!-- WDPA_Suite -->

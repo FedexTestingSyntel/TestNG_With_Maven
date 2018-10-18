@@ -21,7 +21,7 @@ import TestingFunctions.Helper_Functions;
 
 public class Create_Accounts extends Helper_Functions{
 	
-	@DataProvider (parallel = true)
+	@DataProvider //(parallel = true)
 	public static Iterator<Object[]> dp(Method m) {
 		List<Object[]> data = new ArrayList<Object[]>();
 		ArrayList<String[]> AddressDetails = new ArrayList<String[]>();
@@ -74,8 +74,8 @@ public class Create_Accounts extends Helper_Functions{
 					Helper_Functions.PrintOut(Accounts, false);
 					writeExcelData(".\\Data\\AddressDetails.xls", "Accounts", Accounts, Row, 8 + Integer.valueOf(Level));
 				} catch (Exception e) {
-					writeExcelData(".\\Data\\AddressDetails.xls", "Accounts", e.getMessage(), Row, 8 + Integer.valueOf(Level));
-					e.printStackTrace();
+					writeExcelData(".\\Data\\AddressDetails.xls", "Accounts", "Error", Row, 8 + Integer.valueOf(Level));
+					Helper_Functions.PrintOut("Wrote Error to file for", false);
 				}
 			}
 			PrintOut(Accounts, false);
@@ -95,19 +95,21 @@ public class Create_Accounts extends Helper_Functions{
 
 			ChangeURL("ECAM", "", false, Level);
 			if (isPresent(By.id("username"))) {
-				Type(By.id("username"), "");//enter your details
-				Type(By.id("password"), "");
+				Type(By.id("username"), "821032");
+				Type(By.id("password"), "821032");
 				Click(By.id("submit"));
 			}
 
 			//ECAM Page
-			for(;;) {
+			for(int i = 0; i < 30; i++) {
 				try {
 					WaitPresent(By.id("new_act_info"));
 		 			WaitClickable(By.id("new_act_info"));
 					Click(By.id("new_act_info"));
 					break;
-				}catch (Exception e) {}
+				}catch (Exception e) {
+					Helper_Functions.Wait(1);
+				}
 			}
 
 			WaitPresent(By.id("acct_info_ship_countrylist"));
@@ -153,7 +155,7 @@ public class Create_Accounts extends Helper_Functions{
 			Type(By.id("acctinfo_addr_one"), AddressDetails[0]);
 			Type(By.id("acctinfo_addr_two"), AddressDetails[1]);
 			try {//try and select the city, may be only the single city or multiple based on zip code.
-				DriverFactory.getInstance().getDriver().manage().timeouts().implicitlyWait(DriverFactory.WaitTimeOut / 3, TimeUnit.SECONDS); //sets the timeout for short to make reduce delay
+				DriverFactory.getInstance().getDriver().manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS); //sets the timeout for short to make reduce delay
 				new Select(DriverFactory.getInstance().getDriver().findElement(By.id("acctinfo_city_input_info_list"))).selectByValue(AddressDetails[2].toUpperCase());
 			}catch (Exception e) {
 				Type(By.id("acctinfo_city_input_info_box"), AddressDetails[2]);
@@ -161,27 +163,31 @@ public class Create_Accounts extends Helper_Functions{
 				DriverFactory.getInstance().getDriver().manage().timeouts().implicitlyWait(DriverFactory.WaitTimeOut, TimeUnit.SECONDS);
 			}
 			
-			Click(By.id("next_payment"));
 			
-			try {//if there address matches differs address may need to skip the below.
-				if (isPresent(By.id("nomatch"))) {
-					Click(By.id("nomatch"));
-				}
-				if (isPresent(By.id("next_reg"))) {//Regulatory Informaiton page
-					Click(By.id("next_reg"));
-				}
-			}catch (Exception e){}
 			
-			try {
-				//Regulatory Informaiton page
+			if (isPresent(By.id("nomatch"))) {
+				Click(By.id("nomatch"));
+			}
+			if (isPresent(By.id("next_reg"))) {//Regulatory Informaiton page
+				if (WebDriver_Functions.isPresent(By.xpath("//*[@id='mand']"))){//Tax id 1
+					//By.id("reg_tax_id_one")
+				}
+				if (WebDriver_Functions.isPresent(By.xpath("//*[@id='mand1']"))){//Tax id 2
+					//By.id("reg_tax_id_two")
+				}
 				Click(By.id("next_reg"));
-			}catch (Exception e){}
+			}
+			
+			if (isPresent(By.id("next_payment"))) {
+				Click(By.id("next_payment"));
+			}
 			
 			//Payment Information
 			String CreditCard[] = LoadCreditCard("V");
 			String Payment = "Invoice";
 			try {
-				Select(By.id("acct_pay_info_list") , "Credit_Card","v");
+				WaitPresent(By.id("acct_pay_info_list"));
+				Select(By.id("acct_pay_info_list"), "Credit_Card","v");
 				
 				//Example  "Visa", "4005554444444460", "460", "12", "20"
 				Type(By.id("acct_payment_info_number_details"), CreditCard[1]);

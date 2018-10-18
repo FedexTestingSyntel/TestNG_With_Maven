@@ -6,7 +6,7 @@ import org.json.JSONObject;
 
 public class MFAC_API_Endpoints {
 	
-	public static String[] AddressVelocityAPI(String UserName, String OrgName, String URL, String OAuth_Token){
+	public static String AddressVelocityAPI(String UserName, String OrgName, String URL, String OAuth_Token){
 		String Request = "";
 		
 		try{
@@ -22,10 +22,10 @@ public class MFAC_API_Endpoints {
 			httppost.setEntity(params);
 			String Response = General_API_Calls.HTTPCall(httppost, Request);
 		
-			return new String[] {Request,Response};
+			return Response;
 		}catch (Exception e){
 			e.printStackTrace();
-			return new String[] {Request, e.toString()};
+			return e.toString();
 		}
 			/*
 			Sample url:    https://apidev.idev.fedex.com:8443/security/v1/addresses/velocitycheck____http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/addressVelocityCheck
@@ -35,7 +35,7 @@ public class MFAC_API_Endpoints {
 			*/
 	}
 	
-	public static String[] IssuePinAPI(String UserName, String OrgName, String URL, String OAuth_Token){
+	public static String IssuePinAPI(String UserName, String OrgName, String URL, String OAuth_Token){
 		String Request = "";
 		try{
 			HttpPost httppost = new HttpPost(URL);
@@ -49,10 +49,10 @@ public class MFAC_API_Endpoints {
 			StringEntity params = new StringEntity(Request.toString());
 			httppost.setEntity(params);
 			String Response = General_API_Calls.HTTPCall(httppost, Request);
-			return new String[] {Request, Response};
+			return Response;
 		}catch (Exception e){
 			e.printStackTrace();
-			return new String[] {Request, e.toString()};
+			return e.toString();
 		}
 		/*
 		 sample URL: https://apidev.idev.fedex.com:8443/security/v1/pin____http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/issuePIN
@@ -61,7 +61,7 @@ public class MFAC_API_Endpoints {
 		 */
 	}
 	
-	public static String[] VerifyPinAPI(String UserName, String OrgName, String Pin, String URL, String OAuth_Token){
+	public static String VerifyPinAPI(String UserName, String OrgName, String Pin, String URL, String OAuth_Token){
 		String Request = "";
 		try{
 			HttpPost httppost = new HttpPost(URL);
@@ -76,10 +76,10 @@ public class MFAC_API_Endpoints {
 			StringEntity params = new StringEntity(Request.toString());
 			httppost.setEntity(params);
 			String Response = General_API_Calls.HTTPCall(httppost, Request);
-			return new String[] {Request, Response};
+			return Response;
 		}catch (Exception e){
 			e.printStackTrace();
-			return new String[] {Request, e.toString()};
+			return e.toString();
 		}
 		/*
 		 sample URL: https://apidev.idev.fedex.com:8443/security/v1/pin/verify____http://mfacdev-cos-vip.test.cloud.fedex.com:9090/mfac/v3/verifyPIN

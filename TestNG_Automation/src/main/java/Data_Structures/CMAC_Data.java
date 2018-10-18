@@ -10,6 +10,8 @@ public class CMAC_Data {
 	public String Delete_Credential_URL;
 	public String DeleteResource_URL;
 	public String Create_Resource_Project_URL;
+	
+	/*  before hybrid redesign
 	public String P_UserID[] = new String[1];
 	public String P_User_Password[] = new String[1];
 	public String P_Cookie[] = new String[1];
@@ -18,4 +20,5 @@ public class CMAC_Data {
 	public String NonP_User_Password[] = new String[1];
 	public String NonP_Cookie[] = new String[1];
 	public String NonP_UUID[] = new String[1];
+	*/
 }

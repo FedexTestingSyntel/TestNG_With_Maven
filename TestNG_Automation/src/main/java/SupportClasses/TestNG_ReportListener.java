@@ -2,7 +2,6 @@ package SupportClasses;
 
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -32,6 +31,22 @@ import com.itextpdf.text.PageSize;
 import com.itextpdf.text.html.simpleparser.HTMLWorker;
 import com.itextpdf.text.pdf.PdfWriter;
 import TestingFunctions.Helper_Functions;
+/*
+ * For when sending emails
+import java.util.Properties;
+import javax.activation.DataHandler;
+import javax.activation.DataSource;
+import javax.activation.FileDataSource;
+import javax.mail.BodyPart;
+import javax.mail.Message;
+import javax.mail.Multipart;
+import javax.mail.Session;
+import javax.mail.Transport;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeBodyPart;
+import javax.mail.internet.MimeMessage;
+import javax.mail.internet.MimeMultipart;
+ */
 
 public class TestNG_ReportListener implements IReporter {
 	
@@ -73,10 +88,13 @@ public class TestNG_ReportListener implements IReporter {
 			
 			// Write replaced test report content to custom-emailable-report.html.
 			String ReportName = Helper_Functions.CurrentDateTime() + " L" + DriverFactory.LevelsToTest + " " + Application + " Report";
+			String ReportTitle = "L" + DriverFactory.LevelsToTest + " " + Application;
 			outputDirectory = System.getProperty("user.dir") + "\\EclipseScreenshots\\" + Application + "\\" + ReportName;
 			outputDirectory += String.format(" T%sP%sF%s", totalTestCount, totalTestPassed, totalTestFailed);
 			File targetFile = new File(outputDirectory + ".html");
 			System.out.println("Report Saved: " + outputDirectory + ".html");
+			
+			customReportTemplateStr = "<!DOCTYPE html><html><head><title>" + ReportTitle + "</title><meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\" /></head>" + customReportTemplateStr + "</html>";
 			
 			//Create folder directory for writing the report.
 			String Folder = outputDirectory;
@@ -95,10 +113,15 @@ public class TestNG_ReportListener implements IReporter {
 				fw.close();
 			}
 			
-			//customReportTemplateStr = "<!DOCTYPE html><html><head><title>Title</title><meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\" /></head>" + customReportTemplateStr + "</html>";
 			//CreatePDFReport(outputDirectory, customReportTemplateStr);
 			//Need to work on this, something is most likely wrong with HTML format.    //java.lang.IllegalArgumentException: The number of columns in PdfPTable constructor must be greater than zero.
 		
+	    	//Need to work on this to send out the email report.
+	    	//java.net.URL classUrl = this.getClass().getResource("com.sun.mail.util.TraceInputStream");
+	    	//System.out.println(classUrl.getFile());
+	    	//sendPDFReportByGMail(sender gmail account, sender gmail password, recipient email, ReportTitle, customReportTemplateStr, outputDirectory);
+	    	
+			
 		}catch(Exception ex){
 			ex.printStackTrace();
 		}
@@ -153,80 +176,43 @@ public class TestNG_ReportListener implements IReporter {
 				for (ISuiteResult result : testResults.values()) {
 					
 					retBuf.append("<tr>");
-					
 					ITestContext testObj = result.getTestContext();
-					
 					totalTestPassed = testObj.getPassedTests().getAllMethods().size();
 					totalTestSkipped = testObj.getSkippedTests().getAllMethods().size();
 					totalTestFailed = testObj.getFailedTests().getAllMethods().size();
-					
 					totalTestCount = totalTestPassed + totalTestSkipped + totalTestFailed;
 					
 					/* Test name. */
-					retBuf.append("<td>");
-					retBuf.append(testObj.getName());
-					retBuf.append("</td>");
-					
+					retBuf.append("<td>" + testObj.getName() + "</td>");
 					/* Total method count. */
-					retBuf.append("<td>");
-					retBuf.append(totalTestCount);
-					retBuf.append("</td>");
-					
+					retBuf.append("<td>" + totalTestCount + "</td>");
 					/* Passed method count. */
-					retBuf.append("<td bgcolor=green>");
-					retBuf.append(totalTestPassed);
-					retBuf.append("</td>");
-					
+					retBuf.append("<td bgcolor=green>" + totalTestPassed+ "</td>");
 					/* Skipped method count. */
-					retBuf.append("<td bgcolor=yellow>");
-					retBuf.append(totalTestSkipped);
-					retBuf.append("</td>");
-					
+					retBuf.append("<td bgcolor=yellow>" + totalTestSkipped + "</td>");
 					/* Failed method count. */
-					retBuf.append("<td bgcolor=red>");
-					retBuf.append(totalTestFailed);
-					retBuf.append("</td>");
-					
+					retBuf.append("<td bgcolor=red>" + totalTestFailed + "</td>");
 					/* Get browser type. */
 					String browserType = tempSuite.getParameter("browserType");
 					if(browserType==null || browserType.trim().length()==0){
 						browserType = "Chrome";
 					}
-					
 					/* Append browser type. */
-					retBuf.append("<td>");
-					retBuf.append(browserType);
-					retBuf.append("</td>");
-					
+					retBuf.append("<td>" + browserType + "</td>");
 					/* Start Date*/
 					Date startDate = testObj.getStartDate();
-					retBuf.append("<td>");
-					retBuf.append(this.getDateInStringFormat(startDate));
-					retBuf.append("</td>");
-					
+					retBuf.append("<td>" + this.getDateInStringFormat(startDate) + "</td>");
 					/* End Date*/
 					Date endDate = testObj.getEndDate();
-					retBuf.append("<td>");
-					retBuf.append(this.getDateInStringFormat(endDate));
-					retBuf.append("</td>");
-					
+					retBuf.append("<td>" + this.getDateInStringFormat(endDate) + "</td>");
 					/* Execute Time */
 					long deltaTime = endDate.getTime() - startDate.getTime();
 					String deltaTimeStr = this.convertDeltaTimeToString(deltaTime);
-					retBuf.append("<td>");
-					retBuf.append(deltaTimeStr);
-					retBuf.append("</td>");
-					
+					retBuf.append("<td>" + deltaTimeStr + "</td>");
 					/* Include groups. */
-					retBuf.append("<td>");
-					retBuf.append(this.stringArrayToString(testObj.getIncludedGroups()));
-					retBuf.append("</td>");
-					
+					retBuf.append("<td>" + this.stringArrayToString(testObj.getIncludedGroups()) + "</td>");
 					/* Exclude groups. */
-					retBuf.append("<td>");
-					retBuf.append(this.stringArrayToString(testObj.getExcludedGroups()));
-					retBuf.append("</td>");
-					
+					retBuf.append("<td>" + this.stringArrayToString(testObj.getExcludedGroups()) + "</td>");
 					retBuf.append("</tr>");
 				}
 			}
@@ -252,13 +238,9 @@ public class TestNG_ReportListener implements IReporter {
 		StringBuffer retBuf = new StringBuffer();
 		
 		long milli = deltaTime;
-		
 		long seconds = deltaTime / 1000;
-		
 		long minutes = seconds / 60;
-		
 		long hours = minutes / 60;
-		
 		retBuf.append(hours + ":" + minutes + ":" + seconds + ":" + milli);
 		
 		return retBuf.toString();
@@ -373,39 +355,19 @@ public class TestNG_ReportListener implements IReporter {
 			sortingStrBuf.append("<tr bgcolor=" + color + ">");
 			
 			/* Add test class name. */
-			sortingStrBuf.append("<td>");
-			sortingStrBuf.append(Application);
-			sortingStrBuf.append("</td>");
-			
+			sortingStrBuf.append("<td>" + Application + "</td>");
 			/* Add test method name. */
-			sortingStrBuf.append("<td>");
-			sortingStrBuf.append(testMethodName);
-			sortingStrBuf.append("</td>");
-			
+			sortingStrBuf.append("<td>" + testMethodName + "</td>");
 			/* Add start time. */
-			sortingStrBuf.append("<td>");
-			sortingStrBuf.append(startDateStr);
-			sortingStrBuf.append("</td>");
-			
+			sortingStrBuf.append("<td>" + startDateStr + "</td>");
 			/* Add execution time. */
-			sortingStrBuf.append("<td>");
-			sortingStrBuf.append(executeTimeStr);
-			sortingStrBuf.append("</td>");
-			
+			sortingStrBuf.append("<td>" + executeTimeStr + "</td>");
 			/* Add parameter. */
-			sortingStrBuf.append("<td>");
-			sortingStrBuf.append(paramStr);
-			sortingStrBuf.append("</td>");
-			
+			sortingStrBuf.append("<td>" + paramStr + "</td>");
 			/* Add reporter message. */
-			sortingStrBuf.append("<td>");
-			sortingStrBuf.append(reporterMessage);
-			sortingStrBuf.append("</td>");
-			
+			sortingStrBuf.append("<td>" + reporterMessage + "</td>");
 			/* Add exception message. */
-			sortingStrBuf.append("<td>");
-			sortingStrBuf.append(exceptionMessage);
-			sortingStrBuf.append("</td>");
+			sortingStrBuf.append("<td>" + exceptionMessage + "</td>");;
 			
 			sortingStrBuf.append("</tr>");
 			ResultList.add(new String[] {Application, sortingStrBuf.toString()});
@@ -494,49 +456,53 @@ public class TestNG_ReportListener implements IReporter {
             e.printStackTrace();
         }
 	}
+	
+	/*
+	private static void sendPDFReportByGMail(String from, String pass, String to, String subject, String body, String FileName) {
+    	Properties props = System.getProperties();
+    	String host = "smtp.gmail.com";
+    	props.put("mail.smtp.starttls.enable", "true");
+    	props.put("mail.smtp.host", host);
+    	props.put("mail.smtp.user", from);
+    	props.put("mail.smtp.password", pass);
+    	props.put("mail.smtp.port", "587");
+    	props.put("mail.smtp.auth", "true");
+    	Session session = Session.getDefaultInstance(props);
 
-}
+    	MimeMessage message = new MimeMessage(session);
+ 
+    	try {
+    	    //Set from address
+    		message.setFrom(new InternetAddress(from));
+    		message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
 
+    		//Set subject
+    		message.setSubject(subject);
+    		message.setText(body);
+    		BodyPart objMessageBodyPart = new MimeBodyPart();
+    		objMessageBodyPart.setText("Please Find The Attached Report File!");
+    		Multipart multipart = new MimeMultipart();
+    		multipart.addBodyPart(objMessageBodyPart);
+    		objMessageBodyPart = new MimeBodyPart();
 
+    		//Set path to the pdf report file
+    		String filename = System.getProperty("user.dir")+"\\test-output\\custom-emailable-report.html";
 
-/*
-public class TestNG_ReportListener implements IReporter{
-	   
-    //For report generation
-    @Override
-    public void generateReport(List<XmlSuite> arg0, List<ISuite> arg1, String outputDirectory) {
-    	// Second parameter of this method ISuite will contain all the suite executed.
-        for (ISuite iSuite : arg1) {
-        	//Get a map of result of a single suite at a time
-            Map<String,ISuiteResult> results = iSuite.getResults();
-            //Get the key of the result map
-            Set<String> keys = results.keySet();
-            //Go to each map value one by one
-            for (String key : keys) {
-            	//The Context object of current result
-            	ITestContext context = results.get(key).getTestContext();
-            	//Print Suite detail in Console
-            	System.out.println("Suite Name->"+context.getName());
-            	System.out.println("Report output Ditectory->"+context.getOutputDirectory());
-            	System.out.println("Suite Name->"+ context.getSuite().getName());
-            	System.out.println("Start Date Time for execution->"+context.getStartDate());
-            	System.out.println("End Date Time for execution->"+context.getEndDate());
-             
-            	//Get Map for only failed test cases
-            	IResultMap resultMap = context.getFailedTests();
-            	//Get method detail of failed test cases
-            	Collection<ITestNGMethod> failedMethods = resultMap.getAllMethods();
-            	//Loop one by one in all failed methods
-            	System.out.println("--------FAILED TEST CASE---------");
-            	for (ITestNGMethod iTestNGMethod : failedMethods) {
-            		//Print failed test cases detail
-            		System.out.println("TESTCASE NAME->"+iTestNGMethod.getMethodName()
-                        +"\nDescription->"+iTestNGMethod.getDescription()
-                        +"\nPriority->"+iTestNGMethod.getPriority()
-                        +"\n:Date->"+new Date(iTestNGMethod.getDate()));
-            	}
-            }
-        }
+    		//Create data source to attach the file in mail
+    		DataSource source = new FileDataSource(filename);
+    		objMessageBodyPart.setDataHandler(new DataHandler(source));
+    		objMessageBodyPart.setFileName(filename);
+    		multipart.addBodyPart(objMessageBodyPart);
+    		message.setContent(multipart);
+    		Transport transport = session.getTransport("smtp");
+    		transport.connect(host, from, pass);
+    		transport.sendMessage(message, message.getAllRecipients());
+    		transport.close();
+    		Helper_Functions.PrintOut("Emial has been sent to " + pass, true);
+    	}catch (Exception ae) {
+    		ae.printStackTrace();
+    	}
     }
+    */
+
 }
-*/

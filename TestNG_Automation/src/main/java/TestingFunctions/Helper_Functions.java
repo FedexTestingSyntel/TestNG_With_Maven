@@ -283,8 +283,6 @@ public class Helper_Functions extends WebDriver_Functions{
  		}
  	}//end AccountDetails
     
-	
-    
 	public static String CurrentDateTime() {
 		Date curDate = new Date();
     	SimpleDateFormat Dateformatter = new SimpleDateFormat("MMddyy");
@@ -417,20 +415,10 @@ public class Helper_Functions extends WebDriver_Functions{
 		}
 
 		if (CreditCardList.isEmpty() && Level.contentEquals("7")) {
-			//add prod credit cards
-			//CreditCardList.add(new String[] );
+			CreditCardList = getExcelData(".\\Data\\CreditCardDetails.xls", "Prod"); 
+
 		}else if (CreditCardList.isEmpty()) {
-			CreditCardList.add(new String[] {"MasterCard", "5204730000001003", "003", "12", "20"});
-			CreditCardList.add(new String[] {"American Express", "378598529621002", "2234", "12", "20"});
-			CreditCardList.add(new String[] {"American Express", "371307196801005", "5222", "12", "20"});
-			CreditCardList.add(new String[] {"Visa", "4005554444444460", "460", "12", "20"});
-			CreditCardList.add(new String[] {"Visa", "4111111111111111", "111", "12", "20"});
-			CreditCardList.add(new String[] {"Visa", "4929450317991005", "005", "12", "20"});
-			CreditCardList.add(new String[] {"Visa", "4000000000000002", "002", "12", "20"});
-			CreditCardList.add(new String[] {"Visa", "4596777727893450", "450", "12", "20"});
-			CreditCardList.add(new String[] {"Visa", "4005554444440013", "013", "12", "20"});
-			CreditCardList.add(new String[] {"Visa", "4895400000000002", "002", "12", "20"});
-			CreditCardList.add(new String[] {"Visa", "4005554444444163", "163", "12", "18"});
+			CreditCardList = getExcelData(".\\Data\\CreditCardDetails.xls", "Test"); 
 		}
 
 		for (int i = 0; i < CreditCardList.size(); i++) {

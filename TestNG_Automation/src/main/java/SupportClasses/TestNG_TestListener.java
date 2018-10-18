@@ -48,11 +48,6 @@ public class TestNG_TestListener implements ITestListener{
 
     @Override
     public void onFinish(ITestContext arg0) {
-    	//Need to work on this to send out the email report.
-    	//java.net.URL classUrl = this.getClass().getResource("com.sun.mail.util.TraceInputStream");
-    	//System.out.println(classUrl.getFile());
-    	//sendPDFReportByGMail("FedexTestingSyntel@gmail.com", "Test12345", "sean.kauffman.osv@fedex.com", "PDF Report", "");
-    	
     	Helper_Functions.PrintOut("\n\n", false);
 		
 		for (int i = 0 ; i < ThreadLogger.ThreadLog.size(); i++) {
@@ -76,7 +71,9 @@ public class TestNG_TestListener implements ITestListener{
     private void TestResults(ITestResult arg0) {
     	DriverFactory.getInstance().removeDriver();
     	
-    	arg0.setAttribute("ExecutionLog", ThreadLogger.getInstance().ReturnLogString());
+    	String AttemptLogs = ThreadLogger.getInstance().ReturnLogString();
+    	arg0.setAttribute("ExecutionLog", AttemptLogs);// this will save the trace in a collapsable format
+    	//arg0.setAttribute("ExecutionLog", ThreadLogger.getInstance().ReturnLogString());
     	
     	ArrayList<String> CurrentLogs = ThreadLogger.getInstance().ReturnLogs();
     	String TestCompleteData = "";		
@@ -85,50 +82,4 @@ public class TestNG_TestListener implements ITestListener{
 		}
     	ThreadLogger.ThreadLog.add(TestCompleteData + System.lineSeparator());
     }
-    
-    private static void sendPDFReportByGMail(String from, String pass, String to, String subject, String body) {
-    	Properties props = System.getProperties();
-    	String host = "smtp.gmail.com";
-    	props.put("mail.smtp.starttls.enable", "true");
-    	props.put("mail.smtp.host", host);
-    	props.put("mail.smtp.user", from);
-    	props.put("mail.smtp.password", pass);
-    	props.put("mail.smtp.port", "587");
-    	props.put("mail.smtp.auth", "true");
-    	Session session = Session.getDefaultInstance(props);
-
-    	MimeMessage message = new MimeMessage(session);
- 
-    	try {
-    	    //Set from address
-    		message.setFrom(new InternetAddress(from));
-    		message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
-
-    		//Set subject
-    		message.setSubject(subject);
-    		message.setText(body);
-    		BodyPart objMessageBodyPart = new MimeBodyPart();
-    		objMessageBodyPart.setText("Please Find The Attached Report File!");
-    		Multipart multipart = new MimeMultipart();
-    		multipart.addBodyPart(objMessageBodyPart);
-    		objMessageBodyPart = new MimeBodyPart();
-
-    		//Set path to the pdf report file
-    		String filename = System.getProperty("user.dir")+"\\test-output\\custom-emailable-report.html";
-
-    		//Create data source to attach the file in mail
-    		DataSource source = new FileDataSource(filename);
-    		objMessageBodyPart.setDataHandler(new DataHandler(source));
-    		objMessageBodyPart.setFileName(filename);
-    		multipart.addBodyPart(objMessageBodyPart);
-    		message.setContent(multipart);
-    		Transport transport = session.getTransport("smtp");
-    		transport.connect(host, from, pass);
-    		transport.sendMessage(message, message.getAllRecipients());
-    		transport.close();
-    	}catch (Exception ae) {
-    		ae.printStackTrace();
-    	}
-    }
-    
 }

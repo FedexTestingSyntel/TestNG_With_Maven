@@ -19,7 +19,7 @@ import SupportClasses.*;
 
 public class WFCL{
 	static ArrayList<String[]> AddressDetails = new ArrayList<String[]>();
-	static String LevelsToTest = "3";
+	static String LevelsToTest = "7";
 	final static boolean SmokeTest = true; // will limit the test cases to high level
 	static String CountryList[][];
 
@@ -76,6 +76,7 @@ public class WFCL{
 		    	case "WFCL_AccountRegistration_WDPA":
 		    		for (int j = 0; j < CountryList.length; j++) {
 		    			Account = Helper_Functions.getExcelFreshAccount(Level, CountryList[j][0], true);
+		    			//Account = Helper_Functions.getExcelFreshAccount("3", CountryList[j][0], true);
 			    		data.add( new Object[] {Level, CountryList[j][0], Account});
 					}
 		    	break;

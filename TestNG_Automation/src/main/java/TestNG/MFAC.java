@@ -27,7 +27,7 @@ import TestingFunctions.Helper_Functions;
 //@Listeners(SupportClasses.TestNG_ReportListener.class)
 
 public class MFAC{
-	static String LevelsToTest = "2"; //Can but updated to test multiple levels at once if needed. Setting to "23" will test both level 2 and level 3.
+	static String LevelsToTest = "1234"; //Can but updated to test multiple levels at once if needed. Setting to "23" will test both level 2 and level 3.
 	final boolean TestExpiration = false;//flag to determine if the expiration scenarios should be tested. When set to false those tests will not be executed.
 	
 	static MFAC_Data DataClass[] = new MFAC_Data[8];//Stores the data for each individual level, please see the before class function below for more details.
@@ -165,18 +165,18 @@ public class MFAC{
 	
 	@Test(dataProvider = "dp", priority = 2)
 	public void AddressVelocity(String OrgName, String OAuth_Token, String VelocityURL, int AddressVelocityThreshold) {//220496 Address Velocity
-		Helper_Functions.PrintOut("Verify that the address velocity of %s is reached and the correct error code is received. This is to replicate too many requests for pin at a given address.", false);
-		String UserName = UserName(), Buffer[];
+		Helper_Functions.PrintOut("Verify that the address velocity of " + AddressVelocityThreshold + " is reached and the correct error code is received. This is to replicate too many requests for pin at a given address.", false);
+		String UserName = UserName(), Response;
 		try {
 			for (int i = 0; i < AddressVelocityThreshold; i++){
-				Helper_Functions.PrintOut((i + 1) + ") Address Request.", false);
-				Buffer = MFAC_API_Endpoints.AddressVelocityAPI(UserName, OrgName, VelocityURL, OAuth_Token);
-				assertThat(Buffer[1], containsString("ALLOW"));
+				Helper_Functions.PrintOut("  #" + (i + 1) + " Address Request.", false);
+				Response = MFAC_API_Endpoints.AddressVelocityAPI(UserName, OrgName, VelocityURL, OAuth_Token);
+				assertThat(Response, containsString("ALLOW"));
 			}
 			
-			Helper_Functions.PrintOut((AddressVelocityThreshold + 1) + ") Address Request.", false);
-			Buffer = MFAC_API_Endpoints.AddressVelocityAPI(UserName, OrgName, VelocityURL, OAuth_Token);
-			assertThat(Buffer[1], CoreMatchers.allOf(containsString("DENY"), containsString("Unfortunately, too many failed attempts for registration have occurred. Please try again later.")));
+			Helper_Functions.PrintOut("  #" + (AddressVelocityThreshold + 1) + " Address Request.", false);
+			Response = MFAC_API_Endpoints.AddressVelocityAPI(UserName, OrgName, VelocityURL, OAuth_Token);
+			assertThat(Response, CoreMatchers.allOf(containsString("DENY"), containsString("Unfortunately, too many failed attempts for registration have occurred. Please try again later.")));
 		}catch (Exception e) {
 			Assert.fail(e.getMessage());
 		}
@@ -185,14 +185,14 @@ public class MFAC{
 	@Test(dataProvider = "dp", priority = 2)
 	public void IssuePin(String OrgName, String OAuth_Token, String IssueURL){//220459 IssuePin
 		Helper_Functions.PrintOut("Verify that the user is able to request a pin.", false);
-		String Buffer[] = null, UserName = UserName();
+		String Response = null, UserName = UserName();
 		
 		try {
-			Buffer = MFAC_API_Endpoints.IssuePinAPI(UserName, OrgName, IssueURL, OAuth_Token);
+			Response = MFAC_API_Endpoints.IssuePinAPI(UserName, OrgName, IssueURL, OAuth_Token);
 
-			assertThat(Buffer[1], CoreMatchers.allOf(containsString("pinOTP"), containsString("pinExpirationDate")));//pin should be generated//pin expiration time should be present.
+			assertThat(Response, CoreMatchers.allOf(containsString("pinOTP"), containsString("pinExpirationDate")));//pin should be generated//pin expiration time should be present.
 			
-			String Pin = ParsePIN(Buffer[1]);
+			String Pin = ParsePIN(Response);
 			Integer.parseInt(Pin);//checking to see if an integer was returned.
 		}catch (Exception e) {
 			Assert.fail(e.getMessage());
@@ -202,19 +202,19 @@ public class MFAC{
 	@Test(dataProvider = "dp", priority = 2)
 	public void IssuePinVelocity(String OrgName, String OAuth_Token, String IssueURL, int PinVelocityThreshold){//220459 IssuePin
 		Helper_Functions.PrintOut("Verify that the user can request up to " + PinVelocityThreshold + " pin numbers before unable to request more.", false);
-		String Buffer[] = null, UserName = UserName();
+		String Response = null, UserName = UserName();
 		
 		try {
 			for (int i = 0; i < PinVelocityThreshold; i++){
-				Helper_Functions.PrintOut((i + 1) + ") Pin Request.", false);
-				Buffer = MFAC_API_Endpoints.IssuePinAPI(UserName, OrgName, IssueURL, OAuth_Token);
-				assertThat(Buffer[1], CoreMatchers.allOf(containsString("pinOTP"), containsString("pinExpirationDate")));
+				Helper_Functions.PrintOut("  #" + (i + 1) + " Pin Request.", false);
+				Response = MFAC_API_Endpoints.IssuePinAPI(UserName, OrgName, IssueURL, OAuth_Token);
+				assertThat(Response, CoreMatchers.allOf(containsString("pinOTP"), containsString("pinExpirationDate")));
 			}
 			
-			Helper_Functions.PrintOut((PinVelocityThreshold + 1) + ") Pin Request.", false);
-			Buffer = MFAC_API_Endpoints.IssuePinAPI(UserName, OrgName, IssueURL, OAuth_Token);
+			Helper_Functions.PrintOut("  #" + (PinVelocityThreshold + 1) + " Pin Request.", false);
+			Response = MFAC_API_Endpoints.IssuePinAPI(UserName, OrgName, IssueURL, OAuth_Token);
 			//033018 - updated value from DENY to 5700, updated to match with what USRC uses.
-			assertThat(Buffer[1], CoreMatchers.allOf(containsString("5700"), containsString("Unfortunately, you have exceeded your attempts for verification. Please try again later.")));
+			assertThat(Response, CoreMatchers.allOf(containsString("5700"), containsString("Unfortunately, you have exceeded your attempts for verification. Please try again later.")));
 		}catch (Exception e) {
 			Assert.fail(e.getMessage());
 		}
@@ -223,16 +223,16 @@ public class MFAC{
 	@Test(dataProvider = "dp", priority = 2)
 	public void VerifyPinValid(String OrgName, String OAuth_Token, String IssueURL, String VerifyURL){//220462 Verify Pin
 		Helper_Functions.PrintOut("VerifyPinValid: Verify that user is able to request a pin and then verify that can recieve success when using the generated pin.", false);
-		String Buffer[] = null, UserName = UserName();
+		String Response = null, UserName = UserName();
 		
 		try {
-			Buffer =  MFAC_API_Endpoints.IssuePinAPI(UserName, OrgName, IssueURL, OAuth_Token);
-			assertThat(Buffer[1], containsString("pinExpirationDate"));
-			String Pin = ParsePIN(Buffer[1]);
+			Response =  MFAC_API_Endpoints.IssuePinAPI(UserName, OrgName, IssueURL, OAuth_Token);
+			assertThat(Response, containsString("pinExpirationDate"));
+			String Pin = ParsePIN(Response);
 			
 			//Test verify pin on valid request
-			Buffer = MFAC_API_Endpoints.VerifyPinAPI(UserName, OrgName, Pin, VerifyURL, OAuth_Token);
-			assertThat(Buffer[1], containsString("Success"));
+			Response = MFAC_API_Endpoints.VerifyPinAPI(UserName, OrgName, Pin, VerifyURL, OAuth_Token);
+			assertThat(Response, containsString("Success"));
 		}catch (Exception e) {
 			Assert.fail(e.getMessage());
 		}
@@ -241,15 +241,15 @@ public class MFAC{
 	@Test(dataProvider = "dp", priority = 2)
 	public void VerifyPinVelocity(String OrgName, String OAuth_Token, String IssueURL, String VerifyURL, int PinVelocityThreshold){//220462 Verify Pin
 		Helper_Functions.PrintOut("VerifyPinThreshold: When an invalid pin is entered the pin failure message should be returned passed the velocity threshold of " + PinVelocityThreshold + ".", false);
-		String Buffer[] = null, UserName = UserName();
+		String Response = null, UserName = UserName();
 		
 		try {
-			Buffer = MFAC_API_Endpoints.IssuePinAPI(UserName, OrgName, IssueURL, OAuth_Token);
-			assertThat(Buffer[1], containsString("pinExpirationDate"));
+			Response = MFAC_API_Endpoints.IssuePinAPI(UserName, OrgName, IssueURL, OAuth_Token);
+			assertThat(Response, containsString("pinExpirationDate"));
 			//Test verify pin on valid request
 			for (int i = 0; i < PinVelocityThreshold + 2; i++) {
-				Buffer = MFAC_API_Endpoints.VerifyPinAPI(UserName, OrgName, "1111", VerifyURL, OAuth_Token);
-				assertThat(Buffer[1], containsString("PIN.FAILURE"));
+				Response = MFAC_API_Endpoints.VerifyPinAPI(UserName, OrgName, "1111", VerifyURL, OAuth_Token);
+				assertThat(Response, containsString("PIN.FAILURE"));
 			}
 		}catch (Exception e) {
 			Assert.fail(e.getMessage());
@@ -259,23 +259,23 @@ public class MFAC{
 	@Test(dataProvider = "dp", priority = 2)
 	public void VerifyPinNoLongerValid(String OrgName, String OAuth_Token, String IssueURL, String VerifyURL){//220462 Verify Pin
 		Helper_Functions.PrintOut("VerifyPinNoLongerValid: Verify that when user requests a second pin that the first is no longer valid.", false);
-		String Buffer[] = null, UserName = UserName();
+		String Response = null, UserName = UserName();
 		
 		try {
-			Buffer = MFAC_API_Endpoints.IssuePinAPI(UserName, OrgName, IssueURL, OAuth_Token);
-			assertThat(Buffer[1], containsString("pinOTP"));//just to make sure valid response
-			String Pin = ParsePIN(Buffer[1]);
+			Response = MFAC_API_Endpoints.IssuePinAPI(UserName, OrgName, IssueURL, OAuth_Token);
+			assertThat(Response, containsString("pinOTP"));//just to make sure valid response
+			String Pin = ParsePIN(Response);
 			Integer.parseInt(Pin);
-			Buffer = MFAC_API_Endpoints.IssuePinAPI(UserName, OrgName, IssueURL, OAuth_Token);
-			assertThat(Buffer[1], containsString("pinOTP"));//just to make sure valid response
-			String PinTwo = ParsePIN(Buffer[1]);
+			Response = MFAC_API_Endpoints.IssuePinAPI(UserName, OrgName, IssueURL, OAuth_Token);
+			assertThat(Response, containsString("pinOTP"));//just to make sure valid response
+			String PinTwo = ParsePIN(Response);
 			Integer.parseInt(PinTwo);
 			//Test that the first pin is no longer valid
-			Buffer = MFAC_API_Endpoints.VerifyPinAPI(UserName, OrgName, Pin, VerifyURL, OAuth_Token);
-			assertThat(Buffer[1], containsString("PIN.FAILURE"));
+			Response = MFAC_API_Endpoints.VerifyPinAPI(UserName, OrgName, Pin, VerifyURL, OAuth_Token);
+			assertThat(Response, containsString("PIN.FAILURE"));
 			//Test verify pin on valid request
-			Buffer = MFAC_API_Endpoints.VerifyPinAPI(UserName, OrgName, PinTwo, VerifyURL, OAuth_Token);
-			assertThat(Buffer[1], containsString("Success"));
+			Response = MFAC_API_Endpoints.VerifyPinAPI(UserName, OrgName, PinTwo, VerifyURL, OAuth_Token);
+			assertThat(Response, containsString("Success"));
 		}catch (Exception e) {
 			Assert.fail(e.getMessage());
 		}
@@ -285,20 +285,20 @@ public class MFAC{
 	@Test(dataProvider = "dp", enabled = TestExpiration, priority = 1)
 	public void IssuePinExpiration(String OrgName, String OAuth_Token, String IssueURL, String VerifyURL){
 		Helper_Functions.PrintOut("Verify that after a pin is expired it can no longer be used to complete registration.", false);
-		String Buffer[] = null, UserName = UserName();
+		String Response = null, UserName = UserName();
 		
 		try {
-			Buffer = MFAC_API_Endpoints.IssuePinAPI(UserName, OrgName, IssueURL, OAuth_Token);
-			assertThat(Buffer[1], containsString("pinExpirationDate")); 
+			Response = MFAC_API_Endpoints.IssuePinAPI(UserName, OrgName, IssueURL, OAuth_Token);
+			assertThat(Response, containsString("pinExpirationDate")); 
 			
 			Date CurrrentTime = new Date();
 			SimpleDateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy hh:mm a zzz");
 			dateFormat.setTimeZone(TimeZone.getTimeZone("GMT"));
 			dateFormat.format(CurrrentTime);
-			Date ExpirationTime = GetExpiration(Buffer[1]);
+			Date ExpirationTime = GetExpiration(Response);
 		
 			if (ExpirationTime.getDate() == CurrrentTime.getDate() && ExpirationTime.getMonth() == CurrrentTime.getMonth()) {
-				String Expiration[] = new String[] {"IssuePinExpiration:  " + Buffer[1], dateFormat.format(ExpirationTime).toString(), UserName, OrgName, ParsePIN(Buffer[1]), VerifyURL, OAuth_Token, "PIN.FAILURE"};
+				String Expiration[] = new String[] {"IssuePinExpiration:  " + Response, dateFormat.format(ExpirationTime).toString(), UserName, OrgName, ParsePIN(Response), VerifyURL, OAuth_Token, "PIN.FAILURE"};
 				ExpirationData.add(Expiration);
 				Helper_Functions.PrintOut("Will be validated after expiration in later test. --IssuePinExpirationValidate--", false);
 			}else {
@@ -312,7 +312,7 @@ public class MFAC{
 
 	@Test(dataProvider = "dp",enabled = TestExpiration,dependsOnMethods = "IssuePinExpiration", priority = 3)
 	public void IssuePinExpirationValidate(String Result, String ExpirationResponse, String UserName, String OrgName, String Pin, String VerifyURL, String OAuth_Token, String Expected){
-		String Buffer[] = null;
+		String Response = null;
 		Helper_Functions.PrintOut("Check that once the expiration time is over the user can no longer complete registration with expired pin number.", false);
 		try {
 			Date CurrrentTime = new Date();
@@ -337,12 +337,10 @@ public class MFAC{
 			Helper_Functions.Wait(60);
 			dateFormat.setTimeZone(TimeZone.getTimeZone("GMT"));
 			dateFormat.format(CurrrentTime);
-			Buffer = new String[]{"Attempting to validate after expiraiton time has passed", "Current Time: " + CurrrentTime};
-			Result += AddToResult(Buffer);
+			Helper_Functions.PrintOut("Attempting to validate after expiraiton time has passed.\nCurrent Time: " + CurrrentTime, true);
 			//Test verify pin on valid request from the different org
-			Buffer = MFAC_API_Endpoints.VerifyPinAPI(UserName, OrgName, Pin, VerifyURL, OAuth_Token);
-			Result += AddToResult(Buffer);
-			assertThat(Buffer[1], containsString(Expected));//expected will either be success of pin failure based on scenario.
+			Response = MFAC_API_Endpoints.VerifyPinAPI(UserName, OrgName, Pin, VerifyURL, OAuth_Token);
+			assertThat(Response, containsString(Expected));//expected will either be success of pin failure based on scenario.
 		}catch (Exception e) {
 			Assert.fail(e.getMessage());
 		}
@@ -353,35 +351,35 @@ public class MFAC{
 	public void AdditionalEnrollmentExpiration(String OrgName, String SecondOrg, String OAuth_Token, String IssueURL, String VerifyURL){
 		Helper_Functions.PrintOut("Verify that the user recieves the updated expiration time when changing enrollment method.", false);
 		
-		String Buffer[] = null, UserName = UserName(), Pin = null;
+		String Response = null, UserName = UserName(), Pin = null;
 		
 		try {
-			Buffer = MFAC_API_Endpoints.IssuePinAPI(UserName, OrgName, IssueURL, OAuth_Token);
-			assertThat(Buffer[1], containsString("pinExpirationDate"));
+			Response = MFAC_API_Endpoints.IssuePinAPI(UserName, OrgName, IssueURL, OAuth_Token);
+			assertThat(Response, containsString("pinExpirationDate"));
 			
 			Date CurrrentTime = new Date();
 			SimpleDateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy hh:mm a zzz");
 			dateFormat.setTimeZone(TimeZone.getTimeZone("GMT"));
 			dateFormat.format(CurrrentTime);
-			Date ExpirationTime = GetExpiration(Buffer[1]);
+			Date ExpirationTime = GetExpiration(Response);
 			Date SecondExpirationTime = null;
 			if (ExpirationTime.getDate() == CurrrentTime.getDate() && ExpirationTime.getMonth() == CurrrentTime.getMonth()) {
-				Buffer =  MFAC_API_Endpoints.IssuePinAPI(UserName, SecondOrg, IssueURL, OAuth_Token);
-				assertThat(Buffer[1], containsString("pinExpirationDate"));
-				Pin = ParsePIN(Buffer[1]);
-				SecondExpirationTime = GetExpiration(Buffer[1]);
+				Response =  MFAC_API_Endpoints.IssuePinAPI(UserName, SecondOrg, IssueURL, OAuth_Token);
+				assertThat(Response, containsString("pinExpirationDate"));
+				Pin = ParsePIN(Response);
+				SecondExpirationTime = GetExpiration(Response);
 			}
 
 			if (SecondExpirationTime == null) {
 				String LongExpirationMessage = "Not Validing the Expiraiton at this time, need to verify seperatly once the expiration has passed. Here is the CST time it will expire. " + ExpirationTime;
 				Helper_Functions.PrintOut(LongExpirationMessage, true);
 			}else if (SecondExpirationTime.compareTo(ExpirationTime) == 1) { //make sure second expiration is after initial would expire
-				String Expire[] = new String[] {"AdditionalEnrollmentExpiration: " + Buffer[1], dateFormat.format(ExpirationTime).toString(), UserName, SecondOrg, Pin, VerifyURL, OAuth_Token, "Success"};
+				String Expire[] = new String[] {"AdditionalEnrollmentExpiration: " + Response, dateFormat.format(ExpirationTime).toString(), UserName, SecondOrg, Pin, VerifyURL, OAuth_Token, "Success"};
 				ExpirationData.add(Expire);
 			}else {
 				//Test verify pin on valid request from the different org, this will not wait for the old one to have expired.
-				Buffer = MFAC_API_Endpoints.VerifyPinAPI(UserName, SecondOrg, Pin, VerifyURL, OAuth_Token);
-				assertThat(Buffer[1], containsString("Success"));
+				Response = MFAC_API_Endpoints.VerifyPinAPI(UserName, SecondOrg, Pin, VerifyURL, OAuth_Token);
+				assertThat(Response, containsString("Success"));
 			}
 		}catch (Exception e) {
 			Assert.fail(e.getMessage());
@@ -390,7 +388,7 @@ public class MFAC{
 
 	@Test(dataProvider = "dp",enabled = TestExpiration, dependsOnMethods = "AdditionalEnrollmentExpiration", priority = 3)
 	public void AdditionalEnrollmentExpirationValidate(String Result, String ExpirationResponse, String UserName, String OrgName, String Pin, String VerifyURL, String OAuth_Token, String Expected){
-		String Buffer[] = null;
+		String Response = null;
 		Helper_Functions.PrintOut("Verify that the user can switch enrollment methods mid process and still complete registration.", false);
 		try {
 			Date CurrrentTime = new Date();
@@ -415,10 +413,10 @@ public class MFAC{
 			Helper_Functions.Wait(60);
 			dateFormat.setTimeZone(TimeZone.getTimeZone("GMT"));
 			dateFormat.format(CurrrentTime);
-			Buffer = new String[]{"Attempting to validate after expiraiton time has passed", "Current Time: " + CurrrentTime};
+			Helper_Functions.PrintOut("Attempting to validate after expiraiton time has passed.\nCurrent Time: " + CurrrentTime, true);
 			//Test verify pin on valid request from the different org
-			Buffer = MFAC_API_Endpoints.VerifyPinAPI(UserName, OrgName, Pin, VerifyURL, OAuth_Token);
-			assertThat(Buffer[1], containsString(Expected));//expected will either be success of pin failure based on scenario.
+			Response = MFAC_API_Endpoints.VerifyPinAPI(UserName, OrgName, Pin, VerifyURL, OAuth_Token);
+			assertThat(Response, containsString(Expected));//expected will either be success of pin failure based on scenario.
 		}catch (Exception e) {
 			Assert.fail(e.getMessage());
 		}
@@ -486,20 +484,20 @@ public class MFAC{
 	
 	@Test(dataProvider = "dp", enabled = false)
 	public void DetermineLockoutTime(String OrgName, String OAuth_Token, String IssueURL){
-		String Buffer[] = null, UserName = UserName();
+		String Response = null, UserName = UserName();
 		int ExpiraitonMinutes = -1, PinThreshold = -1;
 		do {
-			Buffer = MFAC_API_Endpoints.IssuePinAPI(UserName, OrgName, IssueURL, OAuth_Token);
+			Response = MFAC_API_Endpoints.IssuePinAPI(UserName, OrgName, IssueURL, OAuth_Token);
 			PinThreshold++;
-		}while (Buffer[1].contains("pinExpirationDate"));
+		}while (Response.contains("pinExpirationDate"));
 		Helper_Functions.PrintOut(OrgName + " " + IssueURL + "  Can request " + PinThreshold + " pins before being lockout out.", true);
 			
 		do {
-			Buffer = MFAC_API_Endpoints.IssuePinAPI(UserName, OrgName, IssueURL, OAuth_Token);
+			Response = MFAC_API_Endpoints.IssuePinAPI(UserName, OrgName, IssueURL, OAuth_Token);
 			ExpiraitonMinutes++;
 			Helper_Functions.PrintOut("Sleeping for a minute", true);
 			Helper_Functions.Wait(60);
-		}while (!Buffer[1].contains("pinExpirationDate"));
+		}while (!Response.contains("pinExpirationDate"));
 		Helper_Functions.PrintOut(OrgName + " " + IssueURL + "Can request additional pins after " + ExpiraitonMinutes + " minutes. ", true);
 	}
 	
@@ -509,15 +507,6 @@ public class MFAC{
 			return s.substring(s.indexOf("pinOTP\":") + 9, s.indexOf("\",\"pinExpirationDate"));
 		}
 		return null;
-	}
-	
-	public static String AddToResult(String ReqResp[]) {
-		if (ReqResp[0].contains("Scenario_Passed") || ReqResp[0].contains("Scenario_Failed")) {
-			return System.lineSeparator() + ReqResp[0] + System.lineSeparator();
-		}else {
-			return System.lineSeparator() + "Request: " + ReqResp[0] + System.lineSeparator() + "Response: " + ReqResp[1];
-		}
-		
 	}
 	
 	public static Date GetExpiration(String s) {
