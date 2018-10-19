@@ -1,0 +1,46 @@
+https://github.com/collab-uniba/socialcde4eclipse/wiki/How-to-import-a-GitHub-project-into-Eclipse
+
+Assuming you have created a project in GitHub, these are the steps to import it into Eclipse. First, you have to add the git repository to Eclipse. To do so, first make the git repository view visible in Eclipse from the menu 'Window > Show views > Other > Git > Git Repositories'.
+
+add git repo 1
+
+Eclipse will show the view somewhere. Click on 'Clone a Git repository' to begin the process.
+
+clone git repo 1
+
+Make sure to select GitHub as repository source.
+
+clone git repo 2
+
+To add your project, enter the name of the project (select the language, if you set one) and press search. Your project repository will show up. Select it and press 'Next'.
+
+clone git repo 3
+
+Now, select the local path on your computer where Eclipse will store the project. In my case, I'm OK with the default path, that is, within the git/ subfolder in my home dir (i.e., C:\Users\Fabio\git\socialcde-demo). Please, make sure to check the box 'Import all existing Eclipse project after clone finishes'. This is very important if the project on GitHub is not empty. Then, press 'Finish'.
+
+clone git repo 4
+
+In the rest of this guide, I'm assuming that your GitHub project is empty and has just been created. In order to make it visible within the Eclipse IDE, complete these steps. From the toolbar, click on 'New > Project...'. In the example, I show the case of a Java project, but the steps are the same for every Eclipse project.
+
+clone git repo 5
+
+Uncheck the box 'Use default location'. Then, click on 'Browse' and use the treeviewer to browse the folder where you checked out the GitHub repository (C:\Users\Fabio\git\socialcde-demo in this case).
+
+clone git repo 6
+
+As a confirmation that everything worked fine in the 'Package Explorer' view, you should see the project folder (socialcde-demo) displayed with a little orange cylinder, which indicates that the project is shared on GitHub. Finally, make sure that your projects contains a src/ subfolders where to store your source file. It is a best practice for software developers and SocialCDE relies on that.
+
+clone git repo 7
+
+After the above
+1. Make sure to have Maven installed within eclipse.
+
+2. Make sure that after setting up the application that you right click the pom.xml file. Run as a "clean package"
+
+3. Add TestNG and JUnit to the build path of the project.
+
+4. Run tests. 
+
+Note : can start with the XML files stored in XMLExectuion package
+
+
