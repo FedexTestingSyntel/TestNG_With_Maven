@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class DriverFactory{
 	
 	private static DriverFactory instance = new DriverFactory();
-	private static int BrowserCurrent = 0, BrowserLimit = 3;
+	public static int BrowserCurrent = 0, BrowserLimit = 3;
 	public static String LevelsToTest;
 	public static int WaitTimeOut = 30;
 	private static boolean CloseBrowser = true;//when set to false will not close the browser when a test case fails. This will be used when manually debugging an issue.
