@@ -1,8 +1,8 @@
 package Data_Structures;
 
 public class MFAC_Data {
-	public String Level = "";
 	public String OAuth_Token  = "";
+	public String Level = "";
 	public String AIssueURL = "";
 	public String AVerifyURL;
 	public String AVelocityURL = "";

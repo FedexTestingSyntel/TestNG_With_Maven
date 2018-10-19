@@ -1,28 +1,20 @@
 package TestNG;
 
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
-import org.testng.Assert;
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
-
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 import java.util.StringTokenizer;
-import java.util.concurrent.TimeUnit;
 import org.hamcrest.CoreMatchers;
 import static org.junit.Assert.assertThat;
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.endsWith;
-
-import Helper.Support_Functions;
+import SupportClasses.DriverFactory;
 import TestingFunctions.Helper_Functions;
 import API_Calls.*;
 import Data_Structures.*;
@@ -37,7 +29,8 @@ public class CMAC{
 	
 	@BeforeClass
 	public void beforeClass() {		//implemented as a before class so the OAUTH tokens are only generated once.
-		ArrayList<String[]> Excel_Data = Support_Functions.getExcelData(".\\Data\\CMAC_Properties.xls",  "CMAC");//load the relevant information from excel file.
+		DriverFactory.LevelsToTest = LevelsToTest;
+		ArrayList<String[]> Excel_Data = Helper_Functions.getExcelData(".\\Data\\CMAC_Properties.xls",  "CMAC");//load the relevant information from excel file.
 		String Headers[] = Excel_Data.get(0);
 		for (int i = 0; i < LevelsToTest.length(); i++) {
 			int Level = Integer.parseInt(LevelsToTest.charAt(i) + "");//the rows will correspond to the correct level. With the row 0 being the column titles.
@@ -48,9 +41,13 @@ public class CMAC{
 				EnvironmentInformation[j] = EnvironmentInformation[j].trim();
 			}
 			//EnvironmentInformation[0] = getAuthToken(EnvironmentInformation[2], EnvironmentInformation[3], EnvironmentInformation[4]);//add token to front of new array after it is generated
-			Support_Functions.PrintOut("Headers: " + Arrays.toString(Headers), true);
-			Support_Functions.PrintOut(Arrays.toString(EnvironmentInformation), true);//print out all of the urls and date for the level, this is just a reference point to executer
-			
+			Helper_Functions.PrintOut("Headers: " + Arrays.toString(Headers), true);
+			Helper_Functions.PrintOut(Arrays.toString(EnvironmentInformation), true);//print out all of the urls and date for the level, this is just a reference point to executer
+			DataClass[Level].OAuth_Token = EnvironmentInformation[0];
+			DataClass[Level].Level = EnvironmentInformation[1];
+			DataClass[Level].OAuthToken_URL = EnvironmentInformation[2];
+			DataClass[Level].Client_ID = EnvironmentInformation[3];
+			DataClass[Level].Client_Secret = EnvironmentInformation[4];
 		    DataClass[Level].Create_Project_URL = EnvironmentInformation[5];
 		    DataClass[Level].Retrieve_Project_Details_URL = EnvironmentInformation[6];
 		    DataClass[Level].Update_Project_URL = EnvironmentInformation[7];
@@ -61,7 +58,7 @@ public class CMAC{
 		    DataClass[Level].DeleteResource_URL = EnvironmentInformation[12];
 		    DataClass[Level].Create_Resource_Project_URL = EnvironmentInformation[13];
 		}
-		Support_Functions.PrintOut("\n\nThread -- Time (MMDDYY'T'HHMMSS): -- Current progress", false);
+		Helper_Functions.PrintOut("\n\nThread -- Time (MMDDYY'T'HHMMSS): -- Current progress", false);
 		
 		for (int i = 0; i < 9; i++) {
 			String R[] = new String[i];
@@ -78,42 +75,44 @@ public class CMAC{
 	    List<Object[]> data = new ArrayList<>();
 
 		for (int i = 1; i < 8; i++) {
-			if (DataClass[i] != null) {
-				CMAC_Data c = DataClass[i];
+			CMAC_Data c = DataClass[i];
 				
-				String Pid, ProjectName;
-				switch (m.getName()) { //Based on the method that is being called the array list will be populated.
+			String organizationUUID = "1000", applicationUUID, ProjectName, latype = "propreitary", laversion = "2", latimeStamp, buffer;
+			switch (m.getName()) { //Based on the method that is being called the array list will be populated.
 				case "CreateProject":
-					for(int j = 1; j < ResourceList.size(); j++) {
-						ProjectName = "Proj_DEL" + j + " " + Support_Functions.CurrentDateTime();
-						data.add( new Object[] {c.Create_Project_URL, c.P_Cookie[j % c.P_Cookie.length], ProjectName, ResourceList.get(j)});
+					for(int j = 1; j < 5; j++) {
+						ProjectName = "Proj_DEL" + j + " " + Helper_Functions.CurrentDateTime();
+						latimeStamp = Helper_Functions.CurrentDateTime(true);
+						applicationUUID = "100" + j;//not sure how to make this dynamic, 
+						data.add(new Object[] {c.Create_Project_URL, c.OAuth_Token, ProjectName, latype, laversion, latimeStamp});
 					}
 					break;
 				case "RetrieveProjectDetails":
-					for (int j = 0; j < c.P_Cookie.length; j++) {
-						ArrayList<String> PidList = PidOfAllProject(c.Retrieve_Project_Summary_URL, c.P_Cookie[j]);
-						for (int k = 0; k < PidList.size(); k++) {
-							data.add( new Object[] {c.Retrieve_Project_Summary_URL, c.P_Cookie[j], PidList.get(k)});
-						}
-					}
+					//get the application ids from the organization
+					buffer = CMAC_API_Endpoints.RetrieveProjectSummary_API(c.Retrieve_Project_Summary_URL, c.OAuth_Token, organizationUUID);
+					//need to parse the applicationUUID and run multiple
+					do {
+						applicationUUID = Helper_Functions.ParseValueFromResponse(buffer, "applicationUUID");//not sure how to make this dynamic, 
+						data.add( new Object[] {c.Retrieve_Project_Summary_URL, c.OAuth_Token, organizationUUID, applicationUUID});
+					}while (applicationUUID != null);
+					
 					break;
 				case "RetrieveProjectSummary":
-					for (int j = 0; j < c.P_Cookie.length; j++) {
-						data.add( new Object[] {c.Retrieve_Project_Summary_URL, c.P_Cookie[j]});
-					}
+					data.add( new Object[] {c.Retrieve_Project_Summary_URL, c.OAuth_Token, organizationUUID});
 					break;
 				case "DeleteProject":
-					for(int j=0;j<PidToDelete.size();j++) {
-						data.add( new Object[] {c.Delete_Project_URL, PidToDelete.get(j)});
+					for(int j=0;j<applicationUUIDToDelete.size();j++) {
+						data.add( new Object[] {c.Delete_Project_URL, c.OAuth_Token, organizationUUID, applicationUUIDToDelete.get(j)});
 					}
 					break;
 				case "UpdateProject":
-					Pid = PidOfAllProject(c.Retrieve_Project_Summary_URL, c.P_Cookie[0]).get(0);
-					ProjectName = "Proj Update " + Support_Functions.CurrentDateTime();
-					data.add( new Object[] {c.Update_Project_URL, Pid, ProjectName});//update first project name
+					for(int j=0;j<applicationUUIDToDelete.size();j++) {
+						ProjectName = "Proj_DEL" + Helper_Functions.CurrentDateTime();
+						latimeStamp = Helper_Functions.CurrentDateTime(true);
+						data.add( new Object[] {c.Delete_Project_URL, c.OAuth_Token, organizationUUID, applicationUUIDToDelete.get(j), latimeStamp, latype, laversion, ProjectName});
+					}
 					break;
-				}//end switch MethodName
-			}
+			}//end switch MethodName
 		}
 		return data.iterator();
 	}
@@ -154,72 +153,37 @@ public class CMAC{
 
 	}
 
-	@Test(dataProvider = "dp", dependsOnMethods = "CreateProject", priority = 2)
-	public void DeleteProject(String URL, String Cookie, String Pid) {
-		String Result = String.format("<-- DeleteProject(ID:324343): Delete a project based on the pid appended to the URL.    URL:%s, Pid:%s", URL, Pid);
-		String Status = Failed, Response;
-		
-		try {
-			Response = CMAC_API_Endpoints.DeleteProject_API(URL, Pid);
-			Result += AddToResult(Response);
-			
-			assertThat(Response, CoreMatchers.allOf(containsString("transactionId"), endsWith("\"}")));
-			
-			//now check that the project has been removed
-			Response = CMAC_API_Endpoints.RetrieveProjectDetails_API(URL, Cookie, Pid);
-			Result += AddToResult(Response);
-			
-			assertThat(Response, CoreMatchers.allOf(containsString("code"), containsString("SYSTEM.UNEXPECTED.ERROR"), containsString("message"), containsString("GENERIC.ERROR")));//not sure if this is correct message
-			
-			Status = Passed;
-		}finally {
-			Result += AddToResult(new String[]{Status, ""});
-			ResultsList.add(Result);
-		}
-	}
-
-	@Test(dataProvider = "dp", priority = 1)
-	public void UpdateProject(String URL, String Cookie, String Pid, String Projectname) {
-		String Result = String.format("<-- UpdateProjectName(ID:320258): Udpate the name of a specific Project.    URL:%s, Pid:%s, ProjectName:%s", URL, Pid, Projectname);
+	@Test(dataProvider = "dp", dependsOnMethods = "CreateProject", priority = 2, description = "380687")
+	public void DeleteProject(String URL, String OAuth_Token, String organizationUUID, String applicationUUID) {
 		String Response;
-		
-		try {
-			Response = CMAC_API_Endpoints.UpdateProject_API(URL, Pid, Projectname);
+		Response = CMAC_API_Endpoints.DeleteProject_API(URL, OAuth_Token, applicationUUID);
 			
-			assertThat(Response, containsString("transactionId")); ///not sure on the expected, getting error currently
+		assertThat(Response, CoreMatchers.allOf(containsString("transactionId"), endsWith("\"}")));
 			
-			//now check that the project has been updated
-			Response = CMAC_API_Endpoints.RetrieveProjectDetails_API(URL, Cookie, Pid);
+		//now check that the project has been removed
+		Response = CMAC_API_Endpoints.RetrieveProjectDetails_API(URL, OAuth_Token, organizationUUID, applicationUUID);
 			
-			assertThat(Response, CoreMatchers.allOf(containsString("transactionId"), containsString("output"), containsString("pid"), containsString("projectname"), containsString("resourcesoutput"), containsString("credentialOutput")));
-			assertThat(Response, containsString("\"projectname\":\"" + Projectname));
+		assertThat(Response, CoreMatchers.allOf(containsString("code"), containsString("SYSTEM.UNEXPECTED.ERROR"), containsString("message"), containsString("GENERIC.ERROR")));//not sure if this is correct message
 			
-			Status = Passed;
-		}finally {
-			Result += AddToResult(new String[]{Status, ""});
-			ResultsList.add(Result);
-		}
+	}
+
+	@Test(dataProvider = "dp", priority = 1, description = "380670")
+	public void UpdateProject(String URL, String OAuth_Token, String organizationUUID, String applicationUUID, String latimeStamp, String latype, String laversion, String projectName) {
+		String Response;
+		Response = CMAC_API_Endpoints.UpdateProject_API(URL, OAuth_Token, applicationUUID, latimeStamp, latype, laversion, projectName);
+
+		assertThat(Response, containsString("transactionId")); ///not sure on the expected, getting error currently
+
+		//now check that the project has been updated
+		Response = CMAC_API_Endpoints.RetrieveProjectDetails_API(URL, OAuth_Token, organizationUUID, applicationUUID);
+		assertThat(Response, containsString("\"applicationUUID\":\"" + applicationUUID));
+		assertThat(Response, containsString("\"projectName\":\"" + projectName));
+		assertThat(Response, containsString("\"latype\":\"" + latype));
+		assertThat(Response, containsString("\"laversion\":\"" + laversion));
+		assertThat(Response, containsString("\"latimeStamp\":\"" + latimeStamp));
 	}
 
 
-	///////////////////////////////////METHODS//////////////////////////////////
-	public ArrayList<String> PidOfAllProject(String Retrieve_Project_Summary_URL, String Cookie) {
-		ArrayList<String> Pids = new ArrayList<String>();
-		try {
-			String b[] = CMAC_API_Endpoints.RetrieveProjectSummary_API(Retrieve_Project_Summary_URL, Cookie);
-			String resp = b[1];
-			while (resp.contains("pid")) {
-				int start = resp.indexOf("{\"pid\":") + 7;
-				int end = resp.indexOf(",\"projectname\":");
-				Pids.add(resp.substring(start, end));
-				resp = resp.substring(end + 15, resp.length() - 1);
-			}
-		}catch (Exception e) {
-			e.printStackTrace();
-		}
-		return Pids;
-	}
-	
 	///////Helper Functions///////////////Condensed into single class
 	public static String[] ParseStringToArray(String s, String Token) {
 		int commas = s.replaceAll("[^,]","").length();

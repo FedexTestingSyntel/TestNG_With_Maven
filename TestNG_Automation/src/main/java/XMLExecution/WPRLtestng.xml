@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="8" name="WPRL_Suite" parallel="methods">
+  <test thread-count="8" name="WPRL_Test" parallel="methods">
+    <classes>
+      <class name="WaterfallApplications.WPRL"/>
+    </classes>
+  </test> <!-- WPRL_Test -->
+</suite> <!-- WPRL_Suite -->

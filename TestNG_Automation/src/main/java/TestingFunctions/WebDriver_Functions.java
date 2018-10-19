@@ -1,6 +1,7 @@
 package TestingFunctions;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
@@ -87,6 +88,12 @@ public class WebDriver_Functions{
     		case "WPRL":  	
     			AppUrl = LevelURL + "/apps/myprofile/loginandcontact/?locale=en_" + CCU + "&cntry_code=" + CCL;
 				break;
+    		case "WPRL_FDM":  	
+    			AppUrl = LevelURL + "/apps/myprofile/deliverymanager/?locale=en_" + CCU + "&cntry_code=" + CCU;
+				break;
+    		case "WPRL_ACC":  	
+    			AppUrl = LevelURL + "/apps/myprofile/accountmanagement/?locale=en_" + CCU + "&cntry_code=" + CCU;
+				break;	
     		case "WCRV":  	
     			AppUrl = LevelURL + "/apps/ratevisibility/";
 				break;
@@ -158,18 +165,15 @@ public class WebDriver_Functions{
 		Actions a = new Actions(DriverFactory.getInstance().getDriver());
 		try {
 			a.moveToElement(DriverFactory.getInstance().getDriver().findElement(Ele)).perform();
-			//DriverFactory.getInstance().getDriverWait().until(ExpectedConditions.elementToBeClickable(Ele));
 			DriverFactory.getInstance().getDriver().findElement(Ele).click();
 		}catch (Exception e) {
 			try {
 				js.executeScript("window.scrollBy(0, 300)");//scroll down
 				a.moveToElement(DriverFactory.getInstance().getDriver().findElement(Ele)).perform();
-				//DriverFactory.getInstance().getDriverWait().until(ExpectedConditions.elementToBeClickable(Ele));
 				DriverFactory.getInstance().getDriver().findElement(Ele).click();
 			}catch (Exception e1) {
 				js.executeScript("window.scrollBy(0, -300)");//scroll up
 				a.moveToElement(DriverFactory.getInstance().getDriver().findElement(Ele)).perform();
-				//DriverFactory.getInstance().getDriverWait().until(ExpectedConditions.elementToBeClickable(Ele));
 				DriverFactory.getInstance().getDriver().findElement(Ele).click();
 			}
 		}			
@@ -182,6 +186,10 @@ public class WebDriver_Functions{
 	//takes is the element, value, and selectByType
 	public static void Select(By Ele, String Value, String SelectBy) throws Exception {
 		SelectBy = SelectBy.toLowerCase(); //just in case wrong font is sent.
+		JavascriptExecutor js = ((JavascriptExecutor) DriverFactory.getInstance().getDriver());
+		Actions a = new Actions(DriverFactory.getInstance().getDriver());
+		js.executeScript("window.scrollBy(0, -300)");//scroll up
+		a.moveToElement(DriverFactory.getInstance().getDriver().findElement(Ele)).perform();
 		DriverFactory.getInstance().getDriver().findElement(Ele).click();
 		String Message = null;
 		
@@ -199,6 +207,11 @@ public class WebDriver_Functions{
 			throw new Exception("Invalid SelectBy sent to Select(By Ele, String Value, String SelectBy)");
 		}
 		Helper_Functions.PrintOut("    S--Selected Element " + Ele.toString() + "   " + Message, true);
+		
+		
+		
+
+		
 	}
 	
     public static void takeSnapShot(String FileName) throws Exception{
@@ -218,8 +231,20 @@ public class WebDriver_Functions{
         //Call getScreenshotAs method to create image file
         File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
         //Move image file to new destination
-        String FilePath = ".\\EclipseScreenshots\\" + CallingClass + "\\" + FileName;
-        File DestFile=new File(FilePath);
+        String FilePath = System.getProperty("user.dir") + "\\EclipseScreenshots\\" + CallingClass + "\\" + FileName;
+
+        String Folder = FilePath;
+		try {
+			Folder = FilePath.substring(0, FilePath.lastIndexOf("\\"));
+			if (!(new File(Folder)).exists()) {
+				new File(Folder).mkdir();
+			}
+		} catch (Exception e) {  
+			System.out.println("Warning, Unable to create directory for: " + Folder);
+		}
+
+		File DestFile=new File(FilePath);
+        
         //Copy file at destination
         FileUtils.copyFile(SrcFile, DestFile);
         Helper_Functions.PrintOut(FileName + " Screenshot Taken", true);
@@ -250,6 +275,10 @@ public class WebDriver_Functions{
 			Thread.sleep(1000);
 		}
 		throw new Exception ("Element is still present on page.  " + Ele.toString());
+	}
+	
+	public static void WaitNotVisable(By Ele) throws Exception{
+		DriverFactory.getInstance().getDriverWait().until(ExpectedConditions.invisibilityOfElementLocated(Ele));
 	}
     
     public static void WaitPresent(By Ele) throws Exception{
@@ -321,6 +350,15 @@ public class WebDriver_Functions{
     public static void WaitClickable(By Ele) throws Exception{
     	DriverFactory.getInstance().getDriverWait().until(ExpectedConditions.elementToBeClickable(Ele));
 	}
+    
+    public static boolean isSelected(By Ele) throws Exception{
+    	try {
+    		return DriverFactory.getInstance().getDriver().findElement(Ele).isSelected();
+    	}catch(Exception e) {
+    		return false;//False if element not present.
+    	}
+    	
+    }
 	
 	public static String GetCookieValue(String Name){
 		Set<Cookie> cookies = DriverFactory.getInstance().getDriver().manage().getCookies();
@@ -364,7 +402,7 @@ public class WebDriver_Functions{
 			Select select = new Select(DriverFactory.getInstance().getDriver().findElement(bypath));
 			WebElement option = select.getFirstSelectedOption();
 			CurrentText = option.getText();
-			
+			 
 			if (CurrentText != expected) {
 				throw new Exception ("does not match");
 			}
@@ -469,4 +507,24 @@ public class WebDriver_Functions{
   		}
   		return LevelURL;
   	}
+  	
+	public static boolean CheckifPasskey(String Level){
+		boolean AdminUser = false;
+		try{
+			Helper_Functions.ChangeURL("WADM", "US", false, Level);
+			for (int i = 0; i < 20; i++) {
+				if (CheckBodyText("Get started")) {
+					break;
+				}else if (CheckBodyText("Admin Home") || CheckBodyText("Please contact your administrator.")) {
+					AdminUser = true;
+					break;
+				}
+				Thread.sleep(500);
+			}
+		}catch(Exception e){
+			Helper_Functions.PrintOut("Error when checking if admin", true);
+		}
+		Helper_Functions.PrintOut("Passkey check: " + AdminUser, true);
+		return AdminUser;
+	}	
 }

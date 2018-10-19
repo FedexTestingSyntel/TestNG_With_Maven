@@ -1,30 +1,23 @@
 package SupportClasses;
 
 import java.util.ArrayList;    //The below needed for tracking the status of the tests.
-import java.util.Properties;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-import javax.activation.DataHandler;
-import javax.activation.DataSource;
-import javax.activation.FileDataSource;
-import javax.mail.BodyPart;
-import javax.mail.Message;
-import javax.mail.Multipart;
-import javax.mail.Session;
-import javax.mail.Transport;
-import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeBodyPart;
-import javax.mail.internet.MimeMessage;
-import javax.mail.internet.MimeMultipart;
 import SupportClasses.ThreadLogger;
 import TestingFunctions.Helper_Functions;
-//https://www.guru99.com/pdf-emails-and-screenshot-of-test-reports-in-selenium.html
 
 public class TestNG_TestListener implements ITestListener{
 	
 	@Override
     public void onStart(ITestContext arg0) {
+		ArrayList<String[]> PersonalData = new ArrayList<String[]>();
+		PersonalData = Helper_Functions.getExcelData(".\\Data\\Load_Your_UserIds.xls",  "Data");//create your own file with the specific data
+		for(String s[]: PersonalData) {
+			if(s[0].contentEquals("MYEMAIL")){
+				Helper_Functions.MyEmail = s[1];
+			}
+		}
     }
 	
 	@Override
@@ -38,6 +31,11 @@ public class TestNG_TestListener implements ITestListener{
 
     @Override
     public void onTestFailure(ITestResult arg0) {
+    	try {
+			Helper_Functions.takeSnapShot("Failure " + arg0.getName() + " " + arg0.getEndMillis() + ".png");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
     	TestResults(arg0);
     }
 

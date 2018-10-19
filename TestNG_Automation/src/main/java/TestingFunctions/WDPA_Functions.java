@@ -1,14 +1,11 @@
 package TestingFunctions;
 
 import static org.testng.Assert.assertEquals;
-
 import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
-
 import SupportClasses.DriverFactory;
 
 public class WDPA_Functions extends Helper_Functions{
@@ -125,7 +122,8 @@ public class WDPA_Functions extends Helper_Functions{
 	//PackageDetails = {String Packages, String Weight, String WeightUnit, String Date, String ReadyTime, String CloseTime, String Special}
 	public static void WDPAPackageInformation(String Service, String[] PackageDetails) throws Exception{
 		//String Packages, String Weight, String WeightUnit, String Date, String ReadyTime, String CloseTime, String Special
-		String Packages = PackageDetails[0], Weight = PackageDetails[1], WeightUnit = PackageDetails[2], Date = PackageDetails[3], ReadyTime = PackageDetails[4], CloseTime = PackageDetails[5], Special = PackageDetails[6];
+		String Packages = PackageDetails[0], Weight = PackageDetails[1], WeightUnit = PackageDetails[2], ReadyTime = PackageDetails[4], CloseTime = PackageDetails[5], Special = PackageDetails[6];
+		//String Date = PackageDetails[3];
 		
 		String strFieldType;
 		strFieldType = "package." + Service;

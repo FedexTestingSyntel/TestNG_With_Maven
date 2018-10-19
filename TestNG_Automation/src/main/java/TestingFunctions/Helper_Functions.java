@@ -17,11 +17,9 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.Random;
-import java.util.concurrent.TimeUnit;
 import java.util.regex.Pattern;
 import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.Select;
 import Data_Structures.User_Data;
 import SupportClasses.DriverFactory;
 import SupportClasses.ThreadLogger;
@@ -32,7 +30,7 @@ import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.*;
 
 public class Helper_Functions extends WebDriver_Functions{
-	public static String MyEmail = "sean.kauffman.osv@fedex.com";
+	public static String MyEmail = "accept@gmail.com", myPhone = "9011111111";
 	//public static String MyEmail = "accept@fedex.com";
 
 	public static String Passed = "Passed", Failed = "Fail", Skipped = "Skipped";
@@ -301,7 +299,7 @@ public class Helper_Functions extends WebDriver_Functions{
     		case "SG":  
     			return "9011111";  //need to check to make sure valid
     		default:
-    			return "9011111111";
+    			return myPhone;
 		}//end switch CountryCode
 	}
 	
@@ -424,7 +422,7 @@ public class Helper_Functions extends WebDriver_Functions{
 		for (int i = 0; i < CreditCardList.size(); i++) {
 			CreditCard = CreditCardList.get(i);
 			if (CardDetails.length() == 1 && CreditCard[0].contains(CardDetails)) {
-				PrintOut("LoadCreditCard is Returning: " + Arrays.toString(CreditCard), true);
+				PrintOut("CreditCard: " + Arrays.toString(CreditCard), false);
 				return CreditCard;
 			}else if (CardDetails.length() <= 16 && CardDetails.length() >= 15 && CreditCard[1].contains(CardDetails)){ //if a credit card number was sent
 				try{
@@ -432,7 +430,7 @@ public class Helper_Functions extends WebDriver_Functions{
 				}catch(Exception e) {
 					CreditCard = CreditCardList.get(i - 1);//else return the previous card
 				}
-				PrintOut("LoadCreditCard is Returning: " + Arrays.toString(CreditCard), true);
+				PrintOut("CreditCard: " + Arrays.toString(CreditCard), false);
 				return CreditCard;
 			}
 		}
@@ -477,7 +475,7 @@ public class Helper_Functions extends WebDriver_Functions{
 		}
 		
 		if (ReturnAddress != null) {
-			PrintOut("LoadAddress is Returning: " + Arrays.toString(ReturnAddress), true);
+			PrintOut("Address: " + Arrays.toString(ReturnAddress), false);
 			return ReturnAddress;
 		}
 		
@@ -515,7 +513,7 @@ public class Helper_Functions extends WebDriver_Functions{
 	public static String[] LoadDummyName(String Base, String Level){
 		final String[] numNames = {"", "one","two","three","four","five","six","seven"};
 	    String DummyName[] = {"F" + numNames[Integer.valueOf(Level)] + Base + getRandomString(7), "M", "L" + getRandomString(7)};
-		PrintOut("Generate Name is Returning: " + Arrays.toString(DummyName), true);
+		PrintOut("Full Name: " + Arrays.toString(DummyName), false);
 		return DummyName;
 	}
 	
@@ -600,6 +598,20 @@ public class Helper_Functions extends WebDriver_Functions{
 	public static String ParseTransactionId(String s) {
 		if(s.contains("transactionId")) {
 			String TransactionIdStart = "transactionId\":\"";
+			int TransactionIdEnd;
+			for (TransactionIdEnd = s.indexOf(TransactionIdStart) + TransactionIdStart.length(); TransactionIdEnd < s.length(); TransactionIdEnd++) {
+				if (s.substring(TransactionIdEnd, TransactionIdEnd + 1).contentEquals("\"")) {
+					break;
+				}
+			}
+			return s.substring(s.indexOf(TransactionIdStart) + TransactionIdStart.length(), TransactionIdEnd);
+		}
+		return null;
+	}
+	
+	public static String ParseValueFromResponse(String s, String ident) {
+		if(s.contains(ident)) {
+			String TransactionIdStart = ident + "\":\"";
 			int TransactionIdEnd;
 			for (TransactionIdEnd = s.indexOf(TransactionIdStart) + TransactionIdStart.length(); TransactionIdEnd < s.length(); TransactionIdEnd++) {
 				if (s.substring(TransactionIdEnd, TransactionIdEnd + 1).contentEquals("\"")) {
@@ -844,6 +856,23 @@ public class Helper_Functions extends WebDriver_Functions{
 		}catch (Exception e) {
 			e.printStackTrace();
 		}
+	}
+	
+	//{{Phone number country code, Phone Number}, {...}{Mobile...}, { ...}{Fax...}, {}{email address}}}
+	public static String[][] LoadPhone_Mobile_Fax_Email(String CountryCode){
+		CountryCode = CountryCode.toUpperCase();
+		PrintOut("LoadPhone_Mobile_Fax Received: " + CountryCode, true);
+		String PhoneCode, Phone = myPhone, Mobile = myPhone, Fax = myPhone, Email = MyEmail;
+		switch (CountryCode) {
+        	case "US": 
+        		PhoneCode = "1"; break;
+        	default: 
+        		PrintOut("No country code sent to LoadAddress call. Returning US Dummy Values.", true);
+        		PhoneCode = "1";
+		 }//end switch
+		String Details[][] = {{PhoneCode, Phone} , {PhoneCode, Mobile}, {PhoneCode, Fax}, {"", Email}};
+		PrintOut("LoadPhone_Mobile_Fax Returning: " + Arrays.deepToString(Details), true);
+		return Details;
 	}
 
 }//End Class

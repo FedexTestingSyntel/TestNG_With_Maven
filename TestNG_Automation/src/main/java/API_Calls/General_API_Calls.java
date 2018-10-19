@@ -14,7 +14,6 @@ import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpUriRequest;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
-import Helper.Support_Functions;
 import TestingFunctions.Helper_Functions;
 
 public class General_API_Calls {
@@ -81,11 +80,6 @@ public class General_API_Calls {
 			Response = e.getMessage() + e.getCause();
 			return e.getMessage() + e.getCause();
 		}finally {
-			Support_Functions.PrintOut(MethodName + " URL: " + Request.toString(), true); //print out the URL that was used
-			Support_Functions.PrintOut(MethodName + " Headers: " + RequestHeaders, true); //print out all of the headers
-			Support_Functions.PrintOut(MethodName + " Request: " + Request_Body, true);//print out the request body
-			Support_Functions.PrintOut(MethodName + " Response: " + Response, true);
-			
 			Helper_Functions.PrintOut(MethodName + " URL: " + Request.toString(), true); //print out the URL that was used
 			Helper_Functions.PrintOut(MethodName + " Headers: " + RequestHeaders, true); //print out all of the headers
 			Helper_Functions.PrintOut(MethodName + " Request: " + Request_Body, true);//print out the request body

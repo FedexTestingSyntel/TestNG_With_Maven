@@ -12,7 +12,8 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONObject;
-import Helper.*;
+
+import TestingFunctions.Helper_Functions;
 
 public class USRC_API_Endpoints {
 	 //Takes in the userid, password, and the level and returns the cookies generated.
@@ -21,7 +22,7 @@ public class USRC_API_Endpoints {
   		try{
   			HttpClient httpclient = HttpClients.createDefault();
   				
-  			String url = Support_Functions.LevelUrlReturn(Level) + "/userCal/user";
+  			String url = Helper_Functions.LevelUrlReturn(Level) + "/userCal/user";
   			HttpPost httppost = new HttpPost(url);
 
   			JSONObject processingParameters = new JSONObject()
@@ -53,7 +54,7 @@ public class USRC_API_Endpoints {
   			urlParameters.add(new BasicNameValuePair("data", json));
 
   			httppost.setEntity(new UrlEncodedFormEntity(urlParameters));
-  			Support_Functions.PrintOut("Get cookie from USRC for " + UserID + "/" + Password, true);
+  			Helper_Functions.PrintOut("Get cookie from USRC for " + UserID + "/" + Password, true);
   			HttpResponse response = httpclient.execute(httppost);
   			Header[] headers = response.getAllHeaders();
   			//takes apart the headers of the response and returns the fdx_login cookie if present

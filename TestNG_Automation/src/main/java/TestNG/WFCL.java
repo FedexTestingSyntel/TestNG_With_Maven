@@ -19,7 +19,7 @@ import SupportClasses.*;
 
 public class WFCL{
 	static ArrayList<String[]> AddressDetails = new ArrayList<String[]>();
-	static String LevelsToTest = "7";
+	static String LevelsToTest = "2";
 	final static boolean SmokeTest = true; // will limit the test cases to high level
 	static String CountryList[][];
 

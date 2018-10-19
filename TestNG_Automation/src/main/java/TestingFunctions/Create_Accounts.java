@@ -6,6 +6,8 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.Select;
@@ -20,21 +22,38 @@ import TestingFunctions.Helper_Functions;
 @Listeners(SupportClasses.TestNG_TestListener.class)
 
 public class Create_Accounts extends Helper_Functions{
+	private static String ECAMuserid;
+	private static String ECAMpassword;
 	
 	@DataProvider //(parallel = true)
 	public static Iterator<Object[]> dp(Method m) {
+		ArrayList<String[]> PersonalData = new ArrayList<String[]>();
+		PersonalData = getExcelData(".\\Data\\Load_Your_UserIds.xls",  "Data");//create your own file with the specific data
+		for(String s[]: PersonalData) {
+			if (s[0].contentEquals("ECAM")) {
+				ECAMuserid = s[1];
+				ECAMpassword = s[2];
+			}
+		}
+			
 		List<Object[]> data = new ArrayList<Object[]>();
 		ArrayList<String[]> AddressDetails = new ArrayList<String[]>();
 		AddressDetails = getExcelData(".\\Data\\AddressDetails.xls",  "Accounts");//load the relevant information from excel file.
 		String LevelsToTest = "2";
 		for (int i=0; i < LevelsToTest.length(); i++) {
 			String Level = String.valueOf(LevelsToTest.charAt(i));
-			for (int j = 0; j < AddressDetails.size(); j++) {
+			for (int j = 1; j < AddressDetails.size(); j++) {
 				String CountryList[] = AddressDetails.get(j);
 				int intLevel = Integer.parseInt(Level);
 				
+				//pattern to see if the accounts section has at least three account numbers.
+				final Pattern pattern = Pattern.compile(".*,.*,.*");
+				final Matcher matcher = pattern.matcher(CountryList[8 + intLevel]);
+				
 				//check if account number is loaded for this country and the given level
 				if (CountryList[8 + intLevel] == "") {
+					data.add( new Object[] {Level, CountryList, j});
+				}else if (!matcher.matches() && CountryList[0].contains("3614 DELVERNE RD")) {
 					data.add( new Object[] {Level, CountryList, j});
 				}
 
@@ -95,8 +114,8 @@ public class Create_Accounts extends Helper_Functions{
 
 			ChangeURL("ECAM", "", false, Level);
 			if (isPresent(By.id("username"))) {
-				Type(By.id("username"), "821032");
-				Type(By.id("password"), "821032");
+				Type(By.id("username"), ECAMuserid);
+				Type(By.id("password"), ECAMpassword);
 				Click(By.id("submit"));
 			}
 

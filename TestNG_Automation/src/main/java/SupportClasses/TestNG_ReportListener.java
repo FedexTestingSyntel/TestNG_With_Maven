@@ -119,8 +119,20 @@ public class TestNG_ReportListener implements IReporter {
 	    	//Need to work on this to send out the email report.
 	    	//java.net.URL classUrl = this.getClass().getResource("com.sun.mail.util.TraceInputStream");
 	    	//System.out.println(classUrl.getFile());
-	    	//sendPDFReportByGMail(sender gmail account, sender gmail password, recipient email, ReportTitle, customReportTemplateStr, outputDirectory);
-	    	
+			/*
+			String SenderEamil, SenderPassword, RecipientEmail;
+			ArrayList<String[]> PersonalData = new ArrayList<String[]>();
+			PersonalData = Helper_Functions.getExcelData(".\\Data\\Load_Your_UserIds.xls",  "Data");//create your own file with the specific data
+			for(String s[]: PersonalData) {
+				if (s[0].contentEquals("GMAIL")) {
+					SenderEamil = s[1];
+					SenderPassword = s[2];
+				}else if(s[0].contentEquals("MYEMAIL")){
+					RecipientEmail = s[1];
+				}
+			}
+	    	sendPDFReportByGMail(SenderAddress, SenderPassword, RecipientEmail, ReportTitle, customReportTemplateStr, outputDirectory);
+	    	*/
 			
 		}catch(Exception ex){
 			ex.printStackTrace();

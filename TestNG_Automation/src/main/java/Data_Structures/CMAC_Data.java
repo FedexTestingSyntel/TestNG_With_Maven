@@ -1,6 +1,11 @@
 package Data_Structures;
 
 public class CMAC_Data {
+	public String OAuth_Token;
+	public String Level;
+	public String OAuthToken_URL;
+	public String Client_ID;
+	public String Client_Secret;
 	public String Create_Project_URL;
 	public String Retrieve_Project_Details_URL;
 	public String Retrieve_Project_Summary_URL;

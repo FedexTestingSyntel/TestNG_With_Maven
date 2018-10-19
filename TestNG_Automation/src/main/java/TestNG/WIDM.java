@@ -20,7 +20,7 @@ import TestingFunctions.WIDM_Functions;
 @Listeners(SupportClasses.TestNG_TestListener.class)
 
 public class WIDM extends Helper_Functions{
-	static String LevelsToTest = "3";
+	static String LevelsToTest = "2";
 	static boolean SmokeTest = true; // will limit the test cases to high level
 	static String CountryList[][];
 	

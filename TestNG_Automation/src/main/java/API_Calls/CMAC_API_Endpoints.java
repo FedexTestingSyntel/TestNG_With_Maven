@@ -6,7 +6,7 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.client.methods.HttpPut;
 import org.apache.http.entity.StringEntity;
 import org.json.JSONObject;
-import Helper.Support_Functions;
+import TestingFunctions.Helper_Functions;
 
 public class CMAC_API_Endpoints{
 	
@@ -99,7 +99,7 @@ public class CMAC_API_Endpoints{
 			//httppost.addHeader("Authorization", "Bearer " + OAuth_Token);
 
 			String Response = General_API_Calls.HTTPCall(httpget, Request);
-			Support_Functions.PrintOut("RetrieveProjectSummary Response : " + Response, true);
+			Helper_Functions.PrintOut("RetrieveProjectSummary Response : " + Response, true);
 			return Response;
 		}catch (Exception e){
 			e.printStackTrace();

@@ -16,7 +16,7 @@ import SupportClasses.*;
 @Listeners(SupportClasses.TestNG_TestListener.class)
 
 public class OADR{
-	static String LevelsToTest = "3";
+	static String LevelsToTest = "2";
 	final static boolean SmokeTest = true; // will limit the test cases to high level
 	static ArrayList<String[]> AddressDetails = new ArrayList<String[]>();
 	static String CountryList[][];
