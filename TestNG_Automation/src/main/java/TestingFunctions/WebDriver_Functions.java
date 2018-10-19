@@ -215,6 +215,9 @@ public class WebDriver_Functions{
 	}
 	
     public static void takeSnapShot(String FileName) throws Exception{
+		if (DriverFactory.BrowserCurrent == 0) {
+    		return;
+    	}
     	/// takeSnapShot(driver, ".\\EclipseScreenshots\\PPPL\\" + WFCLPath + "ContactInformation.png");  //C:\Users\5159473\eclipse-workspace\FedEx Automation\EclipseScreenshots\WFCL
     	String CallingClass = Thread.currentThread().getStackTrace()[2].getClassName();
     	CallingClass = CallingClass.substring(CallingClass.indexOf(".") + 1, CallingClass.length());//remove the package of the class
